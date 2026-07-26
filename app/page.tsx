@@ -1,7 +1,5 @@
 "use client";
 
-
-
 import React from "react";
 import Image from "next/image";
 import femaleAdvisor from "@/public/femaleAdvisor.jpg";
@@ -14,7 +12,7 @@ import Link from "next/link";
 import Gallery from "@/components/Gallery"
 
 
-import mensMarriage from "@/public/woman2.jpg";
+import mensMarriage from "@/public/soccerGirl1.jpg";
 import { useState } from "react";
 
 import img1 from "@/public/main1.jpg";
@@ -93,7 +91,7 @@ export default function Home() {
           alt: "Office",
           title: "🌸 完全予約制",
           description:
-            "落ち着いた空間で安心してご相談いただけます。",
+            "落ち着いた空間で安心してご相談いただけます。これはとても重要ですよ！",
         },
       ]}
     />
@@ -570,31 +568,59 @@ export default function Home() {
 {/* CTA */}
 <div className="
   rounded-2xl
+  border-4
+  border-pink-400
   bg-gradient-to-r
-  from-pink-400
-  to-rose-500
-  px-5
-  py-4
+  from-pink-500
+  to-rose-600
+  p-6
+  md:p-8
   text-center
-  text-white
-  shadow-md
+  shadow-xl
 ">
-
-  <p className="text-base md:text-lg font-black">
-    誠実で笑顔が可愛い
+  <p className="
+    text-xl
+    sm:text-2xl
+    md:text-3xl
+    font-black
+    leading-snug
+    md:leading-tight
+    text-white
+    [text-shadow:_0_2px_0_#0f172a,_0_-2px_0_#0f172a,_2px_0_0_#0f172a,-2px_0_0_#0f172a,_0_4px_10px_rgba(15,23,42,0.95)]
+  ">
+    誠実で笑顔が可愛い<br className="block sm:hidden" />
     「最高の男性」に出会いませんか？
   </p>
 
-<Link
-  href="/ideal-man"
-  className="group mt-2 inline-flex items-center gap-2 rounded-full bg-rose-500 px-5 py-2 text-sm md:text-base font-bold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-rose-600 hover:shadow-md"
->
-  <span>詳細はこちら</span>
-  <span className="transition-transform group-hover:translate-x-1">
-    →
-  </span>
-</Link>
-
+  <Link
+    href="/ideal-man"
+    className="
+      group
+      mt-5
+      inline-flex
+      items-center
+      gap-2.5
+      rounded-full
+      bg-white
+      px-7
+      py-3
+      text-base
+      md:text-lg
+      font-black
+      text-rose-600
+      shadow-lg
+      transition-all
+      duration-300
+      hover:-translate-y-0.5
+      hover:bg-rose-50
+      hover:shadow-xl
+    "
+  >
+    <span>詳細はこちら</span>
+    <span className="transition-transform group-hover:translate-x-1">
+      →
+    </span>
+  </Link>
 </div>
 
 
@@ -636,16 +662,30 @@ export default function Home() {
       </div>
 
       {/* Hero */}
-      <div className="bg-gradient-to-r from-rose-500 to-pink-500 px-5 py-6 text-center">
-        <h3 className="text-2xl md:text-3xl font-black text-white">
-          「可愛い女性と出会いたい」
-        </h3>
+  <div className="bg-gradient-to-r from-rose-500 to-pink-500 px-5 py-8 text-center">
+  <h3 className="
+    text-2xl
+    sm:text-3xl
+    md:text-4xl
+    font-black
+    leading-snug
+    text-white
+    [text-shadow:_0_2px_0_#0f172a,_0_-2px_0_#0f172a,_2px_0_0_#0f172a,-2px_0_0_#0f172a,_0_4px_10px_rgba(15,23,42,0.95)]
+  ">
+    「可愛い女性と出会いたい」
+  </h3>
 
-        <p className="mt-2 text-base md:text-lg font-bold text-rose-50">
-          最短で成婚を目指す男性の真剣婚活
-        </p>
-      </div>
-
+  <p className="
+    mt-3
+    text-lg
+    md:text-xl
+    font-extrabold
+    text-white
+    drop-shadow-[0_2px_4px_rgba(15,23,42,0.85)]
+  ">
+    最短で成婚を目指す男性の真剣婚活
+  </p>
+</div>
       {/* Content */}
       <div className="px-4 py-5 md:px-8 md:py-8 space-y-5">
 
