@@ -442,7 +442,7 @@ export default function Home() {
 
         <Link
           href="/advantages#linkId1">
-      <div className="rounded-3xl bg-gradient-to-r from-pink-500 to-purple-700 p-2 text-center text-white shadow-lg">
+      <div className="rounded-3xl bg-gradient-to-r from-rose-500 to-pink-500 p-2 text-center text-white shadow-lg">
         <p className="mt-2 text-xl md:text-2xl font-black">
           医師・エグゼクティブに愛される
         </p>
@@ -535,13 +535,9 @@ export default function Home() {
         最短距離で伴走いたします。
       </p>
 
-      <div className="rounded-3xl bg-gradient-to-r from-pink-500 to-purple-700 p-2 text-center text-white shadow-lg">
+      <div className="rounded-3xl bg-gradient-to-r from-rose-500 to-pink-500 p-2 text-center text-white shadow-lg">
         <p className="mt-2 text-xl md:text-2xl font-black">
-          幸せな未来のために
-        </p>
-
-        <p className="mt-2 text-lg md:text-xl font-semibold">
-          一緒に頑張りましょう！
+          幸せな未来のために一緒に頑張りましょう！
         </p>
       </div>
 
@@ -859,59 +855,30 @@ export default function Home() {
 
         {/* CTA */}
 <div className="grid gap-2 md:grid-cols-3">
-
   <a
     href="/mens-strategy"
     className="group rounded-xl border border-green-200 bg-gradient-to-r from-green-50 to-white px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-green-400 hover:shadow-md"
   >
     <div className="flex items-start gap-3">
-
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 text-xl">
-        🍏
-      </div>
-
       <div className="flex-1">
-
-        <h5 className="text-base font-black leading-tight text-gray-900">
+        <h5 className="text-lg font-black leading-tight text-gray-900 md:text-xl">
           男性のための戦略
         </h5>
 
-        <p className="mt-1 text-sm leading-5 text-gray-600">
+        <p className="mt-1 text-base leading-relaxed text-gray-600">
           最短で理想のお相手と出会うための婚活戦略をご紹介します。
         </p>
 
-          <Link
-    href="/ideal-man"
-    className="
-      group
-      mt-5
-      inline-flex
-      items-center
-      gap-2.5
-      rounded-full
-      bg-white
-      px-7
-      py-3
-      text-base
-      md:text-lg
-      font-black
-      text-rose-600
-      shadow-lg
-      transition-all
-      duration-300
-      hover:-translate-y-0.5
-      hover:bg-rose-50
-      hover:shadow-xl
-    "
-  >
-    <span>詳細はこちら</span>
-    <span className="transition-transform group-hover:translate-x-1">
-      →
-    </span>
-  </Link>
-
+        <Link
+          href="/ideal-man"
+          className="group mt-5 inline-flex items-center gap-2.5 rounded-full bg-white px-7 py-3 text-base font-black text-rose-600 shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-rose-50 hover:shadow-xl md:text-lg"
+        >
+          <span>詳細はこちら</span>
+          <span className="transition-transform group-hover:translate-x-1">
+            →
+          </span>
+        </Link>
       </div>
-
     </div>
   </a>
 
@@ -920,53 +887,25 @@ export default function Home() {
     className="group rounded-xl border border-green-200 bg-gradient-to-r from-green-50 to-white px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-green-400 hover:shadow-md"
   >
     <div className="flex items-start gap-3">
-
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 text-xl">
-        🍏
-      </div>
-
       <div className="flex-1">
-
-        <h5 className="text-base font-black leading-tight text-gray-900">
+        <h5 className="text-lg font-black leading-tight text-gray-900 md:text-xl">
           僕の条件で出会える女性は？
         </h5>
 
-        <p className="mt-1 text-sm leading-5 text-gray-600">
+        <p className="mt-1 text-base leading-relaxed text-gray-600">
           あなたの条件から理想のお相手をご紹介します。
         </p>
 
-   <Link
-    href="/ideal-man"
-    className="
-      group
-      mt-5
-      inline-flex
-      items-center
-      gap-2.5
-      rounded-full
-      bg-white
-      px-7
-      py-3
-      text-base
-      md:text-lg
-      font-black
-      text-rose-600
-      shadow-lg
-      transition-all
-      duration-300
-      hover:-translate-y-0.5
-      hover:bg-rose-50
-      hover:shadow-xl
-    "
-  >
-    <span>詳細はこちら</span>
-    <span className="transition-transform group-hover:translate-x-1">
-      →
-    </span>
-  </Link>
-
+        <Link
+          href="/ideal-man"
+          className="group mt-5 inline-flex items-center gap-2.5 rounded-full bg-white px-7 py-3 text-base font-black text-rose-600 shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-rose-50 hover:shadow-xl md:text-lg"
+        >
+          <span>詳細はこちら</span>
+          <span className="transition-transform group-hover:translate-x-1">
+            →
+          </span>
+        </Link>
       </div>
-
     </div>
   </a>
 
@@ -975,55 +914,27 @@ export default function Home() {
     className="group rounded-xl border border-green-200 bg-gradient-to-r from-green-50 to-white px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-green-400 hover:shadow-md"
   >
     <div className="flex items-start gap-3">
-
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 text-xl">
-        🍏
-      </div>
-
       <div className="flex-1">
-
-        <h5 className="text-base font-black leading-tight text-gray-900">
+        <h5 className="text-lg font-black leading-tight text-gray-900 md:text-xl">
           可愛い子に選ばれる男の戦略
         </h5>
 
-        <p className="mt-1 text-sm leading-5 text-gray-600">
+        <p className="mt-1 text-base leading-relaxed text-gray-600">
           女性から選ばれる男性になるためのポイントを詳しく解説します。
         </p>
 
-   <Link
-    href="/ideal-man"
-    className="
-      group
-      mt-5
-      inline-flex
-      items-center
-      gap-2.5
-      rounded-full
-      bg-white
-      px-7
-      py-3
-      text-base
-      md:text-lg
-      font-black
-      text-rose-600
-      shadow-lg
-      transition-all
-      duration-300
-      hover:-translate-y-0.5
-      hover:bg-rose-50
-      hover:shadow-xl
-    "
-  >
-    <span>詳細はこちら</span>
-    <span className="transition-transform group-hover:translate-x-1">
-      →
-    </span>
-  </Link>
+        <Link
+          href="/ideal-man"
+          className="group mt-5 inline-flex items-center gap-2.5 rounded-full bg-white px-7 py-3 text-base font-black text-rose-600 shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-rose-50 hover:shadow-xl md:text-lg"
+        >
+          <span>詳細はこちら</span>
+          <span className="transition-transform group-hover:translate-x-1">
+            →
+          </span>
+        </Link>
       </div>
-
     </div>
   </a>
-
 </div>
 
       </div>

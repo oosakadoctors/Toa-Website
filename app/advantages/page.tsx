@@ -47,7 +47,7 @@ export default function HighSpecStrategyPage() {
       <div className="w-full pt-8 pb-6 text-center bg-white border-b border-gray-100 px-4">
         <div className="inline-flex items-center gap-1.5 bg-[#F5A3B8]/15 text-[#F5A3B8] px-3 py-1 rounded-full text-base font-black tracking-widest uppercase mb-2">
           <Sparkles className="w-4 h-4 text-[#F5A3B8]" />
-          <span>High-Spec Marriage Strategy</span>
+          <span className="text-[10px]">High-Spec Marriage Strategy</span>
         </div>
         
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-snug tracking-tight w-full max-w-4xl mx-auto">
