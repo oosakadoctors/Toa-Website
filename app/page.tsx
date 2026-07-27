@@ -540,7 +540,7 @@ export default function Home() {
   className="group block rounded-3xl bg-gradient-to-r from-rose-500 to-pink-500 p-2 text-center text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:brightness-105"
 >
   <p className="mt-2 text-xl font-black md:text-2xl">
-    幸せな未来のために一緒に頑張りましょう！
+    人脈を生かした紹介を詳しく見る➡️
   </p>
 </Link>
 
@@ -1839,79 +1839,109 @@ export default function Home() {
   </div>
 
   {/* STEP 2 */}
-  <div className="max-w-5xl mx-auto mb-16">
-    <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-6 leading-snug">
-      2. お見合いセッティングと実践会話レッスン（出会いフェーズ）
-    </h3>
+<div className="max-w-5xl mx-auto mb-16">
+  <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-6 leading-snug">
+    2. お見合いセッティングと実践会話レッスン（出会いフェーズ）
+  </h3>
 
-    <div className="space-y-5 text-gray-700 leading-relaxed text-base md:text-lg">
-      <p>
-        「恋愛経験がなく異性と話すのが苦手」
-        「初対面で沈黙が怖い」
-        という方でも安心して活動できるようサポートします。
-      </p>
-
-      <p>
-        女性心理・男性心理を踏まえた会話術や、
-        梅田・難波・心斎橋・天王寺でのデートにふさわしい服装を
-        マンツーマンで丁寧にレクチャーします。
-      </p>
-
-      <div className="space-y-2 text-gray-900 font-semibold">
-        <p>✓ お見合い前の会話トレーニング</p>
-        <p>✓ デート服ファッション提案</p>
-        <p>✓ ホテルラウンジ予約代行</p>
-        <p>✓ スケジュール調整サポート</p>
-      </div>
-
-      <p>
-        忙しいビジネスパーソンでも、準備から調整まですべて任せることで、
-        ストレスなくスマートに婚活が可能です。
-      </p>
-    </div>
+  <div className="relative w-full h-[280px] md:h-[420px] rounded-2xl overflow-hidden shadow-md mb-8">
+    <Image
+      src="/dress1.jpg"
+      alt="デートにふさわしい服装の提案"
+      fill
+      className="object-cover object-center"
+      sizes="(max-width: 768px) 100vw, 800px"
+    />
   </div>
 
-  {/* STEP 3 */}
-  <div className="max-w-5xl mx-auto mb-16">
-    <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-6 leading-snug">
-      3. 仮交際・真剣交際中のリアルタイム相談（交際フェーズ）
-    </h3>
+  <div className="space-y-5 text-gray-700 leading-relaxed text-base md:text-lg">
+    <p>
+      「恋愛経験がなく異性と話すのが苦手」
+      「初対面で沈黙が怖い」
+      という方でも安心して活動できるようサポートします。
+    </p>
 
-    <div className="space-y-5 text-gray-700 leading-relaxed text-base md:text-lg">
-      <p>
-        お見合いでお互いに良い印象を持てば「仮交際」へと進みます。ここからが成婚の鍵を握る最も重要な時期です。デートの場所選びから、嫌われないLINEの返信頻度、仮交際お断りの理由分析まで、ベテラン仲人がリアルタイムで的確にアドバイスします。
-      </p>
-      
-      <p>
-        お互いに「この人しかいない」と確信したら、1対1の「真剣交際タイミング」へとステップアップし、結婚後のリアルな生活（共働き希望か、家事育児の分担など）について具体的なすり合わせを行います。
-      </p>
-      
-      <p>
-        もし迷いや不安があっても、カウンセラーと一緒に前向きな決断とモチベーションを維持できます。
-      </p>
+    <p>
+      女性心理・男性心理を踏まえた会話術や、
+      梅田・難波・心斎橋・天王寺でのデートにふさわしい服装を
+      マンツーマンで丁寧にレクチャーします。
+    </p>
+
+    <div className="space-y-2 text-gray-900 font-semibold">
+      <p>✓ お見合い前の会話トレーニング</p>
+      <p>✓ デート服ファッション提案</p>
+      <p>✓ ホテルラウンジ予約代行</p>
+      <p>✓ スケジュール調整サポート</p>
     </div>
+
+    <p>
+      忙しいビジネスパーソンでも、準備から調整まですべて任せることで、
+      ストレスなくスマートに婚活が可能です。
+    </p>
+  </div>
+</div>
+
+ {/* STEP 3 */}
+<div className="max-w-5xl mx-auto mb-16">
+  <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-6 leading-snug">
+    3. 仮交際・真剣交際中のリアルタイム相談（交際フェーズ）
+  </h3>
+
+  <div className="relative w-full h-[280px] md:h-[420px] rounded-2xl overflow-hidden shadow-md mb-8">
+    <Image
+      src="/couple2.jpg"
+      alt="真剣交際をサポートするカップル"
+      fill
+      className="object-cover object-center"
+      sizes="(max-width: 768px) 100vw, 800px"
+    />
   </div>
 
-  {/* STEP 4 */}
-  <div className="max-w-5xl mx-auto">
-    <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-6 leading-snug">
-      4. プロポーズのプロデュースと成婚退会（ゴールフェーズ）
-    </h3>
+  <div className="space-y-5 text-gray-700 leading-relaxed text-base md:text-lg">
+    <p>
+      お見合いでお互いに良い印象を持てば「仮交際」へと進みます。ここからが成婚の鍵を握る最も重要な時期です。デートの場所選びから、嫌われないLINEの返信頻度、仮交際お断りの理由分析まで、ベテラン仲人がリアルタイムで的確にアドバイスします。
+    </p>
 
-    <div className="space-y-5 text-gray-700 leading-relaxed text-base md:text-lg">
-      <p>
-        交際期間を重ね、お互いの結婚への温度感が固まったら、プロポーズです。大阪梅田ドクターズ結婚相談所では、お相手に100%喜ばれるプロポーズの言葉・シチュエーション・タイミングや、婚約指輪）の選び方、夜景の見える高級レストランの演出までを完全バックアップします。
-      </p>
-      
-      <p>
-        プライバシーは完全秘密厳守で守り抜き、笑顔の寿退会（成婚退会）を迎えていただきます。
-      </p>
-      
-      <p>
-        多くの会員様が半年以内でのスピード成婚を叶えて笑顔で卒業されています
-      </p>
-    </div>
+    <p>
+      お互いに「この人しかいない」と確信したら、1対1の「真剣交際タイミング」へとステップアップし、結婚後のリアルな生活（共働き希望か、家事育児の分担など）について具体的なすり合わせを行います。
+    </p>
+
+    <p>
+      もし迷いや不安があっても、カウンセラーと一緒に前向きな決断とモチベーションを維持できます。
+    </p>
   </div>
+</div>
+
+ {/* STEP 4 */}
+<div className="max-w-5xl mx-auto">
+  <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-6 leading-snug">
+    4. プロポーズのプロデュースと成婚退会（ゴールフェーズ）
+  </h3>
+
+  <div className="relative w-full h-[280px] md:h-[420px] rounded-2xl overflow-hidden shadow-md mb-8">
+    <Image
+      src="/flowers1.jpg"
+      alt="プロポーズと成婚を祝う花"
+      fill
+      className="object-cover object-center"
+      sizes="(max-width: 768px) 100vw, 800px"
+    />
+  </div>
+
+  <div className="space-y-5 text-gray-700 leading-relaxed text-base md:text-lg">
+    <p>
+      交際期間を重ね、お互いの結婚への温度感が固まったら、プロポーズです。大阪梅田ドクターズ結婚相談所では、お相手に100%喜ばれるプロポーズの言葉・シチュエーション・タイミングや、婚約指輪）の選び方、夜景の見える高級レストランの演出までを完全バックアップします。
+    </p>
+
+    <p>
+      プライバシーは完全秘密厳守で守り抜き、笑顔の寿退会（成婚退会）を迎えていただきます。
+    </p>
+
+    <p>
+      多くの会員様が半年以内でのスピード成婚を叶えて笑顔で卒業されています
+    </p>
+  </div>
+</div>
 
 </section>
 <section className="w-full px-4 md:px-8 py-2">
