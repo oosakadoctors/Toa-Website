@@ -31,11 +31,13 @@ export default function Home() {
 {/* CHANGED: Lowered the height values to make the image length shorter vertically, keeping full viewport width */}
 <section className="bg-pink-200 relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[390px]  md:h-[430px] overflow-hidden rounded-none shadow-sm">
   {/* Background Image */}
-  <img
-    src="/cuteGirl1.jpg"
-    alt="Marriage Consultation Hero"
-    className="absolute inset-0 w-full  object-center"
-  />
+<Image
+  src="/cuteGirl1.jpg"
+  alt="Marriage Consultation Hero"
+  fill
+  priority
+  className="absolute inset-0 object-center"
+/>
 
   {/* Hero Content */}
 
@@ -142,9 +144,34 @@ export default function Home() {
           ダブルサポートのハイクラス婚活。ハイスペックのための至極の婚活。
         </p>
 
-        <p className="mt-3 font-black text-gray-700 hover:text-rose-500 transition-colors">
-          →詳しく見る
-        </p>
+  <div
+    className="
+      group
+      mt-5
+      inline-flex
+      items-center
+      gap-2.5
+      rounded-full
+      bg-white
+      px-7
+      py-3
+      text-base
+      md:text-lg
+      font-black
+      text-rose-600
+      shadow-lg
+      transition-all
+      duration-300
+      hover:-translate-y-0.5
+      hover:bg-rose-50
+      hover:shadow-xl
+    "
+  >
+    <span>詳細はこちら</span>
+    <span className="transition-transform group-hover:translate-x-1">
+      →
+    </span>
+  </div>
 
       </div>
 
@@ -179,9 +206,34 @@ export default function Home() {
           医師・経営者・エリートが集うハイクラスな会員層。至極のハイスペックな出会いをあなたへ。
         </p>
 
-        <p className="mt-3 font-black text-gray-700 hover:text-rose-500 transition-colors">
-          →詳しく見る
-        </p>
+<div
+    className="
+      group
+      mt-5
+      inline-flex
+      items-center
+      gap-2.5
+      rounded-full
+      bg-white
+      px-7
+      py-3
+      text-base
+      md:text-lg
+      font-black
+      text-rose-600
+      shadow-lg
+      transition-all
+      duration-300
+      hover:-translate-y-0.5
+      hover:bg-rose-50
+      hover:shadow-xl
+    "
+  >
+    <span>詳細はこちら</span>
+    <span className="transition-transform group-hover:translate-x-1">
+      →
+    </span>
+  </div>
 
       </div>
 
@@ -216,9 +268,34 @@ export default function Home() {
           毎月5名のみの新規入会制限・審査ありの少人数制・ハイクラス婚活。あなたの理想を形にする、フルオーダーメイド戦略。
         </p>
 
-        <p className="mt-3 font-black text-gray-700 hover:text-rose-500 transition-colors">
-          →詳しく見る
-        </p>
+<div
+    className="
+      group
+      mt-5
+      inline-flex
+      items-center
+      gap-2.5
+      rounded-full
+      bg-white
+      px-7
+      py-3
+      text-base
+      md:text-lg
+      font-black
+      text-rose-600
+      shadow-lg
+      transition-all
+      duration-300
+      hover:-translate-y-0.5
+      hover:bg-rose-50
+      hover:shadow-xl
+    "
+  >
+    <span>詳細はこちら</span>
+    <span className="transition-transform group-hover:translate-x-1">
+      →
+    </span>
+  </div>
 
       </div>
 
@@ -227,7 +304,6 @@ export default function Home() {
 
 </div>
 <section className="w-full px-4 md:px-8 py-2">
-
   {/* Optional subtle header */}
   <div className="max-w-5xl mx-auto mb-10 text-center">
     <span className="text-sm font-black tracking-[0.3em] uppercase text-rose-500">
@@ -239,49 +315,57 @@ export default function Home() {
       大阪梅田ドクターズ結婚相談所のアプローチ
     </h2>
 
-    <div className="mt-5 h-1 w-16 rounded-full bg-rose-400" />
+    <div className="mt-5 h-1 w-16 rounded-full bg-rose-400 mx-auto" />
   </div>
-
-  
 
   {/* Body */}
-<div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg">
+  <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg">
+    
+    {/* Floating Image */}
+    <div className="md:float-right md:ml-8 mb-4 md:mb-2 w-full md:w-80">
+      <Image
+        src="/doctorSuit.jpg"
+        alt="婚活カウンセリング"
+        width={500}
+        height={650}
+        className="rounded-2xl object-cover shadow-md border border-gray-100"
+      />
+    </div>
 
-  {/* Floating Image */}
-  <div className="md:float-right md:ml-8 mb-4 md:mb-2 w-full md:w-80">
-    <Image
-      src="/doctorSuit.jpg"
-      alt="婚活カウンセリング"
-      width={500}
-      height={650}
-      className="rounded-2xl object-cover shadow-md border border-gray-100"
-    />
+    {/* Text + Expand Controls Container */}
+    <div className="relative">
+      <div
+        className={`overflow-hidden transition-all duration-500 ${
+          expanded ? "max-h-[2000px]" : "max-h-44"
+        }`}
+      >
+        <p> 大阪・梅田エリア（北区・茶屋町・西梅田・東梅田周辺）には、多くのおすすめ結婚相談所や大手結婚情報サービス、人気の婚活サロンが点在しています。 </p> 
+        <p> しかし、「AIマッチングだけの大手結婚相談所」や「サポートが薄い格安のマッチングアプリ」「アドバイザーの主観だけに頼る個人結婚相談所」を比較し、 どこを選べばいいか迷っている方も少なくありません。 </p> 
+        <p> 令和の最新婚活市場を勝ち抜き、20代・30代・40代の方が最短で成婚（婚活のゴール）を迎えるためには、 確かなエビデンスに基づいた婚活戦略が必要です。 </p> 
+        <p> 梅田で口コミ評判の高い優良な結婚相談所を目指す大阪梅田ドクターズ結婚相談所では、 他社には決して真似できない唯一無二の体制として、 <span className="font-bold text-gray-900"> 「理性の医学」と「感性の仲人」 </span> が交わるダブルサポート体制をご提供します。 </p> 
+        <p> 医学的・心理学的アプローチによって異性の本音をロジカルに分析し、 長年の成婚ノウハウによって現場での実践に落とし込む。 </p> 
+        <p> この2つのプロフェッショナルによる二人三脚の丁寧なマンツーマンサポートこそが、 あなたを最短ルートで幸せな結婚へと導き、高い成婚率を誇る最大の理由です。 </p>
+      </div>
+
+      {/* Fade overlay when collapsed */}
+      {!expanded && (
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none" />
+      )}
+    </div>
+
+    {/* Button placed immediately after the text block */}
+    <div className="mt-2 text-center md:text-left">
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="relative z-10 inline-flex items-center gap-2 rounded-full border border-rose-200 bg-white px-5 py-2 font-bold text-rose-600 hover:bg-rose-50 transition shadow-sm"
+      >
+        {expanded ? "閉じる ▲" : "続きを読む ▼"}
+      </button>
+    </div>
+
+    <div className="clear-both" />
   </div>
-
-  <div
-    className={`overflow-hidden transition-all duration-500 ${
-      expanded ? "max-h-[2000px]" : "max-h-44"
-    }`}
-  >
-    <p> 大阪・梅田エリア（北区・茶屋町・西梅田・東梅田周辺）には、多くのおすすめ結婚相談所や大手結婚情報サービス、人気の婚活サロンが点在しています。 </p> <p> しかし、「AIマッチングだけの大手結婚相談所」や「サポートが薄い格安のマッチングアプリ」「アドバイザーの主観だけに頼る個人結婚相談所」を比較し、 どこを選べばいいか迷っている方も少なくありません。 </p> <p> 令和の最新婚活市場を勝ち抜き、20代・30代・40代の方が最短で成婚（婚活のゴール）を迎えるためには、 確かなエビデンスに基づいた婚活戦略が必要です。 </p> <p> 梅田で口コミ評判の高い優良な結婚相談所を目指す大阪梅田ドクターズ結婚相談所では、 他社には決して真似できない唯一無二の体制として、 <span className="font-bold text-gray-900"> 「理性の医学」と「感性の仲人」 </span> が交わるダブルサポート体制をご提供します。 </p> <p> 医学的・心理学的アプローチによって異性の本音をロジカルに分析し、 長年の成婚ノウハウによって現場での実践に落とし込む。 </p> <p> この2つのプロフェッショナルによる二人三脚の丁寧なマンツーマンサポートこそが、 あなたを最短ルートで幸せな結婚へと導き、高い成婚率を誇る最大の理由です。 </p>
-  </div>
-
-  {!expanded && (
-    <div className="mt-3 bg-gradient-to-t from-white to-transparent h-12 -mt-12 pointer-events-none" />
-  )}
-
-  <button
-    onClick={() => setExpanded(!expanded)}
-    className="mt-4 inline-flex items-center gap-2 rounded-full border border-rose-200 bg-white px-5 py-2 font-bold text-rose-600 hover:bg-rose-50 transition"
-  >
-    {expanded ? "閉じる ▲" : "続きを読む ▼"}
-  </button>
-
-  <div className="clear-both" />
-
-</div>
 </section>
-
 <section className="w-full px-4 md:px-8 py-4 bg-white">
   <div className="max-w-5xl mx-auto">
 
@@ -784,9 +868,35 @@ export default function Home() {
           最短で理想のお相手と出会うための婚活戦略をご紹介します。
         </p>
 
-        <div className="mt-2 inline-flex items-center font-bold text-sm text-green-700 transition-transform group-hover:translate-x-1">
-          詳しく見る →
-        </div>
+          <Link
+    href="/ideal-man"
+    className="
+      group
+      mt-5
+      inline-flex
+      items-center
+      gap-2.5
+      rounded-full
+      bg-white
+      px-7
+      py-3
+      text-base
+      md:text-lg
+      font-black
+      text-rose-600
+      shadow-lg
+      transition-all
+      duration-300
+      hover:-translate-y-0.5
+      hover:bg-rose-50
+      hover:shadow-xl
+    "
+  >
+    <span>詳細はこちら</span>
+    <span className="transition-transform group-hover:translate-x-1">
+      →
+    </span>
+  </Link>
 
       </div>
 
@@ -813,9 +923,35 @@ export default function Home() {
           あなたの条件から理想のお相手をご紹介します。
         </p>
 
-        <div className="mt-2 inline-flex items-center font-bold text-sm text-green-700 transition-transform group-hover:translate-x-1">
-          詳しく見る →
-        </div>
+   <Link
+    href="/ideal-man"
+    className="
+      group
+      mt-5
+      inline-flex
+      items-center
+      gap-2.5
+      rounded-full
+      bg-white
+      px-7
+      py-3
+      text-base
+      md:text-lg
+      font-black
+      text-rose-600
+      shadow-lg
+      transition-all
+      duration-300
+      hover:-translate-y-0.5
+      hover:bg-rose-50
+      hover:shadow-xl
+    "
+  >
+    <span>詳細はこちら</span>
+    <span className="transition-transform group-hover:translate-x-1">
+      →
+    </span>
+  </Link>
 
       </div>
 
@@ -842,10 +978,35 @@ export default function Home() {
           女性から選ばれる男性になるためのポイントを詳しく解説します。
         </p>
 
-        <div className="mt-2 inline-flex items-center font-bold text-sm text-green-700 transition-transform group-hover:translate-x-1">
-          詳しく見る →
-        </div>
-
+   <Link
+    href="/ideal-man"
+    className="
+      group
+      mt-5
+      inline-flex
+      items-center
+      gap-2.5
+      rounded-full
+      bg-white
+      px-7
+      py-3
+      text-base
+      md:text-lg
+      font-black
+      text-rose-600
+      shadow-lg
+      transition-all
+      duration-300
+      hover:-translate-y-0.5
+      hover:bg-rose-50
+      hover:shadow-xl
+    "
+  >
+    <span>詳細はこちら</span>
+    <span className="transition-transform group-hover:translate-x-1">
+      →
+    </span>
+  </Link>
       </div>
 
     </div>
@@ -892,12 +1053,27 @@ export default function Home() {
       </div>
 
       {/* Hero */}
-      <div className="bg-gradient-to-r from-rose-500 to-pink-500 px-5 py-6 text-center">
-        <h3 className="text-2xl md:text-3xl font-black text-white">
+   <div className="bg-gradient-to-r from-rose-500 to-pink-500 px-5 py-8 text-center">
+  <h3 className="
+    text-2xl
+    sm:text-3xl
+    md:text-4xl
+    font-black
+    leading-snug
+    text-white
+    [text-shadow:_0_2px_0_#0f172a,_0_-2px_0_#0f172a,_2px_0_0_#0f172a,-2px_0_0_#0f172a,_0_4px_10px_rgba(15,23,42,0.95)]
+  ">
           恋愛経験ゼロからスピード成婚へ
         </h3>
 
-        <p className="mt-2 text-base md:text-lg font-bold text-rose-50">
+          <p className="
+    mt-3
+    text-lg
+    md:text-xl
+    font-extrabold
+    text-white
+    drop-shadow-[0_2px_4px_rgba(15,23,42,0.85)]
+  ">
           初めての婚活でも安心して進められます。
         </p>
       </div>
@@ -995,8 +1171,33 @@ export default function Home() {
     初めての婚活でも安心して進めるためのサポートをご紹介します。
   </p>
 
-  <div className="mt-3 font-bold text-green-700 transition-transform group-hover:translate-x-1">
-    詳しく見る →
+<div
+    className="
+      group
+      mt-5
+      inline-flex
+      items-center
+      gap-2.5
+      rounded-full
+      bg-white
+      px-7
+      py-3
+      text-base
+      md:text-lg
+      font-black
+      text-rose-600
+      shadow-lg
+      transition-all
+      duration-300
+      hover:-translate-y-0.5
+      hover:bg-rose-50
+      hover:shadow-xl
+    "
+  >
+    <span>詳細はこちら</span>
+    <span className="transition-transform group-hover:translate-x-1">
+      →
+    </span>
   </div>
 </Link>
 
@@ -1015,8 +1216,33 @@ export default function Home() {
     恋愛経験がなくても成婚できる理由を詳しくご紹介します。
   </p>
 
-  <div className="mt-3 font-bold text-green-700 transition-transform group-hover:translate-x-1">
-    詳しく見る →
+<div
+    className="
+      group
+      mt-5
+      inline-flex
+      items-center
+      gap-2.5
+      rounded-full
+      bg-white
+      px-7
+      py-3
+      text-base
+      md:text-lg
+      font-black
+      text-rose-600
+      shadow-lg
+      transition-all
+      duration-300
+      hover:-translate-y-0.5
+      hover:bg-rose-50
+      hover:shadow-xl
+    "
+  >
+    <span>詳細はこちら</span>
+    <span className="transition-transform group-hover:translate-x-1">
+      →
+    </span>
   </div>
 </Link>
 
@@ -1060,12 +1286,27 @@ export default function Home() {
       </div>
 
       {/* Hero */}
-      <div className="bg-gradient-to-r from-rose-500 to-pink-500 px-5 py-6 text-center">
-        <h3 className="text-2xl md:text-3xl font-black text-white">
+  <div className="bg-gradient-to-r from-rose-500 to-pink-500 px-5 py-8 text-center">
+  <h3 className="
+    text-2xl
+    sm:text-3xl
+    md:text-4xl
+    font-black
+    leading-snug
+    text-white
+    [text-shadow:_0_2px_0_#0f172a,_0_-2px_0_#0f172a,_2px_0_0_#0f172a,-2px_0_0_#0f172a,_0_4px_10px_rgba(15,23,42,0.95)]
+  ">
           お子様の幸せを願う親御様へ
         </h3>
 
-        <p className="mt-2 text-base md:text-lg font-bold text-rose-50">
+          <p className="
+    mt-3
+    text-lg
+    md:text-xl
+    font-extrabold
+    text-white
+    drop-shadow-[0_2px_4px_rgba(15,23,42,0.85)]
+  ">
           ご家族の想いに寄り添い、未来へのご縁をお手伝いします。
         </p>
       </div>
@@ -1157,20 +1398,47 @@ export default function Home() {
   
 <Link
   href="/parents"
-  className="group flex items-center justify-between rounded-2xl border border-green-200 bg-gradient-to-r from-green-50 to-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
+  className="group flex flex-col items-center justify-center text-center gap-4 rounded-3xl border border-rose-200/80 bg-gradient-to-b from-rose-50/70 via-pink-50/30 to-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-rose-300 hover:shadow-xl"
 >
-  <div>
-    <div className="text-lg font-black text-gray-900">
+  {/* Text Info */}
+  <div className="max-w-md">
+    <div className="text-xl font-black text-gray-900 tracking-wide">
       【親御様へ】
     </div>
 
-    <p className="mt-1 text-sm text-gray-600">
+    <p className="mt-2 text-sm md:text-base text-gray-600 font-medium leading-relaxed">
       大切なご子息・ご令嬢の結婚を願うあなたへ
     </p>
   </div>
 
-  <div className="font-bold text-green-700 transition-transform group-hover:translate-x-1">
-    詳しく見る →
+  {/* Button */}
+  <div
+    className="
+      mt-2
+      inline-flex
+      items-center
+      justify-center
+      gap-2.5
+      rounded-full
+      bg-rose-600
+      px-8
+      py-3.5
+      text-base
+      font-black
+      text-white
+      shadow-md
+      shadow-rose-200
+      transition-all
+      duration-300
+      group-hover:bg-rose-700
+      group-hover:shadow-lg
+      group-hover:shadow-rose-300
+    "
+  >
+    <span>詳細はこちら</span>
+    <span className="transition-transform duration-300 group-hover:translate-x-1">
+      →
+    </span>
   </div>
 </Link>
 

@@ -160,7 +160,7 @@ export default function HighSpecStrategyPage() {
           </div>
 
           {/* CORE VALUE: 3 RESPECTS */}
-          <div className="bg-white w-full p-4 sm:p-6 shadow-xs border-y sm:border border-gray-100 sm:rounded-2xl">
+          <div id="linkId1" className="bg-white w-full p-4 sm:p-6 shadow-xs border-y sm:border border-gray-100 sm:rounded-2xl">
             <h3 className="text-lg sm:text-xl font-black text-gray-900 flex items-center gap-1.5 border-b border-gray-100 pb-3 mb-4">
               <Award className="w-5 h-5 text-[#89D1D5] shrink-0" />
               なぜ容姿だけでは選ばれないのか。第一線で戦う男性が求める「リスペクトの真実」
