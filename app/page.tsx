@@ -29,17 +29,28 @@ export default function Home() {
       {/* --- HERO SECTION --- */}
       {/* Aspect-square on mobile keeps the space large enough to accommodate the bigger text comfortably */}
 {/* CHANGED: Lowered the height values to make the image length shorter vertically, keeping full viewport width */}
-<section className="bg-pink-200 relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[390px]  md:h-[430px] overflow-hidden rounded-none shadow-sm">
-  {/* Background Image */}
-<Image
-  src="/cuteGirl1.jpg"
-  alt="Marriage Consultation Hero"
-  fill
-  priority
-  className="absolute inset-0 object-center"
-/>
+<section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] 
+  h-[420px] md:h-[560px] overflow-hidden rounded-none shadow-sm">
 
-  {/* Hero Content */}
+  {/* Background Image */}
+  <Image
+    src="/cuteGirl1.jpg"
+    alt="Marriage Consultation Hero"
+    fill
+    priority
+    sizes="100vw"
+    className="object-cover object-center md:object-[50%_35%]"
+  />
+
+  {/* Soft overlay */}
+  <div className="absolute inset-0 " />
+
+  {/* Optional content */}
+  <div className="relative z-10 h-full flex items-center px-6 md:px-16">
+    <div className="max-w-xl text-white">
+
+    </div>
+  </div>
 
 </section>
 
@@ -372,7 +383,7 @@ export default function Home() {
     {/* Heading */}
     <div className="text-center mb-8">
       <span className="text-sm font-black tracking-[0.3em] uppercase text-rose-500">
-        FOR HIGH-SPEC WOMEN
+        FOR WOMEN
       </span>
 
       <h2 className="mt-3 text-3xl md:text-5xl font-black text-gray-900 leading-tight">
@@ -429,17 +440,18 @@ export default function Home() {
         戦略的に磨き上げませんか？
       </p>
 
-      {/* CTA */}
-      <div className="pt-2 flex justify-center">
         <Link
-          href="/three-respects"
-          className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-300 to-purple-700 px-7 py-4 text-base md:text-lg font-black text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
-        >
-          🔘 医師・エグゼクティブに愛される
-          <br className="md:hidden" />
+          href="/advantages#linkId1">
+      <div className="rounded-3xl bg-gradient-to-r from-pink-500 to-purple-700 p-2 text-center text-white shadow-lg">
+        <p className="mt-2 text-xl md:text-2xl font-black">
+          医師・エグゼクティブに愛される
+        </p>
+
+        <p className="mt-2 text-lg md:text-xl font-semibold">
           『3つのリスペクト』の正体 ＞
-        </Link>
+        </p>
       </div>
+      </Link>
 
     </div>
   </div>
@@ -1518,7 +1530,7 @@ export default function Home() {
       {/* Header */}
       <div className="text-center space-y-1 mb-10">
         <span className="text-xs font-bold tracking-wider text-rose-400 uppercase block md:text-sm">
-          Message
+        Message
         </span>
 
         <h2 className="text-xl font-black text-gray-800 sm:text-2xl md:text-3xl leading-snug">

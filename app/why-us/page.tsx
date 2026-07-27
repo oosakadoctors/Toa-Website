@@ -38,11 +38,11 @@ export default function ReasonsPage() {
           PAGETOP HERO SECTION
           ============================================================ */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 pt-12 pb-10 text-center">
-        <div className="inline-flex items-center gap-1.5 bg-[#E6A2B3]/10 text-[#D9889D] px-4 py-2 rounded-full text-xs font-black tracking-widest uppercase mb-4">
+        <div className="inline-flex items-center gap-1.5 bg-[#E6A2B3]/10 text-[#D9889D] px-4 py-2 rounded-full text- font-black tracking-widest uppercase mb-4">
           <Sparkles className="w-3.5 h-3.5 animate-pulse" />
-          <span>Why Choose Us</span>
+          <span className="text-[10px]">Why Choose Us</span>
         </div>
-        <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
           大阪の結婚相談所なら<span className="text-[#D9889D]"> <br/>［大阪梅田ドクターズ結婚相談所］</span>が選ばれる6つの<br/>理由
           <span className="block text-base sm:text-xl font-bold text-gray-500 mt-3 tracking-normal">
             現役医師監修 × 仲人歴20年ベテランがもたらすロジカル成婚戦略
