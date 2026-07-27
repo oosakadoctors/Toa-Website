@@ -535,11 +535,14 @@ export default function Home() {
         最短距離で伴走いたします。
       </p>
 
-      <div className="rounded-3xl bg-gradient-to-r from-rose-500 to-pink-500 p-2 text-center text-white shadow-lg">
-        <p className="mt-2 text-xl md:text-2xl font-black">
-          幸せな未来のために一緒に頑張りましょう！
-        </p>
-      </div>
+<Link
+  href="/support#pageId1"
+  className="group block rounded-3xl bg-gradient-to-r from-rose-500 to-pink-500 p-2 text-center text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:brightness-105"
+>
+  <p className="mt-2 text-xl font-black md:text-2xl">
+    幸せな未来のために一緒に頑張りましょう！
+  </p>
+</Link>
 
     </div>
   </div>

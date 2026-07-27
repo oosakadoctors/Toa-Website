@@ -285,7 +285,7 @@ export default function SupportPage() {
         
         {/* SECTION HEADER */}
         <div className="text-center mb-4">
-          <span className="text-sm font-black text-[#D9889D] uppercase tracking-widest block">Solution Framework 02</span>
+          <span id="pageId1" className="text-sm font-black text-[#D9889D] uppercase tracking-widest block">Solution Framework 02</span>
           <h2 className="text-xl sm:text-2xl font-black text-gray-900 tracking-tight leading-relaxed">
             検索画面から選ぶより「身元も人柄も100%わかっている安心な人」を紹介してほしいあなたへ
           </h2>
