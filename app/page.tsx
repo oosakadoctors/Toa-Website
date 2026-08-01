@@ -571,7 +571,7 @@ export default function Home() {
     <div className="mb-6">
       <Image
         src="/man2.jpg"
-        alt="大阪梅田のハイクラス婚活で出会える誠実で笑顔が可愛い理想の男性のイメージ写"
+        alt="大阪梅田のハイクラス婚活で出会える誠実で笑顔が可愛い理想の男性のイメージ写真"
           width={1200}
           height={800}
           className="w-full rounded-3xl object-cover shadow-lg"
@@ -747,7 +747,7 @@ export default function Home() {
       <div className="relative ">
         <Image
           src={mensMarriage}
-          alt="男性の婚活"
+          alt="男のスピード婚活のイメージとしてサッカースタジアムの客席でユニフォームを着て笑顔を見せる可愛い女性"
           width={1200}
           height={800}
           className="w-full rounded-3xl object-cover shadow-lg"
@@ -970,7 +970,7 @@ export default function Home() {
       <div className="relative w-full">
         <Image
           src={woman3}
-          alt="恋愛初心者サポート"
+          alt="恋愛ビギナー向け婚活のイメージとして赤い服を着て一輪の赤い花を手に持ち笑顔を見せる若い女性"
           width={1200}
           height={800}
           className="w-full rounded-3xl object-cover shadow-lg"
@@ -1203,7 +1203,7 @@ export default function Home() {
       <div className="relative w-full">
         <Image
           src={ceremony}
-          alt="幸せな結婚"
+          alt="親御様向け婚活のイメージとして結婚式でウェディングドレス姿の娘を見つめる黒留袖と紋付羽織袴姿の父親と母親"
           width={1200}
           height={800}
           className="w-full rounded-3xl object-cover shadow-lg"
@@ -1399,7 +1399,7 @@ export default function Home() {
           <span className="float-left mr-4 mb-2 w-28 sm:w-32 md:w-40">
             <Image
               src={femaleAdvisor}
-              alt="女性アドバイザー"
+              alt="心の保健室サポートのイメージとして白衣を着てデスクでペンを持ち優しく微笑む女性医師のイラスト"
               className="rounded-xl shadow-md object-cover w-full h-auto"
               priority
             />
@@ -1462,7 +1462,7 @@ export default function Home() {
           <span className="float-left mr-4 mb-2 w-28 sm:w-32 md:w-40">
             <Image
               src={maleAdvisor}
-              alt="男性カウンセラー"
+              alt="ベテランカウンセラーの想いを伝えるイメージとしてスーツを着てノートとペンを持ち優しく微笑む男性のイラスト"
               className="rounded-xl shadow-md object-cover w-full h-auto"
               priority
             />
@@ -1799,7 +1799,7 @@ export default function Home() {
   <div className="max-w-5xl mx-auto mb-10">
     <Image
       src="/team1.jpg"
-      alt="大阪梅田ドクターズ結婚相談所 チーム"
+      alt="2名1組の丁寧な成婚サポートを表現するスーツ姿で笑顔でガッツポーズをする男性と女性のイメージ写真"
           width={1200}
           height={800}
           className="w-full rounded-3xl object-cover shadow-lg"
@@ -1847,7 +1847,7 @@ export default function Home() {
   <div className="relative w-full h-[280px] md:h-[420px] rounded-2xl overflow-hidden shadow-md mb-8">
     <Image
       src="/dress1.jpg"
-      alt="デートにふさわしい服装の提案"
+      alt="お見合いや出会いフェーズのサポートとして女性会員にコーディネートの提案や会話レッスンを行うカウンセラーのイメージ写真"
       fill
       className="object-cover object-center"
       sizes="(max-width: 768px) 100vw, 800px"
@@ -1890,7 +1890,7 @@ export default function Home() {
   <div className="relative w-full h-[280px] md:h-[420px] rounded-2xl overflow-hidden shadow-md mb-8">
     <Image
       src="/couple2.jpg"
-      alt="真剣交際をサポートするカップル"
+      alt="仮交際や真剣交際中のデートのイメージとしてカフェで笑顔で楽しそうに会話をする若い男女のイメージ写真"
       fill
       className="object-cover object-center"
       sizes="(max-width: 768px) 100vw, 800px"
@@ -1921,7 +1921,7 @@ export default function Home() {
   <div className="relative w-full h-[280px] md:h-[420px] rounded-2xl overflow-hidden shadow-md mb-8">
     <Image
       src="/flowers1.jpg"
-      alt="プロポーズと成婚を祝う花"
+      alt="夜景の見えるレストランでプロポーズする男性と喜ぶ女性（大阪梅田ドクターズ結婚相談所の成婚ステップ説明）"
       fill
       className="object-cover object-center"
       sizes="(max-width: 768px) 100vw, 800px"

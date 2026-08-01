@@ -46,6 +46,8 @@ export default function PremiumNavbar() {
       links: [
         { name: "大阪梅田ドクターズ結婚相談所", href: "/" },
         { name: "ドクターズ結婚相談所が選ばれる理由", href: "/why-us" },
+        { name: "大阪梅田ドクターズ結婚相談所の会員と婚活環境について", href: "/elite-circle" },
+        { name: "メインカウンセラーのメッセージ", href: "/main-counselor" },
       ],
     },
     {
@@ -143,7 +145,7 @@ export default function PremiumNavbar() {
             width={50}
             height={50}
             priority={true}
-            alt="Doctor Consultation Logo"
+            alt="大阪梅田ドクターズ結婚相談所　ロゴ"
             className="rounded-full object-cover bg-white/10 flex-shrink-0 ring-1 ring-purple-300/30 shadow-sm"
           />
           <div className="text-left md:text-center">
