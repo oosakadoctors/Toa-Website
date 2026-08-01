@@ -1,503 +1,339 @@
-import React from "react";
-import Link from "next/link";
-import {
-  CheckCircle2,
-  Heart,
-  Sparkles,
-  ArrowRight,
-} from "lucide-react";
+import { Metadata } from "next";
+import femaleAdvisor from "@/public/femaleAdvisor.jpg";
+import Image from "next/image";
+import { Sparkles, CheckCircle2, UserCheck , Heart , ShieldCheck   } from "lucide-react"; // Make sure lucide-react is installed, or replace with your preferred icon
 
-import type { Metadata } from "next";
-
-// ==========================================
-// 1. ページ全体のSEO用メタデータ設定 (Server Side)
-// ==========================================
 export const metadata: Metadata = {
-  title: "最高の男性が最後に惹かれる高いEQ | 大阪梅田ドクターズ結婚相談所",
+  title: "婚活でいい人が減った？」と思い始めた30代のあなたへ｜大阪梅田ドクターズ結婚相談所が効率的な理由",
   description:
-    "大阪梅田で大人の優しさと可愛い笑顔を持つ理想の男性と出会いませんか？仕事と両立しながら最速成婚が叶う理由を解説。スマートな男性が最後に惹かれる「高いEQ（心の知能指数）」の秘密と、恋する楽しさを忘れない独自のサポートをお伝えします。",
-
-  keywords: [
-    "大阪梅田 結婚相談所",
-    "スマート婚活",
-    "30代 婚活",
-    "高いEQ",
-    "心の知能指数",
-    "スピード成婚",
-    "医師監修 結婚相談所",
-    "梅田 お見合い",
-  ],
-
-  authors: [
-    {
-      name: "現役女医（大阪梅田ドクターズ結婚相談所監修）",
-    },
-    {
-      name: "ベテランカウンセラー",
-    },
-  ],
-
+    " 「大阪梅田で確実な未来への投資として婚活を始める男女へ。医師・経営者・公務員などのハイステータス層や、女医の人脈を活かした、育ちの良い男女が集まる大阪梅田ドクターズ結婚相談所への入会はスピード婚への効率的な選択肢の一つであることを解説",
   alternates: {
-    canonical: "/ideal-man",
-  },
-
-  openGraph: {
-    title: "最高の男性が最後に惹かれる高いEQ",
-    description:
-      "スマートな男性が最後に選ぶ女性の共通点は「高いEQ」。大人の包容力と可愛い笑顔を持つ理想のパートナーと出会うための婚活戦略。",
-    type: "article",
-    locale: "ja_JP",
-    siteName: "大阪梅田ドクターズ結婚相談所",
-    url: "/ideal-man",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "最高の男性が最後に惹かれる高いEQ",
-    description:
-      "仕事と両立しながら最速成婚が叶う理由。スマートな男性が最後に惹かれる「高いEQ」の秘密を解説。",
+    canonical: "/consider",
   },
 };
 
-// ==========================================
-// 2. メインコンポーネント
-// ==========================================
-export default function IdealManPage() {
-
-  // 構造化データ (JSON-LD) の定義 - 記事の内容に完全一致
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'MedicalWebPage',
-    'headline': '笑顔の可愛い最高の男性が惹かれる高いＥＱ',
-    'description': '大阪梅田で大人の優しさと可愛い笑顔を持つ理想の男性と出会うために。スマートな男性が最後に惹かれる「高いEQ（心の知能指数）」の秘密と、30代女性が仕事と両立しながら最速成婚を叶えるための科学的アプローチ。',
-    'datePublished': '2026-07-20T12:00:00+09:00',
-    'author': [
-      {
-        '@type': 'Person',
-        'name': '現役女医（大阪梅田ドクターズ結婚相談所監修）',
-        'jobTitle': 'Medical Doctor'
-      },
-      {
-        '@type': 'Person',
-        'name': 'ベテランカウンセラー',
-        'jobTitle': 'Senior Marriage Counselor'
-      }
-    ],
-    'publisher': {
-      '@type': 'Organization',
-      'name': '大阪梅田ドクターズ結婚相談所',
-      'logo': {
-        '@type': 'ImageObject',
-        'url': 'https://your-domain.com/logo.png' // 必要に応じて本番環境のロゴURLに差し替えてください
-      }
-    }
-  };
-
+export default function MarriageAdvicePage() {
   return (
-    <div>
-      {/* 構造化データをHEADまたはBody内に安全に注入 */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+    <main className="bg-[#faf8f5] min-h-screen">
+      
+      {/* ============================================================
+          HERO BANNER HEADLINE (Middle-Ground Magenta-Rose Gradient)
+          ============================================================ */}
+<section className="relative w-full py-12 px-4 sm:px-6 lg:px-8 border-b border-rose-200/50 overflow-hidden"
+  style={{ 
+    background: 'linear-gradient(135deg, rgba(255, 0, 127, 0.25) 0%, rgba(255, 102, 178, 0.2) 50%, rgba(255, 166, 201, 0.25) 100%)' 
+  }}
+>
+  {/* Ambient Radiant Glows */}
+  <div className="absolute top-[-20%] left-[-10%] w-72 h-72 bg-[#FF007F]/15 rounded-full blur-3xl pointer-events-none" />
+  <div className="absolute bottom-[-20%] right-[-10%] w-72 h-72 bg-[#FFA6C9]/20 rounded-full blur-3xl pointer-events-none" />
 
-      <section className="border-b border-pink-100 bg-gradient-to-b from-white to-[#FFF6F8]">
-        <div className="mx-auto px-5 py-6 sm:py-16 space-y-2">
-
-          <span className="inline-block text-xs font-black tracking-widest uppercase text-black-500 mb-3">
-            🩷30代女性のスマート婚活💙
-          </span>
-
-          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
-            笑顔の可愛い最高の男性が惹かれる高いＥＱ
-          </h1>
-
-          <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
-
-            <p>
-              「女医×20年のベテラン」が、あなたの幸せな結婚まで完全伴走。
-            </p>
-
-            <br />
-
-            <p className="font-black text-gray-900">
-              【チェックリスト】（当てはまるものはありますか？）
-            </p>
-
-            <p>☑️ 30歳を迎えて、そろそろ真剣に将来を考え始めた</p>
-
-            <p>☑️ 身元が確かで、嘘のない「誠実で優しい人」と出会いたい</p>
-
-            <p>☑️ お互いを尊敬できる、少し格上の男性と温かい家庭を築きたい</p>
-
-            <p>☑️ ドクターズ相談所は敷居が高そうだけど、実はちょっと気になる</p>
-
-            <p>☑️ 恋愛経験が少なめだから、プロにしっかりサポートしてほしい</p>
-
-            <br />
-
-            <h2 className="font-black text-2xl text-gray-900">
-              「大人のスマートな優しさに、少年のような可愛い笑顔。あなたがずっと探していた『最高の男性』に出会いませんか？」
-            </h2>
-
-            <p>
-              仕事もプライベートも、自分なりに頑張ってきた30代女性のあなたへ。
-            </p>
-
-            <p>
-              「一緒にいて心が満たされ、お互いを心からリスペクトし合えるスマートな男性」こそが、あなたが本当に隣にいてほしい理想のパートナーではないでしょうか？
-            </p>
-
-            <p>
-              スマートなエスコート力と少年のようなピュアな笑顔を兼ね備えた魅力的な男性との出会いを、大阪梅田ドクターズ結婚相談所が全力でプロデュースします！
-            </p>
-
-            <p>
-              当相談所には、経済的にも精神的にも自立し、大人の包容力を持ちながらも、パートナーの前ではチャーミングな一面を見せてくれる上質な男性たちが集まっています。
-            </p>
-
-            <br />
-
-            <p className="font-black text-pink-600 text-lg">
-              【あなたがときめくスマートな男性】
-            </p>
-
-            <p>
-              <span className="font-black text-gray-900">
-                💙スマートなエスコートと、大人の余裕
-              </span>
-              <br />
-              お見合いの席や梅田でのデートでも、さりげなくリードしてくれるスマートさを持っています。お店の予約から歩くペースの配慮まで、あなたのことを一番に考えた心地よい空間を作ってくれる。「大切にされるって、こんなに安心できるんだ」という確かな幸福感を、最初の1秒から本気で実感させてくれる男性です。
-            </p>
-
-            <br />
-
-            <p>
-              <span className="font-black text-gray-900">
-                💙ギャップにときめく！少年のような「愛され笑顔」
-              </span>
-              <br />
-              仕事中はバリバリ働くスマートなビジネスパーソン。だからこそ、あなたと目が合った瞬間や、美味しいものを食べた時に見せる「可愛い笑顔」のギャップに胸がキュンと高鳴ります。あなただけに飾らない素直な表情を見せてくれるからこそ、あなたも自分を取り繕わずに、ありのままの自分でいられます。
-            </p>
-
-            <br />
-
-            <p>
-              <span className="font-black text-gray-900">
-                💙対等に寄り添い、お互いを高め合える包容力
-              </span>
-              <br />
-              30代女性のキャリアやライフスタイルを誰よりも応援し、リスペクトしてくれます。仕事で疲れた日には「頑張ってて偉いね」と優しく話を聴いてくれる。頼りがいがあるのに決して威張らない、その本物の知性と精神的スマートさに、生涯を共にする「無限の安心感」が手に入ります。
-            </p>
-
-          </div>
-
-        </div>
-      </section>
-
-      <section className="mx-auto px-0 sm:px-2 lg:px-10 py-2">
-        <div className="rounded-3xl border border-stone-200 bg-gradient-to-b from-white to-[#FFFCF7] shadow-sm p-6 sm:p-10">
-          <div className="text-center mb-8">
-            <span className="text-xs font-black tracking-widest uppercase text-amber-600 block">
-              For Women Around 30
-            </span>
-            <h2 className="text-xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
-              30歳という大切な節目を迎えたあなたへ
-            </h2>
-          </div>
-
-          <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
-            <p>
-              30歳という大切な節目を迎え、これからの人生をともに歩むパートナーを探し始めたあなたへ。
-            </p>
-            <p className="font-black text-gray-900">
-              「誰もが羨むような特別な結婚でなくていい。」
-            </p>
-            <p>
-              けれど、お互いを尊敬できて、少しだけリードしてくれる誠実な「いい人」に出会いたい。
-            </p>
-            <p className="font-black text-gray-900">
-              「一生に一度の結婚だから、自分の&quot;好き&quot;という気持ちにも、お相手の誠実さにも妥協したくない。」
-            </p>
-            <p>
-              その想いは、自分を大切にし、人生を質の高いものにしていきたいという、大人の女性としての素敵な考えです。
-            </p>
-            <p>
-              「ドクターズ結婚相談所」という名前に、最初は少し敷居が高いと感じるかもしれません。
-            </p>
-            <p>
-              正式にはどうぞ安心してください。
-            </p>
-            <p>
-              現役女医と、大阪で20年間たくさんの幸せなご縁を繋いできたベテランカウンセラーだからこそ、自信をもってあなたへお伝えできることがあります。
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto px-0 sm:px-2 lg:px-10 py-2">
-        <div className="rounded-3xl border border-pink-100 bg-white shadow-sm p-6 sm:p-10">
-          <span className="text-xs font-black tracking-widest uppercase text-pink-500 block mb-3">
-            Relationship Psychology
-          </span>
-
-          <h2 className="text-xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
-            素敵な男性が最後に惹かれる
-            「高いEQ（心の知能指数）」とは？
-          </h2>
-
-          <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full mt-8">
-            <p>
-              本当に魅力的な男性たちが結婚相手に求めるものは、華やかな経歴や外見だけではありません。
-            </p>
-            <p>
-              彼らが何より大切にしているのは、女性の「EQ（心の知能指数）」です。
-            </p>
-            <p>
-              EQとは、自分の感情を心地よくコントロールし、お相手の気持ちに寄り添いながら温かい関係を育む力。
-            </p>
-            <p className="font-black text-pink-600">
-              つまり「大人の思いやりのセンス」です。
-            </p>
-            <p>
-              日々責任ある仕事に向き合っている男性だからこそ、
-              「この人とはお互いを思いやれる」と感じられる女性に強く惹かれます。
-            </p>
-            <p>
-              私たちは、あなた本来の心の豊かさや素逆な美しさを、
-              お相手に「この人とずっと一緒にいたい」と思っていただける魅力へと磨き上げます。
-            </p>
-          </div>
-
-          {/* EQ Link */}
-          <div className="mt-8 border-t border-pink-100 pt-6">
-            <Link
-              href="/EQ"
-              className="group flex items-center justify-between rounded-2xl border border-pink-200 bg-gradient-to-r from-pink-50 to-white px-5 py-4 transition-all duration-300 hover:-translate-y-1 hover:border-pink-400 hover:shadow-md"
-            >
-              <div>
-                <p className="text-sm font-bold text-pink-600">
-                  さらに詳しく知る
-                </p>
-                <p className="mt-1 text-base font-black text-gray-900">
-                  婚活・結婚生活に必要な高いEQ 
-                </p>
-              </div>
-              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-pink-500 text-white font-bold transition-transform group-hover:translate-x-1">
-                →
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto px-0 sm:px-2 lg:px-10 py-2">
-        <div className="rounded-3xl border border-sky-100 bg-gradient-to-b from-white to-sky-50 shadow-sm p-6 sm:p-10">
-          <span className="text-xs font-black tracking-widest uppercase text-sky-600 block mb-3">
-            Our Strengths
-          </span>
-
-          <h2 className="text-xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
-            【私たちの得意分野】
-            <br />
-            「選ばれるEQ」を磨き上げる2つのアプローチ
-          </h2>
-
-          <div className="mt-10 grid gap-8 lg:grid-cols-2">
-            <div className="rounded-2xl bg-white border border-sky-100 p-6">
-              <h3 className="text-lg sm:text-2xl font-black text-gray-900 mb-4">
-                👩‍⚕️ 現役女医のプロフェッショナルな視点
-              </h3>
-              <div className="space-y-2 text-gray-800 leading-relaxed font-medium">
-                <p>
-                  医師という仕事は、高度なEQが求められる職業です。
-                </p>
-                <p>
-                  現役女医だからこそ、自立した素敵な男性たちが心を開くEQのバランスを誰よりも理解しています。
-                </p>
-                <p>
-                  あなた本来の魅力を、男性に自然と伝わる洗練された魅力へ育てていきます。
-                </p>
-              </div>
-            </div>
-
-            <div className="rounded-2xl bg-white border border-pink-100 p-6">
-              <h3 className="text-lg sm:text-2xl font-black text-gray-900 mb-4">
-                🌸 20年のベテランカウンセラー
-              </h3>
-              <div className="space-y-2 text-gray-800 leading-relaxed font-medium">
-                <p>
-                  20年間で数多くの成婚を支えてきた経験から、あなた自身も気づいていない魅力を見つけ出します。
-                </p>
-                <p>
-                  女医のロジカルな分析と、ベテランカウンセラーの温かい伴走。
-                </p>
-                <p>
-                  その二つを組み合わせ、あなたの魅力を最高の形でお相手へ届けます。
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-gradient-to-b from-[#FFFDF9] to-[#FFF7F2] py-4 sm:py-8">
-        <div className="mx-auto px-0 sm:px-2 lg:px-10">
-          <div className="rounded-3xl border border-amber-100 bg-white shadow-sm p-6 sm:p-10">
-            <span className="inline-block text-xs font-black tracking-widest uppercase text-amber-600 mb-3">
-              Why Doctors Matchmaking?
-            </span>
-
-            <h2 className="text-xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
-              【大阪梅田ドクターズ結婚相談所】
-              <br />
-              だかこそ、理想のスマート婚が叶う理由
-            </h2>
-
-            <div className="mt-8 space-y-8">
-              {/* ① */}
-              <div className="rounded-2xl border border-amber-100 bg-amber-50/60 p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-500 text-white font-black">
-                    ①
-                  </div>
-                  <h3 className="text-lg sm:text-2xl font-black text-gray-900">
-                    「優しさと自立」を兼ね備えた男性陣
-                  </h3>
-                </div>
-                <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
-                  <p>
-                    当相談所には、医師やベテランカウンセラーの人脈を生かして、医師をはじめとする専門職や、ビジネスの第一線で活躍するスマートな男性が多く在籍しています。
-                  </p>
-                  <p>
-                    彼らは日頃から責任ある立場にいるからこそ、大切なパートナーへのリスペクトを忘れず、結婚に対しても非常に誠実で前向きです。
-                  </p>
-                </div>
-              </div>
-
-              {/* ② */}
-              <div className="rounded-2xl border border-rose-100 bg-rose-50/60 p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-rose-500 text-white font-black">
-                    ②
-                  </div>
-                  <h3 className="text-lg sm:text-2xl font-black text-gray-900">
-                    女性の「私らしさ」を大切にするオーダーメイド婚活
-                  </h3>
-                </div>
-                <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
-                  <p>
-                    「仕事を続けたい」「お互いのライフスタイルを尊重したい」といった30代女性のリアルな希望を、私たちは徹底的に応援します。
-                  </p>
-                  <p>
-                    梅田駅すぐの好立地で、お仕事帰りの相談もスムーズ。あなたの価値観にぴったり合う「未来の旦那様」をプロのカウンセラーが厳選してご紹介します。
-                  </p>
-                </div>
-              </div>
-
-              {/* ③ */}
-              <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-sky-500 text-white font-black">
-                    ③
-                  </div>
-                  <h3 className="text-lg sm:text-2xl font-black text-gray-900">
-                    恋する楽しさを忘れない「最速成婚ストーリー」
-                  </h3>
-                </div>
-                <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
-                  <p>
-                    条件だけのマッチングではありません。
-                  </p>
-                  <p>
-                    お互いに「スマートな振る舞い」と「可愛い笑顔」に惹かれ合い、自然と温かい結婚生活へと繋がるよう、交際中の細かな悩みまで二人三脚で徹底サポートします。
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto px-0 sm:px-2 lg:px-10 py-2">
-        <div className="rounded-3xl border border-amber-100 bg-gradient-to-b from-[#FFFDF8] to-[#FFF8EE] shadow-sm p-6 sm:p-10">
-          <div className="text-center">
-            <span className="text-xs font-black tracking-widest uppercase text-amber-600 block mb-3">
-              Your Future Starts Today
-            </span>
-            <h2 className="text-xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
-              30歳のいま、
-              妥協のない最高のご縁を。
-            </h2>
-          </div>
-
-          <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full mt-8">
-            <p>
-              婚活市場において30歳という年齢は、大人の品格とみずみずしさを兼ね備えた、最も美しく価値のあるタイミングです。
-            </p>
-            <p>
-              だからこそ、この貴重な時間を安心できる最高の環境でスタートさせてみませんか？
-            </p>
-            <p className="font-black text-amber-700">
-              「一歩、話を聞いてみよう。」
-            </p>
-            <p>
-              その前向きな選択が、1年後に「この人と結婚できて本当によかった」と思える未来へ繋がっています。
-            </p>
-            <p>
-              お仕事帰りやお買い物ついでに、美味しいお茶を飲みながら、あなたの理想の未来をぜひ聞かせてください。
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto px-0 sm:px-2 lg:px-10 py-2">
-        <div className="rounded-3xl border border-green-100 bg-gradient-to-b from-white to-green-50 shadow-sm p-6 sm:p-10">
-          <div className="text-center mb-8">
-            <span className="text-xs font-black tracking-widest uppercase text-green-600 block">
-              LINE相談
-            </span>
-            <h2 className="text-xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
-              まずはLINEで、ほんの少しお話ししてみませんか？
-            </h2>
-          </div>
-
-          <div className="space-y-4 text-gray-800 leading-relaxed font-medium">
-            <p className="font-black">
-              📱 たとえば、このようなご相談をいただいています
-            </p>
-
-            <div className="rounded-2xl bg-white border border-green-100 p-4">
-              💬 「私の年齢（30代前半）だと、実際どんな男性からお申し込みがありますか？」
-            </div>
-
-            <div className="rounded-2xl bg-white border border-green-100 p-4">
-              💬 「恋愛経験が少ないのですが、本当に大丈夫でしょうか？」
-            </div>
-
-            <div className="rounded-2xl bg-white border border-green-100 p-4">
-              💬 「他の相談所ではうまくいかなかったのですが、何が違いますか？」
-            </div>
-
-            <div className="rounded-2xl bg-white border border-green-100 p-4">
-              💬 「忙しくて梅田へ行けない日でも婚活できますか？」
-            </div>
-
-            <div className="rounded-2xl bg-white border border-green-100 p-4">
-              💬 「最初から女医の先生やベテランカウンセラーに担当してもらえますか？」
-            </div>
-
-            <div className="pt-6 space-y-2 text-gray-800 leading-relaxed font-medium">
-              <p>
-                どんなに小さな不安でも、まとまっていなくても大丈夫です。
-              </p>
-              <p className="font-black text-green-700 text-lg">
-                まずはあなたのスマホ📱から【公式LINE無料相談】へお気軽にどうぞ。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div className="relative max-w-4xl mx-auto flex flex-col items-center text-center space-y-4">
+    
+    {/* Badge */}
+    <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm border border-[#FF007F]/30 text-[#D9006C] px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase shadow-sm">
+      <Sparkles className="w-3.5 h-3.5 text-[#FF007F] shrink-0" />
+      <span>30代女性のスマート婚活</span>
     </div>
+    
+    {/* Main Headline (Pure Black with Strong White Glow Halo) */}
+    <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-black leading-snug sm:leading-tight tracking-tight max-w-3xl pt-1 [text-shadow:_0_0_8px_#ffffff,_0_0_16px_#ffffff,_0_0_24px_rgba(255,255,255,0.8)]">
+      笑顔の可愛い最高の男性が惹かれる高いＥＱ
+    </h1>
+    
+    {/* Subtitle / Doctor Tagline */}
+    <p className="text-sm sm:text-base font-bold text-gray-800 pt-1 [text-shadow:_0_0_8px_#ffffff]">
+      「女医×20年のベテラン」が、あなたの幸せな結婚まで完全伴走。
+    </p>
+
+    {/* Matching Gradient Divider Bar */}
+    <div className="flex items-center justify-center gap-2 pt-1 pb-4">
+      <div className="w-1.5 h-1.5 rounded-full bg-[#FF007F]" />
+      <div 
+        className="w-24 h-1 rounded-full shadow-xs" 
+        style={{ background: 'linear-gradient(90deg, #FF007F 0%, #FF66B2 50%, #FFA6C9 100%)' }}
+      />
+      <div className="w-1.5 h-1.5 rounded-full bg-[#FFA6C9]" />
+    </div>
+
+    {/* Checklist Box */}
+    <div className="w-full text-left rounded-2xl border border-rose-200/60 bg-white/85 backdrop-blur-md p-6 sm:p-8 shadow-sm">
+      <p className="text-sm sm:text-base font-black text-[#D9006C] uppercase tracking-wider mb-4 flex items-center gap-2">
+        <CheckCircle2 className="w-5 h-5 text-[#FF007F]" />
+        【チェックリスト】（当てはまるものはありますか？）
+      </p>
+      <ul className="grid gap-3 sm:gap-4 text-sm sm:text-base text-gray-800 font-medium">
+        {[
+          "30歳を迎えて、そろそろ真剣に将来を考え始めた",
+          "身元が確かで、嘘のない「誠実で優しい人」と出会いたい",
+          "お互いを尊敬できる、少し格上の男性と温かい家庭を築きたい",
+          "ドクターズ相談所は敷居が高そうだけど、実はちょっと気になる",
+          "恋愛経験が少なめだから、プロにしっかりサポートしてほしい",
+        ].map((item, idx) => (
+          <li key={idx} className="flex items-start gap-3 group">
+            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#FF007F]/10 text-[#FF007F] font-black text-xs border border-[#FF007F]/20 group-hover:bg-[#FF007F] group-hover:text-white transition-colors">
+              ✓
+            </span>
+            <span className="pt-0.5 leading-snug">{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    {/* Section Callout Card */}
+    <div className="w-full text-left mt-6 rounded-3xl border border-rose-200/80 bg-white/90 backdrop-blur-md p-6 sm:p-10 shadow-md">
+      <h2 className="text-lg sm:text-2xl font-black text-gray-900 leading-snug">
+        「大人のスマートな優しさに、少年のような可愛い笑顔。<br className="hidden sm:inline" />
+        あなたがずっと探していた『最高の男性』に出会いませんか？」
+      </h2>
+
+      <div className="mt-6 space-y-4 text-sm sm:text-base text-gray-700 leading-relaxed font-medium">
+        <p>
+          仕事もプライベートも、自分なりに頑張ってきた30代女性のあなたへ。
+        </p>
+        <p>
+          「一緒にいて心が満たされ、お互いを心からリスペクトし合えるスマートな男性」こそが、あなたが本当に隣にいてほしい理想のパートナーではないでしょうか？
+        </p>
+        <p>
+          スマートなエスコート力と少年のようなピュアな笑顔を兼ね備えた魅力的な男性との出会いを、大阪梅田ドクターズ結婚相談所が全力でプロデュースします！
+        </p>
+        <p className="text-gray-900 font-bold">
+          当相談所には、経済的にも精神的にも自立し、大人の包容力を持ちながらも、パートナーの前ではチャーミングな一面を見せてくれる上質な男性たちが集まっています。
+        </p>
+      </div>
+
+      {/* Feature Cards Grid */}
+      <div className="mt-8 pt-8 border-t border-rose-100">
+        <p className="text-base sm:text-lg font-black text-[#D9006C] mb-6 flex items-center gap-2">
+          <Sparkles className="w-5 h-5 text-[#FF007F]" />
+          【あなたがときめくスマートな男性】
+        </p>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          
+          {/* Feature 1 */}
+          <div className="rounded-2xl border border-rose-100 bg-gradient-to-b from-white to-rose-50/50 p-5 shadow-xs">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="p-2 rounded-xl bg-sky-50 text-sky-600 border border-sky-100">
+                <UserCheck className="w-5 h-5" />
+              </div>
+              <h3 className="font-black text-base text-gray-900">
+                スマートなエスコートと大人余裕
+              </h3>
+            </div>
+            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              お見合いの席や梅田でのデートでも、さりげなくリード。お店の予約から歩くペースの配慮まで心地よい空間を作る。「大切にされる安心感」を最初の1秒から実感させてくれます。
+            </p>
+          </div>
+
+          {/* Feature 2 */}
+          <div className="rounded-2xl border border-rose-100 bg-gradient-to-b from-white to-pink-50/50 p-5 shadow-xs">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="p-2 rounded-xl bg-pink-50 text-pink-600 border border-pink-100">
+                <Heart className="w-5 h-5" />
+              </div>
+              <h3 className="font-black text-base text-gray-900">
+                少年のような「愛され笑顔」
+              </h3>
+            </div>
+            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              仕事中は頼もしいビジネスパーソン。だからこそ見せるキュートな笑顔のギャップに胸が高鳴ります。あなただけに素直な表情を見せるからこそ、ありのままの自分でいられます。
+            </p>
+          </div>
+
+          {/* Feature 3 */}
+          <div className="rounded-2xl border border-rose-100 bg-gradient-to-b from-white to-purple-50/50 p-5 shadow-xs">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="p-2 rounded-xl bg-purple-50 text-purple-600 border border-purple-100">
+                <ShieldCheck className="w-5 h-5" />
+              </div>
+              <h3 className="font-black text-base text-gray-900">
+                対等に寄り添う包容力
+              </h3>
+            </div>
+            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              30代女性のキャリアやライフスタイルを誰よりも応援。「頑張ってて偉いね」と優しく話を聴いてくれる知性と精神的スマートさに、生涯を共にする安心感を得られます。
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section className="w-full">
+      <div className="w-full max-w-4xl mx-auto my-1">
+        <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+          <Image
+            src="/umeda-highclass-kekkon-eq-male.jpg"
+            alt="高いEQと包容力を持つ誠実なエリート男性の笑顔。魅力的なハイクラス層から選ばれるための内面磨きを解説するイメージ"
+            fill
+            sizes="(max-width: 768px) 100vw, 800px"
+            priority={false}
+            className="object-cover"
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+          />
+        </div>
+      </div>
+    </section>
+      {/* Main Content Body */}
+      <div className="mx-auto max-w-3xl px-4 py-6">
+
+        {/* Intro Card (H2 & Main Text Section) */}
+        <section className="mt-5 rounded-2xl bg-white border border-pink-200 p-5 shadow-sm">
+
+          <h2 className="text-xl font-bold text-gray-900 leading-snug border-b border-pink-100 pb-3">
+            タイパ至上主義！30代の婚活に大阪・梅田の結婚相談所が最強に効率的な理由
+          </h2>
+
+          <div className="mt-5 space-y-4 text-[17px] leading-8 text-gray-700">
+
+            <h3 className="text-lg font-bold leading-8 text-gray-900">
+              20代の頃は普通に生活しているだけで「素敵だな」と思える人に出会えていたはず。なのに、30代になった途端、周りの素敵な人は、みんな「既婚者」になっている。
+            </h3>
+
+            <p>
+              マッチングアプリを開いても、ピンとくる人が全然いない。理想の人が周りにいない。
+              30代になると周りで結婚にベストな“いい人”が減っているのです。
+            </p>
+
+            <p>
+              ここで言う「いい人」とは、『優しくて、気が遣えて、清潔感があり、経済的にも精神的にも自立している人』です。こうした優秀な人たちは、その高いコミュニケーション能力と魅力ゆえに、学生時代や20代の職場、あるいはマッチングアプリの初期段階で、周囲の異性が絶対に放っておきません。結果として、彼達は30代を迎える前に「普通の自然な恋愛」を継続させ結婚し、婚活のフィールドからいなくなってしまうのです。
+            </p>
+
+            <p>
+              自然な出会いが減った30代が次に頼るのが「マッチングアプリ」ですが、アプリには「まだ結婚は考えていないけれど恋人は欲しい」「遊び目的」という結婚したくない理由がある人も一部紛れ込んでいます。
+            </p>
+
+            <p className="font-semibold text-pink-600">
+              安全に身元が保証された独身の素敵な人に出会いたい人は、結婚相談所に入るのは成婚への安全な選択肢を増やす方法の一つです。
+            </p>
+
+            <p>
+              一方、30代に残る素敵な男女が結婚相談所に一定数いるのはなぜだと思いますか？
+            </p>
+
+            <p>
+              30代の「いい人」は、職場でも責任あるポジションを任され、毎日とても忙しく働いています。そんな ハイスペック男性（高収入、上場企業勤務、専門職、経営者など）は、自分の強みを活かして結婚相談所で選ぶ側として育ちの良い理想のお相手をタイパ良く探しています。
+            </p>
+
+            <p>
+              収入に余裕があれば、結婚相談所への入会も敷居が低くなります。逆に個人情報や本人画像、写真を長くマッチングアプリでさらすのはデジタルタトゥーのリスクや立場上の問題があります。そういった理由から結婚相談所にたくさんのハイスペック男性が集まります。
+            </p>
+
+            <p>
+              バリバリ稼ぐ高年収女性や、大手企業・専門職の女性、そして品と美貌を備えた容姿端麗、才色兼備なハイスペック女性もまた、育ちの良さやキャリアを利用して「選ぶ側」として効率よく結婚相談所を利用しています。
+              「尊敬できる同職の男性」や「自分を認め支えあえる男性」に安全に内密に出会えるからです。
+            </p>
+
+            <p>
+              結婚相談所なら、「身元が保証された本気の候補者とお見合いができる。面倒なスケジュール調整は相談所に任せて、サクッとタイパよい婚活を始められます。
+              30代男女にとって時間は貴重です。タイパを重視し、結婚相談所にお金をかけて時間の節約をするのも賢い選択の一つかもしれません。
+            </p>
+
+          </div>
+
+        </section>
+
+        {/* Doctor Message Section */}
+        <section className="mt-8 rounded-2xl bg-white border border-pink-200 p-5 shadow-sm">
+
+          {/* Header */}
+          <div className="text-lg font-bold text-pink-600 border-b border-pink-100 pb-2">
+            🩷 女医からのメッセージ
+          </div>
+
+          {/* Letter */}
+          <div className="mt-5 text-[17px] leading-8 text-gray-700">
+
+            {/* Doctor Photo */}
+            <div className="float-left mr-5 mb-3 w-28 sm:w-32 md:w-40">
+              <Image
+                src={femaleAdvisor}
+                alt="女医"
+                className="rounded-xl shadow-md object-cover w-full h-auto"
+                priority
+              />
+            </div>
+
+            <p>
+
+              <span className="font-semibold text-gray-900">
+                まわりが結婚し始め、結婚を意識するアラサーのあなたへ。
+              </span>
+
+              <br /><br />
+
+              私たちが異性に出会う場所は、同じ学校、バイト先、アプリ、職場、知人、飲食店など、様々ですが、今思えば、大学一年生に付き合っていた人が1番ハイスペックで結婚に近かったということはよくあります。
+
+              <br /><br />
+
+              その後、街やマッチングアプリやSNSの出会いでは、年詐、職業詐称、年収詐称などのリスクもあふれ、周りのリアルな話でも、付き合っていると思っていたら既婚者だった、年齢や本名はウソだった、会社も違ったという話は恋愛あるあるです。
+
+              <br /><br />
+
+              <span className="font-semibold text-pink-700">
+                大阪梅田ドクターズ結婚相談所では、身元審査をクリアした人だけしかおらず、独身偽装や年収、経歴の詐称は不可能です。
+              </span>
+
+              <br /><br />
+
+              ハイスペック男女やご両親がしっかりされている育ちの良い男女は、「確実な未来」のためにお金を払う経済力があるので、初期費用や月会費を「安全の保証と、時間効率のための必要経費」と捉えています。そのため経済的・精神的に自立した魅力的な男女が大阪梅田ドクターズ結婚相談所にたくさん集まるのです。
+
+              <br /><br />
+
+              <span className="font-medium text-gray-900">
+                医師、医療関係者、経営者、公務員、弁護士、税理士などハイステータスの方々、高級ゴルフクラブの会員、オーナー専用会員制の集まりなど人脈をたくさん有しています。
+              </span>
+
+              <br /><br />
+
+              どの結婚相談所をえらぶかは自分の価値観や将来の家庭像、望みを反映していると思います。
+
+              <br /><br />
+
+              あなたも、今の職種、ステータスや地域や年齢の制限を超えて素敵な出会いが欲しくないでしょうか。
+              一般的に異性との出会いは少し地域や職業などににより制限や偏りがありますので、そんな制限を取払い、あなたがいるフィールドを越えた出会いを私たちはご提供します。
+
+              <br /><br />
+
+              普段は出会うことができない華やかな異性やハイスペックな男女に出会うチャンスが広がります。
+              今までの自分のフィールドを一段あげさらなる自己実現のチャンスとなるでしょう。
+
+              <br /><br />
+
+              大阪梅田ドクターズ結婚相談所では、自分の未来を変えたい、前向きにチャレンジしたい、そのためにプロの技を利用したいという、意識の高い会員様をお待ちしています。
+              私達の人脈と経験にてお手伝いさせていただきます。
+
+            </p>
+
+            <div className="clear-both" />
+
+          </div>
+
+        </section>
+
+        {/* Bottom CTA */}
+        <section className="mt-10 rounded-3xl bg-pink-600 p-6 text-center text-white">
+          
+          <h2 className="text-2xl font-bold">
+            素敵なお相手に巡り会いたいあなたへ。
+          </h2>
+
+          <p className="mt-3 text-pink-50 leading-7 text-[15px]">
+            ぜひ大阪梅田ドクターズ結婚相談所にいらしてください。
+          </p>
+
+          <button className="mt-6 w-full rounded-full bg-white py-3 text-base font-semibold text-pink-600 shadow-lg hover:bg-pink-50 transition-colors">
+            無料相談はこちら
+          </button>
+
+        </section>
+
+      </div>
+    </main>
   );
 }

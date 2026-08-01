@@ -29,24 +29,24 @@ export default function Home() {
       {/* --- HERO SECTION --- */}
       {/* Aspect-square on mobile keeps the space large enough to accommodate the bigger text comfortably */}
 {/* CHANGED: Lowered the height values to make the image length shorter vertically, keeping full viewport width */}
-<section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] 
-  h-[420px] md:h-[560px] overflow-hidden rounded-none shadow-sm">
+<section className="w-full aspect-[1/1] relative overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
 
   {/* Background Image */}
   <Image
     src="/cuteGirl1.jpg"
-    alt="Marriage Consultation Hero"
+    alt="大阪梅田近郊の緑豊かな屋外でデートを楽しむ笑顔の上質なワンピース姿の婚活女性"
     fill
-    priority
+    placeholder="blur"
+    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+    priority={true}
+    decoding="sync"
     sizes="100vw"
-    className="object-cover object-center md:object-[50%_35%]"
+    className="object-cover object-center md:object-[50%_35%] pointer-events-none select-none"
   />
 
-  {/* Soft overlay */}
-  <div className="absolute inset-0 " />
 
   {/* Optional content */}
-  <div className="relative z-10 h-full flex items-center px-6 md:px-16">
+  <div className="relative z-10 h-full max-w-7xl mx-auto flex items-center px-6 md:px-16">
     <div className="max-w-xl text-white">
 
     </div>
@@ -138,7 +138,7 @@ export default function Home() {
       <div className="w-[40%] flex-shrink-0">
         <Image
           src="/image3.jpg"
-          alt="現役女医とベテラン男性カウンセラー"
+          alt="結婚相談所のお見合いにふさわしい茶色のスーツを着て笑顔を見せる男性医師のイメージ"
           width={400}
           height={400}
           className="w-full aspect-square rounded-2xl object-cover shadow-lg"
@@ -200,7 +200,7 @@ export default function Home() {
       <div className="w-[40%] flex-shrink-0">
         <Image
           src="/man1.jpg"
-          alt="ハイクラスの出会い"
+          alt="結婚相談所のお見合いデートにふさわしい赤色のワンピースを着て微笑む若い女性のイメージ"
           width={400}
           height={400}
           className="w-full aspect-square rounded-2xl object-cover shadow-lg"
@@ -336,7 +336,7 @@ export default function Home() {
     <div className="md:float-right md:ml-8 mb-4 md:mb-2 w-full md:w-80">
       <Image
         src="/doctorSuit.jpg"
-        alt="婚活カウンセリング"
+        alt="大阪梅田のクリニックで首に聴診器をかけ笑顔でデスクに座るハイクラス婚活監修の女医"
         width={500}
         height={650}
         className="rounded-2xl object-cover shadow-md border border-gray-100"
@@ -400,7 +400,7 @@ export default function Home() {
       <div className="pt-2">
         <Image
           src="/man3.jpg"
-          alt="ハイスペックな男性との婚活"
+          alt="ハイスペック婚活のイメージとして白いシャツを着て爽やかな笑顔を見せるハイクラス男性"
           width={1200}
           height={800}
           className="w-full rounded-3xl object-cover shadow-lg"
@@ -477,7 +477,7 @@ export default function Home() {
     <div className="mb-6">
       <Image
         src="/doctors1.jpg"
-        alt="大阪梅田ドクターズ結婚相談所"
+        alt="大阪梅田のハクラス婚活でご紹介可能な白衣やスクラブを着た笑顔の若い医師・医療従事者の男女"
  
                   width={1200}
           height={800}
@@ -571,7 +571,7 @@ export default function Home() {
     <div className="mb-6">
       <Image
         src="/man2.jpg"
-        alt="誠実で笑顔が可愛い最高の男性との出会い"
+        alt="大阪梅田のハイクラス婚活で出会える誠実で笑顔が可愛い理想の男性のイメージ写"
           width={1200}
           height={800}
           className="w-full rounded-3xl object-cover shadow-lg"
@@ -2083,13 +2083,13 @@ export default function Home() {
       <p className="mt-2">
         大阪市、豊中市、北摂などにお住まいで、
         スマートにハイクラス婚活を進めたい方。
-      </p>
+    </p>
     </div>
 
     <div>
       <p className="font-bold text-gray-900">
         ✅ 医師やベテランカウンセラーのサポートを求める方
-      </p>
+    </p>
       <p className="mt-2">
         婚活の不安やストレスを、現役女医によるメンタルサポートで解消したい方。
         また、「結婚相談所 20年 カウンセラー 大阪」のプロに頼りたい方。

@@ -142,6 +142,7 @@ export default function PremiumNavbar() {
             src="/logo2.png"
             width={50}
             height={50}
+            priority={true}
             alt="Doctor Consultation Logo"
             className="rounded-full object-cover bg-white/10 flex-shrink-0 ring-1 ring-purple-300/30 shadow-sm"
           />
