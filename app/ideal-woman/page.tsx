@@ -41,7 +41,7 @@ export default function IdealManPage() {
               alt="男性婚活で出会う可愛い女性のイメージ写真"
               fill
               sizes="(max-width: 768px) 100vw, 800px"
-              priority={false}
+              priority={true}
               className="object-cover"
               placeholder="blur"
               blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
