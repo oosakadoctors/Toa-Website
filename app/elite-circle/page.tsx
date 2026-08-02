@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { 
   Users, 
   UserCheck, 
@@ -110,8 +111,56 @@ export default function EnvironmentPage() {
           </p>
         </div>
 
-        <hr className="border-rose-200 border-dashed my-8" />
+        <section className="w-full my-6">
+  {/* Section Heading */}
+  <div className="text-center mb-6">
+    <div className="inline-flex items-center gap-2 bg-orange-100/80 border border-orange-200/80 text-orange-950 px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase mb-3 shadow-xs">
+      <span>⭐ 星星の場所 ⭐</span>
+    </div>
+    <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-950 leading-tight">
+      大阪梅田ドクターズ結婚相談所の<br className="sm:hidden" />男性会員背景、職業ランキング表
+    </h2>
+    <div className="flex items-center justify-center gap-2 pt-2">
+      <div className="w-1.5 h-1.5 rounded-full bg-orange-500" />
+      <div className="w-16 h-1 rounded-full bg-gradient-to-r from-orange-500 to-amber-400" />
+      <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+    </div>
+  </div>
 
+  {/* 9:16 Aspect Ratio Image Container */}
+  <div className="w-full max-w-md mx-auto">
+    <div className="relative w-full aspect-[9/16] overflow-hidden rounded-2xl shadow-md border border-orange-200/60">
+      <Image
+        src="/osaka-male-members-occupational-rankings.jpg"
+        alt="大阪梅田ドクターズ結婚相談所の男性会員背景、職業ランキング表"
+        className="w-full h-full object-cover"
+        loading="lazy"
+        fill
+        sizes="(max-width: 768px) 100vw, 440px"
+        priority={false}
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+      />
+    </div>
+  </div>
+</section>
+             
+{/* <section className="w-full">
+  <div className="w-full max-w-md mx-auto my-4">
+    <div className="relative w-full aspect-[9/16] overflow-hidden rounded-2xl shadow-md">
+      <Image
+        src="/osaka-male-members-occupational-rankings.jpg"
+        alt="大阪梅田ドクターズ結婚相談所の男性会員背景、職業ランキング表"
+        fill
+        sizes="(max-width: 768px) 100vw, 440px"
+        priority={false}
+        className="object-cover"
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+      />
+    </div>
+  </div>
+</section> */}
         {/* Section 1: エビデンス重視の婚活設計 */}
         <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
           <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
@@ -141,7 +190,38 @@ export default function EnvironmentPage() {
             </p>
           </div>
         </section>
+<section className="w-full my-6">
+  {/* Section Heading */}
+  <div className="text-center mb-6">
+    <div className="inline-flex items-center gap-2 bg-orange-100/80 border border-orange-200/80 text-orange-950 px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase mb-3 shadow-xs">
+      <span>⭐ 星星の場所 ⭐</span>
+    </div>
+    <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-950 leading-tight">
+      大阪梅田ドクターズ結婚相談所の<br className="sm:hidden" />会員背景の特徴
+    </h2>
+    <div className="flex items-center justify-center gap-2 pt-2">
+      <div className="w-1.5 h-1.5 rounded-full bg-orange-500" />
+      <div className="w-16 h-1 rounded-full bg-gradient-to-r from-orange-500 to-amber-400" />
+      <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+    </div>
+  </div>
 
+  {/* 9:16 Aspect Ratio Image Container */}
+  <div className="w-full max-w-md mx-auto">
+    <div className="relative w-full aspect-[9/16] overflow-hidden rounded-2xl shadow-md border border-orange-200/60">
+      <Image
+        src="/osaka-female-members-occupational-rankings.jpg"
+        alt="大阪梅田ドクターズ結婚相談所の会員背景の特徴・女性会員職業ランキング"
+        className="w-full h-full object-cover"
+       fill
+        sizes="(max-width: 768px) 100vw, 440px"
+        priority={false}
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+      />
+    </div>
+  </div>
+</section>
         {/* Section 2: 会員背景の特徴 */}
         <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
           <div className="flex items-start gap-3 border-b border-rose-200 pb-4">

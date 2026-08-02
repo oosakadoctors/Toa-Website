@@ -48,6 +48,8 @@ export default function PremiumNavbar() {
         { name: "ドクターズ結婚相談所が選ばれる理由", href: "/why-us" },
         { name: "大阪梅田ドクターズ結婚相談所の会員と婚活環境について", href: "/elite-circle" },
         { name: "メインカウンセラーのメッセージ", href: "/main-counselor" },
+        { name: "婚活でモテる人の特徴とは？", href: "/attraction-guide" },
+        { name: "会社情報", href: "/company-profile" },
       ],
     },
     {
