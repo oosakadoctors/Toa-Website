@@ -193,8 +193,17 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
         <div ref={step1Ref} className="scroll-mt-3">
           <div className="p-2.5 border border-pink-100 bg-white rounded space-y-2 text-justify">
             {/* Scaled header description: text-xs -> text-sm, sm:text-sm -> sm:text-base */}
+  
+<div className="flex items-center gap-3">
+  <span className="bg-pink-600 text-white text-xs font-black px-2.5 py-1 rounded-md tracking-wider shrink-0 shadow-sm">
+    STEP 1
+  </span>
+  <h3 className="text-lg sm:text-xl font-black text-gray-900 tracking-tight leading-tight">
+    プロフィールの作成＆写真撮影
+  </h3>
+</div>
             <h3 className="text-sm sm:text-base font-bold text-gray-800 border-b pb-1">
-               STEP 1：お見合い成立率が劇的に変わる「プロフィールの戦略的作成」と「奇跡の1枚を引き出す写真プロデュース」
+               お見合い成立率が劇的に変わる「プロフィールの戦略的作成」と「奇跡の1枚を引き出す写真プロデュース」
             </h3>
             <p>
               結婚相談所の婚活において、お見合い写真とプロフィールは「あなたと出会うための最初の大切な扉（第一印象）」です。お相手が「ぜひお見合いしてみたい！」と感じ、次のステップ（マッチング）へ進むことができます。魅力を引き出すプロフィール生まれ変わる自分にワクワク！「雰囲気美人」「雰囲気イケメン」になるためのプロサポート
@@ -235,6 +244,14 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
         {/* STEP 2 DETAIL */}
         <div ref={step2Ref} className="scroll-mt-3">
           <div className="p-2.5 border border-gray-200 bg-white rounded space-y-2 text-justify">
+            <div className="flex items-center gap-3">
+  <span className="bg-pink-600 text-white text-xs font-black px-2.5 py-1 rounded-md tracking-wider shrink-0 shadow-sm">
+    STEP 2
+  </span>
+  <h3 className="text-lg sm:text-xl font-black text-gray-900 tracking-tight leading-tight">
+    お相手探し・ご紹介
+  </h3>
+</div>
             {/* Scaled header description: text-xs -> text-sm, sm:text-sm -> sm:text-base */}
             <h3 className="text-sm sm:text-base font-bold text-gray-800 border-b pb-1">
               「ただ検索するだけ」の婚活は、もう終わり。あなたの理想をカタチにする、独自の「お相手検索サポート」
@@ -252,6 +269,14 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
         <div ref={step3Ref} className="scroll-mt-3">
           <div className="p-2.5 border border-gray-200 bg-white rounded space-y-2 text-justify">
             {/* Scaled header description: text-xs -> text-sm, sm:text-sm -> sm:text-base */}
+            <div className="flex items-center gap-3">
+  <span className="bg-pink-600 text-white text-xs font-black px-2.5 py-1 rounded-md tracking-wider shrink-0 shadow-sm">
+    STEP 3
+  </span>
+  <h3 className="text-lg sm:text-xl font-black text-gray-900 tracking-tight leading-tight">
+    お相手探し・ご紹介
+  </h3>
+</div>
             <h3 className="text-sm sm:text-base font-bold text-gray-800 border-b pb-1">
                お見合いでは第一印象が一番大切。
             </h3>
@@ -316,8 +341,19 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
 
         {/* STEP 4 DETAIL */}
         <div ref={step4Ref} className="scroll-mt-3">
+          
           <div className="p-2.5 border border-gray-200 bg-white rounded space-y-2 text-justify">
             {/* Scaled header description: text-xs -> text-sm, sm:text-sm -> sm:text-base */}
+            
+                        {/* Scaled header description: text-xs -> text-sm, sm:text-sm -> sm:text-base */}
+            <div className="flex items-center gap-3">
+  <span className="bg-pink-600 text-white text-xs font-black px-2.5 py-1 rounded-md tracking-wider shrink-0 shadow-sm">
+    STEP 4
+  </span>
+  <h3 className="text-lg sm:text-xl font-black text-gray-900 tracking-tight leading-tight">
+    仮交際（お知り合いの期間）
+  </h3>
+</div>
             <h3 className="text-sm sm:text-base font-bold text-gray-800 border-b pb-1">
                成婚率を劇的に変える「仮交際」の並走サポート
             </h3>
@@ -354,7 +390,14 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
 
         {/* STEP 5 & 6 DETAILS */}
         <div ref={step5Ref} className="scroll-mt-3">
-    
+                <div className="flex items-center gap-3">
+  <span className="bg-pink-600 text-white text-xs font-black px-2.5 py-1 rounded-md tracking-wider shrink-0 shadow-sm">
+    STEP 5 & STEP 6
+  </span>
+  <h3 className="text-lg sm:text-xl font-black text-gray-900 tracking-tight leading-tight">
+    真剣交際 & プロポーズ・ご成婚
+  </h3>
+</div>
           <div className="p-2.5 border border-gray-200 bg-white rounded space-y-2 text-justify">
             {/* Scaled header description: text-xs -> text-sm, sm:text-sm -> sm:text-base */}
             <h3 className="text-sm sm:text-base font-bold text-gray-800 border-b pb-1">
@@ -366,7 +409,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
 
             {/* Scaled middle section sub-heading: text-xs -> text-sm */}
             <h2 className="text-sm font-bold text-gray-800 bg-gray-50 p-1 border rounded">
-              ## 大阪梅田で確実にプロポーズを成功させる｜「女医×ベテラン」の真剣交際・成婚プロデュース
+               大阪梅田で確実にプロポーズを成功させる｜「女医×ベテラン」の真剣交際・成婚プロデュース
             </h2>
             
             <p>
@@ -375,19 +418,19 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
 
             {/* Scaled text wrapper block: text-[11px] -> text-[13px] */}
             <div className="p-2 bg-gray-50 rounded border text-[13px] space-y-0.5">
-              <h3 className="font-bold text-gray-800">### 1. 結婚後の課題をのりこえるためアドバイス</h3>
+              <h3 className="font-bold text-gray-800"> 1. 結婚後の課題をのりこえるためアドバイス</h3>
               <p className="text-gray-600">「住む場所」「仕事の継続」「家計の管理」「将来の家族計画」など、切り出しにくいお金や将来のテーマについて、カウンセラーが、ストレスなく本音を話し合える「スマートな対話の進め方やタイミング」をアドバイス。お互いの価値観を認め合いながら、理想の家庭像を形にするためのサポートをします。</p>
             </div>
 
             {/* Scaled text wrapper block: text-[11px] -> text-[13px] */}
             <div className="p-2 bg-gray-50 rounded border text-[13px] space-y-0.5">
-              <h3 className="font-bold text-gray-800">### 2. 「プロポーズのタイミング」</h3>
+              <h3 className="font-bold text-gray-800">2. 「プロポーズのタイミング」</h3>
               <p className="text-gray-600">「本当に今プロポーズして大丈夫？」「指輪やシチュエーションはどうすればいい？」という疑問や不安も、一切一人で悩む必要はありません。さまざまな疑問に適宜ご対応します。</p>
             </div>
 
             {/* Scaled text wrapper block: text-[11px] -> text-[13px] */}
             <div className="p-2 bg-gray-50 rounded border text-[13px] space-y-0.5">
-              <h3 className="font-bold text-gray-800">### 3. 大阪・梅田エリアの「極上プロポーズプラン」をトータル演出</h3>
+              <h3 className="font-bold text-gray-800">3. 大阪・梅田エリアの「極上プロポーズプラン」をトータル演出</h3>
               <p className="text-gray-600">一生の思い出になるプロポーズを、最高の形でご相談します。一流ホテルのメインダイニングや、夜景の美しいラグジュアリーなレストランの選定、予約のタイミング、当日のエスコート方法までご提案します。</p>
             </div>
           </div>
