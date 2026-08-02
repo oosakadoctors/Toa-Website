@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
+import Image from "next/image";
 import {
   CheckCircle2,
   Heart,
@@ -14,26 +14,46 @@ export default function IdealManPage() {
 
   return (
     <div>
-<section className="w-full py-10">
+<section className="w-full py-0">
 
-  {/* soft background wrapper */}
-  <div className="mx-auto w-[98%] max-w-6xl px-5 sm:px-10 py-10 rounded-3xl bg-gradient-to-b from-pink-50/60 via-white to-blue-50/40 border border-pink-100/60 shadow-sm space-y-12">
+<section className="w-full py-0">
+
+  {/* Navy Gradient Background Wrapper */}
+  <div className="mx-auto w-[98%] max-w-6xl px-5 sm:px-10 py-10 rounded-1xl bg-gradient-to-br from-[#0B2545] via-[#134074] to-[#1D4ED8] border border-blue-400/30 shadow-xl space-y-12 text-white">
 
     {/* HERO */}
     <header className="space-y-6">
 
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-[1.2]">
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.2]">
         僕の条件で出会える女性は？
       </h2>
 
-      <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-gray-800 leading-[1.3]">
+      <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-amber-200 leading-[1.3]">
         自分の「年齢・年収」で、本当に理想の可愛い子と結婚できるのか？
       </h3>
+
+      <section className="w-full">
+        <div className="w-full max-w-4xl mx-auto my-1">
+          {/* Added white border, ring, and soft shadow here */}
+          <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl border-4 border-white ring-2 ring-white/80 shadow-2xl">
+            <Image
+              src="/mens-matchmaking-service-women-concept.jpg"
+              alt="男性婚活で出会う可愛い女性のイメージ写真"
+              fill
+              sizes="(max-width: 768px) 100vw, 800px"
+              priority={false}
+              className="object-cover"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+            />
+          </div>
+        </div>
+      </section>
 
     </header>
 
     {/* CONTEXT */}
-    <article className="space-y-6 text-gray-800 leading-relaxed font-medium text-base sm:text-lg">
+    <article className="space-y-6 text-slate-100 leading-relaxed font-medium text-base sm:text-lg">
 
       <p className="max-w-none">
         男性のあなたが一番知りたいのは
@@ -51,17 +71,17 @@ export default function IdealManPage() {
 
       <div className="space-y-4">
 
-        <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 leading-[1.25]">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-white leading-[1.25]">
           📊 あなたの「年齢・年収」から見るリアルなマッチング予想
         </h2>
 
-        <p className="text-gray-800 leading-relaxed font-medium text-base sm:text-lg">
+        <p className="text-slate-100 leading-relaxed font-medium text-base sm:text-lg">
           30代の働く男性は婚活市場において
-          <span className="font-black text-gray-900">「最も需要が高いプラチナ世代」</span>
+          <span className="font-black text-amber-300">「最も需要が高いプラチナ世代」</span>
           です。
         </p>
 
-        <p className="text-gray-800 leading-relaxed font-medium text-base sm:text-lg">
+        <p className="text-slate-100 leading-relaxed font-medium text-base sm:text-lg">
           大阪梅田ドクターズ結婚相談所では、
           あなたのライフスタイルにぴったりとフィットする
           「戦略的マッチング設計」を行っています。
@@ -72,9 +92,11 @@ export default function IdealManPage() {
     </section>
 
     {/* subtle visual divider */}
-    <div className="h-px w-full bg-gradient-to-r from-transparent via-pink-200/60 to-transparent" />
+    <div className="h-px w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent" />
 
   </div>
+
+</section>
 
 </section>
 

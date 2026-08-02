@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { 
   Heart, 
   Sparkles, 
@@ -125,6 +126,23 @@ export default function AttractionGuide() {
               外見、スペック、内面。婚活の3大要素を前に諦める必要はありません。大人になった今だからこそ、知性と少しの努力で「人を惹きつける雰囲気」は作れます。女性医師とベテランカウンセラーの視点から、大人の魅力を引き出す秘訣を専門的に紐解きます。
             </p>
           </div>
+
+          <section className="w-full">
+  <div className="w-full max-w-4xl mx-auto my-1">
+    <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+      <Image
+        src="/attractive-japanese-women-matchmaking-concept.jpg"
+        alt="婚活市場で人気のある、品性と容姿を兼ね備えた若い日本人女性のイメージ写真"
+        fill
+        sizes="(max-width: 768px) 100vw, 800px"
+        priority={true}
+        className="object-cover"
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+      />
+    </div>
+  </div>
+</section>
 
           {/* Checklist Box */}
           <div className="rounded-2xl bg-amber-50/60 border border-amber-200 p-5 space-y-3">

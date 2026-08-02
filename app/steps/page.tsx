@@ -272,7 +272,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             <p className="text-gray-600">や第一印象を決める外見などをサポートします。</p>
 
             <div className="pt-1">
-              <p className="font-bold text-pink-700">〜服装〜男性の視線を釘付けにする！第一印象で一目惚れされる「勝てる婚活ファッション」の秘密</p>
+              <p id="link" className="font-bold text-pink-700">〜服装〜男性の視線を釘付けにする！第一印象で一目惚れされる「勝てる婚活ファッション」の秘密</p>
               <p>お見合いの席や初デートの瞬間、お相手があなたを見た瞬間に「あっ、素敵な人だな」と心がときめくかどうかの第一印象は、身にまとっている服装（コーディネート）で決まります。大阪梅田ドクターズ結婚相談所のファッション アドバイス、買い物同行（ショッピング同行）では、ただ無難な花柄ワンピースやスーツスタイルなどの婚活服を選ぶのではなく、異性の視線を釘付けにし、あなたの魅力を120%引き出す「勝負服」をプロデュースします。</p>
             </div>
 
@@ -348,9 +348,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             </div>
 
             {/* Scaled footer anchor description box: text-[10px] -> text-[12px], sm:text-[11px] -> sm:text-[13px] */}
-            <div className="bg-pink-50 p-2 rounded border border-pink-200 text-center font-bold text-[12px] sm:text-[13px] text-pink-800">
-              ［大阪梅田のサロンで仮交際のサポート体制について詳しく聞いてみる（無料カウンセリング予約）］ [Find out more about the support available for casual dating at our salon in Umeda, Osaka (book a free consultation)]
-            </div>
+       
           </div>
         </div>
 

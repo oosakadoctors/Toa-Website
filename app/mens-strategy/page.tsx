@@ -42,24 +42,27 @@ export default function MensStrategyPage() {
       {/* ============================================================
           HERO BANNER HEADLINE (Full-Width Viewport)
           ============================================================ */}
-      <div className="w-full pt-12 pb-10 text-center bg-slate-900 text-white border-b border-gray-800 px-4 relative">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#D9889D]/10 to-transparent pointer-events-none" />
-        
-        <div className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-xs text-[#E6A2B3] px-3.5 py-1 rounded-full text-sm font-black tracking-widest uppercase mb-4">
-          <Sparkles className="w-4 h-4" />
-          <span>Exclusive Strategy for Men</span>
-        </div>
-        
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-snug tracking-tight w-full max-w-4xl mx-auto">
-          格上女性を射止めたい30代男性のあなたへ。
-        </h1>
-        <p className="text-lg sm:text-xl text-gray-300 mt-3 font-bold max-w-2xl mx-auto">
-          30代だからこそ、妥協せず勝ちに行く。スペックの壁を越え、理想の女性を射止める「男のための最速攻略戦略」
-        </p>
-        
-        <div className="w-20 h-1 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] mx-auto mt-6 rounded-full" />
-      </div>
+<div className="w-full pt-12 pb-10 text-center bg-gradient-to-br from-[#0B2545] via-[#134074] to-[#1D4ED8] text-white border-b border-blue-400/30 shadow-xl px-4 relative">
+  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-400/10 to-transparent pointer-events-none" />
+  
+  {/* Centered Pill Badge */}
+  <div className="flex justify-center mb-4">
+    <div className="inline-flex items-center gap-1.5 bg-pink-950/40 backdrop-blur-xs text-amber-300 border border-pink-500/30 px-3.5 py-1 rounded-full text-sm font-black tracking-widest uppercase shadow-sm">
+      <Sparkles className="w-4 h-4 text-amber-300" />
+      <span>Exclusive Strategy for Men</span>
+    </div>
+  </div>
+  
+  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-snug tracking-tight w-full max-w-4xl mx-auto text-white">
+    格上女性を射止めたい30代男性のあなたへ。
+  </h1>
 
+  <p className="text-lg sm:text-xl text-sky-200 mt-3 font-bold max-w-2xl mx-auto">
+    30代だからこそ、妥協せず勝ちに行く。スペックの壁を越え、理想の女性を射止める「男のための最速攻略戦略」
+  </p>
+  
+  <div className="w-20 h-1 bg-gradient-to-r from-sky-400 to-blue-300 mx-auto mt-6 rounded-full" />
+</div>
       {/* ============================================================
           DYNAMIC NAVIGATION INDEX (Full-Width Mobile)
           ============================================================ */}
