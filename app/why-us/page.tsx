@@ -53,7 +53,7 @@ export default function ReasonsPage() {
         <div className="w-24 h-1.5 bg-gradient-to-r from-rose-500 to-pink-500 mx-auto mt-6 rounded-full" />
       </div>
 
-      <section className="w-full bg-slate-50 py-12 px-3 sm:px-6">
+<section className="w-full bg-slate-50 py-12 px-3 sm:px-6">
         <div className="max-w-5xl mx-auto">
           
           {/* SECTION HEADER */}
@@ -69,27 +69,27 @@ export default function ReasonsPage() {
             </p>
           </div>
 
-          {/* 6 BUTTON GRID */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5">
+          {/* 6 BUTTON GRID (2 COLUMNS ON SMARTPHONES & DESKTOP) */}
+          <div className="grid grid-cols-2 gap-3 sm:gap-5">
             
             {/* BUTTON 1 */}
             <Link
               href="#01"
               scroll={true}
-              className="bg-white hover:bg-rose-50/50 rounded-2xl p-5 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-rose-500"
+              className="bg-white hover:bg-rose-50/50 rounded-2xl p-3.5 sm:p-5 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-rose-500"
             >
-              <div className="flex items-center justify-between w-full mb-3">
-                <span className="text-sm font-black text-rose-500 bg-rose-50 px-2.5 py-1 rounded">
+              <div className="flex items-center justify-between w-full mb-2 sm:mb-3">
+                <span className="text-xs sm:text-sm font-black text-rose-500 bg-rose-50 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded">
                   01
                 </span>
-                <div className="p-2 rounded-xl bg-rose-50 group-hover:bg-rose-100 transition-colors">
-                  <Users className="w-6 h-6 text-rose-500" />
+                <div className="p-1.5 sm:p-2 rounded-xl bg-rose-50 group-hover:bg-rose-100 transition-colors">
+                  <Users className="w-5 h-5 sm:w-6 sm:h-6 text-rose-500" />
                 </div>
               </div>
-              <span className="text-lg font-bold text-slate-900 group-hover:text-rose-500 transition-colors leading-snug line-clamp-2">
+              <span className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-rose-500 transition-colors leading-snug">
                 現役女医× ベテランカウンセラー「最高峰の婚活プロデュース」
               </span>
-              <div className="mt-4 flex items-center justify-end text-rose-500 text-sm font-bold gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
+              <div className="mt-3 sm:mt-4 flex items-center justify-end text-rose-500 text-xs sm:text-sm font-bold gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
                 <span>詳細をみる</span>
                 <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform text-rose-500" />
               </div>
@@ -99,20 +99,20 @@ export default function ReasonsPage() {
             <Link
               href="#02"
               scroll={true}
-              className="bg-white hover:bg-rose-50/50 rounded-2xl p-5 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-rose-500"
+              className="bg-white hover:bg-rose-50/50 rounded-2xl p-3.5 sm:p-5 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-rose-500"
             >
-              <div className="flex items-center justify-between w-full mb-3">
-                <span className="text-sm font-black text-rose-500 bg-rose-50 px-2.5 py-1 rounded">
+              <div className="flex items-center justify-between w-full mb-2 sm:mb-3">
+                <span className="text-xs sm:text-sm font-black text-rose-500 bg-rose-50 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded">
                   02
                 </span>
-                <div className="p-2 rounded-xl bg-rose-50 group-hover:bg-rose-100 transition-colors">
-                  <Search className="w-6 h-6 text-rose-500" />
+                <div className="p-1.5 sm:p-2 rounded-xl bg-rose-50 group-hover:bg-rose-100 transition-colors">
+                  <Search className="w-5 h-5 sm:w-6 sm:h-6 text-rose-500" />
                 </div>
               </div>
-              <span className="text-lg font-bold text-slate-900 group-hover:text-rose-500 transition-colors leading-snug line-clamp-2">
+              <span className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-rose-500 transition-colors leading-snug">
                 2名1組のダブルサポート<br />妥協なき「理想像の徹底解剖」
               </span>
-              <div className="mt-4 flex items-center justify-end text-rose-500 text-sm font-bold gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
+              <div className="mt-3 sm:mt-4 flex items-center justify-end text-rose-500 text-xs sm:text-sm font-bold gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
                 <span>詳細をみる</span>
                 <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform text-rose-500" />
               </div>
@@ -122,20 +122,20 @@ export default function ReasonsPage() {
             <Link
               href="#03"
               scroll={true}
-              className="bg-white hover:bg-rose-50/50 rounded-2xl p-5 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-rose-500"
+              className="bg-white hover:bg-rose-50/50 rounded-2xl p-3.5 sm:p-5 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-rose-500"
             >
-              <div className="flex items-center justify-between w-full mb-3">
-                <span className="text-sm font-black text-rose-500 bg-rose-50 px-2.5 py-1 rounded">
+              <div className="flex items-center justify-between w-full mb-2 sm:mb-3">
+                <span className="text-xs sm:text-sm font-black text-rose-500 bg-rose-50 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded">
                   03
                 </span>
-                <div className="p-2 rounded-xl bg-rose-50 group-hover:bg-rose-100 transition-colors">
-                  <Target className="w-6 h-6 text-rose-500" />
+                <div className="p-1.5 sm:p-2 rounded-xl bg-rose-50 group-hover:bg-rose-100 transition-colors">
+                  <Target className="w-5 h-5 sm:w-6 sm:h-6 text-rose-500" />
                 </div>
               </div>
-              <span className="text-lg font-bold text-slate-900 group-hover:text-rose-500 transition-colors leading-snug line-clamp-2">
+              <span className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-rose-500 transition-colors leading-snug">
                 オーダーメイドの婚活戦略
               </span>
-              <div className="mt-4 flex items-center justify-end text-rose-500 text-sm font-bold gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
+              <div className="mt-3 sm:mt-4 flex items-center justify-end text-rose-500 text-xs sm:text-sm font-bold gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
                 <span>詳細をみる</span>
                 <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform text-rose-500" />
               </div>
@@ -145,20 +145,20 @@ export default function ReasonsPage() {
             <Link
               href="#04"
               scroll={true}
-              className="bg-white hover:bg-rose-50/50 rounded-2xl p-5 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-rose-500"
+              className="bg-white hover:bg-rose-50/50 rounded-2xl p-3.5 sm:p-5 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-rose-500"
             >
-              <div className="flex items-center justify-between w-full mb-3">
-                <span className="text-sm font-black text-rose-500 bg-rose-50 px-2.5 py-1 rounded">
+              <div className="flex items-center justify-between w-full mb-2 sm:mb-3">
+                <span className="text-xs sm:text-sm font-black text-rose-500 bg-rose-50 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded">
                   04
                 </span>
-                <div className="p-2 rounded-xl bg-rose-50 group-hover:bg-rose-100 transition-colors">
-                  <Briefcase className="w-6 h-6 text-rose-500" />
+                <div className="p-1.5 sm:p-2 rounded-xl bg-rose-50 group-hover:bg-rose-100 transition-colors">
+                  <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-rose-500" />
                 </div>
               </div>
-              <span className="text-lg font-bold text-slate-900 group-hover:text-rose-500 transition-colors leading-snug line-clamp-2">
+              <span className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-rose-500 transition-colors leading-snug">
                 キャリアも、結婚も、妥協しない。<br />「戦略的ハイスペック婚活」
               </span>
-              <div className="mt-4 flex items-center justify-end text-rose-500 text-sm font-bold gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
+              <div className="mt-3 sm:mt-4 flex items-center justify-end text-rose-500 text-xs sm:text-sm font-bold gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
                 <span>詳細をみる</span>
                 <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform text-rose-500" />
               </div>
@@ -168,20 +168,20 @@ export default function ReasonsPage() {
             <Link
               href="#05"
               scroll={true}
-              className="bg-white hover:bg-rose-50/50 rounded-2xl p-5 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-rose-500"
+              className="bg-white hover:bg-rose-50/50 rounded-2xl p-3.5 sm:p-5 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-rose-500"
             >
-              <div className="flex items-center justify-between w-full mb-3">
-                <span className="text-sm font-black text-rose-500 bg-rose-50 px-2.5 py-1 rounded">
+              <div className="flex items-center justify-between w-full mb-2 sm:mb-3">
+                <span className="text-xs sm:text-sm font-black text-rose-500 bg-rose-50 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded">
                   05
                 </span>
-                <div className="p-2 rounded-xl bg-rose-50 group-hover:bg-rose-100 transition-colors">
-                  <Brain className="w-6 h-6 text-rose-500" />
+                <div className="p-1.5 sm:p-2 rounded-xl bg-rose-50 group-hover:bg-rose-100 transition-colors">
+                  <Brain className="w-5 h-5 sm:w-6 sm:h-6 text-rose-500" />
                 </div>
               </div>
-              <span className="text-lg font-bold text-slate-900 group-hover:text-rose-500 transition-colors leading-snug line-clamp-2">
+              <span className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-rose-500 transition-colors leading-snug">
                 心理学・脳科学に基づく「心が疲れない婚活」
               </span>
-              <div className="mt-4 flex items-center justify-end text-rose-500 text-sm font-bold gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
+              <div className="mt-3 sm:mt-4 flex items-center justify-end text-rose-500 text-xs sm:text-sm font-bold gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
                 <span>詳細をみる</span>
                 <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform text-rose-500" />
               </div>
@@ -191,20 +191,20 @@ export default function ReasonsPage() {
             <Link
               href="#06"
               scroll={true}
-              className="bg-white hover:bg-rose-50/50 rounded-2xl p-5 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-rose-500"
+              className="bg-white hover:bg-rose-50/50 rounded-2xl p-3.5 sm:p-5 border border-slate-200 shadow-xs hover:shadow-md transition-all duration-200 text-left flex flex-col justify-between group border-l-4 border-l-rose-500"
             >
-              <div className="flex items-center justify-between w-full mb-3">
-                <span className="text-sm font-black text-rose-500 bg-rose-50 px-2.5 py-1 rounded">
+              <div className="flex items-center justify-between w-full mb-2 sm:mb-3">
+                <span className="text-xs sm:text-sm font-black text-rose-500 bg-rose-50 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded">
                   06
                 </span>
-                <div className="p-2 rounded-xl bg-rose-50 group-hover:bg-rose-100 transition-colors">
-                  <Sparkles className="w-6 h-6 text-rose-500" />
+                <div className="p-1.5 sm:p-2 rounded-xl bg-rose-50 group-hover:bg-rose-100 transition-colors">
+                  <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-rose-500" />
                 </div>
               </div>
-              <span className="text-lg font-bold text-slate-900 group-hover:text-rose-500 transition-colors leading-snug line-clamp-2">
+              <span className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-rose-500 transition-colors leading-snug">
                 恋愛経験が少ない男女の魅力を引き出すプロのサポート
               </span>
-              <div className="mt-4 flex items-center justify-end text-rose-500 text-sm font-bold gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
+              <div className="mt-3 sm:mt-4 flex items-center justify-end text-rose-500 text-xs sm:text-sm font-bold gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
                 <span>詳細をみる</span>
                 <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform text-rose-500" />
               </div>
