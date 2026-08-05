@@ -1,7 +1,5 @@
 import { Metadata } from 'next';
 
-
-
 export const metadata: Metadata = {
   title: "恋愛初心者がスピード成婚する方法",
   description:
@@ -11,45 +9,64 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function EssentialQuestionPage() {
   return (
-    <div className="w-full bg-[#FFFBFD] py-10 sm:py-16 px-4">
-      <div className="max-w-4xl mx-auto bg-white shadow-md border border-pink-100/60 rounded-3xl overflow-hidden">
-        
-        {/* --- ヘッダーセクション --- */}
-        <div className="relative bg-gradient-to-b from-[#FFF5F8] to-white p-6 sm:p-10 text-center border-b border-pink-50">
-          <span className="text-xs sm:text-sm font-black text-[#D9889D] uppercase tracking-widest block mb-2">
-            Essential Question #01
-          </span>
-          <p className="text-sm font-bold text-gray-500 mb-2">【本質的な問い①】</p>
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-black text-gray-900 leading-snug tracking-tight mb-6">
-            男性は女性の外見しか見ない？<br />
-            <span className="text-[#D9889D]">大阪梅田ドクターズ結婚相談所の答え</span>
-          </h1>
-          <div className="w-16 h-1 bg-[#E6A2B3] mx-auto mb-6" />
+    <div className="relative min-h-screen w-full py-10 sm:py-16 px-4 overflow-hidden">
+      {/* --- Full Page Background Image --- */}
+      <img 
+        src="/lemons2.jpg" 
+        alt="Lemon background" 
+        className="fixed inset-0 w-full h-full object-cover object-center -z-10"
+      />
+      
+      {/* Light Overlay for Contrast */}
+      <div className="fixed inset-0 bg-amber-50/20 backdrop-blur-[2px] -z-10" />
+
+      {/* --- Main Stacked Cards Container (gaps reveal the background) --- */}
+      <div className="max-w-4xl mx-auto space-y-8">
+              
+        {/* --- ヘッダーセクション CARD --- */}
+        <div className="relative bg-white/95 backdrop-blur-md shadow-2xl border border-amber-100 rounded-3xl overflow-hidden">
+          <div className="relative p-6 sm:p-10 text-center border-b border-amber-100/60 overflow-hidden">
+            
+   
+
+            {/* Frosted Glass Container */}
+            <div className="relative z-10 bg-white/85 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/70 shadow-xs max-w-2xl mx-auto">
+              <span className="text-xs sm:text-sm font-black text-amber-800 uppercase tracking-widest block mb-2">
+                Essential Question #01
+              </span>
+              <p className="text-sm font-bold text-amber-950/70 mb-2">【本質的な問い①】</p>
+              <h1 className="text-3xl sm:text-24xl md:text-3xl font-black text-slate-900 leading-snug tracking-tight mb-6">
+                男性は女性の外見しか見ない？<br />
+                <span className="text-amber-600">大阪梅田ドクターズ結婚相談所の答え</span>
+              </h1>
+              <div className="w-16 h-1 bg-amber-400 mx-auto rounded-full" />
+            </div>
+
+          </div>
         </div>
 
-        {/* --- 導入（H2 & H3相当） --- */}
-        <div className="p-6 sm:p-10 bg-white">
-          <h2 className="text-lg sm:text-xl font-black text-gray-900 border-l-4 border-[#E6A2B3] pl-3 mb-6 leading-relaxed">
+        {/* --- 導入 & 本文セクション CARD --- */}
+        <div className="bg-white/95 backdrop-blur-md shadow-2xl border border-amber-100 rounded-3xl p-6 sm:p-10">
+          <h2 className="text-lg sm:text-xl font-black text-slate-900 border-l-4 border-amber-400 pl-3 mb-6 leading-relaxed">
             なぜ男性は「外見」に惹かれないと<br className="sm:hidden" />女性の「中身」を見ないのか？
           </h2>
           
-          <div className="bg-gray-50 p-5 sm:p-6 rounded-2xl border border-gray-100 text-base text-gray-700 leading-relaxed mb-8">
+          <div className="bg-amber-50/70 p-5 sm:p-6 rounded-2xl border border-amber-200/60 text-[18px] text-slate-700 leading-relaxed mb-8 shadow-2xs">
             スピード成婚、ハイクラス成婚、真剣婚活を望む女性たちが直面する問題です。<br />
             男性が最初の数秒、視覚情報で相手を識別しているのは進化心理学的な事実です。このシャッターを通過しなければ土俵にすら立てません。<br />
             しかし、男性の脳が惹かれる「外見」とは、単なるパーツとしての顔の美しさ（美人かどうか）だけではありません。
           </div>
 
           {/* --- 本文セクション --- */}
-          <div className="space-y-10 text-base text-gray-700 leading-relaxed">
+          <div className="space-y-10 text-[18px] text-slate-700 leading-relaxed">
             
             {/* セクション 1 */}
             <section>
               <div className="flex items-center gap-3 mb-4">
-                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#E6A2B3] text-white font-black text-sm shrink-0">1</span>
-                <h3 className="text-base sm:text-lg font-bold text-gray-900">
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-amber-500 text-white font-black text-sm shrink-0 shadow-xs">1</span>
+                <h3 className="text-[18px] sm:text-lg font-bold text-slate-900">
                   男性の脳が最初の3秒で見ている「外見」の正体
                 </h3>
               </div>
@@ -60,13 +77,13 @@ export default function EssentialQuestionPage() {
               </p>
             </section>
 
-            <hr className="border-pink-50" />
+            <hr className="border-amber-100" />
 
             {/* セクション 2 */}
             <section>
               <div className="flex items-center gap-3 mb-4">
-                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#E6A2B3] text-white font-black text-sm shrink-0">2</span>
-                <h3 className="text-base sm:text-lg font-bold text-gray-900">
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-amber-500 text-white font-black text-sm shrink-0 shadow-xs">2</span>
+                <h3 className="text-[18px] sm:text-lg font-bold text-slate-900">
                   「外見」とは、最も外側にある内面である
                 </h3>
               </div>
@@ -75,14 +92,14 @@ export default function EssentialQuestionPage() {
                   心理学において、外見とは「最も外側にある内面」と定義されます。<br />
                   写真をみてお見合い自体は成立しているのに、実際会った際に男性が「外見に惹かれない」とお断りする時、彼らは<strong>「表情や佇まいから、ネガティブな内面の状態を察知して拒絶している」</strong>ことも多いです。
                 </p>
-                <div className="bg-pink-50/50 p-4 rounded-xl border border-pink-100 my-4">
+                <div className="bg-amber-50/60 p-4 rounded-xl border border-amber-200/70 my-4 shadow-2xs">
                   <ul className="space-y-3">
                     <li className="flex items-start gap-2">
-                      <span className="text-[#D9889D] font-bold">✖</span>
+                      <span className="text-amber-600 font-bold">✖</span>
                       心の中の「どうせ私なんて」という自己否定感は下がった口角や丸まった背中に現れ、「暗そう」という印象を与えます。
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-[#D9889D] font-bold">✖</span>
+                      <span className="text-amber-600 font-bold">✖</span>
                       「品定めしよう」という心は目元の鋭さや不自然な表情となり、男性の脳に「責められそう」「色々求められすぎて、一緒にいるとしんどそう」という恐怖を与えます。
                     </li>
                   </ul>
@@ -95,13 +112,13 @@ export default function EssentialQuestionPage() {
               </div>
             </section>
 
-            <hr className="border-pink-50" />
+            <hr className="border-amber-100" />
 
             {/* セクション 3 */}
             <section>
               <div className="flex items-center gap-3 mb-4">
-                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#E6A2B3] text-white font-black text-sm shrink-0">3</span>
-                <h3 className="text-base sm:text-lg font-bold text-gray-900">
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-amber-500 text-white font-black text-sm shrink-0 shadow-xs">3</span>
+                <h3 className="text-[18px] sm:text-lg font-bold text-slate-900">
                   男性が「中身を見るモード」に切り替わるスイッチ
                 </h3>
               </div>
@@ -113,18 +130,18 @@ export default function EssentialQuestionPage() {
                 <p>
                   輝くような雰囲気をかもしだすのは多くの人には難しく感じるかもしれません。<br />
                   しかし、数多くの成婚を見届けてきた大阪梅田ドクターズ結婚相談所から言わせてください。<br />
-                  <strong className="text-[#D9889D]">この世界に、『いいところが1つもない人』なんて、絶対に存在しません。</strong>
+                  <strong className="text-amber-700">この世界に、『いいところが1つもない人』なんて、絶対に存在しません。</strong>
                 </p>
                 <p>
                   人を惹きつける外見としてのオーラ、雰囲気の本質とは、世間が言うような大層なキャリアや、地位だけではないのです。あなたがこれまでの人生のどこかで、誰にも言わずに『少しだけがんばってきた何か』。それこそが、あなたの静かな自信になり、消えないオーラ（魅力）の源泉になります。
                 </p>
 
                 {/* 小さながんばりのリスト */}
-                <div className="bg-[#FFF8FA] p-5 rounded-xl border border-pink-100 my-4 shadow-sm">
-                  <p className="font-bold text-gray-900 mb-3 text-center">
+                <div className="bg-amber-50/80 p-5 rounded-xl border border-amber-200/80 my-4 shadow-xs">
+                  <p className="font-bold text-slate-900 mb-3 text-center">
                     あなたの『小さながんばり』の歴史
                   </p>
-                  <ul className="text-sm sm:text-base space-y-2 text-gray-700">
+                  <ul className="text-sm sm:text-[18px] space-y-2 text-slate-700">
                     <li>✨ 休まず仕事にいっていること</li>
                     <li>✨ 職場でいつも自分から挨拶をしてきたこと</li>
                     <li>✨ 健康のために、食事に気を使ってきたこと</li>
@@ -144,13 +161,13 @@ export default function EssentialQuestionPage() {
           </div>
         </div>
 
-        {/* --- クロージングメッセージ --- */}
-        <div className="bg-gradient-to-br from-[#FFF5F8] via-[#FFF8FA] to-white p-6 sm:p-10 border-t border-pink-100/60 text-center">
-          <p className="text-base text-gray-800 leading-relaxed max-w-3xl mx-auto font-medium">
+        {/* --- クロージングメッセージ CARD --- */}
+        <div className="bg-gradient-to-br from-amber-100/90 via-amber-50/95 to-yellow-100/90 backdrop-blur-md p-6 sm:p-10 border border-amber-200/80 rounded-3xl text-center shadow-2xl">
+          <p className="text-[18px] text-slate-800 leading-relaxed max-w-3xl mx-auto font-medium">
             大阪梅田ドクターズ相談所は、人生の本質に向き合い、あなたが自分では気づいていない、あるいは忘れてしまっている『小さながんばり（最高の魅力）』を対話の中から一緒に見つけ出し、それを自信（オーラ）に変えて、お相手に届けるためのパートナーです。
           </p>
           <div className="pt-8">
-            <button className="inline-block bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] text-white text-base font-bold py-4 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition duration-200">
+            <button className="inline-block bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-[18px] font-bold py-4 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition duration-200 cursor-pointer">
               あなたの魅力を引き出す無料相談へ
             </button>
           </div>

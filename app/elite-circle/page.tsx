@@ -24,13 +24,13 @@ export const metadata: Metadata = {
 
 export default function EnvironmentPage() {
   return (
-    <main className="bg-[#faf8f5] min-h-screen text-base leading-relaxed text-gray-800 py-10 px-4 sm:px-6 lg:px-8">
+    <main className="bg-[#faf8f5] min-h-screen text-[18px] leading-relaxed text-gray-800 py-10 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-4xl space-y-8">
 
         {/* Header Ribbon / Banner */}
-        <div className="bg-gradient-to-r from-rose-500 to-pink-500 p-2 text-center text-white font-bold rounded-t-2xl shadow-sm text-base">
-          <span className="inline-flex items-center gap-1">
-            <Sparkles className="w-4 h-4 shrink-0" />
+        <div className="bg-gradient-to-r from-rose-500 to-pink-500 p-2.5 text-center text-white font-bold rounded-t-2xl shadow-sm text-lg sm:text-xl">
+          <span className="inline-flex items-center gap-1.5">
+            <Sparkles className="w-5 h-5 shrink-0" />
             日本最大級の会員数と少人数制
           </span>
         </div>
@@ -39,21 +39,21 @@ export default function EnvironmentPage() {
         <section className="rounded-b-2xl bg-white border border-rose-200 p-6 sm:p-10 shadow-sm space-y-4 -mt-8 pt-8">
 
           <h1 
-            className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 leading-snug tracking-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-snug tracking-tight"
             style={{ wordBreak: 'break-all' }}
           >
             大阪梅田ドクターズ結婚相談所の会員と婚活環境について
           </h1>
 
           <p 
-            className="text-lg font-bold text-rose-500 pt-1"
+            className="text-xl sm:text-2xl font-bold text-rose-500 pt-1"
             style={{ wordBreak: 'break-all' }}
           >
             日本最大級の会員数から選べる安心と、少人数制ならではのきめ細やかなサポート
           </p>
 
           <p 
-            className="text-base text-gray-700 leading-relaxed pt-3 border-t border-rose-200"
+            className="text-[18px] text-gray-700 leading-relaxed pt-3 border-t border-rose-200"
             style={{ wordBreak: 'break-all' }}
           >
             大阪梅田ドクターズ結婚相談所は、会員様お一人おひとりの人生と徹底的に向き合い、質の高いサポートを提供します。
@@ -66,12 +66,12 @@ export default function EnvironmentPage() {
           {/* Feature 1 */}
           <div className="rounded-2xl bg-white border border-rose-200 p-5 shadow-sm space-y-2">
             <div className="flex items-center gap-2 text-rose-500 font-bold">
-              <span className="p-1.5 rounded-lg bg-rose-400 text-white">
-                <UserCheck className="w-4 h-4 shrink-0" />
+              <span className="p-2 rounded-lg bg-rose-400 text-white">
+                <UserCheck className="w-5 h-5 shrink-0" />
               </span>
-              <span className="text-base">毎月5名様限定</span>
+              <span className="text-lg">毎月5名様限定</span>
             </div>
-            <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
               毎月5名様限定の「完全少人数制」サポート品質を最高水準に保つため、新規入会は月5名様まで。少人数制だからこそ、あなたの様々なご要望にきめ細やかに対応できます。
             </p>
           </div>
@@ -79,12 +79,12 @@ export default function EnvironmentPage() {
           {/* Feature 2 */}
           <div className="rounded-2xl bg-white border border-rose-200 p-5 shadow-sm space-y-2">
             <div className="flex items-center gap-2 text-rose-500 font-bold">
-              <span className="p-1.5 rounded-lg bg-rose-400 text-white">
-                <Stethoscope className="w-4 h-4 shrink-0" />
+              <span className="p-2 rounded-lg bg-rose-400 text-white">
+                <Stethoscope className="w-5 h-5 shrink-0" />
               </span>
-              <span className="text-base">専任2名体制</span>
+              <span className="text-lg">専任2名体制</span>
             </div>
-            <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
               医師 ＆ ベテランが2名体制でつく「専任サポート」あなた1人に対して、現役女性医師とベテランカウンセラーの2名が同時に専任でつきます。医師の論理性と、婚活のプロの経験で、あなただけの特別な婚活戦略を作成します。
             </p>
           </div>
@@ -92,12 +92,12 @@ export default function EnvironmentPage() {
           {/* Feature 3 */}
           <div className="rounded-2xl bg-white border border-rose-200 p-5 shadow-sm space-y-2">
             <div className="flex items-center gap-2 text-rose-500 font-bold">
-              <span className="p-1.5 rounded-lg bg-rose-400 text-white">
-                <Users className="w-4 h-4 shrink-0" />
+              <span className="p-2 rounded-lg bg-rose-400 text-white">
+                <Users className="w-5 h-5 shrink-0" />
               </span>
-              <span className="text-base">数万人規模のネットワーク</span>
+              <span className="text-lg">数万人規模のネットワーク</span>
             </div>
-            <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
               数万人規模の提携ネットワーク ＆ 厳選された自社会員日本最大級の連盟に加盟しており、全国の豊富な提携会員様からスマホでいつでもお相手を検索可能。
             </p>
           </div>
@@ -105,47 +105,44 @@ export default function EnvironmentPage() {
         </section>
 
         {/* Closing Banner Card */}
-        <div className="bg-gradient-to-r from-rose-500 to-pink-500 p-4 text-center text-white rounded-2xl shadow-sm">
-          <p className="text-base font-bold" style={{ wordBreak: 'break-all' }}>
+        <div className="bg-gradient-to-r from-rose-500 to-pink-500 p-4 sm:p-5 text-center text-white rounded-2xl shadow-sm">
+          <p className="text-lg sm:text-xl font-bold" style={{ wordBreak: 'break-all' }}>
             心から幸せだと思える最高の結婚へと、私たちと一緒に歩んでまいりましょう。
           </p>
         </div>
 
-
-             
-<section className="w-full">
-  <div className="w-full max-w-4xl mx-auto my-1">
-    <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl border-4 border-white ring-2 ring-white/80 shadow-2xl">
-      <Image
-        src="/infographic-explaining-the-number-of-members-at-the-Osaka-Umeda-Doctors’-Marriage-Agency.jpg"
-        alt="大阪梅田ドクターズ結婚相談所の会員数や特徴をわかりやく解説した図"
-        fill
-        sizes="(max-width: 768px) 100vw, 800px"
-        priority={false}
-        className="object-cover"
-        placeholder="blur"
-        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-      />
-    </div>
-  </div>
-</section>
-
+        <section className="w-full">
+          <div className="w-full max-w-4xl mx-auto my-1">
+            <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl border-4 border-white ring-2 ring-white/80 shadow-2xl">
+              <Image
+                src="/infographic-explaining-the-number-of-members-at-the-Osaka-Umeda-Doctors’-Marriage-Agency.jpg"
+                alt="大阪梅田ドクターズ結婚相談所の会員数や特徴をわかりやく解説した図"
+                fill
+                sizes="(max-width: 768px) 100vw, 800px"
+                priority={false}
+                className="object-cover"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+              />
+            </div>
+          </div>
+        </section>
 
         {/* Section 1: エビデンス重視の婚活設計 */}
         <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
           <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
-            <div className="p-2 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
-              <Brain className="w-6 h-6" />
+            <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
+              <Brain className="w-7 h-7" />
             </div>
             <h2 
-              className="text-lg sm:text-xl font-black text-gray-900 leading-snug"
+              className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
               style={{ wordBreak: 'break-all' }}
             >
               現役女性医師の医学的知見と心理的アプローチに基づく、エビデンス重視の婚活設計
             </h2>
           </div>
 
-          <div className="text-base text-gray-700 leading-relaxed space-y-4 pt-2">
+          <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
             <p style={{ wordBreak: 'break-all' }}>
               結婚相談所選びで最も重要視されるべきは、「カウンセリングの質と、運営者の確かな専門性」です。当相談所では、日々多様な患者様の健康状態やお気持ち、人生の価値観に向き合ってきた現役女性医師（加藤）の「深い傾聴力・人間性を見抜く客観的な分析力」と、数多くのご成婚実績を持つベテランカウンセラーの「実践的な成婚メソッド」を融合させた、独自のカウンセリング体制を構築しています。
             </p>
@@ -162,86 +159,85 @@ export default function EnvironmentPage() {
         </section>
 
         <section className="w-full my-6">
-  {/* Section Heading */}
-  <div className="text-center mb-6">
-    <div className="inline-flex items-center gap-2 bg-orange-100/80 border border-orange-200/80 text-orange-950 px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase mb-3 shadow-xs">
-    </div>
-    <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-950 leading-tight">
-      大阪梅田ドクターズ結婚相談所の<br className="sm:hidden" />男性会員背景、職業ランキング表
-    </h2>
-    <div className="flex items-center justify-center gap-2 pt-2">
-      <div className="w-1.5 h-1.5 rounded-full bg-orange-500" />
-      <div className="w-16 h-1 rounded-full bg-gradient-to-r from-orange-500 to-amber-400" />
-      <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-    </div>
-  </div>
+          {/* Section Heading */}
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center gap-2 bg-orange-100/80 border border-orange-200/80 text-orange-950 px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase mb-3 shadow-xs">
+            </div>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-950 leading-tight">
+              大阪梅田ドクターズ結婚相談所の<br className="sm:hidden" />男性会員背景、職業ランキング表
+            </h2>
+            <div className="flex items-center justify-center gap-2 pt-2">
+              <div className="w-1.5 h-1.5 rounded-full bg-orange-500" />
+              <div className="w-16 h-1 rounded-full bg-gradient-to-r from-orange-500 to-amber-400" />
+              <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+            </div>
+          </div>
 
-  {/* 9:16 Aspect Ratio Image Container */}
-  <div className="w-full max-w-md mx-auto">
-    <div className="relative w-full aspect-[9/16] overflow-hidden rounded-2xl shadow-md border border-orange-200/60">
-      <Image
-        src="/osaka-male-members-occupational-rankings.jpg"
-        alt="大阪梅田ドクターズ結婚相談所の男性会員背景、職業ランキング表"
-        className="w-full h-full object-cover"
-        loading="lazy"
-        fill
-        sizes="(max-width: 768px) 100vw, 440px"
-        priority={false}
-        placeholder="blur"
-        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-      />
-    </div>
-  </div>
-</section>
+          {/* 9:16 Aspect Ratio Image Container */}
+          <div className="w-full max-w-md mx-auto">
+            <div className="relative w-full aspect-[9/16] overflow-hidden rounded-2xl shadow-md border border-orange-200/60">
+              <Image
+                src="/osaka-male-members-occupational-rankings.jpg"
+                alt="大阪梅田ドクターズ結婚相談所の男性会員背景、職業ランキング表"
+                className="w-full h-full object-cover"
+                loading="lazy"
+                fill
+                sizes="(max-width: 768px) 100vw, 440px"
+                priority={false}
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+              />
+            </div>
+          </div>
+        </section>
 
-<section className="w-full my-6">
-  {/* Section Heading */}
-  <div className="text-center mb-6">
-    <div className="inline-flex items-center gap-2 bg-orange-100/80 border border-orange-200/80 text-orange-950 px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase mb-3 shadow-xs">
-    </div>
-    <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-950 leading-tight">
-      大阪梅田ドクターズ結婚相談所の<br className="sm:hidden" />会員背景の特徴
-    </h2>
-    <div className="flex items-center justify-center gap-2 pt-2">
-      <div className="w-1.5 h-1.5 rounded-full bg-orange-500" />
-      <div className="w-16 h-1 rounded-full bg-gradient-to-r from-orange-500 to-amber-400" />
-      <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-    </div>
-  </div>
+        <section className="w-full my-6">
+          {/* Section Heading */}
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center gap-2 bg-orange-100/80 border border-orange-200/80 text-orange-950 px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase mb-3 shadow-xs">
+            </div>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-950 leading-tight">
+              大阪梅田ドクターズ結婚相談所の<br className="sm:hidden" />会員背景の特徴
+            </h2>
+            <div className="flex items-center justify-center gap-2 pt-2">
+              <div className="w-1.5 h-1.5 rounded-full bg-orange-500" />
+              <div className="w-16 h-1 rounded-full bg-gradient-to-r from-orange-500 to-amber-400" />
+              <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+            </div>
+          </div>
 
-  {/* 9:16 Aspect Ratio Image Container */}
-  <div className="w-full max-w-md mx-auto">
-    <div className="relative w-full aspect-[9/16] overflow-hidden rounded-2xl shadow-md border border-orange-200/60">
-      <Image
-        src="/osaka-female-members-occupational-rankings.jpg"
-        alt="大阪梅田ドクターズ結婚相談所の女性会員背景、職業ランキング表"
-        className="w-full h-full object-cover"
-       fill
-        sizes="(max-width: 768px) 100vw, 440px"
-        priority={false}
-        placeholder="blur"
-        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-      />
-    </div>
-  </div>
-</section>
-
+          {/* 9:16 Aspect Ratio Image Container */}
+          <div className="w-full max-w-md mx-auto">
+            <div className="relative w-full aspect-[9/16] overflow-hidden rounded-2xl shadow-md border border-orange-200/60">
+              <Image
+                src="/osaka-female-members-occupational-rankings.jpg"
+                alt="大阪梅田ドクターズ結婚相談所の女性会員背景、職業ランキング表"
+                className="w-full h-full object-cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 440px"
+                priority={false}
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+              />
+            </div>
+          </div>
+        </section>
 
         {/* Section 2: 会員背景の特徴 */}
         <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
           <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
-            <div className="p-2 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
-              <Award className="w-6 h-6" />
+            <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
+              <Award className="w-7 h-7" />
             </div>
             <h2 
-              className="text-lg sm:text-xl font-black text-gray-900 leading-snug"
+              className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
               style={{ wordBreak: 'break-all' }}
             >
               大阪梅田ドクターズ結婚相談所の会員背景の特徴
             </h2>
           </div>
 
-          <div className="text-base text-gray-700 leading-relaxed space-y-4 pt-2">
+          <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
             <p style={{ wordBreak: 'break-all' }}>
               当相談所には、20代後半から30代・40代の「自立した専門職・キャリア層」の男女の方々が多数在籍しています。特に医師をはじめ、弁護士、公認会計士、薬剤師、公務員、大手企業に勤務するビジネスパーソン、大学教授など、年収1,000万円を超える優秀なハイクラス層、知性とキャリアを兼ね備えた方々に多く選ばれています。
             </p>
@@ -254,18 +250,18 @@ export default function EnvironmentPage() {
         {/* Section 3: 真摯に未来を見据える会員層へ提供する環境 */}
         <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
           <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
-            <div className="p-2 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
-              <Clock className="w-6 h-6" />
+            <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
+              <Clock className="w-7 h-7" />
             </div>
             <h2 
-              className="text-lg sm:text-xl font-black text-gray-900 leading-snug text-rose-500"
+              className="text-xl sm:text-2xl font-black text-gray-900 leading-snug text-rose-500"
               style={{ wordBreak: 'break-all' }}
             >
               真摯に未来を見据える会員層へ提供する効率よい活動環境
             </h2>
           </div>
 
-          <div className="text-base text-gray-700 leading-relaxed space-y-4 pt-2">
+          <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
             <p style={{ wordBreak: 'break-all' }}>
               「知的な対話力」や「価値観の一致」を大切にされる会員様が集まるからこそ、大阪梅田ドクターズ結婚相談所では、科学的根拠（エビデンス）重視の婚活環境を構築しています。高い実績を持つベテランカウンセラーの成婚メソッドに加え、現役女性医師（加藤）の知見に基づく行動心理学や認知科学のアプローチを融合させた独自のカウンセリング環境をご提供します。
             </p>
@@ -280,18 +276,18 @@ export default function EnvironmentPage() {
         {/* Section 4: 理想の成婚をサポートする婚活環境 */}
         <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
           <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
-            <div className="p-2 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
-              <Compass className="w-6 h-6" />
+            <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
+              <Compass className="w-7 h-7" />
             </div>
             <h2 
-              className="text-lg sm:text-xl font-black text-gray-900 leading-snug"
+              className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
               style={{ wordBreak: 'break-all' }}
             >
                「お互いの知性と人生の可能性を高め合う理想の成婚をサポートする婚活環境」
             </h2>
           </div>
 
-          <div className="text-base text-gray-700 leading-relaxed space-y-4 pt-2">
+          <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
             <p style={{ wordBreak: 'break-all' }}>
               日本最大級の結婚相談所連盟のネットワークと、独自の自社ネットワークを活かし、多彩な出会いの可能性をご提供いたします。会員様それぞれの人生の価値観、ゆずれない希望、そしてライフプランに合致する理想のお相手を一緒に検討し、スマートな成婚へと導きます。
             </p>
@@ -299,7 +295,7 @@ export default function EnvironmentPage() {
               ハイクラス層とのご縁を結ぶために不可欠なのが、「コミュニケーション力と知的な対話力」の向上です。当相談所では、現役女性医師の視点から会員様が持つ洗練された魅力を客観的に引き出し、お互いの価値観が共鳴し、リスペクトし合える関係が続く結婚に向けて、専門的なオーダーメイド戦略を練り上げます。
             </p>
             <p style={{ wordBreak: 'break-all' }}>
-              お見合いから「仮交際」、そして「真剣交際」へと確実に関係を進めるため、行動心理学やEQ（非認知能力）の知見に基づいた実践的なアドバイスを実施。感情論ではなく、お相手の本音をロジカルに分析することで、何十年先も深く共鳴し合える最高のパートナーシップの構築を可能にします。
+              お見合いから「仮交際」、論理的なステップを踏んで「真剣交際」へと確実に関係を進めるため、行動心理学やEQ（非認知能力）の知見に基づいた実践的なアドバイスを実施。感情論ではなく、お相手の本音をロジカルに分析することで、何十年先も深く共鳴し合える最高のパートナーシップの構築を可能にします。
             </p>
           </div>
         </section>
@@ -307,18 +303,18 @@ export default function EnvironmentPage() {
         {/* Section 5: 婚活疲れやストレスを軽減するサポート */}
         <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
           <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
-            <div className="p-2 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
-              <HeartHandshake className="w-6 h-6" />
+            <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
+              <HeartHandshake className="w-7 h-7" />
             </div>
             <h2 
-              className="text-lg sm:text-xl font-black text-gray-900 leading-snug"
+              className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
               style={{ wordBreak: 'break-all' }}
             >
                「婚活疲れやストレス」を軽減するサポートのある婚活環境
             </h2>
           </div>
 
-          <div className="text-base text-gray-700 leading-relaxed space-y-4 pt-2">
+          <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
             <p style={{ wordBreak: 'break-all' }}>
               大阪梅田ドクターズ結婚相談所では、ハイクラス婚活に伴う「婚活疲れやストレス」を極限まで軽減する科学的アプローチを徹底しています。
             </p>
@@ -334,18 +330,18 @@ export default function EnvironmentPage() {
         {/* Section 6: 多様化するライフスタイルに寄り添う新時代の婚活環境 */}
         <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
           <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
-            <div className="p-2 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
-              <Smile className="w-6 h-6" />
+            <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
+              <Smile className="w-7 h-7" />
             </div>
             <h2 
-              className="text-lg sm:text-xl font-black text-gray-900 leading-snug"
+              className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
               style={{ wordBreak: 'break-all' }}
             >
                多様化するライフスタイルに寄り添う、新時代の婚活環境
             </h2>
           </div>
 
-          <div className="text-base text-gray-700 leading-relaxed space-y-4 pt-2">
+          <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
             <p style={{ wordBreak: 'break-all' }}>
               「結婚して子供を持ち、定時に帰る」といった、かつての“当たり前”だったライフプランは過去のものです。現代は、リモートワークやシフト制など働き方が多様化し、趣味やキャリアの優先度も人それぞれ。生き方や幸せの形、そして世の中の「正解」は決して一つではありません。生活リズムや価値観が個々に異なる今、従来の自然な出会いだけに頼る婚活は、限界を迎えているのが現実です。
             </p>

@@ -94,11 +94,11 @@ export default function AttractionGuide() {
     }
   };
   return (
-    <main className="bg-[#faf8f5] min-h-screen text-base leading-relaxed text-gray-800 py-4 px-2 sm:px-6 lg:px-8">
+    <main className="bg-[#faf8f5] min-h-screen text-[18px] leading-relaxed text-gray-800 py-4 px-2 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-4xl space-y-10">
 
         {/* Header Ribbon / Banner */}
-        <div className="bg-gradient-to-r from-rose-500 to-pink-500 p-2 text-center text-white font-bold rounded-t-2xl shadow-sm text-base">
+        <div className="bg-gradient-to-r from-rose-500 to-pink-500 p-2 text-center text-white font-bold rounded-t-2xl shadow-sm text-[18px]">
           <span className="inline-flex items-center gap-1.5">
             <Sparkles className="w-4 h-4 shrink-0" />
             女性医師×ベテランカウンセラーが教える「惹きつける魅力」の磨き方
@@ -122,7 +122,7 @@ export default function AttractionGuide() {
             >
               大阪梅田で叶える大人の婚活｜女性医師×カウンセラーが教える「惹きつける魅力」の磨き方
             </h2>
-            <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
               外見、スペック、内面。婚活の3大要素を前に諦める必要はありません。大人になった今だからこそ、知性と少しの努力で「人を惹きつける雰囲気」は作れます。女性医師とベテランカウンセラーの視点から、大人の魅力を引き出す秘訣を専門的に紐解きます。
             </p>
           </div>
@@ -146,10 +146,10 @@ export default function AttractionGuide() {
 
           {/* Checklist Box */}
           <div className="rounded-2xl bg-amber-50/60 border border-amber-200 p-5 space-y-3">
-            <p className="font-bold text-amber-900 text-base" style={{ wordBreak: 'break-all' }}>
+            <p className="font-bold text-amber-900 text-[18px]" style={{ wordBreak: 'break-all' }}>
               上の✅にあてはまる人は必見です♡
             </p>
-            <ul className="space-y-2 text-base text-gray-800 font-medium">
+            <ul className="space-y-2 text-[18px] text-gray-800 font-medium">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
                 <span style={{ wordBreak: 'break-all' }}>モテたという経験は今まで少ない</span>
@@ -165,7 +165,7 @@ export default function AttractionGuide() {
             </ul>
           </div>
 
-          <div className="text-base text-gray-700 leading-relaxed space-y-4 border-t border-rose-100 pt-6">
+          <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 border-t border-rose-100 pt-6">
             <p style={{ wordBreak: 'break-all' }}>
               結婚相談所での活動をスタートするにあたり、まず私たちが知っておかなければならない現実があります。
               それは、婚活市場において、私たちは交際というスタート地点にたつ前に異性から「外見」「スペック（条件）」「内面」という3つの軸で評価されているという現実です。
@@ -198,7 +198,7 @@ export default function AttractionGuide() {
               <span className="text-lg">【外見】</span>
             </div>
             <p className="text-xs font-bold text-rose-500">出会いの審査</p>
-            <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
               プロフィール写真やお見合いの初期の段階において、「異性としての魅力があるか」「パートナーになれる可能性があるか」をジャッジしあいます。ここを突破しなければ、あなたの内面を見てもらう機会が得られません。
             </p>
           </div>
@@ -211,7 +211,7 @@ export default function AttractionGuide() {
               <span className="text-lg">【スペック】</span>
             </div>
             <p className="text-xs font-bold text-rose-500">未来の生活の審査</p>
-            <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
               年齢、職業、年収、居住地、家事育児への姿勢など、「この人と結婚して、自分の生活水準の維持、家族計画の希望が叶うか」を、現実的なデータとして見られています。
             </p>
           </div>
@@ -224,7 +224,7 @@ export default function AttractionGuide() {
               <span className="text-lg">【内面】</span>
             </div>
             <p className="text-xs font-bold text-rose-500">交際の間の審査</p>
-            <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
               お互いにパートナーとして魅力的かどうか、居心地の良い関係を築けるか、「異性としての内面の魅力、さらに人間力（自己分化度）」も試されています。
             </p>
           </div>
@@ -233,24 +233,24 @@ export default function AttractionGuide() {
 
         {/* Reality & Practical Solutions */}
         <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
-          <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+          <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
             このように、婚活ではこれら3つの要素がバランス良く揃っている人ほど、圧倒的に異性から選ばれやすく、スムーズに仮交際へと至るのが一般的な現実です。
           </p>
           
           <div className="bg-rose-50/60 p-5 rounded-xl border border-rose-100 space-y-3">
-            <h3 className="text-base font-bold text-gray-900" style={{ wordBreak: 'break-all' }}>
+            <h3 className="text-[18px] font-bold text-gray-900" style={{ wordBreak: 'break-all' }}>
               変えられるもの と 変えられないもの
             </h3>
-            <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
               年齢や身長、過去の経歴、あるいは現在の職業や年収といった「スペック」の領域は、自分の努力だけですぐに変えられるものではありません。変えられない条件を前にして、「自分には無理かもしれない」と立ち止まってしまう方も少なくないのが実情です。
             </p>
-            <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
               ですが、諦める必要はまったくありません。<br />
               数々の成婚現場を創り出してきた私たちが目撃してきた真実は、<span className="font-bold text-rose-600">「美男美女や、ハイスペックの持ち主だけが選ばれているわけではない」</span>ということです。
             </p>
           </div>
 
-          <div className="text-base text-gray-700 leading-relaxed space-y-4 pt-2">
+          <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
             <p style={{ wordBreak: 'break-all' }}>
               婚活市場でスマート成婚をしていくのは、自分の持っている魅力をうまくお相手に伝えている人たちです。いわゆる「雰囲気美人」「雰囲気イケメン」がその一つです。
             </p>
@@ -264,7 +264,7 @@ export default function AttractionGuide() {
           </div>
 
           <div className="bg-gradient-to-r from-rose-400 to-pink-500 text-white p-4 rounded-xl flex items-center justify-between shadow-sm">
-            <span className="text-base font-bold" style={{ wordBreak: 'break-all' }}>
+            <span className="text-[18px] font-bold" style={{ wordBreak: 'break-all' }}>
               🍀仮交際後、真剣交際、結婚生活に必要な内面についての解説はこちら
             </span>
             <ArrowRight className="w-5 h-5 shrink-0" />
@@ -278,7 +278,7 @@ export default function AttractionGuide() {
           <h2 className="text-2xl sm:text-3xl font-black text-gray-900" style={{ wordBreak: 'break-all' }}>
             男女それぞれ一般的に人気のモテ要素は何か？
           </h2>
-          <div className="flex justify-center gap-4 text-base font-bold text-rose-500 pt-2">
+          <div className="flex justify-center gap-4 text-[18px] font-bold text-rose-500 pt-2">
             <a href="#female-section" className="hover:underline flex items-center gap-1">
               女性の方はこちらへ <ArrowRight className="w-4 h-4" />
             </a>
@@ -319,7 +319,7 @@ export default function AttractionGuide() {
                   <span className="bg-pink-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
                     {idx + 1}
                   </span>
-                  <span className="text-base text-gray-800 font-medium" style={{ wordBreak: 'break-all' }}>
+                  <span className="text-[18px] text-gray-800 font-medium" style={{ wordBreak: 'break-all' }}>
                     {item}
                   </span>
                 </li>
@@ -355,7 +355,7 @@ export default function AttractionGuide() {
                   <span className="bg-pink-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
                     {idx + 1}
                   </span>
-                  <span className="text-base text-gray-800 font-medium" style={{ wordBreak: 'break-all' }}>
+                  <span className="text-[18px] text-gray-800 font-medium" style={{ wordBreak: 'break-all' }}>
                     {item}
                   </span>
                 </li>
@@ -364,10 +364,10 @@ export default function AttractionGuide() {
 
             {/* 一言メッセージ */}
             <div className="bg-gradient-to-r from-pink-50 to-rose-50 border border-pink-200 p-5 rounded-2xl space-y-2">
-              <h4 className="font-bold text-pink-600 text-base flex items-center gap-1.5" style={{ wordBreak: 'break-all' }}>
+              <h4 className="font-bold text-pink-600 text-[18px] flex items-center gap-1.5" style={{ wordBreak: 'break-all' }}>
                 <Sparkles className="w-5 h-5" /> 一言メッセージ🩷
               </h4>
-              <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+              <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
                 さて、いくつくらい当てはまりましたか？<br />
                 たくさん当てはまる方はそのままでも充分に第一関門は通過できるはずです！<br />
                 当てはまる数が少ないかたは下記を必見です♡<br />
@@ -387,7 +387,7 @@ export default function AttractionGuide() {
               </h3>
             </div>
 
-            <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
               世間で「美人」「可愛い」と言われる女性には最初から顔立ちが整っている人が多いですが、「顔のパーツ自体は普通なのに、なぜかすごくモテるし、美人オーラが出ている女性」もたくさんいます。女性の間では、これを「雰囲気美人」と呼びます。女性が後から変えられる、美人オーラを作るための代表的な要素と具体的な方法は以下の3つです。
             </p>
 
@@ -398,10 +398,10 @@ export default function AttractionGuide() {
                   <Heart className="w-5 h-5 shrink-0 fill-rose-500 text-rose-500" />
                   1. 「髪のツヤ」と「肌の質感」❤️
                 </h4>
-                <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+                <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
                   男性が女性を見る時、実は顔の細かいパーツ（目の大きさなど）以上に、「髪」と「肌」がきれいに手入れされているかを無意識にチェックしています。ここが変わると一気に垢抜けます。
                 </p>
-                <ul className="space-y-2 text-base text-gray-700 pl-2 pt-1">
+                <ul className="space-y-2 text-[18px] text-gray-700 pl-2 pt-1">
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-rose-500 shrink-0 mt-1" />
                     <span style={{ wordBreak: 'break-all' }}>
@@ -423,10 +423,10 @@ export default function AttractionGuide() {
                   <Heart className="w-5 h-5 shrink-0 fill-rose-500 text-rose-500" />
                   2. 「笑顔」と「リアクション」❤️
                 </h4>
-                <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+                <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
                   どんなに顔が整っていても、無表情で高飛車な人は男性人気は低いです。逆に、顔立ちが普通でも「よく笑う女性」は男性にとって圧倒的に魅力的に映ります。
                 </p>
-                <ul className="space-y-2 text-base text-gray-700 pl-2 pt-1">
+                <ul className="space-y-2 text-[18px] text-gray-700 pl-2 pt-1">
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-rose-500 shrink-0 mt-1" />
                     <span style={{ wordBreak: 'break-all' }}>
@@ -454,10 +454,10 @@ export default function AttractionGuide() {
                   <Heart className="w-5 h-5 shrink-0 fill-rose-500 text-rose-500" />
                   3. 「上品なしぐさ」と「言葉遣い」❤️
                 </h4>
-                <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+                <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
                   動きが綺麗な女性はそれだけで育ちが良く、魅力的に見えます。
                 </p>
-                <ul className="space-y-2 text-base text-gray-700 pl-2 pt-1">
+                <ul className="space-y-2 text-[18px] text-gray-700 pl-2 pt-1">
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-rose-500 shrink-0 mt-1" />
                     <span style={{ wordBreak: 'break-all' }}>
@@ -510,7 +510,7 @@ export default function AttractionGuide() {
                   <span className="bg-sky-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
                     {idx + 1}
                   </span>
-                  <span className="text-base text-gray-800 font-medium" style={{ wordBreak: 'break-all' }}>
+                  <span className="text-[18px] text-gray-800 font-medium" style={{ wordBreak: 'break-all' }}>
                     {item}
                   </span>
                 </li>
@@ -548,7 +548,7 @@ export default function AttractionGuide() {
                   <span className="bg-sky-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
                     {idx + 1}
                   </span>
-                  <span className="text-base text-gray-800 font-medium" style={{ wordBreak: 'break-all' }}>
+                  <span className="text-[18px] text-gray-800 font-medium" style={{ wordBreak: 'break-all' }}>
                     {item}
                   </span>
                 </li>
@@ -557,10 +557,10 @@ export default function AttractionGuide() {
 
             {/* 一言メッセージ */}
             <div className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 p-5 rounded-2xl space-y-2">
-              <h4 className="font-bold text-sky-600 text-base flex items-center gap-1.5" style={{ wordBreak: 'break-all' }}>
+              <h4 className="font-bold text-sky-600 text-[18px] flex items-center gap-1.5" style={{ wordBreak: 'break-all' }}>
                 <Zap className="w-5 h-5" /> 一言メッセージ💙
               </h4>
-              <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+              <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
                 いくつくらい当てはまりましたか？<br />
                 たくさん当てはまる方はそのままでも充分に第一関門は通過できるはずですよ。<br />
                 当てはまる数が少ないかたは下記を参考にしてください。<br />
@@ -580,13 +580,13 @@ export default function AttractionGuide() {
               </h3>
             </div>
 
-            <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
               世間で「イケメン」と呼ばれる人の多くは、そもそも顔のパーツ（目、鼻、輪郭など）が最初から整っている人がほとんどです。そこを無視して「清潔感だけで誰でもイケメンになれる」と言うのは、現実的ではありません。
             </p>
-            <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
               ただ、ここで面白いのが、世の中には「顔のパーツ自体はそこまで整っていないのに、なぜかすごくモテるし、周囲からイケメン扱いされている男性」もまた確実に存在することです。
             </p>
-            <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
               生まれ持った顔を変えることはできませんが、彼らは「顔のパーツ以外の要素」を最大化して、魅力的なオーラを作っています。その秘密（変えられる要素）は以下の3つに集約されます。
             </p>
 
@@ -597,10 +597,10 @@ export default function AttractionGuide() {
                   <TrendingUp className="w-5 h-5 shrink-0 text-sky-500" />
                   1. 「髪型」と「眉毛」で顔の錯覚を作る💙
                 </h4>
-                <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+                <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
                   顔そのものは変えられなくても、「顔の額縁」である髪型と眉毛を変えるだけで、顔全体のバランスは劇的に変わります。
                 </p>
-                <ul className="space-y-2 text-base text-gray-700 pl-2 pt-1">
+                <ul className="space-y-2 text-[18px] text-gray-700 pl-2 pt-1">
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-sky-500 shrink-0 mt-1" />
                     <span style={{ wordBreak: 'break-all' }}>
@@ -622,10 +622,10 @@ export default function AttractionGuide() {
                   <TrendingUp className="w-5 h-5 shrink-0 text-sky-500" />
                   2. 「堂々とした姿勢」と「体つき」💙
                 </h4>
-                <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+                <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
                   顔が普通でも、スタイルが良く見える人はそれだけで「イケメンの雰囲気」を醸し出します。
                 </p>
-                <ul className="space-y-2 text-base text-gray-700 pl-2 pt-1">
+                <ul className="space-y-2 text-[18px] text-gray-700 pl-2 pt-1">
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-sky-500 shrink-0 mt-1" />
                     <span style={{ wordBreak: 'break-all' }}>
@@ -647,10 +647,10 @@ export default function AttractionGuide() {
                   <TrendingUp className="w-5 h-5 shrink-0 text-sky-500" />
                   3. 「声のトーン」と「話し方の余裕」💙
                 </h4>
-                <p className="text-base text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
+                <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
                   女性が男性を「カッコいい」と判断する基準は、実は聴覚（声や話し方）も大きなウェイトを占めています。
                 </p>
-                <ul className="space-y-2 text-base text-gray-700 pl-2 pt-1">
+                <ul className="space-y-2 text-[18px] text-gray-700 pl-2 pt-1">
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-sky-500 shrink-0 mt-1" />
                     <span style={{ wordBreak: 'break-all' }}>

@@ -299,14 +299,16 @@ export default function ReasonsPage() {
           </div>
 
           {/* Subheading Box */}
-          <div className="mb-6 bg-white p-6 rounded-2xl border border-rose-100 shadow-sm">
-            <h3 className="text-lg sm:text-2xl lg:text-3xl font-black text-gray-900 flex items-center gap-3">
-              <Stethoscope className="w-7 h-7 text-rose-500 shrink-0" />
-              現役医師の心理分析 × 20年の成婚データで、あなたの「本当の結婚相手」を科学的に特定
-            </h3>
-          </div>
+       
 
-          <div className="space-y-4 text-gray-800 leading-relaxed font-medium w-full text-lg sm:text-xl">
+    
+
+          <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full text-lg sm:text-xl">
+            
+          　　<p className="text-lg sm:text-xl font-black text-rose-600 bg-white p-5 rounded-2xl border-l-4 border-rose-500 shadow-sm">
+             現役医師の心理分析 × 20年の成婚データで、あなたの「本当の結婚相手」を科学的に特定
+            </p>
+  
             <p>
               当相談所が圧倒的な高い成婚率を誇る最大の理由は、現役医師とカウンセラー歴20年のベテラン男性仲人が「2名1組のチーム」となり、あなた専用の婚活セカンド（セコンド）として徹底的に伴走する点にあります。
             </p>
@@ -411,8 +413,11 @@ export default function ReasonsPage() {
             </div>
           </div>
 
-          {/* Content Body */}
-          <div className="space-y-4 text-gray-800 leading-relaxed font-medium w-full text-lg sm:text-xl">
+            <div className="space-y-4 text-gray-800 leading-relaxed font-medium w-full text-lg sm:text-xl">
+            <p className="text-lg sm:text-xl font-black text-rose-600 bg-white p-5 rounded-2xl border-l-4 border-rose-500 shadow-sm">
+              あなただけのオーダーメイド婚活をご提案❤️
+            </p>
+
             <p>
               婚活において「年齢や年収、職業、婚姻歴（バツイチ・シングルマザー）に妥協したくない」というアラサー・アラフォー女性の切実な願いや、「自分の男のプライドを傷つけられたくない」「会社の同僚や友人にバレたくない」という20代・30代・40代のビジネスパーソンの男の本音を、私たちは決して否定しません。
             </p>
@@ -461,9 +466,9 @@ export default function ReasonsPage() {
           </div>
 
           <div className="space-y-4 text-gray-800 leading-relaxed font-medium w-full text-lg sm:text-xl">
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 mt-2 border-b border-gray-200 pb-3">
+            <p className="text-lg sm:text-xl font-black text-rose-600 bg-white p-5 rounded-2xl border-l-4 border-rose-500 shadow-sm">
               恋愛や結婚に、ビジネスのような「戦略」が必要な理由
-            </h3>
+            </p>
             <p>
               職場でもあなたは、目標達成のために「現状分析」や「正しい計画」を立ててきたはずです。実は、婚活も全く同じです。「いい人がいれば……」と運を天に任せるのは、ゴールのないプロジェクトを進めるようなもの。
             </p>
@@ -488,7 +493,7 @@ export default function ReasonsPage() {
             </div>
 
             {/* 医療アプローチ */}
-            <div className="space-y-4 bg-rose-50/50 border border-rose-100 rounded-2xl p-8">
+            <div className="space-y-4 bg-rose-50/50 border border-rose-100 rounded-2xl p-2">
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 pt-2 flex items-center gap-3">
                 <LineChart className="w-7 h-7 text-rose-500" />
                 成婚の確率を高める「3つの医療アプローチ」
@@ -540,7 +545,7 @@ export default function ReasonsPage() {
             ------------------------------------------------------------ */}
         <section id="05" className="w-full">
           {/* Section Header */}
-          <div className="flex items-center gap-4 mb-6">
+          <div className="flex items-center gap-4 mb-2">
             <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-rose-500 to-pink-500 flex items-center justify-center text-white font-black text-xl shadow-md shadow-rose-200 shrink-0">
               05
             </div>
@@ -567,6 +572,9 @@ export default function ReasonsPage() {
 
           {/* Content Body */}
           <div className="space-y-4 text-gray-800 leading-relaxed font-medium w-full text-lg sm:text-xl">
+            <p className="text-lg sm:text-xl font-black text-rose-600 bg-white p-5 rounded-2xl border-l-4 border-rose-500 shadow-sm">
+              がんばり屋さんのあなたへ。婚活でうまくいかない時こそあなたを支えます💙
+            </p>
             <p>
               大阪の結婚相談所［大阪梅田ドクターズ結婚相談所］で理想のパートナーと出会うためには、何よりも前向きなモチベーションを維持することが欠かせません。しかし、お見合いのお断りが続いたり、マッチングアプリでの既婚者や嘘の出会いに直面したりして、強いストレスや焦りから「婚活疲れ」を引き起こしてしまう男女が後を絶ちません。
             </p>
@@ -617,7 +625,13 @@ export default function ReasonsPage() {
           </div>
 
           {/* Content Body */}
-          <div className="space-y-4 text-gray-800 leading-relaxed font-medium w-full text-lg sm:text-xl">
+
+                    <div className="space-y-4 text-gray-800 leading-relaxed font-medium w-full text-lg sm:text-xl">
+            <p className="text-lg sm:text-xl font-black text-rose-600 bg-white p-5 rounded-2xl border-l-4 border-rose-500 shadow-sm">
+              「はじめての婚活、ちょっと不安…」そんなあなたへ。
+どんな小さな疑問でも、なんでもお尋ねください！
+あなたをフルサポートします
+            </p>
             <p className="text-lg sm:text-xl font-black text-gray-900">
               「これまでの人生で異性と付き合ったことがない」「人見知りで、お見合いや初デートで気まずい沈黙にならないか不安」という恋愛経験なしの方も、どうぞ安心してお任せください。
             </p>

@@ -68,7 +68,7 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
     '@type': 'MedicalWebPage',
     'headline': '大人の結婚に必要な「人間的成熟度」とは？内面魅力の4つの条件',
     'description': '生涯のパートナーから選ばれるための「人間的成熟度（精神的成熟）」を心理学・臨床経験に基づき徹底解説。白黒思考を脱却し、結婚生活の土台となるポスト形式的思考や真の共感力を育む4つの内面的アプローチ。',
-    'datePublished': '2026-07-20T12:00:00+09:00', // 現在の日付に合わせたタイムスタンプ
+    'datePublished': '2026-07-20T12:00:00+09:00',
     'author': [
       {
         '@type': 'Person',
@@ -86,31 +86,31 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
       'name': '大阪梅田ドクターズ結婚相談所',
       'logo': {
         '@type': 'ImageObject',
-        'url': 'https://your-domain.com/logo.png' // 必要に応じて本番環境のロゴURLに差し替えてください
+        'url': 'https://your-domain.com/logo.png'
       }
     }
   };
 
   return (
-    <div ref={sectionRef} className="w-full bg-[#FFFBFD] py-10 sm:py-16 px-4">
+    <div ref={sectionRef} className="w-full bg-[#F7F9F6] py-10 sm:py-16 px-4">
       {/* 構造化データをHEADまたはBody内に安全に注入 */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="max-w-4xl mx-auto bg-white shadow-md border border-pink-100/60 rounded-3xl overflow-hidden">
+      <div className="max-w-4xl mx-auto bg-white shadow-md border border-emerald-100/60 rounded-3xl overflow-hidden">
         
         {/* --- ヒーローヘッダーセクション --- */}
-        <div className="relative bg-gradient-to-b from-[#FFF5F8] to-white p-6 sm:p-10 text-center border-b border-pink-50">
-          <span className="text-xs sm:text-sm font-black text-[#D9889D] uppercase tracking-widest block mb-2">
+        <div className="relative bg-gradient-to-b from-[#F2F7F4] to-white p-6 sm:p-10 text-center border-b border-emerald-50">
+          <span className="text-xs sm:text-sm font-black text-[#2E7D56] uppercase tracking-widest block mb-2">
             Special Column for Inner Maturity
           </span>
           <h1 className="text-xl sm:text-2xl md:text-3xl font-black text-gray-900 leading-snug tracking-tight mb-4">
             大人の結婚に必要な「人間的成熟度」とは？<br className="hidden sm:inline" />
             誰もが本能的に惹かれる内面魅力の4つの条件
           </h1>
-          <div className="w-16 h-1 bg-[#E6A2B3] mx-auto mb-6" />
+          <div className="w-16 h-1 bg-[#3B8F66] mx-auto mb-6" />
           
           <p className="text-base text-gray-700 leading-relaxed text-left sm:text-center max-w-2xl mx-auto">
             恋愛の「火種」を燃え上がらせ、生涯続く結婚生活の「安心の土台」となるもの。
@@ -124,15 +124,15 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
 
         {/* --- 4つの内面的魅力（条件） --- */}
         <div className="p-6 sm:p-10 space-y-8">
-          <h2 className="text-lg sm:text-xl font-black text-gray-900 border-l-4 border-[#E6A2B3] pl-3 mb-6">
+          <h2 className="text-lg sm:text-xl font-black text-gray-900 border-l-4 border-[#3B8F66] pl-3 mb-6">
             本能的に惹かれる「人間的成熟度」4つの条件
           </h2>
 
           <div className="grid gap-6">
             {/* 条件1 */}
-            <div className="p-5 bg-gradient-to-r from-blue-50/40 to-transparent rounded-2xl border border-blue-100/50">
+            <div className="p-5 bg-gradient-to-r from-emerald-50/40 to-transparent rounded-2xl border border-emerald-100/60">
               <div className="flex items-center gap-2 mb-2">
-                <span className="text-xl">🔵</span>
+                <span className="text-xl">🟢</span>
                 <h3 className="text-base sm:text-lg font-bold text-gray-900">自分の感情の認知</h3>
               </div>
               <p className="text-base text-gray-700 leading-relaxed pl-8">
@@ -142,9 +142,9 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
             </div>
 
             {/* 条件2 */}
-            <div className="p-5 bg-gradient-to-r from-blue-50/40 to-transparent rounded-2xl border border-blue-100/50">
+            <div className="p-5 bg-gradient-to-r from-emerald-50/40 to-transparent rounded-2xl border border-emerald-100/60">
               <div className="flex items-center gap-2 mb-2">
-                <span className="text-xl">🔵</span>
+                <span className="text-xl">🟢</span>
                 <h3 className="text-base sm:text-lg font-bold text-gray-900">感情の安定（セルフコントロール）</h3>
               </div>
               <p className="text-base text-gray-700 leading-relaxed pl-8">
@@ -154,9 +154,9 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
             </div>
 
             {/* 条件3 */}
-            <div className="p-5 bg-gradient-to-r from-blue-50/40 to-transparent rounded-2xl border border-blue-100/50">
+            <div className="p-5 bg-gradient-to-r from-emerald-50/40 to-transparent rounded-2xl border border-emerald-100/60">
               <div className="flex items-center gap-2 mb-2">
-                <span className="text-xl">🔵</span>
+                <span className="text-xl">🟢</span>
                 <h3 className="text-base sm:text-lg font-bold text-gray-900">自己への肯定感</h3>
               </div>
               <div className="text-base text-gray-700 leading-relaxed pl-8 space-y-2">
@@ -166,9 +166,9 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
             </div>
 
             {/* 条件4 */}
-            <div className="p-5 bg-gradient-to-r from-blue-50/40 to-transparent rounded-2xl border border-blue-100/50">
+            <div className="p-5 bg-gradient-to-r from-emerald-50/40 to-transparent rounded-2xl border border-emerald-100/60">
               <div className="flex items-center gap-2 mb-2">
-                <span className="text-xl">🔵</span>
+                <span className="text-xl">🟢</span>
                 <h3 className="text-base sm:text-lg font-bold text-gray-900">高い共感力と傾聴力</h3>
               </div>
               <p className="text-base text-gray-700 leading-relaxed pl-8">
@@ -179,13 +179,13 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
         </div>
 
         {/* --- 深掘り：真の共感の仕方 --- */}
-        <div className="bg-[#FFF8FA] p-6 sm:p-10 border-y border-pink-100/60">
+        <div className="bg-[#F4F9F6] p-6 sm:p-10 border-y border-emerald-100/60">
           <div className="text-center mb-6">
-            <span className="text-xl">🩷</span>
+            <span className="text-xl">💚</span>
             <h2 className="text-lg sm:text-xl font-black text-gray-900 mt-1">
               簡単そうで難しい？！「真の共感の仕方」
             </h2>
-            <div className="w-12 h-0.5 bg-[#E6A2B3] mx-auto mt-2" />
+            <div className="w-12 h-0.5 bg-[#3B8F66] mx-auto mt-2" />
           </div>
 
           <p className="text-base text-gray-700 leading-relaxed mb-6">
@@ -193,14 +193,14 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
           </p>
 
           <div className="space-y-6">
-            <div className="bg-white p-5 rounded-2xl shadow-sm border border-pink-100">
-              <div className="text-[#D9889D] font-black text-base mb-1">【問い】真に相手に共感するためには何が必要か？</div>
+            <div className="bg-white p-5 rounded-2xl shadow-sm border border-emerald-100">
+              <div className="text-[#2E7D56] font-black text-base mb-1">【問い】真に相手に共感するためには何が必要か？</div>
               <div className="text-gray-900 font-bold text-base mb-4">【答え】</div>
               
               <div className="space-y-4 text-base text-gray-700 leading-relaxed">
                 <div>
                   <h4 className="font-bold text-gray-900 flex items-center gap-1.5 mb-1">
-                    <span className="text-xs bg-[#E6A2B3] text-white px-2 py-0.5 rounded-full font-black">1</span>
+                    <span className="text-xs bg-[#3B8F66] text-white px-2 py-0.5 rounded-full font-black">1</span>
                     視点を変えた想像力
                   </h4>
                   <p className="pl-6">
@@ -209,11 +209,11 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
                   </p>
                 </div>
 
-                <hr className="border-pink-50" />
+                <hr className="border-emerald-50" />
 
                 <div>
                   <h4 className="font-bold text-gray-900 flex items-center gap-1.5 mb-1">
-                    <span className="text-xs bg-[#E6A2B3] text-white px-2 py-0.5 rounded-full font-black">2</span>
+                    <span className="text-xs bg-[#3B8F66] text-white px-2 py-0.5 rounded-full font-black">2</span>
                     判断（自分の価値観との照合）を一旦手放す
                   </h4>
                   <p className="pl-6">
@@ -222,7 +222,7 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
                   <p className="pl-6 mt-2">
                     そのため、「相手の状況や気持ちは100%理解できる（ステップ①）」けれど、「私の価値観とは違うから同意はできない（ステップ②）」という状態で思考が止まりがちです。
                   </p>
-                  <p className="pl-6 mt-2 font-medium text-gray-900 bg-pink-50/50 p-3 rounded-lg border-l-2 border-[#E6A2B3]">
+                  <p className="pl-6 mt-2 font-medium text-gray-900 bg-emerald-50/50 p-3 rounded-lg border-l-2 border-[#3B8F66]">
                     本当の共感とは、相手に対する「正しい・間違い」や「ベストな選択か否か」を判定する作業をせずに、ただ「今、相手が感じている痛みや喜びを、自分も同じ温度で感じる」ということなのです。
                   </p>
                 </div>
@@ -275,7 +275,7 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
         </div>
 
         {/* --- 結婚生活で最強な理由 --- */}
-        <div className="p-6 sm:p-10 bg-gradient-to-b from-white to-[#FFF5F8] border-t border-pink-100/60">
+        <div className="p-6 sm:p-10 bg-gradient-to-b from-white to-[#F2F7F4] border-t border-emerald-100/60">
           <h3 className="text-base sm:text-lg font-black text-gray-900 mb-4">
             結婚生活において、なぜこれが「最強の内面魅力」なのか？
           </h3>
@@ -284,12 +284,12 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
           </p>
 
           <div className="space-y-3 mb-4">
-            <div className="flex items-start gap-2 text-base text-gray-700 bg-white/80 p-3 rounded-lg border border-pink-50">
-              <span className="text-[#D9889D] font-bold">例1</span>
+            <div className="flex items-start gap-2 text-base text-gray-700 bg-white/80 p-3 rounded-lg border border-emerald-50">
+              <span className="text-[#2E7D56] font-bold">例1</span>
               <p>「お互いに大好きなのに、生活の些細なこだわりでイライラしてしまう」</p>
             </div>
-            <div className="flex items-start gap-2 text-base text-gray-700 bg-white/80 p-3 rounded-lg border border-pink-50">
-              <span className="text-[#D9889D] font-bold">例2</span>
+            <div className="flex items-start gap-2 text-base text-gray-700 bg-white/80 p-3 rounded-lg border border-emerald-50">
+              <span className="text-[#2E7D56] font-bold">例2</span>
               <p>「相手の言っていることは正論だけど、今はどうしても受け入れられない」</p>
             </div>
           </div>
@@ -301,14 +301,14 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
         </div>
 
         {/* --- アドバイザーからのメッセージ --- */}
-        <div className="p-6 sm:p-10 bg-[#FFF8FA] border-t border-b border-pink-100/60 flow-root">
+        <div className="p-6 sm:p-10 bg-[#F4F9F6] border-t border-b border-emerald-100/60 flow-root">
           <div className="float-left mr-4 mb-2">
             <Image
               src={maleAdvisor}
               alt="アドバイザー"
               width={84}
               height={84}
-              className="rounded-full object-cover border-4 border-pink-100"
+              className="rounded-full object-cover border-4 border-emerald-100"
             />
           </div>
 
@@ -328,7 +328,7 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
             <p>
               その上で、人生において、どのような選択をするかはあなた次第です。
             </p>
-            <p className="font-bold text-[#D9889D]">
+            <p className="font-bold text-[#2E7D56]">
               私たちは「人生の答えは一つではない」と深く考え、あなたの全ての選択に可能な限り寄り添うことをお約束します。
             </p>
           </div>
@@ -350,7 +350,7 @@ export default function MaturityPage({ sectionRef }: MaturityPageProps) {
           </div>
 
           <div className="pt-4">
-            <button className="inline-block bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] text-white text-base font-bold py-4 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition duration-200">
+            <button className="inline-block bg-gradient-to-r from-[#3B8F66] to-[#2E7D56] text-white text-base font-bold py-4 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition duration-200">
               内面から磨く、無料カウンセリングを予約する
             </button>
           </div>
