@@ -65,6 +65,8 @@ export default function MarriageAdvicePage() {
             sizes="(max-width: 768px) 100vw, 800px"
             priority={false}
             className="object-cover"
+            loading="eager" 
+            fetchPriority="high"
             placeholder="blur"
             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
           />

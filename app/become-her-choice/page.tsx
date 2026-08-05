@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import React from "react";
 import Link from "next/link";
 
@@ -41,6 +43,25 @@ export default function BecomeTheManSheChoosesPage() {
 
         </div>
       </section>
+
+<section className="w-full">
+      <div className="w-full max-w-4xl mx-auto my-1">
+        <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+          <Image
+            src="/girl-driving-car.jpg"
+            alt="婚活で出会った女性とドライブデートをしながら成婚をめざすイメージ写真"
+            fill
+            sizes="(max-width: 768px) 100vw, 800px"
+            loading="eager" 
+            fetchPriority="high"
+            priority={false}
+            className="object-cover"
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+          />
+        </div>
+      </div>
+    </section>
 
       {/* ========================================================= */}
       {/* INTRODUCTION */}

@@ -2,6 +2,8 @@
 
 import React from 'react';
 import { Heart, Sparkles, Trophy, Flame, UserCheck, MessageCircle, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+
 
 export default function MensNavyPremiumLandingPage() {
   return (
@@ -34,7 +36,7 @@ export default function MensNavyPremiumLandingPage() {
       </header>
 
       {/* 導入メッセージ - スマート・モノトーンの中に潜むエモーション */}
-      <section className="py-10 w-full">
+      <section className="py-2 w-full">
         <div className="max-w-5xl mx-auto w-full">
           <div className="bg-white md:rounded-xl p-5 md:p-8 shadow-xs border-y md:border border-slate-200/80 space-y-5 w-full">
             <p className="text-base text-slate-800 leading-relaxed tracking-wide w-full px-4 text-center md:text-left">
@@ -54,6 +56,24 @@ export default function MensNavyPremiumLandingPage() {
           </div>
         </div>
       </section>
+      <section className="w-full">
+            <div className="w-full max-w-4xl mx-auto my-1">
+              <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+                <Image
+                  src="/lovely-girlfriend-with-a-pure-smile.jpg"
+                  alt="恋人婚で、あなたの前でピュアな笑顔をみせる可愛い彼女のイメージ写真"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  loading="eager" 
+                  fetchPriority="high"
+                  priority={false}
+                  className="object-cover"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+                />
+              </div>
+            </div>
+          </section>
 
       {/* 理想の女性像 - プレミアムネイビー＆スチールブルー（ディープで知的な大人の質感） */}
       <section className="py-10 bg-slate-950 text-slate-100 w-full">
