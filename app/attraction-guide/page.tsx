@@ -390,6 +390,22 @@ export default function AttractionGuide() {
             <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
               世間で「美人」「可愛い」と言われる女性には最初から顔立ちが整っている人が多いですが、「顔のパーツ自体は普通なのに、なぜかすごくモテるし、美人オーラが出ている女性」もたくさんいます。女性の間では、これを「雰囲気美人」と呼びます。女性が後から変えられる、美人オーラを作るための代表的な要素と具体的な方法は以下の3つです。
             </p>
+<section className="w-full">
+      <div className="w-full max-w-4xl mx-auto my-1">
+        <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+          <Image
+            src="/a-woman-with-beautiful-lustrous-hair.jpg"
+            alt="艶のある美しい髪の女性"
+            fill
+            sizes="(max-width: 768px) 100vw, 800px"
+            priority={false}
+            className="object-cover"
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+          />
+        </div>
+      </div>
+    </section>
 
             <div className="space-y-4">
               {/* Point 1 */}
@@ -589,6 +605,24 @@ export default function AttractionGuide() {
             <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
               生まれ持った顔を変えることはできませんが、彼らは「顔のパーツ以外の要素」を最大化して、魅力的なオーラを作っています。その秘密（変えられる要素）は以下の3つに集約されます。
             </p>
+
+            <section className="w-full">
+      <div className="w-full max-w-4xl mx-auto my-1">
+        <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+          <Image
+            src="/a-handsome-man-with-a-cool-haitstyle-and-eyebrows.jpg"
+            alt="髪型と眉毛がかっこいい雰囲気イケメン"
+            fill
+            sizes="(max-width: 768px) 100vw, 800px"
+            priority={false}
+            className="object-cover"
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+          />
+        </div>
+      </div>
+    </section>
+
 
             <div className="space-y-4">
               {/* Point 1 */}

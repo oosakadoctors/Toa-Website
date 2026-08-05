@@ -49,6 +49,7 @@ export default function PremiumNavbar() {
         { name: "大阪梅田ドクターズ結婚相談所の会員と婚活環境について", href: "/elite-circle" },
         { name: "メインカウンセラーのメッセージ", href: "/main-counselor" },
         { name: "婚活でモテる人の特徴とは？", href: "/attraction-guide" },
+        { name: "婚活って何？から一歩ずつ", href: "/marriage-hunting" },
         { name: "会社情報", href: "/company-profile" },
       ],
     },
