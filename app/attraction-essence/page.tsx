@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/emotional-maturity",
   },
+    authors: [
+    { name: "現役の女性内科医師" }, 
+    { name: "男性ベテラン仲人" },
+  ],
+  creator: "大阪梅田ドクターズ結婚相談所",
+  publisher: "大阪梅田ドクターズ結婚相談所",
 };
 
 export default function EssentialQuestionPage() {
@@ -36,7 +42,6 @@ export default function EssentialQuestionPage() {
               <span className="text-xs sm:text-sm font-black text-amber-800 uppercase tracking-widest block mb-2">
                 Essential Question #01
               </span>
-              <p className="text-sm font-bold text-amber-950/70 mb-2">【本質的な問い①】</p>
               <h1 className="text-3xl sm:text-24xl md:text-3xl font-black text-slate-900 leading-snug tracking-tight mb-6">
                 男性は女性の外見しか見ない？<br />
                 <span className="text-amber-600">大阪梅田ドクターズ結婚相談所の答え</span>
