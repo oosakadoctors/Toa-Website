@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: '大阪梅田ドクターズ結婚相談所 | 現役女医とベテランが支える温かな婚活',
-  description: '大手にはない家族のような温もりと手作りのサポート。現役女医×ベテランカウンセラーが伴走し、月々15,000円（税込）のシンプルプランであなたの1年以内の結婚を叶えます。身元確かな安心の環境で理想の出会いを。',
+  description: '大阪で圧倒的な成婚率、満足度、お見合い成立率を誇る温かみある結婚相談所。リーズナブルな料金体系で医師監修の専門的なサポートを提供。',
   keywords: ['大阪梅田', '結婚相談所', 'ドクターズ結婚', '婚活', '現役女医', 'リーズナブル'],
 };
 
@@ -12,8 +12,11 @@ export default function UmedaMarriagePage() {
     <main className="mx-auto max-w-[600px] bg-[#f0f7fc] px-4 py-6 text-[18px] leading-[1.8] text-[#2b3a4a] box-border">
       {/* Hero Section */}
       <section className="mb-10 text-center">
-        <p className="mb-5 text-[30px] font-bold text-[#0284c7]">大阪梅田ドクターズ結婚相談所</p>
-        <div className="mb-6 overflow-hidden rounded-lg w-full">
+        <div className="mb-6 rounded-xl bg-gradient-to-r from-[#0259C2] to-[#0284c7] px-6 py-4 shadow-md text-white">
+          <p className="m-0 text-[24px] sm:text-[26px] font-bold tracking-wider drop-shadow-sm">大阪梅田ドクターズ結婚相談所</p>
+        </div>
+        
+        <div className="mb-6 overflow-hidden rounded-lg w-full shadow-md">
           <Image
             src="/osaka-umeda-marriage-agency.jpg"
             alt="大阪梅田ドクターズ結婚相談所 メインビジュアル"
@@ -31,6 +34,31 @@ export default function UmedaMarriagePage() {
         <p className="mb-4 mt-0 text-[18px]">小さな不安や疑問も、親身にサポートします。</p>
         
         <p className="mb-4 mt-0 text-[18px] font-bold text-center">大阪梅田で、一番アットホームなサポートをお届けします</p>
+      </section>
+
+      <hr className="my-10 border-none border-t border-[#bae6fd]" />
+
+      {/* New Section: Low Romance Experience Welcome */}
+      <section className="mb-10 text-center">
+        <div className="mb-6 overflow-hidden rounded-lg w-full">
+          <Image
+            src="/low-romance-experience-welcome.jpg"
+            alt="恋愛経験が少なくても大丈夫"
+            width={600}
+            height={400}
+            className="w-full h-auto block object-cover"
+          />
+        </div>
+        
+        <h2 className="mb-4 text-[21px] font-bold leading-[1.4] text-[#1a365d]">恋愛経験が少なくても大丈夫！</h2>
+        
+        <p className="mb-4 mt-0 text-[18px] text-left">
+          婚活初心者や恋愛経験が少ない方も安心。<br />
+          大阪梅田ドクターズ結婚相談所では、<br />
+          何からはじめたらいいの？お見合いはどんな感じ？メイクや服装も教えてほしい。どうやったら早く結婚できるの？<br />
+          様々な疑問にお答えします。<br />
+          なんでも質問してくださいね！
+        </p>
       </section>
 
       <hr className="my-10 border-none border-t border-[#bae6fd]" />

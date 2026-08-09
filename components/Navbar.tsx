@@ -45,6 +45,7 @@ export default function PremiumNavbar() {
       icon: HeartHandshake,
       links: [
         { name: "大阪梅田ドクターズ結婚相談所", href: "/" },
+        { name: "大阪梅田の結婚相談所ってどんなところ？｜家族のような温かみあるサポート", href: "/umeda-marriage" },
         { name: "ドクターズ結婚相談所が選ばれる理由", href: "/why-us" },
         { name: "大阪梅田ドクターズ結婚相談所の会員と婚活環境について", href: "/elite-circle" },
         { name: "メインカウンセラーのメッセージ", href: "/main-counselor" },
