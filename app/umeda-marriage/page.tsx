@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -155,7 +156,14 @@ export default function UmedaMarriagePage() {
         
         <p className="mb-4 mt-0 text-[18px]">おかげさまで、今も私たちの元にはたくさんの幸せな成婚報告が届いています。</p>
         
-        <p className="mb-0 text-[20px] font-bold text-[#0259C2] text-center">次はあなたの番かもしれません</p>
+        <p className="mb-0 text-[20px] font-bold  text-center">次はあなたの番かもしれません</p>
+     
+<Link
+  href="/reports"
+  className="mx-auto block w-10/12 max-w-[340px] rounded-xl bg-[#6F292B] px-6 py-4 text-center text-[20px] font-bold text-white shadow-[0_6px_0_#4a1b1d] transition-all hover:translate-y-[2px] hover:shadow-[0_4px_0_#4a1b1d] active:translate-y-[6px] active:shadow-none no-underline"
+>
+  嬉しい成婚報告を見る →
+</Link>
       </section>
     </main>
   );
