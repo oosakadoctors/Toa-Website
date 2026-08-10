@@ -1,5 +1,6 @@
 "use client";
-
+import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 import { Heart, Brain, Smile, Activity, MessageSquare, CheckCircle, HelpCircle, Sparkles, RefreshCw, Award, ArrowRight } from 'lucide-react';
 // import { Metadata } from 'next';
@@ -88,7 +89,7 @@ export default function EQPage() {
             
             {/* Frosted Glass Container */}
             <div className="relative z-10 bg-white/80 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/70 shadow-xs max-w-2xl mx-auto">
-              <span className="text-xs sm:text-sm font-black text-sky-800 uppercase tracking-widest block mb-2">
+              <span className="text-base sm:text-base font-black text-sky-800 uppercase tracking-widest block mb-2">
                 Essential Skill Guide
               </span>
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 leading-snug tracking-tight mb-6">
@@ -111,11 +112,19 @@ export default function EQPage() {
         </div>
 
         {/* --- 2. 女医からの一言 CARD --- */}
-        <div className="bg-white/90 backdrop-blur-md shadow-2xl border border-sky-100 rounded-3xl p-6 sm:p-10">
+<div className="bg-white/90 backdrop-blur-md shadow-2xl border border-sky-100 rounded-3xl p-6 sm:p-10">
           <div className="flex items-center gap-3 border-b border-sky-100 pb-4 mb-6">
-            <span className="text-2xl">👩‍⚕️</span>
+            <div className="w-20 h-20 rounded-full overflow-hidden shrink-0 border-2 border-sky-200 shadow-xs">
+              <Image
+                src="/femaleAdvisor2.jpg"
+                alt="女医アドバイザー"
+                width={48}
+                height={48}
+                className="w-full h-full object-cover"
+              />
+            </div>
             <h2 className="text-lg sm:text-xl font-black text-sky-800">
-              女医からの一言 💙
+              女医からの一言 🩷
             </h2>
           </div>
 
@@ -139,7 +148,7 @@ export default function EQPage() {
         {/* --- 3. 4つのコアパラメータ CARD --- */}
         <div className="bg-white/90 backdrop-blur-md shadow-2xl border border-sky-100 rounded-3xl p-6 sm:p-10">
           <div className="text-center space-y-1 mb-8">
-            <span className="font-bold tracking-wider text-sky-600 uppercase block text-xs sm:text-sm">
+            <span className="font-bold tracking-wider text-sky-600 uppercase block text-base sm:text-base">
               4 Core Pillars
             </span>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900">
@@ -153,7 +162,7 @@ export default function EQPage() {
             {/* Skill 1 */}
             <div className="space-y-3 border-b border-sky-100 pb-6">
               <h3 className="font-black text-slate-900 flex items-center gap-3">
-                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-sky-500 text-white font-mono shrink-0 font-bold text-sm shadow-xs">1</span>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-sky-500 text-white font-mono shrink-0 font-bold text-base shadow-xs">1</span>
                 自分の感情を認識する力（Emotional Self-Awareness）
               </h3>
               <p className="pl-0 sm:pl-11 text-slate-600">
@@ -168,7 +177,7 @@ export default function EQPage() {
             {/* Skill 2 */}
             <div className="space-y-3 border-b border-sky-100 pb-6">
               <h3 className="font-black text-slate-900 flex items-center gap-3">
-                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-sky-500 text-white font-mono shrink-0 font-bold text-sm shadow-xs">2</span>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-sky-500 text-white font-mono shrink-0 font-bold text-base shadow-xs">2</span>
                 感情をコントロールする力（Self-Regulation）
               </h3>
               <p className="pl-0 sm:pl-11 text-slate-600">
@@ -183,7 +192,7 @@ export default function EQPage() {
             {/* Skill 3 */}
             <div className="space-y-3 border-b border-sky-100 pb-6">
               <h3 className="font-black text-slate-900 flex items-center gap-3">
-                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-sky-500 text-white font-mono shrink-0 font-bold text-sm shadow-xs">3</span>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-sky-500 text-white font-mono shrink-0 font-bold text-base shadow-xs">3</span>
                 他者へ共感する力（Empathy）
               </h3>
               <p className="pl-0 sm:pl-11 text-slate-600">
@@ -199,7 +208,7 @@ export default function EQPage() {
             {/* Skill 4 */}
             <div className="space-y-3">
               <h3 className="font-black text-slate-900 flex items-center gap-3">
-                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-sky-500 text-white font-mono shrink-0 font-bold text-sm shadow-xs">4</span>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-sky-500 text-white font-mono shrink-0 font-bold text-base shadow-xs">4</span>
                 対人関係性の調整力（Interpersonal Skills）
               </h3>
               <p className="pl-0 sm:pl-11 text-slate-600">
@@ -219,7 +228,7 @@ export default function EQPage() {
         {/* --- 4. 男女別EQの得意分野傾向と考察 CARD --- */}
         <div className="bg-white/90 backdrop-blur-md shadow-2xl border border-sky-100 rounded-3xl p-6 sm:p-10">
           <div className="text-center space-y-1 mb-8">
-            <span className="font-bold tracking-wider text-sky-600 uppercase block text-xs sm:text-sm">
+            <span className="font-bold tracking-wider text-sky-600 uppercase block text-base sm:text-base">
               Gender Specifics
             </span>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900">
@@ -233,37 +242,55 @@ export default function EQPage() {
               男女で異なる「EQの得意分野」はありますが、トータルの高さ（スコア）の男女差はごくわずかです。本質的な違いは、以下のように「どの感情スキルに長けているか」の傾向にあります。
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* 女性 */}
-              <div className="bg-sky-50/40 rounded-2xl p-5 border border-sky-200/60 shadow-xs space-y-3">
-                <h4 className="font-bold text-slate-900 flex items-center gap-2 text-[18px]">
-                  <span>👩‍⚕️</span> 女性が得意とするEQ (他者志向)
-                </h4>
-                <p className="text-slate-600 text-sm">
-                  女性は「自分以外の誰か」との関係性を円滑にするスキルが高い傾向にあります。
-                </p>
-                <ul className="text-slate-700 pl-4 list-disc space-y-1.5 text-sm">
-                  <li><strong>高い共感力:</strong> 相手の表情や声から言葉にできない感情を察知。</li>
-                  <li><strong>対人関係力:</strong> 周囲と調和を図り、良好な関係を築く力。</li>
-                  <li><strong>自己の感情認識:</strong> 抱いている感情を正確に言語化する力。</li>
-                </ul>
-              </div>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+  {/* 女性 */}
+  <div className="bg-sky-50/40 rounded-2xl p-5 border border-sky-200/60 shadow-xs space-y-3">
+    <h4 className="font-bold text-slate-900 flex items-center gap-2.5 text-[18px]">
+      <div className="w-20 h-20 rounded-full overflow-hidden shrink-0 border-2 border-sky-200 shadow-2xs">
+        <Image
+          src="/womanAvatar1.jpg"
+          alt="女医アドバイザー"
+          width={32}
+          height={32}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      女性が得意とするEQ (他者志向)
+    </h4>
+    <p className="text-slate-600 text-base">
+      女性は「自分以外の誰か」との関係性を円滑にするスキルが高い傾向にあります。
+    </p>
+    <ul className="text-slate-700 pl-4 list-disc space-y-1.5 text-base">
+      <li><strong>高い共感力:</strong> 相手の表情や声から言葉にできない感情を察知。</li>
+      <li><strong>対人関係力:</strong> 周囲と調和を図り、良好な関係を築く力。</li>
+      <li><strong>自己の感情認識:</strong> 抱いている感情を正確に言語化する力。</li>
+    </ul>
+  </div>
 
-              {/* 男性 */}
-              <div className="bg-sky-50/40 rounded-2xl p-5 border border-sky-200/60 shadow-xs space-y-3">
-                <h4 className="font-bold text-slate-900 flex items-center gap-2 text-[18px]">
-                  <span>👨</span> 男性が得意としやすいEQスキル (自己・課題志向)
-                </h4>
-                <p className="text-slate-600 text-sm">
-                  男性は「自分自身の感情のコントロール」やプレッシャーへの耐性が高い傾向にあります。
-                </p>
-                <ul className="text-slate-700 pl-4 list-disc space-y-1.5 text-sm">
-                  <li><strong>感情の自己調整:</strong> ネガティブな感情に流されず理性に切替。</li>
-                  <li><strong>ストレス耐性:</strong> プレッシャーに直面しても冷静に対応する力。</li>
-                  <li><strong>自己肯定感・主張力:</strong> 意見を自信を持って周囲に伝える能力。</li>
-                </ul>
-              </div>
-            </div>
+  {/* 男性 */}
+  <div className="bg-sky-50/40 rounded-2xl p-5 border border-sky-200/60 shadow-xs space-y-3">
+    <h4 className="font-bold text-slate-900 flex items-center gap-2.5 text-[18px]">
+      <div className="w-20 h-20 rounded-full overflow-hidden shrink-0 border-2 border-sky-200 shadow-2xs">
+        <Image
+          src="/manAvatar1.jpg"
+          alt="男性アドバイザー"
+          width={32}
+          height={32}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      男性が得意としやすいEQスキル (自己・課題志向)
+    </h4>
+    <p className="text-slate-600 text-base">
+      男性は「自分自身の感情のコントロール」やプレッシャーへの耐性が高い傾向にあります。
+    </p>
+    <ul className="text-slate-700 pl-4 list-disc space-y-1.5 text-base">
+      <li><strong>感情の自己調整:</strong> ネガティブな感情に流されず理性に切替。</li>
+      <li><strong>ストレス耐性:</strong> プレッシャーに直面しても冷静に対応する力。</li>
+      <li><strong>自己肯定感・主張力:</strong> 意見を自信を持って周囲に伝える能力。</li>
+    </ul>
+  </div>
+</div>
 
             {/* Q&A */}
             <div className="p-6 bg-slate-900 text-slate-100 rounded-2xl space-y-3 shadow-md">
@@ -282,19 +309,30 @@ export default function EQPage() {
               </div>
             </div>
 
-            <div className="bg-sky-50/80 rounded-2xl p-5 border border-sky-200/80 space-y-2 shadow-2xs">
-              <p className="font-bold text-sky-800">👩‍⚕️ 女性医師の見解：</p>
-              <p className="text-slate-700 leading-relaxed">
-                男らしさ、女らしさといった固定概念や社会的役割の差は少なくなってきています。今後EQの高さも、そうした変化や生物学的な本来の特徴をミックスした形に変化していきますので、性別という固定概念だけではなく<strong>個人それぞれに柔軟に捉えたほうがいい</strong>と考えています。
-              </p>
-            </div>
+<div className="bg-sky-50/80 rounded-2xl p-5 border border-sky-200/80 space-y-3 shadow-2xs">
+  <div className="flex items-center gap-3">
+    <div className="w-20 h-20 rounded-full overflow-hidden shrink-0 border-2 border-sky-200 shadow-2xs">
+      <Image
+        src="/femaleAdvisor2.jpg"
+        alt="女性医師アドバイザー"
+        width={50}
+        height={50}
+        className="w-full h-full object-cover"
+      />
+    </div>
+    <p className="font-bold text-sky-800 text-lg">女性医師の見解：</p>
+  </div>
+  <p className="text-slate-700 leading-relaxed">
+    男らしさ、女らしさといった固定概念や社会的役割の差は少なくなってきています。今後EQの高さも、そうした変化や生物学的な本来の特徴をミックスした形に変化していきますので、性別という固定概念だけではなく<strong>個人それぞれに柔軟に捉えたほうがいい</strong>と考えています。
+  </p>
+</div>
           </div>
         </div>
 
         {/* --- 5. 結婚・パートナーシップにおけるEQの価値 CARD --- */}
         <div className="bg-white/90 backdrop-blur-md shadow-2xl border border-sky-100 rounded-3xl p-6 sm:p-10">
           <div className="text-center space-y-1 mb-8">
-            <span className="font-bold tracking-wider text-sky-600 uppercase block text-xs sm:text-sm">
+            <span className="font-bold tracking-wider text-sky-600 uppercase block text-base sm:text-base">
               Core Importance
             </span>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900">
@@ -320,7 +358,7 @@ export default function EQPage() {
         {/* --- 6. インタラクティブ：EQセルフチェック CARD --- */}
         <div className="bg-white/90 backdrop-blur-md shadow-2xl border border-sky-100 rounded-3xl p-6 sm:p-10">
           <div className="text-center space-y-1 mb-8">
-            <span className="font-bold tracking-wider text-sky-600 uppercase block text-xs sm:text-sm">
+            <span className="font-bold tracking-wider text-sky-600 uppercase block text-base sm:text-base">
               Self Diagnostic Quiz
             </span>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900">
@@ -346,7 +384,7 @@ export default function EQPage() {
               </div>
             ) : !quizFinished && currentQuestion !== null ? (
               <div className="space-y-4 p-6 bg-sky-50/30 rounded-2xl border border-sky-200/60 shadow-xs">
-                <div className="flex justify-between text-slate-400 font-semibold text-sm">
+                <div className="flex justify-between text-slate-400 font-semibold text-base">
                   <span>質問 {currentQuestion + 1} / {quizQuestions.length}</span>
                   <span>進行度 {Math.round(((currentQuestion) / quizQuestions.length) * 100)}%</span>
                 </div>
@@ -367,7 +405,7 @@ export default function EQPage() {
               </div>
             ) : (
               <div className="text-center space-y-4 p-6 bg-sky-50/50 rounded-2xl border border-sky-200">
-                <p className="text-sky-600 font-bold uppercase tracking-wider text-sm">心理チェック結果</p>
+                <p className="text-sky-600 font-bold uppercase tracking-wider text-base">心理チェック結果</p>
                 <h4 className="font-bold text-slate-900 text-xl">あなたのEQ意識スコア</h4>
                 <p className="font-black text-sky-700 text-3xl">{totalScore} <span className="text-slate-400 text-lg">/ {maxScore} 点</span></p>
                 <p className="text-slate-700 leading-relaxed text-left bg-white p-5 rounded-xl border border-sky-200/60 shadow-2xs">
@@ -389,7 +427,7 @@ export default function EQPage() {
         {/* --- 7. EQについて詳しい説明 (Deep Dive) CARD --- */}
         <div className="bg-white/90 backdrop-blur-md shadow-2xl border border-sky-100 rounded-3xl p-6 sm:p-10">
           <div className="text-center space-y-1 mb-8">
-            <span className="font-bold tracking-wider text-sky-600 uppercase block text-xs sm:text-sm">
+            <span className="font-bold tracking-wider text-sky-600 uppercase block text-base sm:text-base">
               Background Theory
             </span>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900">
@@ -405,7 +443,7 @@ export default function EQPage() {
                   <span className="w-2 h-5 bg-sky-500 rounded-sm inline-block shrink-0" />
                   1. EQ理論の誕生と世界への普及
                 </h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
+                <p className="text-slate-600 text-base leading-relaxed">
                   EQ（Emotional Intelligence Quotient）の概念は、1990年にアメリカの心理学者ピーター・サロベイ氏とジョン・メイヤー氏の共同研究によって誕生しました。彼らは「社会的に成功する人物は、例外なく自分の感情をコントロールし、他者の感情を察知する能力（エモーショナル・インテリジェンス）に長けている」事実を実証しました。
                   この理論を世界に普及させたのが、心理学者ダニエル・ゴールマン氏です。彼は1995年の著書『Emotional Intelligence』（邦題：EQ〜こころの知能指数）の中で、情動を扱う「EQ」を普及させました。
                 </p>
@@ -416,7 +454,7 @@ export default function EQPage() {
                   <span className="w-2 h-5 bg-sky-500 rounded-sm inline-block shrink-0" />
                   2. 脳科学から見る「IQ」と「EQ」の決定的な違い
                 </h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
+                <p className="text-slate-600 text-base leading-relaxed">
                   主に「前頭葉（理性）」が司るIQは成人後は数値がほぼ一定ですが、EQは感情を司る「大脳辺縁系（扁桃体）」と「前頭葉」の間の情報の連携のスムーズさを表します。
                   例えば、デート中にトラブルが起きた際、EQが高い人は「今自分は焦っている」と冷静に認知し、前頭葉で「ここで不機嫌になっても解決しない」と判断して大人の対応を選択できます。最大の特長は、<strong>「IQは成人後ほぼ一定だが、EQは正しいトレーニングで後天的に高められるスキルである」</strong>という点にあります。
                 </p>
@@ -428,7 +466,7 @@ export default function EQPage() {
         {/* --- 8. EQの15個の基本パラメーター CARD --- */}
         <div className="bg-white/90 backdrop-blur-md shadow-2xl border border-sky-100 rounded-3xl p-6 sm:p-10">
           <div className="text-center space-y-1 mb-8">
-            <span className="font-bold tracking-wider text-sky-600 uppercase block text-xs sm:text-sm">
+            <span className="font-bold tracking-wider text-sky-600 uppercase block text-base sm:text-base">
               Mental Scorecard
             </span>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900">
@@ -449,10 +487,10 @@ export default function EQPage() {
                 <h4 className="font-bold text-sky-800 border-b border-sky-200/60 pb-2 text-base">
                   ① 自己領域（インサイド）
                 </h4>
-                <p className="text-slate-500 text-xs leading-relaxed">
+                <p className="text-slate-500 text-base leading-relaxed">
                   自分の感情を客観的にマネジメントし、婚活の不安や焦りに動じないための土台です。
                 </p>
-                <ul className="text-slate-700 space-y-1.5 text-xs">
+                <ul className="text-slate-700 space-y-1.5 text-base">
                   <li><strong>1. 自己認識:</strong> 自分の感情をリアルタイムで正確に捉える力。</li>
                   <li><strong>2. 自己肯定力:</strong> 強みも弱みも認め尊重する力。</li>
                   <li><strong>3. 自己表現力:</strong> 本音を感情的にならず伝える能力。</li>
@@ -466,10 +504,10 @@ export default function EQPage() {
                 <h4 className="font-bold text-sky-800 border-b border-sky-200/60 pb-2 text-base">
                   ② 他者領域（パートナーシップ）
                 </h4>
-                <p className="text-slate-500 text-xs leading-relaxed">
+                <p className="text-slate-500 text-base leading-relaxed">
                   お相手とのすれ違いを解消し、深い安心感と信頼関係を育むための能力です。
                 </p>
-                <ul className="text-slate-700 space-y-1.5 text-xs">
+                <ul className="text-slate-700 space-y-1.5 text-base">
                   <li><strong>6. 共感力:</strong> 言葉の裏の「感情」を深く想像し寄り添う力。</li>
                   <li><strong>7. 対人関係力:</strong> 心地よい距離で親密な関係を維持するスキル。</li>
                   <li><strong>8. 社会的責任:</strong> 協調性を持って貢献しようとする姿勢。</li>
@@ -481,10 +519,10 @@ export default function EQPage() {
                 <h4 className="font-bold text-sky-800 border-b border-sky-200/60 pb-2 text-base">
                   ③ 状況適応・ストレス管理
                 </h4>
-                <p className="text-slate-500 text-xs leading-relaxed">
+                <p className="text-slate-500 text-base leading-relaxed">
                   予測不可能なトラブルや意見の食い違いを乗り越える力です。
                 </p>
-                <ul className="text-slate-700 space-y-1.5 text-xs">
+                <ul className="text-slate-700 space-y-1.5 text-base">
                   <li><strong>9. 現実検証力:</strong> 事実を客観的・論理的に見極める力。</li>
                   <li><strong>10. 柔軟性:</strong> お相手の価値観に応じて考えを変えられる力。</li>
                   <li><strong>11. 問題解決力:</strong> 勝ち負けではなく「2人の最適解」を導く力。</li>
@@ -498,10 +536,10 @@ export default function EQPage() {
                 <h4 className="font-bold text-sky-800 border-b border-sky-200/60 pb-2 text-base">
                   ④ 全体的な気分領域
                 </h4>
-                <p className="text-slate-500 text-xs leading-relaxed">
+                <p className="text-slate-500 text-base leading-relaxed">
                   常に前を向き、家庭内に温かいエネルギーを灯し続けるためのマインドです。
                 </p>
-                <ul className="text-slate-700 space-y-1.5 text-xs">
+                <ul className="text-slate-700 space-y-1.5 text-base">
                   <li><strong>14. 楽観性:</strong> 困難にあっても好転すると信じ可能性に目を向ける力。</li>
                   <li><strong>15. 幸福感:</strong> 日常の些細な出来事に満足と感謝を見出す力。</li>
                 </ul>
@@ -509,17 +547,30 @@ export default function EQPage() {
 
             </div>
 
-            <div className="bg-sky-50/80 border border-sky-200/80 rounded-2xl p-5 text-slate-700 leading-relaxed shadow-2xs">
-              <span className="font-bold text-sky-800 block mb-1">👩‍⚕️ 女医からのコメント：</span>
-              EQは高いにこしたことは無いと思いますが、完璧な人はこの世におらず、あるパラメーターだけに特化して高い方がうまく仕事もあるでしょうし、あるパラメーターが高くなるとあるパラメーターは低くなるという従属の関係にもなっています。弱みや苦手分野があることも個性であり魅力の一つだと考えています。男女ともに「できない人ほどほっとけなくて可愛い🩷」という点も決して否めないですから(笑)
-            </div>
+<div className="bg-sky-50/80 border border-sky-200/80 rounded-2xl p-5 text-slate-700 leading-relaxed shadow-2xs">
+  <div className="flex items-center gap-3 mb-3">
+    <div className="w-20 h-20 rounded-full overflow-hidden shrink-0 border-2 border-sky-200 shadow-2xs">
+      <Image
+        src="/femaleAdvisor2.jpg"
+        alt="女医アドバイザー"
+        width={40}
+        height={40}
+        className="w-full h-full object-cover"
+      />
+    </div>
+    <span className="font-bold text-sky-800 text-lg">女医からのコメント：</span>
+  </div>
+  <p className="pl-13 sm:pl-0">
+    EQは高いにこしたことは無いと思いますが、完璧な人はこの世におらず、あるパラメーターだけに特化して高い方がうまく仕事もあるでしょうし、あるパラメーターが高くなるとあるパラメーターは低くなるという従属の関係にもなっています。弱みや苦手分野があることも個性であり魅力の一つだと考えています。男女ともに「できない人ほどほっとけなくて可愛い🩷」という点も決して否めないですから(笑)
+  </p>
+</div>
           </div>
         </div>
 
         {/* --- 9. 入会アピール & 無料面談予約 (CTA CARD) --- */}
         <div className="bg-gradient-to-br from-sky-100/90 via-sky-50/95 to-blue-100/90 backdrop-blur-md p-6 sm:p-10 border border-sky-200/80 rounded-3xl text-center shadow-2xl space-y-6">
           <div className="space-y-1">
-            <span className="font-bold tracking-wider text-sky-700 uppercase block text-xs sm:text-sm">
+            <span className="font-bold tracking-wider text-sky-700 uppercase block text-base sm:text-base">
               Contact Call
             </span>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900">
@@ -539,20 +590,20 @@ export default function EQPage() {
           </div>
 
           <div className="pt-2">
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-sky-500 to-sky-600 hover:from-sky-600 hover:to-sky-700 text-white font-bold text-[18px] py-4 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition duration-200 cursor-pointer w-full sm:w-auto"
-            >
-              <MessageSquare className="w-5 h-5 shrink-0" />
-              【無料相談】まずは無料カウンセリングから（LINE無料相談・対面対応）
-            </a>
+<Link
+  href="/contact"
+  className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#06C755] to-[#05b34c] hover:from-[#05b34c] hover:to-[#049e42] text-white font-bold text-[18px] py-4 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition duration-200 cursor-pointer w-full sm:w-auto"
+>
+  <MessageSquare className="w-5 h-5 shrink-0" />
+  【無料相談】まずは無料カウンセリングから（LINE無料相談・対面対応）
+</Link>
           </div>
         </div>
 
       </div>
 
       {/* フッター */}
-      <footer className="text-center py-8 text-slate-500 mt-12 w-full text-sm">
+      <footer className="text-center py-8 text-slate-500 mt-12 w-full text-base">
         <p>© 大阪梅田ドクターズ結婚相談所 All Rights Reserved.</p>
       </footer>
     </div>

@@ -9,16 +9,30 @@ export const metadata: Metadata = {
 
 export default function SuccessStoriesPage() {
   return (
-    <main className="mx-auto max-w-[500px] bg-[#f0f7fc] px-4 py-6 text-[18px] leading-[1.8] text-[#2b3a4a] box-border">
+    <main className="mx-auto max-w-[500px] bg-[#f0f7fc] px-4 py-1 text-[18px] leading-[1.8] text-[#2b3a4a] box-border">
       {/* Introduction Section */}
-      <section className="mb-10 text-center">
-        <h1 className="mb-6 text-[22px] sm:text-[24px] font-bold leading-[1.5] text-[#1a365d]">
-          結婚相談所の婚活で<br />「上手くいかない」と悩むあなたへ。
-        </h1>
+      <section className="mb-2 text-center">
+<div className="mb-10 px-2 sm:px-6 py-1 text-slate-900 text-center w-full">
+  <div className="flex flex-col items-center gap-4 w-full">
+    <span className="inline-flex items-center gap-1.5 bg-sky-100 text-sky-800 text-xs sm:text-sm font-bold tracking-widest px-4 py-1.5 rounded-full border border-sky-200 shadow-2xs">
+      ✨ リアルな成婚ストーリー
+    </span>
+    
+    <div className="bg-gradient-to-r from-sky-600 to-blue-600 text-white py-6 px-4 sm:px-8 rounded-2xl shadow-md w-full">
+      <h1 className="text-[28px] sm:text-[38px] lg:text-[44px] font-bold tracking-wide leading-tight m-0 text-white font-serif w-full drop-shadow-sm">
+        結婚相談所の婚活で<br className="sm:hidden" />
+        「上手くいかない」と悩むあなたへ。
+      </h1>
+    </div>
+
+    <div className="w-20 h-1 bg-sky-500 rounded-full my-1" />
+
+    <p className="text-slate-600 text-base sm:text-lg leading-relaxed tracking-wider m-0 font-sans w-full">
+      色々な困難を乗り越え、最高の出会いを掴んだ先輩たちのリアルな婚活の記録
+    </p>
+  </div>
+</div>
         
-        <p className="mb-6 text-[18px] text-left">
-          色々な困難を乗り越え、最高の出会いを掴んだ先輩たちのリアルな婚活の記録
-        </p>
 
         <div className="mb-6 overflow-hidden rounded-lg w-full shadow-md">
           <Image

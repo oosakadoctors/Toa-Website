@@ -885,8 +885,7 @@ export default function Home() {
     </div>
   </a>
 
-  <a
-    href="/ideal-woman"
+  <div
     className="group rounded-xl border border-green-200 bg-gradient-to-r from-green-50 to-white px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-green-400 hover:shadow-md"
   >
     <div className="flex items-start gap-3">
@@ -910,7 +909,7 @@ export default function Home() {
         </Link>
       </div>
     </div>
-  </a>
+  </div>
 
   <a
     href="/become-her-choice"

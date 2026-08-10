@@ -95,6 +95,7 @@ export default function PremiumNavbar() {
       links: [
         { name: "恋愛初心者がスピード成婚する方法", href: "/beginners" },
         { name: "大人の結婚に必要な「人間的成熟度」と内面魅力", href: "/emotional-maturity" },
+        { name: "初心者むけ素朴な疑問を解決", href: "/first-steps" },
       ],
     },
     {
@@ -130,7 +131,6 @@ export default function PremiumNavbar() {
       links: [
         { name: "結婚相談所の流れとサポート内容", href: "/steps" },
         { name: "婚活よくある質問Q＆A", href: "/FAQ" },
-        { name: "成婚エピソード", href: "/marriage-story" },
         { name: "お見合いルールとNGマナー", href: "/rules" },
       ],
     },

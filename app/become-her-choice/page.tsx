@@ -7,12 +7,12 @@ import Link from "next/link";
 
 export default function BecomeTheManSheChoosesPage() {
   return (
-    <main className="space-y-2">
+    <main className="space-y-1">
 
       {/* ========================================================= */}
       {/* HERO (GRADIENT NAVY BLUE) */}
       {/* ========================================================= */}
-<section className="w-full py-2">
+<section className="w-full">
         <div className="mx-auto w-[100%] max-w-6xl px-5 sm:px-10 py-8 rounded-1xl bg-gradient-to-br from-[#0B2545] via-[#134074] to-[#1D4ED8] border border-blue-400/30 shadow-xl space-y-6 text-white">
 
           <header className="space-y-6">
@@ -45,7 +45,7 @@ export default function BecomeTheManSheChoosesPage() {
       </section>
 
 <section className="w-full">
-      <div className="w-full max-w-4xl mx-auto my-1">
+      <div className="w-full max-w-4xl mx-auto">
         <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
           <Image
             src="/girl-driving-car.jpg"
