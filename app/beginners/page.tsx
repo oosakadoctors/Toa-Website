@@ -387,7 +387,7 @@ export default function BeginnerLandingPage() {
           {/* 3つの小さなお約束 */}
           <div className="bg-sky-100/60 backdrop-blur-md p-4 md:p-5 border border-sky-200/80 rounded-3xl w-full space-y-3 shadow-xs">
             <h3 className="font-bold text-sky-950 text-[22px] md:text-base flex items-center gap-2 w-full">
-              <ShieldCheck classNaame="w-6 h-6 md:w-5 md:h-5 text-sky-700 shrink-0" />
+              <ShieldCheck className="w-6 h-6 md:w-5 md:h-5 text-sky-700 shrink-0" />
               🛡️ 私たちからの3つの小さなお約束
             </h3>
             <p className="text-[20px] md:text-sm text-slate-800 font-medium w-full leading-relaxed">
