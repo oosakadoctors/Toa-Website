@@ -12,7 +12,7 @@ export default function BeginnerLandingPage() {
       {/* 画面全体の固定背景レイヤー (sky1.jpg) */}
       <div 
         className="fixed inset-0 pointer-events-none -z-10 bg-cover bg-center bg-no-repeat bg-fixed opacity-60"
-        style={{ backgroundImage: "url('/skyRepeat2.jpg')" }}
+        style={{ backgroundImage: "url('/skyRepeat.jpg')" }}
       />
       
       {/* ベース背景カラー */}

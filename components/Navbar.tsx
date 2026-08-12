@@ -81,6 +81,13 @@ export default function PremiumNavbar() {
       ],
     },
     {
+      title: "新し",
+      icon: UserRound,
+      links: [
+        { name: "自称オタク・理系・技術職の男性へ", href: "/level-up" }, 
+      ],
+    },
+    {
       title: "親御様へ 大切なお子様の結婚を願うあなたへ",
       icon: UserRound,
       links: [{ name: "親御様がお子様の結婚を願う", href: "/parents" },
