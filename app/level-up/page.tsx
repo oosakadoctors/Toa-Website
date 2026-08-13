@@ -226,7 +226,7 @@ export default function TechMenStrategyPage() {
               </p>
                            <section className="w-full">
       <div className="w-full max-w-4xl mx-auto my-1">
-        <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+        <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl shadow-md">
           <Image
             src="/gamification12.jpg"
             alt="20年の実績を持つベテラン仲人が理系男性をサポートするイメージ画像"
