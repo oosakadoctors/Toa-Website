@@ -21,13 +21,13 @@ export default function TechMenStrategyPage() {
     <div className="relative min-h-screen w-full py-6 sm:py-10 px-3 sm:px-6 overflow-hidden text-[18px]">
       {/* --- Full Page Background Image --- */}
       <img 
-        src="/watermelon.jpg" 
+        src="/champagne1.png" 
         alt="Multi-colored jellybean background" 
         className="fixed inset-0 w-full h-full object-cover object-center -z-10"
       />
       
       {/* Dark Overlay for Contrast */}
-      <div className="fixed inset-0 bg-slate-900/40 backdrop-blur-[2px] -z-10" />
+      
 
       {/* --- Main Stacked Cards Container --- */}
       <div className="max-w-5xl mx-auto space-y-6">
@@ -45,19 +45,24 @@ export default function TechMenStrategyPage() {
     </h1>
 
     {/* --- FULL IMAGE CONTAINER (NATURAL RATIO / ZERO CROPPING) --- */}
-    <div className="w-full max-w-lg mx-auto bg-slate-50 p-2 sm:p-3 rounded-2xl border border-sky-100 shadow-md">
-      <Image
-        src="/good-future-together.jpg"
-        alt="ハイスペック婚活の成功をイメージさせる、白いシャツを着て微笑むハイステ男性のイメージ写真"
-        width={1200}
-        height={800}
-        priority={true}
-        sizes="(max-width: 768px) 100vw, 600px"
-        className="w-full h-auto rounded-xl shadow-xs block"
-        placeholder="blur"
-        blurDataURL="data:image/jpeg;base64,/9j/4AAQScript..."
-      />
-    </div>
+<section className="w-full">
+      <div className="w-full max-w-4xl mx-auto">
+        <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+          <Image
+            src="/good-future-together.jpg"
+            alt="婚活で出会った女性とドライブデートをしながら成婚をめざすイメージ写真"
+            fill
+            sizes="(max-width: 768px) 100vw, 800px"
+            loading="eager" 
+            fetchPriority="high"
+            priority={false}
+            className="object-cover"
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+          />
+        </div>
+      </div>
+    </section>
 
     <p className="text-sky-700 font-bold text-[18px] sm:text-[19px] leading-relaxed max-w-2xl mx-auto">
       Java、Python、PHP……コードは書けるのに、女性心理の仕様書（ホンネ）が読めない理系👨たちへ。
@@ -219,6 +224,22 @@ export default function TechMenStrategyPage() {
               <p className="text-base font-bold text-sky-800 mb-3">
                 体育会系。普段のカウンセリングはとことん穏やか。
               </p>
+                           <section className="w-full">
+      <div className="w-full max-w-4xl mx-auto my-1">
+        <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+          <Image
+            src="/gamification12.jpg"
+            alt="20年の実績を持つベテラン仲人が理系男性をサポートするイメージ画像"
+            fill
+            sizes="(max-width: 768px) 100vw, 800px"
+            priority={false}
+            className="object-cover"
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+          />
+        </div>
+      </div>
+    </section>
               <div className="bg-sky-100/70 p-3 rounded-lg border border-sky-200 text-sky-900 font-bold mb-3 text-[18px]">
                 「実戦のリードやお店選びは、すべて私が『盾（タンク）』となって先陣を切ります！」
               </div>
