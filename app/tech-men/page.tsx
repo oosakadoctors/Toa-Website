@@ -219,6 +219,22 @@ export default function TechMenStrategyPage() {
             忙しいビジネスマンのための、無駄をゼロにした「タイパ至上主義」の婚活。
           </h2>
 
+            <section className="w-full lg:col-span-5">
+              <div className="w-full max-w-4xl mx-auto my-1">
+                <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+                  <Image
+                    src="/smart-meeting.jpg"
+                    alt="タイパ至上主義のお見合い・スマートな日程調整イメージ"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 800px"
+                    priority={false}
+                    className="object-cover"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+                  />
+                </div>
+              </div>
+            </section>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
             <div className="lg:col-span-7 space-y-4 text-slate-700 leading-relaxed">
               <p className="text-lg font-bold text-sky-800">
@@ -238,22 +254,6 @@ export default function TechMenStrategyPage() {
               </p>
             </div>
 
-            <section className="w-full lg:col-span-5">
-              <div className="w-full max-w-4xl mx-auto my-1">
-                <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-                  <Image
-                    src="/smart-meeting.jpg"
-                    alt="タイパ至上主義のお見合い・スマートな日程調整イメージ"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 800px"
-                    priority={false}
-                    className="object-cover"
-                    placeholder="blur"
-                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-                  />
-                </div>
-              </div>
-            </section>
           </div>
         </div>
 

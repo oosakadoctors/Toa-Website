@@ -86,6 +86,7 @@ export default function PremiumNavbar() {
       links: [
         { name: "自称オタク・理系・技術職の男性へ", href: "/level-up" }, 
         { name: "理系男性の婚活", href: "/tech-men" }, 
+        { name: "理系男性のお見合い、お当て探し", href: "/tech-matchmaking" }, 
       ],
     },
     {

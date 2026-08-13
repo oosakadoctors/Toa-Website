@@ -65,7 +65,7 @@ export default function TechMenStrategyPage() {
     </section>
 
     <p className="text-sky-700 font-bold text-[18px] sm:text-[19px] leading-relaxed max-w-2xl mx-auto">
-      Java、Python、PHP……コードは書けるのに、女性心理の仕様書（ホンネ）が読めない理系👨たちへ。
+      Java、Python、PHP……コードは書けるのに、女性心理の仕様書（ホンネ）が読めない理系男性たちへ。
     </p>
 
     <div className="w-16 h-1 bg-sky-500 mx-auto rounded-full" />
@@ -239,6 +239,9 @@ export default function TechMenStrategyPage() {
           />
         </div>
       </div>
+                    <p className="text-xs text-slate-500">
+                ※画像はイメージです。
+              </p>
     </section>
               <div className="bg-sky-100/70 p-3 rounded-lg border border-sky-200 text-sky-900 font-bold mb-3 text-[18px]">
                 「実戦のリードやお店選びは、すべて私が『盾（タンク）』となって先陣を切ります！」

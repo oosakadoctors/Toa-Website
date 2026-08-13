@@ -44,6 +44,7 @@ export default function SuccessStoriesPage() {
             className="w-full h-auto block object-cover"
           />
         </div>
+   
         
         <p className="mb-4 mt-0 text-[18px] text-left">
           「結婚相談所に入会すれば、トントン拍子に成婚できる」と思っていませんか？
@@ -63,7 +64,7 @@ export default function SuccessStoriesPage() {
 
       {/* Success Story Section */}
       <section className="mb-10 text-center">
-        <div className="mb-6 overflow-hidden rounded-lg w-full shadow-md">
+        <div className="mb-1 overflow-hidden rounded-lg w-full shadow-md">
           <Image
             src="/happy-married-couple.png"
             alt="成婚報告イメージ"
@@ -71,7 +72,11 @@ export default function SuccessStoriesPage() {
             height={400}
             className="w-full h-auto block object-cover"
           />
+          
         </div>
+                <p className="text-xs text-slate-500 mb-2">
+                ※画像はイメージです
+              </p>
         
         <h2 className="mb-6 text-[24px] font-bold  text-[#db2777] ">成婚報告</h2>
         
@@ -165,7 +170,7 @@ export default function SuccessStoriesPage() {
       </section>
 
       <section className="mb-10 text-center">
-  <div className="mb-6 overflow-hidden rounded-lg w-full shadow-md">
+  <div className="mb-2 overflow-hidden rounded-lg w-full shadow-md">
     <Image
       src="/office-worker-couple.png"
       alt="成婚報告イメージ"
@@ -174,6 +179,9 @@ export default function SuccessStoriesPage() {
       className="w-full h-auto block object-cover"
     />
   </div>
+     <p className="text-xs text-slate-500 mb-2">
+                ※画像はイメージです
+              </p>
   
   <h2 className="mb-6 text-[24px] font-bold text-[#db2777]">成婚報告</h2>
   
@@ -241,7 +249,7 @@ export default function SuccessStoriesPage() {
 </section>
 
 <section className="mb-10 text-center">
-  <div className="mb-6 overflow-hidden rounded-lg w-full shadow-md">
+  <div className="mb-1 overflow-hidden rounded-lg w-full shadow-md">
     <Image
       src="/just-married-couple.jpg"
       alt="成婚報告イメージ"
@@ -250,6 +258,9 @@ export default function SuccessStoriesPage() {
       className="w-full h-auto block object-cover"
     />
   </div>
+     <p className="text-xs text-slate-500 mb-2">
+                ※画像はイメージです
+      </p>
   
   <h2 className="mb-6 text-[24px] font-bold text-[#db2777]">成婚報告</h2>
   
@@ -316,7 +327,7 @@ export default function SuccessStoriesPage() {
 </section>
 
 <section className="mb-10 text-center">
-  <div className="mb-6 overflow-hidden rounded-lg w-full shadow-md">
+  <div className="mb-1 overflow-hidden rounded-lg w-full shadow-md">
     <Image
       src="/smiling-young-couple.png"
       alt="成婚報告イメージ"
@@ -325,6 +336,9 @@ export default function SuccessStoriesPage() {
       className="w-full h-auto block object-cover"
     />
   </div>
+     <p className="text-xs text-slate-500 mb-2">
+                ※画像はイメージです
+    </p>
   
   <h2 className="mb-6 text-[24px] font-bold text-[#0284c7]">成婚報告</h2>
   
