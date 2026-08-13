@@ -52,7 +52,7 @@ export default function PremiumNavbar() {
         { name: "婚活でモテる人の特徴とは？", href: "/attraction-guide" },
         { name: "婚活って何？から一歩ずつ", href: "/marriage-hunting" },
         { name: "リアルな婚活の記録と成婚報告", href: "/dating-journeys" },
-        { name: "会社情報", href: "/company-profile" },
+        { name: "特定商取引法に基づく表記・プライバシーポリシー", href: "/company-profile" },
       ],
     },
     {

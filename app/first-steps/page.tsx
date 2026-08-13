@@ -258,13 +258,17 @@ export default function BeginnerFaqLandingPage() {
               </p>
             </div>
 
-            <div className="my-4 text-center">
-              <img 
-                src="/beginners-support-flow.jpg" 
-                alt="初心者のサポートフローと相談所の体制図"
-                className="rounded-2xl border border-sky-200 shadow-sm mx-auto max-w-full h-auto object-cover"
-              />
-            </div>
+<div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl border border-sky-200 shadow-sm my-4">
+  <Image
+    src="/beginners-support-flow.jpg"
+    alt="初心者のサポートフローと相談所の体制図"
+    fill
+    sizes="(max-width: 768px) 100vw, 800px"
+    priority={false}
+    className="object-cover"
+    placeholder="blur"
+  />
+</div>
 
             <div className="space-y-4 text-[20px] md:text-base text-slate-700 leading-relaxed w-full">
               <p>

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import femaleAdvisor from "@/public/femaleAdvisor.jpg"; // 画像パスは適宜調整してください
 import maleAdvisor from "@/public/maleAdvisor.jpg";     // 画像パスは適宜調整してください
 import Image from "next/image";
-import { Stethoscope, Compass, BookOpen, Target, HeartHandshake, Smile } from "lucide-react";
+import { Stethoscope, Compass, BookOpen, Target, HeartHandshake, Smile, Award } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "メインカウンセラー紹介｜大阪梅田ドクターズ結婚相談所",
@@ -17,7 +17,93 @@ export default function CounselorsPage() {
   return (
     <main className="bg-[#faf8f5] min-h-screen text-base leading-relaxed text-gray-800 py-10 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-3xl space-y-10">
-        
+
+        {/* ============================================================
+            SECTION: 代表挨拶 (Representative Greeting)
+            ============================================================ */}
+        <section className="rounded-2xl bg-white border border-amber-200/80 p-6 sm:p-8 shadow-sm">
+          {/* Header */}
+          <div className="border-b border-amber-100 pb-4">
+            <div className="flex items-center gap-2 text-amber-700 font-bold text-sm tracking-wider">
+              <Award className="w-4 h-4 shrink-0" />
+              <span>代表挨拶</span>
+            </div>
+            <h1 
+              className="text-xl sm:text-2xl font-black text-gray-900 mt-2 text-balance"
+              style={{ wordBreak: 'auto-phrase' }}
+            >
+              母から受け継いだ「ご縁結び」の心と、20年の実績を未来へ
+            </h1>
+          </div>
+
+          {/* Greeting Body Text */}
+          <div className="mt-6 space-y-4 text-base text-gray-700 leading-relaxed">
+            <p style={{ wordBreak: 'auto-phrase' }}>
+              皆様、はじめまして。「大阪梅田ドクターズ結婚相談所」代表の加藤です。
+            </p>
+
+            <p style={{ wordBreak: 'auto-phrase' }}>
+              当相談所の原点は、今から約20年前に遡ります。当時、公立小学校の校長を務めていた私の母が、定年退職後に多くの知人から「良い方を紹介してほしい」と頼まれたことがきっかけでした。入会金などは一切いただかず、経営というよりも純粋に「素晴らしいご縁を結びたい」という一心で活動を始めた、いわゆる“お見合いおばちゃん”としてのスタートでした。
+            </p>
+
+            <p style={{ wordBreak: 'auto-phrase' }}>
+              当時はマッチングアプリなども一般的ではない時代でしたが、人と人を信頼でつなぐその温かいスタイルは多くの方に支持され、私の友人たちも数多く登録しておりました。私も結婚後は母の手伝いを始め、会員様の幸せな門出をサポートしてまいりました。
+            </p>
+
+            <p style={{ wordBreak: 'auto-phrase' }}>
+              私たちが築き上げてきた「お見合い成立率」や「成婚実績」は、お一人おひとりと誠実に向き合い、地道にご縁を紡いできたノウハウの結晶です。
+            </p>
+
+            <p style={{ wordBreak: 'auto-phrase' }}>
+              そしてこの度、私がメインカウンセラーとして男性ベテラン仲人とともに「大阪梅田ドクターズ結婚相談所」として新しくリニューアルオープンいたしました。
+            </p>
+
+            <p style={{ wordBreak: 'auto-phrase' }}>
+              私自身も、医師として、女性として出産や子育てなど多くの人生経験を積み、人の心や人生に寄り添うことの大切さを学んでまいりました。母から受け継いだ「幸せのご縁を結ぶ」という温かい気持ちはそのままに、医師としての視点や信頼性を掛け合わせ、さらに質の高いサポートを提供してまいります。
+            </p>
+
+            <p style={{ wordBreak: 'auto-phrase' }}>
+              時代が変わっても、生涯を共にするパートナーと出会う喜びは変わりません。培ってきた実績と確かなノウハウで、皆様の新たな一歩を全力で応援いたします。どうぞ安心してお気軽にご相談ください。
+            </p>
+          </div>
+
+          {/* Signature Block (Signature Image on the left under text) */}
+          <div className="mt-8 pt-4 flex items-center gap-4 justify-end">
+            <div className="relative w-36 sm:w-44 h-16 shrink-0">
+              <Image
+                src="/name1.jpg"
+                alt="代表 加藤の直筆サイン"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+            <div className="text-right">
+              <p className="text-xs text-gray-500 font-medium">大阪梅田ドクターズ結婚相談所 代表</p>
+              <p className="text-base font-bold text-gray-900 mt-0.5">加藤</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full">
+              <div className="w-full max-w-4xl mx-auto">
+                <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+                  <Image
+                    src="/rosesAndSky.jpg"
+                    alt="婚活で出会った女性とドライブデートをしながら成婚をめざすイメージ写真"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 800px"
+                    loading="eager" 
+                    fetchPriority="high"
+                    priority={false}
+                    className="object-cover"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+                  />
+                </div>
+              </div>
+            </section>
+
         {/* ============================================================
             SECTION 1: 現役女性医師【加藤】
             ============================================================ */}
@@ -28,12 +114,12 @@ export default function CounselorsPage() {
             <p className="text-sm font-bold text-pink-600 tracking-wider">
               メインカウンセラーのメッセージ
             </p>
-            <h1 
+            <h2 
               className="text-xl sm:text-2xl font-black text-gray-900 mt-2 text-balance"
               style={{ wordBreak: 'auto-phrase' }}
             >
               現役女性医師【加藤】
-            </h1>
+            </h2>
             <p 
               className="text-lg font-bold text-pink-700 mt-2 text-balance"
               style={{ wordBreak: 'auto-phrase' }}
