@@ -50,13 +50,13 @@ export default function ScienceMenMatchmakingPage() {
               <div className="w-full max-w-4xl mx-auto">
                 <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
                   <Image
-                    src="/good-future-together.jpg"
+                    src="/pic1.jpg"
                     alt="理系男性のお見合いとお相手探しを応援するイメージ画像"
                     fill
                     sizes="(max-width: 768px) 100vw, 800px"
                     loading="eager"
                     fetchPriority="high"
-                    priority={false}
+                    priority={true}
                     className="object-cover"
                     placeholder="blur"
                     blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
@@ -88,7 +88,7 @@ export default function ScienceMenMatchmakingPage() {
               <div className="w-full max-w-4xl mx-auto my-1">
                 <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
                   <Image
-                    src="/pic1.jpg"
+                    src="/pic2.jpg"
                     alt="オンラインお見合いでリラックスして会話するイメージ"
                     fill
                     sizes="(max-width: 768px) 100vw, 800px"
@@ -122,20 +122,11 @@ export default function ScienceMenMatchmakingPage() {
           <div>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900 border-l-4 border-sky-500 pl-3 mb-2 leading-relaxed">
               🔵 理系男性の強みを活かす：お見合いの具体的会話術（アドバイス3選）
-            </h2>
-            <p className="text-sky-800 font-bold text-[18px]">
-              お見合い必勝法として理系男性に贈る会話のワンポイントアドバイス❤️
-            </p>
-            <p className="text-slate-600 mt-1">
-              理系男性が陥りがちな落とし穴を先回りして解決する、より本質的なアドバイスを解説します。
-            </p>
-          </div>
-
-          <section className="w-full">
+                    <section className="w-full">
             <div className="w-full max-w-4xl mx-auto my-1">
               <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
                 <Image
-                  src="/pic2.jpg"
+                  src="/pic3.jpg"
                   alt="お見合い会話術のイメージ"
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"
@@ -147,6 +138,16 @@ export default function ScienceMenMatchmakingPage() {
               </div>
             </div>
           </section>
+            </h2>
+            <p className="text-sky-800 font-bold text-[18px]">
+              お見合い必勝法として理系男性に贈る会話のワンポイントアドバイス❤️
+            </p>
+            <p className="text-slate-600 mt-1">
+              理系男性が陥りがちな落とし穴を先回りして解決する、より本質的なアドバイスを解説します。
+            </p>
+          </div>
+
+    
 
           <div className="space-y-4">
             {/* Tip 1 */}
@@ -179,7 +180,7 @@ export default function ScienceMenMatchmakingPage() {
               <div className="w-full max-w-4xl mx-auto my-1">
                 <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
                   <Image
-                    src="/pic3.jpg"
+                    src="/pic4.jpg"
                     alt="コミュニケーションとリアクションのイメージ"
                     fill
                     sizes="(max-width: 768px) 100vw, 800px"
