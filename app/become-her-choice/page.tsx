@@ -54,7 +54,7 @@ export default function BecomeTheManSheChoosesPage() {
             sizes="(max-width: 768px) 100vw, 800px"
             loading="eager" 
             fetchPriority="high"
-            priority={false}
+            priority={true}
             className="object-cover"
             placeholder="blur"
             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="

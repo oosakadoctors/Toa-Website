@@ -35,18 +35,22 @@ export default function SuccessStoriesPage() {
 </div>
         
 
-        <div className="mb-6 overflow-hidden rounded-lg w-full shadow-md">
-          <Image
-            src={memberSuccessStories}
-            alt="リアルな婚活の記録と成婚報告"
-            width={600}
-            height={400}
-            priority={true}
-            placeholder='blur'
-            sizes="(max-width: 768px) 100vw, 600px" // 👈 Add this line
-            className="w-full h-auto block object-cover"
-          />
-        </div>
+
+
+              <div className="w-full max-w-4xl mx-auto mb-3">
+                <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+                  <Image
+                    src={memberSuccessStories}
+                    alt="婚活で出会った女性とドライブデートをしながら成婚をめざすイメージ写真"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 800px"
+                    priority={true}
+                    className="object-cover"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+                  />
+                </div>
+              </div>
    
         
         <p className="mb-4 mt-0 text-[18px] text-left">
