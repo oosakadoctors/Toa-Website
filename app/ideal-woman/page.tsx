@@ -9,6 +9,9 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+import mensMatchmaking from "@/public/mens-matchmaking-service-women-concept.jpg";
+
+
 export default function IdealManPage() {
 
 
@@ -37,14 +40,12 @@ export default function IdealManPage() {
           {/* Added white border, ring, and soft shadow here */}
           <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl border-4 border-white ring-2 ring-white/80 shadow-2xl">
             <Image
-              src="/mens-matchmaking-service-women-concept.jpg"
+              src={mensMatchmaking}
               alt="男性婚活で出会う可愛い女性のイメージ写真"
               fill
               sizes="(max-width: 768px) 100vw, 800px"
               priority={true}
               className="object-cover"
-              loading="eager"
-              fetchPriority="high"
               placeholder="blur"
               blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
             />

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import femaleAdvisor from "@/public/femaleAdvisor.jpg";
+import osakaUmedaDoctors from "@/public/osaka-umeda-doctors-konkatsu-30s.jpg";
 import Image from "next/image";
 import { Sparkles } from "lucide-react"; // Make sure lucide-react is installed, or replace with your preferred icon
 import TrueHappinessAnalysis from "../wellbeing/page";
@@ -60,7 +61,7 @@ export default function MarriageAdvicePage() {
       <div className="w-full max-w-4xl mx-auto my-1">
         <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
           <Image
-            src="/osaka-umeda-doctors-konkatsu-30s.jpg"
+            src={osakaUmedaDoctors}
             alt="大阪梅田のドクターズ結婚相談所で、タイパを重視して効率的に医師婚活を進める30歳前後のアラサー女性"
             fill
             sizes="(max-width: 768px) 100vw, 600px"

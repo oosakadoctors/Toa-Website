@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import pic1 from '@/public/pic1.jpg'
 
 export const metadata: Metadata = {
   title: "理系男性のお見合い、お相手探し | 大阪梅田ドクターズ結婚相談所",
@@ -50,7 +51,7 @@ export default function ScienceMenMatchmakingPage() {
               <div className="w-full max-w-4xl mx-auto">
                 <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
                   <Image
-                    src="/pic1.jpg"
+                    src={pic1}
                     alt="理系男性のお見合いとお相手探しを応援するイメージ画像"
                     fill
                     sizes="(max-width: 768px) 100vw, 800px"

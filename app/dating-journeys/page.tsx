@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
+import memberSuccessStories from '@/public/member-success-stories.jpg'
 
 export const metadata: Metadata = {
   title: 'リアルな婚活の記録と成婚報告 | 大阪梅田ドクターズ結婚相談所',
@@ -36,11 +37,12 @@ export default function SuccessStoriesPage() {
 
         <div className="mb-6 overflow-hidden rounded-lg w-full shadow-md">
           <Image
-            src="/member-success-stories.jpg"
+            src={memberSuccessStories}
             alt="リアルな婚活の記録と成婚報告"
             width={600}
             height={400}
             priority={true}
+            placeholder='blur'
             sizes="(max-width: 768px) 100vw, 600px" // 👈 Add this line
             className="w-full h-auto block object-cover"
           />
