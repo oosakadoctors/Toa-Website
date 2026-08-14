@@ -21,10 +21,9 @@ export default function CounselorsPage() {
         {/* ============================================================
             SECTION: 代表挨拶 (Representative Greeting)
             ============================================================ */}
-     <section className="rounded-2xl bg-white border border-amber-200/80 p-6 sm:p-8 shadow-sm">
+<section className="rounded-2xl bg-white border border-amber-200/80 p-6 sm:p-8 shadow-sm">
   {/* Header */}
   <div className="border-b border-amber-100 pb-4">
-    
     <div className="flex items-center gap-2 text-amber-700 font-bold text-sm tracking-wider">
       <Award className="w-4 h-4 shrink-0" />
       <span>代表挨拶</span>
@@ -37,14 +36,8 @@ export default function CounselorsPage() {
     </h1>
   </div>
 
-
-  
-
   {/* Greeting Body Text with Floated Owner Image */}
   <div className="mt-6 text-base text-gray-700 leading-relaxed space-y-4">
-    {/* Owner Portrait Floated Right */}
-
-
     <p style={{ wordBreak: 'auto-phrase' }}>
       皆様、はじめまして。「大阪梅田ドクターズ結婚相談所」代表の加藤です。
     </p>
@@ -75,29 +68,33 @@ export default function CounselorsPage() {
 
     <div className="clear-both" />
   </div>
-        <Image
-        src="/owner.jpg"
-        alt="大阪梅田ドクターズ結婚相談所 代表 加藤"
-        width={300}
-        height={400}
-        priority
-        className="rounded-2xl shadow-md object-cover w-full h-auto border border-amber-100"
-      />
 
-  {/* Signature Block */}
-  <div className="mt-8 pt-4 flex items-center gap-4 justify-end">
-    <div className="relative w-36 sm:w-44 h-16 shrink-0">
+  <Image
+    src="/owner.jpg"
+    alt="大阪梅田ドクターズ結婚相談所 代表 加藤"
+    width={300}
+    height={400}
+    priority
+    className="rounded-2xl shadow-md object-cover w-full h-auto border border-amber-100"
+  />
+
+  {/* Signature Block (Signature stacked UNDER the name) */}
+  <div className="mt-8 pt-4 flex flex-col items-end justify-end">
+    {/* 1. Name First */}
+    <div className="text-right">
+      <p className="text-xs text-gray-500 font-medium">大阪梅田ドクターズ結婚相談所 代表</p>
+      <p className="text-base font-bold text-gray-900 mt-0.5">加藤</p>
+    </div>
+
+    {/* 2. Signature Image Below */}
+    <div className="relative w-30 sm:w-44 h-16 shrink-0 mt-2">
       <Image
         src="/name1.jpg"
         alt="代表 加藤の直筆サイン"
         fill
-        className="object-contain"
+        className="object-contain object-right"
         priority
       />
-    </div>
-    <div className="text-right">
-      <p className="text-xs text-gray-500 font-medium">大阪梅田ドクターズ結婚相談所 代表</p>
-      <p className="text-base font-bold text-gray-900 mt-0.5">加藤</p>
     </div>
   </div>
 </section>

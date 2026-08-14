@@ -54,8 +54,6 @@ export default function ScienceMenMatchmakingPage() {
                     alt="理系男性のお見合いとお相手探しを応援するイメージ画像"
                     fill
                     sizes="(max-width: 768px) 100vw, 800px"
-                    loading="eager"
-                    fetchPriority="high"
                     priority={true}
                     className="object-cover"
                     placeholder="blur"
@@ -238,7 +236,7 @@ export default function ScienceMenMatchmakingPage() {
 
           <div className="space-y-4 text-slate-700 leading-relaxed">
             <p className="bg-sky-50/80 p-4 rounded-xl border border-sky-200/60 font-medium text-slate-800">
-              理系・自社オタク男性が、同じ感覚や趣味を持つ女性と出会い、水族館やゲームセンターで自然体で楽しめるデートを実現するための「最も打率が高いお相手の見つけ方」をロジカルに解説します。
+              理系・自称オタク男性が、同じ感覚や趣味を持つ女性と出会い、水族館やゲームセンターで自然体で楽しめるデートを実現するための「最も打率が高いお相手の見つけ方」をロジカルに解説します。
             </p>
 
             <p>

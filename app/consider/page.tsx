@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import femaleAdvisor from "@/public/femaleAdvisor.jpg";
 import Image from "next/image";
 import { Sparkles } from "lucide-react"; // Make sure lucide-react is installed, or replace with your preferred icon
+import TrueHappinessAnalysis from "../wellbeing/page";
 
 export const metadata: Metadata = {
   title: "婚活でいい人が減った？」と思い始めた30代のあなたへ｜大阪梅田ドクターズ結婚相談所が効率的な理由",
@@ -62,10 +63,8 @@ export default function MarriageAdvicePage() {
             src="/osaka-umeda-doctors-konkatsu-30s.jpg"
             alt="大阪梅田のドクターズ結婚相談所で、タイパを重視して効率的に医師婚活を進める30歳前後のアラサー女性"
             fill
-            sizes="(max-width: 768px) 100vw, 800px"
-            priority={false}
-            className="object-cover"
-            loading="eager" 
+            sizes="(max-width: 768px) 100vw, 600px"
+            priority={true}
             fetchPriority="high"
             placeholder="blur"
             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="

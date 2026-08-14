@@ -41,6 +41,7 @@ export default function SuccessStoriesPage() {
             width={600}
             height={400}
             priority={true}
+            sizes="(max-width: 768px) 100vw, 600px" // 👈 Add this line
             className="w-full h-auto block object-cover"
           />
         </div>
