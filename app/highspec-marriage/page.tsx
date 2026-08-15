@@ -30,7 +30,7 @@ export default function ReasonsPage() {
           HERO BANNER HEADLINE (Warm Radiant Orange Gradient)
           ============================================================ */}
       <div 
-        className="relative w-full py-12 px-4 sm:px-6 lg:px-8 text-center border-b border-amber-200/50 overflow-hidden mb-12"
+        className="relative w-full py-12 px-4  lg:px-8 text-center border-b border-amber-200/50 overflow-hidden mb-4"
         style={{ 
           background: "linear-gradient(135deg, rgba(255, 122, 0, 0.22) 0%, rgba(255, 178, 36, 0.2) 50%, rgba(255, 214, 153, 0.25) 100%)"
         }}
@@ -66,7 +66,7 @@ export default function ReasonsPage() {
         </div>
       </div>
 
-           <section className="w-full">
+           <section className="w-full mb-4">
             <div className="w-full max-w-4xl mx-auto">
               <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
                 <Image
