@@ -81,7 +81,43 @@ export default function Home() {
 運命の相手と1年以内の成婚を目指す大人のための結婚相談所</p>
 
 </section>
+<section className="w-full">
+      <div className="w-full max-w-4xl mx-auto">
+        <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+          <Image
+            src="/speed-marriage-6-months.jpg"
+            alt="6か月でスピード成婚をめざす男性会員へのメッセージ写真"
+            fill
+            sizes="(max-width: 768px) 100vw, 800px"
+            loading="eager" 
+            fetchPriority="high"
+            priority={true}
+            className="object-cover"
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+          />
+        </div>
+      </div>
+    </section>
 
+     <section className="w-full">
+      <div className="w-full max-w-4xl mx-auto">
+        <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+          <Image
+            src="/6-month-speed-marriage-message-women.jpg"
+            alt="6か月でスピード成婚をめざす女性会員へのメッセージ写真"
+            fill
+            sizes="(max-width: 768px) 100vw, 800px"
+            loading="eager" 
+            fetchPriority="high"
+            priority={true}
+            className="object-cover"
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+          />
+        </div>
+      </div>
+    </section>
     <Gallery
       interval={3000}
       slides={[
@@ -108,8 +144,37 @@ export default function Home() {
         },
       ]}
     />
-
-
+<section className="w-full">
+  <div className="w-full max-w-4xl mx-auto">
+    <figure className="m-0 bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
+      <div className="relative w-full aspect-[1/1] overflow-hidden">
+        <Image
+          src="/umeda-marriage-support.jpg"
+          alt="現役女性医師と男性ベテランカウンセラーがサポートする大阪梅田ドクターズ結婚相談所"
+          fill
+          sizes="(max-width: 768px) 100vw, 800px"
+          priority={true}
+          className="object-cover"
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+        />
+      </div>
+      <figcaption className="p-5 sm:p-6 text-center text-gray-800 space-y-2">
+        <p className="font-semibold text-base sm:text-lg text-rose-600 tracking-wide">
+          大阪梅田でハイクラス婚活とスピード成婚をめざす。
+        </p>
+        <p className="font-bold text-gray-900 text-sm sm:text-base">
+          現役女医医師と男性ベテラン仲人のダブルサポート！
+        </p>
+        <p className="text-xs sm:text-sm text-gray-600 leading-relaxed pt-1">
+          医学と心理学、20年の仲人経験を生かした唯一無二の結婚相談所
+          <span className="block mt-1 font-bold text-gray-800">【大阪梅田ドクターズ結婚相談所】</span>
+        </p>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+   
 
       {/* --- STRENGTHS SECTION --- */}
 {/* --- STRENGTHS SECTION --- */}
@@ -322,8 +387,8 @@ export default function Home() {
     </span>
 
     <h2 className="mt-3 text-3xl md:text-5xl font-black text-gray-900 leading-tight">
-      梅田エリアにおける婚活の現実と<br />
-      大阪梅田ドクターズ結婚相談所のアプローチ
+      大阪梅田で、女性医師が<br />あなたのカウンセラーになります。<br />
+      医学と心理学に基く特別な結婚相談所。
     </h2>
 
     <div className="mt-5 h-1 w-16 rounded-full bg-rose-400 mx-auto" />
@@ -332,14 +397,14 @@ export default function Home() {
   {/* Body */}
   <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg">
     
-    {/* Floating Image */}
-    <div className="md:float-right md:ml-8 mb-4 md:mb-2 w-full md:w-80">
+    {/* Full Width Image wrapper */}
+    <div className="-mx-4 md:mx-0 md:float-right md:ml-8 mb-6 md:mb-2 w-[calc(100%+2rem)] md:w-80">
       <Image
-        src="/doctorSuit.jpg"
-        alt="大阪梅田のクリニックで首に聴診器をかけ笑顔でデスクに座るハイクラス婚活監修の女医"
+        src="/doctor-led-marriage-agency-counseling.jpg"
+        alt="笑顔の現役内科女医がカウンセラーとして結婚相談所でサポートするイメージ"
         width={500}
         height={650}
-        className="rounded-2xl object-cover shadow-md border border-gray-100"
+        className="w-full h-auto rounded-none md:rounded-2xl object-cover shadow-md border-y md:border border-gray-100"
       />
     </div>
 
@@ -375,6 +440,65 @@ export default function Home() {
     </div>
 
     <div className="clear-both" />
+  </div>
+</section>
+
+<section className="w-full">
+  <div className="w-full max-w-4xl mx-auto">
+    <figure className="m-0 bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
+      <div className="relative w-full aspect-[1/1] overflow-hidden">
+        <Image
+          src="/lead-doctor.jpg"
+          alt="大阪梅田ドクターズ結婚相談所 代表 加藤"
+          fill
+          sizes="(max-width: 768px) 100vw, 800px"
+          priority={true}
+          className="object-cover"
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+        />
+      </div>
+      <figcaption className="p-5 sm:p-8 text-center text-gray-800 space-y-4">
+        {/* Title */}
+        <h3 className="font-bold text-[24px] sm:text-xl text-rose-600 tracking-wide">
+          大阪梅田ドクターズ結婚相談所の想い。
+        </h3>
+
+        {/* Main Body Content */}
+        <div className="text-[20px]  text-gray-700 leading-relaxed space-y-3 text-left sm:text-center">
+          <p>
+            人生山あり谷あり。結婚も一つの通り道。<br />
+            恋愛や理想のお相手探しは、【自分探しの旅】です。自分がどんな人を好きなのか、どんな風に生きていきたいか。お相手を探しながら、きっと自分を鏡のように見つめるチャンスになるでしょう。
+          </p>
+
+          <p>
+            婚活を通して、何かを求めて自分が頑張って活動したことで、きっと人間的に成熟するはずです。成婚という結果も大切ですが、最終的に役立つのは結婚という箱や外形ではなく、自分がどんな自分なのか？自分がしたいこと、自分が作りたい未来を自分が知り、そのために自分が成長することです。
+          </p>
+
+          <p>
+            そうすれば、自然と素敵な人とのつながりは訪れます。<br />
+            結婚だけではなく社会は全て人とのつながり。今後の人生の全てに役立つ婚活をあなたに。
+          </p>
+
+          <p className="font-medium text-rose-500 py-1 text-center">
+            未来が小さな灯火で照らされますように。
+          </p>
+
+          <p>
+            人生の先輩として、若い方々への【形のない贈り物】をとどける気持ちで大阪梅田ドクターズ結婚相談所は活動しています。
+          </p>
+
+          <p>
+            あなたが年老いた時、また若い方に人生の経験を送り、世界が素敵な贈り物で循環しますように。
+          </p>
+        </div>
+
+        {/* Signature */}
+        <p className="pt-2 font-bold text-sm sm:text-base text-gray-900 text-right sm:text-center">
+          大阪梅田ドクターズ結婚相談所 代表 加藤
+        </p>
+      </figcaption>
+    </figure>
   </div>
 </section>
 <section className="w-full px-4 md:px-8 py-4 bg-white">
