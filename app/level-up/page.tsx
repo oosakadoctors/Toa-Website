@@ -21,7 +21,7 @@ export default function TechMenStrategyPage() {
     <div className="relative min-h-screen w-full py-6 sm:py-10 px-3 sm:px-6 overflow-hidden text-[18px]">
       {/* --- Full Page Background Image --- */}
       <img 
-        src="/champagne1.png" 
+        src="/champagne1.jpg" 
         alt="Multi-colored jellybean background" 
         className="fixed inset-0 w-full h-full object-cover object-center -z-10"
       />
@@ -49,13 +49,13 @@ export default function TechMenStrategyPage() {
       <div className="w-full max-w-4xl mx-auto">
         <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
           <Image
-            src="/good-future-together.jpg"
+            src="/find-compatible-women.jpg"
             alt="婚活で出会った女性とドライブデートをしながら成婚をめざすイメージ写真"
             fill
             sizes="(max-width: 768px) 100vw, 800px"
             loading="eager" 
             fetchPriority="high"
-            priority={false}
+            priority={true}
             className="object-cover"
             placeholder="blur"
             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
@@ -69,7 +69,7 @@ export default function TechMenStrategyPage() {
     </p>
 
     <div className="w-16 h-1 bg-sky-500 mx-auto rounded-full" />
-  </div>
+</div>
 </div>
         {/* --- CONCEPT & GAMIFICATION SECTION CARD --- */}
         <div className="bg-white/95 backdrop-blur-md shadow-2xl border border-sky-100 rounded-2xl sm:rounded-3xl p-4 sm:p-8 space-y-6">

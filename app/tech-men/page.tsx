@@ -21,7 +21,7 @@ export default function TechMenStrategyPage() {
     <div className="relative min-h-screen w-full py-6 sm:py-10 px-3 sm:px-6 overflow-hidden text-[18px]">
       {/* --- Full Page Background Image --- */}
       <img 
-        src="/champagne1.png" 
+        src="/champagne1.jpg" 
         alt="Background texture" 
         className="fixed inset-0 w-full h-full object-cover object-center -z-10"
       />

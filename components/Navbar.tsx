@@ -75,7 +75,11 @@ export default function PremiumNavbar() {
     {
       title: "ハイスペックな男女へ",
       icon: Crown,
-      links: [{ name: "ハイスペックなあなたへ", href: "/elite-matchmaking" }],
+      links: [
+        { name: "ハイスペックなあなたへ", href: "/elite-matchmaking" },
+        { name: "ハイスペック婚を目指す女性へ", href: "/highspec-marriage" }
+
+      ],
     },
     {
       title: "男性向け婚活戦略",
