@@ -69,6 +69,7 @@ export default function PremiumNavbar() {
       icon: Crown,
       links: [
         { name: "男性医師の方へ　サポート紹介とメッセージ", href: "/male-doctors" },
+        { name: "女性医師の方へ　サポート紹介とメッセージ", href: "/female-doctors" },
       ],
     },
     {
