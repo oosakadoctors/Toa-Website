@@ -64,6 +64,13 @@ export default function PremiumNavbar() {
         { name: "笑顔の可愛い最高の男性が惹かれる高いＥＱ", href: "/ideal-man" },
       ],
     },
+        {
+      title: "医師の男性、女性へ",
+      icon: Crown,
+      links: [
+        { name: "男性医師の方へ　サポート紹介とメッセージ", href: "/male-doctors" },
+      ],
+    },
     {
       title: "ハイスペックな男女へ",
       icon: Crown,
@@ -81,12 +88,12 @@ export default function PremiumNavbar() {
       ],
     },
     {
-      title: "新し",
+      title: "理系・技術職の男性へ",
       icon: UserRound,
       links: [
-        { name: "自称オタク・理系・技術職の男性へ", href: "/level-up" }, 
-        { name: "理系男性の婚活", href: "/tech-men" }, 
-        { name: "理系男性のお見合い、お当て探し", href: "/tech-matchmaking" }, 
+        { name: "恋愛経験がすくない理系・技術職の男性へ", href: "/level-up" }, 
+        { name: "理系男性へおくる大阪梅田ドクターズ結婚相談所のサポート", href: "/tech-men" }, 
+        { name: "理系男性の理想のパートナー探し", href: "/tech-matchmaking" }, 
       ],
     },
     {

@@ -111,7 +111,7 @@ export default function EnvironmentPage() {
           </p>
         </div>
 
-        <section className="w-full">
+        <section id="link" className="w-full">
           <div className="w-full max-w-4xl mx-auto my-1">
             <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl border-4 border-white ring-2 ring-white/80 shadow-2xl">
               <Image

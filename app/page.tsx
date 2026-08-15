@@ -257,7 +257,7 @@ export default function Home() {
 
   {/* 02 */}
   <Link
-    href="/why-us#strength2"
+    href="/elite-circle#link"
     className="block rounded-3xl border border-gray-200 bg-[#FCFBF8] p-4 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
   >
     <div className="flex gap-4 items-start">
@@ -448,8 +448,8 @@ export default function Home() {
     <figure className="m-0 bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
       <div className="relative w-full aspect-[1/1] overflow-hidden">
         <Image
-          src="/lead-doctor.jpg"
-          alt="大阪梅田ドクターズ結婚相談所 代表 加藤"
+          src="/real-female-physician-lead-counselor.jpg"
+          alt="大阪梅田ドクターズ結婚相談所 現役内科医師である代表カウンセラー 加藤"
           fill
           sizes="(max-width: 768px) 100vw, 800px"
           priority={true}
