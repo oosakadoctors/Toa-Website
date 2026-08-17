@@ -267,6 +267,8 @@ export default function BeginnerFaqLandingPage() {
     priority={false}
     className="object-cover"
     placeholder="blur"
+    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+
   />
 </div>
 
