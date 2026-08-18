@@ -23,6 +23,22 @@ export default function PremiumNavbar() {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
 
   useEffect(() => {
+  document.body.style.overflow = isOpen ? "hidden" : "unset";
+
+  // Toggle class on body so layout elements can react to menu state
+  if (isOpen) {
+    document.body.classList.add("mobile-menu-open");
+  } else {
+    document.body.classList.remove("mobile-menu-open");
+  }
+
+  return () => {
+    document.body.style.overflow = "unset";
+    document.body.classList.remove("mobile-menu-open");
+  };
+}, [isOpen]);
+
+  useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 30);
     };
@@ -310,7 +326,7 @@ export default function PremiumNavbar() {
         </button>
       </div>
 
-      {/* MOBILE ACCORDION MENU */}
+   {/* MOBILE ACCORDION MENU */}
       <div
         className={`md:hidden fixed inset-0 z-50 bg-[#FAF7F4] transition-all duration-500 overflow-y-auto ${
           isOpen
@@ -318,8 +334,9 @@ export default function PremiumNavbar() {
             : "opacity-0 translate-x-full pointer-events-none"
         }`}
       >
-        <div className="px-4 pt-20 pb-28">
-          <div className="mb-6">
+        {/* Changed pt-20 to pt-6 and added pr-16 to avoid the close button */}
+        <div className="px-4 pt-6 pb-28">
+          <div className="mb-6 pr-16">
             <p className="text-[11px] font-black tracking-[0.3em] text-[#B07A56] uppercase">
               Navigation
             </p>
