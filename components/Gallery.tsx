@@ -118,7 +118,7 @@ export default function Gallery({
         {/* Previous Button */}
         <button
           onClick={previous}
-          className={`absolute left-3 md:left-6 top-1/2 -translate-y-1/2 z-20 flex h-11 w-11 md:h-13 md:w-13 items-center justify-center rounded-full bg-white/90 text-xl font-bold text-gray-700 shadow-md backdrop-blur-md transition-all duration-300 hover:text-white hover:scale-105 active:scale-95 ${theme.navHover}`}
+          className={`absolute left-2 sm:left-4 md:left-6 top-1/2 -translate-y-1/2 z-20 flex h-9 w-9 sm:h-11 sm:w-11 md:h-13 md:w-13 items-center justify-center rounded-full bg-white/90 text-lg sm:text-xl font-bold text-gray-700 shadow-md backdrop-blur-md transition-all duration-300 hover:text-white hover:scale-105 active:scale-95 ${theme.navHover}`}
           aria-label="Previous slide"
         >
           ←
@@ -127,7 +127,7 @@ export default function Gallery({
         {/* Content Container */}
         <ContentWrapper>
           {/* Image Container */}
-          <div className="relative w-full h-[38vh] min-h-[280px] max-h-[460px] bg-white/40 backdrop-blur-sm flex items-center justify-center p-3">
+          <div className="relative w-full h-[35vh] min-h-[240px] max-h-[440px] bg-white/40 backdrop-blur-sm flex items-center justify-center p-2">
             <Image
               src={currentSlide.src}
               alt={currentSlide.alt || currentSlide.title}
@@ -138,36 +138,41 @@ export default function Gallery({
             />
           </div>
 
-          {/* Text Content Area - Ultra tight spacing */}
-          <div className="w-full max-w-3xl mx-auto text-center px-6 sm:px-12 pt-4 pb-5 space-y-1.5">
-            <h3
-              className={`text-xl sm:text-2xl md:text-3xl font-extrabold text-gray-900 leading-none tracking-tight transition-colors duration-300 ${theme.titleHover}`}
-            >
-              {currentSlide.title}
-            </h3>
-
-            {/* Description at 18px with tight line height and tracking */}
-            <p className="text-[18px] leading-tight tracking-tight text-gray-700 max-w-2xl mx-auto font-normal">
-              {currentSlide.description}
-            </p>
-
-            {currentSlide.href && (
-              <div className="pt-1.5">
-                <span
-                  className={`inline-flex items-center gap-2 px-5 py-2 rounded-full text-white font-bold text-[14px] shadow-sm group-hover:gap-3 transition-all duration-300 ${theme.btnBg}`}
+          {/* Text Content & Button Area - Always Side-by-Side */}
+          <div className="w-full max-w-4xl mx-auto px-10 sm:px-16 pt-3 pb-4">
+            <div className="flex flex-row items-center justify-between gap-3 text-left">
+              {/* Text Group */}
+              <div className="space-y-1 min-w-0 flex-1">
+                <h3
+                  className={`text-lg sm:text-2xl md:text-3xl font-extrabold text-gray-900 leading-none tracking-tight truncate transition-colors duration-300 ${theme.titleHover}`}
                 >
-                  詳細を見る
-                  <span className="text-base">→</span>
-                </span>
+                  {currentSlide.title}
+                </h3>
+
+                <p className="text-[15px] sm:text-[18px] leading-tight tracking-tight text-gray-700 font-normal line-clamp-2 sm:line-clamp-none">
+                  {currentSlide.description}
+                </p>
               </div>
-            )}
+
+              {/* Button Group - Fixed side-by-side even on small screens */}
+              {currentSlide.href && (
+                <div className="flex-shrink-0">
+                  <span
+                    className={`inline-flex items-center gap-1.5 sm:gap-2 px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-full text-white font-bold text-[12px] sm:text-[14px] shadow-sm whitespace-nowrap group-hover:gap-2.5 transition-all duration-300 ${theme.btnBg}`}
+                  >
+                    詳細を見る
+                    <span className="text-xs sm:text-base">→</span>
+                  </span>
+                </div>
+              )}
+            </div>
           </div>
         </ContentWrapper>
 
         {/* Next Button */}
         <button
           onClick={next}
-          className={`absolute right-3 md:right-6 top-1/2 -translate-y-1/2 z-20 flex h-11 w-11 md:h-13 md:w-13 items-center justify-center rounded-full bg-white/90 text-xl font-bold text-gray-700 shadow-md backdrop-blur-md transition-all duration-300 hover:text-white hover:scale-105 active:scale-95 ${theme.navHover}`}
+          className={`absolute right-2 sm:right-4 md:right-6 top-1/2 -translate-y-1/2 z-20 flex h-9 w-9 sm:h-11 sm:w-11 md:h-13 md:w-13 items-center justify-center rounded-full bg-white/90 text-lg sm:text-xl font-bold text-gray-700 shadow-md backdrop-blur-md transition-all duration-300 hover:text-white hover:scale-105 active:scale-95 ${theme.navHover}`}
           aria-label="Next slide"
         >
           →

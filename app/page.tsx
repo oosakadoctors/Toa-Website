@@ -125,10 +125,10 @@ export default function Home() {
       slides={[
         {
           src: img1,
-          alt: "Counselling",
-          title: "💙 プレースホルダー",
+          alt: "若い日本人の男性がスーツをきてお見合いで笑っている。",
+          title: "男性の婚活",
           description:
-            "プレースホルダー",
+            "大阪梅田ドクターズ結婚相談所で男性が6月以内のスピード成婚目指し婚活するイメージ写真",
           href: "/mens-strategy",
         },
         {
