@@ -111,7 +111,7 @@ export default function Gallery({
   };
 
   return (
-    <section className="relative w-full max-w-6xl mx-auto my-8 px-4 sm:px-6">
+    <section className="relative w-full max-w-6xl mx-auto my-6 px-4 sm:px-6">
       <div
         className={`relative overflow-hidden rounded-3xl border-2 bg-gradient-to-r shadow-2xl transition-all duration-700 ease-in-out ${theme.border} ${theme.bgGradient}`}
       >
@@ -127,7 +127,7 @@ export default function Gallery({
         {/* Content Container */}
         <ContentWrapper>
           {/* Image Container */}
-          <div className="relative w-full h-[40vh] min-h-[300px] max-h-[500px] bg-white/40 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="relative w-full h-[38vh] min-h-[280px] max-h-[460px] bg-white/40 backdrop-blur-sm flex items-center justify-center p-3">
             <Image
               src={currentSlide.src}
               alt={currentSlide.alt || currentSlide.title}
@@ -138,26 +138,26 @@ export default function Gallery({
             />
           </div>
 
-          {/* Text Content Area */}
-          <div className="w-full max-w-3xl mx-auto text-center px-6 sm:px-12 py-6 md:py-8 space-y-3">
+          {/* Text Content Area - Ultra tight spacing */}
+          <div className="w-full max-w-3xl mx-auto text-center px-6 sm:px-12 pt-4 pb-5 space-y-1.5">
             <h3
-              className={`text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight tracking-tight transition-colors duration-300 ${theme.titleHover}`}
+              className={`text-xl sm:text-2xl md:text-3xl font-extrabold text-gray-900 leading-none tracking-tight transition-colors duration-300 ${theme.titleHover}`}
             >
               {currentSlide.title}
             </h3>
 
-            {/* Description forced to 18px with tighter compressed line-height */}
-            <p className="text-[18px] leading-snug text-gray-700 max-w-2xl mx-auto font-normal">
+            {/* Description at 18px with tight line height and tracking */}
+            <p className="text-[18px] leading-tight tracking-tight text-gray-700 max-w-2xl mx-auto font-normal">
               {currentSlide.description}
             </p>
 
             {currentSlide.href && (
-              <div className="pt-2">
+              <div className="pt-1.5">
                 <span
-                  className={`inline-flex items-center gap-2.5 px-6 py-3 rounded-full text-white font-bold text-[15px] shadow-md group-hover:gap-3.5 transition-all duration-300 ${theme.btnBg}`}
+                  className={`inline-flex items-center gap-2 px-5 py-2 rounded-full text-white font-bold text-[14px] shadow-sm group-hover:gap-3 transition-all duration-300 ${theme.btnBg}`}
                 >
                   詳細を見る
-                  <span className="text-lg">→</span>
+                  <span className="text-base">→</span>
                 </span>
               </div>
             )}
@@ -176,7 +176,7 @@ export default function Gallery({
 
       {/* Navigation Dots */}
       {slides.length > 1 && (
-        <div className="mt-4 flex justify-center gap-2">
+        <div className="mt-3 flex justify-center gap-2">
           {slides.map((_, index) => (
             <button
               key={index}
