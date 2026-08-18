@@ -16,21 +16,6 @@ import {
   BookOpen,
 } from "lucide-react";
 
-// Exact custom colors applied as subtle borders & shadows in order
-const SECTION_ACCENTS = [
-  { color: "#FC2B72", shadow: "rgba(252, 43, 114, 0.12)" },  // 1
-  { color: "#FCCEE2", shadow: "rgba(252, 206, 226, 0.25)" }, // 2
-  { color: "#082B45", shadow: "rgba(8, 43, 69, 0.12)" },     // 3
-  { color: "#FAC9A0", shadow: "rgba(250, 201, 160, 0.25)" }, // 4
-  { color: "#184AA8", shadow: "rgba(24, 74, 168, 0.12)" },   // 5
-  { color: "#E0BD5C", shadow: "rgba(224, 189, 92, 0.20)" },  // 6
-  { color: "#FEEFC6", shadow: "rgba(254, 239, 198, 0.35)" }, // 7
-  { color: "#6398EA", shadow: "rgba(99, 152, 234, 0.15)" },  // 8
-  { color: "#F1D556", shadow: "rgba(241, 213, 86, 0.25)" },  // 9
-  { color: "#9CA3AF", shadow: "rgba(0, 0, 0, 0.05)" },       // 10 (neutral gray for white)
-  { color: "#F061AA", shadow: "rgba(240, 97, 170, 0.15)" },  // 11
-];
-
 export default function PremiumNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -56,6 +41,7 @@ export default function PremiumNavbar() {
   const menuSections = [
     {
       title: "初めてのドクターズ結婚相談所・強み",
+      isMenSection: false,
       icon: HeartHandshake,
       links: [
         { name: "大阪梅田ドクターズ結婚相談所", href: "/" },
@@ -71,6 +57,7 @@ export default function PremiumNavbar() {
     },
     {
       title: "３０代の女性のためのスマート成婚戦略",
+      isMenSection: false,
       icon: Crown,
       links: [
         { name: "ハイスペック男性と結婚する方法", href: "/advantages" },
@@ -80,6 +67,8 @@ export default function PremiumNavbar() {
     },
     {
       title: "医師の男性、女性へ",
+      isMenSection: true,
+      tag: "男性向け",
       icon: Crown,
       links: [
         { name: "男性医師の方へ サポート紹介とメッセージ", href: "/male-doctors" },
@@ -88,6 +77,7 @@ export default function PremiumNavbar() {
     },
     {
       title: "ハイスペックな男女へ",
+      isMenSection: false,
       icon: Crown,
       links: [
         { name: "ハイスペックなあなたへ", href: "/elite-matchmaking" },
@@ -96,6 +86,8 @@ export default function PremiumNavbar() {
     },
     {
       title: "男性向け婚活戦略",
+      isMenSection: true,
+      tag: "男性向け",
       icon: UserRound,
       links: [
         { name: "男性のための戦略", href: "/mens-strategy" },
@@ -106,6 +98,8 @@ export default function PremiumNavbar() {
     },
     {
       title: "理系・技術職の男性へ",
+      isMenSection: true,
+      tag: "男性向け",
       icon: UserRound,
       links: [
         { name: "恋愛経験がすくない理系・技術職の男性へ", href: "/level-up" },
@@ -115,11 +109,13 @@ export default function PremiumNavbar() {
     },
     {
       title: "親御様へ 大切なお子様の結婚を願うあなたへ",
+      isMenSection: false,
       icon: UserRound,
       links: [{ name: "親御様がお子様の結婚を願う", href: "/parents" }],
     },
     {
       title: "恋愛初心者、婚活ビギナーのあなたへ",
+      isMenSection: false,
       icon: UserRound,
       links: [
         { name: "恋愛初心者がスピード成婚する方法", href: "/beginners" },
@@ -129,6 +125,7 @@ export default function PremiumNavbar() {
     },
     {
       title: "本質的な問い",
+      isMenSection: false,
       icon: UserRound,
       links: [
         { name: "男性は女性の外見しか見ない？問いと答え", href: "/attraction-essence" },
@@ -141,11 +138,13 @@ export default function PremiumNavbar() {
     },
     {
       title: "婚活に必要な４つのEQとその高め方",
+      isMenSection: false,
       icon: UserRound,
       links: [{ name: "婚活・結婚生活に必要なEQとその高めかたを説明", href: "/EQ" }],
     },
     {
       title: "料金・入会制限について",
+      isMenSection: false,
       icon: Sparkles,
       links: [
         { name: "料金プランと少人数制について", href: "/plan" },
@@ -155,6 +154,7 @@ export default function PremiumNavbar() {
     },
     {
       title: "婚活情報・成婚実績",
+      isMenSection: false,
       icon: BookOpen,
       links: [
         { name: "結婚相談所の流れとサポート内容", href: "/steps" },
@@ -185,7 +185,7 @@ export default function PremiumNavbar() {
             <span className="text-sm font-bold tracking-wider block md:inline text-white drop-shadow-sm">
               大阪梅田ドクターズ結婚相談所
             </span>
-            <span className="hidden md:inline mx-2 text-purple-300/40">|</span>
+            <span className="hidden md:inline mx-2 text-[#2563EB]/40">|</span>
             <span className="text-[10px] md:text-xs font-medium text-[#E0DBEC] block md:inline tracking-wide">
               ２０代３０代の真剣婚活・1年以内の成婚
             </span>
@@ -227,7 +227,7 @@ export default function PremiumNavbar() {
             >
               <button
                 onMouseEnter={() => setActiveDropdown(0)}
-                className="flex items-center gap-1 text-xs font-bold text-gray-800 hover:text-[#FC2B72] py-2 transition-colors"
+                className="flex items-center gap-1 text-xs font-bold text-gray-800 hover:text-[#2563EB] py-2 transition-colors"
               >
                 <span>サービス案内</span>
                 <ChevronDown className="w-3.5 h-3.5" />
@@ -236,20 +236,43 @@ export default function PremiumNavbar() {
               {/* Mega Menu Flyout */}
               {activeDropdown !== null && (
                 <div className="absolute right-0 top-full pt-2 w-[720px] z-50">
-                  <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 grid grid-cols-2 gap-4 max-h-[70vh] overflow-y-auto">
-                    {menuSections.map((section, idx) => {
-                      const accent = SECTION_ACCENTS[idx % SECTION_ACCENTS.length];
+                  <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 grid grid-cols-2 gap-x-6 gap-y-4 max-h-[70vh] overflow-y-auto">
+                    {menuSections.map((section) => {
                       return (
-                        <div key={section.title} className="space-y-1.5 pl-2 border-l-2" style={{ borderColor: accent.color }}>
-                          <p className="text-xs font-black text-gray-800">
-                            {section.title}
-                          </p>
+                        <div
+                          key={section.title}
+                          className={`space-y-1.5 pl-2 ${
+                            section.isMenSection
+                              ? "border-l-2 border-[#2563EB]"
+                              : "border-l-2 border-transparent"
+                          }`}
+                        >
+                          <div className="flex items-center justify-between gap-2 pr-1">
+                            <p
+                              className={`text-xs font-black ${
+                                section.isMenSection
+                                  ? "text-[#2563EB]"
+                                  : "text-gray-800"
+                              }`}
+                            >
+                              {section.title}
+                            </p>
+                            {section.isMenSection && section.tag && (
+                              <span className="text-[9px] px-1.5 py-0.5 rounded border font-black bg-[#2563EB] text-white border-blue-700 shadow-sm flex-shrink-0 ml-auto">
+                                {section.tag}
+                              </span>
+                            )}
+                          </div>
                           <ul className="space-y-1">
                             {section.links.map((link) => (
                               <li key={link.href}>
                                 <Link
                                   href={link.href}
-                                  className="text-[11px] font-semibold text-gray-600 hover:text-[#FC2B72] block py-0.5 transition-colors"
+                                  className={`text-[11px] font-semibold block py-0.5 transition-colors ${
+                                    section.isMenSection
+                                      ? "text-blue-900 hover:text-[#2563EB]"
+                                      : "text-gray-600 hover:text-gray-900"
+                                  }`}
                                 >
                                   {link.name}
                                 </Link>
@@ -268,7 +291,7 @@ export default function PremiumNavbar() {
               href="/contact"
               className="flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-full text-xs font-black transition-colors"
             >
-              <Calendar className="w-4 h-4 text-pink-300" />
+              <Calendar className="w-4 h-4 text-blue-300" />
               無料面談を予約する
             </Link>
           </div>
@@ -309,43 +332,58 @@ export default function PremiumNavbar() {
             {menuSections.map((section, index) => {
               const Icon = section.icon;
               const isActive = openSection === index;
-              const accent = SECTION_ACCENTS[index % SECTION_ACCENTS.length];
 
               return (
                 <div
                   key={section.title}
-                  className="rounded-2xl border bg-white overflow-hidden transition-all duration-300"
-                  style={{
-                    borderLeftWidth: "4px",
-                    borderLeftColor: accent.color,
-                    borderTopColor: "#EADFD5",
-                    borderRightColor: "#EADFD5",
-                    borderBottomColor: "#EADFD5",
-                    boxShadow: `0 4px 14px ${accent.shadow}`,
-                  }}
+                  className={`rounded-2xl border bg-white overflow-hidden transition-all duration-300 ${
+                    section.isMenSection
+                      ? "border-l-4 border-l-[#2563EB] border-t-blue-100 border-r-blue-100 border-b-blue-100 shadow-[0_4px_14px_rgba(37,99,235,0.18)]"
+                      : "border-gray-200 shadow-sm"
+                  }`}
                 >
                   <button
                     onClick={() => setOpenSection(isActive ? null : index)}
-                    className="w-full flex items-center justify-between px-4 py-3.5 text-left"
+                    className="w-full flex items-center justify-between px-4 py-3.5 text-left gap-3"
                     aria-expanded={isActive}
                   >
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 min-w-0 flex-1">
                       <div
-                        className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
-                        style={{ backgroundColor: `${accent.color}15` }}
+                        className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
+                          section.isMenSection
+                            ? "bg-blue-50 text-[#2563EB]"
+                            : "bg-gray-100 text-gray-600"
+                        }`}
                       >
-                        <Icon className="w-4 h-4" style={{ color: accent.color }} />
+                        <Icon className="w-4 h-4" />
                       </div>
-                      <span className="text-sm font-black text-[#5E4633]">
+                      <span
+                        className={`text-sm font-black truncate ${
+                          section.isMenSection
+                            ? "text-[#2563EB]"
+                            : "text-gray-800"
+                        }`}
+                      >
                         {section.title}
                       </span>
                     </div>
-                    <ChevronDown
-                      className={`w-5 h-5 transition-transform duration-300 flex-shrink-0 ${
-                        isActive ? "rotate-180" : ""
-                      }`}
-                      style={{ color: accent.color }}
-                    />
+
+                    <div className="flex items-center gap-2 flex-shrink-0">
+                      {section.isMenSection && section.tag && (
+                        <span className="text-[10px] px-2 py-0.5 rounded-full border font-black bg-[#2563EB] text-white border-blue-700 shadow-sm">
+                          {section.tag}
+                        </span>
+                      )}
+                      <ChevronDown
+                        className={`w-5 h-5 transition-transform duration-300 flex-shrink-0 ${
+                          isActive ? "rotate-180" : ""
+                        } ${
+                          section.isMenSection
+                            ? "text-[#2563EB]"
+                            : "text-gray-400"
+                        }`}
+                      />
+                    </div>
                   </button>
 
                   <div
@@ -359,7 +397,11 @@ export default function PremiumNavbar() {
                           key={link.href}
                           href={link.href}
                           onClick={() => setIsOpen(false)}
-                          className="flex items-center justify-between rounded-xl px-3 py-2 bg-[#FAF7F2] text-xs font-bold text-gray-700 hover:text-[#FC2B72] transition-colors"
+                          className={`flex items-center justify-between rounded-xl px-3 py-2 text-xs font-bold transition-colors ${
+                            section.isMenSection
+                              ? "bg-blue-50/60 text-blue-900 hover:text-[#2563EB]"
+                              : "bg-gray-50 text-gray-700 hover:text-gray-900"
+                          }`}
                         >
                           <span className="pr-2">{link.name}</span>
                           <ChevronRight className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />
