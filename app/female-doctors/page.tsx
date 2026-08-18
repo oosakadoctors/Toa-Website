@@ -58,8 +58,8 @@ export default function FemaleDoctorsGuide() {
 
         {/* HERO SECTION */}
         <section className="bg-gradient-to-br from-pink-50 via-rose-100 to-amber-50 text-gray-900 rounded-3xl p-8 sm:p-12 shadow-xl space-y-8 border-2 border-rose-200/80 overflow-hidden">
-          <div className="inline-block bg-white/80 text-rose-600 border border-rose-300 px-4 py-1.5 rounded-full text-lg font-bold tracking-wider shadow-sm">
-            FOR FEMALE DOCTORS
+          <div className="inline-block bg-white/80 text-rose-600 border border-rose-300 px-4 py-1.5 rounded-full text-lg font-bold tracking-wider shadow-sm text-[15px]">
+            FEMALE DOCTORS
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-rose-950 tracking-tight leading-tight">

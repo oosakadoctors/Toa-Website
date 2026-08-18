@@ -58,8 +58,8 @@ export default function MaleDoctorsGuide() {
 
         {/* HERO SECTION - Distinct Premium Blue Gradient */}
 <section className="bg-gradient-to-br from-slate-900 via-sky-950 to-blue-900 text-white rounded-3xl p-8 sm:p-12 shadow-xl space-y-8 border border-sky-700/50 overflow-hidden">
-  <div className="inline-block bg-sky-500/20 text-sky-200 border border-sky-400/30 px-4 py-1.5 rounded-full text-lg font-bold tracking-wider">
-    PREMIUM GUIDE
+  <div className="inline-block bg-sky-500/20 text-sky-200 border border-sky-400/30 px-4 py-1.5 rounded-full text-lg font-bold tracking-wider text-[15px]">
+    MALE DOCTORS
   </div>
 
   <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">

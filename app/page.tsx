@@ -9,15 +9,17 @@ import ceremony from "@/public/marriage1.jpg";
 import dad from "@/public/dad.jpg";
 import Link from "next/link";
 
+import img1 from "@/public/speed-marriage-6-months.jpg"
+import img2 from "@/public/good-future-together.jpg"
+import img3 from "@/public/male-doctors-marriage-activity.jpg"
+
 import Gallery from "@/components/Gallery"
 
 
 import mensMarriage from "@/public/soccerGirl1.jpg";
 import { useState } from "react";
 
-import img1 from "@/public/main1.jpg";
-import img2 from "@/public/couple1.jpg";
-import img3 from "@/public/femaleAdvisor.jpg";
+
 
 
 export default function Home() {
@@ -124,23 +126,26 @@ export default function Home() {
         {
           src: img1,
           alt: "Counselling",
-          title: "💙 成婚まで完全サポート",
+          title: "💙 プレースホルダー",
           description:
-            "20年以上の経験を活かし、あなたの婚活を最後までサポートします。",
+            "プレースホルダー",
+          href: "/mens-strategy",
         },
         {
           src: img2,
           alt: "Happy Couple",
-          title: "🩷 理想のお相手との出会い",
+          title: "🩷 プレースホルダー",
           description:
-            "一人ひとりに合わせた戦略で、運命のお相手探しをお手伝いします。",
+            "プレースホルダー",
+          href: "/level-up",
         },
         {
           src: img3,
           alt: "Office",
-          title: "🌸 完全予約制",
+          title: "🌸 プレースホルダー",
           description:
-            "落ち着いた空間で安心してご相談いただけます。これはとても重要ですよ！",
+            "プレースホルダー",
+          href: "/male-doctors",
         },
       ]}
     />
