@@ -142,9 +142,9 @@ export default function Home() {
         {
           src: img3,
           alt: "Office",
-          title: "🌸 プレースホルダー",
+          title: "🌸 医師の男性、女性へ",
           description:
-            "プレースホルダー",
+            "男性医師の婚活",
           href: "/male-doctors",
         },
       ]}
