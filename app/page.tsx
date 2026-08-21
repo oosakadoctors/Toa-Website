@@ -12,6 +12,8 @@ import Link from "next/link";
 import img1 from "@/public/speed-marriage-6-months.jpg"
 import img2 from "@/public/good-future-together.jpg"
 import img3 from "@/public/male-doctors-marriage-activity.jpg"
+import img4 from "@/public/parents1.jpg"
+import img5 from "@/public/woman-receiving-marriage-consulting-support.jpg"
 
 import Gallery from "@/components/Gallery"
 
@@ -134,18 +136,34 @@ export default function Home() {
         {
           src: img2,
           alt: "Happy Couple",
-          title: "🩷 プレースホルダー",
-          description:
-            "プレースホルダー",
-          href: "/level-up",
-        },
-        {
-          src: img3,
-          alt: "Office",
-          title: "🌸 医師の男性、女性へ",
+          title: "医師の男性、女性へ",
           description:
             "男性医師の婚活",
           href: "/male-doctors",
+        },
+        {
+          src: img3,
+          alt: "若い日本人の男性医師が聴診器と白衣でこちらをみて婚活で笑っている",
+          title: "男性医師の婚活",
+          description:
+            "大阪梅田ドクターズ結婚相談所でハイクラスの男性医師がパートナーを探して婚活するイメージ写真",
+          href: "/male-doctors",
+        },
+        {
+          src: img4,
+          alt: "子供の結婚を願う両親が婚活をサポートするイメージ写真",
+          title: "🌸 医師の男性、女性へ",
+          description:
+            "大阪梅田ドクターズ結婚相談所で両親が子供の成婚を願うイメージ写真",
+          href: "/parents",
+        },
+        {
+          src: img5,
+          alt: "恋愛初心者の女性がサポートを受けながら婚活する写真",
+          title: "婚活初心者・恋愛初心者へ",
+          description:
+            "大阪梅田ドクターズ結婚相談所で恋愛初心者、婚活初心者がサポートを受けながらスピード成婚を願うイメージ写真",
+          href: "/beginners",
         },
       ]}
     />
