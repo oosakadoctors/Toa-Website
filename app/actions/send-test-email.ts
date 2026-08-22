@@ -22,7 +22,7 @@ export async function sendConsultationEmail(
   try {
     const { data, error } = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: ["englishsteps20@gmail.com"],
+      to: ["dabanmeitiandokutazu.26@gmail.com"],
 
       subject: `無料相談のお申し込み - ${formData.name}`,
 
