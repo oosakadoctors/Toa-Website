@@ -141,6 +141,9 @@ export default function KonkatsuHajimetePage() {
                   blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
                 />
               </div>
+              <p className="mt-2 text-right text-xs text-gray-500 pointer-events-none select-none">
+                ※画像はイメージです。
+              </p>
             </div>
           </section>
 
@@ -168,22 +171,25 @@ export default function KonkatsuHajimetePage() {
                 「お見合い用の服なんて持ってない…メイクはどうしたらいい？」
               </h3>
             </div>
-                      <section className="w-full">
-            <div className="w-full max-w-4xl mx-auto my-1">
-              <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-                <Image
-                  src="/woman-applying-makeup-with-brush.jpg"
-                  alt="婚活初心者が大阪梅田ドクターズ結婚相談所でメイクのサポートを受けている写真"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 800px"
-                  priority={true}
-                  className="object-cover"
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-                />
+            <section className="w-full">
+              <div className="w-full max-w-4xl mx-auto my-1">
+                <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+                  <Image
+                    src="/woman-applying-makeup-with-brush.jpg"
+                    alt="婚活初心者が大阪梅田ドクターズ結婚相談所でメイクのサポートを受けている写真"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 800px"
+                    priority={true}
+                    className="object-cover"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+                  />
+                </div>
+                <p className="mt-2 text-right text-xs text-gray-500 pointer-events-none select-none">
+                  ※画像はイメージです。
+                </p>
               </div>
-            </div>
-          </section>
+            </section>
             <div className="text-[18px] text-gray-700 leading-relaxed space-y-3">
               <p style={{ wordBreak: 'break-all' }}>
                 普段、カジュアルな服装やオフィスカジュアルで仕事をしている方なら、お見合いにどんな服を着ていけばいいのかピンとこないかもしれません。「デパートに行って、高級なスーツやワンピースを新しく買い揃えなければいけないのかな？」と思われがちですが、そんなことはありません。
@@ -208,22 +214,25 @@ export default function KonkatsuHajimetePage() {
                 「お見合いって、そもそもどこでするの？」
               </h3>
             </div>
-               <section className="w-full">
-            <div className="w-full max-w-4xl mx-auto my-1">
-              <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-                <Image
-                  src="/umeda-hotel-lounge-matchmaking-30s.jpg"
-                  alt="グランビア大阪ホテルのラウンジで婚活の30代男女が笑顔でお見合いをしている写真"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 800px"
-                  priority={true}
-                  className="object-cover"
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-                />
+            <section className="w-full">
+              <div className="w-full max-w-4xl mx-auto my-1">
+                <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+                  <Image
+                    src="/umeda-hotel-lounge-matchmaking-30s.jpg"
+                    alt="グランビア大阪ホテルのラウンジで婚活の30代男女が笑顔でお見合いをしている写真"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 800px"
+                    priority={true}
+                    className="object-cover"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+                  />
+                </div>
+                <p className="mt-2 text-right text-xs text-gray-500 pointer-events-none select-none">
+                  ※画像はイメージです。
+                </p>
               </div>
-            </div>
-          </section>
+            </section>
             <div className="text-[18px] text-gray-700 leading-relaxed space-y-3">
               <p style={{ wordBreak: 'break-all' }}>
                 お見合いは、映画やドラマにあるように、シーンと静まり返った個室で行うわけではありません。主な場所は、「ホテルグランヴィア大阪」や「ヒルトン大阪」「ウェスティンホテル大阪」など、大阪梅田エリアにある一流ホテルの洗練されたラウンジ【カフェ】です。
@@ -248,22 +257,25 @@ export default function KonkatsuHajimetePage() {
                 「私（僕）なんか、全然申し込みが来ないこともあるんじゃ…」
               </h3>
             </div>
-               <section className="w-full">
-            <div className="w-full max-w-4xl mx-auto my-1">
-              <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-                <Image
-                  src="/attractive-female-profile-umeda.jpg"
-                  alt="20代女性の魅力的なプロフィール写真　大阪梅田ドクターズ結婚相談所のサポート内容"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 800px"
-                  priority={true}
-                  className="object-cover"
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-                />
+            <section className="w-full">
+              <div className="w-full max-w-4xl mx-auto my-1">
+                <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+                  <Image
+                    src="/attractive-female-profile-umeda.jpg"
+                    alt="20代女性の魅力的なプロフィール写真 大阪梅田ドクターズ結婚相談所のサポート内容"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 800px"
+                    priority={true}
+                    className="object-cover"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+                  />
+                </div>
+                <p className="mt-2 text-right text-xs text-gray-500 pointer-events-none select-none">
+                  ※画像はイメージです。
+                </p>
               </div>
-            </div>
-          </section>
+            </section>
             <div className="text-[18px] text-gray-700 leading-relaxed space-y-3">
               <p style={{ wordBreak: 'break-all' }}>
                 「勇気を出して登録したのに、誰からも選ばれなかったらどうしよう」<br />
@@ -303,22 +315,25 @@ export default function KonkatsuHajimetePage() {
                 「結婚相談所って、実際はどんな人がいるの？」
               </h3>
             </div>
-               <section className="w-full">
-            <div className="w-full max-w-4xl mx-auto my-1">
-              <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-                <Image
-                  src="/working-situation.jpg"
-                  alt="30代会社で働く自立した婚活男女のイメージ写真"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 800px"
-                  priority={true}
-                  className="object-cover"
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-                />
+            <section className="w-full">
+              <div className="w-full max-w-4xl mx-auto my-1">
+                <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+                  <Image
+                    src="/working-situation.jpg"
+                    alt="30代会社で働く自立した婚活男女のイメージ写真"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 800px"
+                    priority={true}
+                    className="object-cover"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+                  />
+                </div>
+                <p className="mt-2 text-right text-xs text-gray-500 pointer-events-none select-none">
+                  ※画像はイメージです。
+                </p>
               </div>
-            </div>
-          </section>
+            </section>
             <div className="text-[18px] text-gray-700 leading-relaxed space-y-3">
               <p style={{ wordBreak: 'break-all' }}>
                 「少し堅苦しい人が多いのかな……」というイメージをお持ちかもしれませんが、今の婚活市場には、とても素敵な方々がたくさん集まっています。
@@ -348,22 +363,25 @@ export default function KonkatsuHajimetePage() {
                 「最初は本当に、何から手を付ければいいの？」
               </h3>
             </div>
-               <section className="w-full">
-            <div className="w-full max-w-4xl mx-auto my-1">
-              <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-                <Image
-                  src="/young-woman-consultation-umeda.jpg"
-                  alt="若い女性が婚活の基本からカウンセラーに教えてもらっている面談室の様子"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 800px"
-                  priority={true}
-                  className="object-cover"
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-                />
+            <section className="w-full">
+              <div className="w-full max-w-4xl mx-auto my-1">
+                <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+                  <Image
+                    src="/young-woman-consultation-umeda.jpg"
+                    alt="若い女性が婚活の基本からカウンセラーに教えてもらっている面談室の様子"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 800px"
+                    priority={true}
+                    className="object-cover"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+                  />
+                </div>
+                <p className="mt-2 text-right text-xs text-gray-500 pointer-events-none select-none">
+                  ※画像はイメージです。
+                </p>
               </div>
-            </div>
-          </section>
+            </section>
             <div className="text-[18px] text-gray-700 leading-relaxed space-y-3">
               <p style={{ wordBreak: 'break-all' }}>
                 「色々やることが多そうで、やっぱり難しそう……」と感じる必要はありません。あなたが最初に行うことは、「プロの手を借りて、自分のこれまでの生活や、これからの理想をリラックスして話してみる」、ただそれだけです。

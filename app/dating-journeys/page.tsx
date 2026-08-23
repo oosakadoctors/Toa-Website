@@ -12,60 +12,75 @@ export default function SuccessStoriesPage() {
   return (
     <main className="mx-auto max-w-[500px] bg-[#f0f7fc] px-4 py-1 text-[18px] leading-[1.8] text-[#2b3a4a] box-border">
       {/* Introduction Section */}
-      <section className="mb-2 text-center">
-<div className="mb-4 px-2 sm:px-6 py-1 text-slate-900 text-center w-full">
-  <div className="flex flex-col items-center gap-4 w-full">
-    <span className="inline-flex items-center gap-1.5 bg-sky-100 text-sky-800 text-xs sm:text-sm font-bold tracking-widest px-4 py-1.5 rounded-full border border-sky-200 shadow-2xs">
-      ✨ リアルな成婚ストーリー
-    </span>
-    
-    <div className="bg-gradient-to-r from-sky-600 to-blue-600 text-white py-6 px-4 sm:px-8 rounded-2xl shadow-md w-full">
-      <h1 className="text-[28px] sm:text-[38px] lg:text-[44px] font-bold tracking-wide leading-tight m-0 text-white font-serif w-full drop-shadow-sm">
-        結婚相談所の婚活で<br className="sm:hidden" />
-        「上手くいかない」と悩むあなたへ。
-      </h1>
+<section className="mb-2 text-center">
+  <div className="mb-4 px-2 sm:px-6 py-1 text-slate-900 text-center w-full">
+    <div className="flex flex-col items-center gap-4 w-full">
+      <span className="inline-flex items-center gap-1.5 bg-sky-100 text-sky-800 text-xs sm:text-sm font-bold tracking-widest px-4 py-1.5 rounded-full border border-sky-200 shadow-2xs">
+        ✨ リアルな成婚ストーリー
+      </span>
+      
+      <div className="bg-gradient-to-r from-sky-600 to-blue-600 text-white py-6 px-4 sm:px-8 rounded-2xl shadow-md w-full">
+        <h1 className="text-[28px] sm:text-[38px] lg:text-[44px] font-bold tracking-wide leading-tight m-0 text-white font-serif w-full drop-shadow-sm">
+          結婚相談所の婚活で<br className="sm:hidden" />
+          「上手くいかない」と悩むあなたへ。
+        </h1>
+      </div>
+
+      <div className="w-20 h-1 bg-sky-500 rounded-full my-1" />
+
+      <p className="text-slate-600 text-base sm:text-lg leading-relaxed tracking-wider m-0 font-sans w-full">
+        色々な困難を乗り越え、最高の出会いを掴んだ先輩たちのリアルな婚活の記録
+      </p>
     </div>
+  </div>
 
-    <div className="w-20 h-1 bg-sky-500 rounded-full my-1" />
+  <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md mb-4">
+    <Image
+      src={memberSuccessStories}
+      alt="婚活で出会った女性とドライブデートをしながら成婚をめざすイメージ写真"
+      fill
+      sizes="(max-width: 768px) 100vw, 800px"
+      priority={true}
+      className="object-cover"
+      placeholder="blur"
+      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+    />
+  </div>
 
-    <p className="text-slate-600 text-base sm:text-lg leading-relaxed tracking-wider m-0 font-sans w-full">
-      色々な困難を乗り越え、最高の出会いを掴んだ先輩たちのリアルな婚活の記録
+  <p className="mb-4 mt-0 text-[18px] text-left">
+    「結婚相談所に入会すれば、トントン拍子に成婚できる」と思っていませんか？
+  </p>
+  <p className="mb-4 mt-0 text-[18px] text-left">
+    実は、幸せに成婚退会していった先輩たちも、全員が一度は「婚活が上手くいかない」と悩み、壁にぶつかっていました。時には「もう退会してやめようか」と話されたこともあります。
+  </p>
+  <p className="mb-4 mt-0 text-[18px] text-left">
+    それでも彼らが理想のパートナーを掴み取れたのは、アドバイスを素直に実践し、デートの進め方や自分の行動を少しずつ変えてみたからです。
+  </p>
+  <p className="mb-4 mt-0 text-[18px] text-left">
+    本ページでは、当結婚相談所の会員様たちが実際に経験した「リアルな試行錯誤と、婚活の停滞期を脱出した具体的な解決策」をお届けします。今まさに「どう動けばいいかわからない」と苦戦しているあなたへ。この記録が、理想の未来へ踏み出す優しいきっかけになりますように。
+  </p>
+
+  {/* Distinctive History & Renewal Thought Card */}
+  <div className="bg-gradient-to-br from-sky-100/80 via-indigo-50/70 to-rose-50/60 border border-sky-300/70 border-l-6 border-l-sky-500 rounded-xl p-4 sm:p-5 text-left space-y-3 shadow-sm relative overflow-hidden">
+    <h3 className="text-[20px] sm:text-[22px] font-bold text-sky-950 border-b border-sky-200/80 pb-2 flex items-center gap-2">
+      <span>🌸</span> 私たちの歩みとリニューアルへの想い
+    </h3>
+    
+    <p className="text-[18px] text-slate-800 leading-relaxed my-2" style={{ wordBreak: 'break-all' }}>
+      大阪梅田ドクターズ結婚相談所は、約20年前に母と私が「昔ながらのお見合いおばちゃん」のようにアットホームにはじめた「幸（さち）結婚相談所」が前身です。
+    </p>
+    <p className="text-[18px] text-slate-800 leading-relaxed my-2" style={{ wordBreak: 'break-all' }}>
+      当時はマッチングアプリなどはない時代。元校長先生であった母の広い人脈を活かし、お預かりしたお手製の「釣書（つりしょ）」を一枚一枚大切に拝見しながら、利益経営よりも「人と人との温かいご縁を結ぶこと」を第一に、数多くの引き合わせを行ってまいりました。
+    </p>
+    <p className="text-[18px] text-slate-800 leading-relaxed my-2" style={{ wordBreak: 'break-all' }}>
+      このたび、前身の温かいお引き合わせの精神を受け継ぎ、現役医師である私が代表に就任いたしました。これに伴い、名称を「大阪梅田ドクターズ結婚相談所」へと改め、より現代のニーズに合わせたサポート体制へとリニューアルオープンいたしました。医師ならではの視点と、20年培った確かなノウハウで、皆さまの最良のパートナー探しをサポートいたします。
+    </p>
+    
+    <p className="text-[18px] text-slate-500 pt-2 border-t border-sky-200/60 leading-normal mt-2">
+      ※成婚実績（成婚数等）は、前身である「幸結婚相談所」の2016年以降の実績から、現在の「大阪梅田ドクターズ結婚相談所」の実績までを通算した累計データです。
     </p>
   </div>
-</div>
-        
-
-
-
-         
-                <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md mb-4">
-                  <Image
-                    src={memberSuccessStories}
-                    alt="婚活で出会った女性とドライブデートをしながら成婚をめざすイメージ写真"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 800px"
-                    priority={true}
-                    className="object-cover"
-                    placeholder="blur"
-                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-                  />
-                </div>
-             
-   
-        
-        <p className="mb-4 mt-0 text-[18px] text-left">
-          「結婚相談所に入会すれば、トントン拍子に成婚できる」と思っていませんか？
-        </p>
-        <p className="mb-4 mt-0 text-[18px] text-left">
-          実は、幸せに成婚退会していった先輩たちも、全員が一度は「婚活が上手くいかない」と悩み、壁にぶつかっていました。時には「もう退会してやめようか」と話されたこともあります。
-        </p>
-        <p className="mb-4 mt-0 text-[18px] text-left">
-          それでも彼らが理想のパートナーを掴み取れたのは、アドバイスを素直に実践し、デートの進め方や自分の行動を少しずつ変えてみたからです。
-        </p>
-        <p className="mb-0 text-[18px] text-left">
-          本ページでは、当結婚相談所の会員様たちが実際に経験した「リアルな試行錯誤と、婚活の停滞期を脱出した具体的な解決策」をお届けします。今まさに「どう動けばいいかわからない」と苦戦しているあなたへ。この記録が、理想の未来へ踏み出す優しいきっかけになりますように。
-        </p>
-      </section>
+</section>
 
       <hr className="my-10 border-none border-t border-[#bae6fd]" />
 

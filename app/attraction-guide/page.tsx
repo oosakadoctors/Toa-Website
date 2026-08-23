@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { 
   Heart, 
   Sparkles, 
@@ -263,12 +264,15 @@ export default function AttractionGuide() {
             </p>
           </div>
 
-          <div className="bg-gradient-to-r from-rose-400 to-pink-500 text-white p-4 rounded-xl flex items-center justify-between shadow-sm">
-            <span className="text-[18px] font-bold" style={{ wordBreak: 'break-all' }}>
-              🍀仮交際後、真剣交際、結婚生活に必要な内面についての解説はこちら
-            </span>
-            <ArrowRight className="w-5 h-5 shrink-0" />
-          </div>
+ <Link
+  href="/EQ"
+  className="bg-gradient-to-r from-rose-400 to-pink-500 text-white p-4 rounded-xl flex items-center justify-between shadow-sm transition-all duration-200 hover:shadow-md hover:opacity-95 active:scale-[0.99] no-underline cursor-pointer"
+>
+  <span className="text-[18px] font-bold" style={{ wordBreak: 'break-all' }}>
+    🍀仮交際後、真剣交際、結婚生活に必要な内面についての解説はこちら
+  </span>
+  <ArrowRight className="w-5 h-5 shrink-0" />
+</Link>
         </section>
 
         <hr className="border-rose-200 border-dashed my-8" />

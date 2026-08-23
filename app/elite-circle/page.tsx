@@ -85,7 +85,7 @@ export default function EnvironmentPage() {
               <span className="text-lg">専任2名体制</span>
             </div>
             <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
-              医師 ＆ ベテランが2名体制でつく「専任サポート」あなた1人に対して、現役女性医師とベテランカウンセラーの2名が同時に専任でつきます。医師の論理性と、婚活のプロの経験で、あなただけの特別な婚活戦略を作成します。
+              医師 ＆ ベテランが2名体制でつく「専任サポート」あなた1人に対して、現役女性医師とベテランカウンセラーの2名が同時に専任でつきます。医師の論理性と、婚活のプロの経験で、あなただけの特別な婚活戦略を一緒に考えます。
             </p>
           </div>
 
@@ -95,10 +95,11 @@ export default function EnvironmentPage() {
               <span className="p-2 rounded-lg bg-rose-400 text-white">
                 <Users className="w-5 h-5 shrink-0" />
               </span>
-              <span className="text-lg">数万人規模のネットワーク</span>
+              <span className="text-lg">数万人規模のネットワーク（IBJの正規加盟店によるネットワーク）</span>
             </div>
             <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
-              数万人規模の提携ネットワーク ＆ 厳選された自社会員日本最大級の連盟に加盟しており、全国の豊富な提携会員様からスマホでいつでもお相手を検索可能。
+              大阪梅田ドクターズ結婚相談所はIBJ正規加盟店です　大規模の提携ネットワーク ＆ 厳選された自社会員。
+              日本最大級の連盟（IBJ）に加盟しており、全国の豊富な提携会員様からスマホでいつでもお相手を検索可能。※IBJの2026年6月公式発表
             </p>
           </div>
 
@@ -110,23 +111,26 @@ export default function EnvironmentPage() {
             心から幸せだと思える最高の結婚へと、私たちと一緒に歩んでまいりましょう。
           </p>
         </div>
-
-        <section id="link" className="w-full">
-          <div className="w-full max-w-4xl mx-auto my-1">
-            <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl border-4 border-white ring-2 ring-white/80 shadow-2xl">
-              <Image
-                src="/infographic-explaining-the-number-of-members-at-the-Osaka-Umeda-Doctors’-Marriage-Agency.jpg"
-                alt="大阪梅田ドクターズ結婚相談所の会員数や特徴をわかりやく解説した図"
-                fill
-                sizes="(max-width: 768px) 100vw, 800px"
-                priority={false}
-                className="object-cover"
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-              />
-            </div>
-          </div>
-        </section>
+<section id="link" className="w-full">
+  <div className="w-full max-w-4xl mx-auto my-1">
+    <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl border-4 border-white ring-2 ring-white/80 shadow-2xl">
+      <Image
+        src="/infographic-explaining-the-number-of-members-at-the-Osaka-Umeda-Doctors’-Marriage-Agency.jpg"
+        alt="大阪梅田ドクターズ結婚相談所の会員数や特徴をわかりやく解説した図"
+        fill
+        sizes="(max-width: 768px) 100vw, 800px"
+        priority={false}
+        className="object-cover"
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+      />
+    </div>
+    <p className="mt-2 text-right text-xs text-gray-500 pointer-events-none select-none">
+      ※写真はイメージです <br/>
+      ※IBJの検索システムを利用しています。
+    </p>
+  </div>
+</section>
 
         {/* Section 1: エビデンス重視の婚活設計 */}
         <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
@@ -144,7 +148,7 @@ export default function EnvironmentPage() {
 
           <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
             <p style={{ wordBreak: 'break-all' }}>
-              結婚相談所選びで最も重要視されるべきは、「カウンセリングの質と、運営者の確かな専門性」です。当相談所では、日々多様な患者様の健康状態やお気持ち、人生の価値観に向き合ってきた現役女性医師（加藤）の「深い傾聴力・人間性を見抜く客観的な分析力」と、数多くのご成婚実績を持つベテランカウンセラーの「実践的な成婚メソッド」を融合させた、独自のカウンセリング体制を構築しています。
+              結婚相談所選びで最も重要視されるべきは、「カウンセリングの質と、運営者の確かな専門性」です。当相談所では、日々多様な患者様の健康状態やお気持ち、人生の価値観に向き合ってきた現役女性医師の「深い傾聴力・人間性を見抜く客観的な分析力」と、数多くのご成婚実績を持つベテランカウンセラーの「実践的な成婚メソッド」を融合させた、独自のカウンセリング体制を構築しています。
             </p>
             <p style={{ wordBreak: 'break-all' }}>
               仕事と家庭の両立におけるメンタルケアをはじめ、当直や不規則なシフト勤務といった専門職ならではのタイトなスケジュール調整、また多忙な中でのモチベーション維持など、ライフスタイルに合わせたオーダーメイドの活動計画をご提案します。日本最大級のネットワークを活かした全国数万人規模の身元保証会員データから、AIマッチングだけに依存しない、高精度なパートナーシップ分析を行います。
@@ -268,7 +272,7 @@ export default function EnvironmentPage() {
             <p style={{ wordBreak: 'break-all' }}>
               仕事や社会的責任において第一線で活躍するキャリア層にとって、結婚は人生の可能性をさらに拡大するための契機でなければなりません。時間の使い方が極めてタイトな会員様の日常を深く理解しているからこそ、完全少人数制（月5名限定）の利点を最大限に活かし、
               お見合いや仮交際、真剣交際、各フェーズを最もスマートに、タイムパフォーマンス高く効率的に進められる環境を整えています。
-              会話の端々で見せる本音や深い相性を客観的に分析し、会員様が「お相手との対話や関係性の構築」にだけ集中できるスマートな活動環境を徹底しています。
+              会話の端々で見せる本音や深い相性を客観的に分析し、会員様が「お相手との対話や関係性の構築」にだけ集中できるスマートな活動環境をめざしています。
             </p>
           </div>
         </section>
@@ -289,13 +293,13 @@ export default function EnvironmentPage() {
 
           <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
             <p style={{ wordBreak: 'break-all' }}>
-              日本最大級の結婚相談所連盟のネットワークと、独自の自社ネットワークを活かし、多彩な出会いの可能性をご提供いたします。会員様それぞれの人生の価値観、ゆずれない希望、そしてライフプランに合致する理想のお相手を一緒に検討し、スマートな成婚へと導きます。
+              日本最大級の結婚相談所連盟のネットワークと、独自の自社ネットワークを活かし、多彩な出会いの可能性をご提供いたします。会員様それぞれの人生の価値観、ゆずれない希望、そしてライフプランに合致する理想のお相手を一緒に検討し、スマート成婚をめざします。
             </p>
             <p style={{ wordBreak: 'break-all' }}>
               ハイクラス層とのご縁を結ぶために不可欠なのが、「コミュニケーション力と知的な対話力」の向上です。当相談所では、現役女性医師の視点から会員様が持つ洗練された魅力を客観的に引き出し、お互いの価値観が共鳴し、リスペクトし合える関係が続く結婚に向けて、専門的なオーダーメイド戦略を練り上げます。
             </p>
             <p style={{ wordBreak: 'break-all' }}>
-              お見合いから「仮交際」、論理的なステップを踏んで「真剣交際」へと確実に関係を進めるため、行動心理学やEQ（非認知能力）の知見に基づいた実践的なアドバイスを実施。感情論ではなく、お相手の本音をロジカルに分析することで、何十年先も深く共鳴し合える最高のパートナーシップの構築を可能にします。
+              お見合いから「仮交際」、論理的なステップを踏んで「真剣交際」へと確実に関係を進めるため、行動心理学やEQ（非認知能力）の知見に基づいた実践的なアドバイスを実施。感情論ではなく、お相手の本音をロジカルに分析することで、何十年先も深く共鳴し合える最高のパートナーシップの構築をめざします。
             </p>
           </div>
         </section>
@@ -316,7 +320,7 @@ export default function EnvironmentPage() {
 
           <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
             <p style={{ wordBreak: 'break-all' }}>
-              大阪梅田ドクターズ結婚相談所では、ハイクラス婚活に伴う「婚活疲れやストレス」を極限まで軽減する科学的アプローチを徹底しています。
+              大阪梅田ドクターズ結婚相談所では、ハイクラス婚活に伴う「婚活疲れやストレス」を軽減する科学的アプローチをめざしています。
             </p>
             <p style={{ wordBreak: 'break-all' }}>
               現役医師の医学的知見と、成婚実績豊富なベテランカウンセラーが培ってきた実践的な経験に基づき、お見合いの不成立や突然の交際終了といったストレスに対し、単なる精神論ではなく、的確な原因分析と具体的な対策をロジカルに提示。同時に、一時的な落ち込みや不安に陥ってしまったお気持ちに寄り添って方向性を再検討し、モチベーションの低下を防ぎながら、次の一歩へ笑顔で前を向けるよう、回復する力（レジリエンス）を個別カウンセリングで柔軟にサポートします。
@@ -343,13 +347,13 @@ export default function EnvironmentPage() {
 
           <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
             <p style={{ wordBreak: 'break-all' }}>
-              「結婚して子供を持ち、定時に帰る」といった、かつての“当たり前”だったライフプランは過去のものです。現代は、リモートワークやシフト制など働き方が多様化し、趣味やキャリアの優先度も人それぞれ。生き方や幸せの形、そして世の中の「正解」は決して一つではありません。生活リズムや価値観が個々に異なる今、従来の自然な出会いだけに頼る婚活は、限界を迎えているのが現実です。
+              「結婚して子供を持ち、定時に帰る」といった、かつての“当たり前”だったライフプランは過去のものです。現代は、リモートワークやシフト制など働き方が多様化し、趣味やキャリアの優先度も人それぞれ。生き方や幸せの形、そして世の中の「正解」は決して一つではありません。生活リズムや価値観が個々に異なる今、従来の自然な出会いだけに頼る婚活は　困難になってきているのが現実です。
             </p>
             <p style={{ wordBreak: 'break-all' }}>
               だからこそ大阪梅田ドクターズ結婚相談所では、一人ひとりの異なる日常に徹底的に寄り添う、柔軟な新時代の婚活環境をご用意しています。当相談所の強みは、医療の最前線で多様な人生観や多忙な現実に触れてきた「女性医師」の視点と、数多くの成婚を導いてきた「ベテランカウンセラー」の深い知見が融合している点です。
             </p>
             <p style={{ wordBreak: 'break-all' }}>
-              例えば、夜勤が多く不規則なスケジュールで働く方、キャリアアップと結婚を同時に叶えたい方、あるいは自分らしい距離感でのパートナーシップを望む方。私たちは、凝り固まったマニュアル通りのアドバイスは一切いたしません。「あなたにとっての最適な幸せとは何か」を面談から導き出し、お見合いの調整から交際管理まで、それぞれの生活リズムに合わせた柔軟なサポートを提供します。
+              例えば、夜勤が多く不規則なスケジュールで働く方、キャリアアップと結婚を同時に叶えたい方、あるいは自分らしい距離感でのパートナーシップを望む方。私たちは、凝り固まったマニュアル通りのアドバイスはいたしません。「あなたにとっての最適な幸せとは何か」を面談から導き出し、お見合いの調整から交際管理まで、それぞれの生活リズムに合わせた柔軟なサポートを提供します。
             </p>
             <p style={{ wordBreak: 'break-all' }}>
               価値観が多様化した時代だからこそ、条件のミスマッチを事前に防ぎ、最初からお互いのライフスタイルを尊重し合えるお相手と効率的に出会える環境が必要です。世間の常識にとらわれる必要はありません。女性医師とベテランカウンセラーの確かな知見を味方に、あなただけの柔軟で特別な未来への第一歩を、ここから一緒に踏み出してみませんか。

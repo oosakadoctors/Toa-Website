@@ -66,7 +66,7 @@ export default function PremiumNavbar() {
         { name: "大阪梅田ドクターズ結婚相談所の会員と婚活環境について", href: "/elite-circle" },
         { name: "メインカウンセラーのメッセージ", href: "/main-counselor" },
         { name: "婚活でモテる人の特徴とは？", href: "/attraction-guide" },
-        { name: "婚活って何？から一歩ずつ", href: "/marriage-hunting" },
+        { name: "婚活って何？から一歩ずつ（初心者むけサポート内容説明）", href: "/marriage-hunting" },
         { name: "リアルな婚活の記録と成婚報告", href: "/dating-journeys" },
         { name: "特定商取引法に基づく表記・プライバシーポリシー", href: "/company-profile" },
       ],
@@ -137,6 +137,15 @@ export default function PremiumNavbar() {
         { name: "恋愛初心者がスピード成婚する方法", href: "/beginners" },
         { name: "大人の結婚に必要な「人間的成熟度」と内面魅力", href: "/emotional-maturity" },
         { name: "初心者むけ素朴な疑問を解決", href: "/first-steps" },
+      ],
+    },
+        {
+      title: "○○○○",
+      isMenSection: false,
+      icon: UserRound,
+      links: [
+        { name: "○○○○", href: "/○○○○" },
+
       ],
     },
     {

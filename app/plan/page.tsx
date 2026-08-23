@@ -179,14 +179,6 @@ export default function PricePage() {
               </div>
             </div>
           </div>
-
-          {/* --- CTA Footer Section --- */}
-          <div className="pt-6 text-center">
-            <button className="inline-block bg-[#102A43] hover:bg-[#1b4369] text-white text-base sm:text-lg font-bold py-4 px-8 sm:px-12 rounded-full shadow-md hover:shadow-xl transform hover:-translate-y-0.5 transition duration-200">
-              入会枠を相談する（無料カウンセリングはこちら）
-            </button>
-          </div>
-
         </div>
       </div>
     </>
