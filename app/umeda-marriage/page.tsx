@@ -17,7 +17,7 @@ export default function UmedaMarriagePage() {
           <p className="m-0 text-[24px] sm:text-[26px] font-bold tracking-wider drop-shadow-sm">大阪梅田ドクターズ結婚相談所</p>
         </div>
         
-        <div className="mb-6 overflow-hidden rounded-lg w-full shadow-md">
+        <div className="relative mb-6 overflow-hidden rounded-lg w-full shadow-md">
           <Image
             src="/osaka-umeda-marriage-agency.jpg"
             alt="大阪梅田ドクターズ結婚相談所 メインビジュアル"
@@ -26,6 +26,9 @@ export default function UmedaMarriagePage() {
             priority={true}
             className="w-full h-auto block object-cover"
           />
+          <p className="absolute bottom-2 right-2 z-10 text-xs text-slate-500 bg-white/80 px-2 py-0.5 rounded pointer-events-none select-none">
+            ※画像はイメージです。
+          </p>
         </div>
         
         <h1 className="mb-4 text-2xl font-bold leading-[1.4] text-[#1a365d]">大手のマニュアルにはない、家族のような温もりがここにあります。</h1>
@@ -41,7 +44,7 @@ export default function UmedaMarriagePage() {
 
       {/* New Section: Low Romance Experience Welcome */}
       <section className="mb-10 text-center">
-        <div className="mb-6 overflow-hidden rounded-lg w-full">
+        <div className="relative mb-6 overflow-hidden rounded-lg w-full">
           <Image
             src="/low-romance-experience-welcome.jpg"
             alt="恋愛経験が少なくても大丈夫"
@@ -49,6 +52,9 @@ export default function UmedaMarriagePage() {
             height={400}
             className="w-full h-auto block object-cover"
           />
+          <p className="absolute bottom-2 right-2 z-10 text-xs text-slate-500 bg-white/80 px-2 py-0.5 rounded pointer-events-none select-none">
+            ※画像はイメージです。
+          </p>
         </div>
         
         <h2 className="mb-4 text-[21px] font-bold leading-[1.4] text-[#1a365d]">恋愛経験が少なくても大丈夫！</h2>
@@ -66,7 +72,7 @@ export default function UmedaMarriagePage() {
 
       {/* Section 1 */}
       <section className="mb-10 text-center">
-        <div className="mb-6 overflow-hidden rounded-lg w-full">
+        <div className="relative mb-6 overflow-hidden rounded-lg w-full">
           <Image
             src="/safe-secure-meeting.jpg"
             alt="身元が保証された確かな安心"
@@ -74,6 +80,9 @@ export default function UmedaMarriagePage() {
             height={400}
             className="w-full h-auto block object-cover"
           />
+          <p className="absolute bottom-2 right-2 z-10 text-xs text-slate-500 bg-white/80 px-2 py-0.5 rounded pointer-events-none select-none">
+            ※画像はイメージです。
+          </p>
         </div>
         
         <h2 className="mb-4 text-[21px] font-bold leading-[1.4] text-[#1a365d]">身元が保証された「確かな安心」<br />｜4つの公的証明書の提出を義務化</h2>
@@ -87,7 +96,7 @@ export default function UmedaMarriagePage() {
 
       {/* Section 2 */}
       <section className="mb-10 text-center">
-        <div className="mb-6 overflow-hidden rounded-lg w-full">
+        <div className="relative mb-6 overflow-hidden rounded-lg w-full">
           <Image
             src="/doctor-counselor-marriage-plan.jpg"
             alt="現役女医×ベテランカウンセラーが伴走"
@@ -95,6 +104,9 @@ export default function UmedaMarriagePage() {
             height={400}
             className="w-full h-auto block object-cover"
           />
+          <p className="absolute bottom-2 right-2 z-10 text-xs text-slate-500 bg-white/80 px-2 py-0.5 rounded pointer-events-none select-none">
+            ※画像はイメージです。
+          </p>
         </div>
         
         <h2 className="mb-4 text-[21px] font-bold leading-[1.4] text-[#1a365d]">現役女医×ベテランカウンセラーが伴走<br />｜月々15,000円（税込）のシンプルな1コースのみ</h2>
@@ -107,36 +119,39 @@ export default function UmedaMarriagePage() {
       <hr className="my-10 border-none border-t border-[#bae6fd]" />
 
       {/* Section 3 */}
-<section className="mb-10 text-center">
-  <div className="mb-6 overflow-hidden rounded-lg w-full">
-    <Image
-      src="/osaka-umeda-doctors-kekkon-soudansho-support.jpg"
-      alt="高い実績と会員満足度"
-      width={600}
-      height={400}
-      className="w-full h-auto block object-cover"
-    />
-  </div>
+      <section className="mb-10 text-center">
+        <div className="relative mb-6 overflow-hidden rounded-lg w-full">
+          <Image
+            src="/osaka-umeda-doctors-kekkon-soudansho-support.jpg"
+            alt="高い実績と会員満足度"
+            width={600}
+            height={400}
+            className="w-full h-auto block object-cover"
+          />
+          <p className="absolute bottom-2 right-2 z-10 text-xs text-slate-500 bg-white/80 px-2 py-0.5 rounded pointer-events-none select-none">
+            ※画像はイメージです。
+          </p>
+        </div>
 
-  <h2 className="mb-4 text-[21px] font-bold leading-[1.4] text-[#1a365d]">
-    会員満足度・1年以内のご成婚・お見合い成立の「すべてにおいて高い質のサポート」を目指す相談所
-  </h2>
+        <h2 className="mb-4 text-[21px] font-bold leading-[1.4] text-[#1a365d]">
+          会員満足度・1年以内のご成婚・お見合い成立の「すべてにおいて高い質のサポート」を目指す相談所
+        </h2>
 
-  <p className="mb-4 mt-0 text-[18px] text-left">
-    一人ひとりの会員様に寄り添い、確かな満足度、1年以内のご成婚、そして一歩目となるお見合い成立のすべてにおいて「高い目標と質の高いサポート」を目指しているのが、私たち「大阪梅田ドクターズ結婚相談所」です。現役女医である代表と、20年寄り添い続けてきたベテランがタッグを組み、お一人おひとりの魅力を最大限に引き出す「手作りの温かい婚活サポート」を徹底いたします。確かなお見合い成立へとつなげるプロの特別推薦に加え、活動開始から「1年以内のご成婚」を本気で目指す体制を整えているからこそ、多くの会員様からお喜びの声をいただいております。
-  </p>
+        <p className="mb-4 mt-0 text-[18px] text-left">
+          一人ひとりの会員様に寄り添い、確かな満足度、1年以内のご成婚、そして一歩目となるお見合い成立のすべてにおいて「高い目標と質の高いサポート」を目指しているのが、私たち「大阪梅田ドクターズ結婚相談所」です。現役女医である代表と、20年寄り添い続けてきたベテランがタッグを組み、お一人おひとりの魅力を最大限に引き出す「手作りの温かい婚活サポート」を徹底いたします。確かなお見合い成立へとつなげるプロの特別推薦に加え、活動開始から「1年以内のご成婚」を本気で目指す体制を整えているからこそ、多くの会員様からお喜びの声をいただいております。
+        </p>
 
-  <p className="mb-4 mt-5 text-[18px] font-bold text-center text-[#0284c7]">
-    家族のような温もりと安心感のある「大阪梅田ドクターズ結婚相談所」で、あなたにとっての理想の出会いへと一歩を踏み出してみませんか？
-  </p>
-</section>
+        <p className="mb-4 mt-5 text-[18px] font-bold text-center text-[#0284c7]">
+          家族のような温もりと安心感のある「大阪梅田ドクターズ結婚相談所」で、あなたにとっての理想の出会いへと一歩を踏み出してみませんか？
+        </p>
+      </section>
 
       <hr className="my-10 border-none border-t border-[#bae6fd]" />
 
       {/* Closing Section */}
       <section className="mb-0 text-center">
         <div className="flex flex-col gap-4 mb-5">
-          <div className="mb-6 overflow-hidden rounded-lg w-full">
+          <div className="relative mb-6 overflow-hidden rounded-lg w-full">
             <Image
               src="/successful-marriage-reports.jpg"
               alt="成婚報告イメージ 1"
@@ -144,8 +159,11 @@ export default function UmedaMarriagePage() {
               height={400}
               className="w-full h-auto block object-cover"
             />
+            <p className="absolute bottom-2 right-2 z-10 text-xs text-slate-500 bg-white/80 px-2 py-0.5 rounded pointer-events-none select-none">
+              ※画像はイメージです。
+            </p>
           </div>
-          <div className="mb-6 overflow-hidden rounded-lg w-full">
+          <div className="relative mb-6 overflow-hidden rounded-lg w-full">
             <Image
               src="/successful-marriage-reports2.jpg"
               alt="成婚報告イメージ 2"
@@ -153,19 +171,22 @@ export default function UmedaMarriagePage() {
               height={400}
               className="w-full h-auto block object-cover"
             />
+            <p className="absolute bottom-2 right-2 z-10 text-xs text-slate-500 bg-white/80 px-2 py-0.5 rounded pointer-events-none select-none">
+              ※画像はイメージです。
+            </p>
           </div>
         </div>
         
         <p className="mb-4 mt-0 text-[18px]">おかげさまで、今も私たちの元にはたくさんの幸せな成婚報告が届いています。</p>
         
-        <p className="mb-0 text-[20px] font-bold  text-center">次はあなたの番かもしれません</p>
-     
-<Link
-  href="/dating-journeys"
-  className="mx-auto block w-10/12 max-w-[340px] rounded-xl bg-[#6F292B] px-6 py-4 text-center text-[20px] font-bold text-white shadow-[0_6px_0_#4a1b1d] transition-all hover:translate-y-[2px] hover:shadow-[0_4px_0_#4a1b1d] active:translate-y-[6px] active:shadow-none no-underline"
->
-  嬉しい成婚報告を見る →
-</Link>
+        <p className="mb-0 text-[20px] font-bold text-center">次はあなたの番かもしれません</p>
+      
+        <Link
+          href="/dating-journeys"
+          className="mx-auto block w-10/12 max-w-[340px] rounded-xl bg-[#6F292B] px-6 py-4 text-center text-[20px] font-bold text-white shadow-[0_6px_0_#4a1b1d] transition-all hover:translate-y-[2px] hover:shadow-[0_4px_0_#4a1b1d] active:translate-y-[6px] active:shadow-none no-underline"
+        >
+          嬉しい成婚報告を見る →
+        </Link>
       </section>
     </main>
   );
