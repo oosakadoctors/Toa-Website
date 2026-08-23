@@ -25,30 +25,30 @@ export default function CompanyProfileTable() {
       icon: <UserCheck className="w-4 h-4 text-slate-500 shrink-0" />,
       term: "代表者氏名",
       description:
-        "消費者様からのご請求があった場合、書面または電子メール等の適切な方法により、遅滞なく戸籍上の氏名（フルネーム）を開示いたします。",
+        "加藤とあこ",
     },
     {
       icon: <MapPin className="w-4 h-4 text-slate-500 shrink-0" />,
       term: "所在地",
       description:
-        "（ここに契約したバーチャルオフィスの住所を正しく記入してください）\n例：大阪府大阪市北区〇〇 〇丁目〇ー〇 〇〇ビル〇F",
+        "〒530-0001 大阪府大阪市北区梅田１丁目２−2番　大阪駅前第2ビル 2階",
     },
     {
       icon: <Mail className="w-4 h-4 text-slate-500 shrink-0" />,
       term: "連絡先（メール）",
       description:
-        "（あなたの事業用メールアドレス）\n例：info@umeda-doctors.com",
+        "dabanmeitiandokutazu.26@gmail.com",
     },
     {
       icon: <Phone className="w-4 h-4 text-slate-500 shrink-0" />,
       term: "連絡先（電話番号）",
       description:
-        "（バーチャルオフィスで取得した転送用などの電話番号）\n例：06-XXXX-XXXX または 050-XXXX-XXXX",
+        "NA",
     },
     {
       icon: <CreditCard className="w-4 h-4 text-slate-500 shrink-0" />,
       term: "お支払い方法",
-      description: "銀行振込（楽天銀行） / クレジットカード決済",
+      description: "銀行振り込み",
     },
     {
       icon: <Receipt className="w-4 h-4 text-slate-500 shrink-0" />,

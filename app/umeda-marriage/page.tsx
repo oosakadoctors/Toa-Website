@@ -107,27 +107,29 @@ export default function UmedaMarriagePage() {
       <hr className="my-10 border-none border-t border-[#bae6fd]" />
 
       {/* Section 3 */}
-      <section className="mb-10 text-center">
-        <div className="mb-6 overflow-hidden rounded-lg w-full">
-          <Image
-            src="/high-success-marriage-agency.jpg"
-            alt="高い実績と会員満足度"
-            width={600}
-            height={400}
-            className="w-full h-auto block object-cover"
-          />
-        </div>
-        
-        <h2 className="mb-4 text-[21px] font-bold leading-[1.4] text-[#1a365d]">会員満足度・1年以内の結婚成功率・お見合い成立率のすべてが高い相談所</h2>
-        
-        <p className="mb-4 mt-0 text-[18px] text-left">
-          満足度、成功率、お見合い成立率のすべての高い実績を誇るのが、私たち「大阪梅田ドクターズ結婚相談所」です。現役女医とベテランが引き出す「手作りの婚活サポート」を徹底し、高いお見合い成立率を誇るプロの特別推薦に加え、活動開始から「1年以内の高い成功率」を実現しているからこそ、多くの会員様から高い満足度をいただいております。
-        </p>
-        
-        <p className="mb-4 mt-5 text-[18px] font-bold text-center text-[#0284c7]">
-          家族のような温もりある「大阪梅田ドクターズ結婚相談所」で、あなたの理想の出会いへと踏み出してみませんか？
-        </p>
-      </section>
+<section className="mb-10 text-center">
+  <div className="mb-6 overflow-hidden rounded-lg w-full">
+    <Image
+      src="/osaka-umeda-doctors-kekkon-soudansho-support.jpg"
+      alt="高い実績と会員満足度"
+      width={600}
+      height={400}
+      className="w-full h-auto block object-cover"
+    />
+  </div>
+
+  <h2 className="mb-4 text-[21px] font-bold leading-[1.4] text-[#1a365d]">
+    会員満足度・1年以内のご成婚・お見合い成立の「すべてにおいて高い質のサポート」を目指す相談所
+  </h2>
+
+  <p className="mb-4 mt-0 text-[18px] text-left">
+    一人ひとりの会員様に寄り添い、確かな満足度、1年以内のご成婚、そして一歩目となるお見合い成立のすべてにおいて「高い目標と質の高いサポート」を目指しているのが、私たち「大阪梅田ドクターズ結婚相談所」です。現役女医である代表と、20年寄り添い続けてきたベテランがタッグを組み、お一人おひとりの魅力を最大限に引き出す「手作りの温かい婚活サポート」を徹底いたします。確かなお見合い成立へとつなげるプロの特別推薦に加え、活動開始から「1年以内のご成婚」を本気で目指す体制を整えているからこそ、多くの会員様からお喜びの声をいただいております。
+  </p>
+
+  <p className="mb-4 mt-5 text-[18px] font-bold text-center text-[#0284c7]">
+    家族のような温もりと安心感のある「大阪梅田ドクターズ結婚相談所」で、あなたにとっての理想の出会いへと一歩を踏み出してみませんか？
+  </p>
+</section>
 
       <hr className="my-10 border-none border-t border-[#bae6fd]" />
 
@@ -159,7 +161,7 @@ export default function UmedaMarriagePage() {
         <p className="mb-0 text-[20px] font-bold  text-center">次はあなたの番かもしれません</p>
      
 <Link
-  href="/reports"
+  href="/dating-journeys"
   className="mx-auto block w-10/12 max-w-[340px] rounded-xl bg-[#6F292B] px-6 py-4 text-center text-[20px] font-bold text-white shadow-[0_6px_0_#4a1b1d] transition-all hover:translate-y-[2px] hover:shadow-[0_4px_0_#4a1b1d] active:translate-y-[6px] active:shadow-none no-underline"
 >
   嬉しい成婚報告を見る →
