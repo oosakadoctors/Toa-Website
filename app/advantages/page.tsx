@@ -92,23 +92,27 @@ export default function HighSpecStrategyPage() {
 
   </div>
 </div>
-
 <section className="w-full">
-      <div className="w-full max-w-4xl mx-auto my-1">
-        <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-          <Image
-            src="/high-spec-marriage-partner.jpg"
-            alt="ハイスペック婚活の成功をイメージさせる、白いシャツを着て微笑むハイステ男性のイメージ写真"
-            fill
-            sizes="(max-width: 768px) 100vw, 800px"
-            priority={false}
-            className="object-cover"
-            placeholder="blur"
-            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-          />
-        </div>
-      </div>
-    </section>
+  <div className="w-full max-w-4xl mx-auto my-1">
+    <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+      <Image
+        src="/high-spec-marriage-partner.jpg"
+        alt="ハイスペック婚活の成功をイメージさせる、白いシャツを着て微笑むハイステ男性のイメージ写真"
+        fill
+        sizes="(max-width: 768px) 100vw, 800px"
+        priority={false}
+        className="object-cover"
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+      />
+
+      {/* Overlay Disclaimer */}
+      <span className="absolute bottom-3 right-3 z-10 text-xs text-slate-600 bg-white/80 backdrop-blur-sm px-2.5 py-1 rounded-md shadow-sm pointer-events-none select-none">
+        ※画像はイメージです。
+      </span>
+    </div>
+  </div>
+</section>
 
       {/* ============================================================
           DYNAMIC TABLE OF CONTENTS INDEX (Full-Width Mobile)
@@ -441,36 +445,44 @@ export default function HighSpecStrategyPage() {
       {/* ============================================================
           BOTTOM CLOSING CTA BOARD (Full-Width Mobile)
           ============================================================ */}
-      <div className="w-full sm:px-4 mt-6">
-        <div className="max-w-4xl mx-auto bg-gray-900 text-white w-full p-5 sm:p-8 text-center shadow-xl shadow-gray-900/10 relative overflow-hidden sm:rounded-2xl border-t-4 border-t-[#89D1D5]">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#89D1D5]/10 to-transparent pointer-events-none" />
-          
-          <ShieldCheck className="w-7 h-7 text-[#89D1D5] mx-auto mb-2 animate-pulse" />
-          <h3 
-            className="text-xl sm:text-2xl font-black mb-1.5 text-balance"
-            style={{ wordBreak: 'auto-phrase' }}
-          >
-            プロの客観的な分析眼で、生涯のバディを見つける
-          </h3>
-          <p 
-            className="text-base text-gray-400 w-full mx-auto mb-4 font-medium leading-relaxed text-justify sm:text-center px-2"
-            style={{ wordBreak: 'auto-phrase' }}
-          >
-            一方的な高望みや表面的な条件パズルではなく、お互いをリスペクトし合える「持続可能な最高の出会い」へ。当相談所の分析力と伴走サポートで、あなたの本当の市場価値と魅力を最大限に引き出します。
-          </p>
+ <div className="w-full sm:px-4 mt-6">
+  <div className="max-w-4xl mx-auto bg-gray-900 text-white w-full p-6 sm:p-10 text-center shadow-2xl shadow-gray-900/20 relative overflow-hidden sm:rounded-3xl border-t-4 border-t-[#89D1D5]">
+    
+    {/* Ambient Glow Effects */}
+    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#89D1D5]/15 via-transparent to-[#F5A3B8]/10 pointer-events-none" />
+    <div className="absolute -top-12 -right-12 w-40 h-40 bg-[#89D1D5]/20 rounded-full blur-3xl pointer-events-none" />
+    <div className="absolute -bottom-12 -left-12 w-40 h-40 bg-[#F5A3B8]/15 rounded-full blur-3xl pointer-events-none" />
 
-          <div className="flex flex-col sm:flex-row gap-2 justify-center items-center w-full px-2">
-            <Link 
-              href="/#contact"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#F5A3B8] to-[#89D1D5] text-white text-base font-black px-6 py-3 rounded-xl transition-transform hover:scale-[1.02] shadow-lg shadow-[#F5A3B8]/20"
-            >
-              <span>客観的な成婚戦略を無料カウンセリングで相談する</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
+    {/* Content Container */}
+    <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
+      
+      {/* Icon Badge */}
+      <div className="p-3 rounded-2xl bg-[#89D1D5]/10 border border-[#89D1D5]/20 mb-4 inline-flex items-center justify-center">
+        <ShieldCheck className="w-7 h-7 text-[#89D1D5] animate-pulse" />
       </div>
 
+      {/* Main Title */}
+      <h3 
+        className="text-xl sm:text-2xl lg:text-3xl font-black mb-3 text-balance tracking-tight text-white"
+        style={{ wordBreak: 'auto-phrase' }}
+      >
+        プロの客観的な分析眼で、<br className="hidden sm:inline" />生涯のバディを見つける
+      </h3>
+
+      {/* Decorative Accent Line */}
+      <div className="w-16 h-1 bg-gradient-to-r from-[#89D1D5] to-[#F5A3B8] rounded-full mb-4" />
+
+      {/* Paragraph Text */}
+      <p 
+        className="text-base sm:text-lg text-gray-300 font-medium leading-relaxed text-left sm:text-center px-1"
+        style={{ wordBreak: 'auto-phrase' }}
+      >
+        一方的な高望みや表面的な条件パズルではなく、お互いをリスペクトし合える「持続可能な最高の出会い」へ。当相談所の分析力と伴走サポートで、あなたの本当の市場価値と魅力を最大限に引き出します。
+      </p>
+
+    </div>
+  </div>
+</div>
     </div>
   );
 }

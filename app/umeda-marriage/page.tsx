@@ -17,16 +17,18 @@ export default function UmedaMarriagePage() {
           <p className="m-0 text-[24px] sm:text-[26px] font-bold tracking-wider drop-shadow-sm">大阪梅田ドクターズ結婚相談所</p>
         </div>
         
-        <div className="relative mb-6 overflow-hidden rounded-lg w-full shadow-md">
-          <Image
-            src="/osaka-umeda-marriage-agency.jpg"
-            alt="大阪梅田ドクターズ結婚相談所 メインビジュアル"
-            width={600}
-            height={400}
-            priority={true}
-            className="w-full h-auto block object-cover"
-          />
-          <p className="absolute bottom-2 right-2 z-10 text-xs text-slate-500 bg-white/80 px-2 py-0.5 rounded pointer-events-none select-none">
+        <div className="mb-6">
+          <div className="relative overflow-hidden rounded-lg w-full shadow-md">
+            <Image
+              src="/osaka-umeda-marriage-agency.jpg"
+              alt="大阪梅田ドクターズ結婚相談所 メインビジュアル"
+              width={600}
+              height={400}
+              priority={true}
+              className="w-full h-auto block object-cover"
+            />
+          </div>
+          <p className="text-right text-xs text-slate-500 mt-1 select-none">
             ※画像はイメージです。
           </p>
         </div>
@@ -44,15 +46,17 @@ export default function UmedaMarriagePage() {
 
       {/* New Section: Low Romance Experience Welcome */}
       <section className="mb-10 text-center">
-        <div className="relative mb-6 overflow-hidden rounded-lg w-full">
-          <Image
-            src="/low-romance-experience-welcome.jpg"
-            alt="恋愛経験が少なくても大丈夫"
-            width={600}
-            height={400}
-            className="w-full h-auto block object-cover"
-          />
-          <p className="absolute bottom-2 right-2 z-10 text-xs text-slate-500 bg-white/80 px-2 py-0.5 rounded pointer-events-none select-none">
+        <div className="mb-6">
+          <div className="relative overflow-hidden rounded-lg w-full">
+            <Image
+              src="/low-romance-experience-welcome.jpg"
+              alt="恋愛経験が少なくても大丈夫"
+              width={600}
+              height={400}
+              className="w-full h-auto block object-cover"
+            />
+          </div>
+          <p className="text-right text-xs text-slate-500 mt-1 select-none">
             ※画像はイメージです。
           </p>
         </div>
@@ -72,15 +76,17 @@ export default function UmedaMarriagePage() {
 
       {/* Section 1 */}
       <section className="mb-10 text-center">
-        <div className="relative mb-6 overflow-hidden rounded-lg w-full">
-          <Image
-            src="/safe-secure-meeting.jpg"
-            alt="身元が保証された確かな安心"
-            width={600}
-            height={400}
-            className="w-full h-auto block object-cover"
-          />
-          <p className="absolute bottom-2 right-2 z-10 text-xs text-slate-500 bg-white/80 px-2 py-0.5 rounded pointer-events-none select-none">
+        <div className="mb-6">
+          <div className="relative overflow-hidden rounded-lg w-full">
+            <Image
+              src="/safe-secure-meeting.jpg"
+              alt="身元が保証された確かな安心"
+              width={600}
+              height={400}
+              className="w-full h-auto block object-cover"
+            />
+          </div>
+          <p className="text-right text-xs text-slate-500 mt-1 select-none">
             ※画像はイメージです。
           </p>
         </div>
@@ -96,15 +102,17 @@ export default function UmedaMarriagePage() {
 
       {/* Section 2 */}
       <section className="mb-10 text-center">
-        <div className="relative mb-6 overflow-hidden rounded-lg w-full">
-          <Image
-            src="/doctor-counselor-marriage-plan.jpg"
-            alt="現役女医×ベテランカウンセラーが伴走"
-            width={600}
-            height={400}
-            className="w-full h-auto block object-cover"
-          />
-          <p className="absolute bottom-2 right-2 z-10 text-xs text-slate-500 bg-white/80 px-2 py-0.5 rounded pointer-events-none select-none">
+        <div className="mb-6">
+          <div className="relative overflow-hidden rounded-lg w-full">
+            <Image
+              src="/doctor-counselor-marriage-plan.jpg"
+              alt="現役女医×ベテランカウンセラーが伴走"
+              width={600}
+              height={400}
+              className="w-full h-auto block object-cover"
+            />
+          </div>
+          <p className="text-right text-xs text-slate-500 mt-1 select-none">
             ※画像はイメージです。
           </p>
         </div>
@@ -120,17 +128,16 @@ export default function UmedaMarriagePage() {
 
       {/* Section 3 */}
       <section className="mb-10 text-center">
-        <div className="relative mb-6 overflow-hidden rounded-lg w-full">
-          <Image
-            src="/osaka-umeda-doctors-kekkon-soudansho-support.jpg"
-            alt="高い実績と会員満足度"
-            width={600}
-            height={400}
-            className="w-full h-auto block object-cover"
-          />
-          <p className="absolute bottom-2 right-2 z-10 text-xs text-slate-500 bg-white/80 px-2 py-0.5 rounded pointer-events-none select-none">
-            ※画像はイメージです。
-          </p>
+        <div className="mb-6">
+          <div className="relative overflow-hidden rounded-lg w-full">
+            <Image
+              src="/osaka-umeda-doctors-kekkon-soudansho-support.jpg"
+              alt="高い実績と会員満足度"
+              width={600}
+              height={400}
+              className="w-full h-auto block object-cover"
+            />
+          </div>
         </div>
 
         <h2 className="mb-4 text-[21px] font-bold leading-[1.4] text-[#1a365d]">
@@ -151,27 +158,31 @@ export default function UmedaMarriagePage() {
       {/* Closing Section */}
       <section className="mb-0 text-center">
         <div className="flex flex-col gap-4 mb-5">
-          <div className="relative mb-6 overflow-hidden rounded-lg w-full">
-            <Image
-              src="/successful-marriage-reports.jpg"
-              alt="成婚報告イメージ 1"
-              width={600}
-              height={400}
-              className="w-full h-auto block object-cover"
-            />
-            <p className="absolute bottom-2 right-2 z-10 text-xs text-slate-500 bg-white/80 px-2 py-0.5 rounded pointer-events-none select-none">
+          <div>
+            <div className="relative overflow-hidden rounded-lg w-full">
+              <Image
+                src="/successful-marriage-reports.jpg"
+                alt="成婚報告イメージ 1"
+                width={600}
+                height={400}
+                className="w-full h-auto block object-cover"
+              />
+            </div>
+            <p className="text-right text-xs text-slate-500 mt-1 select-none">
               ※画像はイメージです。
             </p>
           </div>
-          <div className="relative mb-6 overflow-hidden rounded-lg w-full">
-            <Image
-              src="/successful-marriage-reports2.jpg"
-              alt="成婚報告イメージ 2"
-              width={600}
-              height={400}
-              className="w-full h-auto block object-cover"
-            />
-            <p className="absolute bottom-2 right-2 z-10 text-xs text-slate-500 bg-white/80 px-2 py-0.5 rounded pointer-events-none select-none">
+          <div>
+            <div className="relative overflow-hidden rounded-lg w-full">
+              <Image
+                src="/successful-marriage-reports2.jpg"
+                alt="成婚報告イメージ 2"
+                width={600}
+                height={400}
+                className="w-full h-auto block object-cover"
+              />
+            </div>
+            <p className="text-right text-xs text-slate-500 mt-1 select-none">
               ※画像はイメージです。
             </p>
           </div>

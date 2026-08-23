@@ -122,15 +122,17 @@ export default function ReasonsPage() {
             <div className="clear-both"></div>
 
             <div className="mt-8 flex justify-center">
-              <Link
-                href="/line"
+              <a
+                href="https://lin.ee/ZXB0UNs" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-3 text-base font-bold text-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-green-600 hover:shadow-xl active:translate-y-0"
               >
                 LINEで質問してみる
                 <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

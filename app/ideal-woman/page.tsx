@@ -302,9 +302,13 @@ export default function IdealManPage() {
       {/* CTA BUTTON */}
 <div className="pt-4 space-y-3 flex flex-col items-center">
 
-  <div className="inline-flex items-center justify-center rounded-full bg-[#06C755] text-white font-black px-7 py-3 shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer">
+  <a
+   href="https://lin.ee/ZXB0UNs" 
+   target="_blank"
+   rel="noopener noreferrer"
+   className="inline-flex items-center justify-center rounded-full bg-[#06C755] text-white font-black px-7 py-3 shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer">
     👉 公式LINEで無料相談する
-  </div>
+  </a>
 
   <p className="text-xs text-gray-500 text-center">
     ※24時間受付・匿名相談OK・プライバシーは完全に保護されます

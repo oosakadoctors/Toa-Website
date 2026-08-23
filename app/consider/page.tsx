@@ -57,22 +57,27 @@ export default function MarriageAdvicePage() {
         </div>
       </div>
 
-    <section className="w-full">
-      <div className="w-full max-w-4xl mx-auto my-1">
-        <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-          <Image
-            src={osakaUmedaDoctors}
-            alt="大阪梅田のドクターズ結婚相談所で、タイパを重視して効率的に医師婚活を進める30歳前後のアラサー女性"
-            fill
-            sizes="(max-width: 768px) 100vw, 600px"
-            priority={true}
-            fetchPriority="high"
-            placeholder="blur"
-            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-          />
-        </div>
-      </div>
-    </section>
+<section className="w-full">
+  <div className="w-full max-w-4xl mx-auto my-1">
+    <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+      <Image
+        src={osakaUmedaDoctors}
+        alt="大阪梅田のドクターズ結婚相談所で、タイパを重視して効率的に医師婚活を進める30歳前後のアラサー女性"
+        fill
+        sizes="(max-width: 768px) 100vw, 600px"
+        priority={true}
+        fetchPriority="high"
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+      />
+
+      {/* Overlay Disclaimer */}
+      <span className="absolute bottom-3 right-3 z-10 text-xs text-slate-600 bg-white/80 backdrop-blur-sm px-2.5 py-1 rounded-md shadow-sm pointer-events-none select-none">
+        ※画像はイメージです。
+      </span>
+    </div>
+  </div>
+</section>
 
 
       {/* Main Content Body */}
@@ -222,11 +227,6 @@ export default function MarriageAdvicePage() {
           <p className="mt-3 text-pink-50 leading-7 text-[15px]">
             ぜひ大阪梅田ドクターズ結婚相談所にいらしてください。
           </p>
-
-          <button className="mt-6 w-full rounded-full bg-white py-3 text-base font-semibold text-pink-600 shadow-lg hover:bg-pink-50 transition-colors">
-            無料相談はこちら
-          </button>
-
         </section>
 
       </div>

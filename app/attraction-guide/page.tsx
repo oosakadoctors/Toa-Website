@@ -128,7 +128,7 @@ export default function AttractionGuide() {
             </p>
           </div>
 
-          <section className="w-full">
+<section className="w-full">
   <div className="w-full max-w-4xl mx-auto my-1">
     <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
       <Image
@@ -141,10 +141,14 @@ export default function AttractionGuide() {
         placeholder="blur"
         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
       />
+
+      {/* Overlay Disclaimer */}
+      <span className="absolute bottom-3 right-3 z-10 text-xs text-slate-600 bg-white/80 backdrop-blur-sm px-2.5 py-1 rounded-md shadow-sm pointer-events-none select-none">
+        ※画像はイメージです。
+      </span>
     </div>
   </div>
 </section>
-
           {/* Checklist Box */}
           <div className="rounded-2xl bg-amber-50/60 border border-amber-200 p-5 space-y-3">
             <p className="font-bold text-amber-900 text-[18px]" style={{ wordBreak: 'break-all' }}>
@@ -264,14 +268,23 @@ export default function AttractionGuide() {
             </p>
           </div>
 
- <Link
+<Link
   href="/EQ"
-  className="bg-gradient-to-r from-rose-400 to-pink-500 text-white p-4 rounded-xl flex items-center justify-between shadow-sm transition-all duration-200 hover:shadow-md hover:opacity-95 active:scale-[0.99] no-underline cursor-pointer"
+  className="relative bg-gradient-to-r from-rose-400 via-pink-500 to-rose-500 text-white px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl flex items-center justify-between shadow-[0_6px_14px_-3px_rgba(244,63,94,0.4)] border-b-[3px] border-rose-700/80 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[0_8px_18px_-3px_rgba(244,63,94,0.5)] active:translate-y-0.5 active:border-b-0 no-underline cursor-pointer group overflow-hidden"
 >
-  <span className="text-[18px] font-bold" style={{ wordBreak: 'break-all' }}>
-    🍀仮交際後、真剣交際、結婚生活に必要な内面についての解説はこちら
+  {/* Glossy Top Highlight */}
+  <div className="absolute inset-x-0 top-0 h-1/2 bg-white/15 pointer-events-none rounded-t-xl" />
+
+  <span 
+    className="relative z-10 text-[14px] sm:text-[15px] font-bold tracking-tight drop-shadow-sm pr-2 leading-tight" 
+    style={{ wordBreak: 'break-all' }}
+  >
+    仮交際後、真剣交際、結婚生活に必要な内面についての解説はこちら
   </span>
-  <ArrowRight className="w-5 h-5 shrink-0" />
+
+  <div className="relative z-10 bg-white/20 p-1.5 rounded-full shrink-0 transition-transform duration-200 group-hover:translate-x-1 group-hover:bg-white/30">
+    <ArrowRight className="w-4 h-4 drop-shadow-sm" />
+  </div>
 </Link>
         </section>
 
@@ -395,21 +408,26 @@ export default function AttractionGuide() {
               世間で「美人」「可愛い」と言われる女性には最初から顔立ちが整っている人が多いですが、「顔のパーツ自体は普通なのに、なぜかすごくモテるし、美人オーラが出ている女性」もたくさんいます。女性の間では、これを「雰囲気美人」と呼びます。女性が後から変えられる、美人オーラを作るための代表的な要素と具体的な方法は以下の3つです。
             </p>
 <section className="w-full">
-      <div className="w-full max-w-4xl mx-auto my-1">
-        <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-          <Image
-            src="/a-woman-with-beautiful-lustrous-hair.jpg"
-            alt="艶のある美しい髪の女性"
-            fill
-            sizes="(max-width: 768px) 100vw, 800px"
-            priority={false}
-            className="object-cover"
-            placeholder="blur"
-            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-          />
-        </div>
-      </div>
-    </section>
+  <div className="w-full max-w-4xl mx-auto my-1">
+    <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+      <Image
+        src="/a-woman-with-beautiful-lustrous-hair.jpg"
+        alt="艶のある美しい髪の女性"
+        fill
+        sizes="(max-width: 768px) 100vw, 800px"
+        priority={false}
+        className="object-cover"
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+      />
+
+      {/* Overlay Disclaimer */}
+      <span className="absolute bottom-3 right-3 z-10 text-xs text-slate-600 bg-white/80 backdrop-blur-sm px-2.5 py-1 rounded-md shadow-sm pointer-events-none select-none">
+        ※画像はイメージです。
+      </span>
+    </div>
+  </div>
+</section>
 
             <div className="space-y-4">
               {/* Point 1 */}
@@ -610,22 +628,27 @@ export default function AttractionGuide() {
               生まれ持った顔を変えることはできませんが、彼らは「顔のパーツ以外の要素」を最大化して、魅力的なオーラを作っています。その秘密（変えられる要素）は以下の3つに集約されます。
             </p>
 
-            <section className="w-full">
-      <div className="w-full max-w-4xl mx-auto my-1">
-        <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-          <Image
-            src="/a-handsome-man-with-a-cool-haitstyle-and-eyebrows.jpg"
-            alt="髪型と眉毛がかっこいい雰囲気イケメン"
-            fill
-            sizes="(max-width: 768px) 100vw, 800px"
-            priority={false}
-            className="object-cover"
-            placeholder="blur"
-            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-          />
-        </div>
-      </div>
-    </section>
+<section className="w-full">
+  <div className="w-full max-w-4xl mx-auto my-1">
+    <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+      <Image
+        src="/a-handsome-man-with-a-cool-haitstyle-and-eyebrows.jpg"
+        alt="髪型と眉毛がかっこいい雰囲気イケメン"
+        fill
+        sizes="(max-width: 768px) 100vw, 800px"
+        priority={false}
+        className="object-cover"
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+      />
+
+      {/* Overlay Disclaimer */}
+      <span className="absolute bottom-3 right-3 z-10 text-xs text-slate-600 bg-white/80 backdrop-blur-sm px-2.5 py-1 rounded-md shadow-sm pointer-events-none select-none">
+        ※画像はイメージです。
+      </span>
+    </div>
+  </div>
+</section>
 
 
             <div className="space-y-4">

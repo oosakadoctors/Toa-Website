@@ -2,6 +2,7 @@ import React from "react";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import Link from "next/link";
 
 import type { Metadata } from 'next';
 
@@ -104,10 +105,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
           </main>
 
           {/* Mobile Sticky CTA */}
+
+
 <div className="fixed bottom-4 left-4 right-4 z-50 md:hidden [.mobile-menu-open_&]:hidden">
   <div className="flex items-center gap-3">
 
-    {/* Custom LINE Button */}
+    {/* Custom LINE Button (Keep standard <a> for external links) */}
     <a
       href="https://lin.ee/ZXB0UNs"
       target="_blank"
@@ -125,13 +128,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <span>LINEで友だち追加</span>
     </a>
 
-    {/* Reservation Button */}
-    <a
+    {/* Reservation Button (Converted to Next Link for client-side navigation) */}
+    <Link
       href="/contact"
       className="flex-1 flex items-center justify-center rounded-full bg-rose-500 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-rose-600"
     >
       無料相談を予約する
-    </a>
+    </Link>
 
   </div>
 </div>

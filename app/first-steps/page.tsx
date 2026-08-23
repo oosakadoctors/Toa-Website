@@ -297,15 +297,22 @@ export default function BeginnerFaqLandingPage() {
             プロフィール作成のコツや、あなたに合った婚活の進め方を丁寧にお伝えします。<br />
             勧誘は一切ありません。公式LINEまたは対面でお待ちしております。
           </p>
-          <div className="pt-2 flex justify-center w-full">
+ <div className="mt-10">
+
             <a 
-              href="#contact" 
-              className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-extrabold px-7 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 tracking-wider text-[20px] md:text-base w-full sm:w-auto transform hover:-translate-y-0.5"
-            >
-              <MessageCircle className="w-6 h-6 md:w-5 md:h-5 fill-current" />
-              【無料相談】まずは無料カウンセヒングから（LINE無料相談・対面対応）
+              href="https://lin.ee/ZXB0UNs" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-green-500 to-green-600 px-8 py-4 text-lg font-black text-white shadow-lg transition hover:scale-105 hover:shadow-xl">
+              👉 公式LINEで無料相談する
             </a>
+
+            <p className="mt-4 text-sm text-gray-500">
+              ※24時間受付・匿名相談OK・プライバシーは完全に保護されます
+            </p>
+
           </div>
+
         </div>
       </section>
 

@@ -396,7 +396,7 @@ export default function PremiumNavbar() {
 
                     <div className="flex items-center gap-2 flex-shrink-0">
                       {section.isMenSection && section.tag && (
-                        <span className="text-[10px] px-2 py-0.5 rounded-full border font-black bg-[#2563EB] text-white border-blue-700 shadow-sm">
+                        <span className="text-[14px] px-2 py-0.5 rounded-full border font-black bg-[#2563EB] text-white border-blue-700 shadow-sm">
                           {section.tag}
                         </span>
                       )}
@@ -423,7 +423,7 @@ export default function PremiumNavbar() {
                           key={link.href}
                           href={link.href}
                           onClick={() => setIsOpen(false)}
-                          className={`flex items-center justify-between rounded-xl px-3 py-2 text-xs font-bold transition-colors ${
+                          className={`flex items-center justify-between rounded-xl px-3 py-2 text-sm font-bold transition-colors ${
                             section.isMenSection
                               ? "bg-blue-50/60 text-blue-900 hover:text-[#2563EB]"
                               : "bg-gray-50 text-gray-700 hover:text-gray-900"

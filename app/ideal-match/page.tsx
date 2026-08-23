@@ -237,7 +237,11 @@ export default function MensNavyPremiumLandingPage() {
             まずは公式LINEから、あなただけの特別なカウンセリングをご案内いたします。
           </p>
           <div className="pt-4 flex justify-center w-full">
-            <a href="#line-add" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold px-8 py-4 rounded-lg shadow-lg hover:shadow-emerald-900/30 transition duration-200 tracking-wider text-base w-full sm:w-auto border border-emerald-500/20">
+            <a 
+              href="https://lin.ee/ZXB0UNs" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold px-8 py-4 rounded-lg shadow-lg hover:shadow-emerald-900/30 transition duration-200 tracking-wider text-base w-full sm:w-auto border border-emerald-500/20">
               <MessageCircle className="w-5 h-5" />
               勧誘ゼロ。まずはLINEで相談してみる（無料）
             </a>

@@ -311,15 +311,22 @@ export default function PsychologicalMaturityLandingPage() {
             大阪梅田ドクターズ結婚相談所で、専門的な知識と知見を基に内面を磨く手がかりを得て、一生モノの魅力を手に入れませんか？<br />
             あなたのその知的な挑戦を、心理学臨床経験の力で「一生モノの魅力」へと昇華させます。
           </p>
-          <div className="pt-2 flex justify-center w-full">
+ <div className="mt-10">
+
             <a 
-              href="#line-add" 
-              className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-extrabold px-7 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 tracking-wider text-[20px] md:text-base w-full sm:w-auto transform hover:-translate-y-0.5"
-            >
-              <MessageCircle className="w-6 h-6 md:w-5 md:h-5 fill-current" />
-              内面から磨く、無料カウンセリングを予約する
+              href="https://lin.ee/ZXB0UNs" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-green-500 to-green-600 px-8 py-4 text-lg font-black text-white shadow-lg transition hover:scale-105 hover:shadow-xl">
+              👉 公式LINEで無料相談する
             </a>
+
+            <p className="mt-4 text-sm text-gray-500">
+              ※24時間受付・匿名相談OK・プライバシーは完全に保護されます
+            </p>
+
           </div>
+
         </div>
       </section>
 

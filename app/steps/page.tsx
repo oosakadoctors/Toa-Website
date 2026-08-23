@@ -49,7 +49,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
         <div className="border border-gray-200 p-2.5 rounded-lg bg-white shadow-xs">
           <div className="flex items-center space-x-1.5 mb-1">
             <span className="bg-pink-600 text-white text-[11px] sm:text-xs font-bold uppercase tracking-wider px-1.5 py-0.5 rounded">STEP 1</span>
-            <p className="font-bold text-gray-900 text-sm sm:text-base">プロフィールの作成＆写真撮影</p>
+            <p className="font-bold. text-gray-900 text-sm sm:text-base">プロフィールの作成＆写真撮影</p>
           </div>
           <p className="text-gray-600 text-xs sm:text-sm leading-snug">あなたの魅力を最大限に引き出すプロフィールを一緒に作成します。提携しているフォトスタジオでのスタジオ撮影もサポートいたしますので、好印象を与える素敵な1枚をご用意できます。</p>
           <div className="mt-2.5 flex justify-end items-center h-[28px]">

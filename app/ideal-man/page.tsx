@@ -188,22 +188,27 @@ export default function MarriageAdvicePage() {
       </section>
 
       {/* Hero Image Section */}
-      <section className="w-full">
-        <div className="w-full max-w-4xl mx-auto my-1 px-4 sm:px-6 lg:px-8">
-          <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-            <Image
-              src="/umeda-highclass-kekkon-eq-male.jpg"
-              alt="高いEQと包容力を持つ誠実なエリート男性の笑顔。魅力的なハイクラス層から選ばれるための内面磨きを解説するイメージ"
-              fill
-              sizes="(max-width: 768px) 100vw, 800px"
-              priority={false}
-              className="object-cover"
-              placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-            />
-          </div>
-        </div>
-      </section>
+<section className="w-full">
+  <div className="w-full max-w-4xl mx-auto my-1 px-4 sm:px-6 lg:px-8">
+    <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+      <Image
+        src="/umeda-highclass-kekkon-eq-male.jpg"
+        alt="高いEQと包容力を持つ誠実なエリート男性の笑顔。魅力的なハイクラス層から選ばれるための内面磨きを解説するイメージ"
+        fill
+        sizes="(max-width: 768px) 100vw, 800px"
+        priority={false}
+        className="object-cover"
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+      />
+      
+      {/* Overlay Disclaimer */}
+      <span className="absolute bottom-3 right-3 z-10 text-xs text-slate-600 bg-white/80 backdrop-blur-sm px-2.5 py-1 rounded-md shadow-sm pointer-events-none select-none">
+        ※画像はイメージです。
+      </span>
+    </div>
+  </div>
+</section>
 
       {/* ============================================================
           NEW SECTIONS ADDED BELOW
@@ -283,22 +288,27 @@ export default function MarriageAdvicePage() {
       </section>
 
       {/* Concept Image 1 */}
-      <section className="w-full">
-        <div className="w-full max-w-4xl mx-auto my-1 px-4 sm:px-6 lg:px-8">
-          <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-            <Image
-              src="/attractive-japanese-women-matchmaking-concept.jpg"
-              alt="婚活市場で人気のある、品性と容姿を兼ね備えた若い日本人女性のイメージ写真"
-              fill
-              sizes="(max-width: 768px) 100vw, 800px"
-              priority={false}
-              className="object-cover"
-              placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-            />
-          </div>
-        </div>
-      </section>
+<section className="w-full">
+  <div className="w-full max-w-4xl mx-auto my-1 px-4 sm:px-6 lg:px-8">
+    <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+      <Image
+        src="/attractive-japanese-women-matchmaking-concept.jpg"
+        alt="婚活市場で人気のある、品性と容姿を兼ね備えた若い日本人女性のイメージ写真"
+        fill
+        sizes="(max-width: 768px) 100vw, 800px"
+        priority={false}
+        className="object-cover"
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+      />
+
+      {/* Overlay Disclaimer */}
+      <span className="absolute bottom-3 right-3 z-10 text-xs text-slate-600 bg-white/80 backdrop-blur-sm px-2.5 py-1 rounded-md shadow-sm pointer-events-none select-none">
+        ※画像はイメージです。
+      </span>
+    </div>
+  </div>
+</section>
 
       {/* SECTION 2: Doctor Advice & High EQ */}
       <section className="w-full py-12 px-4 sm:px-6 lg:px-8">
@@ -391,7 +401,9 @@ export default function MarriageAdvicePage() {
 
             <div className="pt-2">
               <a 
-                href="#line" 
+                href="https://lin.ee/ZXB0UNs" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white font-black px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 text-base sm:text-lg w-full sm:w-auto"
               >
                 <MessageCircle className="w-5 h-5 fill-current" />
@@ -405,22 +417,27 @@ export default function MarriageAdvicePage() {
       </section>
 
       {/* Concept Image 2 */}
-      <section className="w-full">
-        <div className="w-full max-w-4xl mx-auto my-1 px-4 sm:px-6 lg:px-8">
-          <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-            <Image
-              src="/mens-matchmaking-service-women-concept.jpg"
-              alt="男性婚活で出会う可愛い女性のイメージ写真"
-              fill
-              sizes="(max-width: 768px) 100vw, 800px"
-              priority={false}
-              className="object-cover"
-              placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-            />
-          </div>
-        </div>
-      </section>
+<section className="w-full">
+  <div className="w-full max-w-4xl mx-auto my-1 px-4 sm:px-6 lg:px-8">
+    <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+      <Image
+        src="/mens-matchmaking-service-women-concept.jpg"
+        alt="男性婚活で出会う可愛い女性のイメージ写真"
+        fill
+        sizes="(max-width: 768px) 100vw, 800px"
+        priority={false}
+        className="object-cover"
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+      />
+
+      {/* Overlay Disclaimer */}
+      <span className="absolute bottom-3 right-3 z-10 text-xs text-slate-600 bg-white/80 backdrop-blur-sm px-2.5 py-1 rounded-md shadow-sm pointer-events-none select-none">
+        ※画像はイメージです。
+      </span>
+    </div>
+  </div>
+</section>
 
       {/* SECTION 4: Reassurance at Age 30 & High EQ Deep-Dive */}
       <section className="w-full py-12 px-4 sm:px-6 lg:px-8">

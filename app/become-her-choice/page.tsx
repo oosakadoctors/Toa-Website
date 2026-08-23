@@ -391,9 +391,13 @@ EQ【感情知能】を高める方法を指導。
 
           <div className="mt-10">
 
-            <button className="inline-flex items-center rounded-full bg-gradient-to-r from-green-500 to-green-600 px-8 py-4 text-lg font-black text-white shadow-lg transition hover:scale-105 hover:shadow-xl">
+            <a 
+              href="https://lin.ee/ZXB0UNs" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-green-500 to-green-600 px-8 py-4 text-lg font-black text-white shadow-lg transition hover:scale-105 hover:shadow-xl">
               👉 公式LINEで無料相談する
-            </button>
+            </a>
 
             <p className="mt-4 text-sm text-gray-500">
               ※24時間受付・匿名相談OK・プライバシーは完全に保護されます

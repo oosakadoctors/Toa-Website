@@ -43,7 +43,7 @@ export default function CompanyProfileTable() {
       icon: <Phone className="w-4 h-4 text-slate-500 shrink-0" />,
       term: "連絡先（電話番号）",
       description:
-        "NA",
+        "09066463456",
     },
     {
       icon: <CreditCard className="w-4 h-4 text-slate-500 shrink-0" />,

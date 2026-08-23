@@ -197,13 +197,15 @@ export default function ReasonsPage() {
     <div className="clear-both" />
 
     <div className="pt-6 flex justify-center">
-      <Link
-        href="/line"
+      <a
+        href="https://lin.ee/ZXB0UNs" 
+        target="_blank"
+        rel="noopener noreferrer"
         className="group inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-green-600 hover:shadow-xl active:translate-y-0"
       >
-        無料相談・お問い合わせはこちら
+        無料相談はこちら
         <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-      </Link>
+      </a>
     </div>
   </div>
 </section>

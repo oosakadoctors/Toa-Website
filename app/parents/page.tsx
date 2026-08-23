@@ -221,7 +221,10 @@ export default function ParentsLandingPage() {
             完全秘密厳守。大切なお子様の未来の選択肢を、私たちと一緒に広げてみませんか。
           </p>
           <div className="pt-4 flex flex-col sm:flex-row justify-center gap-4 w-full max-w-2xl mx-auto">
-            <a href="#line-cta" className="inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold px-8 py-5 rounded-xl shadow-xl transition duration-200 tracking-wider text-xl w-full sm:w-auto">
+            <a               
+              href="https://lin.ee/ZXB0UNs" 
+              target="_blank"
+              rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold px-8 py-5 rounded-xl shadow-xl transition duration-200 tracking-wider text-xl w-full sm:w-auto">
               <MessageCircle className="w-7 h-7" />
               LINEで無料相談する
             </a>
