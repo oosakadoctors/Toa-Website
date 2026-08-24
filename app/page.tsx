@@ -140,7 +140,7 @@ export default function Home() {
           alt: "Happy Couple",
           title: "医師の男性、女性へ",
           description:
-            "男性医師の婚活",
+            "男性医師の婚活事情と現実",
           href: "/male-doctors",
         },
         {

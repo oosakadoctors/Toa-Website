@@ -72,7 +72,7 @@ export default function MarriageAdvicePage() {
       />
 
       {/* Overlay Disclaimer */}
-      <span className="absolute bottom-3 right-3 z-10 text-xs text-slate-600 bg-white/80 backdrop-blur-sm px-2.5 py-1 rounded-md shadow-sm pointer-events-none select-none">
+      <span className="absolute bottom-3 right-3 z-10 text-xs text-pink-100   px-2.5 py-1 rounded-md shadow-sm pointer-events-none select-none">
         ※画像はイメージです。
       </span>
     </div>
