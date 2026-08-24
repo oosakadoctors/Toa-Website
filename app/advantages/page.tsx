@@ -107,7 +107,7 @@ export default function HighSpecStrategyPage() {
       />
 
       {/* Overlay Disclaimer */}
-      <span className="absolute bottom-3 right-3 z-10 text-xs text-pink-100   px-2.5 py-1 rounded-md shadow-sm pointer-events-none select-none">
+      <span className="absolute bottom-3 right-3 z-10 text-xs text-white   px-2.5 py-1  pointer-events-none select-none">
         ※画像はイメージです。
       </span>
     </div>
