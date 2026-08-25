@@ -81,7 +81,7 @@ export default function HighSpecStrategyPage() {
     </div>
 
     {/* Integrated Intro Text Box */}
-    <div className="w-full max-w-3xl rounded-2xl border border-rose-200/70 bg-white/80 backdrop-blur-md p-6 sm:p-8 shadow-sm text-center">
+    <div className="w-full max-w-3xl rounded-2xl border border-rose-200/70 bg-white/80 backdrop-blur-md p-2 sm:p-8 shadow-sm text-center">
       <p 
         className="text-xl font-medium text-gray-800 leading-relaxed"
         style={{ wordBreak: 'auto-phrase' }}
