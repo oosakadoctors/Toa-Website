@@ -145,6 +145,7 @@ export default function PremiumNavbar() {
       icon: UserRound,
       links: [
         { name: "AI利用＆現代の成婚戦略", href: "/smart-IBJ" },
+        { name: "現役女医が伴走するIBJ・AI婚活｜大阪梅田ドクターズ結婚相談所", href: "/medical-match" },
 
       ],
     },

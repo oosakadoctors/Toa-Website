@@ -56,12 +56,12 @@ export default function IbjPremiumPage() {
       />
 
       {/* FULL-PAGE VIEWPORT BACKGROUND IMAGE & OVERLAY */}
-      <div className="fixed bg-repeat inset-0 z-0">
+      <div className="fixed  inset-0 z-0">
         <Image
           src="/cyber.png" // Update to your preferred background image path
           alt="Background Image"
           fill
-          className=""
+          className="bg-repeat"
           priority
         />
         {/* Subtle dark backdrop overlay to guarantee high contrast and text readability */}
