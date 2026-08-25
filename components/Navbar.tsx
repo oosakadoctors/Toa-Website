@@ -140,11 +140,11 @@ export default function PremiumNavbar() {
       ],
     },
         {
-      title: "○○○○",
+      title: "AI利用＆現代の成婚戦略",
       isMenSection: false,
       icon: UserRound,
       links: [
-        { name: "○○○○", href: "/○○○○" },
+        { name: "AI利用＆現代の成婚戦略", href: "/smart-IBJ" },
 
       ],
     },

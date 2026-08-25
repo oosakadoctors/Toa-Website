@@ -373,7 +373,7 @@ export default function MarriageAdvicePage() {
 
             <div className="bg-emerald-50/50 rounded-2xl p-6 text-left border border-emerald-100 space-y-4">
               <p className="font-black text-gray-900 text-sm sm:text-base flex items-center gap-2" style={{ wordBreak: 'auto-phrase' }}>
-                📱 たとえば、LINEではこのようなご質問をよくいただいています
+              📱 たとえば、LINEではこのようなご質問をよくいただいています
               </p>
               
               <ul className="space-y-3 text-sm text-gray-800 font-medium">
@@ -519,8 +519,8 @@ export default function MarriageAdvicePage() {
                 30歳のいま、妥協のない最高のご縁を
               </h3>
               <p className="text-sm text-gray-700 leading-relaxed" style={{ wordBreak: 'auto-phrase' }}>
-                婚活市場において、30歳という年齢は、大人の品格とみずみずしさを兼ね備えた、最も美しく価値のあるタイミングです。<br />
-                だからこそ、この貴重な時間を、安心できる最高の環境でスタートさせてみませんか？<br />
+                婚活市場では、男性にも十分な出会いのチャンスがあります。
+　　　　　　　　　ただし、何の努力もせずに「自分より条件の良い女性」と結ばれるほど、婚活市場は甘くありません。<br />
                 「一歩、話を聞いてみよう」<br />
                 その前向きな選択が、1年後に「この人と結婚できて、本当によかった」と心から思える、豊かな毎日へと繋がっています。<br />
                 お買い物ついでや、お仕事帰りに、まずは美味しいお茶を飲みながら、あなたが本当に望む未来の形を私たちに聞かせてくださいね。

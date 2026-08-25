@@ -474,7 +474,7 @@ export default function HighSpecStrategyPage() {
 
       {/* Paragraph Text */}
       <p 
-        className="text-xl sm:text-2xl text-gray-300 font-medium leading-relaxed text-left sm:text-center px-1"
+        className="text-xl sm:text-2xl text-gray-300 font-medium leading-relaxed text-center sm:text-center px-1"
         style={{ wordBreak: 'auto-phrase' }}
       >
         一方的な高望みや表面的な条件パズルではなく、お互いをリスペクトし合える「持続可能な最高の出会い」へ。当相談所の分析力と伴走サポートで、あなたの本当の市場価値と魅力を最大限に引き出します。
