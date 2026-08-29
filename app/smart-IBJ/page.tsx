@@ -151,57 +151,57 @@ export default function IbjPremiumPage() {
         </section>
 
         {/* SECTION 4: Pricing System */}
-        <section className="bg-white/95 rounded-3xl border-2 border-sky-300 p-8 sm:p-10 shadow-lg space-y-6 backdrop-blur-sm">
-          <h2 className="text-3xl sm:text-3xl lg:text-4xl font-black text-sky-950 leading-snug border-b-2 border-sky-100 pb-4">
-            IBJSプレミアムパックの料金システム
-          </h2>
-          <p className="text-[20px]">
-            「IBJSプレミアムパック」の料金システムは、まとめて長期契約するほど1ヶ月あたりの価格が安くなる仕組みになっています。<br />
-            アプリ上で自費で決済（App StoreやGoogle Playなどのアプリ内課金）をして利用します。
-          </p>
+<section className="bg-white/95 rounded-3xl border-2 border-sky-300 p-4 sm:p-10 shadow-lg space-y-6 backdrop-blur-sm">
+  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-sky-950 leading-snug border-b-2 border-sky-100 pb-4">
+    IBJSプレミアムパックの料金システム
+  </h2>
+  <p className="text-[16px] sm:text-[20px]">
+    「IBJSプレミアムパック」の料金システムは、まとめて長期契約するほど1ヶ月あたりの価格が安くなる仕組みになっています。<br />
+    アプリ上で自費で決済（App StoreやGoogle Playなどのアプリ内課金）をして利用します。
+  </p>
 
-<div className="bg-sky-50/90 p-6 sm:p-8 rounded-2xl border border-sky-200 space-y-6">
-  <h3 className="font-black text-2xl sm:text-3xl text-sky-950 flex items-center gap-2">
-    <span>💳</span> 料金プラン一覧（税込）
-  </h3>
+  <div className="bg-sky-50/90 p-3 sm:p-8 rounded-2xl border border-sky-200 space-y-6">
+    <h3 className="font-black text-xl sm:text-3xl text-sky-950 flex items-center gap-2">
+      <span>💳</span> 料金プラン一覧（税込）
+    </h3>
 
-  {/* TABLE CONTAINER */}
-  <div className="overflow-hidden rounded-xl border border-sky-200 bg-white shadow-sm">
-    <table className="w-full text-left border-collapse text-[18px] sm:text-[20px]">
-      <thead>
-        <tr className="bg-sky-100/70 border-b border-sky-200 text-sky-950">
-          <th className="py-3.5 px-4 sm:px-6 font-bold whitespace-nowrap">プラン期間</th>
-          <th className="py-3.5 px-4 sm:px-6 font-bold text-right whitespace-nowrap">合計金額</th>
-          <th className="py-3.5 px-4 sm:px-6 font-bold text-right whitespace-nowrap">1ヶ月あたり</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-sky-100 text-gray-800">
-        <tr className="hover:bg-sky-50/40 transition-colors">
-          <td className="py-4 px-4 sm:px-6 font-medium">1ヶ月プラン</td>
-          <td className="py-4 px-4 sm:px-6 text-right whitespace-nowrap">3,500円</td>
-          <td className="py-4 px-4 sm:px-6 text-right font-bold text-sky-950 whitespace-nowrap">3,500円</td>
-        </tr>
-        <tr className="hover:bg-sky-50/40 transition-colors">
-          <td className="py-4 px-4 sm:px-6 font-medium">3ヶ月プラン</td>
-          <td className="py-4 px-4 sm:px-6 text-right whitespace-nowrap">4,800円</td>
-          <td className="py-4 px-4 sm:px-6 text-right font-bold text-sky-950 whitespace-nowrap">1,600円</td>
-        </tr>
-        <tr className="hover:bg-sky-50/40 transition-colors">
-          <td className="py-4 px-4 sm:px-6 font-medium">6ヶ月プラン</td>
-          <td className="py-4 px-4 sm:px-6 text-right whitespace-nowrap">6,300円</td>
-          <td className="py-4 px-4 sm:px-6 text-right font-bold text-sky-950 whitespace-nowrap">1,050円</td>
-        </tr>
-      </tbody>
-    </table>
+    {/* TABLE CONTAINER */}
+    <div className="rounded-xl border border-sky-200 bg-white shadow-sm w-full overflow-hidden">
+      <table className="w-full text-left border-collapse text-[14px] xs:text-[15px] sm:text-[20px] table-fixed">
+        <thead>
+          <tr className="bg-sky-100/70 border-b border-sky-200 text-sky-950">
+            <th className="py-3 px-2 sm:px-6 font-bold w-[34%]">プラン期間</th>
+            <th className="py-3 px-2 sm:px-6 font-bold text-right w-[33%]">合計金額</th>
+            <th className="py-3 px-2 sm:px-6 font-bold text-right w-[33%]">1ヶ月あたり</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-sky-100 text-gray-800">
+          <tr className="hover:bg-sky-50/40 transition-colors">
+            <td className="py-3.5 px-2 sm:px-6 font-medium">1ヶ月プラン</td>
+            <td className="py-3.5 px-2 sm:px-6 text-right">3,500円</td>
+            <td className="py-3.5 px-2 sm:px-6 text-right font-bold text-sky-950">3,500円</td>
+          </tr>
+          <tr className="hover:bg-sky-50/40 transition-colors">
+            <td className="py-3.5 px-2 sm:px-6 font-medium">3ヶ月プラン</td>
+            <td className="py-3.5 px-2 sm:px-6 text-right">4,800円</td>
+            <td className="py-3.5 px-2 sm:px-6 text-right font-bold text-sky-950">1,600円</td>
+          </tr>
+          <tr className="hover:bg-sky-50/40 transition-colors">
+            <td className="py-3.5 px-2 sm:px-6 font-medium">6ヶ月プラン</td>
+            <td className="py-3.5 px-2 sm:px-6 text-right">6,300円</td>
+            <td className="py-3.5 px-2 sm:px-6 text-right font-bold text-sky-950">1,050円</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    {/* FOOTNOTE DISCLAIMER */}
+    <div className="text-xs sm:text-sm text-gray-600 bg-white/90 p-4 rounded-xl border border-sky-100 space-y-1.5 leading-relaxed">
+      <p>※上記はWeb決済時の料金です。Apple ID決済やGoogle Play決済の場合、アプリストアの規定により料金が異なる場合がございます。</p>
+      <p>※各相談所のプラン内容や時期によって変更になる場合がありますのでご留意下さい。</p>
+    </div>
   </div>
-
-  {/* FOOTNOTE DISCLAIMER */}
-  <div className="text-sm text-gray-600 bg-white/90 p-4 rounded-xl border border-sky-100 space-y-1.5 leading-relaxed">
-    <p>※上記はWeb決済時の料金です。Apple ID決済やGoogle Play決済の場合、アプリストアの規定により料金が異なる場合がございます。</p>
-    <p>※各相談所のプラン内容や時期によって変更になる場合がありますのでご留意下さい。</p>
-  </div>
-</div>
-        </section>
+</section>
 
         {/* SECTION 5: AI Matching Feature */}
         <section className="bg-amber-50/90 rounded-3xl border-2 p-6 sm:p-10 border-amber-200 shadow-lg space-y-6 backdrop-blur-sm">
