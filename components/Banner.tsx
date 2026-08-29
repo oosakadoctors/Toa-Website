@@ -2,21 +2,32 @@
 
 import { useState, useEffect } from 'react';
 
+// Helper function to calculate slots based on the day of the month
+function calculateSlotsByDate() {
+  const day = new Date().getDate();
+
+  if (day <= 5) return 5;   // Days 1-5: 5 remaining
+  if (day <= 11) return 4;  // Days 6-11: 4 remaining
+  if (day <= 18) return 3;  // Days 12-18: 3 remaining
+  if (day <= 24) return 2;  // Days 19-24: 2 remaining
+  if (day <= 28) return 1;  // Days 25-28: 1 remaining
+  return 0;                 // Day 29+: 0 remaining (Full)
+}
+
 export default function PremiumBanner() {
+  // Initialize with null/5 to avoid Next.js hydration mismatch
   const [remainingSlots, setRemainingSlots] = useState(5);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setRemainingSlots((prev) => {
-        if (prev <= 0) {
-          clearInterval(interval);
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 3000);
+    // Set initial slots on client load
+    setRemainingSlots(calculateSlotsByDate());
 
-    return () => clearInterval(interval);
+    // Check every hour so the component updates immediately when midnight strikes/day changes
+    const timer = setInterval(() => {
+      setRemainingSlots(calculateSlotsByDate());
+    }, 1000 * 60 * 60);
+
+    return () => clearInterval(timer);
   }, []);
 
   const getBannerMessage = () => {
@@ -53,7 +64,7 @@ export default function PremiumBanner() {
           {getBannerMessage()}
         </p>
 
-        {/* 5つの限定枠インジケーター (Slightly larger sizing with optimized gap spacing) */}
+        {/* 5つの限定枠インジケーター */}
         <div className="my-6 sm:my-10 flex min-h-[80px] sm:min-h-[88px] flex-row items-center justify-center gap-1 xs:gap-2 sm:gap-3 md:gap-4 w-full py-4 overflow-visible">
           {[5, 4, 3, 2, 1].map((num) => {
             const isVisible = num <= remainingSlots;
