@@ -590,13 +590,13 @@ export default function EQPage() {
           </div>
 
           <div className="pt-2">
-<Link
-  href="/contact"
-  className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#06C755] to-[#05b34c] hover:from-[#05b34c] hover:to-[#049e42] text-white font-bold text-[18px] py-4 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition duration-200 cursor-pointer w-full sm:w-auto"
->
-  <MessageSquare className="w-5 h-5 shrink-0" />
-  【無料相談】まずは無料カウンセリングから（LINE無料相談・対面対応）
-</Link>
+            <a 
+              href="https://lin.ee/ZXB0UNs" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-green-500 to-green-600 px-8 py-4 text-lg font-black text-white shadow-lg transition hover:scale-105 hover:shadow-xl">
+              👉 公式LINEで無料相談する
+            </a>
           </div>
         </div>
 

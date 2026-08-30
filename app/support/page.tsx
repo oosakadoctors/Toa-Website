@@ -373,7 +373,7 @@ export default function SupportPage() {
 
           <div className="flex flex-col sm:flex-row gap-2 justify-center items-center w-full">
             <Link 
-              href="/#contact"
+              href="/contact"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] text-white text-base font-black px-6 py-3.5 rounded-xl transition-transform hover:scale-[1.02] shadow-lg shadow-[#E6A2B3]/20"
             >
               <span>無料カウンセリングで「特別サポート」の詳細を聞く</span>

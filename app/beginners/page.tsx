@@ -170,7 +170,7 @@ export default function BeginnerLandingPage() {
 
             <div className="text-center px-2 pt-1">
               <a
-                href="#eq-check"
+                href="/EQ"
                 className="inline-flex items-center gap-2 rounded-full bg-sky-600 hover:bg-sky-700 px-6 py-3 text-[20px] md:text-base font-bold text-white shadow-md transition-all hover:shadow-lg"
               >
                 🌿 EQ診断をしてみる
