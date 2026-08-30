@@ -82,6 +82,21 @@ export default function PremiumNavbar() {
       ],
     },
     {
+      title: "ブログ (準備中)",
+      isMenSection: false,
+      icon: Crown,
+      links: [
+        { name: "① 婚活初心者", href: "/blog" },
+        { name: "② 女性", href: "/blog" },
+        { name: "③ 男性", href: "/blog" },
+        { name: "④ ハイスペック婚", href: "/blog" },
+        { name: "⑤ 医師", href: "/blog" },
+        { name: "⑥ お見合い・交際", href: "/blog" },
+        { name: "⑦ 未来の結婚生活", href: "/blog" },
+        { name: "⑧ 両親", href: "/blog" },
+      ],
+    },
+    {
       title: "医師の男性、女性へ",
       isMenSection: true,
       tag: "男性向け",
@@ -148,7 +163,6 @@ export default function PremiumNavbar() {
         { name: "現役女医が伴走するIBJ・AI婚活｜大阪梅田ドクターズ結婚相談所", href: "/medical-match" },
         { name: "AIにはできないカウンセラーの介在価値と強み｜大阪梅田ドクターズ結婚相談所", href: "/human-touch" },
         { name: "最先端AI×仲人の成婚戦略", href: "/data-strategy" },
-
       ],
     },
     {
