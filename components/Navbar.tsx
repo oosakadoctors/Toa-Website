@@ -140,12 +140,14 @@ export default function PremiumNavbar() {
       ],
     },
         {
-      title: "AI利用＆現代の成婚戦略",
+      title: "経験知で駆動するAIプロンプト婚活とは｜大阪梅田ドクターズ結婚相談所",
       isMenSection: false,
       icon: UserRound,
       links: [
         { name: "AI利用＆現代の成婚戦略", href: "/smart-IBJ" },
         { name: "現役女医が伴走するIBJ・AI婚活｜大阪梅田ドクターズ結婚相談所", href: "/medical-match" },
+        { name: "AIにはできないカウンセラーの介在価値と強み｜大阪梅田ドクターズ結婚相談所", href: "/human-touch" },
+        { name: "最先端AI×仲人の成婚戦略", href: "/data-strategy" },
 
       ],
     },
