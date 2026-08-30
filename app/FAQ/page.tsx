@@ -47,27 +47,7 @@ export default function FAQPage() {
           </div>
 
           {/* FAQ 2 */}
-          <div className="w-full bg-white border border-gray-100 rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm">
 
-            <div className="w-full bg-[#D9889D] text-white px-4 sm:px-8 py-4 sm:py-6 flex items-start gap-3">
-              <HelpCircle className="w-5 h-5 mt-0.5 shrink-0" />
-              <h2 className="text-base sm:text-xl font-black leading-snug">
-                📌 Q. 固定事務所がないとのことですが、入会手続きはどこでしますか？
-              </h2>
-            </div>
-
-            <div className="w-full px-4 sm:px-8 py-4 sm:py-6 text-gray-700 text-sm sm:text-base leading-snug sm:leading-relaxed">
-              <p>
-                A. ご入会のお手続きや書類のご提出、定期的な作戦会議（面談）は、
-                大阪・関西圏の主要駅近くにあるホテルのラウンジや、
-                落ち着いたカフェ、当社提携契約の事務所で行います。
-              </p>
-              <p className="mt-2">
-                また、すべてオンラインと郵送で完結させることも可能です。
-              </p>
-            </div>
-
-          </div>
 
           {/* FAQ 3 */}
           <div className="w-full bg-white border border-gray-100 rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm">

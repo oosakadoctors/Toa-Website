@@ -131,22 +131,25 @@ export default function Home() {
           src: img1,
           alt: "若い日本人の男性がスーツをきてお見合いで笑っている。",
           title: "男性の婚活",
+          theme: "dark",
           description:
-            "大阪梅田ドクターズ結婚相談所で男性が6月以内のスピード成婚目指し婚活するイメージ写真",
+            "理系男性へおくる大阪梅田ドクターズ結婚相談所のサポート",
           href: "/mens-strategy",
         },
         {
           src: img2,
-          alt: "Happy Couple",
-          title: "医師の男性、女性へ",
+          alt: "young-computer-engineer-thinking-about-marriage",
+          title: "理系男性へ",
+          theme: "navy",
           description:
-            "男性医師の婚活事情と現実",
-          href: "/male-doctors",
+            " 男性医師の婚活事情と現実. . . .",
+          href: "/tech-men",
         },
         {
           src: img3,
-          alt: "若い日本人の男性医師が聴診器と白衣でこちらをみて婚活で笑っている",
+          alt: "医師の男性へ",
           title: "男性医師の婚活",
+          theme: "darkNavy",
           description:
             "大阪梅田ドクターズ結婚相談所でハイクラスの男性医師がパートナーを探して婚活するイメージ写真",
           href: "/male-doctors",
@@ -154,15 +157,16 @@ export default function Home() {
         {
           src: img4,
           alt: "子供の結婚を願う両親が婚活をサポートするイメージ写真",
-          title: "🌸 医師の男性、女性へ",
+          title: "ご両親へ",
           description:
             "大阪梅田ドクターズ結婚相談所で両親が子供の成婚を願うイメージ写真",
           href: "/parents",
         },
         {
           src: img5,
-          alt: "恋愛初心者の女性がサポートを受けながら婚活する写真",
+          alt: "恋愛初心者へ",
           title: "婚活初心者・恋愛初心者へ",
+          theme: "pink",
           description:
             "大阪梅田ドクターズ結婚相談所で恋愛初心者、婚活初心者がサポートを受けながらスピード成婚を願うイメージ写真",
           href: "/beginners",
