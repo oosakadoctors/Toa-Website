@@ -82,21 +82,6 @@ export default function PremiumNavbar() {
       ],
     },
     {
-      title: "ブログ (準備中)",
-      isMenSection: false,
-      icon: Crown,
-      links: [
-        { name: "① 婚活初心者", href: "/blog" },
-        { name: "② 女性", href: "/blog" },
-        { name: "③ 男性", href: "/blog" },
-        { name: "④ ハイスペック婚", href: "/blog" },
-        { name: "⑤ 医師", href: "/blog" },
-        { name: "⑥ お見合い・交際", href: "/blog" },
-        { name: "⑦ 未来の結婚生活", href: "/blog" },
-        { name: "⑧ 両親", href: "/blog" },
-      ],
-    },
-    {
       title: "医師の男性、女性へ",
       isMenSection: true,
       tag: "男性向け",
@@ -183,6 +168,21 @@ export default function PremiumNavbar() {
       isMenSection: false,
       icon: UserRound,
       links: [{ name: "婚活・結婚生活に必要なEQとその高めかたを説明", href: "/EQ" }],
+    },
+        {
+      title: "ブログ (準備中)",
+      isMenSection: false,
+      icon: Crown,
+      links: [
+        { name: "① 婚活初心者", href: "/blog/category/beginners-guide" },
+        { name: "② 女性", href: "/blog/category/female" },
+        { name: "③ 男性", href: "/blog/category/male" },
+        { name: "④ ハイスペック婚", href: "/blog/category/high-status-marriage" },
+        { name: "⑤ 医師", href: "/blog/category/doctors" },
+        { name: "⑥ お見合い・交際", href: "/blog/category/matchmaking-and-dating" },
+        { name: "⑦ 未来の結婚生活", href: "/blog/category/future-marriage" },
+        { name: "⑧ 両親", href: "/blog/category/parents" },
+      ],
     },
     {
       title: "料金・入会制限について",
