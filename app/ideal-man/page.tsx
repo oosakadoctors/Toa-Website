@@ -215,10 +215,10 @@ export default function MarriageAdvicePage() {
           ============================================================ */}
 
       {/* SECTION 1: Why Ideal Smart Marriage Comes True Here */}
-      <section className="w-full py-14 px-4 sm:px-6 lg:px-8">
+      <section className="w-full py-14 px-1 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto space-y-8">
           
-          <div className="bg-white rounded-3xl p-6 sm:p-10 border border-rose-200/80 shadow-md">
+          <div className="bg-white rounded-3xl p-3 sm:p-3 border border-rose-200/80 shadow-md">
             <div className="text-center mb-10">
               <span className="text-sm sm:text-base font-black text-[#D9006C] tracking-widest uppercase bg-rose-50 px-5 py-2 rounded-full border border-rose-200">
                 Reason & Value
@@ -228,9 +228,9 @@ export default function MarriageAdvicePage() {
               </h2>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-3">
+            <div className="grid gap-2 md:grid-cols-3">
               {/* Feature 1 */}
-              <div className="bg-rose-50/40 rounded-2xl p-6 sm:p-8 border border-rose-100 flex flex-col justify-between">
+              <div className="bg-rose-50/40 rounded-2xl p-2 sm:p-8 border border-rose-100 flex flex-col justify-between">
                 <div>
                   <span className="text-3xl font-black text-[#FF007F]">01</span>
                   <h3 className="font-bold text-gray-900 text-xl my-3" style={{ wordBreak: 'auto-phrase' }}>
@@ -270,7 +270,7 @@ export default function MarriageAdvicePage() {
             </div>
 
             {/* Sub-CTA Callout inside Section 1 */}
-            <div className="mt-10 p-8 bg-gradient-to-r from-rose-50 via-pink-50 to-rose-50 rounded-2xl border border-rose-200 text-center space-y-4">
+            <div className="mt-10 p-3 bg-gradient-to-r from-rose-50 via-pink-50 to-rose-50 rounded-2xl border border-rose-200 text-center space-y-4">
               <h4 className="font-black text-gray-900 text-xl sm:text-2xl" style={{ wordBreak: 'auto-phrase' }}>
                 妥協のない、大人の「ハッピーエンド」を始めましょう
               </h4>
@@ -363,7 +363,7 @@ export default function MarriageAdvicePage() {
         <div className="max-w-4xl mx-auto space-y-8">
           
           {/* LINE Callout Box */}
-          <div className="bg-white rounded-3xl p-6 sm:p-10 border-2 border-emerald-400 shadow-lg text-center space-y-6">
+          <div className="bg-white rounded-3xl p-2 sm:p-2 border-2 border-emerald-400 shadow-lg text-center space-y-6">
             <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 px-5 py-2 rounded-full text-sm sm:text-base font-black tracking-widest uppercase">
               <MessageCircle className="w-5 h-5 text-emerald-600" />
               <span>無料LINE相談</span>
@@ -373,7 +373,7 @@ export default function MarriageAdvicePage() {
               まずはLINEで、ほんの少しお話ししてみませんか？
             </h2>
 
-            <div className="bg-emerald-50/50 rounded-2xl p-6 sm:p-8 text-left border border-emerald-100 space-y-4">
+            <div className="bg-emerald-50/50 rounded-2xl p-2 sm:p-2 text-left border border-emerald-100 space-y-4">
               <p className="font-black text-gray-900 text-lg sm:text-xl flex items-center gap-2" style={{ wordBreak: 'auto-phrase' }}>
                 📱 たとえば、LINEではこのようなご質問をよくいただいています
               </p>
@@ -440,10 +440,10 @@ export default function MarriageAdvicePage() {
 </section>
 
       {/* SECTION 4: Reassurance at Age 30 & High EQ Deep-Dive */}
-      <section className="w-full py-14 px-4 sm:px-6 lg:px-8">
+      <section className="w-full py-14 px-2 sm:px-2 lg:px-8">
         <div className="max-w-4xl mx-auto space-y-8">
           
-          <div className="bg-white rounded-3xl p-6 sm:p-10 border border-rose-200/80 shadow-md space-y-6">
+          <div className="bg-white rounded-3xl p-4 sm:p-4 border border-rose-200/80 shadow-md space-y-6">
             <h2 className="text-2xl sm:text-3xl font-black text-gray-900 border-b border-rose-100 pb-5" style={{ wordBreak: 'auto-phrase' }}>
               30歳という大切な節目を迎え、これからの人生をともに歩むパートナーを探し始めたあなたへ。
             </h2>
