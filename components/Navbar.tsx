@@ -123,6 +123,13 @@ export default function PremiumNavbar() {
         { name: "理系男性の理想のパートナー探し", href: "/tech-matchmaking" },
       ],
     },
+        {
+      title: "無料相談の流れと婚活未来図",
+      icon: UserRound,
+      links: [
+        { name: "???", href: "/consultation" },
+      ],
+    },
     {
       title: "親御様へ 大切なお子様の結婚を願うあなたへ",
       isMenSection: false,
