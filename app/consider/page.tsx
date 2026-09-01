@@ -2,8 +2,7 @@ import { Metadata } from "next";
 import femaleAdvisor from "@/public/femaleAdvisor.jpg";
 import osakaUmedaDoctors from "@/public/osaka-umeda-doctors-konkatsu-30s.jpg";
 import Image from "next/image";
-import { Sparkles } from "lucide-react"; // Make sure lucide-react is installed, or replace with your preferred icon
-import TrueHappinessAnalysis from "../wellbeing/page";
+import { Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "婚活でいい人が減った？」と思い始めた30代のあなたへ｜大阪梅田ドクターズ結婚相談所が効率的な理由",
@@ -22,7 +21,7 @@ export default function MarriageAdvicePage() {
           HERO BANNER HEADLINE (Middle-Ground Magenta-Rose Gradient)
           ============================================================ */}
       <div 
-        className="relative w-full py-12 px-4 sm:px-6 lg:px-8 text-center border-b border-rose-200/50 overflow-hidden"
+        className="relative w-full py-14 px-4 sm:px-6 lg:px-8 text-center border-b border-rose-200/50 overflow-hidden"
         style={{ 
           background: 'linear-gradient(135deg, rgba(255, 0, 127, 0.25) 0%, rgba(255, 102, 178, 0.2) 50%, rgba(255, 166, 201, 0.25) 100%)' 
         }}
@@ -34,24 +33,24 @@ export default function MarriageAdvicePage() {
         <div className="relative max-w-4xl mx-auto flex flex-col items-center space-y-4">
           
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm border border-[#FF007F]/30 text-[#D9006C] px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase shadow-sm">
-            <Sparkles className="w-3.5 h-3.5 text-[#FF007F] shrink-0" />
+          <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm border border-[#FF007F]/30 text-[#D9006C] px-5 py-2 rounded-full text-sm font-black tracking-widest uppercase shadow-sm">
+            <Sparkles className="w-4 h-4 text-[#FF007F] shrink-0" />
             <span>いい人がいない！と思う30代のあなたへ</span>
           </div>
           
           {/* Main Headline (Pure Black with Strong White Glow Halo) */}
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-black leading-snug sm:leading-tight tracking-tight max-w-3xl pt-1 [text-shadow:_0_0_8px_#ffffff,_0_0_16px_#ffffff,_0_0_24px_rgba(255,255,255,0.8)]">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-black leading-snug sm:leading-tight tracking-tight max-w-4xl pt-1 [text-shadow:_0_0_8px_#ffffff,_0_0_16px_#ffffff,_0_0_24px_rgba(255,255,255,0.8)]">
             「婚活でいい人がいない？」と思い始めた３０代のあなたへ｜大阪梅田ドクターズ結婚相談所が効率的な理由
           </h1>
           
           {/* Matching Gradient Divider Bar */}
           <div className="flex items-center justify-center gap-2 pt-2">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#FF007F]" />
+            <div className="w-2 h-2 rounded-full bg-[#FF007F]" />
             <div 
-              className="w-24 h-1 rounded-full shadow-xs" 
+              className="w-28 h-1.5 rounded-full shadow-xs" 
               style={{ background: 'linear-gradient(90deg, #FF007F 0%, #FF66B2 50%, #FFA6C9 100%)' }}
             />
-            <div className="w-1.5 h-1.5 rounded-full bg-[#FFA6C9]" />
+            <div className="w-2 h-2 rounded-full bg-[#FFA6C9]" />
           </div>
 
         </div>
@@ -72,7 +71,7 @@ export default function MarriageAdvicePage() {
       />
 
       {/* Overlay Disclaimer */}
-      <span className="absolute bottom-0 right-0 z-10 text-xs text-white   px-2.5 py-1  pointer-events-none select-none">
+      <span className="absolute bottom-0 right-0 z-10 text-sm text-white px-3 py-1.5 pointer-events-none select-none">
         ※画像はイメージです。
       </span>
     </div>
@@ -81,18 +80,18 @@ export default function MarriageAdvicePage() {
 
 
       {/* Main Content Body */}
-      <div className="mx-auto max-w-3xl px-4 py-6">
+      <div className="mx-auto max-w-3xl px-4 py-8">
 
         {/* Intro Card (H2 & Main Text Section) */}
-        <section className="mt-5 rounded-2xl bg-white border border-pink-200 p-5 shadow-sm">
+        <section className="mt-5 rounded-2xl bg-white border border-pink-200 p-6 sm:p-8 shadow-sm">
 
-          <h2 className="text-xl font-bold text-gray-900 leading-snug border-b border-pink-100 pb-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 leading-snug border-b border-pink-100 pb-4">
             タイパ至上主義！30代の婚活に大阪・梅田の結婚相談所が最強に効率的な理由
           </h2>
 
-          <div className="mt-5 space-y-4 text-[17px] leading-8 text-gray-700">
+          <div className="mt-6 space-y-6 text-[20px] leading-relaxed text-gray-700">
 
-            <h3 className="text-lg font-bold leading-8 text-gray-900">
+            <h3 className="text-xl sm:text-2xl font-bold leading-relaxed text-gray-900">
               20代の頃は普通に生活しているだけで「素敵だな」と思える人に出会えていたはず。なのに、30代になった途端、周りの素敵な人は、みんな「既婚者」になっている。
             </h3>
 
@@ -140,18 +139,18 @@ export default function MarriageAdvicePage() {
         </section>
 
         {/* Doctor Message Section */}
-        <section className="mt-8 rounded-2xl bg-white border border-pink-200 p-5 shadow-sm">
+        <section className="mt-10 rounded-2xl bg-white border border-pink-200 p-6 sm:p-8 shadow-sm">
 
           {/* Header */}
-          <div className="text-lg font-bold text-pink-600 border-b border-pink-100 pb-2">
+          <div className="text-xl sm:text-2xl font-bold text-pink-600 border-b border-pink-100 pb-3">
             🩷 女医からのメッセージ
           </div>
 
           {/* Letter */}
-          <div className="mt-5 text-[17px] leading-8 text-gray-700">
+          <div className="mt-6 text-[20px] leading-relaxed text-gray-700">
 
             {/* Doctor Photo */}
-            <div className="float-left mr-5 mb-3 w-28 sm:w-32 md:w-40">
+            <div className="float-left mr-6 mb-4 w-32 sm:w-40 md:w-48">
               <Image
                 src={femaleAdvisor}
                 alt="女医"
@@ -218,13 +217,13 @@ export default function MarriageAdvicePage() {
         </section>
 
         {/* Bottom CTA */}
-        <section className="mt-10 rounded-3xl bg-pink-600 p-6 text-center text-white">
+        <section className="mt-12 rounded-3xl bg-pink-600 p-8 text-center text-white">
           
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-2xl sm:text-3xl font-bold">
             素敵なお相手に巡り会いたいあなたへ。
           </h2>
 
-          <p className="mt-3 text-pink-50 leading-7 text-[15px]">
+          <p className="mt-4 text-pink-50 leading-relaxed text-[18px]">
             ぜひ大阪梅田ドクターズ結婚相談所にいらしてください。
           </p>
         </section>
