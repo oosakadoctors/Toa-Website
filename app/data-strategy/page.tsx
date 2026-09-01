@@ -143,7 +143,7 @@ export default function AiStrategyPage() {
             <h2 className="text-3xl sm:text-3xl lg:text-4xl font-black text-sky-950 leading-snug">
               🔳関係性を深める会話・質問候補の作成:
             </h2>
-            <p className="text-[20px]">
+          <p className="text-[20px]">
               客観的・一般的に好まれる会話選択肢や質問候補を提示します。<br />
               あくまでも客観的な視点のみのため、あなたの性格やお相手との関係を考慮するのは、カウンセラーとの相談となります。
             </p>
