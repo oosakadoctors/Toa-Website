@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function MarriageAdvicePage() {
   return (
-    <main className="bg-[#faf8f5] min-h-screen text-[20px] leading-relaxed">
+    <main className="bg-[#faf8f5] min-h-screen text-[20px] leading-relaxed overflow-x-clip">
       
       {/* ============================================================
           HERO BANNER HEADLINE (Middle-Ground Magenta-Rose Gradient)
@@ -188,37 +188,37 @@ export default function MarriageAdvicePage() {
       </section>
 
       {/* Hero Image Section */}
-<section className="w-full">
-  <div className="w-full max-w-4xl mx-auto my-2 px-4 sm:px-6 lg:px-8">
-    <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-      <Image
-        src="/umeda-highclass-kekkon-eq-male.jpg"
-        alt="高いEQと包容力を持つ誠実なエリート男性の笑顔。魅力的なハイクラス層から選ばれるための内面磨きを解説するイメージ"
-        fill
-        sizes="(max-width: 768px) 100vw, 800px"
-        priority={false}
-        className="object-cover"
-        placeholder="blur"
-        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-      />
-      
-      {/* Overlay Disclaimer */}
-<span className="absolute bottom-0 right-0 z-10 text-sm text-white px-3 py-1.5 pointer-events-none select-none">
-        ※画像はイメージです。
-      </span>
-    </div>
-  </div>
-</section>
+      <section className="w-full">
+        <div className="w-full max-w-4xl mx-auto my-2 px-4 sm:px-6 lg:px-8">
+          <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+            <Image
+              src="/umeda-highclass-kekkon-eq-male.jpg"
+              alt="高いEQと包容力を持つ誠実なエリート男性の笑顔。魅力的なハイクラス層から選ばれるための内面磨きを解説するイメージ"
+              fill
+              sizes="(max-width: 768px) 100vw, 800px"
+              priority={false}
+              className="object-cover"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+            />
+            
+            {/* Overlay Disclaimer */}
+            <span className="absolute bottom-0 right-0 z-10 text-sm text-white px-3 py-1.5 pointer-events-none select-none">
+              ※画像はイメージです。
+            </span>
+          </div>
+        </div>
+      </section>
 
       {/* ============================================================
           NEW SECTIONS ADDED BELOW
           ============================================================ */}
 
       {/* SECTION 1: Why Ideal Smart Marriage Comes True Here */}
-      <section className="w-full py-14 px-1 sm:px-6 lg:px-8">
+      <section className="w-full py-14 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto space-y-8">
           
-          <div className="bg-white rounded-3xl p-3 sm:p-3 border border-rose-200/80 shadow-md">
+          <div className="bg-white rounded-3xl p-4 sm:p-8 border border-rose-200/80 shadow-md">
             <div className="text-center mb-10">
               <span className="text-sm sm:text-base font-black text-[#D9006C] tracking-widest uppercase bg-rose-50 px-5 py-2 rounded-full border border-rose-200">
                 Reason & Value
@@ -228,9 +228,9 @@ export default function MarriageAdvicePage() {
               </h2>
             </div>
 
-            <div className="grid gap-2 md:grid-cols-3">
+            <div className="grid gap-6 md:grid-cols-3">
               {/* Feature 1 */}
-              <div className="bg-rose-50/40 rounded-2xl p-2 sm:p-8 border border-rose-100 flex flex-col justify-between">
+              <div className="bg-rose-50/40 rounded-2xl p-6 sm:p-8 border border-rose-100 flex flex-col justify-between">
                 <div>
                   <span className="text-3xl font-black text-[#FF007F]">01</span>
                   <h3 className="font-bold text-gray-900 text-xl my-3" style={{ wordBreak: 'auto-phrase' }}>
@@ -270,7 +270,7 @@ export default function MarriageAdvicePage() {
             </div>
 
             {/* Sub-CTA Callout inside Section 1 */}
-            <div className="mt-10 p-3 bg-gradient-to-r from-rose-50 via-pink-50 to-rose-50 rounded-2xl border border-rose-200 text-center space-y-4">
+            <div className="mt-10 p-6 sm:p-8 bg-gradient-to-r from-rose-50 via-pink-50 to-rose-50 rounded-2xl border border-rose-200 text-center space-y-4">
               <h4 className="font-black text-gray-900 text-xl sm:text-2xl" style={{ wordBreak: 'auto-phrase' }}>
                 妥協のない、大人の「ハッピーエンド」を始めましょう
               </h4>
@@ -288,27 +288,27 @@ export default function MarriageAdvicePage() {
       </section>
 
       {/* Concept Image 1 */}
-<section className="w-full">
-  <div className="w-full max-w-4xl mx-auto my-2 px-4 sm:px-6 lg:px-8">
-    <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-      <Image
-        src="/attractive-japanese-women-matchmaking-concept.jpg"
-        alt="婚活市場で人気のある、品性と容姿を兼ね備えた若い日本人女性のイメージ写真"
-        fill
-        sizes="(max-width: 768px) 100vw, 800px"
-        priority={false}
-        className="object-cover"
-        placeholder="blur"
-        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-      />
+      <section className="w-full">
+        <div className="w-full max-w-4xl mx-auto my-2 px-4 sm:px-6 lg:px-8">
+          <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+            <Image
+              src="/attractive-japanese-women-matchmaking-concept.jpg"
+              alt="婚活市場で人気のある、品性と容姿を兼ね備えた若い日本人女性のイメージ写真"
+              fill
+              sizes="(max-width: 768px) 100vw, 800px"
+              priority={false}
+              className="object-cover"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+            />
 
-      {/* Overlay Disclaimer */}
-<span className="absolute bottom-0 right-0 z-10 text-sm text-white px-3 py-1.5 pointer-events-none select-none">
-        ※画像はイメージです。
-      </span>
-    </div>
-  </div>
-</section>
+            {/* Overlay Disclaimer */}
+            <span className="absolute bottom-0 right-0 z-10 text-sm text-white px-3 py-1.5 pointer-events-none select-none">
+              ※画像はイメージです。
+            </span>
+          </div>
+        </div>
+      </section>
 
       {/* SECTION 2: Doctor Advice & High EQ */}
       <section className="w-full py-14 px-4 sm:px-6 lg:px-8">
@@ -363,7 +363,7 @@ export default function MarriageAdvicePage() {
         <div className="max-w-4xl mx-auto space-y-8">
           
           {/* LINE Callout Box */}
-          <div className="bg-white rounded-3xl p-2 sm:p-2 border-2 border-emerald-400 shadow-lg text-center space-y-6">
+          <div className="bg-white rounded-3xl p-6 sm:p-10 border-2 border-emerald-400 shadow-lg text-center space-y-6">
             <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 px-5 py-2 rounded-full text-sm sm:text-base font-black tracking-widest uppercase">
               <MessageCircle className="w-5 h-5 text-emerald-600" />
               <span>無料LINE相談</span>
@@ -373,7 +373,7 @@ export default function MarriageAdvicePage() {
               まずはLINEで、ほんの少しお話ししてみませんか？
             </h2>
 
-            <div className="bg-emerald-50/50 rounded-2xl p-2 sm:p-2 text-left border border-emerald-100 space-y-4">
+            <div className="bg-emerald-50/50 rounded-2xl p-6 sm:p-8 text-left border border-emerald-100 space-y-4">
               <p className="font-black text-gray-900 text-lg sm:text-xl flex items-center gap-2" style={{ wordBreak: 'auto-phrase' }}>
                 📱 たとえば、LINEではこのようなご質問をよくいただいています
               </p>
@@ -417,33 +417,33 @@ export default function MarriageAdvicePage() {
       </section>
 
       {/* Concept Image 2 */}
-<section className="w-full">
-  <div className="w-full max-w-4xl mx-auto my-2 px-4 sm:px-6 lg:px-8">
-    <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-      <Image
-        src="/mens-matchmaking-service-women-concept.jpg"
-        alt="男性婚活で出会う可愛い女性のイメージ写真"
-        fill
-        sizes="(max-width: 768px) 100vw, 800px"
-        priority={false}
-        className="object-cover"
-        placeholder="blur"
-        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-      />
+      <section className="w-full">
+        <div className="w-full max-w-4xl mx-auto my-2 px-4 sm:px-6 lg:px-8">
+          <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+            <Image
+              src="/mens-matchmaking-service-women-concept.jpg"
+              alt="男性婚活で出会う可愛い女性のイメージ写真"
+              fill
+              sizes="(max-width: 768px) 100vw, 800px"
+              priority={false}
+              className="object-cover"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+            />
 
-      {/* Overlay Disclaimer */}
-<span className="absolute bottom-0 right-0 z-10 text-sm text-black px-3 py-1.5 pointer-events-none select-none">
-        ※画像はイメージです。
-      </span>
-    </div>
-  </div>
-</section>
+            {/* Overlay Disclaimer */}
+            <span className="absolute bottom-0 right-0 z-10 text-sm text-black px-3 py-1.5 pointer-events-none select-none">
+              ※画像はイメージです。
+            </span>
+          </div>
+        </div>
+      </section>
 
       {/* SECTION 4: Reassurance at Age 30 & High EQ Deep-Dive */}
-      <section className="w-full py-14 px-2 sm:px-2 lg:px-8">
+      <section className="w-full py-14 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto space-y-8">
           
-          <div className="bg-white rounded-3xl p-4 sm:p-4 border border-rose-200/80 shadow-md space-y-6">
+          <div className="bg-white rounded-3xl p-6 sm:p-10 border border-rose-200/80 shadow-md space-y-6">
             <h2 className="text-2xl sm:text-3xl font-black text-gray-900 border-b border-rose-100 pb-5" style={{ wordBreak: 'auto-phrase' }}>
               30歳という大切な節目を迎え、これからの人生をともに歩むパートナーを探し始めたあなたへ。
             </h2>
@@ -572,7 +572,7 @@ export default function MarriageAdvicePage() {
                   🌸 20年のベテランカウンセラーが引き出す「あなたの輝き」
                 </h3>
                 <p className="text-base text-gray-600 leading-relaxed" style={{ wordBreak: 'auto-phrase' }}>
-                  「自分には目立つ強みがないかも…」と思っている方も大丈夫。20年間で数多くの成婚を生み出してきたプロの目で、あなた自身も気づいていない「お相手を引きつける輝き」を見つけ出し、お相手にしっかり届けます。
+                  「自分には目立つ強みがないかも…」と思っている方大丈夫。20年間で数多くの成婚を生み出してきたプロの目で、あなた自身も気づいていない「お相手を引きつける輝き」を見つけ出し、お相手にしっかり届けます。
                 </p>
               </div>
             </div>
