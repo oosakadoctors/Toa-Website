@@ -142,7 +142,7 @@ export default function Home() {
           title: "理系男性へ",
           theme: "navy",
           description:
-            " 男性医師の婚活事情と現実. . . .",
+            " 男性医師の婚活事情と現実. . . . . . . . . . . .  . . . . . . . .. . . . . . . .",
           href: "/tech-men",
         },
         {
