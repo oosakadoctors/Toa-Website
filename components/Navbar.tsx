@@ -124,10 +124,11 @@ export default function PremiumNavbar() {
       ],
     },
         {
-      title: "無料相談の流れと婚活未来図",
+      title: "医師監修の成婚サポート体制",
       icon: UserRound,
       links: [
-        { name: "???", href: "/consultation" },
+        { name: "無料相談の流れと婚活未来図", href: "/consultation" },
+        { name: "婚活ダンジョンマップと医師×仲人のダブルサポート体制", href: "/dungeon-map" },
       ],
     },
     {

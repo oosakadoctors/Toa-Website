@@ -228,10 +228,14 @@ export default function ParentsLandingPage() {
               <MessageCircle className="w-7 h-7" />
               LINEで無料相談する
             </a>
-            <a href="#tel-cta" className="inline-flex items-center justify-center gap-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-8 py-5 rounded-xl shadow-xl transition duration-200 tracking-wider text-xl w-full sm:w-auto">
-              <Phone className="w-7 h-7" />
-              お電話で問い合わせる
-            </a>
+     <a 
+  href="tel:09066463456" 
+  className="inline-flex items-center justify-center gap-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-8 py-5 rounded-xl shadow-xl transition duration-200 tracking-wider text-xl w-full sm:w-auto"
+>
+  <Phone className="w-7 h-7" />
+  お電話で問い合わせる
+  09066463456
+</a>
           </div>
         </div>
       </section>

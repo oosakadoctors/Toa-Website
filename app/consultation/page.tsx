@@ -1,8 +1,25 @@
-"use client";
+
 
 import React from 'react';
 import { Heart, Sparkles, Trophy, Flame, UserCheck, MessageCircle, ArrowRight, FileText, Compass, Brain, ShieldCheck } from 'lucide-react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '30代のための、客観的で心理的安心感に満ちた結婚相談',
+  description: '現役女性医師と20年ベテラン仲人が、あなたの理想を可視化する独自の『婚活未来図』や『婚活未来診断MMM』で伴走。IQの点数ではない、本当の価値観を深く知る無料相談のリアルな流れをご紹介します。',
+  openGraph: {
+    title: '30代のための、客観的で心理的安心感に満ちた結婚相談',
+    description: '現役女性医師と20年ベテラン仲人が、あなたの理想を可視化する独自の『婚活未来図』や『婚活未来診断MMM』で伴走。IQの点数ではない、本当の価値観を深く知る無料相談のリアルな流れをご紹介します。',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '30代のための、客観的で心理的安心感に満ちた結婚相談',
+    description: '現役女性医師と20年ベテラン仲人が、あなたの理想を可視化する独自の『婚活未来図』や『婚活未来診断MMM』で伴走。IQの点数ではない、本当の価値観を深く知る無料相談のリアルな流れをご紹介します。',
+  },
+};
+
 
 export default function FreeConsultationProcessPage() {
   return (
@@ -57,24 +74,25 @@ export default function FreeConsultationProcessPage() {
       </section>
 
       {/* メインイメージ */}
-      <section className="w-full px-4 md:px-0">
-        <div className="w-full max-w-4xl mx-auto my-1">
-          <div className="relative w-full aspect-[1/1] md:aspect-[16/9] overflow-hidden rounded-2xl shadow-lg border-2 border-white">
-            <Image
-              src="/go.jpg"
-              alt="現役医師とベテランカウンセラーによる安心の無料相談イメージ"
-              fill
-              sizes="(max-width: 768px) 100vw, 800px"
-              loading="eager"
-              fetchPriority="high"
-              priority={false}
-              className="object-cover"
-              placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-            />
-          </div>
-        </div>
-      </section>
+<section className="w-full px-4 md:px-0">
+  <div className="w-full max-w-4xl mx-auto my-1">
+    {/* Updated aspect ratio to 16/1 */}
+    <div className="relative w-full aspect-[960/1706] overflow-hidden rounded-2xl shadow-lg border-2 border-white">
+      <Image
+        src="/marriage-girl.jpg"
+        alt="大阪梅田ドクターズ結婚相談所のカウンセリングで使用する婚活未来図【理想を叶えるためのヒアリングシート】の実物写真"
+        fill
+        sizes="(max-width: 768px) 100vw, 800px"
+        loading="eager"
+        fetchPriority="high"
+        priority={false}
+        className="object-cover"
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+      />
+    </div>
+  </div>
+</section>
 
       {/* STEP 1 - 鮮やかな水色＆ホワイトカード */}
       <section className="py-12 bg-sky-100/60 text-slate-800 w-full border-y border-sky-200">

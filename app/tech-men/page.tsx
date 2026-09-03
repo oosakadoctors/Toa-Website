@@ -92,7 +92,8 @@ export default function TechMenStrategyPage() {
                   />
                 </div>
                               <p className="text-xs text-slate-500 pt-1">
-                ※成婚率、お見合い成立率：2025年9月から2026年8月までの社内調査統計による
+                ※成婚率、お見合い成立率：2025年9月から2026年8月までの社内調査統計による<br/>
+                注】リニューアル前の幸相談所の実績を含みます。
               </p>
               </div>
             </section>
