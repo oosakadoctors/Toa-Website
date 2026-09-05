@@ -129,6 +129,9 @@ export default function PremiumNavbar() {
       links: [
         { name: "無料相談の流れと婚活未来図", href: "/consultation" },
         { name: "婚活ダンジョンマップと医師×仲人のダブルサポート体制", href: "/dungeon-map" },
+        { name: "32歳会社員女性（婚活初心者）の無料相談ストーリー", href: "/vibe" },
+        { name: "無料相談ストーリー（35歳・会社員）", href: "/mens-consultation" },
+        { name: "お見合い後の交際判断基準|大阪梅田ドクターズ結婚相談所", href: "/matchmaking-criteria" },
       ],
     },
     {

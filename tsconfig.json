@@ -29,7 +29,7 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}", "app/page8/page.jsx", "app/become-her-choice",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}", "app/page8/page.jsx", "app/become-her-choice", "app/vibe",
   ],
   "exclude": ["node_modules"]
 }

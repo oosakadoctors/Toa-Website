@@ -31,7 +31,7 @@ export default function CompanyProfileTable() {
       icon: <MapPin className="w-4 h-4 text-slate-500 shrink-0" />,
       term: "所在地",
       description:
-        "〒530-0001 大阪府大阪市北区梅田１丁目２−2番　大阪駅前第2ビル 2階",
+        "〒530-0001大阪市北区梅田1丁目2番2-200号大阪駅前第2ビル2階3-1-2",
     },
     {
       icon: <Mail className="w-4 h-4 text-slate-500 shrink-0" />,

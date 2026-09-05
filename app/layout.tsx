@@ -6,6 +6,23 @@ import Link from "next/link";
 
 import type { Metadata } from 'next';
 
+// JSON-LD Structured Data Schema
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "大阪梅田ドクターズ結婚相談所",
+  url: "https://www.umeda-doctors-marry.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "梅田1丁目2番2-200号 大阪駅前第2ビル2階3-1-2",
+    addressLocality: "大阪市北区",
+    addressRegion: "大阪府",
+    postalCode: "530-0001",
+    addressCountry: "JP",
+  },
+  telephone: "+81-90-6646-3456",
+};
+
 export const metadata: Metadata = {
   // 優先度 1: 重複コンテンツ対策（ドメインが決まったら差し替えてください）
   metadataBase: new URL('https://www.umeda-doctors-marry.com'), 
@@ -69,9 +86,6 @@ export const viewport = {
   initialScale: 1,
 };
 
-
-
-
 interface RootLayoutProps {
   children: React.ReactNode;
 }
@@ -80,6 +94,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="ja">
       <body className="antialiased">
+        {/* Inject JSON-LD Schema for Google Search & Local SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd).replace(/</g, '\\u003c'),
+          }}
+        />
+
         <div className="relative min-h-screen w-full bg-gradient-to-b from-[#FAF8F5] via-white to-[#FFF5F6] text-gray-800 selection:bg-[#E6A2B3]/30">
 
           {/* Background ornaments */}
@@ -92,52 +114,50 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
             {/* Bottom */}
             <div className="absolute bottom-0 left-0 h-48 w-48 rounded-full bg-pink-50/40 blur-3xl md:h-80 md:w-80" />
-      </div>
+          </div>
 
           {/* Navbar */}
           <Navbar />
 
           {/* Main Content */}
-          <main className="relative z-10 pt-1 pb-24 lg:pt-24 lg:pb-0 " >
-            <div className=" mx-auto w-[98%] max-w-7xl px-0 sm:px-6 lg:px-8">
+          <main className="relative z-10 pt-1 pb-24 lg:pt-24 lg:pb-0">
+            <div className="mx-auto w-[98%] max-w-7xl px-0 sm:px-6 lg:px-8">
               {children}
             </div>
           </main>
 
           {/* Mobile Sticky CTA */}
+          <div className="fixed bottom-4 left-4 right-4 z-50 md:hidden [.mobile-menu-open_&]:hidden">
+            <div className="flex items-center gap-3">
 
+              {/* Custom LINE Button (Keep standard <a> for external links) */}
+              <a
+                href="https://lin.ee/ZXB0UNs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-2 rounded-full bg-[#06C755] py-4 text-base font-semibold text-white shadow-lg transition hover:bg-[#05b34c]"
+              >
+                {/* LINE SVG Icon */}
+                <svg 
+                  className="w-5 h-5 fill-current" 
+                  viewBox="0 0 24 24" 
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M24 10.304c0-5.36-5.385-9.72-12-9.72s-12 4.36-12 9.72c0 4.8 4.266 8.825 10.027 9.565.39.084.922.258 1.058.592.12.302.079.775.039 1.08l-.171 1.027c-.052.31-.25 1.21 1.077.66 1.266-.525 6.83-4.022 9.317-6.89 1.73-1.921 2.651-4.004 2.651-6.314z"/>
+                </svg>
+                <span>LINEで友だち追加</span>
+              </a>
 
-<div className="fixed bottom-4 left-4 right-4 z-50 md:hidden [.mobile-menu-open_&]:hidden">
-  <div className="flex items-center gap-3">
+              {/* Reservation Button */}
+              <Link
+                href="/contact"
+                className="flex-1 flex items-center justify-center rounded-full bg-rose-500 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-rose-600"
+              >
+                無料相談を予約する
+              </Link>
 
-    {/* Custom LINE Button (Keep standard <a> for external links) */}
-    <a
-      href="https://lin.ee/ZXB0UNs"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex-1 flex items-center justify-center gap-2 rounded-full bg-[#06C755] py-4 text-base font-semibold text-white shadow-lg transition hover:bg-[#05b34c]"
-    >
-      {/* LINE SVG Icon */}
-      <svg 
-        className="w-5 h-5 fill-current" 
-        viewBox="0 0 24 24" 
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M24 10.304c0-5.36-5.385-9.72-12-9.72s-12 4.36-12 9.72c0 4.8 4.266 8.825 10.027 9.565.39.084.922.258 1.058.592.12.302.079.775.039 1.08l-.171 1.027c-.052.31-.25 1.21 1.077.66 1.266-.525 6.83-4.022 9.317-6.89 1.73-1.921 2.651-4.004 2.651-6.314z"/>
-      </svg>
-      <span>LINEで友だち追加</span>
-    </a>
-
-    {/* Reservation Button (Converted to Next Link for client-side navigation) */}
-    <Link
-      href="/contact"
-      className="flex-1 flex items-center justify-center rounded-full bg-rose-500 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-rose-600"
-    >
-      無料相談を予約する
-    </Link>
-
-  </div>
-</div>
+            </div>
+          </div>
 
         </div>
       </body>
