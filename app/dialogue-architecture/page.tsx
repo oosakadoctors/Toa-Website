@@ -3,6 +3,8 @@ import { Heart, Sparkles, Trophy, Flame, UserCheck, MessageCircle, ArrowRight, F
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import Footer from "@/components/Footer";
+import Link from 'next/link';
+
 
 export const metadata: Metadata = {
   title: '大阪梅田ドクターズ結婚相談所の婚活カウンセリングとは|現役女医が実践する対話設計',
@@ -412,18 +414,15 @@ export default function CounselingMethodPage() {
             </div>
 
             {/* 関連ページ */}
-            <div className="bg-white p-6 md:p-8 border border-sky-200 rounded-2xl shadow-sm space-y-4">
-              <h3 className="font-bold text-sky-950 text-lg border-b border-sky-100 pb-2">関連ページ</h3>
-              <div className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-xl text-amber-900 text-sm font-medium mb-4">
-                <strong>TODO(公開前に対応):</strong> 以下は仮のパスです。実際のページURLが確定次第、必ず差し替えてください。プレースホルダーのまま公開すると、クローラーが404として認識しSEO評価が下がるおそれがあります。
-              </div>
-              <ul className="list-disc list-inside text-sky-600 underline font-medium space-y-2 text-[20px] md:text-base">
-                <li><a href="/consultation">無料相談のお申し込み</a></li>
-                <li><a href="/simulation/male">男性向け婚活カウンセリングシミュレーション</a></li>
-                <li><a href="/simulation/32-office-worker">32歳会社員女性の婚活カウンセリングシミュレーション</a></li>
-              </ul>
-            </div>
+<div className="bg-white p-6 md:p-8 border border-sky-200 rounded-2xl shadow-sm space-y-4">
+  <h3 className="font-bold text-sky-950 text-lg border-b border-sky-100 pb-2">関連ページ</h3>
 
+  <ul className="list-disc list-inside text-sky-600 underline font-medium space-y-2 text-[20px] md:text-base">
+    <li><Link href="/contact">無料相談のお申し込み</Link></li>
+    <li><Link href="/mens-consultation">男性向け婚活カウンセリングシミュレーション</Link></li>
+    <li><Link href="/vibe">32歳会社員女性の婚活カウンセリングシミュレーション</Link></li>
+  </ul>
+</div>
             {/* 監修・出典 */}
             <div className="bg-white p-6 md:p-8 border border-sky-200 rounded-2xl shadow-sm space-y-6 text-slate-600 text-sm leading-relaxed">
               <div className="space-y-1">
