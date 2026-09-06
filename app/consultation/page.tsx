@@ -1,86 +1,29 @@
+
+
 import React from 'react';
-import { Heart, Sparkles, Trophy, Flame, UserCheck, MessageCircle, ArrowRight, FileText, Compass, Brain, ShieldCheck, CheckCircle2, Stethoscope, HelpCircle, ChevronRight } from 'lucide-react';
+import { Heart, Sparkles, Trophy, Flame, UserCheck, MessageCircle, ArrowRight, FileText, Compass, Brain, ShieldCheck } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'お見合い後の交際判断基準(大阪梅田ドクターズ結婚相談所)|32歳女性が迷いから「もう一度会いたい」に変わった相談実例',
-  description: 'お見合い後に「好き」というときめきがない状態で交際へ進むべき理由を、32歳女性の具体的な相談実例をもとに解説。IBJ最新の公式統計データ（お見合いから仮交際へ発展した割合)は約40%※との目安。目先のマッチングテクニックを徹底排除し、現役女性医師による医学・心理学の観点からEQ（心の知能指数）を高める対話サポートを用いて、お相手への心理的安全性（安心感）と関係性をロジカルに深めて成婚へ導く大人の判断基準を可視化。',
+  title: '30代のための、客観的で心理的安心感に満ちた結婚相談',
+  description: '現役女性医師と20年ベテラン仲人が、あなたの理想を可視化する独自の『婚活未来図』や『婚活未来診断MMM』で伴走。IQの点数ではない、本当の価値観を深く知る無料相談のリアルな流れをご紹介します。',
   openGraph: {
-    title: 'お見合い後の交際判断基準(大阪梅田ドクターズ結婚相談所)|32歳女性が迷いから「もう一度会いたい」に変わった相談実例',
-    description: 'お見合い後に「好き」というときめきがない状態で交際へ進むべき理由を、32歳女性の具体的な相談実例をもとに解説。IBJ最新の公式統計データ（お見合いから仮交際へ発展した割合)は約40%※との目安。目先のマッチングテクニックを徹底排除し、現役女性医師による医学・心理学の観点からEQ（心の知能指数）を高める対話サポートを用いて、お相手への心理的安全性（安心感）と関係性をロジカルに深めて成婚へ導く大人の判断基準を可視化。',
+    title: '30代のための、客観的で心理的安心感に満ちた結婚相談',
+    description: '現役女性医師と20年ベテラン仲人が、あなたの理想を可視化する独自の『婚活未来図』や『婚活未来診断MMM』で伴走。IQの点数ではない、本当の価値観を深く知る無料相談のリアルな流れをご紹介します。',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'お見合い後の交際判断基準(大阪梅田ドクターズ結婚相談所)|32歳女性が迷いから「もう一度会いたい」に変わった相談実例',
-    description: 'お見合い後に「好き」というときめきがない状態で交際へ進むべき理由を、32歳女性の具体的な相談実例をもとに解説。IBJ最新の公式統計データ（お見合いから仮交際へ発展した割合)は約40%※との目安。目先のマッチングテクニックを徹底排除し、現役女性医師による医学・心理学の観点からEQ（心の知能指数）を高める対話サポートを用いて、お相手への心理的安全性（安心感）と関係性をロジカルに深めて成婚へ導く大人の判断基準を可視化。',
+    title: '30代のための、客観的で心理的安心感に満ちた結婚相談',
+    description: '現役女性医師と20年ベテラン仲人が、あなたの理想を可視化する独自の『婚活未来図』や『婚活未来診断MMM』で伴走。IQの点数ではない、本当の価値観を深く知る無料相談のリアルな流れをご紹介します。',
   },
 };
 
-export default function FreeConsultationProcessPage() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "お見合い後の返事には期限がありますか?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "はい。IBJの仕組みでは、お見合い後の可否について、翌日17時までにお相手の所属する相談所へ返事をする必要があります。振り返りページに感想を記載しつつ、期限までにカウンセラーと相談しながら判断していただけます。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "「決め手がなかった」という曖昧な理由でお断りしても大丈夫ですか?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "はい、問題ありません。具体的な理由が言語化できなくても、率直な気持ちをお伝えいただければ、当社がお相手に配慮した形で伝えます。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "お見合いで「好き」という気持ちが湧かなかったら、断るべきですか?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "一度も会わないうちから「好き」というときめきを求めてしまうと、それは一目惚れでしか成立しなくなります。お見合いの段階では「嫌いではないか」「一緒にいて苦にならないか」を基準にしていただく方が、その後の関係がうまく進みやすい傾向にあります。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "お相手から早くOKの返事が来ると、プレッシャーに感じてしまいます。",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "お申し込みをした側は、その時点である程度お相手に好意的なことが多く、早めにOKの返事が来ること自体は珍しくありません。ご自身のペースで判断していただいて問題ありません。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "お見合いから交際に進む割合はどれくらいですか?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "体感値にはなりますが、お見合いから仮交際に進む割合はおよそ4割程度です。あくまで目安としてお考えください。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "「仮交際」とは何ですか?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "お見合い後、お互いが「もう少し話してみたい」と合意した段階で始まる交際期間のことです。結婚を前提とした本交側に進むかどうかを見極めるための期間で、この間はデートを重ねながら価値観や将来設計のすり合わせを行います。"
-        }
-      }
-    ]
-  };
 
+export default function FreeConsultationProcessPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-sky-50 via-sky-100/40 to-blue-50 text-slate-800 font-sans antialiased selection:bg-sky-200 w-full overflow-x-hidden">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
       
       {/* ヒーローセクション - 明るく上品なスカイブルーグラデーション */}
       <header className="relative bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 text-white py-14 px-4 md:px-6 text-center overflow-hidden w-full border-b border-sky-300 shadow-lg">
@@ -90,65 +33,133 @@ export default function FreeConsultationProcessPage() {
             OBJECTIVE & LOGICAL MATCHMAKING COUNSELING
           </p>
           <h1 className="text-2xl md:text-4xl font-serif font-bold leading-tight tracking-wider text-white drop-shadow-sm">
-            お見合い後の交際判断基準(大阪梅田ドクターズ結婚相談所)|32歳女性が迷いから「もう一度会いたい」に変わった相談実例
+            【無料相談のリアル】30代の婚活を客観的・論理的に導く「婚活未来図」と、<br className="hidden md:inline" />
+            <span className="text-amber-200">
+              現役医師による伴走サポートの全貌
+            </span>
           </h1>
+          
+          <div className="bg-white/95 backdrop-blur-md p-6 rounded-2xl border border-white inline-block text-left w-full mt-4 shadow-xl">
+            <p className="text-sky-900 font-extrabold text-xl md:text-2xl mb-3 text-center tracking-wide">
+              30代のための、客観的で心理的安心感に満ちた結婚相談
+            </p>
+            <p className="text-slate-700 text-[20px] md:text-base leading-relaxed tracking-wide text-center w-full font-medium">
+              現役女性医師と20年ベテラン仲人が、あなたの理想を可視化する独自の『婚活未来図』や『婚活未来診断MMM』で伴走。<br className="hidden md:inline" />
+              IQの点数ではない、本当の価値観を深く知る無料相談のリアルな流れをご紹介します。
+            </p>
+          </div>
         </div>
       </header>
 
-      {/* 導入メッセージ */}
+      {/* 導入メッセージ - 明るいカード構成 */}
       <section className="py-8 w-full">
         <div className="max-w-5xl mx-auto w-full px-4 md:px-0">
           <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md border border-sky-200 space-y-5 w-full">
             <p className="text-[20px] md:text-base text-slate-800 leading-relaxed tracking-wide w-full text-center md:text-left">
-              お見合いの後、「交側に進むべきか、正直まだよくわからない」と感じることは、実は珍しくありません。今回は、大阪梅田の相談室で32歳・会社員女性(初婚)が受けた、お見合い後のフォロー相談を再現しました。カウンセラーとの対話を通じて見えてきた「もう一度会いたい」と思えるまでの気持ちの変化、ときめきがなくても交際に進んでいい理由、お見合いから仮交側に進む割合の目安まで、実際のやり取りをご紹介します。
+              30代を迎え、「そろそろ本気で人生のパートナーを見つけたい」と考えたとき、多くの方が結婚相談所の門を叩きます。しかし同時に、「無理に入会を勧められないか」「自分の理想や悩みを否定されないか」という不安を抱くのも自然なことです。<br /><br />
+              当相談所の無料相談は、単なる「手続きの説明」の場ではありません。
+              <span className="text-sky-950 font-bold bg-sky-100/80 px-2 py-0.5 rounded border-b-2 border-sky-400 ml-1">
+                あなたという人間を深く知り、これからの人生の方向性を一緒に見つめ直す、未来への第一歩です。
+              </span><br />
+              ここでは、実際にご来店いただいてから、入会後にどのような科学的・人間的なアプローチで成婚へと進むのか、その具体的なステップを包み隠さずお伝えします。
             </p>
             
             <div className="bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-500 text-white p-4 rounded-xl w-full text-center shadow-md">
               <p className="font-bold text-[20px] md:text-base tracking-wider w-full">
-                ✨ この記事でわかること
+                ✨ 理想の未来を可視化する、当相談所のカウンセリングステップをご覧ください。
               </p>
             </div>
-
-            <ul className="space-y-2 text-slate-700 pt-2">
-              <li className="flex items-start gap-2">
-                <span className="text-sky-600 font-bold">•</span>
-                お見合い後、実際にどんなフォロー面談が行われるのか
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-sky-600 font-bold">•</span>
-                「好き」というときめきがなくても交際に進んでいい理由
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-sky-600 font-bold">•</span>
-                交側に進む・進まないを、無理に即決させられることはないという安心材料
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-sky-600 font-bold">•</span>
-                気まずい思いをせずに意思表示できる仕組み
-              </li>
-            </ul>
-
-            <blockquote className="bg-amber-50 border-l-4 border-amber-400 p-4 text-xs sm:text-sm text-amber-900 rounded-r mt-6">
-              <p className="font-bold mb-1">※本コンテンツについて</p>
-              <p>
-                本記事は、実際に当社にお寄せいただいたご相談内容を基に再現したものです。プライバシー保護の観点から、年齢・職業・エピソードなどの詳細は複数の事例を組み合わせて構成しており、特定の個人を描写したものではありません。実際の面談内容・進行は、お一人おひとりの状況により異なります。
-              </p>
-            </blockquote>
           </div>
         </div>
       </section>
 
       {/* メインイメージ */}
+<section className="w-full px-4 md:px-0">
+  <div className="w-full max-w-4xl mx-auto my-1">
+    {/* Updated aspect ratio to 16/1 */}
+    <div className="relative w-full aspect-[960/1706] overflow-hidden rounded-2xl shadow-lg border-2 border-white">
+      <Image
+        src="/marriage-girl.jpg"
+        alt="大阪梅田ドクターズ結婚相談所のカウンセリングで使用する婚活未来図【理想を叶えるためのヒアリングシート】の実物写真"
+        fill
+        sizes="(max-width: 768px) 100vw, 800px"
+        loading="eager"
+        fetchPriority="high"
+        priority={false}
+        className="object-cover"
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+      />
+    </div>
+  </div>
+</section>
+
+      {/* STEP 1 - 鮮やかな水色＆ホワイトカード */}
+      <section className="py-12 bg-sky-100/60 text-slate-800 w-full border-y border-sky-200">
+        <div className="max-w-5xl mx-auto w-full space-y-8">
+          <div className="text-center px-4 w-full">
+            <span className="bg-sky-500 text-white font-extrabold text-sm px-4 py-1 rounded-full tracking-widest inline-block mb-2 shadow-xs">STEP 01</span>
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-sky-950 tracking-wider w-full">
+              言葉にできない理想を言葉にする「2つのオリジナルシート」
+            </h2>
+            <p className="text-[20px] md:text-base text-slate-700 mt-2 w-full max-w-3xl mx-auto font-medium">
+              無料相談にお越しいただいた際、まずはリラックスした雰囲気の中で、あなたの現在地と未来の理想を書き出すことから始めます。データマッチングだけでは見抜けない「あなた自身の軸」を見つけるための大切なプロセスです。
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 w-full px-4 md:px-0">
+            {/* 1. マッチングシート */}
+            <div className="bg-white p-6 md:p-8 border-2 border-sky-200 flex flex-col justify-between w-full rounded-2xl shadow-md hover:shadow-lg transition">
+              <div className="w-full space-y-4">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-sky-400 to-blue-500 flex items-center justify-center text-white text-xl font-extrabold shadow-md">1</div>
+                <h3 className="font-bold text-sky-900 text-xl md:text-lg tracking-wide w-full flex items-center gap-2 border-b border-sky-100 pb-2">
+                  <FileText className="w-6 h-6 text-sky-500 shrink-0" />
+                  マッチングシートへのご記入
+                </h3>
+                <p className="text-[20px] md:text-base text-slate-700 leading-relaxed w-full">
+                  まずは、当社オリジナルの「マッチングシート」に、ご自身のことやこれまでの婚活状況などの基本情報をご記入いただきます。これまでの歩みを一度フラットに整理するためのプロセスです。
+                </p>
+              </div>
+            </div>
+
+            {/* 2. 婚活未来図 */}
+            <div className="bg-white p-6 md:p-8 border-2 border-sky-200 flex flex-col justify-between w-full rounded-2xl shadow-md hover:shadow-lg transition">
+              <div className="w-full space-y-4">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-blue-500 to-indigo-500 flex items-center justify-center text-white text-xl font-extrabold shadow-md">2</div>
+                <h3 className="font-bold text-sky-900 text-xl md:text-lg tracking-wide w-full flex items-center gap-2 border-b border-sky-100 pb-2">
+                  <Compass className="w-6 h-6 text-blue-500 shrink-0" />
+                  理想を形にする「婚活未来図」（20の質問）
+                </h3>
+                <p className="text-[20px] md:text-base text-slate-700 leading-relaxed w-full">
+                  続いて、当相談所独自のヒアリングシート「婚活未来図」をお渡しします。ここには、あなたが思い描く理想の結婚生活に関する「20の質問」が用意されています。選択肢を選んだり、あなた自身の言葉で記述したりしていくプロセス自体が、これまで曖昧だった「理想の未来」を明確に思考し、言葉として表現する最初の一歩となります。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* STEP 2 - 二人三脚カウンセリング */}
+      <section className="py-12 bg-white w-full">
+        <div className="max-w-5xl mx-auto w-full px-4 md:px-0">
+          <div className="text-center mb-8 px-4 w-full">
+            <span className="bg-blue-600 text-white font-extrabold text-sm px-4 py-1 rounded-full tracking-widest inline-block mb-2 shadow-xs">STEP 02</span>
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 tracking-wider w-full">
+              現役女性医師×ベテラン男性による、多角的な「二人三脚カウンセリング」
+            </h2>
+            <p className="text-[20px] md:text-base text-slate-600 mt-2 max-w-3xl mx-auto">
+              シートの文字だけでは伝えきれない、微妙なニュアンスや胸の奥にある本音。それを引き出し、整理するのが私たちの役割です。当相談所では、全く異なるバックグラウンドを持つ2人のカウンセラーが、あなたのお話をじっくりと伺います。
+            </p>
+          </div>
       <section className="w-full px-4 md:px-0">
         <div className="w-full max-w-4xl mx-auto my-1">
-          <div className="relative w-full aspect-[960/1706] overflow-hidden rounded-2xl shadow-lg border-2 border-white">
+          <div className="relative w-full aspect-[1/1] md:aspect-[16/9] overflow-hidden rounded-2xl shadow-lg border-2 border-white">
             <Image
-              src="/marriage-girl.jpg"
-              alt="大阪梅田ドクターズ結婚相談所のカウンセリングで使用する婚活未来図【理想を叶えるためのヒアリングシート】の実物写真"
+              src="/consultation1.jpg"
+              alt="現役医師とベテランカウンセラーによる安心の無料相談イメージ"
               fill
               sizes="(max-width: 768px) 100vw, 800px"
               loading="eager"
-              fetchPriority="high"
               priority={false}
               className="object-cover"
               placeholder="blur"
@@ -157,341 +168,107 @@ export default function FreeConsultationProcessPage() {
           </div>
         </div>
       </section>
+          {/* 面談スタイル概要ボックス */}
+          <div className="bg-gradient-to-br from-sky-500 via-blue-600 to-indigo-600 text-white p-6 rounded-2xl shadow-lg mb-8 max-w-2xl mx-auto">
+            <h3 className="text-center font-bold text-amber-200 mb-4 text-xl md:text-lg tracking-wide">【無料相談の面談スタイル】</h3>
+            <div className="space-y-3 text-center text-[20px] md:text-base font-medium">
+              <div className="bg-white/10 backdrop-blur-md p-3.5 rounded-xl border border-white/20">
+                <span className="text-amber-300 font-extrabold">［前半 30分］</span> 現役女性医師（代表カウンセラー）との心理的安全性に満ちた対話
+              </div>
+              <div className="text-amber-300 font-extrabold text-xl">▼</div>
+              <div className="bg-white/10 backdrop-blur-md p-3.5 rounded-xl border border-white/20">
+                <span className="text-amber-300 font-extrabold">［後半 30分］</span> 20年の実績を持つベテラン男性カウンセラーとの実戦的面談
+              </div>
+            </div>
+          </div>
 
-      {/* 監修・カウンセラー情報 */}
-      <section className="py-12 bg-sky-100/60 text-slate-800 w-full border-y border-sky-200 mt-8">
-        <div className="max-w-5xl mx-auto w-full px-4 md:px-0 space-y-6">
-          <div className="bg-white p-6 md:p-8 border-2 border-sky-200 rounded-2xl shadow-md">
-            <h2 className="text-2xl font-bold text-sky-950 border-b border-sky-100 pb-3 mb-4 flex items-center gap-2">
-              <Stethoscope className="w-6 h-6 text-sky-600" />
-              監修・カウンセラー情報
-            </h2>
-            <p className="leading-relaxed mb-4 text-[20px] md:text-base text-slate-700">
-              本ケースの担当カウンセラーは、大阪梅田ドクターズ結婚相談所の代表カウンセラー。医療法人役員、市中病院での勤務医としての経験を持ち、内科認定医の資格を有する女性医師です。お見合い後の気持ちの整理は、医療現場での対話経験を活かし、相談者の言葉を否定せずに引き出すスタイルを大切にしています。
-            </p>
-            <p className="leading-relaxed text-[20px] md:text-base text-slate-700">
-              当社が加盟する結婚相談所ネットワーク「IBJ」は、2026年7月15日時点で登録会員数110,482名となり、11万名を突破しました。同月のIBJ全体の実績は、加盟相談所数4,818社、お見合い成立件数101,790件、成婚組数2,019組です(出典:株式会社IBJ公式プレスリリース、2026年7月付)。全国規模のネットワークだからこそ、一度のお見合いで結果が出なくても、次の出会いにすぐつなげられる土台があります。
-            </p>
+          {/* 前半・後半の詳細カード */}
+          <div className="space-y-6 max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-sky-50 to-blue-50 border-2 border-sky-200 p-6 md:p-8 rounded-2xl shadow-sm space-y-4">
+              <div className="flex flex-wrap items-center gap-3 border-b border-sky-200 pb-3">
+                <span className="bg-sky-600 text-white font-bold px-3 py-1 rounded-lg text-sm shadow-xs">前半：30分</span>
+                <h3 className="font-bold text-sky-950 text-xl md:text-xl">現役女性医師による、客観的かつ論理的な方向性</h3>
+              </div>
+              <p className="text-[20px] md:text-base text-slate-700 leading-relaxed">
+                ファーストカウンセリングは、現役の内科認定医でもある代表カウンセラーとのリラックスした会話からスタートします。<br /><br />
+                医師として日々、数多くの患者さまの多様な人生観、生死や家族の局面に触れてきたからこそ、私たちはどのような価値観も決して否定しません。医療現場で培った「傾聴」の姿勢と行動科学的な視点をもって、あなたの言葉に耳を傾けます。<br /><br />
+                「こんな贅沢な理想を言っても大丈夫かな？」「年齢的な不安を笑われないか？」といった心配は不要です。人生の様々な局面で悲しみや苦労を乗り越えてきた大人だからこそ、あなたのあらゆる想いに心理的に寄り添うことができます。<br /><br />
+                より高い目標を目指す前向きなマインドから、言葉にならない不安までを丸ごと受け止めた上で、医学的・心理学的知見をベースにした「客観的かつ論理的な方向性」を導き出します。
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 p-6 md:p-8 rounded-2xl shadow-sm space-y-4">
+              <div className="flex flex-wrap items-center gap-3 border-b border-blue-200 pb-3">
+                <span className="bg-indigo-600 text-white font-bold px-3 py-1 rounded-lg text-sm shadow-xs">後半：30分</span>
+                <h3 className="font-bold text-indigo-950 text-xl md:text-xl">婚活歴20年のベテラン男性カウンセラーによる、実戦的な視点</h3>
+              </div>
+              <p className="text-[20px] md:text-base text-slate-700 leading-relaxed">
+                続いて、20年の婚活サポート実績を持つベテラン男性カウンセラーが面談に加わります。<br /><br />
+                男性目線と女性目線、そして医師としてのキャリアと20年の婚活現場のキャリア。異なる経歴と人生経験を持つ2人が揃うことで、一方向からでは見えなかったあなたの魅力や、進むべき道が立体的に見えてきます。<br /><br />
+                「女性カウンセラーには少し聞きづらかったこと」や「より具体的な婚活の現実・対策」についても、相手を変えることで気兼ねなく、さらに深く踏み込んで質問していただけます。
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ご相談者様の概要 */}
-      <section className="py-12 bg-white w-full">
+      {/* 入会後のアプローチ - MMM診断 */}
+      <section className="py-12 bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 text-white w-full shadow-inner">
         <div className="max-w-5xl mx-auto w-full px-4 md:px-0">
-          <h2 className="text-2xl font-bold text-slate-900 border-b pb-3 mb-6">
-            ご相談者様の概要(複数の実例を基に再構成)
-          </h2>
-          <div className="overflow-x-auto bg-white rounded-xl shadow-sm border border-sky-200">
-            <table className="w-full text-left text-sm">
-              <tbody>
-                <tr className="border-b border-slate-100">
-                  <th className="py-3 px-4 font-semibold bg-sky-50/50 w-1/3 sm:w-1/4">年齢</th>
-                  <td className="py-3 px-4">32歳</td>
-                </tr>
-                <tr className="border-b border-slate-100">
-                  <th className="py-3 px-4 font-semibold bg-sky-50/50">職業</th>
-                  <td className="py-3 px-4">会社員(事務職)</td>
-                </tr>
-                <tr className="border-b border-slate-100">
-                  <th className="py-3 px-4 font-semibold bg-sky-50/50">婚歴</th>
-                  <td className="py-3 px-4">初婚</td>
-                </tr>
-                <tr className="border-b border-slate-100">
-                  <th className="py-3 px-4 font-semibold bg-sky-50/50">希望条件</th>
-                  <td className="py-3 px-4">同世代、年収600万円以上、身長170cm以上、大卒、初婚</td>
-                </tr>
-                <tr className="border-b border-slate-100">
-                  <th className="py-3 px-4 font-semibold bg-sky-50/50">相談内容</th>
-                  <td className="py-3 px-4">初めてのお見合い後、交側に進むべきか判断に迷っている</td>
-                </tr>
-                <tr className="border-b border-slate-100">
-                  <th className="py-3 px-4 font-semibold bg-sky-50/50">相談場所</th>
-                  <td className="py-3 px-4">大阪梅田・第二ビル内の完全個室会議室</td>
-                </tr>
-                <tr>
-                  <th className="py-3 px-4 font-semibold bg-sky-50/50">所要時間</th>
-                  <td className="py-3 px-4">約30分(お見合い後のフォロー面談)</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="bg-white/95 backdrop-blur-md text-slate-800 p-6 md:p-10 rounded-2xl shadow-2xl space-y-6">
+            <div className="text-center space-y-2">
+              <span className="bg-amber-400 text-slate-900 font-extrabold text-xs px-3 py-1 rounded-full tracking-widest inline-block uppercase shadow-xs">AFTER JOINING APPROACH</span>
+              <h2 className="text-xl md:text-3xl font-serif font-bold text-sky-950 tracking-wider">
+                入会後のアプローチ：理想のパラメーターを言語化する「婚活未来診断MMM」
+              </h2>
+            </div>
+
+            <p className="text-[20px] md:text-base text-slate-700 leading-relaxed max-w-3xl mx-auto text-center md:text-left font-medium">
+              無料相談を経てご入会された後には、さらに解像度の高いサポートをご用意しています。その中核を担うのが、独自に開発された「婚活未来診断MMM」です。
+            </p>
+
+            <div className="bg-sky-50 border-2 border-sky-200 p-6 rounded-xl space-y-4 max-w-3xl mx-auto">
+              <div className="flex items-center gap-3 text-sky-900 font-bold text-xl md:text-lg border-b border-sky-200 pb-2">
+                <Brain className="w-7 h-7 text-sky-600 shrink-0" />
+                <span>7つのパラメーターで未来を可視化</span>
+              </div>
+              <p className="text-[20px] md:text-base text-slate-700 leading-relaxed">
+                この診断では、結婚に対する理想やお相手に求める要素を「7つのパラメーター」に分類。心理学、内科認定医としての知見、そして長年の医療分野での経験を掛け合わせ、あなたが心の奥底で求めている「思い描く未来」や「婚活の具体的な方向性」を完全に言語化・可視化します。<br /><br />
+                感覚だけに頼るのではなく、ロジカルに自分の現在地とゴールを把握できるため、ブレのない効率的な婚活が可能になります。
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* お見合い後フォロー面談の様子 */}
+      {/* 私たちの哲学 - 思想セクション */}
       <section className="py-12 bg-sky-50/70 w-full">
         <div className="max-w-5xl mx-auto w-full px-4 md:px-0">
-          <div className="bg-white p-6 md:p-10 border-2 border-sky-200 rounded-2xl shadow-md space-y-6">
-            <h2 className="text-2xl font-bold text-slate-900 border-b pb-3 mb-6">
-              お見合い後フォロー面談の様子(実際のご相談内容をもとに再現)
-            </h2>
-
-            <h3 className="text-xl font-bold text-sky-950 mt-6 mb-3">面談の経緯</h3>
-            <p className="leading-relaxed mb-4 text-[20px] md:text-base text-slate-700">
-              お見合いは大阪梅田のホテルラウンジで実施。当日は普通に会話ができ、お相手とはラウンジから駅まで一緒に帰った。事前のカウンセリングでは、お相手が自分としっかり関わろうというスタンスを持っているか、そして「一期一会。好きになれなくても、ご縁があってお見合いしたこの一時を、お互い温かい気持ちで大切にしましょう」というスタンスで臨むことを話していた。あれこれ希望を伝えてジャッジするのではなく、結婚を目指す方向でいい関係の一歩になれたらいいね、あえてよかった、せっかくの出会いをお互い楽しもうね、というくらいの気持ちでいく、という内容だった。当日は、その通りに素直に実践できたという感覚があった。
-            </p>
-            <p className="leading-relaxed mb-8 text-[20px] md:text-base text-slate-700">
-              IBJの公式会員サイトには、お見合い後に感想を記載する振り返りページがあり、良かった点・気になった点を入力する仕組みになっている。また、お見合いを受けるかどうかの返事は、翌日17時までにお相手の所属する相談所へ回答する必要がある。この期限が近づく中、初めてのお見合いということもあり、お断りした方がいいのではと考え、担当カウンセラーに相談することにした。
-            </p>
-
-            <h3 className="text-xl font-bold text-sky-950 mt-8 mb-4">
-              面談内容(対話の再現)——お見合いを断るか、仮交側に進むかの判断基準
-            </h3>
-
-            <div className="space-y-4 my-6">
-              <div className="bg-sky-50 p-4 rounded-lg border-l-4 border-sky-500">
-                <p><span className="font-bold text-sky-900">カウンセラー:</span>「お見合い、お疲れさまでした。振り返りページも拝見しましたが、ご自身の言葉でもう少し聞かせてもらえますか?」</p>
+          <div className="bg-white p-6 md:p-10 border-2 border-sky-200 w-full md:rounded-2xl space-y-6 shadow-md">
+            <div className="flex items-center gap-4 border-b border-sky-100 pb-4">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-sky-400 to-blue-500 text-white flex items-center justify-center shrink-0 shadow-md">
+                <ShieldCheck className="w-6 h-6" />
               </div>
-
-              <div className="bg-white p-4 rounded-lg border border-slate-200">
-                <p><span className="font-bold text-slate-700">相談者:</span>「事前にお話ししていただいた通り、ジャッジするというより、一期一会の出会いを楽しもう、という気持ちで臨めたと思います。普通に会話もできましたし」</p>
-              </div>
-
-              <div className="bg-sky-50 p-4 rounded-lg border-l-4 border-sky-500">
-                <p><span className="font-bold text-sky-900">カウンセラー:</span>「なるほど。具体的に、気になった点はありましたか?」</p>
-              </div>
-
-              <div className="bg-white p-4 rounded-lg border border-slate-200">
-                <p><span className="font-bold text-slate-700">相談者:</span>「お相手が、ご自分の会社の話や、栄転されたときの話をずっとされていて。少し早口だったのも気になりました。仕事への熱量というか、温度差のようなものを少し感じてしまって」</p>
-              </div>
-
-              <div className="bg-sky-50 p-4 rounded-lg border-l-4 border-sky-500">
-                <p><span className="font-bold text-sky-900">カウンセラー:</span>「その感覚は大事にしていただいて大丈夫です。逆に、事前に必須確認事項としてお伝えしていた、動物がお好きかどうかは聞けましたか?」</p>
-              </div>
-
-              <div className="bg-white p-4 rounded-lg border border-slate-200">
-                <p><span className="font-bold text-slate-700">相談者:</span>「はい、猫を飼っていることを伝えたら、動物はお好きだとおっしゃっていたので、そこは大丈夫でした」</p>
-              </div>
-
-              <div className="bg-sky-50 p-4 rounded-lg border-l-4 border-sky-500">
-                <p><span className="font-bold text-sky-900">カウンセラー:</span>「それは良かったです。最後は、練習していた通り『お話しできて楽しかったです』と笑顔で伝えられましたか?」</p>
-              </div>
-
-              <div className="bg-white p-4 rounded-lg border border-slate-200">
-                <p><span className="font-bold text-slate-700">相談者:</span>「はい、それも素直にお伝えできました。ただ、いざこの後どうしたらいいのか考えると正直迷っていて……今回はお断りしようかと思っています」</p>
-              </div>
-
-              <div className="bg-sky-50 p-4 rounded-lg border-l-4 border-sky-500">
-                <p><span className="font-bold text-sky-900">カウンセラー:</span>「よろしければ、お断りしようと思われた一番の理由も聞かせてもらえますか?」</p>
-              </div>
-
-              <div className="bg-white p-4 rounded-lg border border-slate-200">
-                <p><span className="font-bold text-slate-700">相談者:</span>「正直に言うと、外見や雰囲気に『好き』という感覚が湧かなかったのが大きいです。嫌いというわけではないんですが、ときめきがなかったというか……」</p>
-              </div>
-
-              <div className="bg-sky-50 p-4 rounded-lg border-l-4 border-sky-500">
-                <p><span className="font-bold text-sky-900">カウンセラー:</span>「その感覚、よくわかります。ただ一つだけお伝えしたいのですが、お見合いの時点で『好き』というときめきを条件にしてしまうと、それはもう一目惚れでしか成立しなくなってしまうんです。一目惚れが起きる確率で相手を探していくと、正直かなり難しくなってしまいます」</p>
-              </div>
-
-              <div className="bg-white p-4 rounded-lg border border-slate-200">
-                <p><span className="font-bold text-slate-700">相談者:</span>「言われてみれば、たしかにそうかもしれません……」</p>
-              </div>
-
-              <div className="bg-sky-50 p-4 rounded-lg border-l-4 border-sky-500">
-                <p><span className="font-bold text-sky-900">カウンセラー:</span>「お見合いは、恋愛感情がゼロの状態から始まって当然の場です。ときめきは、会話を重ねたり、一緒に過ごす時間の中で後から育っていくことの方が多いんです。なので、最初の段階では『好きかどうか』ではなく、『嫌いではないか』『一緒にいて苦にならないか』を基準にしていただく方が、うまくいきやすいですよ」</p>
-              </div>
-
-              <div className="bg-sky-50 p-4 rounded-lg border-l-4 border-sky-500">
-                <p><span className="font-bold text-sky-900">カウンセラー:</span>「実は、お相手からはすでに『仮交際希望』のお返事をいただいています。今回は男性側からのお申し込みだったんです」</p>
-              </div>
-
-              <div className="bg-white p-4 rounded-lg border border-slate-200">
-                <p><span className="font-bold text-slate-700">相談者:</span>「あ。そうなんですね。迷っていたんですが、なぜか少し嬉しいです」</p>
-              </div>
-
-              <div className="bg-sky-50 p-4 rounded-lg border-l-4 border-sky-500">
-                <p><span className="font-bold text-sky-900">カウンセラー:</span>「お申し込みされた側は、その時点である程度お相手を気に入っていることが多いので、早めにOKのお返事をいただくケースは珍しくありません。条件面も確認させていただくと、ご希望条件——同世代、年収600万円以上、身長170cm以上、大卒、初婚——には、今回のお相手も合致しています」</p>
-              </div>
-
-              <div className="bg-white p-4 rounded-lg border border-slate-200">
-                <p><span className="font-bold text-slate-700">相談者:</span>「条件は合っているんですが、それだけで決めていいものなのか……」</p>
-              </div>
-
-              <div className="bg-sky-50 p-4 rounded-lg border-l-4 border-sky-500">
-                <p><span className="font-bold text-sky-900">カウンセラー:</span>「無理に交際を決めていただく必要はありません。ただ、初めてのお見合いということもあるので、一つの目安をお伝えしますね。『もう一度会って、もう少し考えてみてもいいかな』と思えるようであれば、OKを出しておく、というくらいの気持ちで大丈夫です。お見合いの段階では、そのくらいの敷居で考えていただいて問題ありません」</p>
-              </div>
-
-              <div className="bg-white p-4 rounded-lg border border-slate-200">
-                <p><span className="font-bold text-slate-700">相談者:</span>「もう一度なら、会ってみてもいいかもしれません」</p>
-              </div>
-
-              <div className="bg-sky-50 p-4 rounded-lg border-l-4 border-sky-500">
-                <p><span className="font-bold text-sky-900">カウンセラー:</span>「ちなみに、お見合いから交際(仮交際)に進む割合は、人にもよりますが、体感で4割程度です。条件面が合っていて、かつ『はっきり嫌ではない』という状態であれば、次に進んでみる価値は十分あります」</p>
-              </div>
-
-              <div className="bg-white p-4 rounded-lg border border-slate-200">
-                <p><span className="font-bold text-slate-700">相談者:</span>「そのくらいの割合なんですね。それを聞くと、少し気が楽になりました。今回はOKのお返事をしてみようと思います」</p>
-              </div>
-
-              <div className="bg-sky-50 p-4 rounded-lg border-l-4 border-sky-500">
-                <p><span className="font-bold text-sky-900">カウンセラー:</span>「承知しました。17時までにお相手の相談所へこちらからお返事しておきますね」</p>
+              <div>
+                <span className="text-xs text-sky-600 font-extrabold tracking-widest block uppercase">OUR PHILOSOPHY</span>
+                <h2 className="font-bold text-sky-950 text-lg md:text-xl tracking-wide">
+                  私たちの哲学：すべてのツールは「IQの点数」をつけるためのものではありません
+                </h2>
               </div>
             </div>
 
-            <h3 className="text-xl font-bold text-sky-950 mt-8 mb-4">お見合いの断り方・意思表示の仕組みについて</h3>
-            <div className="space-y-4">
-              <div className="bg-sky-50 p-4 rounded-lg border-l-4 border-sky-500">
-                <p><span className="font-bold text-sky-900">カウンセラー:</span>「今回のように迷っている場合はもちろん、もしはっきりお断りしたい場合も、直接相手に伝える必要はありません。当社を通じてお伝えするので、気まずい思いをせずに意思表示していただけます」</p>
-              </div>
-
-              <div className="bg-white p-4 rounded-lg border border-slate-200">
-                <p><span className="font-bold text-slate-700">相談者:</span>「直接断るのはやっぱり気が引けるので、それはありがたいです」</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* この相談内容から見えてくるポイント(まとめ) */}
-      <section className="py-12 bg-white w-full">
-        <div className="max-w-5xl mx-auto w-full px-4 md:px-0">
-          <h2 className="text-2xl font-bold text-slate-900 border-b pb-3 mb-6">
-            この相談内容から見えてくるポイント(まとめ)
-          </h2>
-          <div className="overflow-x-auto bg-white rounded-xl shadow-sm border border-sky-200">
-            <table className="w-full text-left text-sm">
-              <thead>
-                <tr className="bg-sky-50 border-b border-sky-200">
-                  <th className="py-3 px-4 font-bold text-sky-900 w-1/2">相談者の悩み</th>
-                  <th className="py-3 px-4 font-bold text-sky-900 w-1/2">当社からの視点</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100">
-                <tr>
-                  <td className="py-3 px-4">温かい気持ちで臨めたが決め手がなく迷う</td>
-                  <td className="py-3 px-4">初回のお見合いで強い決め手を求めすぎなくてよい</td>
-                </tr>
-                <tr>
-                  <td className="py-3 px-4">外見や雰囲気に「好き」という感覚が湧かなかった</td>
-                  <td className="py-3 px-4">お見合いで「好き」を条件にすると一目惚れでしか成立しなくなる。「嫌いではないか」を基準にする</td>
-                </tr>
-                <tr>
-                  <td className="py-3 px-4">仕事の話ばかりで温度差を感じた</td>
-                  <td className="py-3 px-4">気になった点として率直に受け止め、判断材料として整理する</td>
-                </tr>
-                <tr>
-                  <td className="py-3 px-4">条件は合致しているが決めきれない</td>
-                  <td className="py-3 px-4">「もう一度会ってもいいか」を目安にする、という低めの敷居で十分</td>
-                </tr>
-                <tr>
-                  <td className="py-3 px-4">相手からの早期OKへの戸惑い</td>
-                  <td className="py-3 px-4">申し込み側は既に好意的なことが多く、特別なことではない</td>
-                </tr>
-                <tr>
-                  <td className="py-3 px-4">交側に進むかどうかの一般的な目安</td>
-                  <td className="py-3 px-4">お見合いから仮交側に進む割合は体感で約4割</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* まとめ:こんな方に読んでいただきたい記事です */}
-      <section className="py-12 bg-sky-50/70 w-full">
-        <div className="max-w-5xl mx-auto w-full px-4 md:px-0">
-          <div className="bg-white p-6 md:p-8 border-2 border-sky-200 rounded-2xl shadow-md">
-            <h2 className="text-2xl font-bold text-slate-900 border-b pb-3 mb-6">
-              まとめ:こんな方に読んでいただきたい記事です
-            </h2>
-            <ul className="space-y-3 mb-6">
-              <li className="flex items-center gap-3 text-slate-700">
-                <ChevronRight className="w-5 h-5 text-sky-600 shrink-0" />
-                <span>お見合い後、交側に進むべきか判断がつかずモヤモヤしている方</span>
-              </li>
-              <li className="flex items-center gap-3 text-slate-700">
-                <ChevronRight className="w-5 h-5 text-sky-600 shrink-0" />
-                <span>交側に進む・進まないを、その場で即決しないといけないと思い込んでいる方</span>
-              </li>
-              <li className="flex items-center gap-3 text-slate-700">
-                <ChevronRight className="w-5 h-5 text-sky-600 shrink-0" />
-                <span>断る場合の気まずさが心配で、お見合いに踏み出せない方</span>
-              </li>
-              <li className="flex items-center gap-3 text-slate-700">
-                <ChevronRight className="w-5 h-5 text-sky-600 shrink-0" />
-                <span>大阪梅田エリアで、丁寧なフォロー体制がある相談所を探している方</span>
-              </li>
-            </ul>
-            <p className="leading-relaxed bg-sky-50 p-4 rounded-lg text-sm sm:text-base border border-sky-100">
-              お見合い後のフォロー面談は、状況に応じて電話・対面いずれの形でも対応しております。判断に迷ったときこそ、お一人で抱え込まずにご相談ください。
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* こちらの相談実例もあわせてご覧ください */}
-      <section className="py-8 bg-white w-full">
-        <div className="max-w-5xl mx-auto w-full px-4 md:px-0">
-          <div className="bg-white p-6 md:p-8 border-2 border-sky-200 rounded-2xl shadow-md">
-            <h2 className="text-xl font-bold text-slate-900 border-b pb-3 mb-4">
-              こちらの相談実例もあわせてご覧ください
-            </h2>
-            <ul className="space-y-3">
-              <li>
-                <Link href="#" className="text-sky-700 hover:text-sky-900 underline font-medium flex items-center gap-1">
-                  【無料相談実例】交際なし36歳・女医が来店した無料カウンセリングの中身
-                </Link>
-                <p className="text-xs text-slate-500 mt-0.5">— 入会前の無料相談で、実際にどんな会話が交わされるのかが気になる方はこちら。</p>
-              </li>
-              <li>
-                <Link href="#" className="text-sky-700 hover:text-sky-900 underline font-medium flex items-center gap-1">
-                  【男性版】無料相談ストーリー(35歳・会社員)
-                </Link>
-                <p className="text-xs text-slate-500 mt-0.5">— 男性会員の視点では、どんな悩みを相談し、どんなアドバイスを受けているのか。</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* よくある質問 */}
-      <section className="py-12 bg-sky-50/70 w-full">
-        <div className="max-w-5xl mx-auto w-full px-4 md:px-0">
-          <h2 className="text-2xl font-bold text-slate-900 border-b pb-3 mb-6 flex items-center gap-2">
-            <HelpCircle className="w-6 h-6 text-sky-600" />
-            よくある質問
-          </h2>
-          <div className="space-y-4">
-            <div className="bg-white p-5 rounded-xl shadow-sm border border-sky-200">
-              <h3 className="font-bold text-slate-900 mb-2">Q. お見合い後の返事には期限がありますか?</h3>
-              <p className="text-sm text-slate-700 leading-relaxed">
-                はい。IBJの仕組みでは、お見合い後の可否について、翌日17時までにお相手の所属する相談所へ返事をする必要があります。振り返りページに感想を記載しつつ、期限までにカウンセラーと相談しながら判断していただけます。
+            <div className="text-[20px] md:text-base text-slate-700 space-y-4 leading-relaxed">
+              <p>
+                私たちが提供する「マッチングシート」「婚活未来図」「婚活未来診断MMM」。これらはすべて、あなたに「〇〇点です」といった、知能指数（IQ）のようなスコアや優劣をつけるためのものではありません。診断を完結させることが目的ではないのです。
               </p>
-            </div>
-
-            <div className="bg-white p-5 rounded-xl shadow-sm border border-sky-200">
-              <h3 className="font-bold text-slate-900 mb-2">Q. 「決め手がなかった」という曖昧な理由でお断りしても大丈夫ですか?</h3>
-              <p className="text-sm text-slate-700 leading-relaxed">
-                はい、問題ありません。具体的な理由が言語化できなくても、率直な気持ちをお伝えいただければ、当社がお相手に配慮した形で伝えます。
+              <p>
+                婚活において最も大切なのは、機械的な条件の点数ではなく、お互いの感情を理解し、尊重し合える「EQ（心の知能指数）」や「人間性」です。
               </p>
-            </div>
-
-            <div className="bg-white p-5 rounded-xl shadow-sm border border-sky-200">
-              <h3 className="font-bold text-slate-900 mb-2">Q. お見合いで「好き」という気持ちが湧かなかったら、断るべきですか?</h3>
-              <p className="text-sm text-slate-700 leading-relaxed">
-                一度も会わないうちから「好き」というときめきを求めてしまうと、それは一目惚れでしか成立しなくなります。お見合いの段階では「嫌いではないか」「一緒にいて苦にならないか」を基準にしていただく方が、その後の関係がうまく進みやすい傾向にあります。
+              <p className="bg-sky-100/70 border-l-4 border-sky-500 p-4 rounded-r-xl text-slate-900 font-semibold shadow-xs">
+                これらのツールはすべて、会員様ご自身が「自分の本当の価値観（高いEQ）」を深く知り、ご自身の人生の方向性を主体的に決めるための羅針盤（一助）として作成されました。
               </p>
-            </div>
-
-            <div className="bg-white p-5 rounded-xl shadow-sm border border-sky-200">
-              <h3 className="font-bold text-slate-900 mb-2">Q. お相手から早くOKの返事が来ると、プレッシャーに感じてしまいます。</h3>
-              <p className="text-sm text-slate-700 leading-relaxed">
-                お申し込みをした側は、その時点である程度お相手に好意的なことが多く、早めにOKの返事が来ること自体は珍しくありません。ご自身のペースで判断していただいて問題ありません。
-              </p>
-            </div>
-
-            <div className="bg-white p-5 rounded-xl shadow-sm border border-sky-200">
-              <h3 className="font-bold text-slate-900 mb-2">Q. お見合いから交際に進む割合はどれくらいですか?</h3>
-              <p className="text-sm text-slate-700 leading-relaxed">
-                体感値にはなりますが、お見合いから仮交側に進む割合はおよそ4割程度です。あくまで目安としてお考えください。
-              </p>
-            </div>
-
-            <div className="bg-white p-5 rounded-xl shadow-sm border border-sky-200">
-              <h3 className="font-bold text-slate-900 mb-2">Q. 「仮交際」とは何ですか?</h3>
-              <p className="text-sm text-slate-700 leading-relaxed">
-                お見合い後、お互いが「もう少し話してみたい」と合意した段階で始まる交際期間のことです。結婚を前提とした本交側に進むかどうかを見極めるための期間で、この間はデートを重ねながら価値観や将来設計のすり合わせを行います。
+              <p>
+                自分の軸が明確になれば、お相手選びに迷うことはなくなります。私たちは、あなたが自分らしい納得のいく人生を選択できるよう、論理的なデータと温かい人間味の両輪で、誠実に伴走することをお約束します。
               </p>
             </div>
           </div>
@@ -522,16 +299,6 @@ export default function FreeConsultationProcessPage() {
         </div>
       </section>
 
-      {/* Footer Citation */}
-      <footer className="py-6 bg-slate-100 border-t border-slate-200 text-xs text-slate-500 text-center">
-        <p>
-          出典:株式会社IBJ「成婚白書 2024年度版」
-          <br />
-          <a href="https://www.ibjapan.jp/information/wp-" target="_blank" rel="noopener noreferrer" className="underline hover:text-slate-700">
-            https://www.ibjapan.jp/information/wp-
-          </a>
-        </p>
-      </footer>
     </div>
   );
 }

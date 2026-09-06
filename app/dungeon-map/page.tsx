@@ -5,10 +5,44 @@ import DungeonMap from "@/components/DungeonMap";
 
 import type { Metadata } from 'next';
 
+// 1. Exact canonical domain (including https:// and www.)
+const SITE_URL = "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp"; 
+
+// 2. Exact path/route of this page within your app
+const PAGE_PATH = "/dungeon-map"; 
+
+// 3. Absolute path to the OGP image in public/dungeon-map.jpg
+const OG_IMAGE = `${SITE_URL}/dungeon-map.jpg`;
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: '婚活ダンジョンマップと医師×仲人のダブルサポート体制 | 大阪梅田ドクターズ結婚相談所',
   description: '大阪梅田ドクターズ結婚相談所が開発した「婚活ダンジョンマップ」と現役医師×ベテラン仲人のダブルサポート体制で納得の成婚へ導きます。',
+  openGraph: {
+    title: '婚活ダンジョンマップと医師×仲人のダブルサポート体制 | 大阪梅田ドクターズ結婚相談所',
+    description: '大阪梅田ドクターズ結婚相談所が開発した「婚活ダンジョンマップ」と現役医師×ベテラン仲人のダブルサポート体制で納得の成婚へ導きます。',
+    url: `${SITE_URL}${PAGE_PATH}`,
+    siteName: '大阪梅田ドクターズ結婚相談所',
+    images: [
+      {
+        url: OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: '婚活ダンジョンマップ',
+      },
+    ],
+    locale: 'ja_JP',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '婚活ダンジョンマップと医師×仲人のダブルサポート体制 | 大阪梅田ドクターズ結婚相談所',
+    description: '大阪梅田ドクターズ結婚相談所が開発した「婚活ダンジョンマップ」と現役医師×ベテラン仲人のダブルサポート体制で納得の成婚へ導きます。',
+    images: [OG_IMAGE],
+  },
 };
+
+
 
 export default function DungeonMapSupportPage() {
   return (
@@ -38,24 +72,28 @@ export default function DungeonMapSupportPage() {
       </header>
 
       {/* 婚活ダンジョンマップ セクション */}
-      <section className="py-8 w-full">
-        <div className="max-w-5xl mx-auto w-full px-4 md:px-0">
-          <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md border border-sky-200 space-y-5 w-full relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-amber-100/50 rounded-bl-full -z-0 pointer-events-none"></div>
-            
-            <p className="text-[20px] md:text-base text-slate-800 leading-relaxed tracking-wide w-full relative z-10">
-              プロフィール作成、お申し込み、お見合い、仮交際、真剣交際、そしてプロポーズ。<br />
-              <span className="text-sky-950 font-bold bg-amber-100/80 px-2 py-0.5 rounded border-b-2 border-amber-400">
-                婚活における一つひとつの意思決定をデータと経験に基づいてサポートし、納得のいく未来へあなたを導きます。
-              </span>
-            </p>
+<section className="py-8 w-full">
+  {/* Changed max-w-5xl to max-w-none / w-full */}
+  <div className="w-full px-2  md:px-8">
+    {/* Removed rounded borders and shadow if you want a true edge-to-edge look, or keep them for a full-bleed card */}
+    <div className="bg-white rounded-2xl p-4 md:p-6 shadow-md border border-sky-200 space-y-5 w-full relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-32 h-32 bg-amber-100/50 rounded-bl-full -z-0 pointer-events-none"></div>
+      
+      <p className="text-[20px] md:text-base text-slate-800 leading-relaxed tracking-wide w-full relative z-10">
+        プロフィール作成、お申し込み、お見合い、仮交際、真剣交際、そしてプロポーズ。<br />
+        <span className="text-sky-950 font-bold bg-amber-100/80 px-2 py-0.5 rounded border-b-2 border-amber-400">
+          婚活における一つひとつの意思決定をデータと経験に基づいてサポートし、納得のいく未来へあなたを導きます。
+        </span>
+      </p>
 
-            <div className="relative z-10">
-              <DungeonMap />
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="relative z-10 w-full">
+        <DungeonMap />
+      </div>
+    </div>
+  </div>
+</section>
+
+      
 
       {/* 人生は選択の連続 セクション */}
       <section className="py-12 bg-sky-100/60 text-slate-800 w-full border-y border-sky-200">

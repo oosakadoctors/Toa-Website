@@ -8,6 +8,7 @@ import woman3 from "@/public/woman3.jpg";
 import ceremony from "@/public/marriage1.jpg";
 import dad from "@/public/dad.jpg";
 import Link from "next/link";
+import LinksTable from "@/components/LinksTable"
 
 import img1 from "@/public/speed-marriage-6-months.jpg"
 import img2 from "@/public/good-future-together.jpg"
@@ -2413,6 +2414,8 @@ export default function Home() {
 
   </div>
 </section>
+
+{/* <LinksTable/> */}
 
     </div>
   );
