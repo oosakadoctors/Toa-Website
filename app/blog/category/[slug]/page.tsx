@@ -82,12 +82,12 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             カテゴリー
           </div>
 
-          {/* Title */}
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 mb-4 leading-tight">
+          {/* Title: 20px on mobile, scales up to 3xl/5xl on larger screens */}
+          <h1 className="text-[20px] sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-4 leading-tight">
             {category.title}
           </h1>
 
-          {/* Description: Set to 20px (text-[20px]) on mobile, sm:text-lg on larger screens */}
+          {/* Description: 20px on mobile, text-lg on sm screens */}
           {category.description && (
             <p className="text-[20px] sm:text-lg text-gray-600 leading-relaxed font-normal max-w-xl mx-auto">
               {category.description}
@@ -136,7 +136,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                         key={cat.slug}
                         className="bg-white/90 backdrop-blur-md text-gray-800 text-xs font-medium px-3 py-1 rounded-full shadow-xs"
                       >
-                        {cat.title}
+                        {/* {cat.title} */}
                       </span>
                     ))}
                   </div>
@@ -156,7 +156,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   </time>
                 )}
 
-                {/* Post Title: Set to 20px (text-[20px]) on mobile, sm:text-lg on larger screens */}
+                {/* Post Title: 20px on mobile, text-lg on sm screens */}
                 <h2 className="text-[20px] sm:text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2 leading-snug mb-4">
                   {post.title}
                 </h2>

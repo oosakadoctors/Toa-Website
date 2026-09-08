@@ -183,7 +183,7 @@ export default function PremiumNavbar() {
       links: [{ name: "婚活・結婚生活に必要なEQとその高めかたを説明", href: "/EQ" }],
     },
         {
-      title: "ブログ (準備中)",
+      title: "結婚における情報ブログ",
       isMenSection: false,
       icon: Crown,
       links: [
@@ -195,6 +195,7 @@ export default function PremiumNavbar() {
         { name: "⑥ お見合い・交際", href: "/blog/category/matchmaking-and-dating" },
         { name: "⑦ 未来の結婚生活", href: "/blog/category/future-marriage" },
         { name: "⑧ 両親", href: "/blog/category/parents" },
+        { name: "⑧ 結婚相談所について", href: "/blog/category/marriage-consultation" },
       ],
     },
     {

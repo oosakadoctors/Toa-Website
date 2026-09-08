@@ -39,11 +39,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   return (
-    <article className="max-w-3xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-extrabold tracking-tight mb-4">{post.title}</h1>
+    <article className="max-w-3xl mx-auto px-4 py-12 text-[20px] leading-relaxed">
+      {/* Proportionately increased header size from 4xl (36px) to 5xl (48px) / 6xl on larger screens */}
+      <h1 className="text-[40px] sm:text-6xl font-extrabold tracking-tight mb-4 leading-tight">
+        {post.title}
+      </h1>
       
       {post.publishedAt && (
-        <time className="text-sm text-gray-500 block mb-6">
+        <time className="text-base text-gray-500 block mb-6">
           {new Date(post.publishedAt).toLocaleDateString('en-US', {
             month: 'long',
             day: 'numeric',
@@ -62,8 +65,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       )}
 
-      {/* Render portable text body content */}
-      <div className="prose lg:prose-lg max-w-none">
+      {/* Render portable text body content with 20px base sizing */}
+      <div className="prose text-[20px] leading-relaxed max-w-none prose-headings:font-bold prose-p:text-[20px]">
         {post.body && <PortableText value={post.body} />}
       </div>
     </article>
