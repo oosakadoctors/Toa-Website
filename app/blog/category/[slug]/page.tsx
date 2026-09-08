@@ -129,18 +129,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                 )}
 
                 {/* Category Badges on Top Left of Image */}
-                {post.categories && post.categories.length > 0 && (
-                  <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
-                    {post.categories.map((cat) => (
-                      <span
-                        key={cat.slug}
-                        className="bg-white/90 backdrop-blur-md text-gray-800 text-xs font-medium px-3 py-1 rounded-full shadow-xs"
-                      >
-                        {/* {cat.title} */}
-                      </span>
-                    ))}
-                  </div>
-                )}
+   
               </div>
 
               {/* Content Body */}
