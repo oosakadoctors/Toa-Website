@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { Heart, Sparkles, Trophy, Flame, UserCheck, MessageCircle, ArrowRight, FileText, Compass, Brain, ShieldCheck } from 'lucide-react';
 import Image from 'next/image';
@@ -298,7 +296,6 @@ export default function FreeConsultationProcessPage() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }

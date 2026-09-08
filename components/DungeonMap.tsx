@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function DungeonMapPage() {
   const rooms = [
@@ -112,7 +113,7 @@ export default function DungeonMapPage() {
             <span>更新日：2026年09月05日</span>
             <span>｜</span>
             <span>
-              監修：〇〇結婚相談所（大阪梅田・IBJ加盟）代表カウンセラー（医療法人役員・病院勤務医・内科認定医）
+              監修：大阪梅田ドクターズ結婚相談所（大阪梅田・IBJ加盟）代表カウンセラー加藤（医療法人役員・病院勤務医・内科認定医）
             </span>
           </div>
         </header>
@@ -163,7 +164,7 @@ export default function DungeonMapPage() {
           </h2>
           <div className="space-y-4 text-sm sm:text-base leading-relaxed text-[#e2d8c3]">
             <p>
-              婚活ダンジョンマップは、〇〇結婚相談所が独自に開発した婚活の意思決定フレームワークです。活動開始から成婚判断まで、婚活の過程を「START」「10の分岐点」「BOSS（成婚判断）」という一続きの流れとして図式化し、各分岐点でどう判断するかを
+              婚活ダンジョンマップは、大阪梅田ドクターズ結婚相談所が独自に開発した婚活の意思決定フレームワークです。活動開始から成婚判断まで、婚活の過程を「START」「10の分岐点」「BOSS（成婚判断）」という一続きの流れとして図式化し、各分岐点でどう判断するかを
               <strong className="text-[#e9c982] underline font-medium ml-1">
                 活動を始める前にあらかじめ本人と仲人で決めておく
               </strong>
@@ -355,12 +356,12 @@ export default function DungeonMapPage() {
               婚活ダンジョンマップは、無料相談の際に一人ひとりの希望や性格に合わせて数値・基準を一緒に埋めながら作成します。
               テンプレートをそのまま当てはめるのではなく、同時進行人数への向き不向きや、意思決定のスピードなど、本人の傾向を踏まえたうえで各分岐点の基準を設定していきます。
             </p>
-            <a
-              href="/consultation"
-              className="inline-block bg-gradient-to-r from-[#b59c68] via-[#e9d5a6] to-[#806d49] text-[#101d25] font-bold text-base sm:text-lg px-10 py-4 rounded-lg shadow-lg hover:brightness-110 transition-all transform hover:-translate-y-0.5"
+            <Link
+             href="/consultation"
+            className="inline-block bg-gradient-to-r from-[#b59c68] via-[#e9d5a6] to-[#806d49] text-[#101d25] font-bold text-base sm:text-lg px-10 py-4 rounded-lg shadow-lg hover:brightness-110 transition-all transform hover:-translate-y-0.5"
             >
-              無料相談で自分だけのマップを作成する
-            </a>
+              無料相談を予約する
+            </Link>
           </div>
         </section>
 

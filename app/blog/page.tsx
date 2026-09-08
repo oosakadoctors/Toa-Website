@@ -2,12 +2,18 @@ import Link from 'next/link'
 import { client } from '@/sanity/lib/client'
 import { urlFor } from '@/sanity/lib/image'
 
+interface Author {
+  name: string
+  image?: any
+}
+
 interface Post {
   _id: string
   title: string
   slug: { current: string }
   publishedAt: string
   mainImage?: any
+  author?: Author
   category?: {
     title: string
     slug: { current: string }
@@ -21,6 +27,7 @@ async function getPosts(): Promise<Post[]> {
     slug,
     publishedAt,
     mainImage,
+    "author": author->{ name, image },
     "category": category->{ title, slug }
   }`
 
@@ -74,16 +81,41 @@ export default async function BlogListPage() {
 
             {/* Content Section */}
             <div className="flex flex-col flex-1 p-6">
-              {/* Date */}
-              {post.publishedAt && (
-                <time className="text-xs font-medium text-gray-400 mb-2 block">
-                  {new Date(post.publishedAt).toLocaleDateString('ja-JP', {
-                    year: 'numeric',
-                    month: '2-digit',
-                    day: '2-digit',
-                  })}
-                </time>
-              )}
+              {/* Author & Date Section */}
+              <div className="flex items-center justify-between gap-2 text-xs text-gray-500 mb-3">
+                {/* Author Info */}
+                {post.author?.name ? (
+                  <div className="flex items-center gap-2">
+                    {post.author.image ? (
+                      <img
+                        src={urlFor(post.author.image).width(48).height(48).url()}
+                        alt={post.author.name}
+                        className="w-6 h-6 rounded-full object-cover border border-gray-200"
+                      />
+                    ) : (
+                      <div className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-[10px] font-bold text-gray-600">
+                        {post.author.name.charAt(0)}
+                      </div>
+                    )}
+                    <span className="font-medium text-gray-700">
+                      {post.author.name}
+                    </span>
+                  </div>
+                ) : (
+                  <span />
+                )}
+
+                {/* Published Date */}
+                {post.publishedAt && (
+                  <time className="text-gray-400 font-medium">
+                    {new Date(post.publishedAt).toLocaleDateString('ja-JP', {
+                      year: 'numeric',
+                      month: '2-digit',
+                      day: '2-digit',
+                    })}
+                  </time>
+                )}
+              </div>
 
               {/* Title */}
               <h2 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2 leading-snug mb-4">
