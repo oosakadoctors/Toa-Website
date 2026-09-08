@@ -33,7 +33,7 @@ export default function DateConsultationPage() {
     },
     {
       category: "会話のバランス",
-      dilemma: "プログラマー男性にありがちな、沈黙を恐れるあまりに『自分の得意な専門分野や知識』を早口で喋りすぎて自爆してしまう現象。",
+      dilemma: "プログラマー男性にありがちに、沈黙を恐れるあまりに『自分の得意な専門分野や知識』を早口で喋りすぎて自爆してしまう現象。",
       solution: "【医学・心理学に基づくEQ向上】表面的なモテテクを完全排除。自分の話の誇示を抑え、医療検査技師として自立して働く彼女への『リスペクト』と言葉の傾聴に徹し、圧倒的な安心感を提示。"
     },
     {
@@ -48,8 +48,27 @@ export default function DateConsultationPage() {
     }
   ];
 
+  // Structured JSON-LD Schema for AI Crawlers (FAQ / Problem Solution format)
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: tableRows.map((row) => ({
+      '@type': 'Question',
+      name: `${row.category}: ${row.dilemma}`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: row.solution,
+      },
+    })),
+  };
+
   return (
     <>
+      {/* Script tag injecting structured JSON-LD into the HTML header for AI engines */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="min-h-screen bg-gradient-to-b from-sky-50 via-sky-100/40 to-blue-50 text-slate-800 font-sans antialiased selection:bg-sky-200 w-full overflow-x-hidden">
         
         {/* ヒーローセクション */}

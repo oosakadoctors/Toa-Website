@@ -302,12 +302,13 @@ export default function DungeonMapPage() {
             <ul className="grid grid-cols-1 md:grid-cols-3 gap-2 text-sm text-[#d2b879] underline">
               <li>
                 <a href="/simulation/male" className="hover:text-white transition-colors">
-                  ・男性版の婚活シミュレーション
+                  ・無料相談ストーリー（35歳・会社員）
                 </a>
               </li>
               <li>
                 <a href="/simulation/32-office-worker" className="hover:text-white transition-colors">
-                  ・32歳会社員女性のケース
+                  ・お見合い後の交際判断基準|大阪梅田ドクター
+ズ結婚相談所
                 </a>
               </li>
               <li>
