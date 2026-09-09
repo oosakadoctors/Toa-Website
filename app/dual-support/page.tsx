@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Sparkles, Trophy, Flame, UserCheck, MessageCircle, ArrowRight, FileText, Compass, Brain, ShieldCheck } from 'lucide-react';
+import { Heart, Sparkles, Trophy, Flame, UserCheck, MessageCircle, ArrowRight, ArrowLeft, FileText, Compass, Brain, ShieldCheck } from 'lucide-react';
 import type { Metadata } from 'next';
 
 /* ============================================================================
@@ -221,6 +221,14 @@ export default function DualSupportPage() {
               結論:相談相手が2人いることで、1人担当制の弱点はほぼ解消されます。
             </p>
           </div>
+
+          <div className="sm:hidden flex items-center justify-center my-2">
+  <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full  bg-blue-500 text-white font-bold text-sm shadow-[0_0_12px_rgba(244,63,94,0.4)] animate-pulse">
+    <ArrowLeft className="w-4 h-4 animate-[bounce_1.5s_infinite] -rotate-0" />
+    <span>スライドします</span>
+    <ArrowRight className="w-4 h-4 animate-[bounce_1.5s_infinite]" />
+  </p>
+</div>
 
           <div className="overflow-x-auto bg-white rounded-2xl shadow-md border-2 border-sky-200">
             <table className="w-full text-left border-collapse min-w-[600px]">

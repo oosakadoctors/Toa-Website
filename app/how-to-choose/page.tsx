@@ -9,7 +9,8 @@ import {
   Crown, 
   HelpCircle, 
   Check, 
-  ArrowRight
+  ArrowRight,
+  ArrowLeft
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -390,10 +391,18 @@ export default function HowToChoosePage() {
         </section>
 
         {/* Comparison Table */}
-        <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-6">
-          <h2 className="text-xl sm:text-2xl font-black text-gray-900 border-b border-rose-100 pb-4" style={{ wordBreak: 'break-all' }}>
+        <section className="rounded-2xl bg-white  border-rose-200 p-1 sm:p-8 shadow-sm space-y-6">
+          
+          <h2 className="text-xl text-center sm:text-2xl font-black text-gray-900 border-b border-rose-100 pb-4" style={{ wordBreak: 'break-all' }}>
             結婚相談所比較・早見表
           </h2>
+<div className="sm:hidden flex items-center justify-center my-2">
+  <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-rose-500 to-pink-500 text-white font-bold text-sm shadow-[0_0_12px_rgba(244,63,94,0.4)] animate-pulse">
+    <ArrowLeft className="w-4 h-4 animate-[bounce_1.5s_infinite] -rotate-0" />
+    <span>スライドします</span>
+    <ArrowRight className="w-4 h-4 animate-[bounce_1.5s_infinite]" />
+  </p>
+</div>
 
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse min-w-[650px]">

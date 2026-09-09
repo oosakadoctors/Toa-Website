@@ -20,6 +20,7 @@ import {
 import Image from 'next/image';
 import type { Metadata } from 'next';
 
+import Link from "next/link";
 export const metadata: Metadata = {
   title:
     '北新地駅徒歩1分の結婚相談所|豊中・西宮・三宮・難波からアクセス抜群|大阪梅田ドクターズ結婚相談所',
@@ -499,12 +500,12 @@ export default function LocationAccessPage() {
               してもらえなかった」という心配もありません。
               <br />
               <br />
-              <a
-                href="/support"
+              <Link
+                href="/marriage-hunting"
                 className="text-indigo-700 hover:text-indigo-900 font-bold underline decoration-indigo-400 decoration-2 underline-offset-2"
               >
                 婚活って何?から一歩ずつ(初心者むけサポート内容説明)
-              </a>
+              </Link>
               も充実しておりますので、どうぞお気軽にお尋ねください。
             </p>
           </div>
@@ -516,12 +517,12 @@ export default function LocationAccessPage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-[20px] md:text-base font-bold text-sky-950">
             当相談所の詳しい強みやサポート内容については「
-            <a
-              href="/reasons"
+            <Link
+              href="/why-us"
               className="text-sky-700 hover:text-sky-900 underline decoration-sky-400 decoration-2 underline-offset-2"
             >
               ドクターズ結婚相談所が選ばれる理由
-            </a>
+            </Link>
             」も併せてご覧ください。
           </p>
         </div>
@@ -532,12 +533,12 @@ export default function LocationAccessPage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-[20px] md:text-base text-slate-700">
             代表カウンセラーからの詳しい挨拶や想いについては「
-            <a
-              href="/message"
-              className="text-sky-700 hover:text-sky-900 font-bold underline decoration-sky-400 decoration-2 underline-offset-2"
+            <Link
+             href="/main-counselor"
+             className="text-sky-700 hover:text-sky-900 font-bold underline decoration-sky-400 decoration-2 underline-offset-2"
             >
-              メインカウンセラーのメッセージ
-            </a>
+                メインカウンセラーのメッセージ
+            </Link>
             」をお読みください。
           </p>
         </div>
@@ -565,12 +566,12 @@ export default function LocationAccessPage() {
             <br />
             <br />
             大阪・兵庫エリアで婚活・結婚相談所をお探しの方は、
-            <a
-              href="/free-consultation"
+            <Link
+              href="/contact"
               className="text-amber-200 hover:text-amber-100 font-extrabold underline decoration-amber-300 decoration-2 underline-offset-2"
             >
               まずは無料相談から
-            </a>
+            </Link>
             、当相談所の雰囲気やサ ポート体制をご確認ください。
           </p>
           <div className="pt-4 flex justify-center w-full">

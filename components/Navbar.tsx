@@ -136,7 +136,7 @@ export default function PremiumNavbar() {
         { name: "婚活初心者33歳男性プログラマーのお見合い後の相談実例", href: "/smart-dating" },
         { name: "大阪梅田ドクターズ結婚相談所の婚活カウンセリングとは|現役女医が実践する対話設計", href: "/dialogue-architecture" },
         { name: "結婚相談所、担当カウンセラーは1人で本当に十分?——2人体制という選択", href: "/dual-support" },
-        { name: "アクセス", href: "/location" },
+        { name: "北新地駅徒歩1分の結婚相談所|豊中・西宮・三宮・難波からもアクセス抜群", href: "/location" },
       ],
     },
     {
