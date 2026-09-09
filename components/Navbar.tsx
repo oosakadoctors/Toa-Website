@@ -67,6 +67,7 @@ export default function PremiumNavbar() {
         { name: "メインカウンセラーのメッセージ", href: "/main-counselor" },
         { name: "婚活でモテる人の特徴とは？", href: "/attraction-guide" },
         { name: "婚活って何？から一歩ずつ（初心者むけサポート内容説明）", href: "/marriage-hunting" },
+        { name: "結婚相談所の選び方", href: "/how-to-choose" },
         { name: "リアルな婚活の記録と成婚報告", href: "/dating-journeys" },
         { name: "特定商取引法に基づく表記・プライバシーポリシー", href: "/company-profile" },
       ],
@@ -135,6 +136,7 @@ export default function PremiumNavbar() {
         { name: "婚活初心者33歳男性プログラマーのお見合い後の相談実例", href: "/smart-dating" },
         { name: "大阪梅田ドクターズ結婚相談所の婚活カウンセリングとは|現役女医が実践する対話設計", href: "/dialogue-architecture" },
         { name: "結婚相談所、担当カウンセラーは1人で本当に十分?——2人体制という選択", href: "/dual-support" },
+        { name: "アクセス", href: "/location" },
       ],
     },
     {
