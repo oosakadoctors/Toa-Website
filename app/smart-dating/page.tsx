@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Sparkles, Trophy, Flame, UserCheck, MessageCircle, ArrowRight, FileText, Compass, Brain, ShieldCheck, MapPin, CheckCircle, Search, Calendar, Users, Briefcase } from 'lucide-react';
+import { Heart, Sparkles, Trophy, Flame, UserCheck, MessageCircle, ArrowRight, ArrowLeft, FileText, Compass, Brain, ShieldCheck, MapPin, CheckCircle, Search, Calendar, Users, Briefcase } from 'lucide-react';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import Footer from "@/components/Footer";
@@ -246,7 +246,13 @@ export default function DateConsultationPage() {
                 ネットの小手先のテクニックに頼らず、医学・心理学の観点から「お相手との深い関係性と安心感」を紡ぎ出すための、当相談所独自の個別指導プロセスです。
               </p>
             </div>
-
+          <div className="sm:hidden flex items-center justify-center my-2">
+  <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full  bg-blue-500 text-white font-bold text-sm shadow-[0_0_12px_rgba(244,63,94,0.4)] animate-pulse">
+    <ArrowLeft className="w-4 h-4 animate-[bounce_1.5s_infinite] -rotate-0" />
+    <span>スライドします</span>
+    <ArrowRight className="w-4 h-4 animate-[bounce_1.5s_infinite]" />
+  </p>
+</div>
             <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-xl bg-white">
               <table className="w-full border-collapse text-left text-sm text-slate-600 min-w-[600px]">
                 <thead className="bg-slate-950 text-white font-bold text-base">
@@ -258,6 +264,8 @@ export default function DateConsultationPage() {
                     </th>
                   </tr>
                 </thead>
+                
+
 
                 <tbody className="divide-y divide-slate-200 font-medium">
                   {tableRows.map((row, index) => (

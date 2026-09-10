@@ -1,9 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import { Check, Info, HelpCircle } from 'lucide-react';
-import Banner from "@/components/Banner"
-
-
+import Banner from "@/components/Banner";
 
 // ============================================================================
 // 1. Next.js SEO Metadata
@@ -11,27 +9,71 @@ import Banner from "@/components/Banner"
 export const metadata: Metadata = {
   title: "料金プラン | 大阪梅田ドクターズ結婚相談所",
   description: "大阪梅田ドクターズ結婚相談所の明確な料金プラン。月5名様限定の完全少人数制で、現役女医とベテランカウンセラーによる医学的・心理学的アプローチを圧倒的なコストパフォーマンスで提供します。",
+  alternates: {
+    canonical: "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/plan",
+  },
 };
 
 export default function PricePage() {
   // ============================================================================
-  // 2. SEO Schema (Using structured pricing data)
+  // 2. SEO Schemas (Service & BreadcrumbList)
   // ============================================================================
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    'name': '料金プラン | 大阪梅田ドクターズ結婚相談所',
-    'description': '月5名様限定の完全少人数制。明確な料金システムと安心の休会制度をご案内します。',
-    'provider': {
-      '@type': 'LocalBusiness',
-      'name': '大阪梅田ドクターズ結婚相談所',
-      'address': {
-        '@type': 'PostalAddress',
-        'addressLocality': 'Osaka',
-        'addressRegion': 'Osaka',
-        'addressCountry': 'JP'
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "結婚相談所・婚活サポート",
+    "provider": {
+      "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization"
+    },
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "関西"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "入会金",
+        "price": "150000",
+        "priceCurrency": "JPY"
+      },
+      {
+        "@type": "Offer",
+        "name": "初期プロデュース・登録料",
+        "price": "80000",
+        "priceCurrency": "JPY"
+      },
+      {
+        "@type": "Offer",
+        "name": "月会費",
+        "price": "15000",
+        "priceCurrency": "JPY"
+      },
+      {
+        "@type": "Offer",
+        "name": "成婚料",
+        "price": "250000",
+        "priceCurrency": "JPY"
       }
-    }
+    ]
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "ホーム",
+        "item": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "料金プランと少人数制について",
+        "item": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/plan"
+      }
+    ]
   };
 
   const pricingItems = [
@@ -66,7 +108,15 @@ export default function PricePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceJsonLd).replace(/</g, '\\u003c'),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, '\\u003c'),
+        }}
       />
 
       <div className="w-full bg-[#F4F7FA] py-12 sm:py-20 px-4 md:px-8">
@@ -138,8 +188,6 @@ export default function PricePage() {
             </div>
           </div>
 
-
-
           {/* --- Refund Legal Disclaimer Container --- */}
           <div className="rounded-2xl border border-amber-100 bg-amber-50/60 p-5 text-xs sm:text-sm leading-relaxed text-amber-900/90 flex gap-2">
             <span className="text-base shrink-0 mt-0.5">⚠️</span>
@@ -151,7 +199,7 @@ export default function PricePage() {
           {/* --- Vacation System Feature Block --- */}
           <div className="rounded-3xl border border-blue-200/60 bg-white p-6 sm:p-8 shadow-sm space-y-5">
             <div className="flex items-center gap-2 border-b border-slate-100 pb-3">
-              <HelpCircle className="w-6 h-6 text-blue-500 shrink-0" />
+              <HelpCircle className="w-6 h-6 text-blue-500 shrink-0"/>
               <h3 className="text-xl sm:text-2xl font-black text-[#102A43]">
                 安心の休会制度について
               </h3>
@@ -163,15 +211,15 @@ export default function PricePage() {
 
             <div className="bg-slate-50 rounded-2xl p-4 sm:p-6 space-y-4 text-sm sm:text-base text-gray-700 font-medium">
               <div className="flex gap-3 items-start">
-                <Check className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-blue-600 shrink-0 mt-0.5"/>
                 <p><span className="font-bold text-gray-900">休会中の月会費：月額 3,000円</span> （通常の月会費 15,000円は完全にストップします）</p>
               </div>
               <div className="flex gap-3 items-start">
-                <Check className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-blue-600 shrink-0 mt-0.5"/>
                 <p><span className="font-bold text-gray-900">休会期間：</span>1回のご申請につき最長3ヶ月まで取得可能</p>
               </div>
               <div className="flex gap-3 items-start">
-                <Check className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-blue-600 shrink-0 mt-0.5"/>
                 <p><span className="font-bold text-gray-900">休会中の特別サポート：</span>マッチングシステムはお休みになりますが、月1回まで担当カウンセラーへ直接LINEでお悩み相談が可能です。</p>
               </div>
               <div className="flex gap-3 items-start border-t border-gray-200/60 pt-3 text-xs text-gray-500">

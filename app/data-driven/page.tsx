@@ -242,7 +242,7 @@ export default function KansaiMemberDataPage() {
       addressLocality: "大阪市北区",
       streetAddress: "梅田1丁目2番2-200号 大阪駅前第2ビル2階",
     },
-    sameAs: ["https://page.line.me/279kpsce"],
+    sameAs: ["https://page.line.me/279kpsce",],
     memberOf: {
       "@type": "Organization",
       name: "IBJ(日本結婚相談所連盟)",

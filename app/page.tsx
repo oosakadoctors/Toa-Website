@@ -22,20 +22,52 @@ import Gallery from "@/components/Gallery"
 import mensMarriage from "@/public/soccerGirl1.jpg";
 import { useState } from "react";
 
-
-
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "結婚相談所に入会したら、本当にサクラはいませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、サクラは一切在籍しておりません。当相談所が加盟する結婚相談所連盟では、独身証明書・住民票・学歴証明書・収入証明書（男性必須）などの提出を義務付けています。身元が確実で、本気で結婚したい方だけが活動しているため、安心してパートナー探しに集中していただけます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "人見知りで、お見合いでうまく話せるか不安です。",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "お見合い前の服装選びや髪型のトータルコーディネートはもちろん、何を話せばいいかの会話シミュレーション（模擬お見合い）まで事前に行います。お見合い当日の流れやNGマナーも丁寧にご説明しますので、恋愛経験が少ない方でも自信を持って活動していただけます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "マッチングアプリと結婚相談所の最大の違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "最も大きな違いは、お相手の結婚に対する本気度とプロのサポートの有無です。アプリは手軽な反面、結婚の意思が低い方や既婚者が紛れ込むリスクがあります。結婚相談所では全員が良い人がいればすぐにでも結婚したいと考えているため、出会いから成婚までのスピードが早いのが特徴です。交際中の悩みやプロポーズのタイミングまでベテランカウンセラーが仲介・アドバイスを行う点も大きな違いです。"
+      }
+    }
+  ]
+};
 
 export default function Home() {
   const [expanded, setExpanded] = useState(false);
-  return (
-    <div className=" space-y-6 pb-2 md:pb-12">
-      
-      
-      {/* --- HERO SECTION --- */}
-      {/* Aspect-square on mobile keeps the space large enough to accommodate the bigger text comfortably */}
-{/* CHANGED: Lowered the height values to make the image length shorter vertically, keeping full viewport width */}
-<section className="w-full aspect-[1/1] relative overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
 
+  return (
+    <div className="space-y-6 pb-2 md:pb-12">
+      {/* Inject FAQ Schema Script directly */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+
+      {/* HERO SECTION */}
+      <section className="w-full aspect-[1/1] relative overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
   {/* Background Image */}
   <Image
     src="/cuteGirl1.jpg"
