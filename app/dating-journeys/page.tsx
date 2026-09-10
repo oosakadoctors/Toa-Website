@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "準備中 | 大阪梅田ドクターズ結婚相談所",
-  description: "大阪梅田ドクターズ結婚相談所の公式ウェブサイトは現在リニューアル準備中です。現役女医監修×ベテラン仲人による最高峰の婚活プロデュースを近日公開予定です。",
+  description: "大阪梅田ドクターズ結婚相談所の公式ウェブサイトは現在リニューアル準備中です。現役女医監修×ベテラン仲人によるベストを目指す婚活プロデュースを近日公開予定です。",
 };
 
 export default function ComingSoonPage() {

@@ -260,7 +260,7 @@ export default function FreeConsultationProcessPage() {
                 私たちが提供する「マッチングシート」「婚活未来図」「婚活未来診断MMM」。これらはすべて、あなたに「〇〇点です」といった、知能指数（IQ）のようなスコアや優劣をつけるためのものではありません。診断を完結させることが目的ではないのです。
               </p>
               <p>
-                婚活において最も大切なのは、機械的な条件の点数ではなく、お互いの感情を理解し、尊重し合える「EQ（心の知能指数）」や「人間性」です。
+                婚活において大切なのは、機械的な条件の点数ではなく、お互いの感情を理解し、尊重し合える「EQ（心の知能指数）」や「人間性」です。
               </p>
               <p className="bg-sky-100/70 border-l-4 border-sky-500 p-4 rounded-r-xl text-slate-900 font-semibold shadow-xs">
                 これらのツールはすべて、会員様ご自身が「自分の本当の価値観（高いEQ）」を深く知り、ご自身の人生の方向性を主体的に決めるための羅針盤（一助）として作成されました。
@@ -281,7 +281,7 @@ export default function FreeConsultationProcessPage() {
             まずはご自身の「婚活未来図」を、私達と一緒に描いてみませんか？
           </h2>
           <p className="text-sky-100 text-[20px] md:text-base leading-relaxed tracking-wide w-full max-w-2xl mx-auto font-medium">
-            私たちは、30代の皆様がこれまでのキャリアや人生経験を活かし、最も輝く形で未来のパートナーと出会える環境を整えています。<br /><br />
+            私たちは、30代の皆様がこれまでのキャリアや人生経験を活かし、輝く形で未来のパートナーと出会える環境を整えています。<br /><br />
             「まずはツールの詳細について聞いてみたい」「女医カウンセラーのロジカルなカウンセリングを体験してみたい」など、どのような動機でも歓迎です。当社のプレミアムな無料相談でお待ちしております。
           </p>
           <div className="pt-4 flex justify-center w-full">

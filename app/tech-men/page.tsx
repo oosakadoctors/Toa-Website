@@ -262,7 +262,7 @@ export default function TechMenStrategyPage() {
         <div className="bg-white/95 backdrop-blur-md shadow-2xl border border-sky-100 rounded-2xl sm:rounded-3xl p-4 sm:p-8 space-y-6">
           <h2 className="text-xl sm:text-2xl font-black text-slate-900 border-l-4 border-sky-500 pl-3 leading-relaxed">
             「結婚相談所は年齢層が高い」は大誤解。<br />
-            今、最もタイパを求める「20代の真剣婚活女性」が全国に約10,000人登録中！
+            今、タイパを求める「20代の真剣婚活女性」が全国に約10,000人登録中！
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
@@ -294,7 +294,7 @@ export default function TechMenStrategyPage() {
                 身元不明な相手の多いアプリとは違い、全員が「独身証明書」や「身分証」を100%提出している、結婚への本気度が高い女性ばかりです。
               </p>
               <p className="bg-sky-50 p-3.5 rounded-lg border border-sky-200 text-slate-900 font-bold">
-                30代前半の男性にとって、20代女性と最も高確率・安全に出会える場所が、実はここ（結婚相談所）なのです。
+                30代前半の男性にとって、20代女性と高確率・安全に出会える場所が、実はここ（結婚相談所）なのです。
               </p>
               <p className="text-xs text-slate-500">
                 ※日本結婚相談所連盟（IBJ）の登録会員数（2026年時点の最新データ）です。
@@ -356,7 +356,7 @@ export default function TechMenStrategyPage() {
                 ③【20年仲人の買い物同行＆写真プロデュース】
               </h3>
               <p className="text-slate-700 leading-relaxed">
-                お見合いやデートで女性に「絶対に外さない」服装を、仲人がアドバイスします。髪型や眉毛の整え方まで指定し、プロのカメラマンと最高の一枚を撮影します。
+                お見合いやデートで女性に「外さない」服装を、仲人がアドバイスします。髪型や眉毛の整え方まで指定し、プロのカメラマンと理想に近い一枚を撮影します。
               </p>
             </div>
 

@@ -307,7 +307,7 @@ export default function HighSpecStrategyPage() {
                   className="text-xl text-gray-600 leading-relaxed text-start mt-2"
                   style={{ wordBreak: 'auto-phrase' }}
                 >
-                  同じ世界を生きる同志としての絶対的な尊敬や安心が、二人の絆を強固にします。事実、同業種婚や似たフィールドの成婚が多いのもそのためです。
+                  同じ世界を生きる同志としての尊敬や安心が、二人の絆を強固にします。事実、同業種婚や似たフィールドの成婚が多いのもそのためです。
                 </p>
               </div>
 

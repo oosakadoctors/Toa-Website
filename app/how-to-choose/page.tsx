@@ -114,7 +114,7 @@ export default function HowToChoosePage() {
         "name": "マッチングアプリと結婚相談所は何が違いますか?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "最も大きな違いは、お相手の結婚に対する本気度とプロのサポートの有無です。結婚相談所では全員が結婚を前提に活動しているため、出会いから成婚までのスピードが早いのが特徴です。"
+          "text": "大きな違いは、お相手の結婚に対する本気度とプロのサポートの有無です。結婚相談所では全員が結婚を前提に活動しているため、出会いから成婚までのスピードが早いのが特徴です。"
         }
       },
       {
@@ -492,7 +492,7 @@ export default function HowToChoosePage() {
                 ④ 価値観の一致 → 医師監修のカウンセリングで「本当の理想像」を解剖
               </h3>
               <p className="text-[20px] text-gray-700 pl-5 pt-1.5 leading-relaxed">
-                心理学・脳科学・行動経済学のアプローチを用いて、「絶対に譲れない条件」と「実は妥協しても幸せになれるポイント」を整理し、条件だけでは見えないミスマッチを防ぎます。カウンセリングの詳細は<Link href="/dialogue-architecture" className="text-rose-600 underline font-semibold">婚活カウンセリングとは|現役女医が実践する対話設計</Link>でご紹介しています。
+                心理学・脳科学・行動経済学のアプローチを用いて、「譲れない条件」と「実は妥協しても幸せになれるポイント」を整理し、条件だけでは見えないミスマッチを防ぎます。カウンセリングの詳細は<Link href="/dialogue-architecture" className="text-rose-600 underline font-semibold">婚活カウンセリングとは|現役女医が実践する対話設計</Link>でご紹介しています。
               </p>
             </div>
 

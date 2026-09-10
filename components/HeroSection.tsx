@@ -38,7 +38,7 @@ export default function HeroSection() {
 
               <h2 className="text-lg sm:text-2xl lg:text-3xl font-black text-gray-900 tracking-tight leading-[1.4] lg:leading-[1.35] max-w-2xl mx-auto lg:mx-0">    
                 <span className="relative inline-block">
-                  現役女医監修×キャリア20年ベテランが仕掛ける「最高峰の婚活プロデュース」 
+                  現役女医監修×キャリア20年ベテランが仕掛ける「ベストを目指す婚活プロデュース」 
                   <span className="absolute bottom-1.5 left-0 w-full h-2.5 bg-gradient-to-r from-[#E6A2B3]/25 to-transparent -z-10 rounded-full" />
                 </span>
               </h2>
@@ -69,7 +69,7 @@ export default function HeroSection() {
                     現役女医のプロデュース
                   </h3>
                   <p className="text-[13px] text-gray-700 leading-relaxed font-bold">
-                    女医監修×キャリア20年ベテランが仕掛ける「最高峰の婚活プロデュース」
+                    女医監修×キャリア20年ベテランが仕掛ける「ベストを目指す婚活プロデュース」
                   </p>
                 </div>
               </div>

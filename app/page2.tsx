@@ -44,7 +44,7 @@ export default function HomePage() {
               <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-rose-900">
                 現役医師がデータとロジックで導く、
                 <br />
-                最短ルートの結婚相談所。
+                結婚相談所。
               </h2>
 
               <p className="mt-6 text-lg text-gray-600 leading-relaxed">

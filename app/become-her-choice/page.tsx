@@ -72,7 +72,7 @@ export default function BecomeTheManSheChoosesPage() {
           <header className="space-y-4">
 
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900">
-              🌟 彼女の心を最速で掴む男になれる唯一無二のサポート
+              🌟 彼女の心を最速で掴む男になれる他には少ないサポート
             </h2>
 
           </header>
@@ -121,7 +121,7 @@ EQ【感情知能】を高める方法を指導。
 
               <p>
                 会話だけではなく、人間関係そのものにおいて、
-                お互いに深く打ち解けるために最も大切なのは
+                お互いに深く打ち解けるために大切なのは
                 <span className="font-black text-gray-900">
                   「自己開示」と「感情の共有」
                 </span>

@@ -80,7 +80,7 @@ export default function IdealManPage() {
 
         <p className="text-slate-100 leading-relaxed font-medium text-base sm:text-lg">
           30代の働く男性は婚活市場において
-          <span className="font-black text-amber-300">「最も需要が高いプラチナ世代」</span>
+          <span className="font-black text-amber-300">「需要が高いプラチナ世代」</span>
           です。
         </p>
 
@@ -253,7 +253,7 @@ export default function IdealManPage() {
 
       <p>
         自立したキャリアを持ちながら、共働きライフでは
-        <span className="font-black text-gray-900">「最高のバディ」</span>
+        <span className="font-black text-gray-900">「理想に近いバディ」</span>
         として支え合える関係性を実現できます。
       </p>
 

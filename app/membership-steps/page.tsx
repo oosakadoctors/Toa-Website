@@ -92,7 +92,7 @@ export default function MembershipSteps() {
   <br />
 
   <p>
-    過酷な現実をお伝えしますが、婚活において「他力本願な姿勢」や「後ろ向きなマインド」のままでは、どれほど私たちが最高の武器（戦略・ネットワーク）をお渡ししても、格上のお相手から選ばれることは絶対にありません。あなたの大切な時間とお金を無駄にさせないためにも、このような場合は入会をご遠慮いただいております。
+    過酷な現実をお伝えしますが、婚活において「他力本願な姿勢」や「後ろ向きなマインド」のままでは、どれほど私たちが理想に近い武器（戦略・ネットワーク）をお渡ししても、格上のお相手から選ばれることはありません。あなたの大切な時間とお金を無駄にさせないためにも、このような場合は入会をご遠慮いただいております。
   </p>
 
 </div>
@@ -173,7 +173,7 @@ export default function MembershipSteps() {
       <br />
 
       <p className="font-black text-pink-600 text-lg">
-        3.【あなたが心折れそうな時ほど、最強の味方であり続けます】
+        3.【あなたが心折れそうな時ほど、あなたの味方であり続けます】
       </p>
 
       <p>
@@ -193,7 +193,7 @@ export default function MembershipSteps() {
     </span>
 
     <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
-      「この年齢だからこそ、もう絶対に負けたくない。最高のパートナーと、最高の人生を始めたい。」
+      「この年齢だからこそ、もう負けたくない。理想に近いパートナーと、理想に近い人生を始めたい。」
     </h2>
 
     <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
@@ -233,7 +233,7 @@ export default function MembershipSteps() {
       </p>
 
       <p>
-        あなたの「自分軸（アイデンティティ）」を尊重し、洗練されたステップで確かな未来へ導きます。
+        あなたの「自分軸（アイデンティティ）」を尊重し、洗練されたステップで確かな未来へお手伝いします。
       </p>
 
       <br />
@@ -281,7 +281,7 @@ export default function MembershipSteps() {
 
       <p>
         <span className="font-black text-gray-900">安心：</span>
-        あなた自身の「納得感」を最も大切にしながら、これからの進み方を一緒に考えます。
+        あなた自身の「納得感」を大切にしながら、これからの進み方を一緒に考えます。
       </p>
 
       <br />
@@ -292,7 +292,7 @@ export default function MembershipSteps() {
 
       <p>
         <span className="font-black text-gray-900">概要：</span>
-        独自の会話トレーニング（EQ向上）や外見のブランディングを行い、最高の状態で活動を開始。
+        独自の会話トレーニング（EQ向上）や外見のブランディングを行い、理想に近い状態で活動を開始。
       </p>
 
       <p>

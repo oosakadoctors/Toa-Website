@@ -115,7 +115,7 @@ export default function MensNavyPremiumLandingPage() {
             <div className="bg-gradient-to-b from-slate-900 to-slate-950 p-6 border-y md:border border-slate-800/80 flex flex-col justify-between w-full md:rounded-lg shadow-inner">
               <div className="w-full space-y-3">
                 <div className="w-8 h-8 rounded-full bg-blue-950 border border-blue-800 flex items-center justify-center text-sky-300 text-sm font-bold">03</div>
-                <h4 className="font-bold text-sky-200 text-base tracking-wide w-full">仕事の疲れがすべて溶ける「最高の癒やし」</h4>
+                <h4 className="font-bold text-sky-200 text-base tracking-wide w-full">仕事の疲れがすべて溶ける「理想に近い癒やし」</h4>
                 <p className="text-base text-slate-300 leading-relaxed w-full">
                   当相談所には、日頃から人を思いやるホスピタリティとEQ（感情知性）の高い女性が多く在籍しています。お互いに忙しい日々の中でも、二人の時間に一歩入れば、あなたの話を「うん、うん」と優しい瞳で聞いてくれ、そっと寄り添ってくれる。その圧倒的な包容力と癒やしの空間が、あなたの毎日のエネルギー源になります。
                 </p>
@@ -206,7 +206,7 @@ export default function MensNavyPremiumLandingPage() {
             </div>
             
             <h5 className="font-serif font-bold text-blue-950 text-base md:text-lg tracking-wide px-4 md:px-0 w-full">
-              妥協のない、最高の幸せをつかみ取りましょう！
+              妥協のない、理想に近い幸せをつかみ取りましょう！
             </h5>
             
             <div className="text-base text-slate-700 space-y-4 leading-relaxed px-4 md:px-0 w-full">
@@ -217,7 +217,7 @@ export default function MensNavyPremiumLandingPage() {
                 まずは仕事帰りに、あなたが想い描く「一番可愛いお相手」のイメージを、ワクワクしながら私たちに教えてください。
               </p>
               <p className="font-serif font-bold text-slate-950 text-center text-lg pt-4 w-full border-t border-dashed border-blue-100">
-                【大阪梅田ドクターズ結婚相談所】で、あなたの人生を最高にハッピーにする、<br className="hidden md:inline" />
+                【大阪梅田ドクターズ結婚相談所】で、あなたの人生をハッピーにする、<br className="hidden md:inline" />
                 恋人みたいな奥さんを見つけましょう！
               </p>
             </div>

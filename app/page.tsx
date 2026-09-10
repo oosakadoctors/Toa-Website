@@ -83,7 +83,7 @@ export default function Home() {
 大阪梅田ドクターズ結婚相談所
 現役医師監修・仲人歴20年のベテランカウンセラーがサポート。
 
-現役女医と男性ベテランカウンセラーが導く、至極のハイスペック婚活
+現役女医と男性ベテランカウンセラーが導く、ベストをめざすハイスペック婚活
 
 運命の相手と1年以内の成婚を目指す大人のための結婚相談所</p>
 
@@ -197,7 +197,7 @@ export default function Home() {
           現役女医医師と男性ベテラン仲人のダブルサポート！
         </p>
         <p className="text-xs sm:text-sm text-gray-600 leading-relaxed pt-1">
-          医学と心理学、20年の仲人経験を生かした唯一無二の結婚相談所
+          医学と心理学、20年の仲人経験を生かした他には少ない結婚相談所
           <span className="block mt-1 font-bold text-gray-800">【大阪梅田ドクターズ結婚相談所】</span>
         </p>
       </figcaption>
@@ -247,11 +247,11 @@ export default function Home() {
       <div className="flex-1">
 
         <h3 className="text-lg font-black text-gray-900 leading-snug">
-          １－現役女医とベテラン男性カウンセラーによる最高峰の婚活プロデュース
+          １－現役女医とベテラン男性カウンセラーによるベストを目指す婚活プロデュース
         </h3>
 
         <p className="mt-2 text-sm leading-relaxed font-medium text-gray-700">
-          ダブルサポートのハイクラス婚活。ハイスペックのための至極の婚活。
+          ダブルサポートのハイクラス婚活。ハイスペックのためのベストをめざす婚活。
         </p>
 
   <div
@@ -316,7 +316,7 @@ export default function Home() {
         </h3>
 
         <p className="mt-2 text-sm leading-relaxed font-medium text-gray-700">
-          医師・経営者・エリートが集うハイクラスな会員層。至極のハイスペックな出会いの可能性をあなたへ。
+          医師・経営者・エリートが集うハイクラスな会員層。ベストをめざすハイスペックな出会いの可能性をあなたへ。
         </p>
 
 <div
@@ -457,7 +457,7 @@ export default function Home() {
       >
         <p> 大阪・梅田エリア（北区・茶屋町・西梅田・東梅田周辺）には、多くのおすすめ結婚相談所や大手結婚情報サービス、人気の婚活サロンが点在しています。 </p> 
         <p> しかし、「AIマッチングだけの大手結婚相談所」や「サポートが薄い格安のマッチングアプリ」「アドバイザーの主観だけに頼る個人結婚相談所」を比較し、 どこを選べばいいか迷っている方も少なくありません。 </p> 
-        <p> 令和の最新婚活市場を勝ち抜き、20代・30代・40代の方が最短で成婚（婚活のゴール）を迎えるためには、 確かなエビデンスに基づいた婚活戦略が必要です。 </p> 
+        <p> 令和の最新婚活市場を勝ち抜き、20代・30代・40代の方が成婚（婚活のゴール）を迎えるためには、 確かなエビデンスに基づいた婚活戦略が必要です。 </p> 
         <p> 梅田で口コミ評判の高い優良な結婚相談所を目指す大阪梅田ドクターズ結婚相談所では、 他社には珍しいサポート体制として、 <span className="font-bold text-gray-900"> 「理性の医学」と「感性の仲人」 </span> が交わるダブルサポート体制をご提供します。 </p> 
         <p> 医学的・心理学的アプローチによって異性の本音をロジカルに分析し、 長年の成婚ノウハウによって現場での実践に落とし込む。 </p> 
         <p> この2つのプロフェッショナルによる二人三脚の丁寧なマンツーマンサポートこそが、 あなたをタイパよく幸せな結婚へと導く可能性があがる理由です。 </p>
@@ -726,7 +726,7 @@ export default function Home() {
 
       <h2 className="mt-3 text-3xl md:text-5xl font-black text-gray-900 leading-tight">
         誠実で笑顔が可愛い<br />
-        「最高の男性」に出会いませんか？
+        「理想に近い男性」に出会いませんか？
       </h2>
 
       <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-rose-300" />
@@ -854,7 +854,7 @@ export default function Home() {
     [text-shadow:_0_2px_0_#0f172a,_0_-2px_0_#0f172a,_2px_0_0_#0f172a,-2px_0_0_#0f172a,_0_4px_10px_rgba(15,23,42,0.95)]
   ">
     誠実で笑顔が可愛い<br className="block sm:hidden" />
-    「最高の男性」に出会いませんか？
+    「理想に近い男性」に出会いませんか？
   </p>
 
   <Link
@@ -952,7 +952,7 @@ export default function Home() {
       text-white
       drop-shadow-[0_2px_4px_rgba(15,23,42,0.85)]
     ">
-      最短で成婚を目指す男性の真剣婚活
+      なるべく早く成婚を目指す男性の真剣婚活
     </p>
   </div>
 
@@ -1021,7 +1021,7 @@ export default function Home() {
           100%
         </span>
         寄り添い、
-        愛らしいパートナーとのご縁へ導きます。
+        愛らしいパートナーとのご縁へお手伝いします。
       </p>
     </div>
 
@@ -1038,7 +1038,7 @@ export default function Home() {
             </h5>
 
             <p className="mt-1 text-base leading-relaxed text-gray-600">
-              最短で理想のお相手と出会うための婚活戦略をご紹介します。
+              理想のお相手と出会うための婚活戦略をご紹介します。
             </p>
 
             <div className="group mt-5 inline-flex items-center gap-2.5 rounded-full bg-white px-7 py-3 text-base font-black text-rose-600 shadow-lg transition-all duration-300 group-hover:bg-rose-50 group-hover:shadow-xl md:text-lg">
@@ -1223,7 +1223,7 @@ export default function Home() {
         <span className="font-bold text-rose-600">
           2人のプロ
         </span>
-        があなたの「絶対的な味方」となり、
+        があなたの「ベストの味方」となり、
         <span className="font-bold">
           24時間以内
         </span>
@@ -1708,7 +1708,7 @@ export default function Home() {
   <div className="max-w-5xl mx-auto mb-8 rounded-3xl border border-blue-100 bg-blue-50/50 p-5 md:p-8">
 
     <p className="text-gray-700 leading-relaxed font-medium">
-      当相談所は、最高のサポート品質と高い成婚実績を維持するため、
+      当相談所は、理想に近いサポート品質と、
       毎月の新規ご入会を
       <span className="font-black text-[#102A43]">
         【先着5名様限定】
@@ -1977,7 +1977,7 @@ export default function Home() {
 
       <p>
         医師監修のカウンセリング心理学や脳科学、行動経済学のアプローチを用いて、
-        「絶対に譲れない条件」と「実は妥協しても幸せになれるポイント」を整理し、
+        「譲れない条件」と「実は妥協しても幸せになれるポイント」を整理し、
         ミスマッチや早期離婚を未然に防ぎます。
       </p>
 
@@ -2062,7 +2062,7 @@ export default function Home() {
 </div>
   <div className="space-y-5 text-gray-700 leading-relaxed text-base md:text-lg">
     <p>
-      お見合いでお互いに良い印象を持てば「仮交際」へと進みます。ここからが成婚の鍵を握る最も重要な時期です。デートの場所選びから、嫌われないLINEの返信頻度、仮交際お断りの理由分析まで、ベテラン仲人がリアルタイムで的確にアドバイスします。
+      お見合いでお互いに良い印象を持てば「仮交際」へと進みます。ここからが成婚の鍵を握る重要な時期です。デートの場所選びから、嫌われないLINEの返信頻度、仮交際お断りの理由分析まで、ベテラン仲人がリアルタイムで的確にアドバイスします。
     </p>
 
     <p>
@@ -2104,7 +2104,7 @@ export default function Home() {
     </p>
 
     <p>
-      多くの会員様が半年以内でのスピード成婚を叶えて笑顔で卒業されています
+      会員様様が半年での成婚を目指せます。
     </p>
   </div>
 </div>
@@ -2138,7 +2138,7 @@ export default function Home() {
     </p>
 
     <p>
-      また、必ずしも理想像とご自身との相性が良いとは限りません。
+      また、しも理想像とご自身との相性が良いとは限りません。
       恋愛は、自分のアイデンティティを映す鏡のようなものです。
     </p>
 
@@ -2280,7 +2280,7 @@ export default function Home() {
         「ハイステータス 結婚相談所 医師在籍」での出会いを希望し、
         「医師 婚活 結婚相談所 現役医師サポート」や
         「女医 婚活 相談所 ベテランカウンセラー」の強みを活かして
-        質の高い出会いを掴みたい方。
+        いい出会いを掴みたい方。
       </p>
     </div>
 
@@ -2367,7 +2367,7 @@ export default function Home() {
 
       <div className="pl-0 sm:pl-11">
         <p className="text-gray-700 leading-relaxed">
-          最も大きな違いは
+          大きな違いは
           <span className="font-bold text-gray-900">
             「お相手の結婚に対する本気度」と「プロのサポートの有無」
           </span>

@@ -56,7 +56,7 @@ const navLinks = [
   { name: 'ハイスペックなあなたへ', href: '/elite-matchmaking', icon: Crown },
   { name: '少人制のハイクラス成婚', href: '/executive', icon: Gem },
   { name: 'いい人がいない！ともう３０代のあなたへ', href: '/consider', icon: AlertCircle },
-  { name: '誠実で笑顔が可愛い「最高の男性」にであいませんか？', href: '/ideal-man', icon: Heart },
+  { name: '誠実で笑顔が可愛い「理想に近い男性」にであいませんか？', href: '/ideal-man', icon: Heart },
   { name: '男性のための戦略', href: '/mens-strategy', icon: Target },
   { name: '僕の条件で出会える女性は？', href: '/ideal-woman', icon: User },
   { name: '可愛い子に選ばれる男の戦略', href: '/become-her-choice', icon: Star },

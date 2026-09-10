@@ -79,7 +79,7 @@ export default function PremiumNavbar() {
       links: [
         { name: "ハイスペック男性と結婚する方法", href: "/advantages" },
         { name: "３０代婚活でいい人がいないと思うあなたへ", href: "/consider" },
-        { name: "笑顔の可愛い最高の男性が惹かれる高いＥＱ", href: "/ideal-man" },
+        { name: "笑顔の可愛い理想に近い男性が惹かれる高いＥＱ", href: "/ideal-man" },
       ],
     },
     {
@@ -132,11 +132,20 @@ export default function PremiumNavbar() {
         { name: "婚活ダンジョンマップと医師×仲人のダブルサポート体制", href: "/dungeon-map" },
         { name: "32歳会社員女性（婚活初心者）の無料相談ストーリー", href: "/vibe" },
         { name: "無料相談ストーリー（35歳・会社員）", href: "/mens-consultation" },
+        { name: "女の話", href: "/womans-story" },
         { name: "お見合い後の交際判断基準|大阪梅田ドクターズ結婚相談所", href: "/matchmaking-criteria" },
         { name: "婚活初心者33歳男性プログラマーのお見合い後の相談実例", href: "/smart-dating" },
         { name: "大阪梅田ドクターズ結婚相談所の婚活カウンセリングとは|現役女医が実践する対話設計", href: "/dialogue-architecture" },
         { name: "結婚相談所、担当カウンセラーは1人で本当に十分?——2人体制という選択", href: "/dual-support" },
         { name: "北新地駅徒歩1分の結婚相談所|豊中・西宮・三宮・難波からもアクセス抜群", href: "/location" },
+      ],
+    },
+        {
+      title: "データに基づく結婚相談所での婚活",
+      icon: UserRound,
+      links: [
+        { name: "結婚相談所は、理想の結婚生活をつかむ場所。「最後の砦」イメージはもう古い", href: "/data-driven" },
+
       ],
     },
     {

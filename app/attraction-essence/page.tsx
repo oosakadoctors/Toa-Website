@@ -89,12 +89,12 @@ export default function EssentialQuestionPage() {
               <div className="flex items-center gap-3 mb-4">
                 <span className="flex items-center justify-center w-8 h-8 rounded-full bg-amber-500 text-white font-black text-sm shrink-0 shadow-xs">2</span>
                 <h3 className="text-[18px] sm:text-lg font-bold text-slate-900">
-                  「外見」とは、最も外側にある内面である
+                  「外見」とは、外側にある内面である
                 </h3>
               </div>
               <div className="pl-0 sm:pl-11 space-y-4">
                 <p>
-                  心理学において、外見とは「最も外側にある内面」と定義されます。<br />
+                  心理学において、外見とは「外側にある内面」と定義されます。<br />
                   写真をみてお見合い自体は成立しているのに、実際会った際に男性が「外見に惹かれない」とお断りする時、彼らは<strong>「表情や佇まいから、ネガティブな内面の状態を察知して拒絶している」</strong>ことも多いです。
                 </p>
                 <div className="bg-amber-50/60 p-4 rounded-xl border border-amber-200/70 my-4 shadow-2xs">
@@ -135,7 +135,7 @@ export default function EssentialQuestionPage() {
                 <p>
                   輝くような雰囲気をかもしだすのは多くの人には難しく感じるかもしれません。<br />
                   しかし、数多くの成婚を見届けてきた大阪梅田ドクターズ結婚相談所から言わせてください。<br />
-                  <strong className="text-amber-700">この世界に、『いいところが1つもない人』なんて、絶対に存在しません。</strong>
+                  <strong className="text-amber-700">この世界に、『いいところが1つもない人』なんて、存在しません。</strong>
                 </p>
                 <p>
                   人を惹きつける外見としてのオーラ、雰囲気の本質とは、世間が言うような大層なキャリアや、地位だけではないのです。あなたがこれまでの人生のどこかで、誰にも言わずに『少しだけがんばってきた何か』。それこそが、あなたの静かな自信になり、消えないオーラ（魅力）の源泉になります。
@@ -158,7 +158,7 @@ export default function EssentialQuestionPage() {
                 </div>
 
                 <p>
-                  他人から見れば、小さくて見過ごされてしまうような『あなたの小さながんばり』。その積み重ね（歴史）こそが、あなたの振る舞いや、お相手の話を聞く眼差し、ふとした時の微笑みに、<strong>独自の温かい『雰囲気』</strong>として必ず現れています。<br /><br />
+                  他人から見れば、小さくて見過ごされてしまうような『あなたの小さながんばり』。その積み重ね（歴史）こそが、あなたの振る舞いや、お相手の話を聞く眼差し、ふとした時の微笑みに、<strong>独自の温かい『雰囲気』</strong>として現れています。<br /><br />
                   男性が最終的に『この人と一生を共にしたい』と中身に惚れる瞬間とは、あなたが演じた表面的な姿を見た時ではなく、あなたが自分の人生で小さくがんばってきた歴史（いいところ）を、誇らず、でも大切に、等身大で差し出してくれた瞬間です。
                 </p>
               </div>
@@ -169,7 +169,7 @@ export default function EssentialQuestionPage() {
         {/* --- クロージングメッセージ CARD --- */}
         <div className="bg-gradient-to-br from-amber-100/90 via-amber-50/95 to-yellow-100/90 backdrop-blur-md p-6 sm:p-10 border border-amber-200/80 rounded-3xl text-center shadow-2xl">
           <p className="text-[18px] text-slate-800 leading-relaxed max-w-3xl mx-auto font-medium">
-            大阪梅田ドクターズ相談所は、人生の本質に向き合い、あなたが自分では気づいていない、あるいは忘れてしまっている『小さながんばり（最高の魅力）』を対話の中から一緒に見つけ出し、それを自信（オーラ）に変えて、お相手に届けるためのパートナーです。
+            大阪梅田ドクターズ相談所は、人生の本質に向き合い、あなたが自分では気づいていない、あるいは忘れてしまっている『小さながんばり（理想に近い魅力）』を対話の中から一緒に見つけ出し、それを自信（オーラ）に変えて、お相手に届けるためのパートナーです。
           </p>
           <div className="pt-8">
             <button className="inline-block bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-[18px] font-bold py-4 px-8 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition duration-200 cursor-pointer">

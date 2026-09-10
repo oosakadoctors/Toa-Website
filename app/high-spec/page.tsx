@@ -33,7 +33,7 @@ export default function EliteMatchmakingPage() {
           </p>
 
           <p className="mt-8 text-lg leading-8 text-gray-700">
-            成功している方ほど、「最短で最良の結果を得る」という価値を
+            成功している方ほど、「タイパよい結果を得る」という価値を
             理解しています。結婚も同じです。
           </p>
 
@@ -60,7 +60,7 @@ export default function EliteMatchmakingPage() {
           <p className="mt-6 text-lg leading-8 text-gray-700">
             お相手に困っているからではありません。
             「人生全体の幸福度を最大化する」という、
-            最も合理的な選択だからです。
+            合理的な選択だからです。
           </p>
 
         </div>

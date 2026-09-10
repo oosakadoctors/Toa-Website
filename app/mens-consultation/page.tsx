@@ -362,7 +362,7 @@ export default function SimulationMalePage() {
               まずはご自身の「婚活未来図」を、私達と一緒に描いてみませんか？
             </h2>
             <p className="text-sky-100 text-[20px] md:text-base leading-relaxed tracking-wide w-full max-w-2xl mx-auto font-medium">
-              私たちは、30代の皆様がこれまでのキャリアや人生経験を活かし、最も輝く形で未来のパートナーと出会える環境を整えています。<br /><br />
+              私たちは、30代の皆様がこれまでのキャリアや人生経験を活かし、輝く形で未来のパートナーと出会える環境を整えています。<br /><br />
               「まずはツールの詳細について聞いてみたい」「女医カウンセラーのロジカルなカウンセリングを体験してみたい」など、どのような動機でも歓迎です。当社のプレミアムな無料相談でお待ちしております。
             </p>
             <div className="pt-4 flex justify-center w-full">

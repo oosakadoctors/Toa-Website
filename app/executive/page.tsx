@@ -99,7 +99,7 @@ export default function HighClassSupportPage() {
           </div>
 
           <h3 className="mt-1 font-bold text-gray-900">
-            誰もが「最高峰のサポート」で活動できる一律料金制
+            誰もが「ベストを目指すサポート」で活動できる一律料金制
           </h3>
 
         </div>
@@ -182,13 +182,13 @@ export default function HighClassSupportPage() {
               <DollarSign className="w-5 h-5" />
             </div>
             <h2 className="text-xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-tight pb-2">
-              誰もが「最高峰のサポート」で活動できる一律料金制
+              誰もが「ベストを目指すサポート」で活動できる一律料金制
             </h2>
           </div>
           
           <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
             <p>
-              多くの結婚相談所では、実績のあるメインカウンセラーのサポートを受けるために、追加料金や高額な上位プランが必要となります。しかし、大阪梅田ドクターズ結婚相談所では<span className="font-bold text-gray-900 border-b-2 border-[#E6A2B3]">「すべての会員様に、最高品質のサポートで行き届いた成婚をお届けしたい」</span>と考えています。
+              多くの結婚相談所では、実績のあるメインカウンセラーのサポートを受けるために、追加料金や高額な上位プランが必要となります。しかし、大阪梅田ドクターズ結婚相談所では<span className="font-bold text-gray-900 border-b-2 border-[#E6A2B3]">「すべての会員様に、一定の品質のサポートで行き届いた成婚をお届けしたい」</span>と考えています。
             </p>
             <p>
               そのため、当相談所では担当者による料金の格差は一切ございません。
@@ -224,7 +224,7 @@ export default function HighClassSupportPage() {
               この贅沢な2名体制を維持し、お一人おひとりに限界まで手をかけるため、私たちはあえて<span className="font-bold text-gray-900">【完全少人数制】</span>という選択をしています。「少人数制だと、今すぐには入会できないの？」と思われるかもしれません。
             </p>
             <p className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
-              私たちは、現在活動されている会員様へのレスポンスを最優先し、サポートの質を絶対に落さないよう、毎月の<span className="font-bold text-red-600">「新規ご入会枠」を毎月5名に限定</span>させていただいております。
+              私たちは、現在活動されている会員様へのレスポンスを最優先し、サポートの質を落さないよう、毎月の<span className="font-bold text-red-600">「新規ご入会枠」を毎月5名に限定</span>させていただいております。
             </p>
             <p className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
               在籍会員様が成婚退会されるペースに合わせて順番にご案内する形をとることで、会員様全員が「いつでもプロにすぐ相談できる環境」を徹底して担保しています。
@@ -244,7 +244,7 @@ export default function HighClassSupportPage() {
               激務による疲労やストレスを理解しメンタルサポートをする女医、そして、細かなマナーから様々な困難を乗り越える技を熟知したベテランカウンセラーの戦略。
             </p>
             <p className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
-              2人のプロの目があるからこそ、常に客観的でブレのない正しい判断が可能です。あなたの大切な未来を、「誰が担当になるか分からない」といった不安のない、最高峰のサポート環境でお迎えいたします。
+              2人のプロの目があるからこそ、常に客観的でブレのない正しい判断が可能です。あなたの大切な未来を、「誰が担当になるか分からない」といった不安のない、ベストを目指すサポート環境でお迎えいたします。
             </p>
           </div>
 
@@ -377,7 +377,7 @@ export default function HighClassSupportPage() {
           <HeartHandshake className="w-7 h-7 text-[#E6A2B3] mx-auto mb-2 animate-pulse" />
           <h3 className="text-xl sm:text-2xl font-black mb-1.5">毎月5名様限定のプレミアム相談枠</h3>
           <p className="space-y-2 text-gray-400 leading-relaxed font-medium w-full">
-            質の高いダブルサポートと、妥協のない戦略的な出会いを担保するため、新規ご入会は毎月5名様に絞らせていただいております。ご自身のキャリアと人生にふさわしい最高峰の環境をお探しの方は、まずはお気軽に無料カウンセリングからお申し込みください。
+            ダブルサポートと、妥協のない戦略的な出会いを担保するため、新規ご入会は毎月5名様に絞らせていただいております。ご自身のキャリアと人生にふさわしいベストを目指す環境をお探しの方は、まずはお気軽に無料カウンセリングからお申し込みください。
           </p>
 
           <div className="flex flex-col sm:flex-row gap-2 justify-center items-center w-full pt-3">

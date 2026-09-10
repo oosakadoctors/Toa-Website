@@ -11,7 +11,7 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "大阪梅田ドクターズ結婚相談所",
-  url: "https://www.umeda-doctors-marry.com",
+  url: "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp",
   address: {
     "@type": "PostalAddress",
     streetAddress: "梅田1丁目2番2-200号 大阪駅前第2ビル2階3-1-2",
@@ -32,12 +32,12 @@ export const metadata: Metadata = {
 
   // 優先度 2: 日本語SEO・ローカル検索（大阪・梅田）に特化したタイトルと説明文
   title: {
-    // 32文字：Googleの検索結果で絶対に途切れない、最も強力なキーワードの組み合わせ
+    // 32文字：Googleの検索結果で途切れない、強力なキーワードの組み合わせ
     default: '大阪梅田ドクターズ結婚相談所｜20代30代のハイクラス婚活', 
     template: '%s ｜ 大阪梅田ドクターズ結婚相談所', 
   },
   // 108文字：スマホの検索画面にジャストサイズで収まる、医師監修と実績をアピールした文章
-  description: '大阪梅田でハイクラス婚活・スピード成婚なら当相談所へ。現役医師監修×仲人歴20年のベテランカウンセラーが、医学的アプローチと丁寧なマンツーマンサポートで、20代・30代の1年以内の成婚へ導きます。',
+  description: '大阪梅田でハイクラス婚活・スピード成婚なら当相談所へ。現役医師監修×仲人歴20年のベテランカウンセラーが、医学的アプローチと丁寧なマンツーマンサポートで、20代・30代の1年以内の成婚へお手伝いします。',
   
   // サイト内でアピールされている、ユーザーが実際に検索するキーワード
   keywords: [

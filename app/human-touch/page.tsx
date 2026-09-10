@@ -43,7 +43,7 @@ export default function AiCounselorValuePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    'headline': 'AI（人工知能）には絶対にできない、プロのカウンセラーだからこそ創り出せる「成婚」の真実',
+    'headline': 'AI（人工知能）にはできない、プロのカウンセラーだからこそ創り出せる「成婚」の真実',
     'description': 'AIに丸投げしない、人間主導の最新データ婚活。スケジュール管理の最適化から、お相手に確認すべき金銭感覚・親族関係の質問候補の作成まで。ベテランの経験知で高度な生成AIを安全に活用し、多角的・客観的な提案を行います。最終決定権は100%あなたにあります',
     'publisher': {
       '@type': 'Organization',
@@ -82,7 +82,7 @@ export default function AiCounselorValuePage() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
-            AI（人工知能）には絶対にできない、プロのカウンセラーだからこそ創り出せる「成婚」の真実
+            AI（人工知能）にはできない、プロのカウンセラーだからこそ創り出せる「成婚」の真実
           </h1>
 
           {/* YELLOW TEXT */}
@@ -95,7 +95,7 @@ export default function AiCounselorValuePage() {
 
             {/* BLACK TEXT */}
             <p className="text-gray-800 text-[20px] leading-relaxed">
-              どれだけテクノロジーが進化しても、「結婚」という人生最大の決断において、AIには絶対に立ち入れない、私たち人間にしかできない領域があります。
+              どれだけテクノロジーが進化しても、「結婚」という人生最大の決断において、AIには立ち入れない、私たち人間にしかできない領域があります。
             </p>
             <p className="text-gray-800 text-[20px] leading-relaxed font-bold">
               私たちが何よりも大切にしている、プロのカウンセラーにしかできない3つの本当の価値をお伝えします。
@@ -124,7 +124,7 @@ export default function AiCounselorValuePage() {
             </h2>
             <p className="text-[20px]">
               AIは「誰にでもウケる平均的にきれいな文章」を作れますが、「あなたが本当に選ばれたい特定のお相手（ハイクラス層など）」の心を動かすマーケティング戦略は持ち合わせていません。<br />
-              なぜなら、人間の感情は理屈通りには動かないからです。仲人歴20年のベテランの経験知と、ドクターズ相談所ならではの視点から、「今、あなたが狙うべきお相手層の心理には、どの言葉が最も深く刺さるか」をあなたと一緒に相談します。AIの計算を超えた「選ばれるための戦略」をハンドメイドで構築します。
+              なぜなら、人間の感情は理屈通りには動かないからです。仲人歴20年のベテランの経験知と、ドクターズ相談所ならではの視点から、「今、あなたが狙うべきお相手層の心理には、どの言葉が深く刺さるか」をあなたと一緒に相談します。AIの計算を超えた「選ばれるための戦略」をハンドメイドで構築します。
             </p>
           </div>
 
@@ -154,7 +154,7 @@ export default function AiCounselorValuePage() {
         <section className="bg-amber-50/90 rounded-3xl border-2 p-6 sm:p-10 border-amber-200 shadow-lg space-y-6 backdrop-blur-sm">
           <div className="space-y-3 border-b-2 border-amber-200 pb-4">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-amber-950 leading-tight">
-              結論：AIを「最高の武器」とし、あなたが「主役」となる婚活
+              結論：AIを「理想に近い武器」とし、あなたが「主役」となる婚活
             </h2>
             <p className="text-[20px] font-medium text-amber-900">
               最先端の生成AIシステムが婚活にもたらすものは、あなたの成婚確率を高めるための客観的な「データと提案」に過ぎません。アドバイスはどこまでいっても選択肢の一つであり、すべての答えを決め、自らの未来を開くのはあなた自身です。
@@ -173,7 +173,7 @@ export default function AiCounselorValuePage() {
           </div>
 
           <p className="text-[20px] text-gray-800 leading-relaxed">
-            医療界のリアルを知り尽くした【現役女性医師カウンセラー】と、百戦錬磨の【ベテラン男性仲人】が、AIという強力な武器を使いこなしながら、あなたという「主役」の横で最高の軍師として最後まで温かく寄り添い続けます。
+            医療界のリアルを知り尽くした【現役女性医師カウンセラー】と、百戦錬磨の【ベテラン男性仲人】が、AIという強力な武器を使いこなしながら、あなたという「主役」の横で理想に近い軍師として最後まで温かく寄り添い続けます。
           </p>
         </section>
 

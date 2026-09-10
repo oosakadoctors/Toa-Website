@@ -86,7 +86,7 @@ export default function BeginnerLandingPage() {
               <div className="w-full">
                 <h4 className="font-bold text-emerald-800 text-base mb-2 w-full">① 「自分なんて。。」という自信のなさ</h4>
                 <p className="text-base text-slate-700 leading-relaxed w-full">
-                  「自分には異性を惹きつける魅力がない」と思い込んでいませんか？ 傷つくのを恐れるあまり、心のどこかで打席に立つ前から諦めてしまっている状態です。どれだけ素敵なお洋服を着ても、自信のない態度は相手に必ず伝わってしまいます。
+                  「自分には異性を惹きつける魅力がない」と思い込んでいませんか？ 傷つくのを恐れるあまり、心のどこかで打席に立つ前から諦めてしまっている状態です。どれだけ素敵なお洋服を着ても、自信のない態度は相手に伝わってしまいます。
                 </p>
               </div>
             </div>
@@ -188,13 +188,13 @@ export default function BeginnerLandingPage() {
               </p>
               <div className="text-base text-slate-700 space-y-4 leading-relaxed w-full">
                 <p className="w-full">
-                  婚活で、時に不安になったり、お見合いで傷ついたりすることもあるかもしれません。そんな時、あなたを絶対にひとりにしないのが私の役目です。多数の成婚を見届けてきたからこそ、あなたの言葉にできない焦りや孤独を、親のような包容力で丸ごと受け止めます。
+                  婚活で、時に不安になったり、お見合いで傷ついたりすることもあるかもしれません。そんな時、あなたをひとりにしないのが私の役目です。多数の成婚を見届けてきたからこそ、あなたの言葉にできない焦りや孤独を、親のような包容力で丸ごと受け止めます。
                 </p>
                 <p className="w-full">
                   「LINEの返信に迷う」「デートで沈黙が怖い」といった小さなお悩みから、人生の決断まで、いつでもあなたの1番の味方になって、いつでもLINEや対面で並走します。
                 </p>
                 <p className="w-full font-bold text-emerald-900 text-base md:text-lg">
-                  婚活は、あなた自身を大好きになる「最高の自己投資」です。
+                  婚活は、あなた自身を大好きになる「理想に近い自己投資」です。
                 </p>
                 <p className="w-full">
                   私たちのゴールは、ただ「誰かとマッチングさせること」だけではありません。あなたが自分自身の魅力に気がつき、自分を愛せるようになり、豊かなEQを持って、パートナーに愛情を注ぐ。そうすれば、生涯崩れることのない幸福な家庭を『自分の力』で築けるようになることです。
@@ -262,7 +262,7 @@ export default function BeginnerLandingPage() {
                   次に活かせる「振り返り」と「作戦会議」
                 </h4>
                 <p className="text-base text-slate-700 leading-relaxed tracking-wide w-full">
-                  お見合いのあと「何がうまくいって、どこが課題だったか」を振り返ります。会話のコツも心理・理由を解明し、次に同じ場面になったとき、あなた自身の力で対応できるように導きます。
+                  お見合いのあと「何がうまくいって、どこが課題だったか」を振り返ります。会話のコツも心理・理由を解明し、次に同じ場面になったとき、あなた自身の力で対応できるようにお手伝いします。
                 </p>
               </div>
               <div className="hidden md:block w-[46%]"></div>
@@ -364,7 +364,7 @@ export default function BeginnerLandingPage() {
             <div className="grid gap-2 md:grid-cols-3 md:gap-3 w-full text-base font-bold text-slate-800">
               <div className="bg-white p-4 rounded-xl border border-emerald-100 shadow-2xs">🌱 【お約束 1】無理な入会勧誘は1ミリもしません</div>
               <div className="bg-white p-4 rounded-xl border border-emerald-100 shadow-2xs">🌱 【お約束 2】本名ではなく「ニックネーム」での相談も大歓迎です</div>
-              <div className="bg-white p-4 rounded-xl border border-emerald-100 shadow-2xs">🌱 【お約束 3】どんな相談も「説教」や「否定」をすることは絶対にありません</div>
+              <div className="bg-white p-4 rounded-xl border border-emerald-100 shadow-2xs">🌱 【お約束 3】どんな相談も「説教」や「否定」をすることはありません</div>
             </div>
           </div>
         </div>

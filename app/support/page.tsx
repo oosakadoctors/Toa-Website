@@ -142,7 +142,7 @@ export default function SupportPage() {
           <div className="bg-emerald-50/50 text-emerald-900 p-3 rounded-xl border border-emerald-100 mb-4 flex items-start gap-2">
             <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
             <div>
-              <p className="text-base md:text-lg font-black leading-relaxed">【解決法】もう検索画面で迷わない！あなたの代わりに「最高の1人」へ手続きする【申し込み代行システム】</p>
+              <p className="text-base md:text-lg font-black leading-relaxed">【解決法】もう検索画面で迷わない！あなたの代わりに「理想に近い1人」へ手続きする【申し込み代行システム】</p>
             </div>
           </div>
 
@@ -250,10 +250,10 @@ export default function SupportPage() {
               <div className="inline-flex items-center gap-1.5 bg-gray-900 text-white px-2 py-0.5 rounded text-sm font-black uppercase">
                 <span>Method 2</span>
               </div>
-              <h4 className="font-black text-lg md:text-xl text-gray-900 leading-relaxed">【秘匿情報】プロフィール検索には絶対に載らない「お相手の隠れた希望条件」確認</h4>
+              <h4 className="font-black text-lg md:text-xl text-gray-900 leading-relaxed">【秘匿情報】プロフィール検索には載らない「お相手の隠れた希望条件」確認</h4>
               <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg text-justify">
                 <p>
-                  実は、多くの会員様が「プロフィールには書けないけれど、譲れない隠れた希望条件（例：お相手に望む年齢、子供が欲しいかどうか、将来の実家との距離感、生活や居住地のこだわり）」を持っています。キャリアで築いた他社カウンセラーとの深いパイプから、この「画面には出ない本音の条件」を事前に直接引き出します。
+                  実は、会員様様が「プロフィールには書けないけれど、譲れない隠れた希望条件（例：お相手に望む年齢、子供が欲しいかどうか、将来の実家との距離感、生活や居住地のこだわり）」を持っています。キャリアで築いた他社カウンセラーとの深いパイプから、この「画面には出ない本音の条件」を事前に直接引き出します。
                 </p>
               </div>
             </div>
@@ -309,7 +309,7 @@ export default function SupportPage() {
             <div className="bg-[#FAF8F5] rounded-xl p-5 border border-gray-100 flex flex-col justify-between">
               <div>
                 <div className="w-6 h-6 rounded bg-white shadow-xs text-[#D9889D] flex items-center justify-center font-black text-base mb-3">01</div>
-                <h3 className="font-black text-base sm:text-lg text-gray-900 mb-2 leading-relaxed">【超・最高効率】お互いの「人柄・本音」を100%把握</h3>
+                <h3 className="font-black text-base sm:text-lg text-gray-900 mb-2 leading-relaxed">お互いの「人柄・本音」を把握</h3>
                 <div className="text-gray-700 leading-relaxed text-base md:text-lg text-justify">
                   <p>
                     プロフィールに「頼りがいがあってハキハキしゃべる」と書かれていても本当の優しさや聞き上手な面は他社の人には分かりません。当社の自社会員様であれば、日頃の徹底した面談を通して「文字の裏にある本当の結婚観」を完全に把握しているため、ハズレのない紹介が可能です。
@@ -350,7 +350,7 @@ export default function SupportPage() {
           <div className="mt-5 pt-4 border-t border-gray-100 text-center">
             <p className="text-base font-bold text-gray-400 flex items-center justify-center gap-1 leading-relaxed">
               <ShieldCheck className="w-4 h-4 text-gray-300" />
-              ※自社内紹介 fragile に関して個人情報の厳守・プライバシー保護の管理体制は必ず徹底・遵守しています。
+              ※自社内紹介 fragile に関して個人情報の厳守・プライバシー保護の管理体制は徹底・遵守しています。
             </p>
           </div>
         </div>
@@ -489,7 +489,7 @@ export default function SupportPage() {
 
             <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg space-y-5 text-justify">
               <p>
-                会話で最も大切なのは、何を話したかではなく、 お互いにどんな気持ちになったかです。
+                会話で大切なのは、何を話したかではなく、 お互いにどんな気持ちになったかです。
               </p>
 
               <div className="bg-gray-50 rounded-xl p-4 space-y-2">
@@ -511,7 +511,7 @@ export default function SupportPage() {
                     「趣味は？」「旅行です」「いいですね！癒されますよね。どこにご旅行されたのですか？」
                   </li>
                   <li>
-                    「趣味は？」「ゴルフです」「そうなんですね！私はしたことないです！お上手なんですか？」 （相手を知りたいという気持ちが大切なので必ずしも同じ趣味でなくてもOK）
+                    「趣味は？」「ゴルフです」「そうなんですね！私はしたことないです！お上手なんですか？」 （相手を知りたいという気持ちが大切なのでしも同じ趣味でなくてもOK）
                   </li>
                 </ul>
               </div>
@@ -570,7 +570,7 @@ export default function SupportPage() {
                   🌸「格好悪い自分」を隠さない
                 </h4>
                 <p>
-                  完璧な人間を演じる必要はありません。 むしろ、自分の不器用さや緊張さえ言葉にしてしまうほうが、 相手に「正直で素真面目な人だな」という安心感を与えます。
+                  完璧な人間を演じる必要はありません。 むしろ、自分の不器用さや緊張さえ言葉にしてしまうほうが、 相手に「正直で素真面目な人だな」という安心感を与えるでしょう。
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

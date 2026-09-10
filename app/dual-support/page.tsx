@@ -168,7 +168,7 @@ export default function DualSupportPage() {
 
           <div className="bg-sky-50/50 p-6 md:p-8 rounded-2xl border-2 border-sky-200 shadow-sm space-y-6">
             <p className="text-[20px] md:text-base text-slate-700 leading-relaxed">
-              結婚相談所を選ぶ際、担当カウンセラーが1人につく体制は一般的です。効率よくサポートできる仕組みではありますが、会員側の視点で見ると、次のようなリスクが潜んでいます。「結婚相談所 デメリット」と検索すると必ずと言っていいほど出てくるのが、この担当者との相性の問題です。
+              結婚相談所を選ぶ際、担当カウンセラーが1人につく体制は一般的です。効率よくサポートできる仕組みではありますが、会員側の視点で見ると、次のようなリスクが潜んでいます。「結婚相談所 デメリット」と検索するとと言っていいほど出てくるのが、この担当者との相性の問題です。
             </p>
 
             <div className="space-y-4">

@@ -93,7 +93,7 @@ export default function MembershipSteps() {
       </h3>
 
       <p className="text-gray-700 leading-relaxed">
-過酷な現実をお伝えしますが、婚活において「他力本願な姿勢」や「後ろ向きなマインド」のままでは、どれほど私たちが最高の武器（戦略・ネットワーク）をお渡ししても、格上のお相手から選ばれることは絶対にありません。あなたの大切な時間とお金を無駄にさせないためにも、このような場合は入会をご遠慮いただいております。
+過酷な現実をお伝えしますが、婚活において「他力本願な姿勢」や「後ろ向きなマインド」のままでは、どれほど私たちが理想に近い武器（戦略・ネットワーク）をお渡ししても、格上のお相手から選ばれることはありません。あなたの大切な時間とお金を無駄にさせないためにも、このような場合は入会をご遠慮いただいております。
       </p>
     </article>
 
@@ -219,7 +219,7 @@ export default function MembershipSteps() {
       </div>
 
       <h3 className="text-xl font-black text-gray-900 leading-snug">
-        3.【あなたが心折れそうな時ほど、最強の味方であり続けます】
+        3.【あなたが心折れそうな時ほど、味方であり続けます】
       </h3>
 
       <p className="leading-8 text-gray-700">
@@ -358,7 +358,7 @@ OUR IDEAL MEMBER
       <h3 className="text-xl font-black text-gray-900 leading-snug mb-5">
         3-心が折れそうな時ほど
         <br />
-        最強の味方であり続けます
+        味方であり続けます
       </h3>
 
       <p className="text-gray-700 leading-relaxed">
@@ -399,8 +399,8 @@ OUR IDEAL MEMBER
     <blockquote className="rounded-2xl bg-white border border-pink-100 shadow-sm px-8 py-10">
 
       <p className="text-2xl lg:text-4xl font-black leading-relaxed text-gray-900">
-        「この年齢だからこそ、もう絶対に負けたくない。<br className="hidden sm:block" />
-        最高のパートナーと、最高の人生を始めたい。」
+        「この年齢だからこそ、もう負けたくない。<br className="hidden sm:block" />
+        理想に近いパートナーと、理想に近い人生を始めたい。」
       </p>
 
     </blockquote>
@@ -509,7 +509,7 @@ OUR IDEAL MEMBER
       <div className="mt-6 rounded-2xl bg-pink-50 border border-pink-100 p-4">
 
         <p className="text-sm font-semibold text-pink-800">
-          ✓  あなた自身の「納得感」を最も大切にしながら、これからの進み方を一緒に考えます。
+          ✓  あなた自身の「納得感」を大切にしながら、これからの進み方を一緒に考えます。
         </p>
 
       </div>
@@ -526,7 +526,7 @@ OUR IDEAL MEMBER
       </h3>
 
       <p className="text-gray-700 leading-relaxed flex-grow">
-        独自の会話トレーニング（EQ向上）や外見のブランディングを行い、最高の状態で活動を開始。
+        独自の会話トレーニング（EQ向上）や外見のブランディングを行い、理想に近い状態で活動を開始。
       </p>
 
       <div className="mt-6 rounded-2xl bg-amber-50 border border-amber-100 p-4">

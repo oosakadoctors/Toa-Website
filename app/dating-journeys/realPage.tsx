@@ -4,7 +4,7 @@ import memberSuccessStories from '@/public/member-success-stories.jpg'
 
 export const metadata: Metadata = {
   title: 'リアルな婚活の記録と成婚報告 | 大阪梅田ドクターズ結婚相談所',
-  description: '結婚相談所の婚活で「上手くいかない」と悩むあなたへ。色々な困難を乗り越え、最高の出会いを掴んだ先輩たちのリアルな婚活の記録。',
+  description: '結婚相談所の婚活で「上手くいかない」と悩むあなたへ。色々な困難を乗り越え、理想に近い出会いを掴んだ先輩たちのリアルな婚活の記録。',
   keywords: ['婚活記録', '成婚報告', '体験談', '結婚相談所', '大阪梅田', '女医婚活'],
 };
 
@@ -29,7 +29,7 @@ export default function SuccessStoriesPage() {
       <div className="w-20 h-1 bg-sky-500 rounded-full my-1" />
 
       <p className="text-slate-600 text-base sm:text-lg leading-relaxed tracking-wider m-0 font-sans w-full">
-        色々な困難を乗り越え、最高の出会いを掴んだ先輩たちのリアルな婚活の記録
+        色々な困難を乗り越え、理想に近い出会いを掴んだ先輩たちのリアルな婚活の記録
       </p>
     </div>
   </div>
@@ -338,7 +338,7 @@ export default function SuccessStoriesPage() {
     <div className="mt-6 p-4 rounded-xl bg-[#fdf2f8] border-l-4 border-[#db2777]">
       <p className="font-bold text-[#831843] mb-2">婚活を頑張る皆さんへ</p>
       <p className="m-0 text-[16px] text-[#831843]">
-        私のように居住地に制限がある人がいると思うのですが、結婚して仕事やめるのはもったいないです。今のお仕事を理解してくれる人が絶対にいるので、みんなも頑張ってください。
+        私のように居住地に制限がある人がいると思うのですが、結婚して仕事やめるのはもったいないです。今のお仕事を理解してくれる人がいるので、みんなも頑張ってください。
       </p>
     </div>
 

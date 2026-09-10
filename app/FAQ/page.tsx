@@ -240,7 +240,7 @@ export default function FAQPage() {
     </div>
     <div className="w-full px-4 sm:px-8 py-4 sm:py-6 text-gray-700 text-sm sm:text-base leading-snug sm:leading-relaxed">
       <p>
-        A. 豊富な成婚実績に基づく「お相手の心理を見抜く力」と「的確なアドバイス」で、迷いをなくし成婚へ導きます。
+        A. 豊富な成婚実績に基づく「お相手の心理を見抜く力」と「的確なアドバイス」で、迷いをなくし成婚へお手伝いします。
       </p>
     </div>
   </div>

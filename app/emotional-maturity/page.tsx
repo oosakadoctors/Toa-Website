@@ -87,7 +87,7 @@ export default function PsychologicalMaturityLandingPage() {
                     2. 感情の安定（セルフコントロール）
                   </h3>
                   <p className="text-[20px] md:text-sm text-slate-700 leading-relaxed w-full">
-                    心理学者ダニエル・ゴールマンが提唱するEQ（心の知能指数）の根幹であり、不安や怒りを「お相手のせい」にせず、自分で感情を処理するメンタルヘルス能力。「大人の安定感」は、変化の多い現代の結婚生活において、最も価値のある心理的安定性となります。
+                    心理学者ダニエル・ゴールマンが提唱するEQ（心の知能指数）の根幹であり、不安や怒りを「お相手のせい」にせず、自分で感情を処理するメンタルヘルス能力。「大人の安定感」は、変化の多い現代の結婚生活において、価値のある心理的安定性となります。
                   </p>
                 </div>
               </div>
@@ -238,7 +238,7 @@ export default function PsychologicalMaturityLandingPage() {
         <div className="max-w-3xl mx-auto w-full space-y-5">
           <div className="bg-white/80 backdrop-blur-md p-5 md:p-6 border border-sky-200/80 w-full space-y-4 rounded-3xl shadow-xs">
             <h2 className="text-[22px] md:text-xl font-bold text-sky-950 tracking-wider w-full">
-              結婚生活において、なぜこれが「最強の内面魅力」なのか？
+              結婚生活において、なぜこれが「内面魅力」なのか？
             </h2>
             <p className="text-[20px] md:text-base leading-relaxed text-slate-700 w-full">
               結婚生活は、育った環境が全く違う二人が一緒に暮らすわけですから、毎日が「矛盾」と「不完全さ」の連続です。

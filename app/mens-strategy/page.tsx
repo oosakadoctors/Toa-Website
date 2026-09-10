@@ -108,7 +108,7 @@ export default function MensStrategyPage() {
         <div className="max-w-4xl mx-auto bg-white w-full p-5 sm:p-8 shadow-xs border-y sm:border border-gray-100 sm:rounded-2xl">
           <span className="text-xs sm:text-sm font-black text-slate-500 uppercase tracking-widest block mb-1.5">The Market Reality</span>
           <h2 className="text-2xl sm:text-3xl font-black text-gray-900 leading-snug tracking-tight">
-            「この年齢になったからこそ、もう絶対に妥協したくない」<br />そう決意したあなたへ。
+            「この年齢になったからこそ、もう妥協したくない」<br />そう決意したあなたへ。
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-slate-800 to-slate-600 mt-3 mb-6 rounded-full" />
           
@@ -131,10 +131,10 @@ export default function MensStrategyPage() {
               「理想の相手から選ばれるために、現役女医の心理分析のもと、あなたの持つポテンシャルをどう臨床的（clinical）に開花させるか」
             </p>
             <p>
-              そのためのオーダーメイドの攻略作戦を徹底的に立てます。20年の最前線でハイクラスな成婚をデザインしてきたベテランカウンセラーが、あなたの<span className="font-bold text-gray-900 bg-rose-50/60 px-1 text-gray-950">「最高峰の戦略参謀（頼れる兄貴）」</span>となり、あなたの外見・立ち振る舞い・会話術を、選ばれる水準まで引き上げます。
+              そのためのオーダーメイドの攻略作戦を徹底的に立てます。20年の最前線でハイクラスな成婚をデザインしてきたベテランカウンセラーが、あなたの<span className="font-bold text-gray-900 bg-rose-50/60 px-1 text-gray-950">「ベストを目指す戦略参謀（頼れる兄貴）」</span>となり、あなたの外見・立ち振る舞い・会話術を、選ばれる水準まで引き上げます。
             </p>
             <p>
-              現在の30代男性は、「仕事のプロジェクトと同じように、人生のパートナー探しもプロに任せて最短で終わらせる」というスマートな目的で入会されています。会社の信頼できる先輩に相談に行くような安心感で、あなたの『最高の理想』を私たちにぶつけてください。
+              現在の30代男性は、「仕事のプロジェクトと同じように、人生のパートナー探しもプロに任せてなるべく早く終わらせる」というスマートな目的で入会されています。会社の信頼できる先輩に相談に行くような安心感で、あなたの『理想に近い理想』を私たちにぶつけてください。
             </p>
             <p className="font-black text-gray-950 text-lg sm:text-xl pt-2 text-[#D9889D]">
               人生の大きな節目に立ち、強い覚悟とプライドを持って一歩を踏み込むあなたを、私たちは熱意を持ってサポートさせていただきます。
@@ -197,7 +197,7 @@ export default function MensStrategyPage() {
                   婚活における連絡は、減点を防ぐ「リスクマネジメント」が最重要です。そのプロの技を伝授します。
                 </p>
                 <p>
-                  またお見合いやデートでの対話スキルでは、単なる雑談ではなく、短時間で「この人と未来を築きたい」と思わせる会話＆エスコート術を伝授。あなたの魅力と価値を最高値までチューニングし、平均スペックからでもワンランク上の女性を射止めるお手伝いをさせていただきます。
+                  またお見合いやデートでの対話スキルでは、単なる雑談ではなく、短時間で「この人と未来を築きたい」と思わせる会話＆エスコート術を伝授。あなたの魅力と価値をチューニングし、平均スペックからでもワンランク上の女性を射止めるお手伝いをさせていただきます。
                 </p>
               </div>
             </div>
@@ -215,7 +215,7 @@ export default function MensStrategyPage() {
             スマートな30代男性が、大阪梅田ドクターズ結婚相談所を選ぶ理由
           </h3>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
-            当相談所に在籍する30代男性の多くは、「自分の時間を最も価値あるもの」と考える合理的なビジネスパーソンです。
+            当相談所に在籍する30代男性の多くは、「自分の時間を価値あるもの」と考える合理的なビジネスパーソンです。
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -266,7 +266,7 @@ export default function MensStrategyPage() {
           </h3>
           
           <p className="text-base sm:text-lg text-gray-300 w-full max-w-2xl mx-auto mb-8 font-medium leading-relaxed text-justify sm:text-center px-1">
-            信頼できるビジネスの先輩に、今後のキャリア戦略を相談しに行くような感覚で、まずは私たちのドアを叩いてください。最高峰の戦略参謀と共に、最短期間で理想を現実に変えましょう。
+            信頼できるビジネスの先輩に、今後のキャリア戦略を相談しに行くような感覚で、まずは私たちのドアを叩いてください。ベストを目指す戦略参謀と共に、最短期間で理想を現実に変えましょう。
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center w-full px-1">

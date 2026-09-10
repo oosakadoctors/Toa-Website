@@ -42,7 +42,7 @@ export default function MarriageAdvicePage() {
             className="text-2xl sm:text-3xl lg:text-4xl font-black text-black leading-snug sm:leading-tight tracking-tight text-balance max-w-3xl pt-1 [text-shadow:_0_0_8px_#ffffff,_0_0_16px_#ffffff,_0_0_24px_rgba(255,255,255,0.8)]"
             style={{ wordBreak: 'auto-phrase' }}
           >
-            笑顔の可愛い最高の男性が惹かれる高いＥＱ
+            笑顔の可愛い理想に近い男性が惹かれる高いＥＱ
           </h1>
           
           {/* Subtitle / Doctor Tagline */}
@@ -96,7 +96,7 @@ export default function MarriageAdvicePage() {
               className="text-lg sm:text-2xl font-black text-gray-900 leading-snug text-balance"
               style={{ wordBreak: 'auto-phrase' }}
             >
-              「大人のスマートな優しさに、少年のような可愛い笑顔。あなたがあっと探していた『最高の男性』に出会いませんか？」
+              「大人のスマートな優しさに、少年のような可愛い笑顔。あなたがあっと探していた『理想に近い男性』に出会いませんか？」
             </h2>
 
             <div className="mt-6 space-y-4 text-base text-gray-700 leading-relaxed font-medium">
@@ -278,7 +278,7 @@ export default function MarriageAdvicePage() {
                 大人のスマートさであなたを守り、可愛い笑顔であなたを癒やしてくれる。<br />
                 そんな毎日の笑顔が2倍になるパートナーシップが、ここ大阪梅田であなたを待っています。<br />
                 まずは仕事帰りのほんの少しの時間、あなたが想い描く「一番理想の男性」について、ワクワクしながら私達に聞かせてくれませんか？<br />
-                <strong className="text-[#D9006C]">【大阪梅田ドクターズ結婚相談所】</strong>で、あなたの人生を最高に輝かせる、運命の出会いを始めましょう！
+                <strong className="text-[#D9006C]">【大阪梅田ドクターズ結婚相談所】</strong>で、あなたの人生を輝かせる、運命の出会いを始めましょう！
               </p>
             </div>
           </div>
@@ -332,8 +332,8 @@ export default function MarriageAdvicePage() {
               日々、自分の仕事や責任と誠実に向き合っている男性だからこそ、<strong>「お互いの立場を思いやりながらお話ができるセンスがある」</strong>のです。
             </p>
             <p style={{ wordBreak: 'auto-phrase' }}>
-              また同時に<strong>「高いEQを持った女性」を、絶対に手放したくない最高のパートナーとして選びます。</strong>
-              背伸びをして自分を大きく見せる必要はありません。あなたの持っている「心の豊かさ」や「素直な美しさ」を、お相手に『この人とずっと一緒にいたい』と思わせる最高の価値として届けるプロデュースは、私たちの最も得意な領域です。
+              また同時に<strong>「高いEQを持った女性」を、手放したくない理想に近いパートナーとして選びます。</strong>
+              背伸びをして自分を大きく見せる必要はありません。あなたの持っている「心の豊かさ」や「素直な美しさ」を、お相手に『この人とずっと一緒にいたい』と思わせる理想に近い価値として届けるプロデュースは、私たちの得意な領域です。
             </p>
 
             <div className="p-6 bg-rose-50/60 rounded-2xl border border-rose-200/80 space-y-3 mt-4">
@@ -457,7 +457,7 @@ export default function MarriageAdvicePage() {
               </div>
 
               <p style={{ wordBreak: 'auto-phrase' }}>
-                その想いは、自分を大切にし人生を質の高いものにしていきたいという、大人の女性としての素敵な考えです。<br />
+                その想いは、自分を大切にし人生をいいものにしていきたいという、大人の女性としての素敵な考えです。<br />
                 「ドクターズ結婚相談所」という名前に、最初は少し敷居が高いかもしれませんね。でも、どうぞ安心して下さい。
               </p>
 
@@ -477,10 +477,10 @@ export default function MarriageAdvicePage() {
                 本当に魅力的な男性たちが結婚相手に求める「良いもの」とは、華やかな経歴や外見だけではありません。彼らが何よりも大切にしているのは、女性の「EQ（心の知能指数）」の高さです。
               </p>
               <p className="text-sm text-gray-700 leading-relaxed" style={{ wordBreak: 'auto-phrase' }}>
-                EQとは、自分の感情を心地よくコントロールし、お相手の気持ちに寄り添いながら、温かい関係を育む力（＝大人の思いやりのセンス）のこと。日々、自分の仕事や責任と誠実に向き合っている男性だからこそ、「お互いの立場を思いやりながらお話ができるセンスがある」と確信できる、「高いEQを持った女性」を、絶対に手放したくない最高のパートナーとして選びます。
+                EQとは、自分の感情を心地よくコントロールし、お相手の気持ちに寄り添いながら、温かい関係を育む力（＝大人の思いやりのセンス）のこと。日々、自分の仕事や責任と誠実に向き合っている男性だからこそ、「お互いの立場を思いやりながらお話ができるセンスがある」と確信できる、「高いEQを持った女性」を、手放したくない理想に近いパートナーとして選びます。
               </p>
               <p className="text-sm font-bold text-gray-900 leading-relaxed" style={{ wordBreak: 'auto-phrase' }}>
-                背伸びをして自分を大きく見せる必要はありません。あなたの持っている「心の豊かさ」や「素直な美しさ」を、お相手に『この人とずっと一緒にいたい』と思わせる最高の価値として届けるプロデュースは、私たちの最も得意な領域です。
+                背伸びをして自分を大きく見せる必要はありません。あなたの持っている「心の豊かさ」や「素直な美しさ」を、お相手に『この人とずっと一緒にいたい』と思わせる理想に近い価値として届けるプロデュースは、私たちの得意な領域です。
               </p>
             </div>
 
@@ -508,7 +508,7 @@ export default function MarriageAdvicePage() {
                     <span>🌸</span> 20年のベテランカウンセラーが磨き上げる「あなたの絶対的な強み」
                   </h4>
                   <p className="text-xs text-gray-600 leading-relaxed" style={{ wordBreak: 'auto-phrase' }}>
-                    20年間で数々の幸せな成婚を生み出してきたプロの目で、あなたの中に眠る「男性の心を惹きつけて離さない心の知性（EQ）」を見つけ出します。女医のロジカルな視点と、ベテランの温かい父親のような伴走力で、あなたの良さを最高の形でお相手にプロデュースします。
+                    20年間で数々の幸せな成婚を生み出してきたプロの目で、あなたの中に眠る「男性の心を惹きつけて離さない心の知性（EQ）」を見つけ出します。女医のロジカルな視点と、ベテランの温かい父親のような伴走力で、あなたの良さを理想に近い形でお相手にプロデュースします。
                   </p>
                 </div>
               </div>
@@ -516,11 +516,11 @@ export default function MarriageAdvicePage() {
 
             <div className="p-6 bg-gradient-to-r from-rose-100/60 to-pink-100/60 rounded-2xl text-center space-y-2">
               <h3 className="font-black text-gray-900 text-lg" style={{ wordBreak: 'auto-phrase' }}>
-                30歳のいま、妥協のない最高のご縁を
+                30歳のいま、妥協のない理想に近いご縁を
               </h3>
               <p className="text-sm text-gray-700 leading-relaxed" style={{ wordBreak: 'auto-phrase' }}>
-                婚活市場において、30歳という年齢は、大人の品格とみずみずしさを兼ね備えた、最も美しく価値のあるタイミングです。<br />
-                だからこそ、この貴重な時間を、安心できる最高の環境でスタートさせてみませんか？<br />
+                婚活市場において、30歳という年齢は、大人の品格とみずみずしさを兼ね備えた、美しく価値のあるタイミングです。<br />
+                だからこそ、この貴重な時間を、安心できる理想に近い環境でスタートさせてみませんか？<br />
                 「一歩、話を聞いてみよう」<br />
                 その前向きな選択が、1年後に「この人と結婚できて、本当によかった」と心から思える、豊かな毎日へと繋がっています。<br />
                 お買い物ついでや、お仕事帰りに、まずは美味しいお茶を飲みながら、あなたが本当に望む未来の形を私たちに聞かせてくださいね。

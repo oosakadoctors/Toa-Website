@@ -86,7 +86,7 @@ export default function MarriageAdvicePage() {
         <section className="mt-5 rounded-2xl bg-white border border-pink-200 p-6 sm:p-8 shadow-sm">
 
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 leading-snug border-b border-pink-100 pb-4">
-            タイパ至上主義！30代の婚活に大阪・梅田の結婚相談所が最強に効率的な理由
+            タイパ至上主義！30代の婚活に大阪・梅田の結婚相談所が効率的な理由
           </h2>
 
           <div className="mt-6 space-y-6 text-[20px] leading-relaxed text-gray-700">
@@ -101,7 +101,7 @@ export default function MarriageAdvicePage() {
             </p>
 
             <p>
-              ここで言う「いい人」とは、『優しくて、気が遣えて、清潔感があり、経済的にも精神的にも自立している人』です。こうした優秀な人たちは、その高いコミュニケーション能力と魅力ゆえに、学生時代や20代の職場、あるいはマッチングアプリの初期段階で、周囲の異性が絶対に放っておきません。結果として、彼達は30代を迎える前に「普通の自然な恋愛」を継続させ結婚し、婚活のフィールドからいなくなってしまうのです。
+              ここで言う「いい人」とは、『優しくて、気が遣えて、清潔感があり、経済的にも精神的にも自立している人』です。こうした優秀な人たちは、その高いコミュニケーション能力と魅力ゆえに、学生時代や20代の職場、あるいはマッチングアプリの初期段階で、周囲の異性が放っておきません。結果として、彼達は30代を迎える前に「普通の自然な恋愛」を継続させ結婚し、婚活のフィールドからいなくなってしまうのです。
             </p>
 
             <p>

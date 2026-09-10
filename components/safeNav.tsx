@@ -61,7 +61,7 @@ export default function PremiumNavbar() {
       links: [
         { name: "ハイスペック男性と結婚する方法", href: "/advantages" },
         { name: "３０代婚活でいい人がいないと思うあなたへ", href: "/consider" },
-        { name: "笑顔の可愛い最高の男性が惹かれる高いＥＱ", href: "/ideal-man" },
+        { name: "笑顔の可愛い理想に近い男性が惹かれる高いＥＱ", href: "/ideal-man" },
       ],
     },
         {

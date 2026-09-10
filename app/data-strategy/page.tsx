@@ -160,7 +160,7 @@ export default function AiStrategyPage() {
         <section className="bg-amber-50/90 rounded-3xl border-2 p-6 sm:p-10 border-amber-200 shadow-lg space-y-6 backdrop-blur-sm">
           <div className="space-y-3 border-b-2 border-amber-200 pb-4">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-amber-950 leading-tight">
-              【結び】結論：AIを「最高の武器」とし、あなたが「主役」となる婚活
+              【結び】結論：AIを「理想に近い武器」とし、あなたが「主役」となる婚活
             </h2>
             <p className="text-[20px] font-medium text-amber-900">
               最先端の生成AIシステムが婚活にもたらすものは、あなたの成婚確率を高めるための客観的な「データと提案」に過ぎません。アドバイスはどこまでいっても選択肢の一つであり、すべての答えを決め、自らの未来を開くのはあなた自身です。
@@ -179,7 +179,7 @@ export default function AiStrategyPage() {
           </div>
 
           <p className="text-[20px] text-gray-800 leading-relaxed">
-            医療界のリアルを知り尽くした【現役女性医師カウンセラー】と、百戦錬磨の【ベテラン男性仲人】が、AIという強力な武器を使いコピペや丸投げではなく使いこなしながら、あなたという「主役」の横で最高の軍師として最後まで温かく寄り添い続けます。
+            医療界のリアルを知り尽くした【現役女性医師カウンセラー】と、百戦錬磨の【ベテラン男性仲人】が、AIという強力な武器を使いコピペや丸投げではなく使いこなしながら、あなたという「主役」の横で理想に近い軍師として最後まで温かく寄り添い続けます。
           </p>
         </section>
 

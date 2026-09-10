@@ -120,7 +120,7 @@ export default function UmedaMarriagePage() {
         <h2 className="mb-4 text-[21px] font-bold leading-[1.4] text-[#1a365d]">現役女医×ベテランカウンセラーが伴走<br />｜月々15,000円（税込）のシンプルな1コースのみ</h2>
         
         <p className="mb-4 mt-0 text-[18px] text-left">
-          複雑な料金プランは一切ありません。私たちは、どなたでも負担なく婚活を継続していただけるよう、月会費15,000円（税込）の一つのコースにすべての情熱を注いでいます。最大の強みは、現役女医による親身なアドバイスと、ベテランカウンセラーによる細やかなケアを同時に受けられることです。価格以上の圧倒的な安心感と温もりを、ぜひ実感してください。
+          複雑な料金プランは一切ありません。私たちは、どなたでも負担なく婚活を継続していただけるよう、月会費15,000円（税込）の一つのコースにすべての情熱を注いでいます。最大の強みは、現役女医による親身なアドバイスと、ベテランカウンセラーによる細やかなケアを同時に受けられることです。安心と温もりを大切にしています。。
         </p>
       </section>
 
@@ -145,7 +145,7 @@ export default function UmedaMarriagePage() {
         </h2>
 
         <p className="mb-4 mt-0 text-[18px] text-left">
-          一人ひとりの会員様に寄り添い、確かな満足度、1年以内のご成婚、そして一歩目となるお見合い成立のすべてにおいて「高い目標と質の高いサポート」を目指しているのが、私たち「大阪梅田ドクターズ結婚相談所」です。現役女医である代表と、20年寄り添い続けてきたベテランがタッグを組み、お一人おひとりの魅力を最大限に引き出す「手作りの温かい婚活サポート」を徹底いたします。確かなお見合い成立へとつなげるプロの特別推薦に加え、活動開始から「1年以内のご成婚」を本気で目指す体制を整えているからこそ、多くの会員様からお喜びの声をいただいております。
+          一人ひとりの会員様に寄り添い、確かな満足度、1年以内のご成婚、そして一歩目となるお見合い成立のすべてにおいて　高みを目指しているのが、私たち「大阪梅田ドクターズ結婚相談所」です。現役女医である代表と、20年寄り添い続けてきたベテランがタッグを組み、お一人おひとりの魅力を最大限に引き出す「手作りの温かい婚活サポート」を目指します。確かなお見合い成立へとつなげるプロの特別推薦に加え、活動開始から「1年以内のご成婚」を本気で目指す体制を整えているからこそ、会員様様からお喜びの声をいただいております。
         </p>
 
         <p className="mb-4 mt-5 text-[18px] font-bold text-center text-[#0284c7]">
@@ -156,7 +156,7 @@ export default function UmedaMarriagePage() {
       <hr className="my-10 border-none border-t border-[#bae6fd]" />
 
       {/* Closing Section */}
-      <section className="mb-0 text-center">
+      {/* <section className="mb-0 text-center">
         <div className="flex flex-col gap-4 mb-5">
           <div>
             <div className="relative overflow-hidden rounded-lg w-full">
@@ -198,7 +198,7 @@ export default function UmedaMarriagePage() {
         >
           嬉しい成婚報告を見る →
         </Link>
-      </section>
+      </section> */}
     </main>
   );
 }

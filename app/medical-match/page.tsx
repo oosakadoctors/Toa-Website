@@ -42,7 +42,7 @@ export default function DoctorsMatchPage() {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     'headline': '【現役女性医師カウンセラー】✕【IBJ公式・AIマッチング＆お見合い練習】',
-    'description': '業界最大手の最新テクノロジーをあなたの最強の武器にする。最先端AIシステム✕現役女性医師の掛け算サポート。',
+    'description': '業界最大手の最新テクノロジーを利用する。最先端AIシステム✕現役女性医師の掛け算サポート。',
     'publisher': {
       '@type': 'Organization',
       'name': '大阪梅田ドクターズ結婚相談所',
@@ -81,7 +81,7 @@ export default function DoctorsMatchPage() {
 
           {/* YELLOW TEXT */}
           <p className="font-extrabold text-2xl sm:text-3xl lg:text-4xl text-amber-300 leading-snug border-l-4 border-amber-400 pl-4 sm:pl-6 my-6">
-            大阪梅田ドクターズ結婚相談所で、業界最大手の最新テクノロジーをあなたの最強の武器にする。
+            大阪梅田ドクターズ結婚相談所で、業界最大手の最新テクノロジーを利用する。
           </p>
 
           {/* WHITE BACKGROUND AREA */}
@@ -96,7 +96,7 @@ export default function DoctorsMatchPage() {
             </p>
 
             <div className="mt-6 p-6 rounded-2xl bg-sky-50/80 border border-sky-200 text-sky-950 font-bold text-[20px]">
-              医療界のリアルを知り尽くした【現役女性医師カウンセラー】の知性と経験に、IBJが誇る最高峰のAIデータ分析を掛け合わせ、あなたの魅力を底上げして完全伴走します。
+              医療界のリアルを知り尽くした【現役女性医師カウンセラー】の知性と経験に、IBJが誇るベストを目指すAIデータ分析を掛け合わせ、あなたの魅力を底上げして完全伴走します。
             </div>
 
             <div className="clear-both" />

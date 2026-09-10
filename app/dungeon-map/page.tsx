@@ -17,10 +17,10 @@ const OG_IMAGE = `${SITE_URL}/dungeon-map.jpg`;
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: '婚活ダンジョンマップと医師×仲人のダブルサポート体制 | 大阪梅田ドクターズ結婚相談所',
-  description: '大阪梅田ドクターズ結婚相談所が開発した「婚活ダンジョンマップ」と現役医師×ベテラン仲人のダブルサポート体制で納得の成婚へ導きます。',
+  description: '大阪梅田ドクターズ結婚相談所が開発した「婚活ダンジョンマップ」と現役医師×ベテラン仲人のダブルサポート体制で納得の成婚へお手伝いします。',
   openGraph: {
     title: '婚活ダンジョンマップと医師×仲人のダブルサポート体制 | 大阪梅田ドクターズ結婚相談所',
-    description: '大阪梅田ドクターズ結婚相談所が開発した「婚活ダンジョンマップ」と現役医師×ベテラン仲人のダブルサポート体制で納得の成婚へ導きます。',
+    description: '大阪梅田ドクターズ結婚相談所が開発した「婚活ダンジョンマップ」と現役医師×ベテラン仲人のダブルサポート体制で納得の成婚へお手伝いします。',
     url: `${SITE_URL}${PAGE_PATH}`,
     siteName: '大阪梅田ドクターズ結婚相談所',
     images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '婚活ダンジョンマップと医師×仲人のダブルサポート体制 | 大阪梅田ドクターズ結婚相談所',
-    description: '大阪梅田ドクターズ結婚相談所が開発した「婚活ダンジョンマップ」と現役医師×ベテラン仲人のダブルサポート体制で納得の成婚へ導きます。',
+    description: '大阪梅田ドクターズ結婚相談所が開発した「婚活ダンジョンマップ」と現役医師×ベテラン仲人のダブルサポート体制で納得の成婚へお手伝いします。',
     images: [OG_IMAGE],
   },
 };
@@ -65,7 +65,7 @@ export default function DungeonMapSupportPage() {
           
           <div className="bg-white/95 backdrop-blur-md p-6 rounded-2xl border-2 border-amber-200/60 inline-block text-left w-full mt-4 shadow-xl">
             <p className="text-slate-700 text-[20px] md:text-base leading-relaxed tracking-wide text-center w-full font-medium">
-              <span className="text-amber-600">大阪梅田ドクターズ結婚相談所</span>が開発した「婚活ダンジョンマップ」は、活動開始から成婚（ゴール）までに直面するすべての分岐点を可視化し、あなたに最適な最短ルートを仲人と共に設計する戦略的婚活計画書です。
+              <span className="text-amber-600">大阪梅田ドクターズ結婚相談所</span>が開発した「婚活ダンジョンマップ」は、活動開始から成婚（ゴール）までに直面するすべての分岐点を可視化し、あなたに最適なルートを仲人と共に設計する戦略的婚活計画書です。
             </p>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function DungeonMapSupportPage() {
       <p className="text-[20px] md:text-base text-slate-800 leading-relaxed tracking-wide w-full relative z-10">
         プロフィール作成、お申し込み、お見合い、仮交際、真剣交際、そしてプロポーズ。<br />
         <span className="text-sky-950 font-bold bg-amber-100/80 px-2 py-0.5 rounded border-b-2 border-amber-400">
-          婚活における一つひとつの意思決定をデータと経験に基づいてサポートし、納得のいく未来へあなたを導きます。
+          婚活における一つひとつの意思決定をデータと経験に基づいてサポートし、納得のいく未来へあなたをお手伝いします。
         </span>
       </p>
 
@@ -149,7 +149,7 @@ export default function DungeonMapSupportPage() {
                 生涯のパートナーを選ぶ確信
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
-                成婚の意思表示。納得のいく決断で、最高の未来の扉を開きます。
+                成婚の意思表示。納得のいく決断で、理想に近い未来の扉を開きます。
               </p>
             </div>
           </div>
@@ -231,7 +231,7 @@ export default function DungeonMapSupportPage() {
                     多職種連携（チーム医療）による課題解決力
                   </h4>
                   <p className="text-[20px] md:text-base text-slate-700 leading-relaxed">
-                    往診医や他科の専門医への紹介・連携をはじめ、MSW（医療ソーシャルワーカー）、ケアマネジャー、訪問看護師、介護事業所、薬局の薬剤師など、多岐にわたる専門職のハブとなりチームを統括してきました。この強固な連携力とトータルマネジメント能力により、あなたの婚活における課題を構造化し、迅速に解決へと導きます。
+                    往診医や他科の専門医への紹介・連携をはじめ、MSW（医療ソーシャルワーカー）、ケアマネジャー、訪問看護師、介護事業所、薬局の薬剤師など、多岐にわたる専門職のハブとなりチームを統括してきました。この強固な連携力とトータルマネジメント能力により、あなたの婚活における課題を構造化し、迅速に解決へとお手伝いします。
                   </p>
                 </div>
 
@@ -277,7 +277,7 @@ export default function DungeonMapSupportPage() {
             【まずは無料カウンセリングへ】
           </h2>
           <p className="text-sky-100 text-[20px] md:text-base leading-relaxed tracking-wide w-full max-w-2xl mx-auto font-medium">
-            大阪梅田ドクターズ結婚相談所では、入会前の無料カウンセリングにて、あなただけの「婚活ダンジョンマップ」のシミュレーションを行っています。婚活アプリで上手くいかなかった原因や、最短で成婚するための費用（お見合い料・成婚料）の仕組みについても丁寧にご説明します。強引な勧誘は一切ありませんので、梅田駅から徒歩5分の当相談所へお気軽にお越しください。
+            大阪梅田ドクターズ結婚相談所では、入会前の無料カウンセリングにて、あなただけの「婚活ダンジョンマップ」のシミュレーションを行っています。婚活アプリで上手くいかなかった原因や、なるべく早く成婚するための費用（お見合い料・成婚料）の仕組みについても丁寧にご説明します。強引な勧誘は一切ありませんので、梅田駅から徒歩5分の当相談所へお気軽にお越しください。
           </p>
           <div className="pt-4 flex justify-center w-full">
             <a 

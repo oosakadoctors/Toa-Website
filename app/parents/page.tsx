@@ -78,7 +78,7 @@ export default function ParentsLandingPage() {
             <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-wider text-slate-950">なぜ、私どもなら「違う」のか？</h2>
             <div className="mt-6 w-full p-6 bg-white rounded-xl border border-amber-200 shadow-sm text-left md:text-center">
               <p className="text-lg md:text-xl leading-relaxed tracking-wide text-slate-900 w-full">
-                世の中に結婚相談所は数多くありますが、<span className="text-amber-700 font-bold underline decoration-amber-400 decoration-4">【現役女医の客観的アプローチ】</span>と<span className="text-amber-700 font-bold underline decoration-amber-400 decoration-4">【男性ベテランカウンセラーの確かな経験】</span>が融合した相談所は、唯一無二でございます。親御様の「こういう人と歩んでほしい」という本気の願いを、私たちは以下の3つの確かな力で叶えます。
+                世の中に結婚相談所は数多くありますが、<span className="text-amber-700 font-bold underline decoration-amber-400 decoration-4">【現役女医の客観的アプローチ】</span>と<span className="text-amber-700 font-bold underline decoration-amber-400 decoration-4">【男性ベテランカウンセラーの確かな経験】</span>が融合した相談所は、他には少ないでございます。親御様の「こういう人と歩んでほしい」という本気の願いを、私たちは以下の3つの確かな力で叶えます。
               </p>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function ParentsLandingPage() {
                 <h3 className="text-xl md:text-2xl font-serif font-bold text-slate-950 mb-3">③ 魔法のカウンセリング</h3>
                 <p className="text-amber-800 text-base md:text-lg font-bold mb-4 tracking-wider">【焦りのないお子様へ】心を前向きに開く</p>
                 <p className="text-lg text-slate-800 leading-relaxed w-full">
-                  親御様の想いは最高のギフトですが、届け方ひとつで受け止め方は変わります。お子様のペースを尊重しながら、「結婚とはこんなに素晴らしいものなんだ」と、自然に一歩を踏み出したくなるよう、プロの技術で優しく背中を押してまいります。
+                  親御様の想いは理想に近いギフトですが、届け方ひとつで受け止め方は変わります。お子様のペースを尊重しながら、「結婚とはこんなに素晴らしいものなんだ」と、自然に一歩を踏み出したくなるよう、プロの技術で優しく背中を押してまいります。
                 </p>
               </div>
             </div>
@@ -261,7 +261,7 @@ export default function ParentsLandingPage() {
             },
             {
               q: "娘は何歳くらいから結婚相談所への入会（婚活）を検討すれば良いのでしょうか？",
-              a: "一般社会のデータが示す通り、「20代半ば（24歳〜26歳）」からのスタートが最も理想的でございます。世間では「平均初婚年齢は約30歳」と言われるため、お嬢様ご自身も「30歳までに考えればいい」と安心されているかもしれません。しかし、厚生労働省の人口動態調査によると、日本で最も婚姻届が多く出されている年齢は女性26歳・男性27歳であり、結婚のボリュームゾーンは実は20代後半でございます。多くの女性が30歳を迎えてから一斉に婚活を始めますが、その時点ではすでに、身元が確かで上品なハイクラス男性の多くはご結婚されています。20代半ばに始めるからこそ、圧倒的な優位性を保ちながら妥協のないお相手選びを進めることができます。"
+              a: "一般社会のデータが示す通り、「20代半ば（24歳〜26歳）」からのスタートが理想的でございます。世間では「平均初婚年齢は約30歳」と言われるため、お嬢様ご自身も「30歳までに考えればいい」と安心されているかもしれません。しかし、厚生労働省の人口動態調査によると、日本で婚姻届が多く出されている年齢は女性26歳・男性27歳であり、結婚のボリュームゾーンは実は20代後半でございます。多くの女性が30歳を迎えてから一斉に婚活を始めますが、その時点ではすでに、身元が確かで上品なハイクラス男性の多くはご結婚されています。20代半ばに始めるからこそ、圧倒的な優位性を保ちながら妥協のないお相手選びを進めることができます。"
             }
           ].map((faq, idx) => (
             <div key={idx} className="bg-white border border-slate-300 rounded-xl overflow-hidden shadow-sm w-full">

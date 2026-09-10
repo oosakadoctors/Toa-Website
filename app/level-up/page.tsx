@@ -4,7 +4,7 @@ import Image from 'next/image';
 export const metadata: Metadata = {
   title: "自称オタク・理系・技術職の男性へ | 婚活攻略ガイド",
   description:
-    "技術者やIT企業、理系男性への婚活攻略方法を専門的知識を踏まえて解説。女性医師（ヒーラー）×体育会系男性仲人（タンク）の最強パーティが、あなたの婚活を成婚（デプロイ）まで完全キャリーします。",
+    "技術者やIT企業、理系男性への婚活攻略方法を専門的知識を踏まえて解説。女性医師（ヒーラー）×体育会系男性仲人（タンク）のいいパーティが、あなたの婚活を成婚（デプロイ）まで完全キャリーします。",
   alternates: {
     canonical: "/tech-men-marriage-strategy",
   },
@@ -119,13 +119,13 @@ export default function TechMenStrategyPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center pt-2">
             <div className="lg:col-span-7 space-y-4 text-slate-700 leading-relaxed">
               <p>
-                また、テニスと野球を愛する体育会系の男性仲人が「前衛タンク」として参戦。お見合い前の会話ラリーを練習するロープレ、清潔感のある勝負服（最強装備）のアドバイス、デートの店選びなど、面倒な裏方タスクをすべて自動化します。
+                また、テニスと野球を愛する体育会系の男性仲人が「前衛タンク」として参戦。お見合い前の会話ラリーを練習するロープレ、清潔感のある勝負服のアドバイス、デートの店選びなど、面倒な裏方タスクをすべて自動化します。
               </p>
               <p>
-                あなたの「誠実さ」という初期ステータスはそのままに、私たちの最強パーティがあなたの戦闘力をレベルMAXまで引き上げます。
+                あなたの「誠実さ」という初期ステータスはそのままに、私たちのナイスパーティがあなたの戦闘力をレベルMAXまで引き上げます。
               </p>
               <p className="font-bold text-slate-900 border-l-2 border-sky-400 pl-3 py-1 bg-slate-50/60 rounded-r-lg">
-                趣味のオンラインゲームを諦める必要なんて1ミリもありません。私たちと一緒に、最短で「結婚という名のエンドロール」を見に行きましょう。まずは男同士、気楽な作戦会議（無料相談）からプラグインしてください！
+                趣味のオンラインゲームを諦める必要なんて1ミリもありません。私たちと一緒に、「結婚という名のエンドロール」をめざしましょう。まずは男同士、気楽な作戦会議（無料相談）からプラグインしてください！
               </p>
             </div>
 
@@ -152,7 +152,7 @@ export default function TechMenStrategyPage() {
         {/* --- COUNSELORS CARD --- */}
         <div className="bg-white/95 backdrop-blur-md shadow-2xl border border-sky-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6">
           <h2 className="text-xl sm:text-2xl font-black text-slate-900 border-l-4 border-sky-500 pl-3 mb-5 leading-relaxed">
-            最強のパーティ（カウンセラー紹介）
+            いいパーティ（カウンセラー紹介）
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -261,7 +261,7 @@ export default function TechMenStrategyPage() {
                   女性カウンセラーには話しにくい男の本音も全部ぶつけてください。会話が苦手でも、デートで緊張してガチガチになっても、私がすべて受け止めますから安心してください。
                 </p>
                 <p className="font-bold text-slate-900">
-                  どんな難関ダンジョン（婚活）も必ずクリアできます。男同士、まずは気楽に作戦会議から始めましょう！
+                  どんな難関ダンジョン（婚活）もクリアできます。男同士、まずは気楽に作戦会議から始めましょう！
                 </p>
               </div>
             </div>
@@ -354,7 +354,7 @@ export default function TechMenStrategyPage() {
                 結婚相談所の20代・30代前半市場は、圧倒的な男手不足ステージ。
               </p>
               <p className="bg-sky-50 p-3.5 rounded-lg border border-sky-200 text-sky-900 font-bold">
-                アプリでは評価されにくかったあなたの「誠実さ」や「安定した仕事（エンジニア等）」というステータスが、ここでは最高値のレア装備として女性から求められます。
+                アプリでは評価されにくかったあなたの「誠実さ」や「安定した仕事（エンジニア等）」というステータスが、ここではレア装備として女性から求められます。
               </p>
               <p>
                 確実に「確定演出」を狙いに行けるスマートな婚活戦略（ロジック）に、あなたの大切な時間を投資しませんか？
