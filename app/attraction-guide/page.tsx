@@ -687,7 +687,7 @@ export default function AttractionGuide() {
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-sky-500 shrink-0 mt-1" />
                     <span style={{ wordBreak: 'break-all' }}>
-                      <strong className="text-gray-900">猫背を直すだけで変わる：</strong>背筋が伸びて胸が張れている人は、それだけで「自信があってカッコいい人」という印象を周囲に与えます。キープし続けるには適度に背筋を鍛えるのが効果的です。
+                      <strong className="text-gray-900">猫背を直すだけで変わる：</strong>背筋が伸びて胸が張れている人は、それだけで「自信があってカッコいい人」という印象になることが多いです。キープし続けるには適度に背筋を鍛えるのが効果的です。
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

@@ -505,7 +505,7 @@ export default function MarriageAdvicePage() {
 
                 <div className="p-5 bg-white rounded-2xl border border-rose-200 shadow-2xs">
                   <h4 className="font-bold text-gray-900 text-base mb-2 flex items-center gap-2" style={{ wordBreak: 'auto-phrase' }}>
-                    <span>🌸</span> 20年のベテランカウンセラーが磨き上げる「あなたの絶対的な強み」
+                    <span>🌸</span> 20年のベテランカウンセラーが磨き上げる「あなたの強み」
                   </h4>
                   <p className="text-xs text-gray-600 leading-relaxed" style={{ wordBreak: 'auto-phrase' }}>
                     20年間で数々の幸せな成婚を生み出してきたプロの目で、あなたの中に眠る「男性の心を惹きつけて離さない心の知性（EQ）」を見つけ出します。女医のロジカルな視点と、ベテランの温かい父親のような伴走力で、あなたの良さを理想に近い形でお相手にプロデュースします。

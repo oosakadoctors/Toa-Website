@@ -192,7 +192,7 @@ export default function MaleDoctorsGuide() {
 
           <div className="space-y-6">
             <p className="font-extrabold text-2xl sm:text-3xl text-gray-900">
-              少人数制だからこそ実現する「2つの絶対的サポート」
+              少人数制だからこそ実現する「2つのサポート」
             </p>
             <p className="text-[20px]">
               当相談所は、会員数を極少数に限定した完全会員制です。大手の機械的なマッチングとは一線を画し、あなたの婚活を緻密かつ迅速にプロデュースします。

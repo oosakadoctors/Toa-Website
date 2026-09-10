@@ -225,7 +225,7 @@ export default function HighSpecStrategyPage() {
               className="text-xl sm:text-2xl font-black text-gray-800 leading-snug mb-3 text-balance"
               style={{ wordBreak: 'auto-phrase' }}
             >
-              第一線で戦うビジネスマンが、生涯の伴侶を選ぶときに「外見」より優先する3つの絶対条件
+              第一線で戦うビジネスマンが、生涯の伴侶を選ぶときに「外見」より優先する3つの条件
             </h3>
             <p 
               className="text-xl text-gray-700 leading-relaxed text-start"
@@ -477,7 +477,7 @@ export default function HighSpecStrategyPage() {
         className="text-xl sm:text-2xl text-gray-300 font-medium leading-relaxed text-center sm:text-center px-1"
         style={{ wordBreak: 'auto-phrase' }}
       >
-        一方的な高望みや表面的な条件パズルではなく、お互いをリスペクトし合える「持続可能な最高の出会い」へ。当相談所の分析力と伴走サポートで、あなたの本当の市場価値と魅力を最大限に引き出します。
+        一方的な高望みや表面的な条件パズルではなく、お互いをリスペクトし合える「持続可能な最高の出会い」へ。当相談所の分析力と伴走サポートで、あなたの本当の市場価値と魅力を引き出します。
       </p>
 
     </div>

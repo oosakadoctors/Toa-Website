@@ -60,7 +60,7 @@ export default function PremiumBanner() {
         </p>
 
         <p className="mt-6 text-sm leading-relaxed text-slate-200 md:text-base md:leading-loose">
-          サポート品質を絶対的に維持するため、毎月の新規受付は一律5名様まで。<br />
+          サポート品質を適切に維持するため、毎月の新規受付は一律5名様まで。<br />
           {getBannerMessage()}
         </p>
 

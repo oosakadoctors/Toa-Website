@@ -101,11 +101,11 @@ export default function EssentialQuestionPage() {
                   <ul className="space-y-3">
                     <li className="flex items-start gap-2">
                       <span className="text-amber-600 font-bold">✖</span>
-                      心の中の「どうせ私なんて」という自己否定感は下がった口角や丸まった背中に現れ、「暗そう」という印象を与えます。
+                      心の中の「どうせ私なんて」という自己否定感は下がった口角や丸まった背中に現れ、「暗そう」という印象になりがちです。
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-amber-600 font-bold">✖</span>
-                      「品定めしよう」という心は目元の鋭さや不自然な表情となり、男性の脳に「責められそう」「色々求められすぎて、一緒にいるとしんどそう」という恐怖を与えます。
+                      「品定めしよう」という心は目元の鋭さや不自然な表情となり、「責められそう」「色々求められすぎて、一緒にいるとしんどそう」と印象になりがちです
                     </li>
                   </ul>
                 </div>
