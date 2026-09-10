@@ -188,7 +188,7 @@ export default function DungeonMapSupportPage() {
               DOUBLE SUPPORT
             </span>
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 tracking-wider w-full">
-              婚活の分岐点で、想いを確実な行動に変える<br className="hidden md:inline" />
+              婚活の分岐点で、想いを行動に変える<br className="hidden md:inline" />
               <span className="text-amber-600 underline decoration-amber-300">「医師×ベテラン仲人」</span>のダブルサポート体制
             </h2>
             <p className="text-sky-900 font-bold text-lg md:text-xl mt-3 max-w-3xl mx-auto">
@@ -260,7 +260,7 @@ export default function DungeonMapSupportPage() {
                 <span className="font-bold text-indigo-900 bg-amber-100/80 px-2 py-0.5 rounded border-b-2 border-amber-400">
                   「医療レベルの安心感・意思決定サポート」×「実践的な成婚プロデュース」
                 </span>
-                のダブルサポートにより、あなたの婚活ダンジョン攻略を確実なものにします。
+                のダブルサポートにより、あなたの婚活ダンジョン攻略をものにします。
               </p>
             </div>
           </div>

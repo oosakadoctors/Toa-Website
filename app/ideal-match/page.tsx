@@ -117,7 +117,7 @@ export default function MensNavyPremiumLandingPage() {
                 <div className="w-8 h-8 rounded-full bg-blue-950 border border-blue-800 flex items-center justify-center text-sky-300 text-sm font-bold">03</div>
                 <h4 className="font-bold text-sky-200 text-base tracking-wide w-full">仕事の疲れがすべて溶ける「理想に近い癒やし」</h4>
                 <p className="text-base text-slate-300 leading-relaxed w-full">
-                  当相談所には、日頃から人を思いやるホスピタリティとEQ（感情知性）の高い女性が多く在籍しています。お互いに忙しい日々の中でも、二人の時間に一歩入れば、あなたの話を「うん、うん」と優しい瞳で聞いてくれ、そっと寄り添ってくれる。その圧倒的な包容力と癒やしの空間が、あなたの毎日のエネルギー源になります。
+                  当相談所には、日頃から人を思いやるホスピタリティとEQ（感情知性）の高い女性が多く在籍しています。お互いに忙しい日々の中でも、二人の時間に一歩入れば、あなたの話を「うん、うん」と優しい瞳で聞いてくれ、そっと寄り添ってくれる。その包容力と癒やしの空間が、あなたの毎日のエネルギー源になります。
                 </p>
               </div>
             </div>

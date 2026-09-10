@@ -344,8 +344,7 @@ OUR IDEAL MEMBER
       <div className="mt-6 rounded-2xl bg-blue-50 p-4">
 
         <p className="text-sm leading-relaxed text-blue-800 font-semibold">
-          常に「次に何をすれば良いか」が
-          明確になるサポートをお約束します。
+          「次に何をすれば良いか」を考えてアドバイスします。
         </p>
 
       </div>
@@ -370,8 +369,7 @@ OUR IDEAL MEMBER
       <div className="mt-6 rounded-2xl bg-emerald-50 p-4">
 
         <p className="text-sm leading-relaxed text-emerald-800 font-semibold">
-          一人で悩ませず、
-          最後まで伴走し続けることをお約束します。
+          一人で悩ませず、一緒に成婚を目指して伴走します。
         </p>
 
       </div>

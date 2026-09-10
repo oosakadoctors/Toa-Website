@@ -75,7 +75,7 @@ export default function PsychologicalMaturityLandingPage() {
                     1. 自分の感情の認知
                   </h3>
                   <p className="text-[20px] md:text-sm text-slate-700 leading-relaxed w-full">
-                    自分の心に湧き上がる「寂しさ・怒り・恐怖」といった感情 from 目を背けず、客観的に見つめる力（メタ認知能力）です。自分の内面を把握できているからこそ、他者に対しても嘘のない、圧倒的な誠実さとして伝わります。
+                    自分の心に湧き上がる「寂しさ・怒り・恐怖」といった感情 from 目を背けず、客観的に見つめる力（メタ認知能力）です。自分の内面を把握できているからこそ、他者に対しても嘘のない、誠実さとして伝わります。
                   </p>
                 </div>
               </div>
@@ -292,7 +292,7 @@ export default function PsychologicalMaturityLandingPage() {
                   その上で、人生において、どのような選択をするかはあなた次第です。
                 </p>
                 <p className="w-full">
-                  私たちは「人生の答えは一つではない」と深く考え、あなたの全ての選択に可能な限り寄り添うことをお約束します。
+                  私たちは「人生の答えは一つではない」と深く考え、あなたの全ての選択に可能な限り寄り添います。
                 </p>
               </div>
             </div>

@@ -351,7 +351,7 @@ export default function TechMenStrategyPage() {
               </p>
               <p>
                 しかし、フィールドを結婚相談所に変えるだけで、世界線は180度反転します。<br />
-                結婚相談所の20代・30代前半市場は、圧倒的な男手不足ステージ。
+                結婚相談所の20代・30代前半市場は、男手不足ステージ。
               </p>
               <p className="bg-sky-50 p-3.5 rounded-lg border border-sky-200 text-sky-900 font-bold">
                 アプリでは評価されにくかったあなたの「誠実さ」や「安定した仕事（エンジニア等）」というステータスが、ここではレア装備として女性から求められます。
@@ -396,7 +396,7 @@ export default function TechMenStrategyPage() {
             エラー解決ログ
           </h2>
           <p className="mb-5 text-slate-700 text-[18px]">
-            自分の好きな領域（技術・研究）に圧倒的な熱量と知識を持つ自称オタク、理系男性の方々へ。様々なエラーを解決します。
+            自分の好きな領域（技術・研究）に熱量と知識を持つ自称オタク、理系男性の方々へ。様々なエラーを解決します。
           </p>
 
           <div className="space-y-6">
@@ -500,7 +500,7 @@ export default function TechMenStrategyPage() {
         {/* --- CLOSING MESSAGE CARD --- */}
         <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-sky-950 text-white backdrop-blur-md p-6 sm:p-10 border border-sky-800 rounded-2xl sm:rounded-3xl text-center shadow-2xl space-y-5">
           <p className="text-[18px] sm:text-[20px] leading-relaxed max-w-3xl mx-auto font-medium text-slate-200">
-            あなたの「誠実さ」と「圧倒的な熱量」を正しく解釈し、成婚まで伴走します。<br />
+            あなたの「誠実さ」と「熱量」を正しく解釈し、成婚まで伴走します。<br />
             まずは男同士、気楽な作戦会議（無料相談）からプラグインしてください。
           </p>
           <div>

@@ -277,7 +277,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             </div>
 
             <div className="pt-3 border-t border-gray-100 space-y-2">
-              <p className="font-bold text-gray-900 text-xl sm:text-2xl">🩵他の男に圧倒的な差をつける！理想の女性を射止める「上級者向けメンズ婚活スタイル」🩵<br />💙【男性編】</p>
+              <p className="font-bold text-gray-900 text-xl sm:text-2xl">🩵他の男に差をつける！理想の女性を射止める「上級者向けメンズ婚活スタイル」🩵<br />💙【男性編】</p>
               
               <div className="mt-2 p-4 bg-gray-50 rounded-lg border border-gray-200 text-lg sm:text-xl text-gray-700 space-y-2">
                 <p className="font-bold text-gray-900 text-xl">1. クール＆リッチを叶える「3つの鉄則」</p>
@@ -299,7 +299,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 space-y-2 text-lg sm:text-xl text-gray-700">
               <p className="font-bold text-pink-700 text-xl">コーデ例</p>
               <p className="leading-relaxed"><strong className="font-bold text-gray-900">左（都会派スマートモノトーン）：</strong> 長い脚のラインを美しく見せるチャコールグレーのテーパードスラックス。アイスグレーの軽いジャケットと、内側の艶やかな黒インナーとの高低差で、知的でシャープな印象を最大化しています。</p>
-              <p className="leading-relaxed"><strong className="font-bold text-gray-900">右（都会派リッチ・アースカラー）：</strong> 首元を上品に見せるモックネックと、大人っぽいビターブラウンのジャケット。脚長効果のある美しいシルエットのネイビー（または白）パンツを合わせ、周囲の男性と圧倒的な差をつけるスタイリッシュな佇まいを表現。</p>
+              <p className="leading-relaxed"><strong className="font-bold text-gray-900">右（都会派リッチ・アースカラー）：</strong> 首元を上品に見せるモックネックと、大人っぽいビターブラウンのジャケット。脚長効果のある美しいシルエットのネイビー（または白）パンツを合わせ、周囲の男性と差をつけるスタイリッシュな佇まいを表現。</p>
             </div>
           </div>
         </div>

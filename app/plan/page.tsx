@@ -8,7 +8,7 @@ import Banner from "@/components/Banner";
 // ============================================================================
 export const metadata: Metadata = {
   title: "料金プラン | 大阪梅田ドクターズ結婚相談所",
-  description: "大阪梅田ドクターズ結婚相談所の明確な料金プラン。月5名様限定の完全少人数制で、現役女医とベテランカウンセラーによる医学的・心理学的アプローチを圧倒的なコストパフォーマンスで提供します。",
+  description: "大阪梅田ドクターズ結婚相談所の明確な料金プラン。月5名様限定の完全少人数制で、現役女医とベテランカウンセラーによる医学的・心理学的アプローチをコストパフォーマンスで提供します。",
   alternates: {
     canonical: "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/plan",
   },

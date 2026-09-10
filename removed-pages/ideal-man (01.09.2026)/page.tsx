@@ -6,7 +6,7 @@ import { Sparkles, CheckCircle2, UserCheck, Heart, ShieldCheck, MessageCircle, A
 export const metadata: Metadata = {
   title: "婚活でいい人が減った？」と思い始めた30代のあなたへ｜大阪梅田ドクターズ結婚相談所が効率的な理由",
   description:
-    " 「大阪梅田で確実な未来への投資として婚活を始める男女へ。医師・経営者・公務員などのハイステータス層や、女医の人脈を活かした、育ちの良い男女が集まる大阪梅田ドクターズ結婚相談所への入会はスピード婚への効率的な選択肢の一つであることを解説",
+    " 「大阪梅田で未来への投資として婚活を始める男女へ。医師・経営者・公務員などのハイステータス層や、女医の人脈を活かした、育ちの良い男女が集まる大阪梅田ドクターズ結婚相談所への入会はスピード婚への効率的な選択肢の一つであることを解説",
   alternates: {
     canonical: "/consider",
   },
@@ -490,7 +490,7 @@ export default function MarriageAdvicePage() {
                 【私たちの得意分野】「選ばれるEQ」を見抜き、磨き上げる2つのアプローチ
               </h3>
               <p className="text-sm text-gray-700" style={{ wordBreak: 'auto-phrase' }}>
-                私たちは、あなたの「少し格上のいい人に出会いたい」という理想を、ただの憧れで終わらせません。確かな実績と、医療の現場でも不可欠な「人間力」の知見で、確実な出会いへと変えていきます。
+                私たちは、あなたの「少し格上のいい人に出会いたい」という理想を、ただの憧れで終わらせません。確かな実績と、医療の現場でも不可欠な「人間力」の知見で、出会いへと変えていきます。
               </p>
 
               <div className="grid gap-4 md:grid-cols-2 pt-2">

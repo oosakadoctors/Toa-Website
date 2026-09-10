@@ -313,7 +313,7 @@ export default function ReasonsPage() {
             </p>
   
             <p>
-              当相談所が圧倒的な高い成婚率を誇る最大の理由は、現役医師とカウンセラー歴20年のベテラン男性仲人が「2名1組のチーム」となり、あなた専用の婚活セカンド（セコンド）として徹底的に伴走する点にあります。
+              当相談所の強みは、現役医師とカウンセラー歴20年のベテラン男性仲人が「2名1組のチーム」となり、あなた専用の婚活セカンド（セコンド）として徹底的に伴走する点にあります。
             </p>
             <p>
               当相談所では、まずあなた自身が気づいていない深層心理にある「本当の結婚相手への理想像」を入会面談で徹底的に解剖します。医師監修のカウンセリング心理学や脳科学、行動経済学のアプローチを用いて、あなたが人生において<span className="text-rose-600 font-bold">「譲れない条件」</span>と<span className="text-gray-500 font-bold">「実は妥協しても幸せになれるポイント」</span>をロジカルに切り分けます。
@@ -425,7 +425,7 @@ export default function ReasonsPage() {
             </p>
 
             <p>
-              婚活において「年齢や年収、職業、婚姻歴（バツイチ・シングルマザー）に妥協したくない」というアラサー・アラフォー女性の切実な願いや、「自分の男のプライドを傷つけられたくない」「会社の同僚や友人にバレたくない」という20代・30代・40代のビジネスパーソンの男の本音を、私たちは決して否定しません。
+              婚活において「理想をあきらめたあきらめたくくない」というアラサー・アラフォー女性の切実な願いや、「自分の男のプライドを傷つけられたくない」「会社の同僚や友人にバレたくない」という20代・30代・40代のビジネスパーソンの男の本音を、私たちは決して否定しません。
             </p>
             <p className="font-bold text-gray-900">
               客観的なデータ分析（ロジカルな戦略）と、1対1の手厚いサポート（感情に寄り添う親身なケア）をうまく両立させることができます。
@@ -460,7 +460,7 @@ export default function ReasonsPage() {
   <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
     <Image
       src="/career-data-matching-performance.jpg"
-      alt="キャリアと結婚を両立するデータマッチングと、圧倒的な時間パフォーマンスを可能にする婚活サービス解説図"
+      alt="キャリアと結婚を両立するデータマッチングと、時間パフォーマンスを可能にする婚活サービス解説図"
       fill
       sizes="(max-width: 768px) 100vw, 800px"
       priority={false}
@@ -559,7 +559,7 @@ export default function ReasonsPage() {
       05
     </div>
     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 tracking-tight">
-      【現役医師監修】心理学・脳科学に基づく「心が疲れない婚活」で高い成婚率を実現
+      【現役医師監修】心理学・脳科学に基づく「心が疲れない婚活」を目指します
     </h2>
   </div>
 
@@ -598,7 +598,7 @@ export default function ReasonsPage() {
       </h3>
       
       <p className="text-lg sm:text-xl text-gray-800 leading-relaxed">
-        当相談所は、医療現場で多くの心と向き合ってきた現役医師が監修し、自らもカウンセラーを兼任する、大阪でも珍しい体制を整えています。医学的・心理学的知見に基づいた独自の「婚活メンタルケア」を導入し、感情論ではないロジカルなアプローチを実施。お断りの理由を客観的に分析して次の出会いに繋げるため、婚活疲れを綺麗に解消し、圧倒的に高い成婚率を叩き出しています。
+        当相談所は、医療現場で多くの心と向き合ってきた現役医師が監修し、自らもカウンセラーを兼任する、大阪でも珍しい体制を整えています。医学的・心理学的知見に基づいた独自の「婚活メンタルケア」を導入し、感情論ではないロジカルなアプローチを実施。お断りの理由を客観的に分析して次の出会いに繋げるため、婚活疲れを綺麗に解消を目指します。
       </p>
     </div>
   </div>
@@ -656,7 +656,7 @@ export default function ReasonsPage() {
             <div className="bg-rose-50/50 border border-rose-100 rounded-2xl p-8 mt-4">
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 flex items-center gap-3 mb-6">
                 <GraduationCap className="w-7 h-7 text-rose-500 shrink-0" />
-                データに基づく確実な「マンツーマン必勝指導」
+                データに基づく「マンツーマン必勝指導」
               </h3>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -680,7 +680,7 @@ export default function ReasonsPage() {
             </div>
 
             <p className="pt-2 text-base sm:text-lg">
-              まるで塾の先生のようにマンツーマンで丁寧に指導。自己流の恋愛ではなく、20年の成婚データに基づく確実な必勝テクニックを伝授し、あなたの魅力を120%底上げします。
+              まるで塾の先生のようにマンツーマンで丁寧に指導。自己流の恋愛ではなく、20年の成婚データに基づく必勝テクニックを伝授し、あなたの魅力を120%底上げします。
             </p>
           </div>
         </section>
