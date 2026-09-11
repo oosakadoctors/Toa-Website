@@ -26,7 +26,14 @@ export const metadata: Metadata = {
   title: "大阪の結婚相談所なら［大阪梅田ドクターズ結婚相談所］が選ばれる6つの理由",
   description:
     "大阪で成婚率が高いおすすめの仲人型結婚相談所なら大阪梅田ドクターズ。現役女医監修のベストを目指す婚活プロデュースとキャリア20年のベテランによる2名1組ダブルサポート、オーダーメイドの婚活戦略でスピード成婚へお手伝いします。",
-};
+  alternates: {
+    canonical: "/why-us",
+  },
+
+  openGraph: {
+    url: "/why-us",
+  },
+  };
 
 export default function ReasonsPage() {
   return (
