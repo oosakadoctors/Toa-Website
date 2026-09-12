@@ -1,9 +1,23 @@
-"use client";
+
 
 import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
+import { Metadata } from 'next';
 import { MessageCircle, ShieldCheck, ArrowRight } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: '大阪の婚活初心者へ｜恋愛経験が少なくても始められる結婚相談所',
+  description: '大阪・梅田の結婚相談所。恋愛経験が少ない方、何から始めればいいか分からない方の婚活を、現役女医とベテランカウンセラーがサポートします。匿名でのLINE相談も可能。北新地駅徒歩1分。',
+  alternates: { canonical: '/beginners' },
+  openGraph: {
+    title: '大阪の婚活初心者へ｜恋愛経験が少なくても始められる結婚相談所',
+    description: '恋愛経験が少ない方、何から始めればいいか分からない方の婚活をサポートします。匿名でのLINE相談も可能。北新地駅徒歩1分の結婚相談所。',
+    url: '/beginners',
+    type: 'website',
+  },
+};
+
 
 export default function BeginnerLandingPage() {
   return (

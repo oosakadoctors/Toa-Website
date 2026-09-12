@@ -14,8 +14,7 @@ export const metadata: Metadata = {
     description: 'お見合い後に「交際に進むべきか」迷う32歳女性に向けた相談実例を解説。ときめきがなくても交際に進んでいい理由やお見合いから仮交際に進む割合の目安など、実際の対話を通じてご紹介します。',
     type: 'website',
     url: "/matchmaking-criteria",
-    locale: "ja_JP",
-
+    locale: "ja_JP"
   },
   twitter: {
     card: 'summary_large_image',

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "大阪梅田ドクターズ結婚相談所",
     type: "website",
     locale: "ja_JP",
-  },
+  }
   
 };
 

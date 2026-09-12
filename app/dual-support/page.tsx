@@ -23,10 +23,16 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: '結婚相談所、担当カウンセラーは1人で本当に十分?2人体制という選択|大阪梅田ドクターズ結婚相談所',
   description: '結婚相談所が合わない、デメリットが気になる方へ。現役女性医師とベテラン男性仲人、2名体制で婚活をサポートします。',
+  alternates: {
+    canonical: "/dual-support"
+  },
   openGraph: {
     title: '結婚相談所、担当カウンセラーは1人で本当に十分?2人体制という選択|大阪梅田ドクターズ結婚相談所',
     description: '結婚相談所が合わない、デメリットが気になる方へ。現役女性医師とベテラン男性仲人、2名体制で婚活をサポートします。',
-    type: 'website',
+    url: "/dual-support",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    type: "website",
+    locale: "ja_JP",
   },
   twitter: {
     card: 'summary_large_image',

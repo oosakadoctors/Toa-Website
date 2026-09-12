@@ -1,21 +1,20 @@
-"use client";
+import React from 'react';
+import { Metadata } from 'next';
 
-import React, { useRef } from 'react';
+export const metadata: Metadata = {
+  title: '結婚相談所の流れとサポート内容｜入会から成婚までの4フェーズ',
+  description: '大阪梅田ドクターズ結婚相談所の、入会から成婚までの流れをご説明します。プロフィール作成、お見合いのセッティング、交際中の相談、プロポーズまで一貫してサポートします。',
+  alternates: { canonical: '/steps' },
+  openGraph: {
+    title: '結婚相談所の流れとサポート内容｜入会から成婚までの4フェーズ',
+    description: 'プロフィール作成、お見合いのセッティング、交際中の相談、プロポーズまで一貫してサポートします。',
+    url: '/steps',
+    type: 'website',
+  },
+};
+
 
 export default function MobileFirstMarriagePage(): React.JSX.Element {
-  // Explicit HTMLDivElement types for TypeScript compatibility
-  const step1Ref = useRef<HTMLDivElement | null>(null);
-  const step2Ref = useRef<HTMLDivElement | null>(null);
-  const step3Ref = useRef<HTMLDivElement | null>(null);
-  const step4Ref = useRef<HTMLDivElement | null>(null);
-  const step5Ref = useRef<HTMLDivElement | null>(null);
-
-  const scrollToSection = (elementRef: React.RefObject<HTMLDivElement | null>): void => {
-    if (elementRef.current) {
-      elementRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
   return (
     <div className="w-full max-w-2xl mx-auto p-4 bg-white text-gray-900 font-sans leading-relaxed tracking-normal text-xl sm:text-2xl antialiased">
       
@@ -53,14 +52,13 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
           </div>
           <p className="text-gray-600 text-lg sm:text-xl leading-snug">あなたの魅力を最大限に引き出すプロフィールを一緒に作成します。提携しているフォトスタジオでのスタジオ撮影もサポートいたしますので、好印象を与える素敵な1枚をご用意できます。</p>
           <div className="mt-4 flex justify-end items-center h-[42px]">
-            <button 
-              type="button"
-              onClick={() => scrollToSection(step1Ref)}
+            <a 
+              href="#step1"
               className="relative overflow-hidden inline-flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-rose-500 px-5 py-2 rounded-full text-base sm:text-lg font-bold text-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] border-b-4 border-pink-700 hover:brightness-105 transition-all duration-100 active:translate-y-0.5 active:border-b-2 transform before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_3s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent"
             >
               <span className="relative z-10">💓 詳しい説明</span>
               <span className="relative z-10 text-sm opacity-90">▶</span>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -72,14 +70,13 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
           </div>
           <p className="text-gray-600 text-lg sm:text-xl leading-snug">最先端の検索システムを使って、24時間いつでもご希望の条件でお相手をお探しいただけます。また、データだけでは分からない、カウンセラー目線での「あなたにぴったりなお相手」のご紹介も行います</p>
           <div className="mt-4 flex justify-end items-center h-[42px]">
-            <button 
-              type="button"
-              onClick={() => scrollToSection(step2Ref)}
+            <a 
+              href="#step2"
               className="relative overflow-hidden inline-flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-rose-500 px-5 py-2 rounded-full text-base sm:text-lg font-bold text-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] border-b-4 border-pink-700 hover:brightness-105 transition-all duration-100 active:translate-y-0.5 active:border-b-2 transform before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_3s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent"
             >
               <span className="relative z-10">💓 詳しい説明</span>
               <span className="relative z-10 text-sm opacity-90">▶</span>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -91,14 +88,13 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
           </div>
           <p className="text-gray-600 text-lg sm:text-xl leading-snug">お互いに「会ってみたい」となったらお見合いが成立です。場所や日時の調整はすべてカウンセラーが代行します。当日の服装や会話のコツなども事前にアドバイスいたしますのでご安心ください。</p>
           <div className="mt-4 flex justify-end items-center h-[42px]">
-            <button 
-              type="button"
-              onClick={() => scrollToSection(step3Ref)}
+            <a 
+              href="#step3"
               className="relative overflow-hidden inline-flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-rose-500 px-5 py-2 rounded-full text-base sm:text-lg font-bold text-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] border-b-4 border-pink-700 hover:brightness-105 transition-all duration-100 active:translate-y-0.5 active:border-b-2 transform before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_3s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent"
             >
               <span className="relative z-10">💓 詳しい説明</span>
               <span className="relative z-10 text-sm opacity-90">▶</span>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -110,14 +106,13 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
           </div>
           <p className="text-gray-600 text-lg sm:text-xl leading-snug">お見合い後、お互いに「また会いたい」と思ったら交際スタートです。まずは複数の方とデートを重ねながら、少しずつお互いのことを知っていく期間です。</p>
           <div className="mt-4 flex justify-end items-center h-[42px]">
-            <button 
-              type="button"
-              onClick={() => scrollToSection(step4Ref)}
+            <a 
+              href="#step4"
               className="relative overflow-hidden inline-flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-rose-500 px-5 py-2 rounded-full text-base sm:text-lg font-bold text-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] border-b-4 border-pink-700 hover:brightness-105 transition-all duration-100 active:translate-y-0.5 active:border-b-2 transform before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_3s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent"
             >
               <span className="relative z-10">💓 詳しい説明</span>
               <span className="relative z-10 text-sm opacity-90">▶</span>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -129,14 +124,13 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
           </div>
           <p className="text-gray-600 text-lg sm:text-xl leading-snug">「この人と結婚を見据えてお付き合いしたい」という特定の1名が決まったら、真剣交際へと進みます。他の異性との連絡や紹介はストップし、結婚後の具体的なイメージを擦り合わせていきます。</p>
           <div className="mt-4 flex justify-end items-center h-[42px]">
-            <button 
-              type="button"
-              onClick={() => scrollToSection(step5Ref)}
+            <a 
+              href="#step5"
               className="relative overflow-hidden inline-flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-rose-500 px-5 py-2 rounded-full text-base sm:text-lg font-bold text-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] border-b-4 border-pink-700 hover:brightness-105 transition-all duration-100 active:translate-y-0.5 active:border-b-2 transform before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_3s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent"
             >
               <span className="relative z-10">💓 詳しい説明</span>
               <span className="relative z-10 text-sm opacity-90">▶</span>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -148,14 +142,13 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
           </div>
           <p className="text-gray-600 text-lg sm:text-xl leading-snug">お互いの気持ちが固まったら、いよいよプロポーズです。タイミングやシチュエーションのご相談もお任せください。</p>
           <div className="mt-4 flex justify-end items-center h-[42px]">
-            <button 
-              type="button"
-              onClick={() => scrollToSection(step5Ref)}
+            <a 
+              href="#step5"
               className="relative overflow-hidden inline-flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-rose-500 px-5 py-2 rounded-full text-base sm:text-lg font-bold text-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] border-b-4 border-pink-700 hover:brightness-105 transition-all duration-100 active:translate-y-0.5 active:border-b-2 transform before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_3s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent"
             >
               <span className="relative z-10">💓 詳しい説明</span>
               <span className="relative z-10 text-sm opacity-90">▶</span>
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -164,7 +157,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
       <div className="border-t border-gray-200 pt-8 space-y-10">
         
         {/* STEP 1 DETAIL */}
-        <div ref={step1Ref} className="scroll-mt-6">
+        <div id="step1" className="scroll-mt-6">
           <div className="p-5 border border-pink-100 bg-white rounded-lg space-y-4 text-justify">
             <div className="flex items-center gap-3 pb-2 border-b border-pink-100">
               <span className="bg-pink-600 text-white text-base font-black px-3.5 py-1 rounded-md tracking-wider shrink-0 shadow-xs">
@@ -214,7 +207,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
         </div>
 
         {/* STEP 2 DETAIL */}
-        <div ref={step2Ref} className="scroll-mt-6">
+        <div id="step2" className="scroll-mt-6">
           <div className="p-5 border border-gray-200 bg-white rounded-lg space-y-4 text-justify">
             <div className="flex items-center gap-3 pb-2 border-b border-gray-100">
               <span className="bg-pink-600 text-white text-base font-black px-3.5 py-1 rounded-md tracking-wider shrink-0 shadow-xs">
@@ -238,7 +231,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
         </div>
 
         {/* STEP 3 DETAIL */}
-        <div ref={step3Ref} className="scroll-mt-6">
+        <div id="step3" className="scroll-mt-6">
           <div className="p-5 border border-gray-200 bg-white rounded-lg space-y-4 text-justify">
             <div className="flex items-center gap-3 pb-2 border-b border-gray-100">
               <span className="bg-pink-600 text-white text-base font-black px-3.5 py-1 rounded-md tracking-wider shrink-0 shadow-xs">
@@ -255,13 +248,12 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
             
             <div className="bg-gray-50 border border-gray-200 p-4 rounded-lg flex flex-col space-y-3">
               <span className="text-lg sm:text-xl leading-snug text-gray-700">大阪梅田ドクターズ結婚相談所ではお見合いの基本ルールをサポートします。</span>
-              <button 
-                type="button" 
-                onClick={() => window.location.href = '/rules'}
+              <a 
+                href="/rules"
                 className="w-full text-center bg-gray-900 text-white font-bold py-2.5 rounded-md text-lg sm:text-xl active:bg-gray-800 hover:bg-gray-800 transition-colors shadow-xs"
               >
                 お見合いルール・規約を見る
-              </button>
+              </a>
             </div>
 
             <p className="text-gray-600 text-lg sm:text-xl">や第一印象を決める外見などをサポートします。</p>
@@ -305,7 +297,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
         </div>
 
         {/* STEP 4 DETAIL */}
-        <div ref={step4Ref} className="scroll-mt-6">
+        <div id="step4" className="scroll-mt-6">
           <div className="p-5 border border-gray-200 bg-white rounded-lg space-y-4 text-justify">
             <div className="flex items-center gap-3 pb-2 border-b border-gray-100">
               <span className="bg-pink-600 text-white text-base font-black px-3.5 py-1 rounded-md tracking-wider shrink-0 shadow-xs">
@@ -346,7 +338,7 @@ export default function MobileFirstMarriagePage(): React.JSX.Element {
         </div>
 
         {/* STEP 5 & 6 DETAILS */}
-        <div ref={step5Ref} className="scroll-mt-6 space-y-4">
+        <div id="step5" className="scroll-mt-6 space-y-4">
           <div className="flex items-center gap-3 pb-2 border-b border-gray-100">
             <span className="bg-pink-600 text-white text-base font-black px-3.5 py-1 rounded-md tracking-wider shrink-0 shadow-xs">
               STEP 5 & 6

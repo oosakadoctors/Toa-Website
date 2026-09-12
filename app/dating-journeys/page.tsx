@@ -5,6 +5,21 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "準備中 | 大阪梅田ドクターズ結婚相談所",
   description: "大阪梅田ドクターズ結婚相談所の公式ウェブサイトは現在リニューアル準備中です。現役女医監修×ベテラン仲人によるベストを目指す婚活プロデュースを近日公開予定です。",
+   
+    alternates: {
+    canonical: "/dating-journeys",
+  },
+  openGraph: {
+    title: "準備中 | 大阪梅田ドクターズ結婚相談所",
+    description: "大阪梅田ドクターズ結婚相談所の公式ウェブサイトは現在リニューアル準備中です。現役女医監修×ベテラン仲人によるベストを目指す婚活プロデュースを近日公開予定です。",
+    url: "/dating-journeys",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    type: "website",
+    locale: "ja_JP",
+  },
+
+
+
 };
 
 export default function ComingSoonPage() {

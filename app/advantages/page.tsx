@@ -1,9 +1,8 @@
-'use client';
-
-import React, { useRef } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import femaleAdvisor from "@/public/femaleAdvisor.jpg";
 import Link from 'next/link';
+import { Metadata } from 'next';
 import { 
   Sparkles, 
   HelpCircle, 
@@ -18,26 +17,20 @@ import {
   ShieldCheck
 } from 'lucide-react';
 
+
+export const metadata: Metadata = {
+  title: '大阪梅田で医師・ハイスペック男性と結婚する方法｜女性向けハイクラス婚活の戦略',
+  description: 'ハイスペック男性が生涯の伴侶に求める3つのリスペクトとは。医師・エグゼクティブに選ばれるための条件を、現役女医の視点から解説します。',
+  alternates: { canonical: '/advantages' },
+  openGraph: {
+    title: '大阪梅田で医師・ハイスペック男性と結婚する方法｜女性向けハイクラス婚活の戦略',
+    description: 'ハイスペック男性が生涯の伴侶に求める3つのリスペクトとは。医師・エグゼクティブに選ばれるための条件を、現役女医の視点から解説します。',
+    url: '/advantages',
+    type: 'website',
+  },
+};
+
 export default function HighSpecStrategyPage() {
-  // ナビゲーションのアンカースクロール用リファレンス
-  const section1Ref = useRef<HTMLDivElement>(null);
-  const section2Ref = useRef<HTMLDivElement>(null);
-
-  const scrollToSection = (elementRef: React.RefObject<HTMLDivElement | null>) => {
-    if (elementRef.current) {
-      const offset = 70; // 固定ナビバーのバッファオフセット
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = elementRef.current.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
-
   return (
     <div className="bg-[#FAF8F5] text-gray-950 min-h-screen pb-12 font-medium text-xl leading-relaxed w-full overflow-x-hidden">
     
@@ -156,13 +149,13 @@ export default function HighSpecStrategyPage() {
 
               <div className="mt-6 flex justify-end">
 
-                <button
-                  onClick={() => scrollToSection(section1Ref)}
+                <a
+                  href="#section1"
                   className="group inline-flex min-w-[260px] justify-center items-center gap-2 rounded-xl bg-[#89D1D5] hover:bg-[#72c2c6] px-6 py-3.5 text-xl font-black text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-xl active:scale-95"
                 >
                   📖 成婚のヒントを読む
                   <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-                </button>
+                </a>
 
               </div>
 
@@ -187,13 +180,13 @@ export default function HighSpecStrategyPage() {
 
               <div className="mt-6 flex justify-end">
 
-                <button
-                  onClick={() => scrollToSection(section2Ref)}
+                <a
+                  href="#section2"
                   className="group inline-flex min-w-[260px] justify-center items-center gap-2 rounded-xl bg-[#F5A3B8] hover:bg-[#e88ba2] px-6 py-3.5 text-xl font-black text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-xl active:scale-95"
                 >
                   💗 女医からのメッセージ
                   <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-                </button>
+                </a>
 
               </div>
 
@@ -207,7 +200,7 @@ export default function HighSpecStrategyPage() {
       {/* ============================================================
           SECTION 1: THE REALITY OF EXECUTIVE MARRIAGE (Full-Width Mobile)
           ============================================================ */}
-      <div ref={section1Ref} className="w-full mb-8 sm:px-4">
+      <div id="section1" className="w-full mb-8 sm:px-4 scroll-mt-20">
         <div className="max-w-4xl mx-auto space-y-6">
           
           {/* SECTION HEADER BLOCK */}
@@ -345,7 +338,7 @@ export default function HighSpecStrategyPage() {
           SECTION 2: DOCTOR'S REALISTIC MESSAGE (Full-Width Mobile)
           ============================================================ */}
 
-      <div ref={section2Ref} className="w-full mb-8 sm:px-4">
+      <div id="section2" className="w-full mb-8 sm:px-4 scroll-mt-20">
         <div className="max-w-4xl mx-auto bg-gradient-to-b from-white to-[#F5A3B8]/10 w-full p-4 sm:p-6 shadow-sm border-y sm:border border-[#F5A3B8]/30 sm:rounded-3xl border-l-4 border-l-[#F5A3B8]">
 
           {/* Header */}

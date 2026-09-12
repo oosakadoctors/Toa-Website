@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     title: '30代のための、客観的で心理的安心感に満ちた結婚相談',
     description: '現役女性医師と20年ベテラン仲人が、あなたの理想を可視化する独自の『婚活未来図』や『婚活未来診断MMM』で伴走。IQの点数ではない、本当の価値観を深く知る無料相談のリアルな流れをご紹介します。',
     type: 'website',
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    locale: "ja_JP",
   },
   twitter: {
     card: 'summary_large_image',
