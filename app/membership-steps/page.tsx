@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import clinic1 from "@/public/couple1.jpg";
 import clinic2 from "@/public/femaleAdvisor.jpg";
@@ -7,17 +6,17 @@ import clinic3 from "@/public/maleAdvisor.jpg";
 
 export const metadata: Metadata = {
   title:
-    "入会条件・入会審査とご入会までの流れ｜大阪梅田ドクターズ結婚相談所",
+    "入会制限と入会審査｜大阪梅田ドクターズ結婚相談所（毎月5名限定）",
   description:
-    "大阪梅田ドクターズ結婚相談所の入会条件・入会審査についてご案内します。毎月5名限定の少人数制で、本気で婚活に取り組む方を丁寧にサポート。公式LINE相談から無料カウンセリング、婚活スタートまでの4ステップもご紹介します。",
+    "大阪梅田ドクターズ結婚相談所の入会条件と審査についてご説明します。新規入会は毎月5名限定。お断りする場合の基準と、ご入会までの4ステップを公開しています。",
   alternates: {
     canonical: "/membership-steps",
   },
   openGraph: {
     title:
-      "入会条件・入会審査とご入会までの流れ｜大阪梅田ドクターズ結婚相談所",
+      "入会制限と入会審査｜大阪梅田ドクターズ結婚相談所（毎月5名限定）",
     description:
-      "入会条件・入会審査の考え方と、公式LINE相談から婚活スタートまでの4ステップをご紹介。毎月5名限定の少人数制で、一人ひとりに寄り添う婚活サポートを提供します。",
+      "大阪梅田ドクターズ結婚相談所の入会条件と審査についてご説明します。新規入会は毎月5名限定。お断りする場合の基準と、ご入会までの4ステップを公開しています。",
     url: "/membership-steps",
     type: "website",
   },
@@ -26,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function MembershipSteps() {
   return (
-    <div>
+    <div className="text-[20px]">
       <section className="border-b border-pink-100 bg-gradient-to-b from-[#FFF6F8] to-white">
   <div className="mx-auto px-5 py-6 sm:py-16 space-y-2">
 
@@ -34,9 +33,32 @@ export default function MembershipSteps() {
       📋入会制限と審査について
     </span>
 
-    <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
+    <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
       大阪梅田ドクターズ結婚相談所の「入会制限」と「入会審査」について
-    </h2>
+    </h1>
+
+    <div className="my-3  space-y-4 text-gray-800 leading-relaxed font-medium w-full">
+      <p>
+        大阪梅田ドクターズ結婚相談所の新規入会は、毎月5名限定です。どなたでもご入会いただけるわけではなく、無料相談の段階で、婚活に受け身な方や後ろ向きな姿勢の方についてはお断りしています。ご入会までは、公式LINEでのご相談、無料個別カウンセリング、方向性のご相談、活動開始という4つのステップで進みます。
+      </p>
+
+      <p className="font-bold text-gray-900">要点は3つです。</p>
+
+      <ul className="space-y-2 list-none pl-0">
+        <li className="flex items-start gap-2">
+          <span className="text-pink-600 font-bold">•</span>
+          <span>新規入会は毎月5名限定。会員1名に2名の担当がつく体制を保つため</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <span className="text-pink-600 font-bold">•</span>
+          <span>無料相談の段階で審査があり、お断りする場合がある</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <span className="text-pink-600 font-bold">•</span>
+          <span>強引な入会勧誘は行わない。LINE相談だけで終えることもできる</span>
+        </li>
+      </ul>
+    </div>
 
     <div className="space-y-2 text-gray-800 leading-relaxed font-medium w-full">
 
@@ -64,7 +86,7 @@ export default function MembershipSteps() {
         そのため、大変恐縮ではございますが、どなたでもご入会いただけるわけではございません。
       </p>
 
-      <p className="font-black text-gray-900">
+      <p className="font-black text-gray-900 text-xl">
         無料の「婚活相談」の段階で、以下のような方のご入会はお断りさせていただいております。
       </p>
 
@@ -80,36 +102,36 @@ export default function MembershipSteps() {
       ⚠️入会をお断りしております
     </span>
 
-    <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
+    <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
       このような方のご入会はお断りしております
     </h2>
 
 <div className="space-y-4 text-gray-800 leading-relaxed font-medium w-full">
 
   <p className="flex items-start gap-3">
-    <span className="text-red-600 animate-pulse text-lg shrink-0">✕</span>
+    <span className="text-red-600 animate-pulse text-xl shrink-0">✕</span>
     <span>「お金を払えば、相談所がすべてやってくれる」と受け身な方</span>
   </p>
 
   <p className="flex items-start gap-3">
-    <span className="text-red-600 animate-pulse text-lg shrink-0 [animation-delay:200ms]">✕</span>
+    <span className="text-red-600 animate-pulse text-xl shrink-0 [animation-delay:200ms]">✕</span>
     <span>プロのアドバイスや戦略を素直に実践できず、言い訳を重ねてしまう方</span>
   </p>
 
   <p className="flex items-start gap-3">
-    <span className="text-red-600 animate-pulse text-lg shrink-0 [animation-delay:400ms]">✕</span>
+    <span className="text-red-600 animate-pulse text-xl shrink-0 [animation-delay:400ms]">✕</span>
     <span>ご自身のことは棚に上げ、お相手への批判や愚痴ばかりを口にされる方</span>
   </p>
 
   <p className="flex items-start gap-3">
-    <span className="text-red-600 animate-pulse text-lg shrink-0 [animation-delay:600ms]">✕</span>
+    <span className="text-red-600 animate-pulse text-xl shrink-0 [animation-delay:600ms]">✕</span>
     <span>「どうせ私なんて」「この歳だから無理」と、最初から諦める前提の方</span>
   </p>
 
   <br />
 
   <p>
-    過酷な現実をお伝えしますが、婚活において「他力本願な姿勢」や「後ろ向きなマインド」のままでは、どれほど私たちが理想に近い武器（戦略・ネットワーク）をお渡ししても、格上のお相手から選ばれることはありません。あなたの大切な時間とお金を無駄にさせないためにも、このような場合は入会をご遠慮いただいております。
+    過酷な現実をお伝えしますが、婚活において「他力本願な姿勢」や「後ろ向きなマインド」のままでは、どれほど私たちが理想に近い武器（戦略・ネットワーク）をお渡ししても、全てお相手から選ばれることはありません。あなたの大切な時間とお金を無駄にさせないためにも、このような場合は入会をご遠慮いただいております。
   </p>
 
 </div>
@@ -123,7 +145,7 @@ export default function MembershipSteps() {
       🩷本気のあなたへ💙
     </span>
 
-    <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
+    <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
       私たちが、すべての情熱を注いでサポートしたいのは「このような方」です。
     </h2>
 
@@ -135,7 +157,7 @@ export default function MembershipSteps() {
 
       <br />
 
-      <p className="font-black text-gray-900 text-lg">
+      <p className="font-black text-gray-900 text-xl sm:text-2xl">
         「これまでの自分を変えて、本気で理想の人生、未来を掴み取りたい」
       </p>
 
@@ -145,7 +167,7 @@ export default function MembershipSteps() {
         そのために、私たちの戦略を信じ、前向きに、泥臭く努力する覚悟がある方。
       </p>
 
-      <p className="font-black text-pink-600 text-lg">
+      <p className="font-black text-pink-600 text-xl sm:text-2xl">
         そんなあなたの「本気の決断」に、私たちは全責任を持って伴走いたします。
       </p>
 
@@ -161,7 +183,7 @@ export default function MembershipSteps() {
       🌟3つのお約束
     </span>
 
-    <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
+    <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
       私たちの理念に共感していただける会員様への「3つの約束」
     </h2>
 
@@ -169,7 +191,7 @@ export default function MembershipSteps() {
 
       <br />
 
-      <p className="font-black text-pink-600 text-lg">
+      <p className="font-black text-pink-600 text-xl sm:text-2xl">
         1.【あなたの可能性を発見し120%信じ抜きます】
       </p>
 
@@ -179,7 +201,7 @@ export default function MembershipSteps() {
 
       <br />
 
-      <p className="font-black text-pink-600 text-lg">
+      <p className="font-black text-pink-600 text-xl sm:text-2xl">
         2.【感情論ではなく、常に『次にやるべき具体策』を提示します】
       </p>
 
@@ -189,7 +211,7 @@ export default function MembershipSteps() {
 
       <br />
 
-      <p className="font-black text-pink-600 text-lg">
+      <p className="font-black text-pink-600 text-xl sm:text-2xl">
         3.【あなたが心折れそうな時ほど、あなたの味方であり続けます】
       </p>
 
@@ -209,7 +231,7 @@ export default function MembershipSteps() {
       🩷最後に💙
     </span>
 
-    <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
+    <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
       「この年齢だからこそ、もう負けたくない。理想に近いパートナーと、理想に近い人生を始めたい。」
     </h2>
 
@@ -217,7 +239,7 @@ export default function MembershipSteps() {
 
       <br />
 
-      <p className="font-black text-pink-600 text-lg">
+      <p className="font-black text-pink-600 text-xl sm:text-2xl">
         その前向きな決意をお持ちのあなたを、私たちは両手を広げてお待ちしております。
       </p>
 
@@ -239,7 +261,7 @@ export default function MembershipSteps() {
       🩷ご入会までの4ステップ💙
     </span>
 
-    <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
+    <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.3] tracking-tight w-full">
       ご入会までの4ステップ
     </h2>
 
@@ -255,7 +277,7 @@ export default function MembershipSteps() {
 
       <br />
 
-      <p className="font-black text-pink-600 text-lg">
+      <p className="font-black text-pink-600 text-xl sm:text-2xl">
         STEP 01｜公式LINE プライベート相談
       </p>
 
@@ -271,7 +293,7 @@ export default function MembershipSteps() {
 
       <br />
 
-      <p className="font-black text-blue-600 text-lg">
+      <p className="font-black text-blue-600 text-xl sm:text-2xl">
         STEP 02｜無料 個別カウンセリング
       </p>
 
@@ -287,7 +309,7 @@ export default function MembershipSteps() {
 
             <br />
 
-      <p className="font-black text-pink-600 text-lg">
+      <p className="font-black text-pink-600 text-xl sm:text-2xl">
         STEP 03｜これからの方向性を相談
       </p>
 
@@ -303,7 +325,7 @@ export default function MembershipSteps() {
 
       <br />
 
-      <p className="font-black text-blue-600 text-lg">
+      <p className="font-black text-blue-600 text-xl sm:text-2xl">
         STEP 04｜洗練された婚活スタート
       </p>
 

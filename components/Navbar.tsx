@@ -132,7 +132,7 @@ export default function PremiumNavbar() {
         { name: "婚活ダンジョンマップと医師×仲人のダブルサポート体制", href: "/dungeon-map" },
         { name: "32歳会社員女性（婚活初心者）の無料相談ストーリー", href: "/vibe" },
         { name: "無料相談ストーリー（35歳・会社員）", href: "/mens-consultation" },
-        { name: "女の話", href: "/womans-story" },
+        { name: "36歳・女性医師の無料相談ストーリー", href: "/womans-story" },
         { name: "お見合い後の交際判断基準|大阪梅田ドクターズ結婚相談所", href: "/matchmaking-criteria" },
         { name: "婚活初心者33歳男性プログラマーのお見合い後の相談実例", href: "/smart-dating" },
         { name: "大阪梅田ドクターズ結婚相談所の婚活カウンセリングとは|現役女医が実践する対話設計", href: "/dialogue-architecture" },
