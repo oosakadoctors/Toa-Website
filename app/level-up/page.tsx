@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "技術者やIT企業、理系男性への婚活攻略方法を専門的知識を踏まえて解説。女性医師（ヒーラー）×体育会系男性仲人（タンク）のいいパーティが、あなたの婚活を成婚（デプロイ）まで完全キャリーします。",
   alternates: {
-    canonical: "/tech-men-marriage-strategy",
+    canonical: "/level-up",
   },
   authors: [
     { name: "現役の女性内科医師" },
@@ -14,6 +14,14 @@ export const metadata: Metadata = {
   ],
   creator: "大阪梅田ドクターズ結婚相談所",
   publisher: "大阪梅田ドクターズ結婚相談所",
+   openGraph: {
+    title: "自称オタク・理系・技術職の男性へ | 婚活攻略ガイド",
+    description: "技術者やIT企業、理系男性への婚活攻略方法を専門的知識を踏まえて解説。女性医師（ヒーラー）×体育会系男性仲人（タンク）のいいパーティが、あなたの婚活を成婚（デプロイ）まで完全キャリーします。",
+    url: "/level-up",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    type: "website",
+    locale: "ja_JP",
+  },
 };
 
 export default function TechMenStrategyPage() {

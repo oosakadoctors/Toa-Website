@@ -86,11 +86,7 @@ export const metadata: Metadata = {
       follow: true,
       'max-image-preview': 'large',
     },
-  },
-  verification: {
-    // Replace with your real code from Google Search Console when available
-    google: 'your-google-search-console-code-here', 
-  },
+  }
 };
 
 export const viewport = {

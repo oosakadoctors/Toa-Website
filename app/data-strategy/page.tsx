@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "/ai-strategy",
+    canonical: "/data-strategy",
   },
 
   openGraph: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "ja_JP",
     siteName: "大阪梅田ドクターズ結婚相談所",
-    url: "/ai-strategy",
+    url: "/data-strategy",
   },
 
   twitter: {

@@ -9,10 +9,16 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: '大阪梅田ドクターズ結婚相談所の婚活カウンセリングとは|現役女医が実践する対話設計',
   description: '婚活の理想の相手像がわかる無料カウンセリングを、大阪梅田ドクターズ結婚相談所の現役女医カウンセラーが実践。二択で優先順位を引き出す対話設計とあわせて無料相談のご案内。',
+     alternates: {
+    canonical: "/dialogue-architecture",
+  },
   openGraph: {
     title: '大阪梅田ドクターズ結婚相談所の婚活カウンセリングとは|現役女医が実践する対話設計',
     description: '婚活の理想の相手像がわかる無料カウンセリングを、大阪梅田ドクターズ結婚相談所の現役女医カウンセラーが実践。二択で優先順位を引き出す対話設計とあわせて無料相談のご案内。',
-    type: 'website',
+    url: "/dialogue-architecture",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    type: "website",
+    locale: "ja_JP",
   },
   twitter: {
     card: 'summary_large_image',

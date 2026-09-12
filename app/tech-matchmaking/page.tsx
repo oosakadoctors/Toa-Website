@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "婚活中の理系男性に特化し、お見合いの方法や会話術、さらに理想のお相手を探す具体的な方法について専門的に解説。",
   alternates: {
-    canonical: "/science-men-matchmaking-guide",
+    canonical: "/tech-matchmaking",
   },
   authors: [
     { name: "現役の女性内科医師" },
@@ -15,6 +15,15 @@ export const metadata: Metadata = {
   ],
   creator: "大阪梅田ドクターズ結婚相談所",
   publisher: "大阪梅田ドクターズ結婚相談所",
+
+    openGraph: {
+    title: "理系男性のお見合い、お相手探し | 大阪梅田ドクターズ結婚相談所",
+    description: "婚活中の理系男性に特化し、お見合いの方法や会話術、さらに理想のお相手を探す具体的な方法について専門的に解説。",
+    url: "/tech-matchmaking",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    type: "website",
+    locale: "ja_JP",
+  },
 };
 
 export default function ScienceMenMatchmakingPage() {

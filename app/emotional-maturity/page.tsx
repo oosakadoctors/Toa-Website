@@ -8,14 +8,20 @@ import { MessageCircle, ShieldCheck, ArrowRight, Brain, HeartHandshake, Sparkles
 export const metadata = {
   title: "大人の結婚に必要な「人間的成熟度」とは？内面魅力の4つの条件",
   description: "生涯のパートナーから選ばれるための「人間的成熟度（精神的成熟）」を心理学・臨床経験に基づき徹底解説。白黒思考を脱却し、結婚生活の土台となるポスト形式的思考や真の共感力を育む4つの内面的アプローチを大阪梅田ドクターズ結婚相談所が提案します。",
+  alternates: { canonical: "/emotional-maturity", },
   keywords: ["大阪梅田 結婚相談所", "人間的成熟度", "精神的成熟", "ポスト形式的思考", "共感力", "大人の婚活", "内面磨き", "医師監修 結婚相談所"],
   authors: [
     { name: "現役女医（大阪梅田ドクターズ結婚相談所監修）" },
-    { name: "ベテランカウンセラー" }
+    { name: "ベテランカウンセラー" },
+  
   ],
   openGraph: {
     title: "大人の結婚に必要な「人間的成熟度」とは？内面魅力の4つの条件",
     description: "生涯のパートナーから選ばれるための「人間的成熟度（精神的成熟）」を心理学・臨床経験に基づき徹底解説。矛盾を受け入れる大人の思考システムとは？",
+    url: "/emotional-maturity",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    type: "website",
+    locale: "ja_JP",
   },
   twitter: {
     title: "大人の結婚に必要な「人間的成熟度」とは？内面魅力の4つの条件",

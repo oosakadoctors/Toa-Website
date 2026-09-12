@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "/essential-question-6", 
+    canonical: "/nice-person", 
   },
 
   openGraph: {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "ja_JP",
     siteName: "大阪梅田ドクターズ結婚相談所",
-    url: "/essential-question-6",
+    url: "/nice-person",
   },
 
   twitter: {

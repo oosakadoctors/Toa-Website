@@ -16,6 +16,16 @@ export const metadata: Metadata = {
   ],
   creator: "大阪梅田ドクターズ結婚相談所",
   publisher: "大阪梅田ドクターズ結婚相談所",
+  
+  openGraph: {
+    title: "価値観の一致で探す人が結婚できない理由と選ぶべき相手",
+    description: "価値観が一致する人と出会いたいのに結婚できない理由とは？結婚相談所のプロが「価値観の違いやズレへの適応力」という本質を解説。お互いの違いを認め、持続可能な結婚生活を得る、本当に選ぶべきパートナーの選び方・見極め方を解説。",
+    url: "/alignment-myth",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    type: "website",
+    locale: "ja_JP",
+  },
+  
 };
 
 export default function EssentialQuestionPage2() {

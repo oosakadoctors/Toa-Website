@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "大阪梅田のドクターズ結婚相談所は、男性が外見に惹かれた後に内面を見始めるという心理学的アプローチを分析し、婚活において中身を愛させる科学的な戦略を解説しています。自分の内面磨きを通じて、成婚へと導くためのプロの視点を提案します。内面の磨き方に関する詳細な戦略は、大阪梅田ドクターズ結婚相談所のウェブサイトでご確認いただけます。",
   alternates: {
-    canonical: "/emotional-maturity",
+    canonical: "/attraction-essense",
   },
     authors: [
     { name: "現役の女性内科医師" }, 
@@ -13,7 +13,19 @@ export const metadata: Metadata = {
   ],
   creator: "大阪梅田ドクターズ結婚相談所",
   publisher: "大阪梅田ドクターズ結婚相談所",
+ 
+  openGraph: {
+    title: "恋愛初心者がスピード成婚する方法",
+    description: "大阪梅田のドクターズ結婚相談所は、男性が外見に惹かれた後に内面を見始めるという心理学的アプローチを分析し、婚活において中身を愛させる科学的な戦略を解説しています。自分の内面磨きを通じて、成婚へと導くためのプロの視点を提案します。内面の磨き方に関する詳細な戦略は、大阪梅田ドクターズ結婚相談所のウェブサイトでご確認いただけます。",
+    url: "/attraction-essense",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    type: "website",
+    locale: "ja_JP",
+  },
+  
 };
+
+
 
 export default function EssentialQuestionPage() {
   return (

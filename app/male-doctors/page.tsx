@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "/male-doctors-guide",
+    canonical: "/male-doctors",
   },
 
   openGraph: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "ja_JP",
     siteName: "大阪梅田ドクターズ結婚相談所",
-    url: "/male-doctors-guide",
+    url: "/male-doctors",
   },
 
   twitter: {

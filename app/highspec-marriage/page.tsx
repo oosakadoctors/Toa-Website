@@ -19,7 +19,15 @@ export const metadata: Metadata = {
   description:
     "【ハイスペック婚を目指す女性へ】結婚はゴールではない。あなたが相手に「与えられるもの」は何ですか？",
   alternates: {
-    canonical: "/advantages",
+    canonical: "/highspec-marriage",
+  },
+   openGraph: {
+    title: "【ハイスペック婚を目指す女性へ】結婚はゴールではない。｜大阪梅田ドクターズ結婚相談所",
+    description: "【ハイスペック婚を目指す女性へ】結婚はゴールではない。あなたが相手に「与えられるもの」は何ですか？",
+    url: "/highspec-marriage",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    type: "website",
+    locale: "ja_JP",
   },
 };
 

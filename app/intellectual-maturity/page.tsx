@@ -16,6 +16,14 @@ export const metadata: Metadata = {
   ],
   creator: "大阪梅田ドクターズ結婚相談所",
   publisher: "大阪梅田ドクターズ結婚相談所",
+   openGraph: {
+    title: "婚活で「選ぶ・選ばれる」レースに疲れたあなたへ。",
+    description: "お見合いで「選ぶ・選ばれる」レースに疲れたあなたへ。相手を品定めするほど迷子になり、選ばれようとするほど自分を見失う心の仕組みを解説。大阪梅田のドクターズ結婚相談所が、減点モンスター化する脳のバグを解き明かし、本当のパートナーに出会う答えを提示します。",
+    url: "/intellectual-maturity",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    type: "website",
+    locale: "ja_JP",
+  },
 };
 
 export default function EssentialQuestionPage3() {

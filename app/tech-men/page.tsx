@@ -14,6 +14,15 @@ export const metadata: Metadata = {
   ],
   creator: "大阪梅田ドクターズ結婚相談所",
   publisher: "大阪梅田ドクターズ結婚相談所",
+  openGraph: {
+    title: "IT・SE・理系男性のロジカル婚活 | 大阪梅田ドクターズ結婚相談所",
+    description: "システムエンジニア、IT企業勤務、技術職など理系男性への大阪梅田ドクターズ結婚相談所のロジカル婚活、タイパ良いスマート婚活、手厚いサポートなどの解説",
+    url: "/tech-men",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    type: "website",
+    locale: "ja_JP",
+  },
+
 };
 
 export default function TechMenStrategyPage() {

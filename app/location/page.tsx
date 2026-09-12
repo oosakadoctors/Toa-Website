@@ -26,12 +26,18 @@ export const metadata: Metadata = {
     '北新地駅徒歩1分の結婚相談所|豊中・西宮・三宮・難波からアクセス抜群|大阪梅田ドクターズ結婚相談所',
   description:
     '大阪駅前第2ビル内、北新地駅直結徒歩1分の結婚相談所。豊中・池田・千里中央・吹田・茨木市の北摂エリア、西宮・御影・三宮の兵庫エリア、難波・心斎橋・天王寺・堺など大阪市内主要エリアからもアクセス良好。LINE・Zoomでのオンライン相談も対応。',
-  openGraph: {
+ alternates: {
+  canonical: "/location",
+},
+    openGraph: {
     title:
       '北新地駅徒歩1分の結婚相談所|豊中・西宮・三宮・難波からアクセス抜群|大阪梅田ドクターズ結婚相談所',
     description:
       '大阪駅前第2ビル内、北新地駅直結徒歩1分の結婚相談所。豊中・池田・千里中央・吹田・茨木市の北摂エリア、西宮・御影・三宮の兵庫エリア、難波・心斎橋・天王寺・堺など大阪市内主要エリアからもアクセス良好。LINE・Zoomでのオンライン相談も対応。',
     type: 'website',
+    url: "/location",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    locale: "ja_JP",
   },
   twitter: {
     card: 'summary_large_image',

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     { name: "ベテランカウンセラー" },
   ],
   alternates: {
-    canonical: "/high-spec-trap",
+    canonical: "/true-partnership",
   },
   openGraph: {
     title: "なぜ私たちは「ハイスペック」との成婚を強く望むのか？",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "ja_JP",
     siteName: "大阪梅田ドクターズ結婚相談所",
-    url: "/high-spec-trap",
+    url: "/true-partnership",
   },
   twitter: {
     card: "summary_large_image",

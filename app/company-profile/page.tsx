@@ -1,4 +1,5 @@
 import React from "react";
+import { Metadata } from "next";
 import {
   Building2,
   UserCheck,
@@ -13,6 +14,8 @@ import {
   Lock,
   AlertCircle,
 } from "lucide-react";
+
+export const metadata: Metadata = { title: "特定商取引法に基づく表記｜大阪梅田ドクターズ結婚相談所", description: "大阪梅田ドクターズ結婚相談所の特定商取引法に基づく表記。事業者情報、所在地、連絡先、お支払い方法、役務の提供時期、クーリング・オフ、中途解約、個人情報の取り扱いについてご案内します。", alternates: { canonical: "/company-profile", }, openGraph: { title: "特定商取引法に基づく表記｜大阪梅田ドクターズ結婚相談所", description: "大阪梅田ドクターズ結婚相談所の事業者情報、お支払い方法、クーリング・オフ、中途解約、個人情報の取り扱い等についてご案内します。", url: "/company-profile", type: "website", }, };
 
 export default function CompanyProfileTable() {
   const legalData = [

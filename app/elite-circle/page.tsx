@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/elite-circle",
   },
+    openGraph: {
+    title: "大阪梅田ドクターズ結婚相談所の会員と婚活環境について｜日本最大級の会員数と少人数制",
+    description: "日本最大級の会員数から選べる安心と、少人数制ならではのきめ細やかなサポート。現役女性医師とベテランカウンセラーの2名体制で、科学的根拠（エビデンス）重視の婚活環境を提供します。",
+    url: "/elite-circle",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    type: "website",
+    locale: "ja_JP",
+  },
 };
 
 export default function EnvironmentPage() {

@@ -3,9 +3,45 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '大阪梅田の結婚相談所ってどんなところ？ 大阪梅田ドクターズ結婚相談所',
-  description: '北新地徒歩１分の結婚相談所。現役女医と仲人歴20年のベテランが2名1組で伴走し、少人数制で1年以内の成婚を目指します。恋愛経験が少ないかたも歓迎',
-  keywords: ['大阪梅田', '結婚相談所', 'ドクターズ結婚', '婚活', '現役女医'],
+  title:
+    "大阪梅田の結婚相談所ってどんなところ？｜大阪梅田ドクターズ結婚相談所",
+
+  description:
+    "北新地徒歩1分の結婚相談所。現役女医と仲人歴20年のベテランが2名1組で伴走し、少人数制で1年以内の成婚を目指します。恋愛経験が少ない方も歓迎しています。",
+
+  keywords: [
+    "大阪梅田",
+    "結婚相談所",
+    "ドクターズ結婚",
+    "婚活",
+    "現役女医",
+  ],
+
+  alternates: {
+    canonical: "/umeda-marriage",
+  },
+
+  openGraph: {
+    title:
+      "大阪梅田の結婚相談所ってどんなところ？｜大阪梅田ドクターズ結婚相談所",
+    description:
+      "現役女医と仲人歴20年のベテランが2名1組で伴走。少人数制で、一人ひとりに寄り添いながら1年以内の成婚を目指します。",
+    url: "/about",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "大阪梅田の結婚相談所ってどんなところ？｜大阪梅田ドクターズ結婚相談所",
+    description:
+      "現役女医と仲人歴20年のベテランによる2名1組のダブルサポート。少人数制で1年以内の成婚を目指します。",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function UmedaMarriagePage() {

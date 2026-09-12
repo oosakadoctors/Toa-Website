@@ -1,10 +1,27 @@
-import Image from "next/image";
 
+import type { Metadata } from "next";
 import clinic1 from "@/public/couple1.jpg";
 import clinic2 from "@/public/femaleAdvisor.jpg";
 import clinic3 from "@/public/maleAdvisor.jpg";
 
 
+export const metadata: Metadata = {
+  title:
+    "入会条件・入会審査とご入会までの流れ｜大阪梅田ドクターズ結婚相談所",
+  description:
+    "大阪梅田ドクターズ結婚相談所の入会条件・入会審査についてご案内します。毎月5名限定の少人数制で、本気で婚活に取り組む方を丁寧にサポート。公式LINE相談から無料カウンセリング、婚活スタートまでの4ステップもご紹介します。",
+  alternates: {
+    canonical: "/membership-steps",
+  },
+  openGraph: {
+    title:
+      "入会条件・入会審査とご入会までの流れ｜大阪梅田ドクターズ結婚相談所",
+    description:
+      "入会条件・入会審査の考え方と、公式LINE相談から婚活スタートまでの4ステップをご紹介。毎月5名限定の少人数制で、一人ひとりに寄り添う婚活サポートを提供します。",
+    url: "/membership-steps",
+    type: "website",
+  },
+};
 
 
 export default function MembershipSteps() {

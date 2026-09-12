@@ -19,11 +19,19 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "ハイスペック男女が大阪梅田で選ぶ最短成婚",
-  description:
-    "年収1000万以上の男女や医師が大阪梅田ドクターズ結婚相談所で最速成婚を叶える理由とは？「人生の幸せを共有する時間は一日でも長いほうがいい」という価値観のもと、決断と行動で人生の幸福度を最大化する、ハイクラスのための効率的な婚活戦略を解説します。",
+  description: "年収1000万以上の男女や医師が大阪梅田ドクターズ結婚相談所で最速成婚を叶える理由とは？「人生の幸せを共有する時間は一日でも長いほうがいい」という価値観のもと、決断と行動で人生の幸福度を最大化する、ハイクラスのための効率的な婚活戦略を解説します。",
   alternates: {
-    canonical: "/advantages",
+    canonical: "/elite-matchmaking",
   },
+  openGraph: {
+    title: "ハイスペック男女が大阪梅田で選ぶ最短成婚",
+    description:"年収1000万以上の男女や医師が大阪梅田ドクターズ結婚相談所で最速成婚を叶える理由とは？「人生の幸せを共有する時間は一日でも長いほうがいい」という価値観のもと、決断と行動で人生の幸福度を最大化する、ハイクラスのための効率的な婚活戦略を解説します。",
+    url: "/elite-matchmaking",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    type: "website",
+    locale: "ja_JP",
+  },
+
 };
 
 export default function ReasonsPage() {

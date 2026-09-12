@@ -8,8 +8,18 @@ export const metadata: Metadata = {
   description:
     " 「大阪梅田で未来への投資として婚活を始める男女へ。医師・経営者・公務員などのハイステータス層や、女医の人脈を活かした、育ちの良い男女が集まる大阪梅田ドクターズ結婚相談所への入会はスピード婚への効率的な選択肢の一つであることを解説",
   alternates: {
-    canonical: "/consider",
+    canonical: "/ideal-man",
   },
+
+   openGraph: {
+    title: "婚活でいい人が減った？」と思い始めた30代のあなたへ｜大阪梅田ドクターズ結婚相談所が効率的な理由",
+    description: "「大阪梅田で未来への投資として婚活を始める男女へ。医師・経営者・公務員などのハイステータス層や、女医の人脈を活かした、育ちの良い男女が集まる大阪梅田ドクターズ結婚相談所への入会はスピード婚への効率的な選択肢の一つであることを解説",
+    url: "/ideal-man",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    type: "website",
+    locale: "ja_JP",
+  },
+
 };
 
 export default function MarriageAdvicePage() {

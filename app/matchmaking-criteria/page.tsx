@@ -6,10 +6,16 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'お見合い後の交際判断基準(大阪梅田ドクターズ結婚相談所)|32歳女性が迷いから「もう一度会いたい」に変わった相談実例',
   description: 'お見合い後に「交際に進むべきか」迷う32歳女性に向けた相談実例を解説。ときめきがなくても交際に進んでいい理由やお見合いから仮交際に進む割合の目安など、実際の対話を通じてご紹介します。',
+  alternates: {
+  canonical: "/matchmaking-criteria",
+},
   openGraph: {
     title: 'お見合い後の交際判断基準(大阪梅田ドクターズ結婚相談所)|32歳女性が迷いから「もう一度会いたい」に変わった相談実例',
     description: 'お見合い後に「交際に進むべきか」迷う32歳女性に向けた相談実例を解説。ときめきがなくても交際に進んでいい理由やお見合いから仮交際に進む割合の目安など、実際の対話を通じてご紹介します。',
     type: 'website',
+    url: "/matchmaking-criteria",
+    locale: "ja_JP",
+
   },
   twitter: {
     card: 'summary_large_image',

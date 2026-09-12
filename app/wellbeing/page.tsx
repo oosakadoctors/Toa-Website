@@ -3,17 +3,38 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: "真の幸せを手に入れるために必要なもの",
+  title:
+    "真の幸せを手に入れるために必要なもの｜大阪梅田ドクターズ結婚相談所",
+
   description:
     "幸福の本質は「自分の意思で積み重ねてきた歴史」の先にあります。外側の条件や他人の評価に振り回されない確固たる幸福を掴むために必要な、3つの本質的な土台（居場所・目的・自由）を大阪梅田ドクターズ結婚相談所が解き明かします。",
-  authors: [
-    { name: "現役の女性内科医師" }, 
-    { name: "男性ベテラン仲人" },
-  ],
-  creator: "大阪梅田ドクターズ結婚相談所",
-  publisher: "大阪梅田ドクターズ結婚相談所",
-};
 
+  alternates: {
+    canonical: "/wellbeing",
+  },
+
+  openGraph: {
+    title:
+      "真の幸せを手に入れるために必要なもの｜大阪梅田ドクターズ結婚相談所",
+    description:
+      "外側の条件や他人の評価に振り回されない、本当の幸福とは。居場所・目的・自由という3つの本質的な土台から、幸せな人生について考えます。",
+    url: "/wellbeing",
+    type: "article",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "真の幸せを手に入れるために必要なもの｜大阪梅田ドクターズ結婚相談所",
+    description:
+      "居場所・目的・自由。真の幸せを支える3つの本質的な土台について解説します。",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 export default function TrueHappinessAnalysis() {
   return (
     <div className="relative min-h-screen w-full py-10 sm:py-16 px-4 overflow-hidden font-medium">

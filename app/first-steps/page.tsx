@@ -14,11 +14,16 @@ export const metadata = {
     { name: "ベテランカウンセラー" }
   ],
   alternates: {
-    canonical: "/beginner-faq",
+    canonical: "/first-steps",
   },
   openGraph: {
     title: "初心者むけ素朴な疑問を解決！外見と内面のリアル | 大阪梅田ドクターズ結婚相談所",
     description: "素朴な疑問を解決し、婚活で仮交際や真剣交側に進むために外見と内面さらに笑顔の魅力、その伝え方について専門的に解説します。",
+        url: "/first-steps",
+    siteName: "大阪梅田ドクターズ結婚相談所",
+    type: "website",
+    locale: "ja_JP",
+  
   },
   twitter: {
     title: "初心者むけ素朴な疑問を解決！外見と内面のリアル | 大阪梅田ドクターズ結婚相談所",

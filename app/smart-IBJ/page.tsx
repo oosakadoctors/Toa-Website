@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "/ibj-premium",
+    canonical: "/smart-IBJ",
   },
 
   openGraph: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "ja_JP",
     siteName: "大阪梅田ドクターズ結婚相談所",
-    url: "/ibj-premium",
+    url: "/smart-IBJ",
   },
 
   twitter: {

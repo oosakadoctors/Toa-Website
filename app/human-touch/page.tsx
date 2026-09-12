@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "/ai-counselor-value",
+    canonical: "/human-touch",
   },
 
   openGraph: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "ja_JP",
     siteName: "大阪梅田ドクターズ結婚相談所",
-    url: "/ai-counselor-value",
+    url: "/human-touch",
   },
 
   twitter: {
@@ -77,7 +77,7 @@ export default function AiCounselorValuePage() {
         {/* HERO SECTION */}
         <section className="bg-gradient-to-br from-slate-900/90 via-sky-950/90 to-blue-900/90 text-white rounded-3xl p-8 sm:p-12 shadow-2xl space-y-8 border border-sky-700/50 backdrop-blur-md overflow-hidden">
           {/* MENU / BREADCRUMB NAME LABEL */}
-          <div className="inline-block bg-sky-500/20 text-sky-200 border border-sky-400/30 px-4 py-1.5 rounded-full text-lg font-bold tracking-wider text-[15px]">
+          <div className="inluine-block bg-sky-500/20 text-sky-200 border border-sky-400/30 px-4 py-1.5 rounded-full text-lg font-bold tracking-wider text-[15px]">
             婚活における生成AI活用の特徴
           </div>
 

@@ -28,10 +28,15 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: '36歳・女性医師の婚活相談事例|大阪梅田ドクターズ結婚相談所',
   description: '【無料相談ケース紹介】大学卒業後、交際経験のない36歳・勤務医(女性医師)が来店した際の実際のカウンセリング内容を再現。交際経験がなくても安心して入会できる理由や、大阪梅田の相談室での無料相談の流れ・所要時間を、現役女性医師カウンセラーが解説します。',
+  alternates: {
+    canonical: "/womans-story",
+  },
+
   openGraph: {
     title: '36歳・女性医師の婚活相談事例|大阪梅田ドクターズ結婚相談所',
     description: '大阪梅田の相談室にお越しいただいた36歳・女性医師(勤務医)のリアルな無料相談を再現。男性医師の在籍状況の検索、交際経験なしでも入会できる理由、女医ならではの婚活戦略まで詳しく解説します。',
     type: 'article',
+    url: "/womans-story"
   },
   twitter: {
     card: 'summary_large_image',
@@ -45,7 +50,7 @@ export default function DoctorConsultationStoryPage() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "〇〇結婚相談所",
+    "name": "大阪梅田ドクターズ結婚相談所",
     "url": "https://example.com",
     "address": {
       "@type": "PostalAddress",
@@ -209,7 +214,7 @@ export default function DoctorConsultationStoryPage() {
                   監修・カウンセラー情報
                 </h3>
                 <p className="text-[20px] md:text-base text-slate-700 leading-relaxed w-full">
-                  本ケースの担当カウンセラーは、〇〇結婚相談所の代表カウンセラー。医療法人役員、市中病院での勤務医としての経験を持ち、内科認定医の資格を有する女性医師です。<br /><br />
+                  本ケースの担当カウンセラーは、大阪梅田ドクターズ結婚相談所の代表カウンセラー。医療法人役員、市中病院での勤務医としての経験を持ち、内科認定医の資格を有する女性医師です。<br /><br />
                   医師という職業ならではの悩み（出会いの少なさ、多忙による恋愛経験の不足、同業者からの理解のされにくさなど）を、当事者に近い立場から理解した上でカウンセリングを行っています。
                 </p>
               </div>
@@ -531,3 +536,4 @@ export default function DoctorConsultationStoryPage() {
     </div>
   );
 }
+
