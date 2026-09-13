@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       "大阪梅田の結婚相談所ってどんなところ？｜大阪梅田ドクターズ結婚相談所",
     description:
       "現役女医と仲人歴20年のベテランが2名1組で伴走。少人数制で、一人ひとりに寄り添いながら1年以内の成婚を目指します。",
-    url: "/about",
+    url: "/umeda-marriage",
     type: "website",
   },
 
