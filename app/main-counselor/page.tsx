@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   description:
     "現役女性医師【加藤】とベテランカウンセラー【石田】のご紹介。医療的・論理的アプローチと20年の成婚実績ノウハウで、あなたの理想の成婚を全力でサポートします。",
   alternates: {
-    canonical: "/counselors",
+    canonical: "/main-counselor",
   },
     openGraph: {
     title: "メインカウンセラー紹介｜大阪梅田ドクターズ結婚相談所",
     description: "現役女性医師【加藤】とベテランカウンセラー【石田】のご紹介。医療的・論理的アプローチと20年の成婚実績ノウハウで、あなたの理想の成婚を全力でサポートします。",
-    url: "/counselors",
+    url: "/main-counselor",
     siteName: "大阪梅田ドクターズ結婚相談所",
     type: "website",
     locale: "ja_JP",
