@@ -1,32 +1,44 @@
-"use client";
-
 import Image from "next/image";
 
 import React from "react";
 import Link from "next/link";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: '会話が苦手・恋愛経験が少ない男性の婚活',
+  description: 'お見合いやデートの会話が苦手、恋愛経験が少ない男性へ。自己開示とEQ（感情知能）を軸にした会話指導、視線や声のトーンなど非言語の改善、スーツや身だしなみのセルフブランディングまで、現役女医とベテラン仲人がサポートします。LINE無料相談受付中。',
+  alternates: { canonical: '/become-her-choice' },
+  openGraph: {
+    title: '会話が苦手・恋愛経験が少ない男性の婚活',
+    description: 'お見合いやデートの会話が苦手、恋愛経験が少ない男性へ。自己開示とEQ（感情知能）を軸にした会話指導、視線や声のトーンなど非言語の改善、スーツや身だしなみのセルフブランディングまで、現役女医とベテラン仲人がサポートします。LINE無料相談受付中。',
+    url: '/become-her-choice',
+    type: 'website',
+  },
+}
 
 export default function BecomeTheManSheChoosesPage() {
   return (
-    <main className="space-y-1">
+    <main className="space-y-1 text-[20px] px-1 sm:px-0">
 
       {/* ========================================================= */}
       {/* HERO (GRADIENT NAVY BLUE) */}
       {/* ========================================================= */}
-<section className="w-full">
-        <div className="mx-auto w-[100%] max-w-6xl px-5 sm:px-10 py-8 rounded-1xl bg-gradient-to-br from-[#0B2545] via-[#134074] to-[#1D4ED8] border border-blue-400/30 shadow-xl space-y-6 text-white">
+      <section className="w-full">
+        <div className="mx-auto w-full max-w-6xl px-3 sm:px-10 py-5 sm:py-8 rounded-1xl bg-gradient-to-br from-[#0B2545] via-[#134074] to-[#1D4ED8] border border-blue-400/30 shadow-xl space-y-4 sm:space-y-6 text-white">
 
-          <header className="space-y-6">
+          <header className="space-y-4 sm:space-y-6">
 
-<div className="flex justify-center">
-    <span className="inline-flex items-center gap-2 text-xs font-black tracking-widest uppercase text-amber-300 bg-pink-950/40 px-3 py-1 rounded-full border border-pink-500/30">
-      SUPPORT PROGRAM
-    </span>
-  </div>
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.25]">
+            <div className="flex justify-center">
+              <span className="inline-flex items-center gap-2 text-[15px] font-black tracking-widest uppercase text-amber-300 bg-pink-950/40 px-3 py-1 rounded-full border border-pink-500/30">
+                SUPPORT PROGRAM
+              </span>
+            </div>
+            <h1 className="text-[30px] sm:text-[45px] lg:text-[56px] font-black text-white leading-[1.25]">
               可愛い彼女の特別な存在になりたい！
             </h1>
 
-            <article className="space-y-6 text-base sm:text-lg leading-relaxed font-medium text-blue-50">
+            <article className="space-y-4 sm:space-y-6 text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-blue-50">
 
               <p>
                 「こんなに可愛い女性が、自分なんかを相手にしてくれるだろうか…」
@@ -44,40 +56,40 @@ export default function BecomeTheManSheChoosesPage() {
         </div>
       </section>
 
-<section className="w-full">
-      <div className="w-full max-w-4xl mx-auto">
-        <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
-          <Image
-            src="/girl-driving-car.jpg"
-            alt="婚活で出会った女性とドライブデートをしながら成婚をめざすイメージ写真"
-            fill
-            sizes="(max-width: 768px) 100vw, 800px"
-            loading="eager" 
-            fetchPriority="high"
-            priority={true}
-            className="object-cover"
-            placeholder="blur"
-            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-          />
+      <section className="w-full">
+        <div className="w-full max-w-4xl mx-auto">
+          <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl shadow-md">
+            <Image
+              src="/girl-driving-car.jpg"
+              alt="婚活で出会った女性とドライブデートをしながら成婚をめざすイメージ写真"
+              fill
+              sizes="(max-width: 768px) 100vw, 800px"
+              loading="eager" 
+              fetchPriority="high"
+              priority={true}
+              className="object-cover"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/* ========================================================= */}
       {/* INTRODUCTION */}
       {/* ========================================================= */}
       <section className="w-full">
-        <div className="mx-auto w-[98%] max-w-6xl px-5 sm:px-10 space-y-8">
+        <div className="mx-auto w-full max-w-6xl px-2 sm:px-10 space-y-6 sm:space-y-8">
 
-          <header className="space-y-4">
+          <header className="space-y-3 sm:space-y-4">
 
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900">
+            <h2 className="text-[25px] sm:text-[30px] lg:text-[37.5px] font-black text-gray-900">
               🌟 彼女の心を最速で掴む男になれる他には少ないサポート
             </h2>
 
           </header>
 
-          <article className="space-y-6 text-base sm:text-lg leading-relaxed font-medium text-gray-800">
+          <article className="space-y-4 sm:space-y-6 text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-gray-800">
 
             <p>① 【外見・ブランディング】あなたの男の価値を最大化する「洗練のセルフプロデュース」
 大人の男として、清潔感や身だしなみを整えるのは当たり前の最低限のマナーです。
@@ -86,14 +98,14 @@ export default function BecomeTheManSheChoosesPage() {
             <p>梅田の洗練された街並みに映え、可愛い女性が会って5秒で「あ、この人、他の男性とは何かが違う、素敵だな」と特別視してしまうような、スーツ姿から、知性と包容力、大人の色気【オーラ】を漂わせ方まで徹底してプロデュースします。
 お見合いやデートで、お相手を堂々とエスコートする日が楽しみになるでしょう。</p>
 
-   <div className="flex justify-center w-full">
-  <Link 
-    href="/steps#link" 
-    className="w-full sm:w-auto text-center inline-flex items-center justify-center bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-black text-base sm:text-lg px-8 py-3.5 rounded-xl transition-all shadow-lg hover:shadow-sky-500/25 border border-sky-300/30 active:scale-[0.98]"
-  >
-    外見サポートについて詳しく見る
-  </Link>
-</div>
+            <div className="flex justify-center w-full">
+              <Link 
+                href="/steps#link" 
+                className="w-full sm:w-auto text-center inline-flex items-center justify-center bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-black text-[20px] sm:text-[22.5px] px-4 sm:px-8 py-3.5 rounded-xl transition-all shadow-lg hover:shadow-sky-500/25 border border-sky-300/30 active:scale-[0.98]"
+              >
+                外見サポートについて詳しく見る
+              </Link>
+            </div>
           
             <p>② 【会話に不安が無くなる！】サポート
 【会話とは何か？の本質】をわかりやすく指導
@@ -108,16 +120,16 @@ EQ【感情知能】を高める方法を指導。
         </div>
       </section>
 
-      <section className="w-full py-5">
-        <div className="mx-auto w-[98%] max-w-6xl px-5 sm:px-10 py-10 rounded-3xl bg-gradient-to-b from-pink-50/40 via-white to-blue-50/30 border border-pink-100 shadow-sm">
+      <section className="w-full py-3 sm:py-5">
+        <div className="mx-auto w-full max-w-6xl px-3 sm:px-10 py-5 sm:py-10 rounded-3xl bg-gradient-to-b from-pink-50/40 via-white to-blue-50/30 border border-pink-100 shadow-sm">
 
-          <header className="space-y-5">
+          <header className="space-y-4 sm:space-y-5">
 
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 leading-[1.25]">
+            <h2 className="text-[25px] sm:text-[30px] lg:text-[37.5px] font-black text-gray-900 leading-[1.25]">
               ❤️ 女性と深く打ち解けるために、本当に大切なこと
             </h2>
 
-            <div className="space-y-5 text-base sm:text-lg leading-relaxed font-medium text-gray-800">
+            <div className="space-y-4 sm:space-y-5 text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-gray-800">
 
               <p>
                 会話だけではなく、人間関係そのものにおいて、
@@ -140,7 +152,7 @@ EQ【感情知能】を高める方法を指導。
 
               <p>
                 多くの男性は仕事の実績や成功体験を語ってしまいがちですが、
-                女性が本当に安心して心を開くきっかけはそこではありません。
+                女性が安心して心を開くきっかけはそこではありません。
                 私たちは、可愛い女性から自然に好印象を持たれる
                 <span className="font-black text-gray-900">
                   「正しい自己開示」
@@ -154,28 +166,28 @@ EQ【感情知能】を高める方法を指導。
 
           {/* Feature Cards */}
 
-          <div className="mt-4 grid gap-8 lg:grid-cols-2">
+          <div className="mt-4 grid gap-4 sm:gap-8 lg:grid-cols-2">
 
             {/* Card 1 */}
 
-            <article className="rounded-2xl border border-pink-100 bg-white p-8 shadow-sm space-y-5">
+            <article className="rounded-2xl border border-pink-100 bg-white p-4 sm:p-8 shadow-sm space-y-3 sm:space-y-5">
 
-              <h3 className="text-xl font-black text-pink-600">
+              <h3 className="text-[25px] font-black text-pink-600">
                 ♡ 自己開示
               </h3>
 
-              <p className="text-base sm:text-lg leading-relaxed font-medium text-gray-800">
+              <p className="text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-gray-800">
                 自己開示とは、
                 あなたの人間味や感情を怖がらずに、
                 自分から自然に表現することです。
               </p>
 
-              <p className="text-base sm:text-lg leading-relaxed font-medium text-gray-800">
+              <p className="text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-gray-800">
                 そうすることで女性の心のロックが少しずつ外れ、
                 「私も…」と相手も自然に本音を話してくれるようになります。
               </p>
 
-              <p className="text-base sm:text-lg leading-relaxed font-medium text-gray-800">
+              <p className="text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-gray-800">
                 感情の方向性が重なり、
                 出会って間もないとは思えないほど
                 温かく心地よい対話が生まれていきます。
@@ -185,23 +197,23 @@ EQ【感情知能】を高める方法を指導。
 
             {/* Card 2 */}
 
-            <article className="rounded-2xl border border-blue-100 bg-white p-8 shadow-sm space-y-5">
+            <article className="rounded-2xl border border-blue-100 bg-white p-4 sm:p-8 shadow-sm space-y-3 sm:space-y-5">
 
-              <h3 className="text-xl font-black text-blue-600">
+              <h3 className="text-[25px] font-black text-blue-600">
                 ♡ お相手への興味
               </h3>
 
-              <p className="text-base sm:text-lg leading-relaxed font-medium text-gray-800">
+              <p className="text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-gray-800">
                 大切なのは、
                 表面的な質問をすることではありません。
               </p>
 
-              <p className="text-base sm:text-lg leading-relaxed font-medium text-gray-800">
+              <p className="text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-gray-800">
                 「あなたという人をもっと知りたい」
                 という純粋で誠実な興味を持って接することです。
               </p>
 
-              <p className="text-base sm:text-lg leading-relaxed font-medium text-gray-800">
+              <p className="text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-gray-800">
                 女性は、自分の内面に真剣に興味を持ってくれる男性に
                 安心感や自己肯定感を感じ、
                 「もう一度この人に会いたい」
@@ -216,23 +228,23 @@ EQ【感情知能】を高める方法を指導。
       </section>
 
       <section className="w-full py-2">
-        <div className="mx-auto w-[98%] max-w-6xl rounded-3xl border border-blue-100 bg-gradient-to-b from-blue-50/40 to-white p-8 sm:p-10 shadow-sm">
+        <div className="mx-auto w-full max-w-6xl rounded-3xl border border-blue-100 bg-gradient-to-b from-blue-50/40 to-white p-4 sm:p-10 shadow-sm">
 
-          <article className="space-y-6">
+          <article className="space-y-4 sm:space-y-6">
 
-            <header className="space-y-3">
+            <header className="space-y-2 sm:space-y-3">
 
-              <div className="inline-flex rounded-full bg-blue-100 px-4 py-1 text-sm font-black text-blue-700">
+              <div className="inline-flex rounded-full bg-blue-100 px-3 py-1 text-[17.5px] font-black text-blue-700">
                 EQ Communication
               </div>
 
-              <h2 className="text-2xl sm:text-3xl font-black text-gray-900">
+              <h2 className="text-[30px] sm:text-[37.5px] font-black text-gray-900">
                 ♡ お相手の感情【気持ち】を汲み取る力
               </h2>
 
             </header>
 
-            <div className="space-y-5 text-base sm:text-lg leading-relaxed font-medium text-gray-800">
+            <div className="space-y-4 sm:space-y-5 text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-gray-800">
 
               <p>
                 会話の中で、相手から発する「感情」を正しく察知する能力（EQ）は必要不可欠です。
@@ -256,15 +268,15 @@ EQ【感情知能】を高める方法を指導。
       </section>
 
       <section className="w-full py-2">
-        <div className="mx-auto w-[98%] max-w-6xl rounded-3xl bg-gradient-to-r from-pink-50 via-white to-blue-50 border border-pink-100 p-8 sm:p-10">
+        <div className="mx-auto w-full max-w-6xl rounded-3xl bg-gradient-to-r from-pink-50 via-white to-blue-50 border border-pink-100 p-4 sm:p-10">
 
-          <header className="space-y-5">
+          <header className="space-y-4 sm:space-y-5">
 
-            <h2 className="text-2xl sm:text-3xl font-black text-gray-900">
+            <h2 className="text-[30px] sm:text-[37.5px] font-black text-gray-900">
               📈 EQを高めることで、人生そのものが変わる
             </h2>
 
-            <div className="space-y-5 text-base sm:text-lg leading-relaxed font-medium text-gray-800">
+            <div className="space-y-4 sm:space-y-5 text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-gray-800">
 
               <p>
                 私達と一緒に少しずつ練習しながらポイントを押さえていけば、
@@ -285,13 +297,13 @@ EQ【感情知能】を高める方法を指導。
 
           </header>
 
-          <aside className="mt-8 rounded-2xl bg-white p-6 border border-yellow-200">
+          <aside className="mt-6 sm:mt-8 rounded-2xl bg-white p-4 sm:p-6 border border-yellow-200">
 
-            <h3 className="font-black text-lg text-gray-900 mb-3">
+            <h3 className="font-black text-[22.5px] text-gray-900 mb-2 sm:mb-3">
               👍 婚活だけではありません
             </h3>
 
-            <p className="text-base sm:text-lg leading-relaxed font-medium text-gray-800">
+            <p className="text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-gray-800">
               EQは営業・プレゼン・会議・接待など、
               あらゆるビジネスシーンでも求められる能力です。
               婚活で身につけたスキルは、
@@ -304,24 +316,24 @@ EQ【感情知能】を高める方法を指導。
       </section>
 
       <section className="w-full py-2">
-        <div className="mx-auto w-[98%] max-w-6xl rounded-3xl border border-blue-100 bg-white p-8 sm:p-10 shadow-sm">
+        <div className="mx-auto w-full max-w-6xl rounded-3xl border border-blue-100 bg-white p-4 sm:p-10 shadow-sm">
 
-          <article className="space-y-6">
+          <article className="space-y-4 sm:space-y-6">
 
-            <header className="space-y-3">
+            <header className="space-y-2 sm:space-y-3">
 
-              <div className="inline-flex rounded-full bg-blue-100 px-4 py-1 text-sm font-black text-blue-700">
+              <div className="inline-flex rounded-full bg-blue-100 px-3 py-1 text-[17.5px] font-black text-blue-700">
                 Non-Verbal Communication
               </div>
 
-              <h2 className="text-2xl sm:text-3xl font-black text-gray-900">
+              <h2 className="text-[30px] sm:text-[37.5px] font-black text-gray-900">
                 👀 「まっすぐな誠実さ」を伝える
                 ノンバーバル戦略
               </h2>
 
             </header>
 
-            <div className="space-y-5 text-base sm:text-lg leading-relaxed font-medium text-gray-800">
+            <div className="space-y-4 sm:space-y-5 text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-gray-800">
 
               <p>
                 女性は言葉だけではなく、
@@ -339,9 +351,9 @@ EQ【感情知能】を高める方法を指導。
 
             </div>
 
-            <div className="rounded-2xl bg-blue-50 border border-blue-100 p-6">
+            <div className="rounded-2xl bg-blue-50 border border-blue-100 p-4 sm:p-6">
 
-              <p className="text-base sm:text-lg leading-relaxed font-medium text-gray-800">
+              <p className="text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-gray-800">
                 ノンバーバルコミュニケーションは、
                 あなた自身のオーラや存在感にもつながります。
                 練習を通して自己認識や自己成長にもつながるでしょう。
@@ -355,15 +367,15 @@ EQ【感情知能】を高める方法を指導。
       </section>
 
       <section className="w-full py-4">
-        <div className="mx-auto w-[98%] max-w-6xl rounded-3xl bg-gradient-to-br from-green-50 via-white to-green-100 border border-green-200 p-10 text-center shadow-md">
+        <div className="mx-auto w-full max-w-6xl rounded-3xl bg-gradient-to-br from-green-50 via-white to-green-100 border border-green-200 p-4 sm:p-10 text-center shadow-md">
 
-          <header className="space-y-6">
+          <header className="space-y-4 sm:space-y-6">
 
-            <h2 className="text-2xl sm:text-3xl font-black text-gray-900">
+            <h2 className="text-[30px] sm:text-[37.5px] font-black text-gray-900">
               あなたも一緒に成長してみませんか？
             </h2>
 
-            <p className="text-base sm:text-lg leading-relaxed font-medium text-gray-800 max-w-4xl mx-auto">
+            <p className="text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-gray-800 max-w-4xl mx-auto">
               大阪梅田ドクターズ結婚相談所では、
               あなたが自信を持って女性と向き合えるよう、
               一人ひとりに合わせたサポートを行っています。
@@ -371,13 +383,13 @@ EQ【感情知能】を高める方法を指導。
 
           </header>
 
-          <section className="mt-10 rounded-2xl bg-white p-8 border border-green-100 text-left max-w-4xl mx-auto">
+          <section className="mt-6 sm:mt-10 rounded-2xl bg-white p-4 sm:p-8 border border-green-100 text-left max-w-4xl mx-auto">
 
-            <h3 className="text-xl font-black text-gray-900 mb-5">
+            <h3 className="text-[25px] font-black text-gray-900 mb-3 sm:mb-5">
               📱 LINEではこんなご相談をいただいています
             </h3>
 
-            <ul className="space-y-4 text-base sm:text-lg leading-relaxed font-medium text-gray-800">
+            <ul className="space-y-3 sm:space-y-4 text-[20px] sm:text-[22.5px] leading-relaxed font-medium text-gray-800">
 
               <li>💬 お見合いで自己開示はどこまで話せばいい？</li>
 
@@ -389,17 +401,17 @@ EQ【感情知能】を高める方法を指導。
 
           </section>
 
-          <div className="mt-10">
+          <div className="mt-6 sm:mt-10">
 
             <a 
               href="https://lin.ee/WvDSj6U" 
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-full bg-gradient-to-r from-green-500 to-green-600 px-8 py-4 text-lg font-black text-white shadow-lg transition hover:scale-105 hover:shadow-xl">
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-green-500 to-green-600 px-6 sm:px-8 py-3.5 sm:py-4 text-[20px] sm:text-[22.5px] font-black text-white shadow-lg transition hover:scale-105 hover:shadow-xl">
               👉 公式LINEで無料相談する
             </a>
 
-            <p className="mt-4 text-sm text-gray-500">
+            <p className="mt-3 sm:mt-4 text-[17.5px] text-gray-500">
               ※24時間受付・匿名相談OK・プライバシーは完全に保護されます
             </p>
 

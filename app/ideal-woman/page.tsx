@@ -1,4 +1,3 @@
-"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -8,6 +7,23 @@ import {
   Sparkles,
   ArrowRight,
 } from "lucide-react";
+import { Metadata } from "next";
+
+
+
+export const metadata: Metadata = {
+  title: '30代男性の婚活｜年収別に出会える女性は？大阪梅田の結婚相談',
+  description: '30代男性の婚活｜大阪・梅田の結婚相談所が、自分の年齢と年収で出会える女性はどんな人かをタイプ別に解説。多忙な会社員・インドア派・アクティブ派の3パターンで、20代後半〜30代前半の女性会員の職業や傾向を具体的に紹介します。LINE無料相談受付中。',
+  alternates: { canonical: '/ideal-woman' },
+  openGraph: {
+    title: '30代男性の婚活｜年収別に出会える女性は？大阪梅田の結婚相談',
+    description: '30代男性の婚活｜大阪・梅田の結婚相談所が、自分の年齢と年収で出会える女性はどんな人かをタイプ別に解説。多忙な会社員・インドア派・アクティブ派の3パターンで、20代後半〜30代前半の女性会員の職業や傾向を具体的に紹介します。LINE無料相談受付中。',
+    url: '/ideal-woman',
+    type: 'website',
+  },
+};
+
+
 
 import mensMatchmaking from "@/public/mens-matchmaking-service-women-concept.jpg";
 

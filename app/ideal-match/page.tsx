@@ -1,5 +1,3 @@
-"use client"
-
 import React from 'react';
 import { Heart, Sparkles, Trophy, Flame, UserCheck, MessageCircle, ArrowRight } from 'lucide-react';
 import Image from 'next/image';

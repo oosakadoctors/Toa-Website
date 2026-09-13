@@ -18,10 +18,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: '婚活ダンジョンマップと医師×仲人のダブルサポート体制',
   description: '大阪梅田ドクターズ結婚相談所が開発した「婚活ダンジョンマップ」と現役医師×ベテラン仲人のダブルサポート体制で納得の成婚へお手伝いします。',
+    alternates: {
+    canonical: "/dungeon-map",
+  },
+
   openGraph: {
     title: '婚活ダンジョンマップと医師×仲人のダブルサポート体制 | 大阪梅田ドクターズ結婚相談所',
     description: '大阪梅田ドクターズ結婚相談所が開発した「婚活ダンジョンマップ」と現役医師×ベテラン仲人のダブルサポート体制で納得の成婚へお手伝いします。',
-    url: `${SITE_URL}${PAGE_PATH}`,
+    url: "/dungeon-map",
     siteName: '大阪梅田ドクターズ結婚相談所',
     images: [
       {
