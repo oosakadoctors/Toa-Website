@@ -320,7 +320,7 @@ export default function PsychologicalMaturityLandingPage() {
  <div className="mt-10">
 
             <a 
-              href="https://lin.ee/ZXB0UNs" 
+              href="https://lin.ee/WvDSj6U" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-full bg-gradient-to-r from-green-500 to-green-600 px-8 py-4 text-lg font-black text-white shadow-lg transition hover:scale-105 hover:shadow-xl">

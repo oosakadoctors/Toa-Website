@@ -6,7 +6,7 @@ import clinic3 from "@/public/maleAdvisor.jpg";
 
 export const metadata: Metadata = {
   title:
-    "入会制限と入会審査｜大阪梅田ドクターズ結婚相談所（毎月5名限定）",
+    "入会制限と入会審査（毎月5名限定）",
   description:
     "大阪梅田ドクターズ結婚相談所の入会条件と審査についてご説明します。新規入会は毎月5名限定。お断りする場合の基準と、ご入会までの4ステップを公開しています。",
   alternates: {

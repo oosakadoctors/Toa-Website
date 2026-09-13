@@ -16,7 +16,8 @@ export default function IdealManPage() {
 
 
   return (
-    <div>
+    <div className="w-full">
+      {/* Newly Added Element */}
 <section className="w-full py-0">
 
 <section className="w-full py-0">
@@ -112,6 +113,41 @@ export default function IdealManPage() {
 <section className="w-full py-10">
 
   <div className="mx-auto w-[98%] max-w-6xl px-5 sm:px-10 space-y-10">
+
+    {/* New Element Placed Directly Above Case 1 */}
+<section className="w-full py-3 px-4 sm:px-2  mx-auto  rounded-3xl border-2 border-amber-500 shadow-2xl relative overflow-hidden">
+  {/* Decorative subtle background gradient */}
+  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-white to-pink-50/50 opacity-70" />
+
+  <div className="relative z-10 space-y-6">
+    {/* Stylized Heading with highlight and icon */}
+    <div className="flex items-start gap-4">
+      <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-tight tracking-tight">
+        30代男性が理想の女性との結婚を実現するには、
+        <span className="relative inline-block">
+          <span className="relative z-10 text-blue-700">希望条件を下げる前に</span>
+          <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-100 rounded-full z-0"></span>
+        </span>
+        <span className="font-black text-gray-950">「相手から選ばれる理由」</span>
+        を増やすことが重要です。
+      </h2>
+    </div>
+
+    {/* Elegant divider */}
+    <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
+
+    {/* Description paragraph with improved spacing and subtle icon */}
+    <div className="flex items-center gap-4 text-gray-700">
+
+      <p className="leading-relaxed text-lg sm:text-xl font-medium">
+        大阪梅田ドクターズ結婚相談所では、プロフィール、外見、会話、デート、LINEを総合的に見直し、
+        <span className="font-semibold text-gray-800">ハイスペック女性</span>や
+        <span className="font-semibold text-gray-800">人気女性</span>
+        との成婚を目指す男性の婚活を個別にサポートします。
+      </p>
+    </div>
+  </div>
+</section>
 
     {/* ================= CASE 1 ================= */}
     <article className="space-y-6 text-gray-800 leading-relaxed font-medium text-base sm:text-lg">
@@ -303,7 +339,7 @@ export default function IdealManPage() {
 <div className="pt-4 space-y-3 flex flex-col items-center">
 
   <a
-   href="https://lin.ee/ZXB0UNs" 
+   href="https://lin.ee/WvDSj6U" 
    target="_blank"
    rel="noopener noreferrer"
    className="inline-flex items-center justify-center rounded-full bg-[#06C755] text-white font-black px-7 py-3 shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer">

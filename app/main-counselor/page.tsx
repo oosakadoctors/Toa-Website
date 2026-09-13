@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Stethoscope, Compass, BookOpen, Target, HeartHandshake, Smile, Award } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "メインカウンセラー紹介｜大阪梅田ドクターズ結婚相談所",
+  title: "メインカウンセラー紹介",
   description:
     "現役女性医師【加藤】とベテランカウンセラー【石田】のご紹介。医療的・論理的アプローチと20年の成婚実績ノウハウで、あなたの理想の成婚を全力でサポートします。",
   alternates: {

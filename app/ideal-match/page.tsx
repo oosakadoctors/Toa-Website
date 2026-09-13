@@ -238,7 +238,7 @@ export default function MensNavyPremiumLandingPage() {
           </p>
           <div className="pt-4 flex justify-center w-full">
             <a 
-              href="https://lin.ee/ZXB0UNs" 
+              href="https://lin.ee/WvDSj6U" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold px-8 py-4 rounded-lg shadow-lg hover:shadow-emerald-900/30 transition duration-200 tracking-wider text-base w-full sm:w-auto border border-emerald-500/20">

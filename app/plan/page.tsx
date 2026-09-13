@@ -7,7 +7,7 @@ import Banner from "@/components/Banner";
 // 1. Next.js SEO Metadata
 // ============================================================================
 export const metadata: Metadata = {
-  title: "料金プラン | 大阪梅田ドクターズ結婚相談所",
+  title: "料金プラン",
   description: "大阪梅田ドクターズ結婚相談所の明確な料金プラン。月5名様限定の完全少人数制で、現役女医とベテランカウンセラーによる医学的・心理学的アプローチをコストパフォーマンスで提供します。",
   alternates: {
     canonical: "/plan",

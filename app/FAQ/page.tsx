@@ -6,7 +6,7 @@ import { HelpCircle } from "lucide-react";
 // 1. Next.js SEO Metadata
 // ============================================================================
 export const metadata: Metadata = {
-  title: "よくある質問 | 大阪梅田ドクターズ結婚相談所",
+  title: "よくある質問",
   description: "大阪梅田ドクターズ結婚相談所のよくある質問ページ。入会条件、成婚までの期間、サポート内容、ハイスペック会員の在籍状況や秘密厳守について詳しくお答えします。",
   alternates: {
     canonical: "/FAQ",

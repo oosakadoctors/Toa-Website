@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 import Quiz from '@/components/Quiz';
 
 export const metadata: Metadata = {
-  title: '婚活に必要なEQ（心の知能指数）とその高め方｜大阪梅田ドクターズ結婚相談所',
+  title: '婚活に必要なEQ（心の知能指数）とその高め方',
   description: '婚活と結婚生活に必要な4つのEQと、その高め方を現役女医が解説します。相手の感情を読み取る力、自分を整える力が、成婚までの進み方を変えます。',
   alternates: { canonical: '/EQ' },
   openGraph: {
@@ -493,7 +493,7 @@ export default function EQPage() {
 
           <div className="pt-2">
             <a 
-              href="https://lin.ee/ZXB0UNs" 
+              href="https://lin.ee/WvDSj6U" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-full bg-gradient-to-r from-green-500 to-green-600 px-8 py-4 text-lg font-black text-white shadow-lg transition hover:scale-105 hover:shadow-xl">

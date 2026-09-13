@@ -6,7 +6,7 @@ import React from 'react';
 import { MessageCircle, ShieldCheck, ArrowRight, Sparkles, HeartHandshake, CheckCircle2 } from 'lucide-react';
 
 export const metadata = {
-  title: "初心者むけ素朴な疑問を解決！外見と内面のリアル | 大阪梅田ドクターズ結婚相談所",
+  title: "初心者むけ素朴な疑問を解決！外見と内面のリアル",
   description: "素朴な疑問を解決し、婚活で仮交際や真剣交側に進むために外見と内面さらに笑顔の魅力、その伝え方について専門的に解説します。",
   keywords: ["大阪梅田 結婚相談所", "婚活 初心者", "仮交際 基準", "外見と内面", "笑顔の魅力", "プロフィール作成", "大人の婚活", "医師監修 結婚相談所"],
   authors: [
@@ -17,7 +17,7 @@ export const metadata = {
     canonical: "/first-steps",
   },
   openGraph: {
-    title: "初心者むけ素朴な疑問を解決！外見と内面のリアル | 大阪梅田ドクターズ結婚相談所",
+    title: "初心者むけ素朴な疑問を解決！外見と内面のリアル",
     description: "素朴な疑問を解決し、婚活で仮交際や真剣交側に進むために外見と内面さらに笑顔の魅力、その伝え方について専門的に解説します。",
         url: "/first-steps",
     siteName: "大阪梅田ドクターズ結婚相談所",
@@ -305,7 +305,7 @@ export default function BeginnerFaqLandingPage() {
  <div className="mt-10">
 
             <a 
-              href="https://lin.ee/ZXB0UNs" 
+              href="https://lin.ee/WvDSj6U" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-full bg-gradient-to-r from-green-500 to-green-600 px-8 py-4 text-lg font-black text-white shadow-lg transition hover:scale-105 hover:shadow-xl">

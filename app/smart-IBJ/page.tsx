@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "IBJプレミアムパックと標準プランの違い｜大阪梅田ドクターズ結婚相談所",
+  title: "IBJプレミアムパックと標準プランの違い",
   description:
     "30秒でわかる！IBJプレミアムパックと標準プランの違い。ハイクラス婚活を有利に進めるための3つのポイントと料金システム、最新AIマッチング機能を解説。",
 

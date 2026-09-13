@@ -582,7 +582,7 @@ export default function LocationAccessPage() {
           </p>
           <div className="pt-4 flex justify-center w-full">
             <a
-              href="https://lin.ee/ZXB0UNs"
+              href="https://lin.ee/WvDSj6U"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-extrabold px-8 py-5 rounded-2xl shadow-xl hover:shadow-2xl transition duration-200 tracking-wider text-[20px] md:text-base w-full sm:w-auto border-2 border-white/30 transform hover:-translate-y-0.5"

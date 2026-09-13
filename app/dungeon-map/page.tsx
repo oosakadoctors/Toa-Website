@@ -16,7 +16,7 @@ const OG_IMAGE = `${SITE_URL}/dungeon-map.jpg`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: '婚活ダンジョンマップと医師×仲人のダブルサポート体制 | 大阪梅田ドクターズ結婚相談所',
+  title: '婚活ダンジョンマップと医師×仲人のダブルサポート体制',
   description: '大阪梅田ドクターズ結婚相談所が開発した「婚活ダンジョンマップ」と現役医師×ベテラン仲人のダブルサポート体制で納得の成婚へお手伝いします。',
   openGraph: {
     title: '婚活ダンジョンマップと医師×仲人のダブルサポート体制 | 大阪梅田ドクターズ結婚相談所',
@@ -281,7 +281,7 @@ export default function DungeonMapSupportPage() {
           </p>
           <div className="pt-4 flex justify-center w-full">
             <a 
-              href="https://lin.ee/ZXB0UNs" 
+              href="https://lin.ee/WvDSj6U" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-extrabold px-8 py-5 rounded-2xl shadow-xl hover:shadow-2xl transition duration-200 tracking-wider text-[20px] md:text-base w-full sm:w-auto border-2 border-amber-300/50 transform hover:-translate-y-0.5">

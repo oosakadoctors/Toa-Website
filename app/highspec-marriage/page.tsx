@@ -15,15 +15,15 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "【ハイスペック婚を目指す女性へ】結婚はゴールではない。｜大阪梅田ドクターズ結婚相談所",
+  title: "【ハイスペック婚を目指す女性へ】結婚はゴールではない。",
   description:
-    "【ハイスペック婚を目指す女性へ】結婚はゴールではない。あなたが相手に「与えられるもの」は何ですか？",
+    "ハイスペック婚を成功させ、幸せな結婚生活を続けるために女性が大切にしたいこととは。大阪梅田の結婚相談所が、医師・高収入男性との婚活で求められる自立心、思いやり、支え合う関係について解説します。",
   alternates: {
     canonical: "/highspec-marriage",
   },
    openGraph: {
     title: "【ハイスペック婚を目指す女性へ】結婚はゴールではない。｜大阪梅田ドクターズ結婚相談所",
-    description: "【ハイスペック婚を目指す女性へ】結婚はゴールではない。あなたが相手に「与えられるもの」は何ですか？",
+    description: "ハイスペック婚を成功させ、幸せな結婚生活を続けるために女性が大切にしたいこととは。大阪梅田の結婚相談所が、医師・高収入男性との婚活で求められる自立心、思いやり、支え合う関係について解説します。",
     url: "/highspec-marriage",
     siteName: "大阪梅田ドクターズ結婚相談所",
     type: "website",
@@ -48,19 +48,19 @@ export default function ReasonsPage() {
         <div className="absolute bottom-[-10%] right-[-10%] w-80 h-80 bg-[#FFB800]/25 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative max-w-4xl mx-auto flex flex-col items-center space-y-6">
-          
+
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm border border-amber-400/40 text-amber-900 px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-amber-600 shrink-0" />
             <span>大阪梅田ドクターズ結婚相談所</span>
           </div>
-          
+
           {/* Main Headline - Exact Input Text */}
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-950 leading-snug sm:leading-tight tracking-tight max-w-3xl pt-1 [text-shadow:_0_0_8px_#ffffff,_0_0_16px_#ffffff,_0_0_24px_rgba(255,255,255,0.8)]">
             【ハイスペック婚を目指す女性へ】<br />
             結婚はゴールではない。あなたが相手に「与えられるもの」は何ですか？
           </h1>
-          
+
           {/* Matching Gradient Divider Bar */}
           <div className="flex items-center justify-center gap-2 pt-1">
             <div className="w-1.5 h-1.5 rounded-full bg-amber-800" />
@@ -95,6 +95,13 @@ export default function ReasonsPage() {
 
       {/* MAIN CONTENT CONTAINER */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+        {/* NEW SECTION (PLACED ABOVE SECTION 1) */}
+        <section className="bg-white rounded-3xl p-6 sm:p-10 border border-amber-100 shadow-sm relative overflow-hidden">
+          <h2 className="text-xl sm:text-2xl font-black text-gray-900 leading-relaxed">
+            ハイスペック婚で大切なのは、医師や高収入男性から「何を与えてもらえるか」だけではありません。相手を理解し、自分からも愛情や安心、尊敬を与えられる関係を築くことです。大阪梅田ドクターズ結婚相談所では、条件だけで結婚相手を選ぶのではなく、結婚後も必要とされ、長く愛し合えるパートナーシップを重視しています。
+          </h2>
+        </section>
 
         {/* SECTION 1 */}
         <section className="bg-white rounded-3xl p-6 sm:p-10 border border-amber-100 shadow-sm relative overflow-hidden">
@@ -206,7 +213,7 @@ export default function ReasonsPage() {
 
     <div className="pt-6 flex justify-center">
       <a
-        href="https://lin.ee/ZXB0UNs" 
+        href="https://lin.ee/WvDSj6U" 
         target="_blank"
         rel="noopener noreferrer"
         className="group inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-green-600 hover:shadow-xl active:translate-y-0"

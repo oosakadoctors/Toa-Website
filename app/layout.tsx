@@ -45,10 +45,11 @@ const localBusinessJsonLd = {
     { "@type": "AdministrativeArea", "name": "兵庫県" },
     { "@type": "AdministrativeArea", "name": "京都府" }
   ],
-  "sameAs": [
-    "https://lin.ee/ZXB0UNs",
-    "https://www.instagram.com/oosaka.doctors/"
-  ]
+"sameAs": [
+          "https://lin.ee/WvDSj6U",
+          "https://www.instagram.com/oosaka.doctors/",
+          "https://maps.app.goo.gl/wZYzjYYN3qynqeYY9"
+        ]
 };
 
 export const metadata: Metadata = {
@@ -166,7 +167,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
               {/* Custom LINE Button */}
               <a
-                href="https://lin.ee/ZXB0UNs"
+                href="https://lin.ee/WvDSj6U"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 flex items-center justify-center gap-2 rounded-full bg-[#06C755] py-4 text-base font-semibold text-white shadow-lg transition hover:bg-[#05b34c]"

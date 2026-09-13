@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: "IT・SE・理系男性のロジカル婚活 | 大阪梅田ドクターズ結婚相談所",
+  title: "IT・SE・理系男性のロジカル婚活",
   description:
     "システムエンジニア、IT企業勤務、技術職など理系男性への大阪梅田ドクターズ結婚相談所のロジカル婚活、タイパ良いスマート婚活、手厚いサポートなどの解説",
   alternates: {

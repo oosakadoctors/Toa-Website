@@ -65,7 +65,7 @@ export default function ContactTableComponent() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* LINE CTA */}
             <a
-              href="https://lin.ee/ZXB0UNs"
+              href="https://lin.ee/WvDSj6U"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-between bg-emerald-500 hover:bg-emerald-600 text-white p-5 rounded-2xl shadow-md transition-all transform hover:-translate-y-0.5 group"

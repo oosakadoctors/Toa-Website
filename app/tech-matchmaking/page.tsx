@@ -3,7 +3,7 @@ import Image from 'next/image';
 import pic1 from '@/public/pic1.jpg'
 
 export const metadata: Metadata = {
-  title: "理系男性のお見合い、お相手探し | 大阪梅田ドクターズ結婚相談所",
+  title: "理系男性のお見合い、お相手探し",
   description:
     "婚活中の理系男性に特化し、お見合いの方法や会話術、さらに理想のお相手を探す具体的な方法について専門的に解説。",
   alternates: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   publisher: "大阪梅田ドクターズ結婚相談所",
 
     openGraph: {
-    title: "理系男性のお見合い、お相手探し | 大阪梅田ドクターズ結婚相談所",
+    title: "理系男性のお見合い、お相手探し",
     description: "婚活中の理系男性に特化し、お見合いの方法や会話術、さらに理想のお相手を探す具体的な方法について専門的に解説。",
     url: "/tech-matchmaking",
     siteName: "大阪梅田ドクターズ結婚相談所",

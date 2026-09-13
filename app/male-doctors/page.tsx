@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "男性医師の方へ｜大阪梅田ドクターズ結婚相談所",
+  title: "男性医師の方へ",
   description:
     "「知性の融合」から始まる、最良のパートナーシップ。未来の医療経営と次世代の教育を共に担う、女医との「同職婚」、医療従事者との成婚という選択",
 

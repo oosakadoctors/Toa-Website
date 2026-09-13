@@ -4,16 +4,16 @@ import Image from "next/image";
 import { Sparkles, CheckCircle2, UserCheck, Heart, ShieldCheck, MessageCircle, ArrowRight, Stethoscope, Compass, Award } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "婚活でいい人が減った？」と思い始めた30代のあなたへ｜大阪梅田ドクターズ結婚相談所が効率的な理由",
+  title: "30歳女性の真剣婚活｜誠実で笑顔が可愛い「最高の男性」に出会う",
   description:
-    " 「大阪梅田で未来への投資として婚活を始める男女へ。医師・経営者・公務員などのハイステータス層や、女医の人脈を活かした、育ちの良い男女が集まる大阪梅田ドクターズ結婚相談所への入会はスピード婚への効率的な選択肢の一つであることを解説",
+    " スマートなエスコート力と少年のような笑顔を持つ男性との出会いを、現役女医とベテランカウンセラーがプロデュース。梅田駅すぐ、30代女性のキャリアとライフスタイルを尊重したオーダーメイド婚活で理想の結婚へ。",
   alternates: {
     canonical: "/ideal-man",
   },
 
    openGraph: {
-    title: "婚活でいい人が減った？」と思い始めた30代のあなたへ｜大阪梅田ドクターズ結婚相談所が効率的な理由",
-    description: "「大阪梅田で未来への投資として婚活を始める男女へ。医師・経営者・公務員などのハイステータス層や、女医の人脈を活かした、育ちの良い男女が集まる大阪梅田ドクターズ結婚相談所への入会はスピード婚への効率的な選択肢の一つであることを解説",
+    title: "30歳女性の真剣婚活｜誠実で笑顔が可愛い「最高の男性」に出会う｜大阪梅田ドクターズ結婚相談所",
+    description: "スマートなエスコート力と少年のような笑顔を持つ男性との出会いを、現役女医とベテランカウンセラーがプロデュース。梅田駅すぐ、30代女性のキャリアとライフスタイルを尊重したオーダーメイド婚活で理想の結婚へ。",
     url: "/ideal-man",
     siteName: "大阪梅田ドクターズ結婚相談所",
     type: "website",
@@ -409,7 +409,7 @@ export default function MarriageAdvicePage() {
 
             <div className="pt-2">
               <a 
-                href="https://lin.ee/ZXB0UNs" 
+                href="https://lin.ee/WvDSj6U" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white font-black px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 text-base sm:text-lg w-full sm:w-auto"
