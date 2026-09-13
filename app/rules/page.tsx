@@ -1,12 +1,7 @@
-"use client"
-
-import React, { useState } from 'react';
-// Minimal icon imports for visual cues
+import React from 'react';
 import { BookOpen, MessagesSquare, Shirt } from 'lucide-react';
 
 export default function MatchmakingRules() {
-  const [activeTab, setActiveTab] = useState<'etiquette' | 'conversation' | 'clothing'>('etiquette');
-
   const rules = {
     etiquette: [
       { text: "女性がお茶代を払うのはNG", desc: "お茶代は男性全額支払いがルール。女性はスマートに奢られましょう。" },
@@ -45,23 +40,23 @@ export default function MatchmakingRules() {
       
       {/* ページヘッダー */}
       <header className="bg-white border-b border-gray-200 px-4 py-3 sticky top-0 z-50 shadow-sm">
-        <h1 className="text-lg font-black text-gray-900 text-center leading-tight">
+        <h1 className="text-[22px] sm:text-[26px] font-black text-gray-900 text-center leading-tight">
           【えっ、これもNG？】<br />
           結婚相談所お見合いの暗黙のルールと意外なNGマナー
         </h1>
       </header>
 
-      <div className="p-3 space-y-3">
+      <div className="p-3 space-y-4">
         
         {/* リード文 */}
-        <div className="bg-rose-50/70 border border-rose-100 p-2.5 rounded-xl text-[16px] leading-relaxed text-gray-700">
+        <div className="bg-rose-50/70 border border-rose-100 p-3 rounded-xl text-[20px] sm:text-[24px] leading-relaxed text-gray-700">
           <p className="font-semibold text-rose-700 mb-0.5">⚠️ 知らないと一発ペナルティも！？</p>
           お見合いには「えっ？それもダメなの！？」と驚くような独自の暗黙のルールがあります。さらっと読んでおきましょう♡
         </div>
 
         {/* コア概念のシンプル解説 */}
-        <div className="bg-white border border-gray-200 p-2.5 rounded-xl text-[16px] leading-relaxed">
-          <span className="inline-block bg-slate-800 text-white font-bold text-[14px] px-1.5 py-0.5 rounded mb-1">
+        <div className="bg-white border border-gray-200 p-3 rounded-xl text-[20px] sm:text-[24px] leading-relaxed">
+          <span className="inline-block bg-slate-800 text-white font-bold text-[18px] sm:text-[22px] px-2 py-0.5 rounded mb-1">
             お見合いの本当の目的
           </span>
           <p className="text-gray-600">
@@ -72,94 +67,105 @@ export default function MatchmakingRules() {
           </p>
         </div>
 
-        {/* HIGH VISIBILITY TABS SECTION */}
-        <div className="space-y-1">
-          {/* Micro-copy to prompt action */}
-          <div className="flex justify-between items-center px-1">
-            <span className="text-[12px] font-bold text-gray-400 tracking-wider uppercase">Category</span>
-            <span className="text-[12px] text-rose-500 font-medium animate-pulse">タップで切り替え ↴</span>
+        {/* SECTION 1: ETIQUETTE */}
+        <section id="etiquette" className="space-y-2 pt-2">
+          <div className="flex items-center space-x-2 bg-rose-100/70 text-rose-800 p-2 rounded-lg">
+            <BookOpen className="w-6 h-6 text-rose-600 flex-shrink-0" />
+            <h2 className="text-[22px] sm:text-[26px] font-black">茶代・基本</h2>
           </div>
 
-          <div className="grid grid-cols-3 gap-1 bg-gray-200/80 p-1 rounded-xl text-center shadow-inner">
-            {/* Tab 1 */}
-            <button
-              onClick={() => setActiveTab('etiquette')}
-              className={`flex flex-col items-center justify-center py-2 text-[14px] font-black rounded-lg transition-all duration-200 active:scale-95 ${
-                activeTab === 'etiquette'
-                  ? 'bg-white text-rose-600 shadow-md ring-1 ring-black/5'
-                  : 'text-gray-600 hover:text-gray-900'
-              }`}
-            >
-              <BookOpen className={`w-4 h-4 mb-0.5 ${activeTab === 'etiquette' ? 'text-rose-500' : 'text-gray-400'}`} />
-              <span>茶代・基本</span>
-            </button>
-
-            {/* Tab 2 */}
-            <button
-              onClick={() => setActiveTab('conversation')}
-              className={`flex flex-col items-center justify-center py-2 text-[14px] font-black rounded-lg transition-all duration-200 active:scale-95 ${
-                activeTab === 'conversation'
-                  ? 'bg-white text-rose-600 shadow-md ring-1 ring-black/5'
-                  : 'text-gray-600 hover:text-gray-900'
-              }`}
-            >
-              <MessagesSquare className={`w-4 h-4 mb-0.5 ${activeTab === 'conversation' ? 'text-rose-500' : 'text-gray-400'}`} />
-              <span>会話・質問</span>
-            </button>
-
-            {/* Tab 3 */}
-            <button
-              onClick={() => setActiveTab('clothing')}
-              className={`flex flex-col items-center justify-center py-2 text-[14px] font-black rounded-lg transition-all duration-200 active:scale-95 ${
-                activeTab === 'clothing'
-                  ? 'bg-white text-rose-600 shadow-md ring-1 ring-black/5'
-                  : 'text-gray-600 hover:text-gray-900'
-              }`}
-            >
-              <Shirt className={`w-4 h-4 mb-0.5 ${activeTab === 'clothing' ? 'text-rose-500' : 'text-gray-400'}`} />
-              <span>服装・マナー</span>
-            </button>
-          </div>
-        </div>
-
-        {/* NG項目リスト */}
-        <div className="space-y-1.5">
-          {rules[activeTab].map((item, index) => (
-            <div key={index} className="bg-white border border-gray-200 rounded-lg p-2 flex flex-col justify-center animate-fadeIn">
-              <div className="flex items-start space-x-1">
-                <span className="inline-block flex-shrink-0 bg-rose-100 text-rose-700 font-extrabold text-[14px] px-1 rounded mt-0.5">
-                  NG
-                </span>
-                <h3 className="text-[17px] font-bold text-gray-900 leading-snug">
-                  {item.text}
-                </h3>
+          <div className="space-y-2">
+            {rules.etiquette.map((item, index) => (
+              <div key={index} className="bg-white border border-gray-200 rounded-lg p-2.5 flex flex-col justify-center">
+                <div className="flex items-start space-x-1.5">
+                  <span className="inline-block flex-shrink-0 bg-rose-100 text-rose-700 font-extrabold text-[18px] sm:text-[22px] px-1.5 rounded mt-0.5">
+                    NG
+                  </span>
+                  <h3 className="text-[21px] sm:text-[25px] font-bold text-gray-900 leading-snug">
+                    {item.text}
+                  </h3>
+                </div>
+                {item.desc && (
+                  <p className="text-[20px] sm:text-[24px] text-gray-500 mt-1 pl-7 leading-tight">
+                    {item.desc}
+                  </p>
+                )}
               </div>
-              {item.desc && (
-                <p className="text-[16px] text-gray-500 mt-0.5 pl-6 leading-tight">
-                  {item.desc}
-                </p>
-              )}
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        {/* 注文時マナーのワンポイント */}
-        {activeTab === 'etiquette' && (
-          <div className="bg-emerald-50 border border-emerald-100 p-2.5 rounded-xl text-[16px]">
+          {/* 注文時マナーのワンポイント */}
+          <div className="bg-emerald-50 border border-emerald-100 p-3 rounded-xl text-[20px] sm:text-[24px] mt-2">
             <p className="font-bold text-emerald-800 mb-0.5">💡 スマートな注文マナー</p>
             <p className="text-gray-600 leading-snug">
               注文時はお相手にメニューを向け、先に選んでもらう。メニュー表が1枚しかない場合、女性（お相手）に最初に見せます。メニュー選びは「ドリンクのみ」が基本です。
             </p>
           </div>
-        )}
+        </section>
+
+        {/* SECTION 2: CONVERSATION */}
+        <section id="conversation" className="space-y-2 pt-2">
+          <div className="flex items-center space-x-2 bg-rose-100/70 text-rose-800 p-2 rounded-lg">
+            <MessagesSquare className="w-6 h-6 text-rose-600 flex-shrink-0" />
+            <h2 className="text-[22px] sm:text-[26px] font-black">会話・質問</h2>
+          </div>
+
+          <div className="space-y-2">
+            {rules.conversation.map((item, index) => (
+              <div key={index} className="bg-white border border-gray-200 rounded-lg p-2.5 flex flex-col justify-center">
+                <div className="flex items-start space-x-1.5">
+                  <span className="inline-block flex-shrink-0 bg-rose-100 text-rose-700 font-extrabold text-[18px] sm:text-[22px] px-1.5 rounded mt-0.5">
+                    NG
+                  </span>
+                  <h3 className="text-[21px] sm:text-[25px] font-bold text-gray-900 leading-snug">
+                    {item.text}
+                  </h3>
+                </div>
+                {item.desc && (
+                  <p className="text-[20px] sm:text-[24px] text-gray-500 mt-1 pl-7 leading-tight">
+                    {item.desc}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* SECTION 3: CLOTHING */}
+        <section id="clothing" className="space-y-2 pt-2">
+          <div className="flex items-center space-x-2 bg-rose-100/70 text-rose-800 p-2 rounded-lg">
+            <Shirt className="w-6 h-6 text-rose-600 flex-shrink-0" />
+            <h2 className="text-[22px] sm:text-[26px] font-black">服装・マナー</h2>
+          </div>
+
+          <div className="space-y-2">
+            {rules.clothing.map((item, index) => (
+              <div key={index} className="bg-white border border-gray-200 rounded-lg p-2.5 flex flex-col justify-center">
+                <div className="flex items-start space-x-1.5">
+                  <span className="inline-block flex-shrink-0 bg-rose-100 text-rose-700 font-extrabold text-[18px] sm:text-[22px] px-1.5 rounded mt-0.5">
+                    NG
+                  </span>
+                  <h3 className="text-[21px] sm:text-[25px] font-bold text-gray-900 leading-snug">
+                    {item.text}
+                  </h3>
+                </div>
+                {item.desc && (
+                  <p className="text-[20px] sm:text-[24px] text-gray-500 mt-1 pl-7 leading-tight">
+                    {item.desc}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* フッター誘導 */}
-        <div className="bg-gradient-to-br from-gray-900 to-slate-800 text-white p-3 rounded-xl text-center shadow-md">
-          <p className="text-[16px] font-medium text-rose-300">大阪梅田ドクターズ結婚相談所のお見合いサポート</p>
-          <p className="text-[17px] font-bold mt-0.5 leading-snug">
+        <div className="bg-gradient-to-br from-gray-900 to-slate-800 text-white p-4 rounded-xl text-center shadow-md mt-4">
+          <p className="text-[20px] sm:text-[24px] font-medium text-rose-300">大阪梅田ドクターズ結婚相談所のお見合いサポート</p>
+          <p className="text-[21px] sm:text-[25px] font-bold mt-1 leading-snug">
             他にも色々ルールがあるので<br />わからないことは何でも聞いてくださいね。
           </p>
-          <p className="text-[18px] font-black text-white mt-1 bg-rose-500/30 inline-block px-3 py-0.5 rounded-full border border-rose-500/50">
+          <p className="text-[22px] sm:text-[26px] font-black text-white mt-2 bg-rose-500/30 inline-block px-3 py-1 rounded-full border border-rose-500/50">
             理想に近いワザありテクニックもお伝えします♡
           </p>
         </div>

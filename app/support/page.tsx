@@ -1,16 +1,10 @@
-"use client";
-
-import React, { useRef } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { 
   Sparkles, 
   HelpCircle, 
-  Search, 
   CheckCircle2, 
   ShieldCheck, 
-  Users, 
-  Zap, 
-  UserCheck, 
   AlertTriangle,
   ArrowRight,
   ChevronRight,
@@ -18,29 +12,23 @@ import {
   Heart
 } from 'lucide-react';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '婚活の悩みと不安を解消するサポート体制｜大阪梅田ドクターズ結婚相談所',
+  description: '現役女医とベテラン仲人の2名体制で、婚活中の悩みに伴走します。小さな疑問にも24時間以内を目安にお返事。お見合いの日程調整やお店選びも代行します。',
+  alternates: { canonical: '/support' },
+  openGraph: {
+    title: '婚活の悩みと不安を解消するサポート体制',
+    description: '現役女医とベテラン仲人の2名体制で伴走。小さな疑問にも24時間以内を目安にお返事します。',
+    url: '/support',
+    type: 'website',
+  },
+};
+
 export default function SupportPage() {
-  // Navigation section triggers for the anchor scrolling layout
-  const section1Ref = useRef<HTMLDivElement>(null);
-  const section2Ref = useRef<HTMLDivElement>(null);
-  const section3Ref = useRef<HTMLDivElement>(null);
-
-  const scrollToSection = (elementRef: React.RefObject<HTMLDivElement | null>) => {
-    if (elementRef.current) {
-      const offset = 70; // Tightened fixed navbar buffer offset
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = elementRef.current.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
-
   return (
-    <div className="bg-[#FAF8F5] text-gray-950 min-h-screen pb-6 font-medium">
+    <div className="bg-[#FAF8F5] text-gray-950 min-h-screen pb-6 font-medium scroll-pt-20">
       
       {/* ============================================================
           HERO BANNER HEADLINE
@@ -56,7 +44,7 @@ export default function SupportPage() {
         </h1>
         <div className="w-16 h-1 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] mx-auto mt-3 rounded-full" />
         
-        <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg space-y-5 mt-6 text-justify">
+        <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-[20px] md:text-[22px] space-y-5 mt-6 text-justify">
           <p>
             大阪梅田ドクターズ結婚相談所で「誰に申し込めばいいか分からない」「プロフィールの見方が分からない」とお悩みではありませんか？当相談所では、データだけに頼らない仲人型ならではの<span className="font-bold text-gray-900 border-b-2 border-[#E6A2B3]">【技あり！特別サポート紹介】</span>で、あなたの婚活の悩みを丸ごと解決します！
           </p>
@@ -64,7 +52,7 @@ export default function SupportPage() {
       </div>
 
       {/* ============================================================
-          DYNAMIC TABLE OF CONTENTS INDEX
+          DYNAMIC TABLE OF CONTENTS INDEX (SERVER HTML ANCHORS)
           ============================================================ */}
       <div className="w-full px-2 sm:px-4 mb-6">
         <div className="bg-white rounded-2xl p-3 sm:p-4 shadow-[0_4px_20px_rgba(230,162,179,0.03)] border border-gray-200/50">
@@ -74,49 +62,49 @@ export default function SupportPage() {
           </h2>
           
           <div className="space-y-2">
-            <button 
-              onClick={() => scrollToSection(section1Ref)}
-              className="w-full text-left bg-[#FAF8F5] hover:bg-gray-50 p-3 rounded-lg border border-gray-100 flex items-center justify-between group transition-all"
+            <a 
+              href="#problem-01"
+              className="w-full text-left bg-[#FAF8F5] hover:bg-gray-50 p-3 rounded-lg border border-gray-100 flex items-center justify-between group transition-all block"
             >
-              <span className="text-base font-bold text-gray-900 flex items-center gap-1.5 leading-relaxed">
+              <span className="text-[20px] font-bold text-gray-900 flex items-center gap-1.5 leading-relaxed">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#D9889D] shrink-0" />
                 結婚相談所で「誰に申し込めばいいか分からない」婚活の悩みを解決！
               </span>
-              <span className="text-base font-black text-[#D9889D] flex items-center gap-0.5 shrink-0 ml-2 group-hover:translate-x-1 transition-transform">
+              <span className="text-[20px] font-black text-[#D9889D] flex items-center gap-0.5 shrink-0 ml-2 group-hover:translate-x-1 transition-transform">
                 解決法をみる <ChevronRight className="w-4 h-4" />
               </span>
-            </button>
+            </a>
 
-            <button 
-              onClick={() => scrollToSection(section2Ref)}
-              className="w-full text-left bg-[#FAF8F5] hover:bg-gray-50 p-3 rounded-lg border border-gray-100 flex items-center justify-between group transition-all"
+            <a 
+              href="#solution-02"
+              className="w-full text-left bg-[#FAF8F5] hover:bg-gray-50 p-3 rounded-lg border border-gray-100 flex items-center justify-between group transition-all block"
             >
-              <span className="text-base font-bold text-gray-900 flex items-center gap-1.5 leading-relaxed">
+              <span className="text-[20px] font-bold text-gray-900 flex items-center gap-1.5 leading-relaxed">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#D9889D] shrink-0" />
                 「身元も人柄もよくわかっている安心な人」を紹介してほしい
               </span>
-              <span className="text-base font-black text-[#D9889D] flex items-center gap-0.5 shrink-0 ml-2 group-hover:translate-x-1 transition-transform">
+              <span className="text-[20px] font-black text-[#D9889D] flex items-center gap-0.5 shrink-0 ml-2 group-hover:translate-x-1 transition-transform">
                 解決法をみる <ChevronRight className="w-4 h-4" />
               </span>
-            </button>
+            </a>
 
-            <button
-              onClick={() => scrollToSection(section3Ref)}
-              className="w-full text-left bg-[#FAF8F5] hover:bg-gray-50 p-3 rounded-lg border border-gray-100 flex items-center justify-between group transition-all"
+            <a
+              href="#romance-03"
+              className="w-full text-left bg-[#FAF8F5] hover:bg-gray-50 p-3 rounded-lg border border-gray-100 flex items-center justify-between group transition-all block"
             >
               <div className="space-y-1 w-full">
                 <span className="inline-block bg-gray-200 text-gray-600 text-sm font-black px-1.5 py-0.5 rounded-sm">
                   その他のお悩み
                 </span>
-                <p className="text-base font-bold text-gray-900 flex items-center gap-1.5 leading-relaxed">
+                <p className="text-[20px] font-bold text-gray-900 flex items-center gap-1.5 leading-relaxed">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#D9889D] shrink-0" />
                   「恋愛経験がないのでお見合いやデートが不安」婚活の悩みを解決！
                 </p>
               </div>
-              <span className="text-base font-black text-[#D9889D] flex items-center gap-0.5 shrink-0 ml-2 group-hover:translate-x-1 transition-transform">
+              <span className="text-[20px] font-black text-[#D9889D] flex items-center gap-0.5 shrink-0 ml-2 group-hover:translate-x-1 transition-transform">
                 解決法をみる <ChevronRight className="w-4 h-4" />
               </span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -124,7 +112,7 @@ export default function SupportPage() {
       {/* ============================================================
           SECTION 1: BACKSTAGE DECODING & APPLICATION PROXY
           ============================================================ */}
-      <div ref={section1Ref} className="w-full px-2 sm:px-4 mb-8">
+      <div id="problem-01" className="w-full px-2 sm:px-4 mb-8">
         
         {/* SECTION HEADER */}
         <div className="text-center mb-4">
@@ -132,7 +120,7 @@ export default function SupportPage() {
           <h2 className="text-xl sm:text-2xl font-black text-gray-900 tracking-tight leading-relaxed">
             検索画面の「誰に申し込めばいいか迷う」原因と、一人でボタンを押せない不安
           </h2>
-          <p className="text-base text-gray-500 mt-1 w-full mx-auto leading-relaxed">
+          <p className="text-[20px] text-gray-500 mt-1 w-full mx-auto leading-relaxed">
             そもそも誰に申し込めばいいのかわからない、プロフィールの見方が分からないという婚活あるあるの悩みを解決します。
           </p>
         </div>
@@ -142,24 +130,24 @@ export default function SupportPage() {
           <div className="bg-emerald-50/50 text-emerald-900 p-3 rounded-xl border border-emerald-100 mb-4 flex items-start gap-2">
             <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
             <div>
-              <p className="text-base md:text-lg font-black leading-relaxed">【解決法】もう検索画面で迷わない！あなたの代わりに「理想に近い1人」へ手続きする【申し込み代行システム】</p>
+              <p className="text-[20px] md:text-[22px] font-black leading-relaxed">【解決法】もう検索画面で迷わない！あなたの代わりに「理想に近い1人」へ手続きする【申し込み代行システム】</p>
             </div>
           </div>
 
-          <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg space-y-5 text-justify">
+          <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-[20px] md:text-[22px] space-y-5 text-justify">
             <p>
               医師の審美眼とベテランカウンセラーの経験で、婚活の迷いや不安からあなたを解放します。当相談所は、ただの「申し込み代行」はいたしません。同じ条件の候補者の中から、医師の分析力とベテランカウンセラーのデータリサーチに基づき、<span className="font-bold text-gray-900">あなたが本当に会うべき人を仕分けしてお相手を選び抜き、申し込み手続きを代行</span>します。
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-5">
-            <div className="bg-[#FAF8F5] p-4 rounded-lg border border-gray-100 text-gray-600 text-justify leading-relaxed text-base md:text-lg">
+            <div className="bg-[#FAF8F5] p-4 rounded-lg border border-gray-100 text-gray-600 text-justify leading-relaxed text-[20px] md:text-[22px]">
               「同じ年収、年齢なのに、他の細かいパラメータが少しずつ違って、誰がベストかわからない。」
             </div>
-            <div className="bg-[#FAF8F5] p-4 rounded-lg border border-gray-100 text-gray-600 text-justify leading-relaxed text-base md:text-lg">
+            <div className="bg-[#FAF8F5] p-4 rounded-lg border border-gray-100 text-gray-600 text-justify leading-relaxed text-[20px] md:text-[22px]">
               「プロフィールの自己PRはみんな良く見えて、本当の着眼点（見るべきポイント）が分からない」
             </div>
-            <div className="bg-[#FAF8F5] p-4 rounded-lg border border-gray-100 text-gray-600 text-justify leading-relaxed text-base md:text-lg">
+            <div className="bg-[#FAF8F5] p-4 rounded-lg border border-gray-100 text-gray-600 text-justify leading-relaxed text-[20px] md:text-[22px]">
               「せっかく申し込んでも、お相手の『検索画面には載っていない本音の条件』に引っかかってお断りされる」
             </div>
           </div>
@@ -175,7 +163,7 @@ export default function SupportPage() {
               <Eye className="w-5 h-5 text-[#D9889D]" />
               【プロの着眼点】文字の裏を見抜く20年の経験と医師の分析眼
             </h3>
-            <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg space-y-5 mt-2 text-justify">
+            <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-[20px] md:text-[22px] space-y-5 mt-2 text-justify">
               <p>
                 プロフィールの見方にはコツがあります。同じ年収・同じ職業でも、書き方ひとつでお相手の本当の価値観や性格を見抜きます。他社カウンセラーが代筆した素晴らしい紹介文の裏に隠されたリアルを精査します。
               </p>
@@ -184,7 +172,7 @@ export default function SupportPage() {
 
           {/* TWO-COLUMN PROFILE DECODER GRID */}
           <div className="space-y-4">
-            <div className="bg-amber-50/40 text-amber-900 px-3 py-2 rounded-lg border border-amber-100/60 text-base md:text-lg flex items-center gap-1.5 leading-relaxed">
+            <div className="bg-amber-50/40 text-amber-900 px-3 py-2 rounded-lg border border-amber-100/60 text-[20px] md:text-[22px] flex items-center gap-1.5 leading-relaxed">
               <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0" />
               <span>下記はあくまでもデータ分析上の可能性の一例であり、すべてのお相手に必然的に当てはまるものではありません。</span>
             </div>
@@ -193,8 +181,8 @@ export default function SupportPage() {
               
               {/* CASE 1 */}
               <div className="border border-gray-100 rounded-xl overflow-hidden shadow-xs">
-                <div className="bg-gray-50 px-3 py-2 border-b border-gray-100 font-bold text-base text-gray-500">事例 1：紹介文の建前と本音</div>
-                <div className="p-4 space-y-3 text-base md:text-lg">
+                <div className="bg-gray-50 px-3 py-2 border-b border-gray-100 font-bold text-[20px] text-gray-500">事例 1：紹介文の建前と本音</div>
+                <div className="p-4 space-y-3 text-[20px] md:text-[22px]">
                   <div className="bg-[#FAF8F5] p-3 rounded leading-relaxed"><span className="font-black text-gray-400 block text-sm uppercase mb-0.5">紹介文（建前）</span>「頼りがいがあって、意見をハキハキしゃべる男らしい方です」</div>
                   <div className="bg-rose-50/30 p-3 rounded border border-rose-100/40 leading-relaxed"><span className="font-black text-rose-600 block text-sm uppercase mb-0.5">実際（本音の可能性）</span>自分の話ばかりで、「人の話をあまり聞かない」頑固な一面があることも。</div>
                   <p className="font-bold text-gray-800 pt-0.5 text-justify leading-relaxed">
@@ -205,8 +193,8 @@ export default function SupportPage() {
 
               {/* CASE 2 */}
               <div className="border border-gray-100 rounded-xl overflow-hidden shadow-xs">
-                <div className="bg-gray-50 px-3 py-2 border-b border-gray-100 font-bold text-base text-gray-500">事例 2：優しさの裏にある落とし穴</div>
-                <div className="p-4 space-y-3 text-base md:text-lg">
+                <div className="bg-gray-50 px-3 py-2 border-b border-gray-100 font-bold text-[20px] text-gray-500">事例 2：優しさの裏にある落とし穴</div>
+                <div className="p-4 space-y-3 text-[20px] md:text-[22px]">
                   <div className="bg-[#FAF8F5] p-3 rounded leading-relaxed"><span className="font-black text-gray-400 block text-sm uppercase mb-0.5">紹介文（建前）</span>「お相手の意見を尊重してくれる、優しくて穏やかな方です」</div>
                   <div className="bg-rose-50/30 p-3 rounded border border-rose-100/40 leading-relaxed"><span className="font-black text-rose-600 block text-sm uppercase mb-0.5">実際（本音の可能性）</span>「優柔不断でデートの場所すらリードしてくれない」タイプであるケース。</div>
                   <p className="font-bold text-gray-800 pt-0.5 text-justify leading-relaxed">
@@ -217,8 +205,8 @@ export default function SupportPage() {
 
               {/* CASE 3 */}
               <div className="border border-gray-100 rounded-xl overflow-hidden shadow-xs">
-                <div className="bg-gray-50 px-3 py-2 border-b border-gray-100 font-bold text-base text-gray-500">事例 3：自立の裏にある落とし穴</div>
-                <div className="p-4 space-y-3 text-base md:text-lg">
+                <div className="bg-gray-50 px-3 py-2 border-b border-gray-100 font-bold text-[20px] text-gray-500">事例 3：自立の裏にある落とし穴</div>
+                <div className="p-4 space-y-3 text-[20px] md:text-[22px]">
                   <div className="bg-[#FAF8F5] p-3 rounded leading-relaxed"><span className="font-black text-gray-400 block text-sm uppercase mb-0.5">紹介文（建前）</span>「精神的・経済的に自立しており、ご自身の世界や趣味を大切にされています」</div>
                   <div className="bg-rose-50/30 p-3 rounded border border-rose-100/40 leading-relaxed"><span className="font-black text-rose-600 block text-sm uppercase mb-0.5">実際（本音の可能性）</span>自分のライフスタイルが完成しすぎていて、「結婚しても生活リズムを変える気がない、他人が入る隙間がない」状態。</div>
                   <p className="font-bold text-gray-800 pt-0.5 text-justify leading-relaxed">
@@ -229,8 +217,8 @@ export default function SupportPage() {
 
               {/* CASE 4 */}
               <div className="border border-gray-100 rounded-xl overflow-hidden shadow-xs">
-                <div className="bg-gray-50 px-3 py-2 border-b border-gray-100 font-bold text-base text-gray-500">事例 4：家庭的の裏にある落とし穴</div>
-                <div className="p-4 space-y-3 text-base md:text-lg">
+                <div className="bg-gray-50 px-3 py-2 border-b border-gray-100 font-bold text-[20px] text-gray-500">事例 4：家庭的の裏にある落とし穴</div>
+                <div className="p-4 space-y-3 text-[20px] md:text-[22px]">
                   <div className="bg-[#FAF8F5] p-3 rounded leading-relaxed"><span className="font-black text-gray-400 block text-sm uppercase mb-0.5">紹介文（建前）</span>「料理や掃除がプロ並み！とても几帳面で家庭的な女性です」</div>
                   <div className="bg-rose-50/30 p-3 rounded border border-rose-100/40 leading-relaxed"><span className="font-black text-rose-600 block text-sm uppercase mb-0.5">実際（本音の可能性）</span>家事へのこだわりが強すぎて、「パートナーのやり方に細かくダメ出しをする、マイルールが厳しすぎる」完璧主義者。</div>
                   <p className="font-bold text-gray-800 pt-0.5 text-justify leading-relaxed">
@@ -251,7 +239,7 @@ export default function SupportPage() {
                 <span>Method 2</span>
               </div>
               <h4 className="font-black text-lg md:text-xl text-gray-900 leading-relaxed">【秘匿情報】プロフィール検索には載らない「お相手の隠れた希望条件」確認</h4>
-              <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg text-justify">
+              <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-[20px] md:text-[22px] text-justify">
                 <p>
                   実は、会員様様が「プロフィールには書けないけれど、譲れない隠れた希望条件（例：お相手に望む年齢、子供が欲しいかどうか、将来の実家との距離感、生活や居住地のこだわり）」を持っています。キャリアで築いた他社カウンセラーとの深いパイプから、この「画面には出ない本音の条件」を事前に直接引き出します。
                 </p>
@@ -263,7 +251,7 @@ export default function SupportPage() {
                 <span>Method 3</span>
               </div>
               <h4 className="font-black text-lg md:text-xl text-gray-900 leading-relaxed">【打率の高さ】お見合いのプロがお相手の「隠れた希望」に合致しているか確認して申し込みます</h4>
-              <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg text-justify">
+              <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-[20px] md:text-[22px] text-justify">
                 <p>
                   例えば、20代女性を希望している40代男性に同世代の40代女性が申し込んでもお見合い成立はほぼしません。大阪梅田ドクターズ結婚相談所では、他社とのカウンセラー同士・仲人の連携情報により、お相手の隠れた希望条件に、あなたがマッチしているかを事前確認して申し込み代行します。だからこそ、無駄な申し込みであなたが傷つくことはなく、お見合いの成立確率が劇的に跳ね上がるのです。
                 </p>
@@ -272,7 +260,7 @@ export default function SupportPage() {
           </div>
 
           {/* BRAND ASSURANCE BLOCK */}
-          <div className="bg-[#FAF8F5] rounded-xl p-4 border border-gray-100 text-gray-700 leading-relaxed text-base md:text-lg font-bold text-justify">
+          <div className="bg-[#FAF8F5] rounded-xl p-4 border border-gray-100 text-gray-700 leading-relaxed text-[20px] md:text-[22px] font-bold text-justify">
             当社【大阪梅田ドクターズ結婚相談所】では、女性医師の客観的な分析眼と、キャリア20年のベテランカウンセラーが、サポート。あなたが「どこをポイントにして選べばハズレがないか」を明確にアドバイスいたします。
           </div>
         </div>
@@ -281,7 +269,7 @@ export default function SupportPage() {
       {/* ============================================================
           SECTION 2: INTERNAL HIGH-CONVERSION CLUB INTRODUCTION
           ============================================================ */}
-      <div ref={section2Ref} className="w-full px-2 sm:px-4 mt-8">
+      <div id="solution-02" className="w-full px-2 sm:px-4 mt-8">
         
         {/* SECTION HEADER */}
         <div className="text-center mb-4">
@@ -289,7 +277,7 @@ export default function SupportPage() {
           <h2 className="text-xl sm:text-2xl font-black text-gray-900 tracking-tight leading-relaxed">
             検索画面から選ぶより「身元も人柄も100%わかっている安心な人」を紹介してほしいあなたへ
           </h2>
-          <p className="text-base text-gray-500 mt-1 w-full mx-auto leading-relaxed">
+          <p className="text-[20px] text-gray-500 mt-1 w-full mx-auto leading-relaxed">
             医師の分析眼と20年の実績で繋ぐ【特別な自社会員紹介】システム
           </p>
         </div>
@@ -297,7 +285,7 @@ export default function SupportPage() {
         {/* CORE PLATFORM BENEFITS */}
         <div className="bg-white rounded-2xl p-3 sm:p-4 shadow-[0_4px_20px_rgba(230,162,179,0.04)] border border-white">
           <div className="bg-rose-50 text-[#D9889D] p-3 rounded-xl border border-rose-100/60 mb-5">
-            <p className="text-base md:text-lg font-black text-center flex items-center justify-center gap-1 leading-relaxed">
+            <p className="text-[20px] md:text-[22px] font-black text-center flex items-center justify-center gap-1 leading-relaxed">
               <ShieldCheck className="w-5 h-5 shrink-0" />
               自社だけの解決策：システムだけに頼らず、誰よりもよく知っている「自社の優秀な会員様」同士をマッチング
             </p>
@@ -308,9 +296,9 @@ export default function SupportPage() {
             {/* VALUE CARD 1 */}
             <div className="bg-[#FAF8F5] rounded-xl p-5 border border-gray-100 flex flex-col justify-between">
               <div>
-                <div className="w-6 h-6 rounded bg-white shadow-xs text-[#D9889D] flex items-center justify-center font-black text-base mb-3">01</div>
-                <h3 className="font-black text-base sm:text-lg text-gray-900 mb-2 leading-relaxed">お互いの「人柄・本音」を把握</h3>
-                <div className="text-gray-700 leading-relaxed text-base md:text-lg text-justify">
+                <div className="w-6 h-6 rounded bg-white shadow-xs text-[#D9889D] flex items-center justify-center font-black text-[20px] mb-3">01</div>
+                <h3 className="font-black text-[20px] sm:text-lg text-gray-900 mb-2 leading-relaxed">お互いの「人柄・本音」を把握</h3>
+                <div className="text-gray-700 leading-relaxed text-[20px] md:text-[22px] text-justify">
                   <p>
                     プロフィールに「頼りがいがあってハキハキしゃべる」と書かれていても本当の優しさや聞き上手な面は他社の人には分かりません。当社の自社会員様であれば、日頃の徹底した面談を通して「文字の裏にある本当の結婚観」を完全に把握しているため、ハズレのない紹介が可能です。
                   </p>
@@ -321,9 +309,9 @@ export default function SupportPage() {
             {/* VALUE CARD 2 */}
             <div className="bg-[#FAF8F5] rounded-xl p-5 border border-gray-100 flex flex-col justify-between">
               <div>
-                <div className="w-6 h-6 rounded bg-white shadow-xs text-[#D9889D] flex items-center justify-center font-black text-base mb-3">02</div>
-                <h3 className="font-black text-base sm:text-lg text-gray-900 mb-2 leading-relaxed">【スピード成婚】調整やフィードバックが「秒速」</h3>
-                <div className="text-gray-700 leading-relaxed text-base md:text-lg text-justify">
+                <div className="w-6 h-6 rounded bg-white shadow-xs text-[#D9889D] flex items-center justify-center font-black text-[20px] mb-3">02</div>
+                <h3 className="font-black text-[20px] sm:text-lg text-gray-900 mb-2 leading-relaxed">【スピード成婚】調整やフィードバックが「秒速」</h3>
+                <div className="text-gray-700 leading-relaxed text-[20px] md:text-[22px] text-justify">
                   <p>
                     お見合いの調整や、デート後のフィードバック、お相手が今どう思っているかの本音確認まで、すべて当社の社内で完結します。他社を挟まないため、「お相手も好印象を持っています」「次はこういうデートがおすすめ」といった連携が驚くほどスムーズに進み、タイムラグやすれ違いをゼロにします。
                   </p>
@@ -334,9 +322,9 @@ export default function SupportPage() {
             {/* VALUE CARD 3 */}
             <div className="bg-[#FAF8F5] rounded-xl p-5 border border-gray-100 flex flex-col justify-between">
               <div>
-                <div className="w-6 h-6 rounded bg-white shadow-xs text-[#D9889D] flex items-center justify-center font-black text-base mb-3">03</div>
-                <h3 className="font-black text-base sm:text-lg text-gray-900 mb-2 leading-relaxed">【特別な安心感】厳選された素晴らしい会員ネットワーク</h3>
-                <div className="text-gray-700 leading-relaxed text-base md:text-lg text-justify">
+                <div className="w-6 h-6 rounded bg-white shadow-xs text-[#D9889D] flex items-center justify-center font-black text-[20px] mb-3">03</div>
+                <h3 className="font-black text-[20px] sm:text-lg text-gray-900 mb-2 leading-relaxed">【特別な安心感】厳選された素晴らしい会員ネットワーク</h3>
+                <div className="text-gray-700 leading-relaxed text-[20px] md:text-[22px] text-justify">
                   <p>
                     当相談所には、女性医師のネットワークやベテランの口コミを頼りに、身元が確かで、社会的地位や人柄も素晴らしい会員様が多数在籍しています。この「自社内の優良な特別ネットワーク」を最優先で活用し、対面で相談しながら安全に申し込みを代行できることこそが当社の強みです。
                   </p>
@@ -348,7 +336,7 @@ export default function SupportPage() {
 
           {/* COMPLIANCE FOOTNOTE */}
           <div className="mt-5 pt-4 border-t border-gray-100 text-center">
-            <p className="text-base font-bold text-gray-400 flex items-center justify-center gap-1 leading-relaxed">
+            <p className="text-[20px] font-bold text-gray-400 flex items-center justify-center gap-1 leading-relaxed">
               <ShieldCheck className="w-4 h-4 text-gray-300" />
               ※自社内紹介 fragile に関して個人情報の厳守・プライバシー保護の管理体制は徹底・遵守しています。
             </p>
@@ -365,7 +353,7 @@ export default function SupportPage() {
           
           <Heart className="w-7 h-7 text-[#E6A2B3] mx-auto mb-2 animate-pulse" />
           <h3 className="text-lg sm:text-xl font-black mb-2 leading-relaxed">もう、検索画面のデータ迷路で悩む必要はありません</h3>
-          <div className="max-w-5xl mx-auto text-gray-400 leading-relaxed text-base md:text-lg space-y-5 mb-5 text-justify sm:text-center font-medium">
+          <div className="max-w-5xl mx-auto text-gray-400 leading-relaxed text-[20px] md:text-[22px] space-y-5 mb-5 text-justify sm:text-center font-medium">
             <p>
               20年の経験が誇る他社カウンセラー連携の裏情報リサーチと、確かな身元の自社内限定マッチング。あなたの理想に直撃する、失敗のないスマートな婚活へシフトしましょう。
             </p>
@@ -374,7 +362,7 @@ export default function SupportPage() {
           <div className="flex flex-col sm:flex-row gap-2 justify-center items-center w-full">
             <Link 
               href="/contact"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] text-white text-base font-black px-6 py-3.5 rounded-xl transition-transform hover:scale-[1.02] shadow-lg shadow-[#E6A2B3]/20"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#E6A2B3] to-[#D9889D] text-white text-[20px] font-black px-6 py-3.5 rounded-xl transition-transform hover:scale-[1.02] shadow-lg shadow-[#E6A2B3]/20"
             >
               <span>無料カウンセリングで「特別サポート」の詳細を聞く</span>
               <ArrowRight className="w-4 h-4" />
@@ -386,12 +374,12 @@ export default function SupportPage() {
       {/* ============================================================
           SECTION 3: ROMANCE EXPERIENCE ZERO SUPPORT
           ============================================================ */}
-      <section ref={section3Ref} className="py-8 mt-8 bg-gradient-to-b from-[#FFF8FA] to-white w-full">
+      <section id="romance-03" className="py-8 mt-8 bg-gradient-to-b from-[#FFF8FA] to-white w-full">
         <div className="w-full px-2 sm:px-4">
 
           {/* Header */}
           <div className="text-center mb-4">
-            <span className="inline-flex items-center px-3 py-1 rounded-full bg-[#FCEEF2] text-[#D9889D] text-base font-black">
+            <span className="inline-flex items-center px-3 py-1 rounded-full bg-[#FCEEF2] text-[#D9889D] text-[20px] font-black">
               恋愛経験が少ない方へ
             </span>
 
@@ -401,14 +389,14 @@ export default function SupportPage() {
               大丈夫ですか？
             </h2>
 
-            <p className="mt-2 text-lg text-gray-600 font-medium leading-relaxed">
+            <p className="mt-2 text-[20px] text-gray-600 font-medium leading-relaxed">
               誰にも言えない婚活の不安を解決
             </p>
           </div>
 
           {/* Intro */}
           <div className="bg-white rounded-2xl p-4 shadow-md border border-pink-100 mb-4">
-            <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg space-y-5 text-justify">
+            <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-[20px] md:text-[22px] space-y-5 text-justify">
               <p>「今まで一度も異性と付き合ったことがない…」</p>
               <p>
                 「恋愛経験がゼロの状態で、結婚相談所に入会、お見合いやデートなんてできるの？」
@@ -422,7 +410,7 @@ export default function SupportPage() {
 
           {/* Solution */}
           <div className="bg-[#FFF5F8] border border-pink-200 rounded-2xl p-4 mb-4">
-            <div className="inline-flex items-center bg-[#D9889D] text-white px-3 py-1 rounded-full text-base font-black mb-3">
+            <div className="inline-flex items-center bg-[#D9889D] text-white px-3 py-1 rounded-full text-[20px] font-black mb-3">
               解決
             </div>
 
@@ -430,7 +418,7 @@ export default function SupportPage() {
               恋愛経験ゼロがむしろ <span className="text-[#D9889D]">「最大の強み」</span> に変わる！
             </h3>
 
-            <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg space-y-5 text-justify">
+            <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-[20px] md:text-[22px] space-y-5 text-justify">
               <p>
                 恋愛経験が少ないのはマイナス？いいえ 「謙虚で素直、清楚」という最大の強みになります！
               </p>
@@ -449,7 +437,7 @@ export default function SupportPage() {
               〜会話のお悩み〜
             </h3>
 
-            <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg space-y-5 text-justify">
+            <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-[20px] md:text-[22px] space-y-5 text-justify">
               <p>「お見合いやデートでの会話」</p>
               <p>
                 「何を話せばいいかわからない」「沈黙が怖い」という婚活あるあるの不安をよくききます。
@@ -471,7 +459,7 @@ export default function SupportPage() {
               </p>
 
               <div className="bg-[#FFF5F8] rounded-xl p-4 border border-pink-100 space-y-2">
-                <p className="text-lg font-black text-[#D9889D] leading-relaxed">
+                <p className="text-[22px] font-black text-[#D9889D] leading-relaxed">
                   本当はありのままのあなたで大丈夫です！
                 </p>
                 <p className="text-gray-700">
@@ -487,7 +475,7 @@ export default function SupportPage() {
               🔵「情報」だけではなく「感情」の交換
             </h3>
 
-            <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg space-y-5 text-justify">
+            <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-[20px] md:text-[22px] space-y-5 text-justify">
               <p>
                 会話で大切なのは、何を話したかではなく、 お互いにどんな気持ちになったかです。
               </p>
@@ -524,7 +512,7 @@ export default function SupportPage() {
               🔵2人でつくる空間と時間
             </h3>
 
-            <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg space-y-5 text-justify">
+            <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-[20px] md:text-[22px] space-y-5 text-justify">
               <p>
                 会話は、どちらか一方が、がんばって作るものではありません。
               </p>
@@ -541,7 +529,7 @@ export default function SupportPage() {
                 🌸男女ともに、正直で謙虚な姿勢は素敵です。
               </p>
 
-              <blockquote className="border-l-4 border-[#D9889D] pl-4 italic font-black text-gray-900 text-lg md:text-xl leading-relaxed my-4">
+              <blockquote className="border-l-4 border-[#D9889D] pl-4 italic font-black text-gray-900 text-xl md:text-2xl leading-relaxed my-4">
                 「異性とこんなに楽しくお話ししたの、初めてです！」
               </blockquote>
 
@@ -557,7 +545,7 @@ export default function SupportPage() {
               🔵ありのままのあなたで大丈夫！
             </h3>
 
-            <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-base md:text-lg space-y-5 text-justify">
+            <div className="max-w-5xl mx-auto text-gray-700 leading-relaxed text-[20px] md:text-[22px] space-y-5 text-justify">
               <p>
                 「ありのままで喋る」というのは、 「自分を実物以上に大きく見せようとせず、 等身大の自分のままで、誠実に相手と向き合う」 というスタンスです。
               </p>
@@ -566,7 +554,7 @@ export default function SupportPage() {
               </p>
 
               <div className="bg-pink-50 rounded-xl p-4 border border-pink-100 space-y-4">
-                <h4 className="font-black text-pink-500 leading-relaxed text-lg">
+                <h4 className="font-black text-pink-500 leading-relaxed text-[22px]">
                   🌸「格好悪い自分」を隠さない
                 </h4>
                 <p>
@@ -588,13 +576,13 @@ export default function SupportPage() {
                   </div>
                 </div>
 
-                <blockquote className="border-l-4 border-[#D9889D] pl-4 italic font-semibold text-gray-800 text-base md:text-lg leading-relaxed my-2">
+                <blockquote className="border-l-4 border-[#D9889D] pl-4 italic font-semibold text-gray-800 text-[20px] md:text-[22px] leading-relaxed my-2">
                   どんなに素敵な有名レストランも「お相手のために一生懸命に探したレストラン」にはかなうわけはありません。
                 </blockquote>
               </div>
 
               <div className="bg-pink-50 rounded-xl p-4 border border-pink-100 space-y-4">
-                <h4 className="font-black text-pink-500 leading-relaxed text-lg">
+                <h4 className="font-black text-pink-500 leading-relaxed text-[22px]">
                   🌸「面白い話」をしようと無理しない
                 </h4>
                 <p>
@@ -617,17 +605,6 @@ export default function SupportPage() {
                 </div>
               </div>
 
-              <div className="bg-[#FFF8FA] rounded-xl p-4 border border-pink-100">
-                <p>
-                  「嫌われたらどうしよう」「どう思われてるのかな」と気にしてばかりいると、 ありのままの自分は出せません。
-                </p>
-                <p className="mt-2">
-                  お相手も同じように不安を抱えて婚活をしています。
-                </p>
-                <p className="mt-2">
-                  目の前のお相手は、 あなたを審査するための面接官ではありません。
-                </p>
-              </div>
             </div>
           </div>
 

@@ -1,4 +1,5 @@
-"use client";
+
+import ExpandableSection from "@/components/ExpandableSection";
 
 import React from "react";
 import Image from "next/image";
@@ -15,12 +16,23 @@ import img2 from "@/public/good-future-together.jpg"
 import img3 from "@/public/male-doctors-marriage-activity.jpg"
 import img4 from "@/public/parents1.jpg"
 import img5 from "@/public/woman-receiving-marriage-consulting-support.jpg"
-
+import { Metadata } from "next";
 import Gallery from "@/components/Gallery"
 
 
 import mensMarriage from "@/public/soccerGirl1.jpg";
-import { useState } from "react";
+
+export const metadata: Metadata = {
+  title: '大阪・梅田の結婚相談所｜大阪梅田ドクターズ結婚相談所（北新地駅徒歩1分）',
+  description: '北新地駅徒歩1分・大阪駅前第2ビル2階のIBJ加盟結婚相談所。現役女医の代表カウンセラーとベテラン仲人が2名1組で担当し、20代・30代の1年以内の成婚を目指します。新規入会は毎月5名まで。無料相談は年中無休9時〜21時。',
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: '大阪・梅田の結婚相談所｜大阪梅田ドクターズ結婚相談所',
+    description: '現役女医とベテラン仲人が2名1組で担当。北新地駅徒歩1分、IBJ加盟。新規入会は毎月5名まで。',
+    url: '/',
+    type: 'website',
+  },
+};
 
 const faqJsonLd = {
   "@context": "https://schema.org",
@@ -54,7 +66,7 @@ const faqJsonLd = {
 };
 
 export default function Home() {
-  const [expanded, setExpanded] = useState(false);
+  
 
   return (
     <div className="space-y-6 pb-2 md:pb-12">
@@ -481,35 +493,14 @@ export default function Home() {
     </div>
 
     {/* Text + Expand Controls Container */}
-    <div className="relative">
-      <div
-        className={`overflow-hidden transition-all duration-500 ${
-          expanded ? "max-h-[2000px]" : "max-h-44"
-        }`}
-      >
-        <p> 大阪・梅田エリア（北区・茶屋町・西梅田・東梅田周辺）には、多くのおすすめ結婚相談所や大手結婚情報サービス、人気の婚活サロンが点在しています。 </p> 
-        <p> しかし、「AIマッチングだけの大手結婚相談所」や「サポートが薄い格安のマッチングアプリ」「アドバイザーの主観だけに頼る個人結婚相談所」を比較し、 どこを選べばいいか迷っている方も少なくありません。 </p> 
-        <p> 令和の最新婚活市場を勝ち抜き、20代・30代・40代の方が成婚（婚活のゴール）を迎えるためには、 確かなエビデンスに基づいた婚活戦略が必要です。 </p> 
-        <p> 梅田で口コミ評判の高い優良な結婚相談所を目指す大阪梅田ドクターズ結婚相談所では、 他社には珍しいサポート体制として、 <span className="font-bold text-gray-900"> 「理性の医学」と「感性の仲人」 </span> が交わるダブルサポート体制をご提供します。 </p> 
-        <p> 医学的・心理学的アプローチによって異性の本音をロジカルに分析し、 長年の成婚ノウハウによって現場での実践に落とし込む。 </p> 
-        <p> この2つのプロフェッショナルによる二人三脚の丁寧なマンツーマンサポートこそが、 あなたをタイパよく幸せな結婚へと導く可能性があがる理由です。 </p>
-      </div>
-
-      {/* Fade overlay when collapsed */}
-      {!expanded && (
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none" />
-      )}
-    </div>
+    <ExpandableSection children="大阪・梅田エリア（北区・茶屋町・西梅田・東梅田周辺）には、多くのおすすめ結婚相談所や大手結婚情報サービス、人気の婚活サロンが点在しています。<p> しかし、「AIマッチングだけの大手結婚相談所」や「サポートが薄い格安のマッチングアプリ」「アドバイザーの主観だけに頼る個人結婚相談所」を比較し、 どこを選べばいいか迷っている方も少なくありません。
+        令和の最新婚活市場を勝ち抜き、20代・30代・40代の方が成婚（婚活のゴール）を迎えるためには、 確かなエビデンスに基づいた婚活戦略が必要です。
+         梅田で口コミ評判の高い優良な結婚相談所を目指す大阪梅田ドクターズ結婚相談所では、 他社には珍しいサポート体制として、「理性の医学」と「感性の仲人」 </span> が交わるダブルサポート体制をご提供します。 <p> 医学的・心理学的アプローチによって異性の本音をロジカルに分析し、 長年の成婚ノウハウによって現場での実践に落とし込む。 
+        この2つのプロフェッショナルによる二人三脚の丁寧なマンツーマンサポートこそが、 あなたをタイパよく幸せな結婚へと導く可能性があがる理由です"/>
+    
 
     {/* Button placed immediately after the text block */}
-    <div className="mt-2 text-center md:text-left">
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="relative z-10 inline-flex items-center gap-2 rounded-full border border-rose-200 bg-white px-5 py-2 font-bold text-rose-600 hover:bg-rose-50 transition shadow-sm"
-      >
-        {expanded ? "閉じる ▲" : "続きを読む ▼"}
-      </button>
-    </div>
+
 
     <div className="clear-both" />
   </div>

@@ -1,14 +1,38 @@
-"use client";
+import React from 'react';
+import { ChevronDown, MessageCircle, Phone, Users, Award, ShieldCheck } from 'lucide-react';
+import { Metadata } from 'next';
 
-import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, MessageCircle, Phone, Users, Award, ShieldCheck } from 'lucide-react';
+export const metadata: Metadata = {
+  title: 'お子様の結婚を願う親御様へ｜大阪梅田ドクターズ結婚相談所',
+  description: 'お子様の結婚を心配される親御様からのご相談も承っています。ご本人の意思を尊重しながら、どのようにお話を進めるべきかを一緒に考えます。北新地駅徒歩1分、無料相談は完全予約制。',
+  alternates: { canonical: '/parents' },
+  openGraph: {
+    title: 'お子様の結婚を願う親御様へ',
+    description: 'ご本人の意思を尊重しながら、どのようにお話を進めるべきかを一緒に考えます。',
+    url: '/parents',
+    type: 'website',
+  },
+};
 
 export default function ParentsLandingPage() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const toggleFaq = (index: number) => {
-    setOpenFaq(openFaq === index ? null : index);
-  };
+  const faqs = [
+    {
+      q: "子どもに内緒で、まずは親だけで相談に行ってもよいのでしょうか？",
+      a: "はい、喜んでお承りいたします。実際、多くの親御様が最初はお一人でご相談にお越しになります。大切なお子様の現状や、親御様が思い描く理想の未来について、まずはゆっくりとお聞かせください。完全な秘密厳守を徹底しておりますので、どうぞご安心ください。まずはお電話かLINE無料相談でご連絡ください。"
+    },
+    {
+      q: "子どもが結婚に全く興味を持っておらず、相談所に行くのを嫌がりそうなのですが……。",
+      a: "どうぞご安心ください。プロの技術でご相談いたします。お年頃のお子様に対して、無理に入会を勧めたり急かしたりすることは一切ございません。まずは親御様へ「お子様が話を聞くだけなら聞こうかなと思う方法」をアドバイスいたします。その後、お会いできた際には、本人のこれからの人生の幸せに寄り添いながら、自然と結婚へ向けて前向きになれるよう、丁寧にお導きいたします。"
+    },
+    {
+      q: "どのような方が会員として登録されているのでしょうか？",
+      a: "身元が確かで、社会的地位や品性を兼ね備えた素晴らしい方々ばかりです。男性会員様は、医師や弁護士などの専門職、大手企業や外資系企業勤務、国家公務員、また経営者など、社会の第一線で活躍し、経済的にも安定された方々が数多く在籍されております。単に条件が良いだけでなく、私どもの相談所が大切にしている「立ち居振る舞いの美しさや教養」を兼ね備えた、誠実で育ちの良い方々を厳選しております。"
+    },
+    {
+      q: "娘は何歳くらいから結婚相談所への入会（婚活）を検討すれば良いのでしょうか？",
+      a: "一般社会のデータが示す通り、「20代半ば（24歳〜26歳）」からのスタートが理想的でございます。世間では「平均初婚年齢は約30歳」と言われるため、お嬢様ご自身も「30歳までに考えればいい」と安心されているかもしれません。しかし、厚生労働省の人口動態調査によると、日本で婚姻届が多く出されている年齢は女性26歳・男性27歳であり、結婚のボリュームゾーンは実は20代後半でございます。多くの女性が30歳を迎えてから一斉に婚活を始めますが、その時点ではすでに、身元が確かで上品なハイクラス男性の多くはご結婚されています。20代半ばに始めるからこそ、優位性を保ちながら妥協のないお相手選びを進めることができます。"
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-amber-50/30 text-slate-900 font-sans antialiased selection:bg-amber-200">
@@ -221,21 +245,21 @@ export default function ParentsLandingPage() {
             完全秘密厳守。大切なお子様の未来の選択肢を、私たちと一緒に広げてみませんか。
           </p>
           <div className="pt-4 flex flex-col sm:flex-row justify-center gap-4 w-full max-w-2xl mx-auto">
-            <a               
+            <a              
               href="https://lin.ee/WvDSj6U" 
               target="_blank"
               rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold px-8 py-5 rounded-xl shadow-xl transition duration-200 tracking-wider text-xl w-full sm:w-auto">
               <MessageCircle className="w-7 h-7" />
               LINEで無料相談する
             </a>
-     <a 
-  href="tel:09066463456" 
-  className="inline-flex items-center justify-center gap-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-8 py-5 rounded-xl shadow-xl transition duration-200 tracking-wider text-xl w-full sm:w-auto"
->
-  <Phone className="w-7 h-7" />
-  お電話で問い合わせる
-  09066463456
-</a>
+            <a 
+              href="tel:09066463456" 
+              className="inline-flex items-center justify-center gap-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-8 py-5 rounded-xl shadow-xl transition duration-200 tracking-wider text-xl w-full sm:w-auto"
+            >
+              <Phone className="w-7 h-7" />
+              お電話で問い合わせる
+              09066463456
+            </a>
           </div>
         </div>
       </section>
@@ -246,39 +270,17 @@ export default function ParentsLandingPage() {
           親御様からのよくあるご質問
         </h2>
         <div className="space-y-4 w-full">
-          {[
-            {
-              q: "子どもに内緒で、まずは親だけで相談に行ってもよいのでしょうか？",
-              a: "はい、喜んでお承りいたします。実際、多くの親御様が最初はお一人でご相談にお越しになります。大切なお子様の現状や、親御様が思い描く理想の未来について、まずはゆっくりとお聞かせください。完全な秘密厳守を徹底しておりますので、どうぞご安心ください。まずはお電話かLINE無料相談でご連絡ください。"
-            },
-            {
-              q: "子どもが結婚に全く興味を持っておらず、相談所に行くのを嫌がりそうなのですが……。",
-              a: "どうぞご安心ください。プロの技術でご相談いたします。お年頃のお子様に対して、無理に入会を勧めたり急かしたりすることは一切ございません。まずは親御様へ「お子様が話を聞くだけなら聞こうかなと思う方法」をアドバイスいたします。その後、お会いできた際には、本人のこれからの人生の幸せに寄り添いながら、自然と結婚へ向けて前向きになれるよう、丁寧にお導きいたします。"
-            },
-            {
-              q: "どのような方が会員として登録されているのでしょうか？",
-              a: "身元が確かで、社会的地位や品性を兼ね備えた素晴らしい方々ばかりです。男性会員様は、医師や弁護士などの専門職、大手企業や外資系企業勤務、国家公務員、また経営者など、社会の第一線で活躍し、経済的にも安定された方々が数多く在籍されております。単に条件が良いだけでなく、私どもの相談所が大切にしている「立ち居振る舞いの美しさや教養」を兼ね備えた、誠実で育ちの良い方々を厳選しております。"
-            },
-            {
-              q: "娘は何歳くらいから結婚相談所への入会（婚活）を検討すれば良いのでしょうか？",
-              a: "一般社会のデータが示す通り、「20代半ば（24歳〜26歳）」からのスタートが理想的でございます。世間では「平均初婚年齢は約30歳」と言われるため、お嬢様ご自身も「30歳までに考えればいい」と安心されているかもしれません。しかし、厚生労働省の人口動態調査によると、日本で婚姻届が多く出されている年齢は女性26歳・男性27歳であり、結婚のボリュームゾーンは実は20代後半でございます。多くの女性が30歳を迎えてから一斉に婚活を始めますが、その時点ではすでに、身元が確かで上品なハイクラス男性の多くはご結婚されています。20代半ばに始めるからこそ、優位性を保ちながら妥協のないお相手選びを進めることができます。"
-            }
-          ].map((faq, idx) => (
-            <div key={idx} className="bg-white border border-slate-300 rounded-xl overflow-hidden shadow-sm w-full">
-              <button
-                onClick={() => toggleFaq(idx)}
-                className="w-full text-left p-6 font-bold text-slate-950 flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition min-h-[72px]"
-              >
+          {faqs.map((faq, idx) => (
+            <details key={idx} className="group bg-white border border-slate-300 rounded-xl overflow-hidden shadow-sm w-full">
+              <summary className="w-full text-left p-6 font-bold text-slate-950 flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition min-h-[72px] cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                 <span className="pr-4 text-lg md:text-xl leading-snug tracking-wide">Q. {faq.q}</span>
-                {openFaq === idx ? <ChevronUp className="w-7 h-7 text-slate-700 shrink-0" /> : <ChevronDown className="w-7 h-7 text-slate-700 shrink-0" />}
-              </button>
-              {openFaq === idx && (
-                <div className="p-6 text-slate-900 text-lg md:text-xl leading-loose tracking-wide border-t border-slate-200 bg-white w-full">
-                  <p className="font-bold text-indigo-950 mb-2 text-xl">A.</p>
-                  {faq.a}
-                </div>
-              )}
-            </div>
+                <ChevronDown className="w-7 h-7 text-slate-700 shrink-0 transition-transform duration-200 group-open:rotate-180" />
+              </summary>
+              <div className="p-6 text-slate-900 text-lg md:text-xl leading-loose tracking-wide border-t border-slate-200 bg-white w-full">
+                <p className="font-bold text-indigo-950 mb-2 text-xl">A.</p>
+                {faq.a}
+              </div>
+            </details>
           ))}
         </div>
       </section>
