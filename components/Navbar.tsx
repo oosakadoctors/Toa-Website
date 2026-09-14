@@ -144,8 +144,7 @@ export default function PremiumNavbar() {
       title: "データに基づく結婚相談所での婚活",
       icon: UserRound,
       links: [
-        { name: "結婚相談所は何歳から?20代・30代女性の入会タイミングは「今」", href: "/data-driven" },
-        { name: "結婚相談所は何歳から?20代・30代女性の入会タイミングは「今」", href: "/best-timing" },
+        { name: "結婚相談所は最後の砦？", href: "/data-driven" },
 
       ],
     },
