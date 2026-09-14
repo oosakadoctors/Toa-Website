@@ -1,11 +1,12 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "結婚相談所は、理想の結婚生活をつかむ場所｜「最後の砦」イメージはもう古い",
+    "結婚相談所は何歳から?20代・30代女性の入会タイミングは「今」",
   description:
-    "結婚相談所は最後の砦というイメージは本当?未婚率上昇の背景、マッチングアプリとの違い、エリート職業層の成婚データとあわせ、関西6県の男性会員7,015人の年代分布を独自調査。現役女性医師が解説します。",
+    "結婚相談所は何歳から入ればいい?大阪・梅田で20代・30代女性のスピード成婚を目指す方へ。「まだ早い」「まだ大丈夫」「もう遅い」——共通するのはただ時間が過ぎていくこと。厚労省・IBJの成婚データをもとに現役女性医師が解説します。",
 
   keywords: [
     "結婚相談所 最後の砦",
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     title:
       "結婚相談所は、理想の結婚生活をつかむ場所｜「最後の砦」イメージはもう古い｜大阪梅田ドクターズ結婚相談所",
     description:
-      "結婚相談所は最後の砦というイメージは本当?未婚率上昇の背景、マッチングアプリとの違い、エリート職業層の成婚データとあわせ、関西6県の男性会員7,015人の年代分布を独自調査。現役女性医師が解説します。",
+      "結婚相談所は何歳から入ればいい?大阪・梅田で20代・30代女性のスピード成婚を目指す方へ。「まだ早い」「まだ大丈夫」「もう遅い」——共通するのはただ時間が過ぎていくこと。厚労省・IBJの成婚データをもとに現役女性医師が解説します。",
     type: "article",
     locale: "ja_JP",
     siteName: "大阪梅田ドクターズ結婚相談所",
@@ -319,7 +320,7 @@ export default function KansaiMemberDataPage() {
       {/* CONTENT CONTAINER */}
       <div className="relative z-10 mx-auto max-w-4xl space-y-12">
         {/* HERO SECTION */}
-        <section className="bg-gradient-to-br from-slate-900/90 via-sky-950/90 to-blue-900/90 text-white rounded-3xl p-8 sm:p-12 shadow-2xl space-y-8 border border-sky-700/50 backdrop-blur-md overflow-hidden">
+        <section className="bg-gradient-to-br from-slate-900/90 via-sky-950/90 to-blue-900/90 text-white rounded-3xl p-4 sm:p-12 shadow-2xl space-y-8 border border-sky-700/50 backdrop-blur-md overflow-hidden">
           <div className="inline-block bg-sky-500/20 text-sky-200 border border-sky-400/30 px-4 py-1.5 rounded-full text-lg font-bold tracking-wider text-[15px]">
             大阪梅田ドクターズ結婚相談所
           </div>
@@ -351,12 +352,12 @@ export default function KansaiMemberDataPage() {
             {/* BLACK TEXT */}
             <p className="text-gray-800 text-[20px] leading-relaxed">
               「結婚相談所は最後の砦」「もう若くない人が仕方なく登録する場所」——そんなイメージを持っている方は少なくありません。しかし実際のデータを見ると、このイメージはもう実情とは違います。IBJ結婚みらい研究所の分析でも、過去5年間で女性の結婚相談所入会者は約1.9倍、男性は約3.4倍に増加しており、「結婚相談所は最後の砦」というイメージは、今の世代にとってはもう昔のものになりつつあると報告されています。大阪梅田ドクターズ結婚相談所が2026年9月9日にIBJ(日本結婚相談所連盟)のシステムで独自に調べたところ(活動中の会員が対象、初婚・再婚を含む)、関西6県で活動中の男性会員は合計7,015人。年代の偏りも少なく、20代から60代まで幅広く、そして30代前半・後半でもほとんど変わらない規模で活動していることが分かりました。結婚相談所は、追い詰めて仕方なく選ぶ場所ではなく、自分が思い描く理想の結婚生活を、主体的につかみにいくための場所です。この記事では、その実態を数字とともにお伝えします。動くべきタイミングそのものについては、
-              <a
-                href="https://大阪梅田ドクターズ結婚相談所.jp/best-timing-to-start"
+              <Link
+                href="dual-support"
                 className="text-sky-700 underline font-semibold hover:text-sky-900"
               >
                 結婚相談所、入会タイミングのベストは「今」
-              </a>
+              </Link>
               の記事で詳しく解説していますので、あわせてご覧ください。
             </p>
 
@@ -365,12 +366,12 @@ export default function KansaiMemberDataPage() {
         </section>
 
         {/* SUMMARY CALLOUT BOX */}
-        <section className="bg-rose-50/90 rounded-3xl border-2 border-rose-300 p-8 sm:p-10 shadow-lg space-y-6 backdrop-blur-sm">
+        <section className="bg-rose-50/90 rounded-3xl border-2 border-rose-300 p-2 sm:p-10 shadow-lg space-y-6 backdrop-blur-sm">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-rose-950 tracking-tight leading-tight flex items-center gap-3">
             この記事の要点(1分でわかるまとめ)
           </h2>
           <div className="space-y-4 text-gray-800 text-[20px]">
-            <ul className="list-disc list-inside space-y-3 bg-white/90 p-6 rounded-2xl border border-rose-200 shadow-sm">
+            <ul className="list-disc list-inside space-y-3 bg-white/90 p-4 rounded-2xl border border-rose-200 shadow-sm">
               <li>
                 「結婚相談所は最後の砦」というイメージは、実際のデータを見ると実情と異なる
               </li>
@@ -410,7 +411,7 @@ export default function KansaiMemberDataPage() {
 
         {/* SECTION ARTICLES */}
         <section className="space-y-8">
-          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-8 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
+          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-4 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
             <h2 className="text-3xl sm:text-3xl lg:text-4xl font-black text-sky-950 leading-snug">
               全国的にも、結婚相談所のイメージは変わりつつあります
             </h2>
@@ -425,7 +426,7 @@ export default function KansaiMemberDataPage() {
             </p>
           </div>
 
-          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-8 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
+          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-4 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
             <h2 className="text-3xl sm:text-3xl lg:text-4xl font-black text-sky-950 leading-snug">
               なぜ、結婚相談所を選ぶ人が増えているのか
             </h2>
@@ -443,7 +444,7 @@ export default function KansaiMemberDataPage() {
             </p>
           </div>
 
-          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-8 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
+          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-4 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
             <h2 className="text-3xl sm:text-3xl lg:text-4xl font-black text-sky-950 leading-snug">
               会員は「川の流れ」のように入れ替わりながら、規模をキープしている
             </h2>
@@ -461,7 +462,7 @@ export default function KansaiMemberDataPage() {
             </p>
           </div>
 
-          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-8 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
+          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-4 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
             <h2 className="text-3xl sm:text-3xl lg:text-4xl font-black text-sky-950 leading-snug">
               年代別に見る、関西の会員分布
             </h2>
@@ -479,7 +480,7 @@ export default function KansaiMemberDataPage() {
             </p>
           </div>
 
-          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-8 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
+          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-4  sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
             <h2 className="text-3xl sm:text-3xl lg:text-4xl font-black text-sky-950 leading-snug">
               30代前半と後半が、ほぼ同じボリュームであることの意味
             </h2>
@@ -494,7 +495,7 @@ export default function KansaiMemberDataPage() {
             </p>
           </div>
 
-          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-8 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
+          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-4 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
             <h2 className="text-3xl sm:text-3xl lg:text-4xl font-black text-sky-950 leading-snug">
               40代・50代からでも、出会いの母数は十分にあります
             </h2>
@@ -509,7 +510,7 @@ export default function KansaiMemberDataPage() {
             </p>
           </div>
 
-          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-8 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
+          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-4 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
             <h2 className="text-3xl sm:text-3xl lg:text-4xl font-black text-sky-950 leading-snug">
               マッチングアプリとの違いは、「数」ではなく「質」の保証にあります
             </h2>
@@ -524,7 +525,7 @@ export default function KansaiMemberDataPage() {
             </p>
           </div>
 
-          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-8 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
+          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-4 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
             <h2 className="text-3xl sm:text-3xl lg:text-4xl font-black text-sky-950 leading-snug">
               エリート・ハイステータス層も、結婚相談所を積極的に活用しています
             </h2>
@@ -539,7 +540,7 @@ export default function KansaiMemberDataPage() {
             </p>
           </div>
 
-          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-8 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
+          <div className="bg-white/95 rounded-3xl border-2 border-sky-300 p-4 sm:p-10 shadow-lg space-y-4 backdrop-blur-sm">
             <h2 className="text-3xl sm:text-3xl lg:text-4xl font-black text-sky-950 leading-snug">
               大阪梅田ドクターズ結婚相談所が、この市場データを活かす理由
             </h2>
@@ -548,33 +549,33 @@ export default function KansaiMemberDataPage() {
             </p>
             <p className="text-[20px] text-gray-800 leading-relaxed">
               7,015人という数字は、単なる統計ではありません。その一人ひとりが、あなたと同じように、真剣に結婚相手を探している方々です。大阪梅田ドクターズ結婚相談所は、IBJ(日本結婚相談所連盟)正式加盟店として、この豊富な会員ネットワークを活かしたご紹介を行っています。「最後の砦」ではなく、「今、動き出せば出会える市場」がすでにここにある——そのことを、実際のご紹介を通してお伝えしていきたいと考えています。「今、動き出すべきかどうか」で迷っている方は、
-              <a
-                href="https://大阪梅田ドクターズ結婚相談所.jp/best-timing-to-start"
+              <Link
+                href="/consultation"
                 className="text-sky-700 underline font-semibold hover:text-sky-900"
               >
                 結婚相談所、入会タイミングのベストは「今」
-              </a>
+              </Link>
               の記事もあわせてご覧ください。年収の観点から自分の市場価値を詳しく知りたい方は、
-              <a
-                href="https://大阪梅田ドクターズ結婚相談所.jp/income-relative-value"
+              <Link
+                href="/dungeon-map"
                 className="text-sky-700 underline font-semibold hover:text-sky-900"
               >
                 年収800万円の価値は、年代で違う
-              </a>
+              </Link>
               の記事もご参照ください。どんな結婚相談所を選べばよいか迷う方は、
-              <a
-                href="https://大阪梅田ドクターズ結婚相談所.jp/how-to-choose"
+              <Link
+                href="/how-to-choose"
                 className="text-sky-700 underline font-semibold hover:text-sky-900"
               >
                 結婚相談所の選び方
-              </a>
+              </Link>
               もご覧ください。
             </p>
           </div>
         </section>
 
         {/* FAQ SECTION */}
-        <section className="bg-amber-50/90 rounded-3xl border-2 p-6 sm:p-10 border-amber-200 shadow-lg space-y-6 backdrop-blur-sm">
+        <section className="bg-amber-50/90 rounded-3xl border-2 p-2 sm:p-10 border-amber-200 shadow-lg space-y-6 backdrop-blur-sm">
           <div className="space-y-3 border-b-2 border-amber-200 pb-4">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-amber-950 leading-tight">
               よくあるご質問
@@ -582,7 +583,7 @@ export default function KansaiMemberDataPage() {
           </div>
 
           <div className="space-y-6">
-            <div className="bg-white/90 rounded-2xl p-6 shadow-sm space-y-2">
+            <div className="bg-white/90 rounded-2xl p-2 shadow-sm space-y-2">
               <h3 className="font-black text-amber-950 text-xl sm:text-2xl">
                 Q. 結婚相談所 男性会員数 大阪・関西はどのくらい?
               </h3>
@@ -708,12 +709,12 @@ export default function KansaiMemberDataPage() {
 
           <p className="leading-relaxed text-white text-[20px]">
             大阪・梅田で結婚相談所をお探しの方は、まずは
-            <a
-              href="https://大阪梅田ドクターズ結婚相談所.jp/contact"
+            <Link
+              href="/contact"
               className="text-amber-300 underline font-bold hover:text-amber-200"
             >
               無料相談
-            </a>
+            </Link>
             から、私どもにご相談ください。
           </p>
         </section>
