@@ -8,6 +8,30 @@ import type { Metadata } from 'next';
 
 // Comprehensive LocalBusiness JSON-LD Structured Data Schema
 const localBusinessJsonLd = {
+"image": [
+    {
+      "@type": "ImageObject",
+      "url": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/logo2.png",
+      "caption": "大阪梅田ドクターズ結婚相談所 ロゴ",
+      "width": "800",
+      "height": "800" // 1:1 Aspect Ratio
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/female-doctor.jpg",
+      "caption": "現役女医カウンセラー",
+      "width": "1200",
+      "height": "900" // 4:3 Aspect Ratio
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/meeting-room.jpg",
+      "caption": "面談室カウンセリングルーム",
+      "width": "1600",
+      "height": "900" // 16:9 Aspect Ratio
+    }
+  ],
+
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization",
@@ -15,7 +39,6 @@ const localBusinessJsonLd = {
   "description": "現役女医と仲人歴20年のベテランカウンセラーによるダブルサポート体制の結婚相談所。毎月5名限定の完全少人数制で、20代・30代の1年以内の成婚を目指します。",
   "url": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/",
   "telephone": "+81-90-6646-3456",
-  "image": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/logo2.png",
   "logo": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/logo2.png",
   "address": {
     "@type": "PostalAddress",
@@ -49,7 +72,7 @@ const localBusinessJsonLd = {
           "https://lin.ee/WvDSj6U",
           "https://www.instagram.com/oosaka.doctors/",
           "https://maps.app.goo.gl/wZYzjYYN3qynqeYY9"
-        ]
+        ],
 };
 
 export const metadata: Metadata = {

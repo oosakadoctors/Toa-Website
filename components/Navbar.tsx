@@ -361,7 +361,8 @@ export default function PremiumNavbar() {
               className="flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-full text-xs font-black transition-colors"
             >
               <Calendar className="w-4 h-4 text-blue-300" />
-              無料面談を予約する
+                 9時から21時 <br/>
+                定休日無し = 無休
             </Link>
           </div>
         </div>

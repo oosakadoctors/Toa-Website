@@ -1,376 +1,554 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { 
   Users, 
   UserCheck, 
   Stethoscope, 
-  Brain, 
   Sparkles, 
   HeartHandshake, 
-  Clock, 
-  Compass, 
-  Smile, 
-  Award 
+  HelpCircle, 
+  CheckCircle2, 
+  MessageSquare, 
+  FileText,
+  Building2,
+  CalendarCheck
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "大阪梅田ドクターズ結婚相談所の会員と婚活環境について｜日本最大級の会員数と少人数制",
+  title: "大阪梅田ドクターズ結婚相談所の会員と婚活環境について｜全国11万人のネットワークと2名体制",
   description:
-    "日本最大級の会員数から選べる安心と、少人数制ならではのきめ細やかなサポート。現役女性医師とベテランカウンセラーの2名体制で、科学的根拠（エビデンス）重視の婚活環境を提供します。",
+    "大阪・梅田の結婚相談所。日本結婚相談所連盟（IBJ）加盟で全国11万人規模のネットワークからお相手を探せます。医師・士業・研究職など専門職の会員が多く、現役女医の代表カウンセラーとベテラン仲人の2名が担当。新規入会は毎月5名まで。",
+  authors: [{ name: "加藤（代表カウンセラー／内科認定医）" }],
+  publisher: "大阪梅田ドクターズ結婚相談所",
   alternates: {
-    canonical: "/elite-circle",
+    canonical: "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/elite-circle",
   },
-    openGraph: {
-    title: "大阪梅田ドクターズ結婚相談所の会員と婚活環境について｜日本最大級の会員数と少人数制",
-    description: "日本最大級の会員数から選べる安心と、少人数制ならではのきめ細やかなサポート。現役女性医師とベテランカウンセラーの2名体制で、科学的根拠（エビデンス）重視の婚活環境を提供します。",
-    url: "/elite-circle",
+  openGraph: {
+    title: "大阪梅田ドクターズ結婚相談所の会員と婚活環境について",
+    description:
+      "全国11万人のIBJネットワークと、現役女医＋ベテラン仲人の2名体制。北新地駅徒歩1分の結婚相談所です。",
+    url: "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/elite-circle",
     siteName: "大阪梅田ドクターズ結婚相談所",
     type: "website",
     locale: "ja_JP",
   },
+  verification: {
+    google: "YOUR_ACTUAL_GOOGLE_SEARCH_CONSOLE_CODE",
+  },
+};
+
+const faqList = [
+  {
+    q: "大阪梅田ドクターズ結婚相談所はどこにありますか？",
+    a: "大阪市北区梅田1丁目の大阪駅前第2ビル2階です。JR東西線「北新地駅」から徒歩1分、JR「大阪駅」から徒歩約8分。地下街を通れば雨の日も濡れずにお越しいただけます。",
+  },
+  {
+    q: "何名くらいの会員から相手を探せますか？",
+    a: "IBJの発表によれば、2026年7月時点で110,482名です。全国規模のデータベースをスマートフォンからご利用いただけます。",
+  },
+  {
+    q: "どんな職業の方が活動していますか？",
+    a: "医師・薬剤師・看護師などの医療職、弁護士・公認会計士などの士業、公務員、大学の研究職、経営者、大手企業にお勤めの方が中心です。20代後半から40代の男女が多く活動しています。",
+  },
+  {
+    q: "医療関係者でなくても入会できますか？",
+    a: "できます。ご職業は問いません。代表が医師であるだけで、会員様のご職業は幅広くいらっしゃいます。",
+  },
+  {
+    q: "担当カウンセラーは何名つきますか？",
+    a: "2名です。現役女医の代表カウンセラーとベテラン男性仲人が、1組となって担当します。",
+  },
+  {
+    q: "すぐに入会できますか？",
+    a: "新規のご入会は毎月先着5名様までです。その月の枠が埋まっている場合は、翌月のご案内となります。まずは無料相談にお越しください。",
+  },
+  {
+    q: "入会に必要な書類は何ですか？",
+    a: "独身証明書、住民票、収入証明書（男性は必須）、学歴証明書などです。有資格者の方は資格証明書もご提出いただきます。",
+  },
+  {
+    q: "大阪以外に住んでいても利用できますか？",
+    a: "利用できます。豊中・西宮・神戸・京都・奈良など関西全域の方にご活用いただいています。LINE・Zoomでのオンライン相談も可能です。",
+  },
+  {
+    q: "恋愛経験がなくても大丈夫ですか？",
+    a: "大丈夫です。「これまで異性と付き合ったことがない」というご相談は珍しくありません。プロフィール作成からお見合いの会話まで、2名で伴走します。",
+  },
+  {
+    q: "他の結婚相談所から移ることはできますか？",
+    a: "できます。これまでの活動データを客観的に見直すところから始めます。",
+  },
+  {
+    q: "職場や友人に知られませんか？",
+    a: "知られることはありません。会員情報は厳重に管理しており、外部に開示することはありません。",
+  },
+  {
+    q: "相談だけでも可能ですか？",
+    a: "可能です。無料相談は完全予約制で、受付は年中無休9時から21時。入会を決めていなくても構いません。",
+  },
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "大阪梅田ドクターズ結婚相談所の会員と婚活環境について",
+  description:
+    "全国11万人規模のIBJネットワークと、現役女医とベテラン仲人による2名体制。大阪・梅田の結婚相談所の会員層と婚活環境について解説します。",
+  author: {
+    "@type": "Person",
+    name: "加藤",
+    jobTitle: "代表カウンセラー／内科認定医",
+  },
+  publisher: {
+    "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization",
+  },
+  datePublished: "2026-09-11",
+  dateModified: "2026-09-11",
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/elite-circle",
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqList.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
 };
 
 export default function EnvironmentPage() {
   return (
-    <main className="bg-[#faf8f5] min-h-screen text-[18px] leading-relaxed text-gray-800 py-10 px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-4xl space-y-8">
-
-        {/* Header Ribbon / Banner */}
-        <div className="bg-gradient-to-r from-rose-500 to-pink-500 p-2.5 text-center text-white font-bold rounded-t-2xl shadow-sm text-lg sm:text-xl">
-          <span className="inline-flex items-center gap-1.5">
-            <Sparkles className="w-5 h-5 shrink-0" />
-            日本最大級の会員数と少人数制
-          </span>
-        </div>
-
-        {/* Hero / Header Section */}
-        <section className="rounded-b-2xl bg-white border border-rose-200 p-6 sm:p-10 shadow-sm space-y-4 -mt-8 pt-8">
-
-          <h1 
-            className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-snug tracking-tight"
-            style={{ wordBreak: 'break-all' }}
-          >
-            大阪梅田ドクターズ結婚相談所の会員と婚活環境について
-          </h1>
-
-          <p 
-            className="text-xl sm:text-2xl font-bold text-rose-500 pt-1"
-            style={{ wordBreak: 'break-all' }}
-          >
-            日本最大級の会員数から選べる安心と、少人数制ならではのきめ細やかなサポート
-          </p>
-
-          <p 
-            className="text-[18px] text-gray-700 leading-relaxed pt-3 border-t border-rose-200"
-            style={{ wordBreak: 'break-all' }}
-          >
-            大阪梅田ドクターズ結婚相談所は、会員様お一人おひとりの人生と徹底的に向き合い、ベストのサポートを目指します。
-          </p>
-        </section>
-
-        {/* 3つの柱 (Feature Cards Grid) */}
-        <section className="grid gap-4 sm:grid-cols-3">
-          
-          {/* Feature 1 */}
-          <div className="rounded-2xl bg-white border border-rose-200 p-5 shadow-sm space-y-2">
-            <div className="flex items-center gap-2 text-rose-500 font-bold">
-              <span className="p-2 rounded-lg bg-rose-400 text-white">
-                <UserCheck className="w-5 h-5 shrink-0" />
-              </span>
-              <span className="text-lg">毎月5名様限定</span>
-            </div>
-            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
-              毎月5名様限定の「完全少人数制」サポート品質を一定水準に保つため、新規入会は月5名様まで。少人数制だからこそ、あなたの様々なご要望にきめ細やかに対応できます。
-            </p>
-          </div>
-
-          {/* Feature 2 */}
-          <div className="rounded-2xl bg-white border border-rose-200 p-5 shadow-sm space-y-2">
-            <div className="flex items-center gap-2 text-rose-500 font-bold">
-              <span className="p-2 rounded-lg bg-rose-400 text-white">
-                <Stethoscope className="w-5 h-5 shrink-0" />
-              </span>
-              <span className="text-lg">専任2名体制</span>
-            </div>
-            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
-              医師 ＆ ベテランが2名体制でつく「専任サポート」あなた1人に対して、現役女性医師とベテランカウンセラーの2名が同時に専任でつきます。医師の論理性と、婚活のプロの経験で、あなただけの特別な婚活戦略を一緒に考えます。
-            </p>
-          </div>
-
-          {/* Feature 3 */}
-          <div className="rounded-2xl bg-white border border-rose-200 p-5 shadow-sm space-y-2">
-            <div className="flex items-center gap-2 text-rose-500 font-bold">
-              <span className="p-2 rounded-lg bg-rose-400 text-white">
-                <Users className="w-5 h-5 shrink-0" />
-              </span>
-              <span className="text-lg">数万人規模のネットワーク（IBJの正規加盟店によるネットワーク）</span>
-            </div>
-            <p className="text-[18px] text-gray-700 leading-relaxed" style={{ wordBreak: 'break-all' }}>
-              大阪梅田ドクターズ結婚相談所はIBJ正規加盟店です　大規模の提携ネットワーク ＆ 厳選された自社会員。
-              日本最大級の連盟（IBJ）に加盟しており、全国の豊富な提携会員様からスマホでいつでもお相手を検索可能。※IBJの2026年6月公式発表
-            </p>
-          </div>
-
-        </section>
-
-        {/* Closing Banner Card */}
-        <div className="bg-gradient-to-r from-rose-500 to-pink-500 p-4 sm:p-5 text-center text-white rounded-2xl shadow-sm">
-          <p className="text-lg sm:text-xl font-bold" style={{ wordBreak: 'break-all' }}>
-            心から幸せだと思える理想に近い結婚へと、私たちと一緒に歩んでまいりましょう。
-          </p>
-        </div>
-<section id="link" className="w-full">
-  <div className="w-full max-w-4xl mx-auto my-1">
-    <div className="relative w-full aspect-[1/1] overflow-hidden rounded-2xl border-4 border-white ring-2 ring-white/80 shadow-2xl">
-      <Image
-        src="/infographic-explaining-the-number-of-members-at-the-Osaka-Umeda-Doctors’-Marriage-Agency.jpg"
-        alt="大阪梅田ドクターズ結婚相談所の会員数や特徴をわかりやく解説した図"
-        fill
-        sizes="(max-width: 768px) 100vw, 800px"
-        priority={false}
-        className="object-cover"
-        placeholder="blur"
-        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-    </div>
-    <p className="mt-2 text-right text-xs text-gray-500 pointer-events-none select-none">
-      ※写真はイメージです <br/>
-      ※IBJの検索システムを利用しています。
-    </p>
-  </div>
-</section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
-        {/* Section 1: エビデンス重視の婚活設計 */}
-        <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
-          <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
-            <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
-              <Brain className="w-7 h-7" />
-            </div>
-            <h2 
-              className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
+      <main className="bg-[#faf8f5] min-h-screen text-[18px] leading-relaxed text-gray-800 py-10 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl space-y-8">
+          
+          <div className="text-right text-xs text-gray-500">
+            作成日 2026年9月11日
+          </div>
+
+          {/* Header Ribbon / Banner */}
+          <div className="bg-gradient-to-r from-rose-500 to-pink-500 p-2.5 text-center text-white font-bold rounded-t-2xl shadow-sm text-lg sm:text-xl">
+            <span className="inline-flex items-center gap-1.5">
+              <Sparkles className="w-5 h-5 shrink-0" />
+              全国11万人のネットワークと2名体制
+            </span>
+          </div>
+
+          {/* Hero / Header Section */}
+          <section className="rounded-b-2xl bg-white border border-rose-200 p-6 sm:p-10 shadow-sm space-y-4 -mt-8 pt-8">
+            <h1 
+              className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 leading-snug tracking-tight"
               style={{ wordBreak: 'break-all' }}
             >
-              現役女性医師の医学的知見と心理的アプローチに基づく、エビデンス重視の婚活設計
-            </h2>
-          </div>
+              大阪梅田ドクターズ結婚相談所の会員と婚活環境について
+            </h1>
 
-          <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
-            <p style={{ wordBreak: 'break-all' }}>
-              結婚相談所選びで重要視されるべきは、「カウンセリングの質と、運営者の確かな専門性」です。当相談所では、日々多様な患者様の健康状態やお気持ち、人生の価値観に向き合ってきた現役女性医師の「深い傾聴力・人間性を見抜く客観的な分析力」と、数多くのご成婚実績を持つベテランカウンセラーの「実践的な成婚メソッド」を融合させた、独自のカウンセリング体制を構築しています。
-            </p>
-            <p style={{ wordBreak: 'break-all' }}>
-              仕事と家庭の両立におけるメンタルケアをはじめ、当直や不規則なシフト勤務といった専門職ならではのタイトなスケジュール調整、また多忙な中でのモチベーション維持など、ライフスタイルに合わせたオーダーメイドの活動計画をご提案します。日本最大級のネットワークを活かした全国数万人規模の身元保証会員データから、AIマッチングだけに依存しない、高精度なパートナーシップ分析を行います。
-            </p>
-            <p style={{ wordBreak: 'break-all' }}>
-              大阪・梅田エリアを中心に、医師、弁護士、公認会計士、税理士、大学教授などの専門職・キャリア層や、知的な出会いを求めるハイクラスな会員様から支持をいただいております。
-            </p>
-            <p style={{ wordBreak: 'break-all' }}>
-              結婚相談所の活動で多くの人が直面する「年齢の壁」や「交際3ヶ月ルールの進め方」といった特有のストレス・不安に対しても、認知行動療法的なアプローチや心理カウンセリングの技術を取り入れ、メンタル面の不調を未然に防ぎます。入会審査時における独身証明書や年収証明書の提出による100%身元保証と、徹底したプライバシー保護をお約束し、あなたが心から笑顔になれる「理想を超えた理想に近い結婚」まで、家族のような誠意と愛情を持って2名体制で伴走いたします
-            </p>
-          </div>
-        </section>
-
-        <section className="w-full my-6">
-          {/* Section Heading */}
-          <div className="text-center mb-6">
-            <div className="inline-flex items-center gap-2 bg-orange-100/80 border border-orange-200/80 text-orange-950 px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase mb-3 shadow-xs">
+            {/* リード文（太字・枠囲み推奨） */}
+            <div className="border-2 border-rose-300 bg-rose-50/50 p-5 rounded-xl text-[18px] font-bold text-gray-800 leading-relaxed pt-3 mt-4">
+              大阪梅田ドクターズ結婚相談所は、大阪市北区の大阪駅前第2ビル2階（JR東西線・北新地駅から徒歩1分）にある結婚相談所です。日本結婚相談所連盟（IBJ）の正規加盟店として、全国11万人規模のネットワークからお相手を探せます。医師・士業・研究職など専門職の方が多く活動しており、お一人の会員様に現役女医の代表カウンセラーとベテラン仲人の2名が担当としてつきます。新規のご入会は毎月5名様まで。受付は年中無休9時から21時、完全予約制です。
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-950 leading-tight">
-              大阪梅田ドクターズ結婚相談所の<br className="sm:hidden" />男性会員背景、職業ランキング表
-            </h2>
-            <div className="flex items-center justify-center gap-2 pt-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-orange-500" />
-              <div className="w-16 h-1 rounded-full bg-gradient-to-r from-orange-500 to-amber-400" />
-              <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+
+            {/* 代表写真のキャプションと画像 */}
+            <figure className="pt-4 text-center space-y-2">
+              <div className="relative w-full max-w-md mx-auto aspect-[4/3] overflow-hidden rounded-2xl shadow-md border border-rose-200">
+                <Image
+                  src="/real-female-physician-lead-counselor.jpg"
+                  alt="代表カウンセラー 加藤"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 448px"
+                  priority
+                />
+              </div>
+              <figcaption className="text-sm text-gray-600 font-medium">
+                代表カウンセラー 加藤／内科認定医。診療を続けながら、会員様の婚活に伴走しています。
+              </figcaption>
+            </figure>
+          </section>
+
+          {/* H2｜このページでわかること */}
+          <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
+            <div className="flex items-center gap-3 border-b border-rose-200 pb-4">
+              <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0">
+                <CheckCircle2 className="w-7 h-7" />
+              </div>
+              <h2 
+                className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
+                style={{ wordBreak: 'break-all' }}
+              >
+                このページでわかること
+              </h2>
             </div>
-          </div>
+            <ul className="list-disc list-inside space-y-2 text-[18px] text-gray-700 pl-2">
+              <li>出会える会員の規模と、身元確認の仕組み</li>
+              <li>どんな職業・年代の方が活動しているか</li>
+              <li>担当が2名つく体制と、その理由</li>
+              <li>新規入会の人数枠と入会審査について</li>
+              <li>他の結婚相談所からの移籍について</li>
+            </ul>
+          </section>
 
-          {/* 9:16 Aspect Ratio Image Container */}
-          <div className="w-full max-w-md mx-auto">
-            <div className="relative w-full aspect-[9/16] overflow-hidden rounded-2xl shadow-md border border-orange-200/60">
-              <Image
-                src="/osaka-male-members-occupational-rankings.jpg"
-                alt="大阪梅田ドクターズ結婚相談所の男性会員背景、職業ランキング表"
-                className="w-full h-full object-cover"
-                loading="lazy"
-                fill
-                sizes="(max-width: 768px) 100vw, 440px"
-                priority={false}
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-              />
+          {/* H2｜全国11万人のネットワークから、身元の確かな相手を探せます */}
+          <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
+            <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
+              <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
+                <Users className="w-7 h-7" />
+              </div>
+              <h2 
+                className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
+                style={{ wordBreak: 'break-all' }}
+              >
+                全国11万人のネットワークから、身元の確かな相手を探せます
+              </h2>
             </div>
-          </div>
-        </section>
 
-        <section className="w-full my-6">
-          {/* Section Heading */}
-          <div className="text-center mb-6">
-            <div className="inline-flex items-center gap-2 bg-orange-100/80 border border-orange-200/80 text-orange-950 px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase mb-3 shadow-xs">
+            <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
+              <p style={{ wordBreak: 'break-all' }}>
+                <strong>IBJの発表によれば、2026年7月時点の登録会員数は110,482名です。</strong> この全国規模のデータベースから、スマートフォンでいつでもお相手を検索していただけます。大阪市内はもちろん、豊中・吹田・北摂、西宮・神戸、京都、奈良まで、関西全域の会員様とお会いいただけます。
+              </p>
+              
+              <p style={{ wordBreak: 'break-all' }}>
+                IBJへの登録には、次の書類の提出が義務付けられています。
+              </p>
+              
+              <ul className="list-disc list-inside space-y-1 pl-4 text-gray-800">
+                <li>独身証明書（本籍地の自治体が発行）</li>
+                <li>住民票</li>
+                <li>収入証明書（男性は必須）</li>
+                <li>学歴証明書（卒業証明書など）</li>
+                <li>資格証明書（医師・弁護士などの有資格者）</li>
+              </ul>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                年収も、学歴も、独身であることも、すべて公的書類で確認された情報です。プロフィールに書かれた事実については、確かめる手間がいりません。
+              </p>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                これに加えて、当相談所からのご紹介もあります。医師として長く医療の現場にいれば、自然と業界内のつながりができます。仲人として人と関わり続けてきた者にも、同じように人のつながりがあります。そうしたご縁の中で、ご希望と条件、タイミングが合う場合に、直接ご提案することがあります。
+              </p>
+
+              <p className="text-sm text-gray-500 pt-1" style={{ wordBreak: 'break-all' }}>
+                ※ご紹介は双方のご希望が合致した際のご提案であり、すべての方への紹介をお約束するものではありません。
+              </p>
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-950 leading-tight">
-              大阪梅田ドクターズ結婚相談所の<br className="sm:hidden" />会員背景の特徴
-            </h2>
-            <div className="flex items-center justify-center gap-2 pt-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-orange-500" />
-              <div className="w-16 h-1 rounded-full bg-gradient-to-r from-orange-500 to-amber-400" />
-              <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+          </section>
+
+          {/* H2｜こういう方が活動しています */}
+          <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
+            <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
+              <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
+                <UserCheck className="w-7 h-7" />
+              </div>
+              <h2 
+                className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
+                style={{ wordBreak: 'break-all' }}
+              >
+                こういう方が活動しています
+              </h2>
             </div>
-          </div>
 
-          {/* 9:16 Aspect Ratio Image Container */}
-          <div className="w-full max-w-md mx-auto">
-            <div className="relative w-full aspect-[9/16] overflow-hidden rounded-2xl shadow-md border border-orange-200/60">
-              <Image
-                src="/osaka-female-members-occupational-rankings.jpg"
-                alt="大阪梅田ドクターズ結婚相談所の女性会員背景、職業ランキング表"
-                className="w-full h-full object-cover"
-                fill
-                sizes="(max-width: 768px) 100vw, 440px"
-                priority={false}
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAAEAAQBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA="
-              />
+            <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
+              <p style={{ wordBreak: 'break-all' }}>
+                <strong>中心となるのは、20代後半から40代の、仕事を持つ男女です。</strong>
+              </p>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                多い職業は次のとおりです。
+              </p>
+
+              <ul className="list-disc list-inside space-y-1 pl-4 text-gray-800">
+                <li>医療職（医師・薬剤師・看護師・検査技師など）</li>
+                <li>士業（弁護士・公認会計士・税理士など）</li>
+                <li>研究職（大学・企業の研究開発）</li>
+                <li>公務員</li>
+                <li>経営者・自営業</li>
+                <li>大手企業にお勤めの方</li>
+              </ul>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                現役女医が代表を務める相談所ということもあり、医療関係の方からのご相談は特に多くいただきます。当直明けの疲れも、シフトの組みにくさも、説明せずに伝わる。それだけで活動の負担が変わります。
+              </p>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                一方で、恋愛経験が少ない方、人見知りの方も同じように活動しています。「これまで異性と付き合ったことがない」というご相談は珍しくありません。仕事に打ち込んできた方ほど、そうなりがちです。
+              </p>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                共通しているのは、結婚を真剣に考えていること。そして、条件を並べるだけでは決められないと気づいている方が多いことです。
+              </p>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                年齢構成や職業の内訳は、無料相談の際に実際の検索画面をお見せしながらご説明します。
+              </p>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Section 2: 会員背景の特徴 */}
-        <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
-          <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
-            <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
-              <Award className="w-7 h-7" />
+          {/* H2｜女医と仲人、2人が同時にあなたを見ています */}
+          <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
+            <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
+              <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
+                <Stethoscope className="w-7 h-7" />
+              </div>
+              <h2 
+                className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
+                style={{ wordBreak: 'break-all' }}
+              >
+                女医と仲人、2人が同時にあなたを見ています
+              </h2>
             </div>
-            <h2 
-              className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
-              style={{ wordBreak: 'break-all' }}
-            >
-              大阪梅田ドクターズ結婚相談所の会員背景の特徴
-            </h2>
-          </div>
 
-          <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
-            <p style={{ wordBreak: 'break-all' }}>
-          当相談所が主な活動の場としているIBJのネットワークには、20代後半から40代の自立した専門職・キャリ ア層が多く登録しています。医師、弁護士、公認会計士、薬剤師、公務員、大手企業のビジネスパーソ ン、大学教授など、知性とキャリアを兼ね備えた方々とお会いいただけます。
-          当相談所では、こうした方々の中から、あなたに合うお相手を2名体制で絞り込みます。
-            </p>
-            <p style={{ wordBreak: 'break-all' }}>
-              現役女性医師が運営する相談所だからこそ、社会の第一線で働く様々な勤務への深い理解があり、女性が直面する「ライフステージの変化（キャリア継続と妊活・出産・子育ての両立）」という課題に共感できる環境が整っています。自分の仕事や生き方を尊重し、生涯にわたり互いを高め合える「精神的に自立したパートナー」を求めている、真剣度の高い男女が集まっていることが当社の大きな背景（特徴）です。
-            </p>
-          </div>
-        </section>
+            <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
+              <p style={{ wordBreak: 'break-all' }}>
+                <strong>当相談所では、会員1名に対して2名の担当がつきます。</strong> 現役の女性医師である代表カウンセラーと、ベテランの男性仲人です。
+              </p>
 
-        {/* Section 3: 真摯に未来を見据える会員層へ提供する環境 */}
-        <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
-          <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
-            <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
-              <Clock className="w-7 h-7" />
+              <p style={{ wordBreak: 'break-all' }}>
+                医療の現場で日々多くの方の話を聞き、言葉にならない不安を汲み取ってきた女医の目。長年、数多くの成婚を見届けてきた仲人の目。同じお見合いの報告を聞いても、二人が気づくことは違います。プロフィール写真ひとつ選ぶにも、意見が分かれることがあります。その違いが、そのままあなたへのアドバイスになります。
+              </p>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                異性から見た自分と、同性から見た自分。その両方が同時に返ってくる。一人で活動していては、手に入らない視点です。
+              </p>
+
+              <div className="p-4 bg-rose-50 border border-rose-200 rounded-xl mt-4">
+                <Link 
+                  href="/dual-support"
+                  className="text-rose-600 hover:text-rose-700 font-bold underline flex items-center gap-2"
+                >
+                  <FileText className="w-5 h-5 shrink-0" />
+                  担当カウンセラーは1人で本当に十分？——2人体制という選択
+                </Link>
+              </div>
             </div>
-            <h2 
-              className="text-xl sm:text-2xl font-black text-gray-900 leading-snug text-rose-500"
-              style={{ wordBreak: 'break-all' }}
-            >
-              真摯に未来を見据える会員層へ提供する効率よい活動環境
-            </h2>
-          </div>
+          </section>
 
-          <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
-            <p style={{ wordBreak: 'break-all' }}>
-              「知的な対話力」や「価値観の一致」を大切にされる会員様が集まるからこそ、大阪梅田ドクターズ結婚相談所では、科学的根拠（エビデンス）重視の婚活環境を構築しています。高い実績を持つベテランカウンセラーの成婚メソッドに加え、現役女性医師（加藤）の知見に基づく行動心理学や認知科学のアプローチを融合させた独自のカウンセリング環境をご提供します。
-            </p>
-            <p style={{ wordBreak: 'break-all' }}>
-              仕事や社会的責任において第一線で活躍するキャリア層にとって、結婚は人生の可能性をさらに拡大するための契機でなければなりません。時間の使い方がタイトな会員様の日常を深く理解しているからこそ、完全少人数制（月5名限定）の利点を最大限に活かし、
-              お見合いや仮交際、真剣交際、各フェーズをスマートに、タイムパフォーマンス高く効率的に進められる環境を整えています。
-              会話の端々で見せる本音や深い相性を客観的に分析し、会員様が「お相手との対話や関係性の構築」にだけ集中できるスマートな活動環境をめざしています。
-            </p>
-          </div>
-        </section>
-
-        {/* Section 4: 理想の成婚をサポートする婚活環境 */}
-        <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
-          <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
-            <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
-              <Compass className="w-7 h-7" />
+          {/* H2｜新規入会は毎月5名まで */}
+          <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
+            <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
+              <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
+                <CalendarCheck className="w-7 h-7" />
+              </div>
+              <h2 
+                className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
+                style={{ wordBreak: 'break-all' }}
+              >
+                新規入会は毎月5名まで
+              </h2>
             </div>
-            <h2 
-              className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
-              style={{ wordBreak: 'break-all' }}
-            >
-               「お互いの知性と人生の可能性を高め合う理想の成婚をサポートする婚活環境」
-            </h2>
-          </div>
 
-          <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
-            <p style={{ wordBreak: 'break-all' }}>
-              日本最大級の結婚相談所連盟のネットワークと、独自の自社ネットワークを活かし、多彩な出会いの可能性をご提供いたします。会員様それぞれの人生の価値観、ゆずれない希望、そしてライフプランに合致する理想のお相手を一緒に検討し、スマート成婚をめざします。
-            </p>
-            <p style={{ wordBreak: 'break-all' }}>
-              ハイクラス層とのご縁を結ぶために不可欠なのが、「コミュニケーション力と知的な対話力」の向上です。当相談所では、現役女性医師の視点から会員様が持つ洗練された魅力を客観的に引き出し、お互いの価値観が共鳴し、リスペクトし合える関係が続く結婚に向けて、専門的なオーダーメイド戦略を練り上げます。
-            </p>
-            <p style={{ wordBreak: 'break-all' }}>
-              お見合いから「仮交際」、論理的なステップを踏んで「真剣交際」へと確実に関係を進めるため、行動心理学やEQ（非認知能力）の知見に基づいた実践的なアドバイスを実施。感情論ではなく、お相手の本音をロジカルに分析することで、何十年先も深く共鳴し合える理想に近いパートナーシップの構築をめざします。
-            </p>
-          </div>
-        </section>
+            <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
+              <p style={{ wordBreak: 'break-all' }}>
+                <strong>新規のご入会は、毎月先着5名様までとしています。</strong> 会員1名に2名の担当がつく体制を保つためです。
+              </p>
 
-        {/* Section 5: 婚活疲れやストレスを軽減するサポート */}
-        <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
-          <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
-            <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
-              <HeartHandshake className="w-7 h-7" />
+              <p style={{ wordBreak: 'break-all' }}>
+                だから、小さな疑問にも<strong>24時間以内を目安に</strong>お返事します。お見合いの日程調整も、デート前の不安も、思い立ったときに聞いていただけます。婚活は、迷ったその瞬間に相談できるかどうかで進み方が変わります。返事を3日待っている間に、お相手の熱は冷めます。
+              </p>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                ご入会には審査があります。真剣に結婚を考えている方だけの環境を保つためです。
+              </p>
+
+              <div className="space-y-3 p-4 bg-rose-50 border border-rose-200 rounded-xl mt-4">
+                <div>
+                  <Link 
+                    href="/plan"
+                    className="text-rose-600 hover:text-rose-700 font-bold underline flex items-center gap-2"
+                  >
+                    <FileText className="w-5 h-5 shrink-0" />
+                    料金プランと少人数制について
+                  </Link>
+                </div>
+                <div>
+                  <Link 
+                    href="/membership-steps"
+                    className="text-rose-600 hover:text-rose-700 font-bold underline flex items-center gap-2"
+                  >
+                    <FileText className="w-5 h-5 shrink-0" />
+                    入会制限と入会審査
+                  </Link>
+                </div>
+              </div>
             </div>
-            <h2 
-              className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
-              style={{ wordBreak: 'break-all' }}
-            >
-               「婚活疲れやストレス」を軽減するサポートのある婚活環境
-            </h2>
-          </div>
+          </section>
 
-          <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
-            <p style={{ wordBreak: 'break-all' }}>
-              大阪梅田ドクターズ結婚相談所では、ハイクラス婚活に伴う「婚活疲れやストレス」を軽減する科学的アプローチをめざしています。
-            </p>
-            <p style={{ wordBreak: 'break-all' }}>
-              現役医師の医学的知見と、成婚実績豊富なベテランカウンセラーが培ってきた実践的な経験に基づき、お見合いの不成立や突然の交際終了といったストレスに対し、単なる精神論ではなく、的確な原因分析と具体的な対策をロジカルに提示。同時に、一時的な落ち込みや不安に陥ってしまったお気持ちに寄り添って方向性を再検討し、モチベーションの低下を防ぎながら、次の一歩へ笑顔で前を向けるよう、回復する力（レジリエンス）を個別カウンセリングで柔軟にサポートします。
-            </p>
-            <p style={{ wordBreak: 'break-all' }}>
-              また、システム主導の機械的なマッチングや放置型のサポート体制に限界を感じ、うまくいかず婚活疲れを感じる状況を打開すべく、当相談所では他の結婚相談所からの「乗り換え（移籍）」にも柔軟に対応しています。これまでの活動データやプロフィールの自己PRを客観的に再分析し、30代・40代のキャリア層の皆様が理想のパートナーシップを築けるよう、2名体制のオーダーメイド戦略でスマートに伴走いたします。
-            </p>
-          </div>
-        </section>
-
-        {/* Section 6: 多様化するライフスタイルに寄り添う新時代の婚活環境 */}
-        <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
-          <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
-            <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
-              <Smile className="w-7 h-7" />
+          {/* H2｜うまくいかない原因は、あなたの魅力ではありません */}
+          <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
+            <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
+              <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
+                <HeartHandshake className="w-7 h-7" />
+              </div>
+              <h2 
+                className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
+                style={{ wordBreak: 'break-all' }}
+              >
+                うまくいかない原因は、あなたの魅力ではありません
+              </h2>
             </div>
-            <h2 
-              className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
-              style={{ wordBreak: 'break-all' }}
-            >
-               多様化するライフスタイルに寄り添う、新時代の婚活環境
-            </h2>
+
+            <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
+              <p style={{ wordBreak: 'break-all' }}>
+                お見合いが組めない。仮交際で終わる。お断りが続く。
+              </p>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                そんなとき、多くの方が原因を自分の魅力に求めます。けれど実際に多いのは、条件の設定がずれているか、伝え方に改善の余地があるか、そのどちらかです。
+              </p>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                原因が分かれば、変えられます。医療の現場でやっていることと、実は同じです。感情で受け止める前に、何が起きているのかを整理する。そのうえで、次に何を変えるかを具体的にお伝えします。
+              </p>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                同時に、落ち込んだお気持ちにも寄り添います。分析だけでは人は動けません。私たちが「心の保健室」と呼んでいるのは、その部分です。
+              </p>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                他の結婚相談所で足踏みされていた方の移籍も歓迎です。これまでの活動データやプロフィールを客観的に見直し、どこで止まっていたのかを一緒に確かめます。
+              </p>
+            </div>
+          </section>
+
+          {/* H2｜あなたの生活に、婚活のほうを合わせます */}
+          <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-4">
+            <div className="flex items-start gap-3 border-b border-rose-200 pb-4">
+              <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0 mt-1">
+                <Sparkles className="w-7 h-7" />
+              </div>
+              <h2 
+                className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
+                style={{ wordBreak: 'break-all' }}
+              >
+                あなたの生活に、婚活のほうを合わせます
+              </h2>
+            </div>
+
+            <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
+              <p style={{ wordBreak: 'break-all' }}>
+                夜勤のある方、シフト制の方、リモート中心の方。趣味を大切にしたい方、キャリアを優先したい方。子どもを持つかどうかについても、考えは人それぞれです。
+              </p>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                「結婚したらこうあるべき」という前提でアドバイスをすることはありません。まずお聞きするのは、あなたにとっての幸せがどういう形かということ。そこが定まると、条件の優先順位も自然に決まります。
+              </p>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                お見合いの日程調整も、交際中の進め方も、生活リズムに合わせて組み立てます。
+              </p>
+            </div>
+          </section>
+
+          {/* H2｜よくあるご質問 */}
+          <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-6">
+            <div className="flex items-center gap-3 border-b border-rose-200 pb-4">
+              <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0">
+                <HelpCircle className="w-7 h-7" />
+              </div>
+              <h2 
+                className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
+                style={{ wordBreak: 'break-all' }}
+              >
+                よくあるご質問
+              </h2>
+            </div>
+
+            <div className="space-y-6">
+              {faqList.map((faq, index) => (
+                <div key={index} className="border-b border-rose-100 pb-4 space-y-2">
+                  <p className="font-bold text-gray-900 text-lg flex items-start gap-2">
+                    <span className="text-rose-500 font-black">Q.</span>
+                    <span>{faq.q}</span>
+                  </p>
+                  <p className="text-gray-700 pl-6">
+                    <span className="font-bold text-gray-900 mr-2">A.</span>
+                    {faq.a}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* H2｜まずは、話を聞きに来てください */}
+          <section className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm space-y-6">
+            <div className="flex items-center gap-3 border-b border-rose-200 pb-4">
+              <div className="p-2.5 rounded-xl bg-rose-400 text-white shrink-0">
+                <MessageSquare className="w-7 h-7" />
+              </div>
+              <h2 
+                className="text-xl sm:text-2xl font-black text-gray-900 leading-snug"
+                style={{ wordBreak: 'break-all' }}
+              >
+                まずは、話を聞きに来てください
+              </h2>
+            </div>
+
+            <div className="text-[18px] text-gray-700 leading-relaxed space-y-4">
+              <p style={{ wordBreak: 'break-all' }}>
+                無料相談は完全予約制です。ご来訪の際は、必ず担当が対応いたします。遠方の方、時間の取りにくい方には、LINE・メール・Zoomでのオンライン相談も承ります。
+              </p>
+
+              <p style={{ wordBreak: 'break-all' }}>
+                入会を決めていなくても構いません。「いつから始めるべきか」「今のやり方でいいのか」。そのご相談だけでも、どうぞ。
+              </p>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                <Link
+                  href="/contact"
+                  className="bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-bold py-4 px-8 rounded-xl text-center shadow-md text-lg transition-all"
+                >
+                  無料相談を予約する
+                </Link>
+                <a
+                  href="https://lin.ee/ZXB0UNs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 px-8 rounded-xl text-center shadow-md text-lg transition-all"
+                >
+                  LINEで相談する
+                </a>
+              </div>
+            </div>
+          </section>
+
+          {/* フッター情報 */}
+          <footer className="rounded-2xl bg-white border border-rose-200 p-6 sm:p-8 shadow-sm text-sm text-gray-700 leading-relaxed space-y-2">
+            <div className="flex items-center gap-2 font-bold text-base text-gray-900 mb-2">
+              <Building2 className="w-5 h-5 text-rose-500" />
+              <span>大阪梅田ドクターズ結婚相談所</span>
+            </div>
+            <p>〒530-0001 大阪府大阪市北区梅田1丁目2番2-200号 大阪駅前第2ビル2階 3-1-2</p>
+            <p>TEL: 090-6646-3456</p>
+            <p>受付時間 9:00〜21:00（年中無休・完全予約制）</p>
+            <p>アクセス JR東西線「北新地駅」徒歩1分／JR「大阪駅」徒歩約8分</p>
+          </footer>
+
+          {/* ページ末尾の署名欄 */}
+          <div className="border-t border-rose-200 pt-4 text-xs text-gray-500 space-y-1 text-center">
+            <p>執筆・監修 加藤（代表カウンセラー／内科認定医）</p>
+            <p>公開日 2026年9月11日</p>
+            <p>最終更新日 2026年9月11日</p>
           </div>
 
-          <div className="text-[18px] text-gray-700 leading-relaxed space-y-4 pt-2">
-            <p style={{ wordBreak: 'break-all' }}>
-              「結婚して子供を持ち、定時に帰る」といった、かつての“当たり前”だったライフプランは過去のものです。現代は、リモートワークやシフト制など働き方が多様化し、趣味やキャリアの優先度も人それぞれ。生き方や幸せの形、そして世の中の「正解」は決して一つではありません。生活リズムや価値観が個々に異なる今、従来の自然な出会いだけに頼る婚活は　困難になってきているのが現実です。
-            </p>
-            <p style={{ wordBreak: 'break-all' }}>
-              だからこそ大阪梅田ドクターズ結婚相談所では、一人ひとりの異なる日常に徹底的に寄り添う、柔軟な新時代の婚活環境をご用意しています。当相談所の強みは、医療の最前線で多様な人生観や多忙な現実に触れてきた「女性医師」の視点と、数多くの成婚を導いてきた「ベテランカウンセラー」の深い知見が融合している点です。
-            </p>
-            <p style={{ wordBreak: 'break-all' }}>
-              例えば、夜勤が多く不規則なスケジュールで働く方、キャリアアップと結婚を同時に叶えたい方、あるいは自分らしい距離感でのパートナーシップを望む方。私たちは、凝り固まったマニュアル通りのアドバイスはいたしません。「あなたにとっての最適な幸せとは何か」を面談から導き出し、お見合いの調整から交際管理まで、それぞれの生活リズムに合わせた柔軟なサポートを提供します。
-            </p>
-            <p style={{ wordBreak: 'break-all' }}>
-              価値観が多様化した時代だからこそ、条件のミスマッチを事前に防ぎ、最初からお互いのライフスタイルを尊重し合えるお相手と効率的に出会える環境が必要です。世間の常識にとらわれる必要はありません。女性医師とベテランカウンセラーの確かな知見を味方に、あなただけの柔軟で特別な未来への第一歩を、ここから一緒に踏み出してみませんか。
-            </p>
-          </div>
-        </section>
-
-      </div>
-    </main>
+        </div>
+      </main>
+    </>
   );
 }

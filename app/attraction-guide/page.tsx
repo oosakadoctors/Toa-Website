@@ -286,11 +286,14 @@ export default function AttractionGuide() {
   </div>
 </Link>
         </section>
+        
 
         <hr className="border-rose-200 border-dashed my-8" />
-
         {/* Section Title */}
+
         <div className="text-center space-y-2">
+      
+
           <h2 className="text-2xl sm:text-3xl font-black text-gray-900" style={{ wordBreak: 'break-all' }}>
             男女それぞれ一般的に人気のモテ要素は何か？
           </h2>
@@ -303,6 +306,8 @@ export default function AttractionGuide() {
             </a>
           </div>
         </div>
+            <p>⚠️「当相談所の現場でよく聞く声をもとにした順位です
+          【個人の主観により異なります】</p>
 
         {/* ==================== 女性編 ==================== */}
         <div id="female-section" className="space-y-8 pt-6">
@@ -324,7 +329,7 @@ export default function AttractionGuide() {
                 "女性らしさを感じるスタイル",
                 "無防備さや隙を感じさせる、女性らしい可愛い仕草",
                 "本能を刺激する、甘い香水・シャンプーの香り",
-                "思わず触れたくなるような、白くモチモチとしたマシュマロ肌",
+                "思わず触れたくなるような、モチモチとしたマシュマロ肌",
                 "「自分を受け入れてくれそう」と思わせる、明るい満面の笑顔",
                 "首筋や手首など、華奢（きゃしゃ）なパーツの強調",
                 "男の独占欲を煽る、他の男にもモテそうな「いい女」感",
@@ -570,7 +575,7 @@ export default function AttractionGuide() {
                 "トラブル時でも「動じない余裕」",
                 "お相手を自分のペースに巻き込む、堂々としたリーダーシップ",
                 "女性を「女性扱い」できる優しさ",
-                "女性への適度な強引さ【優しさとのバランスが大切】",
+                "「女性への適度な強引さ」 — 「バランスよくリードする力」",
                 "一定のトーンを保つ感情管理",
                 "予期せぬトラブルに対して、スマートに代替案を出す柔軟性",
                 "お相手の話にアドバイスや説教をせず、感情に寄り添い傾聴する力",
