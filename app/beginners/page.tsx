@@ -39,7 +39,7 @@ export default function BeginnerLandingPage() {
             🌱 恋愛初心者・婚活ビギナーのあなたへ
           </span>
           <h1 className="text-2xl md:text-4xl font-serif font-extrabold leading-tight tracking-wider mb-6 text-slate-900 drop-shadow-xs">
-            恋愛初心者・婚活ビギナーのあなたが<br className="hidden md:inline" />スピード成婚する方法
+            大阪で婚活を始めたい恋愛初心者・ビギナーのあなたへ<br className="hidden md:inline" />スピード成婚する方法
           </h1>
           <div className="bg-white/85 p-5 md:p-6 rounded-3xl border border-sky-300/80 shadow-sm inline-block text-left w-full backdrop-blur-md">
             <p className="text-sky-950 font-bold text-[20px] md:text-lg mb-2 text-center">「誰を選べばいいかわからない」「どんなライフスタイルがいいかわからない」</p>
