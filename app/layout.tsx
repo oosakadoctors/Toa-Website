@@ -151,7 +151,7 @@ openGraph: {
   type: 'website',
   images: [
     {
-      url: 'https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/og-default.jpg', // Replace with your default image filename in /public
+      url: '/og-default.jpg', // Replace with your default image filename in /public
       width: 1200,
       height: 630,
       alt: '大阪梅田ドクターズ結婚相談所',
@@ -162,6 +162,7 @@ openGraph: {
     card: 'summary_large_image',
     title: '大阪梅田ドクターズ結婚相談所',
     description: '現役医師監修×仲人歴20年のダブルサポートで目指すハイクラススピード成婚。',
+    images: ['/og-default.jpg'], // Must include the leading slash
   },
 
   robots: {
@@ -272,7 +273,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
       {/* LINE Button with Official LINE Green (#06C755) */}
       <a
-        href="https://page.line.me/279kpsce"
+        href="https://page.line.me/WvDSj6U"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#06C755]/30 text-[#06C755] hover:bg-[#06C755]/10 hover:border-[#06C755]/60 transition-all duration-200 shadow-sm text-xs sm:text-sm font-medium"
