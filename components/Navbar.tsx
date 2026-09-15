@@ -23,20 +23,19 @@ export default function PremiumNavbar() {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
 
   useEffect(() => {
-  document.body.style.overflow = isOpen ? "hidden" : "unset";
+    document.body.style.overflow = isOpen ? "hidden" : "unset";
 
-  // Toggle class on body so layout elements can react to menu state
-  if (isOpen) {
-    document.body.classList.add("mobile-menu-open");
-  } else {
-    document.body.classList.remove("mobile-menu-open");
-  }
+    if (isOpen) {
+      document.body.classList.add("mobile-menu-open");
+    } else {
+      document.body.classList.remove("mobile-menu-open");
+    }
 
-  return () => {
-    document.body.style.overflow = "unset";
-    document.body.classList.remove("mobile-menu-open");
-  };
-}, [isOpen]);
+    return () => {
+      document.body.style.overflow = "unset";
+      document.body.classList.remove("mobile-menu-open");
+    };
+  }, [isOpen]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,13 +45,6 @@ export default function PremiumNavbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "unset";
-    return () => {
-      document.body.style.overflow = "unset";
-    };
-  }, [isOpen]);
 
   const menuSections = [
     {
@@ -124,7 +116,7 @@ export default function PremiumNavbar() {
         { name: "理系男性の理想のパートナー探し", href: "/tech-matchmaking" },
       ],
     },
-        {
+    {
       title: "医師監修の成婚サポート体制",
       icon: UserRound,
       links: [
@@ -140,13 +132,12 @@ export default function PremiumNavbar() {
         { name: "北新地駅徒歩1分の結婚相談所|豊中・西宮・三宮・難波からもアクセス抜群", href: "/location" },
       ],
     },
-        {
+    {
       title: "データに基づく結婚相談所での婚活",
       icon: UserRound,
       links: [
         { name: "結婚相談所は最後の砦？", href: "/data-driven" },
         { name: "結婚相談所は何歳から?20代・30代女性の入会タイミングは「今」", href: "/best-timing-to-start" },
-
       ],
     },
     {
@@ -165,7 +156,7 @@ export default function PremiumNavbar() {
         { name: "初心者むけ素朴な疑問を解決", href: "/first-steps" },
       ],
     },
-        {
+    {
       title: "経験知で駆動するAIプロンプト婚活とは｜大阪梅田ドクターズ結婚相談所",
       isMenSection: false,
       icon: UserRound,
@@ -195,7 +186,7 @@ export default function PremiumNavbar() {
       icon: UserRound,
       links: [{ name: "婚活・結婚生活に必要なEQとその高めかたを説明", href: "/EQ" }],
     },
-        {
+    {
       title: "結婚における情報ブログ",
       isMenSection: false,
       icon: Crown,
@@ -288,69 +279,88 @@ export default function PremiumNavbar() {
             </div>
           </Link>
 
-          {/* Desktop Mega Dropdown Trigger */}
+          {/* Top Level Nav Links (Main link equity hubs) */}
           <div className="relative flex items-center gap-6">
+            <Link
+              href="/why-us"
+              className="text-xs font-bold text-gray-800 hover:text-[#2563EB] transition-colors"
+            >
+              選ばれる理由
+            </Link>
+            <Link
+              href="/plan"
+              className="text-xs font-bold text-gray-800 hover:text-[#2563EB] transition-colors"
+            >
+              料金プラン
+            </Link>
+            <Link
+              href="/blog/category/beginners-guide"
+              className="text-xs font-bold text-gray-800 hover:text-[#2563EB] transition-colors"
+            >
+              コラム・ブログ
+            </Link>
+
+            {/* Desktop Dropdown Trigger */}
             <div
               className="relative"
               onMouseLeave={() => setActiveDropdown(null)}
             >
               <button
                 onMouseEnter={() => setActiveDropdown(0)}
+                onClick={() => setActiveDropdown(activeDropdown === null ? 0 : null)}
                 className="flex items-center gap-1 text-xs font-bold text-gray-800 hover:text-[#2563EB] py-2 transition-colors"
               >
-                <span>サービス案内</span>
+                <span>すべてのメニュー</span>
                 <ChevronDown className="w-3.5 h-3.5" />
               </button>
 
-              {/* Mega Menu Flyout */}
+              {/* Mega Menu Flyout: CONDITIONAL RENDER to keep DOM lightweight */}
               {activeDropdown !== null && (
                 <div className="absolute right-0 top-full pt-2 w-[720px] z-50">
                   <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 grid grid-cols-2 gap-x-6 gap-y-4 max-h-[70vh] overflow-y-auto">
-                    {menuSections.map((section) => {
-                      return (
-                        <div
-                          key={section.title}
-                          className={`space-y-1.5 pl-2 ${
-                            section.isMenSection
-                              ? "border-l-2 border-[#2563EB]"
-                              : "border-l-2 border-transparent"
-                          }`}
-                        >
-                          <div className="flex items-center justify-between gap-2 pr-1">
-                            <p
-                              className={`text-xs font-black ${
-                                section.isMenSection
-                                  ? "text-[#2563EB]"
-                                  : "text-gray-800"
-                              }`}
-                            >
-                              {section.title}
-                            </p>
-                            {section.isMenSection && section.tag && (
-                              <span className="text-[9px] px-1.5 py-0.5 rounded border font-black bg-[#2563EB] text-white border-blue-700 shadow-sm flex-shrink-0 ml-auto">
-                                {section.tag}
-                              </span>
-                            )}
-                          </div>
-                          <ul className="space-y-1">
-                            {section.links.map((link) => (
-                              <li key={link.href}>
-                                <Link
-                                  href={link.href}
-                                  className={`text-[11px] font-semibold block py-0.5 transition-colors ${
-                                    section.isMenSection
-                                      ? "text-blue-900 hover:text-[#2563EB]"
-                                      : "text-gray-600 hover:text-gray-900"
-                                  }`}
-                                >
-                                  {link.name}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
+                    {menuSections.map((section) => (
+                      <div
+                        key={section.title}
+                        className={`space-y-1.5 pl-2 ${
+                          section.isMenSection
+                            ? "border-l-2 border-[#2563EB]"
+                            : "border-l-2 border-transparent"
+                        }`}
+                      >
+                        <div className="flex items-center justify-between gap-2 pr-1">
+                          <p
+                            className={`text-xs font-black ${
+                              section.isMenSection
+                                ? "text-[#2563EB]"
+                                : "text-gray-800"
+                            }`}
+                          >
+                            {section.title}
+                          </p>
+                          {section.isMenSection && section.tag && (
+                            <span className="text-[9px] px-1.5 py-0.5 rounded border font-black bg-[#2563EB] text-white border-blue-700 shadow-sm flex-shrink-0 ml-auto">
+                              {section.tag}
+                            </span>
+                          )}
                         </div>
-                      );
-                    })}
+                        <ul className="space-y-1">
+                          {section.links.map((link) => (
+                            <li key={link.href}>
+                              <Link
+                                href={link.href}
+                                className={`text-[11px] font-semibold block py-0.5 transition-colors ${
+                                  section.isMenSection
+                                    ? "text-blue-900 hover:text-[#2563EB]"
+                                    : "text-gray-600 hover:text-gray-900"
+                                }`}
+                              >
+                                {link.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
                   </div>
                 </div>
               )}
@@ -358,11 +368,10 @@ export default function PremiumNavbar() {
 
             <Link
               href="/contact"
-              className="flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-full text-xs font-black transition-colors"
+              className="flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-5 py-2.5 rounded-full text-xs font-black transition-colors"
             >
               <Calendar className="w-4 h-4 text-blue-300" />
-                 9時から21時 <br/>
-                定休日無し = 無休
+              無料相談予約
             </Link>
           </div>
         </div>
@@ -380,112 +389,104 @@ export default function PremiumNavbar() {
         </button>
       </div>
 
-   {/* MOBILE ACCORDION MENU */}
-      <div
-        className={`md:hidden fixed inset-0 z-50 bg-[#FAF7F4] transition-all duration-500 overflow-y-auto ${
-          isOpen
-            ? "opacity-100 translate-x-0"
-            : "opacity-0 translate-x-full pointer-events-none"
-        }`}
-      >
-        {/* Changed pt-20 to pt-6 and added pr-16 to avoid the close button */}
-        <div className="px-4 pt-6 pb-28">
-          <div className="mb-6 pr-16">
-            <p className="text-[11px] font-black tracking-[0.3em] text-[#B07A56] uppercase">
-              Navigation
-            </p>
-            <h2 className="mt-2 text-xl font-black text-[#5E4633]">
-              婚活メニュー
-            </h2>
-          </div>
+      {/* MOBILE ACCORDION MENU: CONDITIONAL RENDER TO PREVENT DOM OVERFLOW */}
+      {isOpen && (
+        <div className="md:hidden fixed inset-0 z-50 bg-[#FAF7F4] overflow-y-auto transition-all duration-300">
+          <div className="px-4 pt-6 pb-28">
+            <div className="mb-6 pr-16">
+              <p className="text-[11px] font-black tracking-[0.3em] text-[#B07A56] uppercase">
+                Navigation
+              </p>
+              <h2 className="mt-2 text-xl font-black text-[#5E4633]">
+                婚活メニュー
+              </h2>
+            </div>
 
-          <div className="space-y-3">
-            {menuSections.map((section, index) => {
-              const Icon = section.icon;
-              const isActive = openSection === index;
+            <div className="space-y-3">
+              {menuSections.map((section, index) => {
+                const Icon = section.icon;
+                const isActive = openSection === index;
 
-              return (
-                <div
-                  key={section.title}
-                  className={`rounded-2xl border bg-white overflow-hidden transition-all duration-300 ${
-                    section.isMenSection
-                      ? "border-l-4 border-l-[#2563EB] border-t-blue-100 border-r-blue-100 border-b-blue-100 shadow-[0_4px_14px_rgba(37,99,235,0.18)]"
-                      : "border-gray-200 shadow-sm"
-                  }`}
-                >
-                  <button
-                    onClick={() => setOpenSection(isActive ? null : index)}
-                    className="w-full flex items-center justify-between px-4 py-3.5 text-left gap-3"
-                    aria-expanded={isActive}
-                  >
-                    <div className="flex items-center gap-3 min-w-0 flex-1">
-                      <div
-                        className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
-                          section.isMenSection
-                            ? "bg-blue-50 text-[#2563EB]"
-                            : "bg-gray-100 text-gray-600"
-                        }`}
-                      >
-                        <Icon className="w-4 h-4" />
-                      </div>
-                      <span
-                        className={`text-sm font-black truncate ${
-                          section.isMenSection
-                            ? "text-[#2563EB]"
-                            : "text-gray-800"
-                        }`}
-                      >
-                        {section.title}
-                      </span>
-                    </div>
-
-                    <div className="flex items-center gap-2 flex-shrink-0">
-                      {section.isMenSection && section.tag && (
-                        <span className="text-[14px] px-2 py-0.5 rounded-full border font-black bg-[#2563EB] text-white border-blue-700 shadow-sm">
-                          {section.tag}
-                        </span>
-                      )}
-                      <ChevronDown
-                        className={`w-5 h-5 transition-transform duration-300 flex-shrink-0 ${
-                          isActive ? "rotate-180" : ""
-                        } ${
-                          section.isMenSection
-                            ? "text-[#2563EB]"
-                            : "text-gray-400"
-                        }`}
-                      />
-                    </div>
-                  </button>
-
+                return (
                   <div
-                    className={`transition-all duration-300 overflow-hidden ${
-                      isActive ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+                    key={section.title}
+                    className={`rounded-2xl border bg-white overflow-hidden transition-all duration-300 ${
+                      section.isMenSection
+                        ? "border-l-4 border-l-[#2563EB] border-t-blue-100 border-r-blue-100 border-b-blue-100 shadow-[0_4px_14px_rgba(37,99,235,0.18)]"
+                        : "border-gray-200 shadow-sm"
                     }`}
                   >
-                    <div className="px-4 pb-3 space-y-1">
-                      {section.links.map((link) => (
-                        <Link
-                          key={link.href}
-                          href={link.href}
-                          onClick={() => setIsOpen(false)}
-                          className={`flex items-center justify-between rounded-xl px-3 py-2 text-sm font-bold transition-colors ${
+                    <button
+                      onClick={() => setOpenSection(isActive ? null : index)}
+                      className="w-full flex items-center justify-between px-4 py-3.5 text-left gap-3"
+                      aria-expanded={isActive}
+                    >
+                      <div className="flex items-center gap-3 min-w-0 flex-1">
+                        <div
+                          className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
                             section.isMenSection
-                              ? "bg-blue-50/60 text-blue-900 hover:text-[#2563EB]"
-                              : "bg-gray-50 text-gray-700 hover:text-gray-900"
+                              ? "bg-blue-50 text-[#2563EB]"
+                              : "bg-gray-100 text-gray-600"
                           }`}
                         >
-                          <span className="pr-2">{link.name}</span>
-                          <ChevronRight className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />
-                        </Link>
-                      ))}
-                    </div>
+                          <Icon className="w-4 h-4" />
+                        </div>
+                        <span
+                          className={`text-sm font-black truncate ${
+                            section.isMenSection
+                              ? "text-[#2563EB]"
+                              : "text-gray-800"
+                          }`}
+                        >
+                          {section.title}
+                        </span>
+                      </div>
+
+                      <div className="flex items-center gap-2 flex-shrink-0">
+                        {section.isMenSection && section.tag && (
+                          <span className="text-[14px] px-2 py-0.5 rounded-full border font-black bg-[#2563EB] text-white border-blue-700 shadow-sm">
+                            {section.tag}
+                          </span>
+                        )}
+                        <ChevronDown
+                          className={`w-5 h-5 transition-transform duration-300 flex-shrink-0 ${
+                            isActive ? "rotate-180" : ""
+                          } ${
+                            section.isMenSection
+                              ? "text-[#2563EB]"
+                              : "text-gray-400"
+                          }`}
+                        />
+                      </div>
+                    </button>
+
+                    {/* ONLY RENDER LINKS IN DOM WHEN ACCORDION SECTION IS ACTIVE */}
+                    {isActive && (
+                      <div className="px-4 pb-3 space-y-1">
+                        {section.links.map((link) => (
+                          <Link
+                            key={link.href}
+                            href={link.href}
+                            onClick={() => setIsOpen(false)}
+                            className={`flex items-center justify-between rounded-xl px-3 py-2 text-sm font-bold transition-colors ${
+                              section.isMenSection
+                                ? "bg-blue-50/60 text-blue-900 hover:text-[#2563EB]"
+                                : "bg-gray-50 text-gray-700 hover:text-gray-900"
+                            }`}
+                          >
+                            <span className="pr-2">{link.name}</span>
+                            <ChevronRight className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </header>
   );
 }

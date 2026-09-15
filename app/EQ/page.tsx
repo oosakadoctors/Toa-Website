@@ -503,11 +503,6 @@ export default function EQPage() {
         </div>
 
       </div>
-
-      {/* フッター */}
-      <footer className="text-center py-8 text-slate-500 mt-12 w-full text-base">
-        <p>© 大阪梅田ドクターズ結婚相談所 All Rights Reserved.</p>
-      </footer>
     </div>
   );
 }

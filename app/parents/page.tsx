@@ -3,7 +3,7 @@ import { ChevronDown, MessageCircle, Phone, Users, Award, ShieldCheck } from 'lu
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'お子様の結婚を願う親御様へ｜大阪梅田ドクターズ結婚相談所',
+  title: 'お子様の結婚を願う親御様へ',
   description: 'お子様の結婚を心配される親御様からのご相談も承っています。ご本人の意思を尊重しながら、どのようにお話を進めるべきかを一緒に考えます。北新地駅徒歩1分、無料相談は完全予約制。',
   alternates: { canonical: '/parents' },
   openGraph: {
@@ -265,7 +265,7 @@ export default function ParentsLandingPage() {
       </section>
 
       {/* Q&A アコーディオンセクション */}
-      <section className="py-14 px-4 max-w-5xl mx-auto w-full">
+      <section className=" px-4 max-w-5xl mx-auto w-full">
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-center text-slate-950 mb-8 tracking-wider w-full">
           親御様からのよくあるご質問
         </h2>
@@ -284,12 +284,6 @@ export default function ParentsLandingPage() {
           ))}
         </div>
       </section>
-
-      {/* フッター */}
-      <footer className="bg-slate-900 text-slate-400 text-sm py-8 text-center border-t border-slate-800 w-full">
-        <p>© 大阪梅田ドクターズ結婚相談所 All Rights Reserved.</p>
-      </footer>
-
     </div>
   );
 }

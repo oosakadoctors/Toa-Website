@@ -517,7 +517,7 @@ export default function EnvironmentPage() {
                   無料相談を予約する
                 </Link>
                 <a
-                  href="https://lin.ee/ZXB0UNs"
+                  href="https://lin.ee/WvDSj6U"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 px-8 rounded-xl text-center shadow-md text-lg transition-all"

@@ -206,7 +206,7 @@ export default function BestTimingToStartPage() {
     "@type": "Organization",
     name: "大阪梅田ドクターズ結婚相談所",
     url: "https://大阪梅田ドクターズ結婚相談所.jp",
-    sameAs: ["https://lin.ee/ZXB0UNs"],
+    sameAs: ["https://lin.ee/WvDSj6U"],
     memberOf: {
       "@type": "Organization",
       name: "IBJ(日本結婚相談所連盟)",

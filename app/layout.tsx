@@ -154,7 +154,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <Navbar />
 
             {/* Main Content */}
-            <main className="relative z-10 pt-1 pb-24 lg:pt-24 lg:pb-0">
+            <main className="relative z-10 pt-1 pb-4 lg:pt-24 lg:pb-0">
               <div className="mx-auto w-[98%] max-w-7xl px-0 sm:px-6 lg:px-8">
                 {children}
               </div>
@@ -162,28 +162,74 @@ export default function RootLayout({ children }: RootLayoutProps) {
           </div>
 
           {/* Footer with Plain Text NAP for Local SEO & Instagram link */}
-          <footer className="relative z-10 bg-stone-100 border-t border-stone-200 py-8 px-4 text-center text-sm text-gray-600">
-            <div className="max-w-4xl mx-auto space-y-3">
-              <p className="font-bold text-gray-800 text-base">大阪梅田ドクターズ結婚相談所</p>
-              <p>〒530-0001 大阪府大阪市北区梅田1丁目2番2-200号 大阪駅前第2ビル2階 3-1-2</p>
-              <p>TEL: <a href="tel:+819066463456" className="hover:underline">+81-90-6646-3456</a></p>
-              <div className="pt-2 flex justify-center items-center gap-4">
-                <a
-                  href="https://www.instagram.com/oosaka.doctors/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-pink-600 hover:underline font-medium"
-                >
-                  <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                  </svg>
-                  Instagram公式アカウント
-                </a>
-              </div>
-              <p className="text-xs text-gray-400 pt-2">© 大阪梅田ドクターズ結婚相談所 All Rights Reserved.</p>
-            </div>
-          </footer>
+<footer className="pb-24 relative z-10 bg-slate-50 border-t border-slate-200/80 py-10 px-4 text-center text-sm text-slate-600">
+  <div className="max-w-4xl mx-auto space-y-4">
+    {/* Company Name & Address */}
+    <div className="space-y-1.5">
+      <p className="font-bold text-slate-900 text-lg tracking-wide">
+        大阪梅田ドクターズ結婚相談所
+      </p>
+      <p className="text-slate-600 text-xs sm:text-sm">
+        〒530-0001 大阪府大阪市北区梅田1丁目2番2-200号 大阪駅前第2ビル2階 3-1-2
+      </p>
+    </div>
 
+    {/* Phone & Operating Hours */}
+    <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3 text-xs sm:text-sm text-slate-700">
+      <p className="font-medium">
+        TEL:{" "}
+        <a 
+          href="tel:+819066463456" 
+          className="font-semibold text-slate-900 hover:text-rose-600 transition-colors underline-offset-4 hover:underline"
+        >
+          +81-90-6646-3456
+        </a>
+      </p>
+      <span className="hidden sm:inline text-slate-300">|</span>
+      <p className="text-slate-500 text-xs">
+        受付時間 9:00〜21:00（年中無休・完全予約制）
+      </p>
+    </div>
+
+    {/* Social Media Button Links */}
+    <div className="pt-3 flex flex-wrap justify-center items-center gap-3">
+      {/* Instagram Button */}
+      <a
+        href="https://www.instagram.com/oosaka.doctors/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-pink-200 text-pink-600 hover:bg-pink-50/80 hover:border-pink-300 transition-all duration-200 shadow-sm text-xs sm:text-sm font-medium"
+      >
+        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+        Instagram公式アカウント
+      </a>
+
+      <br/>
+
+      {/* LINE Button with Official LINE Green (#06C755) */}
+      <a
+        href="https://page.line.me/279kpsce"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#06C755]/30 text-[#06C755] hover:bg-[#06C755]/10 hover:border-[#06C755]/60 transition-all duration-200 shadow-sm text-xs sm:text-sm font-medium"
+      >
+        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+          <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.122.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.844 2.572-6.002z"/>
+        </svg>
+        LINE公式アカウント
+      </a>
+    </div>
+
+    {/* Copyright */}
+    <div className="pt-4 border-t border-slate-200/60">
+      <p className="text-[11px] text-slate-400 font-light">
+        © 大阪梅田ドクターズ結婚相談所 All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
           {/* Mobile Sticky CTA */}
           <div className="fixed bottom-4 left-4 right-4 z-50 md:hidden [.mobile-menu-open_&]:hidden">
             <div className="flex items-center gap-3">
