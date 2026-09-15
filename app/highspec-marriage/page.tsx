@@ -25,9 +25,6 @@ export const metadata: Metadata = {
     title: "【ハイスペック婚を目指す女性へ】結婚はゴールではない。｜大阪梅田ドクターズ結婚相談所",
     description: "ハイスペック婚を成功させ、幸せな結婚生活を続けるために女性が大切にしたいこととは。大阪梅田の結婚相談所が、医師・高収入男性との婚活で求められる自立心、思いやり、支え合う関係について解説します。",
     url: "/highspec-marriage",
-    siteName: "大阪梅田ドクターズ結婚相談所",
-    type: "website",
-    locale: "ja_JP",
   },
 };
 

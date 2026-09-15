@@ -45,10 +45,10 @@ export default function AiStrategyPage() {
     '@type': 'WebPage',
     'headline': '【forGoogleデータで導き心で繋ぐ「生成AI×仲人の経験知」の成婚戦略｜大阪梅田ドクターズ結婚相談所',
     'description': '【個人情報非入力の安全運用】当相談所では、最先端の生成AIを独自のプロンプト戦略でアドバイスの作成に利用。婚活診断を元にAIが提示した選択肢から、あなた自身が納得のいく理想像を選び取ります。現役女性医師とベテラン仲人が軍師として伴走する、新時代のデータ婚活。',
-    'publisher': {
-      '@type': 'Organization',
-      'name': '大阪梅田ドクターズ結婚相談所',
-    }
+     "publisher": {
+    "@type": "LocalBusiness",
+    "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization"
+  }
   };
 
   return (

@@ -11,7 +11,14 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-import type { Metadata } from "next"; export const metadata: Metadata = { title: "ハイクラス婚活・結婚相談所｜医師・経営者・年収1000万円以上の方へ", description: "医師・経営者・エグゼクティブ・年収1000万円以上の方を対象としたハイクラス婚活。現役女医と経験20年のベテランカウンセラーによるダブルサポートで、効率的な婚活と理想のパートナー探しをお手伝いします。", alternates: { canonical: "/high-spec", }, openGraph: { title: "ハイクラス婚活・結婚相談所｜医師・経営者・年収1000万円以上の方へ", description: "医師・経営者・エグゼクティブ・年収1000万円以上の方を対象としたハイクラス婚活。現役女医と経験20年のベテランカウンセラーによるダブルサポートで、効率的な婚活と理想のパートナー探しをお手伝いします。", url: "/high-spec", }, };
+import type { Metadata } from "next"; 
+export const metadata: Metadata = { title: "ハイクラス婚活・結婚相談所｜医師・経営者・年収1000万円以上の方へ", 
+  description: "医師・経営者・エグゼクティブ・年収1000万円以上の方を対象としたハイクラス婚活。現役女医と経験20年のベテランカウンセラーによるダブルサポートで、効率的な婚活と理想のパートナー探しをお手伝いします。",
+   alternates: { canonical: "/high-spec", }, 
+   openGraph: { title: "ハイクラス婚活・結婚相談所｜医師・経営者・年収1000万円以上の方へ", 
+    description: "医師・経営者・エグゼクティブ・年収1000万円以上の方を対象としたハイクラス婚活。現役女医と経験20年のベテランカウンセラーによるダブルサポートで、効率的な婚活と理想のパートナー探しをお手伝いします。", 
+    url: "/high-spec", 
+  }, };
 
 export default function EliteMatchmakingPage() {
   return (

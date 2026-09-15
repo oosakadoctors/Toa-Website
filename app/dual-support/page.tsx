@@ -51,14 +51,13 @@ export default function DualSupportPage() {
         "headline": "結婚相談所、担当カウンセラーは1人で本当に十分?——2人体制という選択",
         "author": {
           "@type": "Person",
-          "name": "加藤",
-          "jobTitle": "代表カウンセラー(内科認定医)"
+          "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#founder",
         },
         "datePublished": "2026-09-08",
         "publisher": {
-          "@type": "Organization",
-          "name": "大阪梅田ドクターズ結婚相談所"
-        }
+    "@type": "LocalBusiness",
+    "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization"
+  }
       },
       {
         "@type": "FAQPage",

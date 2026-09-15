@@ -47,24 +47,6 @@ export const metadata: Metadata = {
 
 export default function DoctorConsultationStoryPage() {
   // サイト共通 Organization 構造化データ
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "大阪梅田ドクターズ結婚相談所",
-    "url": "https://example.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "梅田1丁目2番2-200号 大阪駅前第2ビル2階3-1-2",
-      "addressLocality": "大阪市北区",
-      "addressRegion": "大阪府",
-      "postalCode": "530-0001",
-      "addressCountry": "JP"
-    },
-    "telephone": "※電話番号を記載",
-    "sameAs": [
-      "※InstagramやX等のSNSアカウントURL"
-    ]
-  };
 
   // ページ個別 FAQPage 構造化データ
   const faqSchema = {
@@ -109,10 +91,6 @@ export default function DoctorConsultationStoryPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-sky-50 via-sky-100/40 to-blue-50 text-slate-800 font-sans antialiased selection:bg-sky-200 w-full overflow-x-hidden">
       {/* 構造化データスクリプト埋め込み */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

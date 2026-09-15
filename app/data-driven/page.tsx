@@ -230,31 +230,6 @@ export default function KansaiMemberDataPage() {
     ],
   };
 
-  const jsonLdOrganization = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "大阪梅田ドクターズ結婚相談所",
-    url: "https://大阪梅田ドクターズ結婚相談所.jp",
-    telephone: "090-6646-3456",
-    address: {
-      "@type": "PostalAddress",
-      postalCode: "530-0001",
-      addressRegion: "大阪府",
-      addressLocality: "大阪市北区",
-      streetAddress: "梅田1丁目2番2-200号 大阪駅前第2ビル2階",
-    },
-    sameAs: ["https://page.line.me/279kpsce",],
-    memberOf: {
-      "@type": "Organization",
-      name: "IBJ(日本結婚相談所連盟)",
-    },
-    founder: {
-      "@type": "Person",
-      name: "加藤",
-      jobTitle: "代表カウンセラー(内科認定医・現役女性医師)",
-    },
-  };
-
   const jsonLdArticle = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -262,17 +237,15 @@ export default function KansaiMemberDataPage() {
       "結婚相談所は、理想の結婚生活をつかむ場所。「最後の砦」イメージはもう古い",
     mainEntityOfPage:
       "https://大阪梅田ドクターズ結婚相談所.jp/kansai-member-data",
-    author: {
-      "@type": "Person",
-      name: "加藤",
-      jobTitle: "代表カウンセラー(内科認定医・現役女性医師)",
-    },
+author: {
+  "@type": "Person",
+  "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#founder"
+},
     datePublished: "2026-09-09",
-    publisher: {
-      "@type": "Organization",
-      name: "大阪梅田ドクターズ結婚相談所",
-      url: "https://大阪梅田ドクターズ結婚相談所.jp",
-    },
+publisher: {
+  "@type": "LocalBusiness",
+  "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization"
+}
   };
 
   return (
@@ -291,12 +264,6 @@ export default function KansaiMemberDataPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonLdJobRankings),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jsonLdOrganization),
         }}
       />
       <script

@@ -7,6 +7,7 @@ import Link from "next/link";
 import type { Metadata } from 'next';
 
 // Comprehensive LocalBusiness JSON-LD Structured Data Schema
+
 const localBusinessJsonLd = {
 "image": [
     {
@@ -31,7 +32,58 @@ const localBusinessJsonLd = {
       "height": "900" // 16:9 Aspect Ratio
     }
   ],
-
+"founder": {
+  "@type": "Person",
+  "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#founder",
+  "name": "加藤とあこ",
+  "jobTitle": ["代表カウンセラー", "院長"],
+  "gender": "Female",
+  "image": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/owner.jpg",
+  "mainEntityOfPage": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/main-counselor",
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "内科認定医"
+  },
+  "knowsAbout": ["腎臓内科", "人工透析", "腹膜透析", "婚活", "結婚相談"],
+  "worksFor": [
+    {
+      "@type": "MedicalClinic",
+      "name": "医療法人幸萌会 久宝寺透析クリニック",
+      "url": "https://q-cl.com/",
+      "medicalSpecialty": "Nephrologic",
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "581-0072",
+        "addressRegion": "大阪府",
+        "addressLocality": "八尾市",
+        "streetAddress": "久宝寺3-15-34-3F",
+        "addressCountry": "JP"
+      }
+    },
+    {
+      "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization"
+    }
+  ],
+  "sameAs": [
+    "https://q-cl.com/",
+    "https://q-cl.com/greeting.html"
+  ]
+},
+  "employee": {
+  "@type": "Person",
+  "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#counselor",
+  "name": "ベテラン男性カウンセラー",
+  "jobTitle": "婚活カウンセラー（カウンセラー歴20年）",
+  "worksFor": {
+    "@type": "LocalBusiness",
+    "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization"
+  }
+},
+    "memberOf": {
+      "@type": "Organization",
+      "name": "IBJ(日本結婚相談所連盟)",
+      "url": "https://www.ibjapan.jp/"
+    },
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization",
@@ -40,14 +92,14 @@ const localBusinessJsonLd = {
   "url": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/",
   "telephone": "+81-90-6646-3456",
   "logo": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/logo2.png",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "梅田1丁目2番2-200号 大阪駅前第2ビル2階 3-1-2",
-    "addressLocality": "大阪市北区",
-    "addressRegion": "大阪府",
-    "postalCode": "530-0001",
-    "addressCountry": "JP"
-  },
+"address": {
+  "@type": "PostalAddress",
+  "postalCode": "530-0001",
+  "addressRegion": "大阪府",
+  "addressLocality": "大阪市北区",
+  "streetAddress": "梅田1-2-2-200 大阪駅前第2ビル 2階 3-1-2",
+  "addressCountry": "JP"
+},
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": 34.698837,
@@ -63,16 +115,18 @@ const localBusinessJsonLd = {
   ],
   "priceRange": "¥¥¥",
   "areaServed": [
-    { "@type": "City", "name": "大阪市" },
-    { "@type": "AdministrativeArea", "name": "大阪府" },
-    { "@type": "AdministrativeArea", "name": "兵庫県" },
-    { "@type": "AdministrativeArea", "name": "京都府" }
-  ],
+  { "@type": "AdministrativeArea", "name": "大阪府" },
+  { "@type": "AdministrativeArea", "name": "兵庫県" },
+  { "@type": "AdministrativeArea", "name": "京都府" },
+  { "@type": "AdministrativeArea", "name": "奈良県" }
+],
 "sameAs": [
           "https://lin.ee/WvDSj6U",
           "https://www.instagram.com/oosaka.doctors/",
           "https://maps.app.goo.gl/wZYzjYYN3qynqeYY9"
         ],
+
+
 };
 
 export const metadata: Metadata = {
@@ -88,14 +142,22 @@ export const metadata: Metadata = {
   },
   description: '大阪梅田でハイクラス婚活・スピード成婚なら当相談所へ。現役医師監修×仲人歴20年のベテランカウンセラーが、医学的アプローチと丁寧なマンツーマンサポートで、20代・30代の1年以内の成婚へお手伝いします。',
 
-  openGraph: {
-    title: '大阪梅田ドクターズ結婚相談所｜20代30代の真剣婚活・1年以内の成婚',
-    description: '現役医師監修×仲人歴20年のダブルサポート。毎月5名限定の完全少人数制で、あなたの理想のスピード成婚を叶えます。',
-    url: 'https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp',
-    siteName: '大阪梅田ドクターズ結婚相談所',
-    locale: 'ja_JP',
-    type: 'website',
-  },
+openGraph: {
+  title: '大阪梅田ドクターズ結婚相談所｜20代30代の真剣婚活・1年以内の成婚',
+  description: '現役医師監修×仲人歴20年のダブルサポート。毎月5名限定の完全少人数制で、あなたの理想のスピード成婚を叶えます。',
+  url: 'https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp',
+  siteName: '大阪梅田ドクターズ結婚相談所',
+  locale: 'ja_JP',
+  type: 'website',
+  images: [
+    {
+      url: '/og-default.jpg', // Replace with your default image filename in /public
+      width: 1200,
+      height: 630,
+      alt: '大阪梅田ドクターズ結婚相談所',
+    },
+  ],
+},
   twitter: {
     card: 'summary_large_image',
     title: '大阪梅田ドクターズ結婚相談所',

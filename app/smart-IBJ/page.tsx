@@ -42,10 +42,10 @@ export default function IbjPremiumPage() {
     '@type': 'WebPage',
     'headline': '30秒でわかる】IBJプレミアムパックと標準プランの違い',
     'description': 'ハイクラス婚活におすすめのIBJプレミアムパックの主な3つの違いと料金システムを解説',
-    'publisher': {
-      '@type': 'Organization',
-      'name': '大阪梅田ドクターズ結婚相談所',
-    }
+"publisher": {
+  "@type": "LocalBusiness",
+  "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization",
+}
   };
 
   return (
@@ -234,7 +234,7 @@ export default function IbjPremiumPage() {
         </section>
 
         {/* SECTION 6: Summary Banner */}
-        <section className="bg-gradient-to-br from-sky-950/90 via-slate-900/90 to-blue-950/90 text-white rounded-3xl p-8  shadow-2xl border border-sky-700/50 backdrop-blur-md">
+        <section className="bg-gradient-to-br from-sky-950/90 via-slate-900/90 to-blue-950/90 text-white rounded-3xl p-8 sm:p-12 shadow-2xl space-y-8 border border-sky-700/50 backdrop-blur-md">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-sky-200 tracking-tight leading-snug">
             まとめ
           </h2>

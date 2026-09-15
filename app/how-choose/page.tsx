@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "結婚相談所の選び方|大阪・梅田で失敗しない5つの比較ポイント|大阪梅田ドクターズ結婚相談所",
+    "結婚相談所の選び方|大阪・梅田で失敗しない5つの比較ポイント",
   description:
     "大阪・梅田で結婚相談所選びに迷っていませんか。地域密着度・料金・サポート・価値観・会員層の5つの軸で比較する選び方を、IBJ加盟の現役女性医師が解説します。",
   alternates: {
@@ -130,17 +130,16 @@ export default function HowToChoosePage() {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "結婚相談所の選び方|大阪・梅田で失敗しない5つの比較ポイント",
-    "mainEntityOfPage": "https://大阪梅田ドクターズ結婚相談所.jp/how-to-choose",
-    "author": {
-      "@type": "Person",
-      "name": "加藤",
-      "jobTitle": "代表カウンセラー(内科認定医・現役女性医師)"
-    },
+    "mainEntityOfPage": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/how-to-choose",
+"author": {
+  "@type": "Person",
+  "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#founder"
+},
     "datePublished": "2026-09-09",
-    "publisher": {
-      "@type": "Organization",
-      "name": "大阪梅田ドクターズ結婚相談所"
-    }
+"publisher": {
+  "@type": "LocalBusiness",
+  "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization"
+}
   };
 
   return (

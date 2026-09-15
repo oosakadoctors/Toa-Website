@@ -73,28 +73,24 @@ export default function AttractionGuide() {
     'headline': '婚活でモテる人の特徴とは？外見・スペック・内面と雰囲気美人の作り方',
     'description': '大阪梅田のドクターズ結婚相談所による婚活解説。外見・スペック・内面という3つの評価軸を、女性医師とベテランカウンセラーの視点から専門的に分析。大人だからこそ輝く「内面と知性を活かした魅力の引き出し方」を知り、自分らしい成婚を目指しましょう。',
     'datePublished': '2026-08-02T12:00:00+09:00',
-    'author': [
-      {
-        '@type': 'Person',
-        'name': '現役女医（大阪梅田ドクターズ結婚相談所監修）',
-        'jobTitle': 'Medical Doctor'
-      },
-      {
-        '@type': 'Person',
-        'name': 'ベテランカウンセラー',
-        'jobTitle': 'Senior Marriage Counselor'
-      }
-    ],
-    'publisher': {
-      '@type': 'Organization',
-      'name': '大阪梅田ドクターズ結婚相談所',
-      'logo': {
-        '@type': 'ImageObject',
-        'url': 'https://your-domain.com/logo.png'
-      }
-    }
+    "author": {
+      "@type": "Person",
+      "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#founder"
+    },
+    
+"publisher": {
+  "@type": "LocalBusiness",
+  "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization"
+}
   };
   return (
+    <>
+    <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      {/* Rest of your page content */}
+      <main></main>
     <main className="bg-[#faf8f5] min-h-screen text-[18px] leading-relaxed text-gray-800 py-4 px-2 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-4xl space-y-10">
 
@@ -739,5 +735,6 @@ export default function AttractionGuide() {
 
       </div>
     </main>
+    </>
   );
 }

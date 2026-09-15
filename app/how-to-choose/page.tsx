@@ -164,10 +164,10 @@ export default function HowToChoosePage() {
       "jobTitle": "代表カウンセラー(内科認定医・現役女性医師)"
     },
     "datePublished": "2026-09-09",
-    "publisher": {
-      "@type": "Organization",
-      "name": "大阪梅田ドクターズ結婚相談所"
-    }
+   publisher: {
+    "@type": "LocalBusiness",
+    "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization"
+}
   };
 
   return (

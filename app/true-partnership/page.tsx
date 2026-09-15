@@ -61,12 +61,8 @@ export default function HighSpecTrapAnalysis() {
       }
     ],
     'publisher': {
-      '@type': 'Organization',
-      'name': '大阪梅田ドクターズ結婚相談所',
-      'logo': {
-        '@type': 'ImageObject',
-        'url': 'https://your-domain.com/logo.png'
-      }
+     '@type': 'LocalBusiness',
+     '@id': 'https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization'
     }
   };
 

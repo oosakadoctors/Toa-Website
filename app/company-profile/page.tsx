@@ -15,7 +15,7 @@ import {
   AlertCircle,
 } from "lucide-react";
 
-export const metadata: Metadata = { title: "特定商取引法に基づく表記｜大阪梅田ドクターズ結婚相談所",
+export const metadata: Metadata = { title: "特定商取引法に基づく表記",
     robots: {
     index: false,
     follow: true,

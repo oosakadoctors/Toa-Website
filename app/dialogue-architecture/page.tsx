@@ -33,37 +33,20 @@ export default function CounselingMethodPage() {
     "@type": "Article",
     "headline": "大阪梅田ドクターズ結婚相談所の婚活カウンセリングとは|現役女医が実践する対話設計",
     "description": "婚活の理想の相手像がわかる無料カウンセリングを、大阪梅田ドクターズ結婚相談所の現役女医カウンセラーが実践。二択で優先順位を引き出す対話設計とあわせて無料相談のご案内。",
-    "author": {
-      "@type": "Person",
-      "name": "大阪梅田ドクターズ結婚相談所 代表カウンセラー",
-      "jobTitle": "医療法人役員/病院勤務医/認定内科医",
-      "affiliation": {
-        "@type": "Organization",
-        "name": "大阪梅田ドクターズ結婚相談所"
-      }
-    },
+"author": {
+  "@type": "Person",
+  "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#founder"
+},
     "publisher": {
-      "@type": "Organization",
-      "name": "大阪梅田ドクターズ結婚相談所",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://example.com/logo.png"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "大阪駅前第2ビル",
-        "addressLocality": "大阪市北区",
-        "postalCode": "530-0001",
-        "addressRegion": "大阪府",
-        "addressCountry": "JP"
-      }
+      "@type": "LocalBusiness",
+      "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization",
     },
     "datePublished": "2026-09-06",
     "dateModified": "2026-09-06",
     "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://example.com/(このページのURL)"
-    }
+　　  "@type": "WebPage",
+  　　"@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/best-timing-to-start"
+}
   };
 
   const faqJsonLd = {

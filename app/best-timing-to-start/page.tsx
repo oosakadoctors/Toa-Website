@@ -201,42 +201,25 @@ export default function BestTimingToStartPage() {
     ],
   };
 
-  const jsonLdOrganization = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "大阪梅田ドクターズ結婚相談所",
-    url: "https://大阪梅田ドクターズ結婚相談所.jp",
-    sameAs: ["https://lin.ee/WvDSj6U"],
-    memberOf: {
-      "@type": "Organization",
-      name: "IBJ(日本結婚相談所連盟)",
-    },
-    founder: {
-      "@type": "Person",
-      name: "加藤",
-      jobTitle: "代表カウンセラー(内科認定医・現役女性医師)",
-    },
-  };
-
-  const jsonLdArticle = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: "結婚相談所は何歳から?20代・30代女性の入会タイミングは「今」",
-    mainEntityOfPage:
-      "https://大阪梅田ドクターズ結婚相談所.jp/best-timing-to-start",
-    author: {
-      "@type": "Person",
-      name: "加藤",
-      jobTitle: "代表カウンセラー(内科認定医・現役女性医師)",
-    },
-    datePublished: "2026-09-09",
-    publisher: {
-      "@type": "Organization",
-      name: "大阪梅田ドクターズ結婚相談所",
-      url: "https://大阪梅田ドクターズ結婚相談所.jp",
-    },
-  };
-
+const jsonLdArticle = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "結婚相談所は何歳から?20代・30代女性の入会タイミングは「今」",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/best-timing-to-start"
+  },
+"author": {
+  "@type": "Person",
+  "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#founder"
+},
+  "datePublished": "2026-09-09",
+  "dateModified": "2026-09-09", // Good practice to include alongside datePublished
+  "publisher": {
+    "@type": "LocalBusiness",
+    "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization"
+  }
+};
   return (
     <main className="relative min-h-screen text-[20px] leading-relaxed text-gray-800 px-1 sm:px-6 lg:px-8 overflow-hidden">
       <script
@@ -253,12 +236,6 @@ export default function BestTimingToStartPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonLdAgeImpact),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jsonLdOrganization),
         }}
       />
       <script

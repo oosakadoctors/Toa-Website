@@ -37,14 +37,18 @@ export const metadata: Metadata = {
 };
 
 export default function FemaleDoctorsGuide() {
-  const jsonLd = {
+const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     'headline': '女性医師の方へ',
     'description': '妥協ではなく、「真に並び立つ知性」と出会う。多忙を極める女性医師のキャリアとプライドを尊重し、理想の婚姻を最速でデザインする。',
     'publisher': {
-      '@type': 'Organization',
-      'name': '大阪梅田ドクターズ結婚相談所',
+      '@type': 'LocalBusiness',
+      '@id': 'https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization'
+    },
+    'about': {
+      '@type': 'LocalBusiness',
+      '@id': 'https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization'
     }
   };
 

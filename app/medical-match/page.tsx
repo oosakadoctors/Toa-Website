@@ -43,10 +43,10 @@ export default function DoctorsMatchPage() {
     '@type': 'WebPage',
     'headline': '【現役女性医師カウンセラー】✕【IBJ公式・AIマッチング＆お見合い練習】',
     'description': '業界最大手の最新テクノロジーを利用する。最先端AIシステム✕現役女性医師の掛け算サポート。',
-    'publisher': {
-      '@type': 'Organization',
-      'name': '大阪梅田ドクターズ結婚相談所',
-    }
+"publisher": {
+  "@type": "LocalBusiness",
+  "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization",
+}
   };
 
   return (

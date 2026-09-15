@@ -45,10 +45,11 @@ export default function AiCounselorValuePage() {
     '@type': 'WebPage',
     'headline': 'AI（人工知能）にはできない、プロのカウンセラーだからこそ創り出せる「成婚」の真実',
     'description': 'AIに丸投げしない、人間主導の最新データ婚活。スケジュール管理の最適化から、お相手に確認すべき金銭感覚・親族関係の質問候補の作成まで。ベテランの経験知で高度な生成AIを安全に活用し、多角的・客観的な提案を行います。最終決定権は100%あなたにあります',
-    'publisher': {
-      '@type': 'Organization',
-      'name': '大阪梅田ドクターズ結婚相談所',
-    }
+"publisher": {
+  "@type": "LocalBusiness",
+  "@id": "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization",
+  "name": "大阪梅田ドクターズ結婚相談所"
+}
   };
 
   return (

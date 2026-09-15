@@ -22,8 +22,11 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ja_JP",
   },
+  
 
 };
+
+
 
 export default function TechMenStrategyPage() {
   return (
