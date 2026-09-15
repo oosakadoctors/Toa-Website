@@ -151,7 +151,7 @@ openGraph: {
   type: 'website',
   images: [
     {
-      url: '/og-default.jpg', // Replace with your default image filename in /public
+      url: 'https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/og-default.jpg', // Replace with your default image filename in /public
       width: 1200,
       height: 630,
       alt: '大阪梅田ドクターズ結婚相談所',
