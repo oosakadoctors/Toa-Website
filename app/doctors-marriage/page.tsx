@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight,ArrowLeft, UserCheck, BookOpen } from 'lucide-react';
 
 // 【A】Server-side Metadata export
 export const metadata: Metadata = {
@@ -89,25 +88,20 @@ export default function DoctorsMarriagePage() {
       },
     })),
   };
-
-  const webpageSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    name: '男性医師の婚活｜勤務医の出会いと結婚',
-    dateModified: '2026-09-16',
-    author: {
-      '@type': 'Person',
-      name: '加藤とあこ',
-      jobTitle: '代表カウンセラー／医療法人幸萌会 久宝寺透析クリニック 院長',
-      hasCredential: '内科認定医',
-      sameAs: ['http://q-cl.com/'],
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: '大阪梅田ドクターズ結婚相談所',
-    },
-  };
-
+const webpageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  'name': '男性医師の婚活｜勤務医の出会いと結婚',
+  'dateModified': '2026-09-16',
+  'author': {
+    '@type': 'Person',
+    '@id': 'https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#founder'
+  },
+  'publisher': {
+    '@type': 'LocalBusiness',
+    '@id': 'https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/#organization'
+  }
+};
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -538,6 +532,80 @@ export default function DoctorsMarriagePage() {
             </div>
           </section>
 
+          <section className="my-12 py-8 px-2 bg-slate-50 border border-slate-200/80 rounded-2xl shadow-sm">
+      {/* Section Header */}
+      <div className="flex items-center gap-2 mb-3">
+        <BookOpen className="w-6 h-6 text-emerald-600" />
+        <h2 className="text-[20px] font-bold text-slate-900 tracking-tight">
+          実際のご相談を読む
+        </h2>
+      </div>
+
+      {/* Conclusion / Summary Callout */}
+      <div className="mb-6 p-2 rounded-xl bg-emerald-500/10 border-l-4 border-emerald-600">
+        <p className="text-[20px] font-bold text-emerald-950">
+          結論：無料相談で実際にどんな会話をしているのか、記録を公開しています。
+        </p>
+      </div>
+
+      {/* Description Paragraph */}
+      <p className="text-slate-700 leading-relaxed text-[20px] mb-6">
+        医師の方の相談としては、
+        <strong className="text-slate-900 font-semibold">
+          36歳・女性医師の無料相談ストーリー
+        </strong>
+        をご覧いただけます。多忙な勤務のなかで婚活をどう組み立てるか、お相手に何を求めるかを、実際のやり取りに沿って掲載しています。
+      </p>
+
+      {/* Consultation Story Links */}
+      <div className="space-y-3">
+        <Link
+          href="/womans-story"
+          className="group flex items-center justify-between p-2 bg-white rounded-xl border border-slate-200 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all duration-200"
+        >
+          <div className="flex items-center gap-3">
+            <span className="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 text-emerald-700 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+              <UserCheck className="w-4 h-4" />
+            </span>
+            <span className="font-semibold text-slate-800 group-hover:text-emerald-700 transition-colors">
+              36歳・女性医師の無料相談ストーリー
+            </span>
+          </div>
+          <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-emerald-600 group-hover:translate-x-1 transition-all" />
+        </Link>
+
+        <Link
+          href="/mens-consultation"
+          className="group flex items-center justify-between p-4 bg-white rounded-xl border border-slate-200 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all duration-200"
+        >
+          <div className="flex items-center gap-3">
+            <span className="flex items-center justify-center w-8 h-8 rounded-full bg-slate-100 text-slate-600 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+              <UserCheck className="w-4 h-4" />
+            </span>
+            <span className="font-medium text-slate-700 group-hover:text-emerald-700 transition-colors">
+              35歳・会社員男性の無料相談ストーリー
+            </span>
+          </div>
+          <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-emerald-600 group-hover:translate-x-1 transition-all" />
+        </Link>
+
+        <Link
+          href="/smart-dating"
+          className="group flex items-center justify-between p-2 bg-white rounded-xl border border-slate-200 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all duration-200"
+        >
+          <div className="flex items-center gap-3">
+            <span className="flex items-center justify-center w-8 h-8 rounded-full bg-slate-100 text-slate-600 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+              <UserCheck className="w-4 h-4" />
+            </span>
+            <span className="font-medium text-slate-700 group-hover:text-emerald-700 transition-colors">
+              33歳・男性プログラマーのお見合い後の相談実例
+            </span>
+          </div>
+          <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-emerald-600 group-hover:translate-x-1 transition-all" />
+        </Link>
+      </div>
+    </section>
+
           {/* Section 10 */}
           <section className="mb-10 space-y-4">
             <h2 className="text-[24px] sm:text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2">
@@ -557,13 +625,15 @@ export default function DoctorsMarriagePage() {
             <p className="font-bold text-slate-800">加藤とあこ</p>
             <p className="text-[18px] sm:text-base text-slate-600 mb-3 leading-relaxed">
               大阪梅田ドクターズ結婚相談所 代表カウンセラー<br />
-              医療法人幸萌会 <a href="http://q-cl.com/" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">久宝寺透析クリニック</a> 院長／内科認定医
+              医療法人幸萌会 <a href="https://q-cl.com/" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">久宝寺透析クリニック</a> 院長／内科認定医
             </p>
             <p className="text-[18px] sm:text-base leading-relaxed text-slate-700">
-              腎臓内科を専門とする医師として、大阪府八尾市の<a href="http://q-cl.com/" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">久宝寺透析クリニック</a>で院長を務めています。医療法人の理事、病院での勤務医としての経験をふまえ、医師の婚活をサポートしています。
+              腎臓内科を専門とする医師として、大阪府八尾市の<a href="https://q-cl.com/" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">久宝寺透析クリニック</a>で院長を務めています。医療法人の理事、病院での勤務医としての経験をふまえ、医師の婚活をサポートしています。
             </p>
-            <div className="mt-6 pt-3 border-t border-slate-200 text-sm text-slate-500 flex justify-between">
+            <div className="mt-6 pt-3 border-t border-slate-200 text-sm text-slate-500 ">
               <span>公開日：2026年09月16日</span>
+              <br/>
+        
               <span>最終更新日：2026年09月16日</span>
             </div>
           </section>
