@@ -105,18 +105,20 @@ const webpageSchema = {
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    '@id': 'https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/doctors-marriage#webpage',
+    'url': 'https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/doctors-marriage',
     itemListElement: [
       {
         '@type': 'ListItem',
         position: 1,
         name: 'ホーム',
-        item: 'https://www.大阪梅田ドクターズ結婚相談所.jp/',
+        item: 'https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '男性医師の婚活',
-        item: 'https://www.大阪梅田ドクターズ結婚相談所.jp/doctors-marriage',
+        item: 'https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/doctors-marriage',
       },
     ],
   };
