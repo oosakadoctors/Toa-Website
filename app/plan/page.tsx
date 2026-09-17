@@ -1,7 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import { Check, Info, HelpCircle } from 'lucide-react';
-import Banner from "@/components/Banner";
+// import Banner from "@/components/Banner";
 
 // ============================================================================
 // 1. Next.js SEO Metadata
@@ -157,7 +157,7 @@ export default function PricePage() {
             </div>
           </div>
 
-          <Banner/>
+          {/* <Banner/> */}
 
           {/* --- Main Pricing Layout --- */}
           <div className="overflow-hidden rounded-3xl border border-gray-200/80 bg-white shadow-md">

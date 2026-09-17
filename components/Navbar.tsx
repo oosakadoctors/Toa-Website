@@ -82,6 +82,7 @@ export default function PremiumNavbar() {
       links: [
         { name: "男性医師の方へ サポート紹介とメッセージ", href: "/male-doctors" },
         { name: "女性医師の方へ サポート紹介とメッセージ", href: "/female-doctors" },
+        { name: "男性医師の婚活", href: "/doctors-marriage" },
       ],
     },
     {
