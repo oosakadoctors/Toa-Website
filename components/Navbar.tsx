@@ -62,6 +62,7 @@ export default function PremiumNavbar() {
         { name: "結婚相談所の選び方", href: "/how-to-choose" },
         { name: "リアルな婚活の記録と成婚報告", href: "/dating-journeys" },
         { name: "特定商取引法に基づく表記・プライバシーポリシー", href: "/company-profile" },
+        { name: "how we support", href: "/how-we-support" },
       ],
     },
     {
