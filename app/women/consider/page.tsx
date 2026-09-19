@@ -49,7 +49,7 @@ export default function MarriageAdvicePage() {
         "@type": "ListItem",
         "position": 3,
         "name": "30代の効率的な婚活",
-        "item": `${DOMAIN}/consider`
+        "item": `${DOMAIN}/women/consider`
       }
     ]
   };
