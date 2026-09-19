@@ -61,8 +61,7 @@ export default function PremiumNavbar() {
         { name: "婚活って何？から一歩ずつ（初心者むけサポート内容説明）", href: "/marriage-hunting" },
         { name: "結婚相談所の選び方", href: "/how-to-choose" },
         { name: "リアルな婚活の記録と成婚報告", href: "/dating-journeys" },
-        { name: "特定商取引法に基づく表記・プライバシーポリシー", href: "/company-profile" },
-        { name: "how we support", href: "/how-we-support" },
+        { name: "特定商取引法に基づく表記・プライバシーポリシー", href: "/company-profile" }
       ],
     },
     {
@@ -81,9 +80,10 @@ export default function PremiumNavbar() {
       tag: "男性向け",
       icon: Crown,
       links: [
+        { name: "男性医師の婚活", href: "/doctors-marriage" },
         { name: "男性医師の方へ サポート紹介とメッセージ", href: "/male-doctors" },
         { name: "女性医師の方へ サポート紹介とメッセージ", href: "/female-doctors" },
-        { name: "男性医師の婚活", href: "/doctors-marriage" },
+        
       ],
     },
     {
@@ -122,6 +122,7 @@ export default function PremiumNavbar() {
       title: "医師監修の成婚サポート体制",
       icon: UserRound,
       links: [
+        { name: "結婚相談所のサポート内容｜入会後に何をしてもらえるか｜大阪・梅田", href: "/how-we-support" },
         { name: "無料相談の流れと婚活未来図", href: "/consultation" },
         { name: "婚活ダンジョンマップと医師×仲人のダブルサポート体制", href: "/dungeon-map" },
         { name: "32歳会社員女性（婚活初心者）の無料相談ストーリー", href: "/vibe" },
