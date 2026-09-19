@@ -17,12 +17,12 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "加藤とあこ（代表カウンセラー・内科認定医・現役女性医師）" }],
   alternates: {
-    canonical: "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/how-we-support",
+    canonical: "/how-we-support",
   },
   openGraph: {
     title: "結婚相談所のサポート内容｜入会後に何をしてもらえるか｜大阪・梅田",
     description: "入会後に何をしてもらえるのか。助言の分野も、連絡の頻度も、伝え方も、あなたに合わせます。",
-    url: "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/how-we-support",
+    url: "/how-we-support",
     type: "article",
     publishedTime: "2026-09-15T00:00:00+09:00",
     modifiedTime: "2026-09-15T00:00:00+09:00",
