@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import femaleAdvisor from "@/public/femaleAdvisor.jpg";
 import Image from "next/image";
-import { Sparkles, CheckCircle2, UserCheck, Heart, ShieldCheck, MessageCircle, ArrowRight, Stethoscope, Compass, Award } from "lucide-react";
+import Link from "next/link";
+import { Sparkles, Home, CheckCircle2, ChevronRight, UserCheck, Heart, ShieldCheck, MessageCircle, ArrowRight, Stethoscope, Compass, Award } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "30歳女性の真剣婚活｜誠実で笑顔が可愛い「最高の男性」に出会う",
@@ -22,19 +23,82 @@ export const metadata: Metadata = {
 
 };
 
+  const DOMAIN = "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/"; // Change to your actual domain if different
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "ホーム",
+        "item": `${DOMAIN}/`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "女性の方へ",
+        "item": `${DOMAIN}/women`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "笑顔の可愛い理想に近い男性が惹かれる高いＥＱ",
+        "item": `${DOMAIN}/ideal-man`
+      }
+    ]
+  };
+
+
 export default function MarriageAdvicePage() {
   return (
+    <>
+
+      {/* Breadcrumbs JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      {/* Visual Breadcrumb Navigation */}
     <main className="bg-[#faf8f5] min-h-screen text-base leading-relaxed">
       
       {/* ============================================================
           HERO BANNER HEADLINE (Middle-Ground Magenta-Rose Gradient)
           ============================================================ */}
+      <nav aria-label="Breadcrumb" className="w-full bg-white/60 backdrop-blur-sm border-b border-rose-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+          <ol className="flex items-center space-x-2 text-sm text-gray-600 overflow-x-auto whitespace-nowrap">
+            <li>
+              <Link href="/" className="flex items-center hover:text-[#D9006C] transition-colors">
+                <Home className="w-4 h-4 mr-1 text-gray-500" />
+                <span>ホーム</span>
+              </Link>
+            </li>
+            <li>
+              <ChevronRight className="w-4 h-4 text-gray-400 shrink-0" />
+            </li>
+            <li>
+              <Link href="/women" className="hover:text-[#D9006C] transition-colors">
+                女性の方へ
+              </Link>
+            </li>
+            <li>
+              <ChevronRight className="w-4 h-4 text-gray-400 shrink-0" />
+            </li>
+            <li className="font-medium text-gray-900 truncate" aria-current="page">
+              笑顔の可愛い理想に近い男性が惹かれる高いＥＱ
+            </li>
+          </ol>
+        </div>
+      </nav>
       <section 
         className="relative w-full py-12 px-4 sm:px-6 lg:px-8 border-b border-rose-200/50 overflow-hidden"
         style={{ 
           background: 'linear-gradient(135deg, rgba(255, 0, 127, 0.25) 0%, rgba(255, 102, 178, 0.2) 50%, rgba(255, 166, 201, 0.25) 100%)' 
         }}
       >
+      
         {/* Ambient Radiant Glows */}
         <div className="absolute top-[-20%] left-[-10%] w-72 h-72 bg-[#FF007F]/15 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-[-20%] right-[-10%] w-72 h-72 bg-[#FFA6C9]/20 rounded-full blur-3xl pointer-events-none" />
@@ -589,5 +653,7 @@ export default function MarriageAdvicePage() {
       </section>
 
     </main>
+</>
   );
+  
 }

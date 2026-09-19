@@ -17,7 +17,6 @@ import {
   ShieldCheck
 } from 'lucide-react';
 
-
 export const metadata: Metadata = {
   title: '大阪梅田で医師・ハイスペック男性と結婚する方法｜女性向けハイクラス婚活の戦略',
   description: 'ハイスペック男性が生涯の伴侶に求める3つのリスペクトとは。医師・エグゼクティブに選ばれるための条件を、現役女医の視点から解説します。',
@@ -30,13 +29,71 @@ export const metadata: Metadata = {
   },
 };
 
+// サイトのベースURL（環境変数などで管理するのも推奨）
+const BASE_URL = 'https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp/';
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": `${BASE_URL}/`
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "女性の方へ",
+      "item": `${BASE_URL}/women`
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "ハイクラス婚活戦略", // UIと統一させた短い名称
+      "item": `${BASE_URL}/advantages`
+    }
+  ]
+};
+
 export default function HighSpecStrategyPage() {
   return (
-    <div className="bg-[#FAF8F5] text-gray-950 min-h-screen pb-12 font-medium text-xl leading-relaxed w-full overflow-x-hidden">
-    
-{/* ============================================================
-    HERO BANNER HEADLINE (Combined with Pink Radiant Background)
-    ============================================================ */}
+    <>
+      {/* Breadcrumbs JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+
+      <div className="bg-[#FAF8F5] text-gray-950 min-h-screen pb-12 font-medium text-xl leading-relaxed w-full overflow-x-hidden">
+        {/* Breadcrumb Navigation */}
+        <nav aria-label="Breadcrumb" className="w-full bg-white/60 backdrop-blur-sm border-b border-rose-100">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <ol className="flex items-center space-x-2 text-sm text-gray-600 overflow-x-auto whitespace-nowrap">
+              <li>
+                <Link href="/" className="flex items-center hover:text-[#D9006C] transition-colors">
+                  <Home className="w-4 h-4 mr-1 text-gray-500" />
+                  <span>ホーム</span>
+                </Link>
+              </li>
+              <li>
+                <ChevronRight className="w-4 h-4 text-gray-400 shrink-0" />
+              </li>
+              <li>
+                <Link href="/women" className="hover:text-[#D9006C] transition-colors">
+                  女性の方へ
+                </Link>
+              </li>
+              <li>
+                <ChevronRight className="w-4 h-4 text-gray-400 shrink-0" />
+              </li>
+              <li className="font-medium text-gray-900 truncate max-w-[200px] sm:max-w-none" aria-current="page">
+                ハイクラス婚活戦略
+              </li>
+            </ol>
+          </div>
+        </nav>
 <div 
   className="relative w-full py-12 px-4 sm:px-6 lg:px-8 text-center border-b border-rose-200/50 overflow-hidden"
   style={{ 
@@ -477,5 +534,6 @@ export default function HighSpecStrategyPage() {
   </div>
 </div>
     </div>
+      </>
   );
 }

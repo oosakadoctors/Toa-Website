@@ -2,7 +2,9 @@ import { Metadata } from "next";
 import femaleAdvisor from "@/public/femaleAdvisor.jpg";
 import osakaUmedaDoctors from "@/public/osaka-umeda-doctors-konkatsu-30s.jpg";
 import Image from "next/image";
-import { Sparkles } from "lucide-react";
+import { Sparkles, ChevronRight, Home } from "lucide-react";
+import Link from "next/link";
+
 
 export const metadata: Metadata = {
   title: "婚活でいい人が減った？」と思い始めた30代のあなたへ｜大阪梅田ドクターズ結婚相談所が効率的な理由",
@@ -23,11 +25,72 @@ export const metadata: Metadata = {
   },
 
 };
-
 export default function MarriageAdvicePage() {
+  const DOMAIN = "https://www.xn--pckwao2bxsk71tt0bgu0asjnu04arde02wnj5byk7a.jp"; // Replace with your production domain if different
+
+  // JSON-LD Structured Data for Breadcrumbs (Home -> Women -> Consider)
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "ホーム",
+        "item": `${DOMAIN}/`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "女性の方へ",
+        "item": `${DOMAIN}/women`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "30代の効率的な婚活",
+        "item": `${DOMAIN}/consider`
+      }
+    ]
+  };
+
   return (
     <main className="bg-[#faf8f5] min-h-screen">
       
+      {/* Breadcrumbs JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+
+      {/* Visual Breadcrumb Navigation */}
+      <nav aria-label="パンくずリスト" className="w-full bg-white/60 backdrop-blur-sm border-b border-rose-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+          <ol className="flex items-center space-x-2 text-sm text-gray-600 overflow-x-auto whitespace-nowrap">
+            <li>
+              <Link href="/" className="flex items-center hover:text-[#D9006C] transition-colors">
+                <Home className="w-4 h-4 mr-1 text-gray-500" aria-hidden="true" />
+                <span>ホーム</span>
+              </Link>
+            </li>
+            <li aria-hidden="true">
+              <ChevronRight className="w-4 h-4 text-gray-400 shrink-0" />
+            </li>
+            <li>
+              <Link href="/women" className="hover:text-[#D9006C] transition-colors">
+                女性の方へ
+              </Link>
+            </li>
+            <li aria-hidden="true">
+              <ChevronRight className="w-4 h-4 text-gray-400 shrink-0" />
+            </li>
+            <li className="font-medium text-gray-900 truncate" aria-current="page">
+              30代の効率的な婚活
+            </li>
+          </ol>
+        </div>
+      </nav>
+
       {/* ============================================================
           HERO BANNER HEADLINE (Middle-Ground Magenta-Rose Gradient)
           ============================================================ */}
@@ -178,7 +241,7 @@ export default function MarriageAdvicePage() {
 
               <br /><br />
 
-              私たちが異性に出会う場所は、同じ学校、バイト先、アプリ、職場、知人、飲食店など、様々ですが、今思えば、大学一年生に付き合っていた人が1番ハイスペックで結婚に近かったということはよくあります。
+              私たちが異性に出会う場所は、同じ学校、バイト先, アプリ、職場、知人、飲食店など、様々ですが、今思えば、大学一年生に付き合っていた人が1番ハイスペックで結婚に近かったということはよくあります。
 
               <br /><br />
 
